@@ -1,0 +1,224 @@
+---
+title: Reveal Test Slides
+layout: reveal
+theme: night
+transition: zoom
+---
+%section
+	%h1 Reveal.js
+	%h3 HTML Presentations Made Easy
+	%p
+		%small
+			Created by
+			= link_to "http://hakim.se", "Hakim El Hattab"
+			/
+			= link_to "http://twitter.com/hakimel", "@hakimel"
+
+%section
+	%h2 Custom Events
+	
+	%p
+		Additionally custom events can be triggered on a per slide basis by binding to the
+		%code data-state
+		name.
+	%pre
+		%code( data-trim contenteditable style="font-size: 18px; margin-top: 20px;")
+			:plain
+				Reveal.addEventListener( 'customevent', function() {
+					console.log( '"customevent" has fired' );
+				} );
+
+%section
+	%h2 Heads Up
+	%p
+		reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+		support for CSS 3D transforms to see it in its full glory.
+	
+
+	%aside( class="notes")
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+	
+
+
+<!-- Example of nested vertical slides -->
+%section
+	%section
+		%h2 Vertical Slides
+		%p
+			Slides can be nested inside of other slides,
+			try pressing
+			%a( href="#" class="navigate-down") down.
+		
+		%a( href="#" class="image navigate-down")
+			%img( width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow")
+		
+	
+	%section
+		%h2 Basement Level 1
+		%p Press( down or up to navigate.
+	
+	%section
+		%h2 Basement Level 2
+		%p Cornify
+		%a( class="test" href="http://cornify.com")
+			%img( width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn")
+		
+	
+	%section
+		%h2 Basement Level 3
+		%p That's( it, time to go back up.
+		%a( href="#/2" class="image")
+			%img( width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);")
+		
+	
+
+
+%section
+	%h2 Slides
+	%p
+		Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es.
+	
+
+
+%section
+	%h2 Point of View
+	:markdown
+		Press **ESC** to enter the slide overview.
+	
+		Hold down alt and click on any element to zoom in on it using [zoom.js](http://lab.hakim.se/zoom-js). Alt + click anywhere to zoom back out.
+	
+
+
+%section
+	%h2 Works in Mobile Safari
+	%p
+		Try it out! You can swipe through the slides and pinch your way to the overview.
+
+%section
+	%h2 Marvelous Unordered List
+	%ul
+		%li()No order here
+		%li()Or here
+		%li()Or here
+		%li()Or here
+	
+
+
+%section
+	%h2 Fantastic Ordered List
+	%ol
+		%li()One is smaller than...
+		%li()Two is smaller than...
+		%li()Three!
+		
+
+
+%section( id="transitions")
+	%h2 Transition Styles
+	:markdown
+		You can select from different transitions, like: <br/>
+		[Cube -](?transition=cube#/transitions)
+		[Page -](?transition=page#/transitions)
+		[Concave -](?transition=concave#/transitions)
+		[Zoom -](?transition=zoom#/transitions)
+		[Linear -](?transition=linear#/transitions)
+		[Fade -](?transition=fade#/transitions)
+		[None -](?transition=none#/transitions)
+		[Default](?#/transitions)
+	
+
+
+%section( id="themes")
+	%h2 Themes
+	:markdown
+		Reveal.js comes with a few themes built in: <br/>
+		[Sky](?theme=sky#/themes) -
+		[Beige -](?theme=beige#/themes)
+		[Simple -](?theme=simple#/themes)
+		[Serif -](?theme=serif#/themes)
+		[Night -](?theme=night#/themes)
+		[Default](?#/themes)
+	
+	%p
+		%small
+			* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the %code()&lt;head&gt; using a %code()&lt;link&gt;.
+		
+	
+
+
+%section
+	%h2 Global State
+	%p
+		Set %code()data-state="something" on a slide and %code()"something"
+		will be added as a class to the document element when the slide is open. This lets you
+		apply broader style changes, like switching the background.
+	
+
+
+%section( data-state="customevent")
+	%h2 Custom Events
+	%p
+		Additionally custom events can be triggered on a per slide basis by binding to the %code()data-state name.
+	
+
+
+%section
+	%section( data-background="#007777")
+		%h2 Slide Backgrounds
+		%p
+			Set %code()data-background="#007777" on a slide to change the full page background to the given color. All CSS color formats are supported.
+		
+		%a( href="#" class="image navigate-down")
+			%img( width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow")
+		
+	
+	%section( data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png")
+		%h2 Image Backgrounds
+	
+	%section( data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px")
+		%h2 Repeated Image Backgrounds
+	
+
+
+%section( data-transition="linear" data-background="#4d7e65" data-background-transition="slide")
+	%h2 Background Transitions
+	%p
+		Pass reveal.js the %code()backgroundTransition: 'slide' config argument to make backgrounds slide rather than fade.
+	
+
+
+%section( data-transition="linear" data-background="#8c4738" data-background-transition="slide")
+	%h2 Background Transition Override
+	%p
+		You can override background transitions per slide by using %code()data-background-transition="slide".
+
+%section
+	%section
+		%h2 Fragmented Views
+		%p Hit the next arrow...
+		%p( class="fragment") ... to step through ...
+		%ol
+			%li( class="fragment")
+				%code any type
+			%li( class="fragment")
+				%em of view
+			%li( class="fragment") 
+				%strong fragments
+
+
+		%aside( class="notes")
+			This slide has fragments which are also stepped through in the notes window.
+
+
+	%section
+		%h2 Fragment Styles
+		%p There's a few styles of fragments, like:
+		%p( class="fragment grow" ) grow
+		%p( class="fragment shrink" ) shrink
+		%p( class="fragment roll-in" ) roll-in
+		%p( class="fragment fade-out" ) fade-out
+		%p( class="fragment highlight-red" ) highlight-red
+		%p( class="fragment highlight-green" ) highlight-green
+		%p( class="fragment highlight-blue" ) highlight-blue
+
+	

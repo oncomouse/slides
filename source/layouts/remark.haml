@@ -1,0 +1,42 @@
+!!! 5
+%html
+	%head
+		%meta{ :charset => "utf-8" }/
+		%title
+			- if current_resource.data['title']
+				= current_resource.data['title']
+		= stylesheet_link_tag("remark/slides.css", :media => "all", :rel => "stylesheet" )
+		- slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
+		- if !slideshow_specific_css.nil?
+			= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
+	%body
+		%textarea{ :id => "source"}
+			= yield
+		= javascript_include_tag("lib/zepto.min.js", "remark/remark.min.js")
+		- javascript_include_tag("remark.min.js")
+		:javascript
+			function update_progress() {
+				var regex = /([0-9]+) \/ ([0-9]+)/;
+				var fraction = regex.exec($(".remark-position").html());
+				var current_slide = fraction[1];
+				var total_slides = fraction[2];
+				if (total_slides == 1) {
+					$("#remark-progress").width(0);
+					return;
+				}
+				$("#remark-progress").width((current_slide - 1) / (total_slides - 1) * 100 + "%");				
+			}
+			
+			$(document).ready(function() {
+				document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+				slideshow = remark.create({
+					highlightStyle: 'solarized_light'
+				});
+				
+				$("<div id='remark-progress'></div>").appendTo($('.remark-slideshow'));
+				update_progress();
+				$(window).on("hashchange", function(ev) {
+					update_progress();
+				});
+			});
+			

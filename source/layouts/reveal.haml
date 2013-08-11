@@ -1,0 +1,54 @@
+%html
+	%head
+		%meta{ :charset => "utf-8" }/
+		%title
+			- if current_resource.data['title']
+				= current_resource.data['title']
+
+		%meta{ :name => "apple-mobile-web-app-capable", :content => "yes" }
+		%meta{ :name => "apple-mobile-web-app-status-bar-style", :content => "black-translucent" }
+
+		%meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" }
+
+		= stylesheet_link_tag "reveal/reveal.css"
+		= stylesheet_link_tag "reveal/theme/default.css",  :id => "theme"
+
+		<!-- For syntax highlighting -->
+		= stylesheet_link_tag "reveal/hljs/zenburn.css"
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		:javascript
+			document.write( '<link rel="stylesheet" href="stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+
+		<!--[if lt IE 9]>
+		= javascript_include_tag "lib/html5shiv.js"
+		<![endif]-->
+
+	%body
+		.reveal
+			.slides
+				= yield
+		= javascript_include_tag "lib/head.min.js", "reveal/reveal.min.js"
+
+		:javascript
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || "#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}", // List available in stylesheets/reveal/themes
+				transition: Reveal.getQueryHash().transition || "#{(current_resource.data['transition']) ? current_resource.data['transition'] : "default"}", // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'javascripts/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'javascripts/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'javascripts/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'javascripts/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'javascripts/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'javascripts/reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'javascripts/reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
