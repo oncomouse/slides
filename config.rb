@@ -35,12 +35,19 @@ set :images_dir, 'images'
 #	blog.summary_length = 250
 #end
 
+helpers do
+	def javascript_path(file_path)
+		asset_path(:js, file_path)
+	end
+end
+
 # Build-specific configuration
 configure :build do
 
   #ignore "/courses/*"
   #ignore "/research/*"
   ignore "/**/*.rb"
+  set :http_prefix, "/slides"
   #set :http_prefix, "/new2"
   # Change this to build with a different file root.	
   #set :http_prefix, "/my/prefix/folder"
