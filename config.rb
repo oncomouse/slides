@@ -24,6 +24,12 @@ page "*", :layout => "remark"
 # Helpers
 ###
 
+helpers do
+	def javascript_path(file_path)
+		asset_path(:js, file_path)
+	end
+end
+
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -69,6 +75,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.user = "oncomouse"
   #deploy.user = "eschaton"
   #deploy.host = "dynamo.dreamhost.com"
   #deploy.path = "~/www/andrew.pilsch.com/slides"
