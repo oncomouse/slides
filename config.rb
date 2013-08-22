@@ -4,12 +4,12 @@
 
 set :markdown_engine, :rdiscount
 set :markdown, :fenced_code_blocks => true,
-               :autolink => true, 
-               :smartypants => true
+							 :autolink => true, 
+							 :smartypants => true
 
 # Change Compass configuration
 compass_config do |config|
-   config.output_style = :compact
+	 config.output_style = :compact
 end
 
 require "compass"
@@ -44,39 +44,41 @@ end
 # Build-specific configuration
 configure :build do
 
-  #ignore "/courses/*"
-  #ignore "/research/*"
-  ignore "/**/*.rb"
-  set :http_prefix, "/slides"
-  #set :http_prefix, "/new2"
-  # Change this to build with a different file root.	
-  #set :http_prefix, "/my/prefix/folder"
+	#ignore "/courses/*"
+	#ignore "/research/*"
+	ignore "/**/*.rb"
+	set :http_prefix, "/slides"
+	#set :http_prefix, "/new2"
+	# Change this to build with a different file root.	
+	#set :http_prefix, "/my/prefix/folder"
 
-  # For example, change the Compass output style for deployment
-  activate :minify_css
+	# For example, change the Compass output style for deployment
+	activate :minify_css
 
-  # Minify Javascript on build
-  activate :minify_javascript
+	# Minify Javascript on build
+	activate :minify_javascript
 
-  #activate :gzip
+	#activate :gzip
 
-  # Enable cache buster
-  # activate :cache_buster
+	# Enable cache buster
+	# activate :cache_buster
 
-  # Use relative URLs
-  #activate :relative_assets
+	# Use relative URLs
+	#activate :relative_assets
 
-  # Compress PNGs after build
-  # I wouldn't use this.
-  #activate :smusher
+	# Compress PNGs after build
+	# I wouldn't use this.
+	#activate :smusher
 
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
+	# Or use a different image path
+	# set :http_path, "/Content/images/"
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.user = "oncomouse"
-  #deploy.host = "dynamo.dreamhost.com"
-  #deploy.path = "~/www/andrew.pilsch.com/slides"
+	deploy.method = :git
+	#ignore ".git/*"
+	#deploy.method = :rsync
+	#deploy.user = "eschaton"
+	#deploy.host = "dynamo.dreamhost.com"
+	#deploy.path = "~/www/andrew.pilsch.com/slides"
 end
