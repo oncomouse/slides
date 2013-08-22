@@ -68,8 +68,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.user = "eschaton"
-  deploy.host = "dynamo.dreamhost.com"
-  deploy.path = "~/www/andrew.pilsch.com/slides"
+  deploy.method = :git
+  deploy.user = "oncomouse"
+  #deploy.host = "dynamo.dreamhost.com"
+  #deploy.path = "~/www/andrew.pilsch.com/slides"
 end
