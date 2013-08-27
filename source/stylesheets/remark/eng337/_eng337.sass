@@ -1,0 +1,47 @@
+@import sass-colors/sass-colors
+@import bourbon/bourbon
+@import neat/neat
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700)
+
+$accent_color: $resolution_blue
+
+body
+	font:
+		family: "Open Sans"
+	line:
+		height: 1.33em
+
+h1, h2, h3
+	line-height: 1.33em
+
+.big
+	ul
+		font:
+			size: 1.33em
+	line:
+		height: 2em
+	ul ul, ul ol, ol ul, ol ol
+		font:
+			size: 1em
+
+.agenda
+	@include span-columns(6)
+	@include shift(3)
+	text:
+		align: left
+	font:
+		family: 'Yanone Kaffeesatz'
+		size: 2.4em
+	line-height: golden-ratio(1em, 1)
+
+.topic
+	font-family: 'Yanone Kaffeesatz'
+	font-size: 1.5em
+	display: block
+	position:  absolute
+	bottom: 14px
+	right: 10%
+	
+	color: $accent_color
+strong
+	color:  $accent_color
