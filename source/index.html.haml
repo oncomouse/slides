@@ -1,56 +1,41 @@
 ---
 layout: false
 ---
+
+- file_regex = /\.html/
+- depth = 0
+- if defined? directory
+	- file_regex = Regexp.new("#{directory.gsub("/","\\/")}\\/[^.]+.html")
+	- depth = directory.count("/") + 1
+- else
+	- directory = nil
+
 !!! 5
 %html
 	%head
 		%meta{ :charset => "utf-8" }/
 		%title Slides
-		:sass
-			@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic)
-			body
-				font:
-					family: "Lato", "Helvetica", sans-serif
-			#content
-				width: 75%
-				margin: 0 auto
-			h1
-				font:
-					size: 4em
-			ul
-				list:
-					style: none
-				margin: 0
-				padding: 0
-					top: 1em
-				li
-					margin: 0
-						top: 1em
-						bottom: 1em
-					padding: 0
-			li,p
-				font:
-					size: 2.5em
-						
-			a
-				color: #000
-				
-				&:hover
-					color: #fff
-					background: #d33682
-						
+		= stylesheet_link_tag "global.css", :media => "all", :rel => "stylesheet"
+	
 	%body
 		#content
-			%h1 Slides
-		
+			%h1 
+				Slides
+				- if !directory.nil?
+					= "/#{directory}"
 			:markdown
+
 			
-				This is [Andrew Pilsch](http://atp1.us)'s slide repository. It hosts slides made using both [Remark.js](remarkjs.com) and [Reveal.js](http://lab.hakim.se/reveal-js/).
+				This is [Andrew Pilsch](http://atp1.us)'s slide repository. It hosts slides made using both [Remark.js](http://remarkjs.com) and [Reveal.js](http://lab.hakim.se/reveal-js/).
 		
 			%ul
-				- sitemap.resources.select{|a| (a.destination_path =~ /\.html/ && a.data["title"])}.each do |resource|
-					%li
-						= link_to "#{resource.data["title"]}", resource.destination_path
-						%small
-							(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
+				- sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.each do |resource|
+					- if resource.data["title"] and resource.destination_path.count("/") <= depth
+						%li
+							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
+							%small
+								(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
+					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html"
+						%li
+							=link_to resource.destination_path.gsub('index.html',""), resource.destination_path
 				

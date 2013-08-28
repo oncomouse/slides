@@ -39,7 +39,13 @@ helpers do
 	def javascript_path(file_path)
 		asset_path(:js, file_path)
 	end
+	
+	def directories_with_slides
+		sitemap.resources.map{ |resource| if (!(resource.destination_path =~ /(javascripts|stylesheets|images|fonts)\//) and resource.destination_path =~ /\//) then resource.destination_path.gsub(/\/.*\.[A-Za-z]+$/,"") end }.delete_if {|x| x.nil? }.uniq
+	end
+			
 end
+
 
 # Build-specific configuration
 configure :build do
@@ -81,4 +87,10 @@ activate :deploy do |deploy|
 	#deploy.user = "eschaton"
 	#deploy.host = "dynamo.dreamhost.com"
 	#deploy.path = "~/www/andrew.pilsch.com/slides"
+end
+
+Dir.entries("#{Dir.pwd}/source/").each do |file|
+	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
+		proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
+	end
 end
