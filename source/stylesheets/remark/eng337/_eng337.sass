@@ -1,13 +1,35 @@
 @import sass-colors/sass-colors
 @import bourbon/bourbon
 @import neat/neat
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700)
+@import fonts
 
 $accent_color: $resolution_blue
 
 body
 	font:
-		family: "Open Sans"
+		family: $body-font
+		weight: $body-font-weight
+strong
+	font:
+		weight: $body-font-strong-weight
+
+h1,h2,h3,h4,h5
+	font:
+		family: $header-font
+		weight: $header-font-weight
+	.soft
+		font:
+			weight: $header-font-soft-weight
+.agenda
+	font:
+		family: $header-font
+		weight: $header-font-weight
+.topic
+	font:
+		family: $header-font
+		weight: $header-font-weight
+
+body
 	line:
 		height: 1.33em
 
@@ -32,13 +54,12 @@ h1, h2, h3
 	text:
 		align: left
 	font:
-		family: 'Yanone Kaffeesatz'
 		size: 2.4em
 	line-height: golden-ratio(1em, 1)
 
 .topic
-	font-family: 'Yanone Kaffeesatz'
-	font-size: 1.5em
+	font:
+		size: 1.5em
 	display: block
 	position:  absolute
 	bottom: 14px
@@ -47,3 +68,7 @@ h1, h2, h3
 	color: $accent_color
 strong
 	color:  $accent_color
+
+.small
+	img
+		width: 300px
