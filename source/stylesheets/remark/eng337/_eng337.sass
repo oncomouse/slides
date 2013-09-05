@@ -36,8 +36,16 @@ body
 h1, h2, h3
 	line-height: 1.33em
 
+hr
+	width: 80%
+	border: 0
+	height: 1px
+	color: black
+	background: black
+	margin: 2em auto
+
 .big
-	ul
+	ul, p
 		font:
 			size: 1.33em
 	line:
@@ -46,6 +54,7 @@ h1, h2, h3
 		font:
 			size: 1em
 	.topic
+		font-size: (1.5em/1.33)
 		line-height: 0.9em
 
 .agenda
@@ -64,8 +73,14 @@ h1, h2, h3
 	position:  absolute
 	bottom: 14px
 	right: 10%
-	
 	color: $accent_color
+
+.title-block
+	margin: 1.75em 0
+	h1,h2,h3,h4,h5
+		line-height: 1.1em
+		margin: 0
+
 strong
 	color:  $accent_color
 
