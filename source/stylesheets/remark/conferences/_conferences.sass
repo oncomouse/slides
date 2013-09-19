@@ -1,0 +1,105 @@
+@import ../themes/solarized/solarized
+@import sass-colors/sass-colors
+@import bourbon/bourbon
+@import neat/neat
+@import fonts
+@import ../add-ons/progress_bar
+
+$accent_color: $violet
+$title_color: $magenta
+$subtitle_color: $base01
+
+body
+	font:
+		family: $body-font
+		weight: $body-font-weight
+strong
+	font:
+		weight: $body-font-strong-weight
+
+h1,h2,h3,h4,h5
+	font:
+		family: $header-font
+		weight: $header-font-weight
+	.soft
+		font:
+			weight: $header-font-soft-weight
+.agenda
+	font:
+		family: $header-font
+		weight: $header-font-weight
+.topic
+	font:
+		family: $header-font
+		weight: $header-font-weight
+
+body
+	line:
+		height: 1.33em
+
+h1, h2, h3
+	line-height: 1.33em
+
+hr
+	width: 80%
+	border: 0
+	height: 1px
+	color: black
+	background: black
+	margin: 2em auto
+
+.big
+	ul, p
+		font:
+			size: 1.33em
+	line:
+		height: 2em
+	ul ul, ul ol, ol ul, ol ol
+		font:
+			size: 1em
+	.topic
+		font-size: (1.5em/1.33)
+		line-height: 0.9em
+
+.agenda
+	@include span-columns(6)
+	@include shift(3)
+	text:
+		align: left
+	font:
+		size: 2.4em
+	line-height: golden-ratio(1em, 1)
+
+.topic
+	font:
+		size: 1.5em
+	display: block
+	position:  absolute
+	bottom: 14px
+	right: 10%
+	color: $accent_color
+
+.title-block
+	margin: 1.75em 0
+	h1,h2,h3,h4,h5
+		line-height: 1.1em
+		margin: 0
+
+strong
+	color:  $accent_color
+
+.small
+	img
+		width: 300px
+
+.title
+	h1
+		font-size: 2.4em
+		color: $title_color
+		.subtitle
+			font-size: (2em/2.4)
+			color: $subtitle_color
+	h2
+		font: 
+			size:  1.4em
+			weight: normal
