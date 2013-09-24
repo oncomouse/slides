@@ -37,6 +37,12 @@ set :images_dir, 'images'
 #	blog.summary_length = 250
 #end
 
+class String
+	def naturalized
+		scan(/[^\d\.]+|[\d\.]+/).collect { |f| f.match(/\d+(\.\d+)?/) ? f.to_f : f }
+	end
+end
+
 helpers do
 	def javascript_path(file_path)
 		asset_path(:js, file_path)

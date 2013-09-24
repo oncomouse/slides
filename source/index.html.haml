@@ -10,6 +10,10 @@ layout: false
 - else
 	- directory = nil
 
+- # Naturalize a string that contains numbers
+- def naturalized s
+	- s.scan(/[^\d\.]+|[\d\.]+/).collect { |f| f.match(/\d+(\.\d+)?/) ? f.to_f : f }
+
 !!! 5
 %html
 	%head
@@ -29,7 +33,7 @@ layout: false
 				This is [Andrew Pilsch](http://atp1.us)'s slide repository. It hosts slides made using both [Remark.js](http://remarkjs.com) and [Reveal.js](http://lab.hakim.se/reveal-js/).
 		
 			%ul
-				- sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.each do |resource|
+				- sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.sort{|a,b| naturalized(a.destination_path.to_s) <=> naturalized(b.destination_path.to_s)}.each do |resource|
 					- if resource.data["title"] and resource.destination_path.count("/") <= depth
 						%li
 							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")

@@ -4,6 +4,7 @@
 @import fonts
 
 $accent_color: $resolution_blue
+$link_color: tint(adjust-hue($accent_color, 180deg), 15%)
 
 body
 	font:
@@ -12,6 +13,8 @@ body
 strong
 	font:
 		weight: $body-font-strong-weight
+a
+	color: $link_color
 
 h1,h2,h3,h4,h5
 	font:
