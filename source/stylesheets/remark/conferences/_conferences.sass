@@ -1,11 +1,11 @@
-@import ../themes/solarized/solarized
 @import sass-colors/sass-colors
+@import ../themes/solarized/solarized
 @import bourbon/bourbon
 @import neat/neat
 @import fonts
 @import ../add-ons/progress_bar
 
-$accent_color: $violet
+$accent_color: $blue
 $title_color: $magenta
 $subtitle_color: $base01
 
@@ -16,6 +16,7 @@ body
 strong
 	font:
 		weight: $body-font-strong-weight
+	color: $accent_color
 
 h1,h2,h3,h4,h5
 	font:
@@ -44,8 +45,8 @@ hr
 	width: 80%
 	border: 0
 	height: 1px
-	color: black
-	background: black
+	color: $base_font_color
+	background: $base_font_color
 	margin: 2em auto
 
 .big
@@ -85,8 +86,6 @@ hr
 		line-height: 1.1em
 		margin: 0
 
-strong
-	color:  $accent_color
 
 .small
 	img
@@ -103,3 +102,23 @@ strong
 		font: 
 			size:  1.4em
 			weight: normal
+.works-cited
+	ul, ol
+		list:
+			style-type: none
+		padding:
+			left: 0
+		li
+			padding:
+				left: 0.5in
+			text: 
+				indent: -0.5in
+			margin:
+				bottom: 1em
+	.ibid
+		display: inline-block
+		width: 1in
+		height: 1px
+		background: $base_font_color
+		margin: 
+			bottom: 0.5em
