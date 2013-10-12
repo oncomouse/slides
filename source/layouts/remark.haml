@@ -13,7 +13,6 @@
 		%textarea{ :id => "source"}
 			= yield
 		= javascript_include_tag("lib/zepto.min.js", "remark/remark.min.js")
-		- javascript_include_tag("remark.min.js")
 		:javascript
 			function update_progress() {
 				var regex = /([0-9]+) \/ ([0-9]+)/;
