@@ -34,6 +34,7 @@ layout: false
 		
 			%ul
 				- sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.sort{|a,b| naturalized(a.destination_path.to_s) <=> naturalized(b.destination_path.to_s)}.each do |resource|
+					- next if resource.data["hidden"] and resource.data["hidden"] == true
 					- if resource.data["title"] and resource.destination_path.count("/") <= depth
 						%li
 							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
