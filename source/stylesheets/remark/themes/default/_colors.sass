@@ -1,3 +1,5 @@
+@import sass-colors/sass-colors
+
 $base_font_color: black
 $base_background_color: white
 $base_shadow_color: #777
@@ -11,9 +13,9 @@ $inverse_shadow_color: invert($base_shadow_color)
 $inverse_highlight_font_color:invert($base_highlight_font_color)
 $inverse_highlight_background_color: invert($base_highlight_background_color)
 
-$emphasis_color: #fa0000
+$emphasis_color: $resolution_blue
 $progress_color: #fa0000
-$link_color: #fa0000
+$link_color: tint(adjust-hue($emphasis_color, 180deg), 15%)//#fa0000
 $left_column_current_color: $base_light_font_color
 
 body
@@ -26,7 +28,7 @@ html *
 	color-profile: sRGB
 	rendering-intent: auto
 
-.emph
+.emph, strong
 	color: $emphasis_color
 
 a, a > code 
