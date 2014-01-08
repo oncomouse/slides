@@ -20,13 +20,16 @@
 					highlightStyle: 'solarized_light'
 				});
 			});
-		- if @@load_charts
+		- # Test for Charts.js support
+		- slideshow = File.open(current_page.source_file).read
+		- if slideshow =~ /\<canvas/
+			/ This slideshow needs charts:
 			- charts_js = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".js"))}[0]
 			= javascript_include_tag("lib/Charts.js")
 			- if !charts_js.nil?
 				= javascript_include_tag(charts_js.destination_path.gsub(/javascripts\//,""))
-			:javascript
-				$(document).ready(function(){
-					load_charts();
-				});
+				:javascript
+					$(document).ready(function(){
+						load_charts();
+					});
 			
