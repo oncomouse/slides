@@ -40,7 +40,7 @@ layout: false
 							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
 							%small
 								(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
-					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html"
+					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth
 						%li
-							=link_to resource.destination_path.gsub('index.html',""), resource.destination_path
+							= if directory.nil? then link_to resource.destination_path.gsub('index.html',""), resource.destination_path else link_to resource.destination_path.gsub('index.html',""), resource.destination_path.sub(directory + "/","") end
 				

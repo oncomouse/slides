@@ -97,8 +97,16 @@ activate :deploy do |deploy|
 	#deploy.path = "~/www/andrew.pilsch.com/slides"
 end
 
-Dir.entries("#{Dir.pwd}/source/").each do |file|
+parse_files = Dir.entries("#{Dir.pwd}/source/")
+
+# Oh boy, recursion!
+while parse_files.length > 0
+    file = parse_files.shift
+    next if file =~ /^\./
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
-		proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
+        proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
+        
+        parse_files += Dir.entries("#{Dir.pwd}/source/#{file}").map! { |x| if x =~ /^\./ then nil else "#{file}/#{x}" end }
+        parse_files.compact!.uniq!
 	end
 end
