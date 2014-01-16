@@ -42,5 +42,5 @@ layout: false
 								(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
 					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth
 						%li
-							= if directory.nil? then link_to resource.destination_path.gsub('index.html',""), resource.destination_path else link_to resource.destination_path.gsub('index.html',""), resource.destination_path.sub(directory + "/","") end
+							= if directory.nil? then link_to resource.destination_path.gsub('index.html',""), resource.destination_path.gsub('index.html',"") else link_to "#{File.basename resource.destination_path.gsub('index.html',"")}/", resource.destination_path.sub(directory + "/","") end
 				
