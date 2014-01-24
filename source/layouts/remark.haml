@@ -1,5 +1,31 @@
+- # This is all of our switches to control the display:
+
+- # Load the slideshow source:
+- slideshow_source = File.open(current_page.source_file).read
+
+- # Attach twitter name to each slide.
+- # Defaults to default_twitter_name (above) unless twitter_name is set.
+- # Defaults to not showing a slide on the first slide unless twitter_name_start is set (1 indexed).
 - default_twitter_name = "oncomouse"
 - default_twitter_name_start = 2
+- attach_twitter_name = current_resource.data['twitter']
+
+- # Test for animations. ANIMATIONS ARE INCOMPATIBLE WITH THE PROGRESS BAR (ANIMATIONS WILL BE DISABLED)
+- attach_animations = slideshow_source =~ /class\: .*animated/
+
+- # Test for Charts.js support
+- # To load chart support, you also need to have a javascript file in source/javascripts/XX/YY.js where XX and YY matches the file path of your remark presentation (so source/remark/XX/YY.html is how you get the values).
+- # This javascript file needs to have one function, called "load_charts()."
+- # This function will contain all the initialization calls to Charts.js.
+- if slideshow_source =~ /\<canvas/
+	- chart_file_js = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".js"))}[0]
+	- if !chart_file_js.nil?
+		- chart_file_js = chart_file_js.destination_path.gsub(/javascripts\//,"")
+		- load_charts = true
+
+- # Test for progress_bar support. Can be added by setting progress_bar to true in the slide metadata.
+- attach_progress_bar = current_resource.data['progress_bar']
+
 !!! 5
 %html
 	%head
@@ -8,38 +34,28 @@
 			- if current_resource.data['title']
 				= current_resource.data['title']
 		= stylesheet_link_tag("remark/slides.css", :media => "all", :rel => "stylesheet" )
-		= stylesheet_link_tag("remark/add-ons/animate.css", :media => "all", :rel => "stylesheet" )
+		- if attach_animations and not attach_progress_bar
+			= stylesheet_link_tag("remark/add-ons/animate.css", :media => "all", :rel => "stylesheet" )
+		- if attach_progress_bar
+			= stylesheet_link_tag("remark/add-ons/progress-bar.css", :media => "all", :rel => "stylesheet" )
 		- slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
 		- if !slideshow_specific_css.nil?
 			= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
 		= javascript_include_tag("lib/head.min.js")
-		- # Attach twitter name to each slide.
-		- # Defaults to default_twitter_name (above) unless twitter_name is set.
-		- # Defaults to not showing a slide on the first slide unless twitter_name_start is set (1 indexed).
-		
-		- attach_twitter_name = current_resource.data['twitter']
-		
-		- # Test for Charts.js support
-		- # To load chart support, you also need to have a javascript file in source/javascripts/XX/YY.js where XX and YY matches the file path of your remark presentation (so source/remark/XX/YY.html is how you get the values).
-		- # This javascript file needs to have one function, called "load_charts()."
-		- # This function will contain all the initialization calls to Charts.js.
-		- slideshow = File.open(current_page.source_file).read
-		- if slideshow =~ /\<canvas/
-			- chart_file_js = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".js"))}[0]
-			- if !chart_file_js.nil?
-				- chart_file_js = chart_file_js.destination_path.gsub(/javascripts\//,"")
-				- load_charts = true
 
 		- # Assemble the call to head.js (ie. establish which libraries need loading)
 		- head_js_call = "zepto_js, remark_js"
 		- if load_charts
 			- head_js_call += ", Charts_js, chart_file_js"
+		- if attach_progress_bar
+			- head_js_call += ", progress_bar_js"
 		:javascript
 			var zepto_js = "#{javascript_path "lib/zepto.min.js"}",
 			    remark_js = "#{javascript_path "remark/remark.min.js"}"
 				
 			#{ if load_charts then "var Charts_js = \"#{javascript_path "lib/Charts.js"}\",
 			    chart_file_js = \"#{javascript_path chart_file_js}\";" end}
+			#{ if attach_progress_bar then "var progress_bar_js = \"#{javascript_path "remark/add-ons/progress-bar.js"}\";" end }
 				
 			// This call to head.js is automatically determined by Middleman at compile:
 			head.js(#{head_js_call}, function(){
@@ -56,6 +72,7 @@
 					$(slide).append('<div class=\"twitter_name\"><div class=\"twitter_badge\">@' + twitter_name +  '</div></div>');
 				});" else "// No twitter name to attach" end}
 				#{if load_charts then "load_charts();" else "// No charts to load" end}
+				#{if attach_progress_bar then "attach_progress_bar()" else "// No progress bar" end}
 			});
 	%body
 		%textarea{ :id => "source"}
