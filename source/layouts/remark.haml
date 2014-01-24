@@ -8,6 +8,7 @@
 			- if current_resource.data['title']
 				= current_resource.data['title']
 		= stylesheet_link_tag("remark/slides.css", :media => "all", :rel => "stylesheet" )
+		= stylesheet_link_tag("remark/add-ons/animate.css", :media => "all", :rel => "stylesheet" )
 		- slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
 		- if !slideshow_specific_css.nil?
 			= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
