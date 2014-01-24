@@ -29,9 +29,7 @@
 		:javascript
 			$(document).ready(function() {
 				document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-				slideshow = remark.create({
-					highlightStyle: 'solarized_light'
-				});
+				slideshow = remark.create();
 				#{if current_resource.data['twitter'] then "attach_twitter_name();" end}
 			});
 		- # Test for Charts.js support
