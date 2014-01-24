@@ -35,6 +35,9 @@
 				#{if current_resource.data['twitter'] then "attach_twitter_name();" end}
 			});
 		- # Test for Charts.js support
+		- # To load chart support, you also need to have a javascript file in source/javascripts/XX/YY.js where XX and YY matches the file path of your remark presentation (so source/remark/XX/YY.html is how you get the values).
+		- # This javascript file needs to have one function, called "load_charts()."
+		- # This function will contain all the initialization calls to Charts.js.
 		- slideshow = File.open(current_page.source_file).read
 		- if slideshow =~ /\<canvas/
 			/ This slideshow needs charts:
