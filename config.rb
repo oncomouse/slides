@@ -58,9 +58,8 @@ end
 # Build-specific configuration
 configure :build do
 
-	#ignore "/courses/*"
-	#ignore "/research/*"
 	ignore "/**/*.rb"
+    ignore "remark_base_template.html"
 	set :http_prefix, "/slides"
 	#set :http_prefix, "/new2"
 	# Change this to build with a different file root.	
@@ -103,6 +102,11 @@ parse_files = Dir.entries("#{Dir.pwd}/source/")
 while parse_files.length > 0
     file = parse_files.shift
     next if file =~ /^\./
+    
+    if File.extname(file) == ".markdown" or File.extname(file) == ".md"
+        proxy "#{file.sub(File.extname(file), "")}", "remark_base_template.html", :locals => {:markdown_source => file}
+    end
+    
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
         proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
         
