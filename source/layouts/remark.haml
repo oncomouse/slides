@@ -1,3 +1,5 @@
+- default_twitter_name = "oncomouse"
+- default_twitter_name_start = 2
 !!! 5
 %html
 	%head
@@ -13,12 +15,24 @@
 		%textarea{ :id => "source"}
 			= yield
 		= javascript_include_tag("lib/zepto.min.js", "remark/remark.min.js")
+		- # Attach twitter name to each slide.
+		- # Defaults to default_twitter_name (above) unless twitter_name is set.
+		- # Defaults to not showing a slide on the first slide unless twitter_name_start is set (1 indexed).	
+		- if current_resource.data['twitter']
+			:javascript
+				function attach_twitter_name() {
+					var twitter_name = "#{if current_resource.data['twitter_name'] then current_resource.data['twitter_name'] else default_twitter_name end }";
+					$('.remark-slide-content').slice(#{if current_resource.data['twitter_name_start'] then (current_resource.data['twitter_name_start'] - 1) else (default_twitter_name_start - 1) end}).each(function(i,slide){
+						$(slide).append('<div class="twitter_name"><div class="twitter_badge">@' + twitter_name +  '</div></div>');
+					});
+				}
 		:javascript
 			$(document).ready(function() {
 				document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
 				slideshow = remark.create({
 					highlightStyle: 'solarized_light'
 				});
+				#{if current_resource.data['twitter'] then "attach_twitter_name();" end}
 			});
 		- # Test for Charts.js support
 		- slideshow = File.open(current_page.source_file).read
