@@ -102,8 +102,9 @@ parse_files = Dir.entries("#{Dir.pwd}/source/")
 while parse_files.length > 0
     file = parse_files.shift
     next if file =~ /^\./
+    next if file =~ /remark_base/
     
-    if File.extname(file) == ".markdown" or File.extname(file) == ".md"
+    if file =~ /(\.markdown|\.md)$/# or File.extname(file) == ".md"
         markdown_source = File.open("#{Dir.pwd}/source/#{file}").read
         if markdown_source =~ /^---/
             yaml_options = YAML.load markdown_source.split(/---/)[1]
@@ -111,7 +112,7 @@ while parse_files.length > 0
             yaml_options = {}
         end
         proxy "#{file.sub(File.extname(file), "")}", "remark_base_template.html", :locals => {:markdown_source => file, :yaml_options => yaml_options}
-    end
+    end 
     
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
         proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
