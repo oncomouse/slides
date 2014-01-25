@@ -104,7 +104,13 @@ while parse_files.length > 0
     next if file =~ /^\./
     
     if File.extname(file) == ".markdown" or File.extname(file) == ".md"
-        proxy "#{file.sub(File.extname(file), "")}", "remark_base_template.html", :locals => {:markdown_source => file}
+        markdown_source = File.open("#{Dir.pwd}/source/#{file}").read
+        if markdown_source =~ /^---/
+            yaml_options = YAML.load markdown_source.split(/---/)[1]
+        else
+            yaml_options = {}
+        end
+        proxy "#{file.sub(File.extname(file), "")}", "remark_base_template.html", :locals => {:markdown_source => file, :yaml_options => yaml_options}
     end
     
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)

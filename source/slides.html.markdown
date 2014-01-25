@@ -1,5 +1,5 @@
 ---
-title: Example Slides
+title: Example Markdown Slides
 twitter: true
 twitter_name: oncomouse
 twitter_name_start: 1

@@ -1,14 +1,13 @@
 ---
 layout: remark
+title: Default Slide Title
 ---
-- @@slide_options = nil
 - if !defined? markdown_source
 	- markdown_source = nil
 
 - if !markdown_source.nil?
 	- markdown_source = File.open("source/#{markdown_source}").read
 	- if markdown_source =~ /^---/
-		- @@slide_options = YAML.load markdown_source.split(/---/)[1]
 		- markdown_source = markdown_source.split(/---/).slice(2..-1).join("---")
 
 :plain
