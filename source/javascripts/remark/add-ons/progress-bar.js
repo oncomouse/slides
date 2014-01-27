@@ -12,7 +12,11 @@ function attach_progress_bar() {
 	});
 	$(window).on("hashchange", function(){
 		var current_slide = parseInt($('.remark-visible .remark-slide-number').html().split(" / ")[0]);
-		$("#remark-progress-content").width((current_slide - 1) / (total_slides - 1) * 100 + "%");
+		var progress_bar_width = (current_slide - 1) / (total_slides - 1) * 100 + "%"
+		if (total_slides == 1) {
+			progress_bar_width = 0;
+		}
+		$("#remark-progress-content").width(progress_bar_width);
 	});
 	
 	$(window).trigger("resize");
