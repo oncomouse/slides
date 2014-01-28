@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 gem "middleman", "~>3.1.0"
 gem "compass", "~>0.12.0"
 gem "builder", ">=3.0"
-gem "oj"
+gem "oj" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "therubyracer" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "middleman-deploy"
 gem "middleman-gh-pages"
