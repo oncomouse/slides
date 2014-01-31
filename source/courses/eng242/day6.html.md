@@ -1,5 +1,5 @@
 ---
-> title: ENG 242 - Day 6
+title: ENG 242 - Day 6
 ---
 class: middle, center
 
