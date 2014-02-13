@@ -1,0 +1,137 @@
+---
+title: ENG 242 - Day 10
+---
+
+.topic[A New England Nun]
+
+>  Now she quilted her needle carefully into her work, which she folded precisely, and laid in a basket with her thimble and thread and scissors. Louisa Ellis could not remember that ever in her life she had mislaid one of these little feminine appurtenances, which had become, from ]on- use and constant association, a very part of her personality.
+
+<hr/>
+
+>Louisa took off her green gingham apron, disclosing a shorter one of pink and white print. She lighted her lamp, and sat down again with her sewing.
+>
+>In about half an hour Joe Dagget came. She heard his heavy step on the walk, and rose and took off her pink-and- white apron. Under that was still another-white linen with a little cambric edging on the bottom; that was Louisa's company apron. She never wore it without her calico sewing apron over it unless she had a guest. She had barely folded the pink and white one with methodical haste and laid it in a table-drawer when the door opened and Joe Dagget entered.
+
+---
+.topic[A New England Nun]
+> In that length of time much had happened. Louisa's mother and brother had died, and she was all alone in the world. But greatest happening of all-a subtle happening which both were too simple to understand-Louisa's feet had turned into a path, smooth maybe under a calm, serene sky, but so straight and unswerving that it could only meet a check at her grave, and so narrow that there was no room for any one at her side.
+>
+> Louisa's first emotion when Joe Dagget came home (he had not apprised her of his coming) was consternation, although she would not admit it to herself, and he never dreamed of it. Fifteen years ago she had been in love with him-at least she considered herself to be. Just at that time, gently acquiescing with and falling into the natural drift of girlhood, she had seen marriage ahead as a reasonable feature and a probable desirability of life.
+
+---
+
+.topic[A New England Nun]
+
+> Presently Dagget began fingering the books on the table. There was a square red autograph album, and a Young Lady's Gift-Book which had belonged to Louisa's mother. He took them up one after the other and opened them then laid them down again, the album on the Gift-Book.
+>
+>Louisa kept eying them with mild uneasiness. Finally she rose and changed the position of the books, putting the album underneath. That was the way they had been arranged in the first place.
+>
+> Dagget gave an awkward little ]augh. "Now what difference did it make which book was on top?" said he.
+>
+> Louisa looked at him with a deprecating smile. " I always keep them that way," murmured she.
+
+---
+
+.topic[A New England Nun]
+
+> Then there were some peculiar features of her happy solitary life which she would probably be obliged to relinquish altogether. Sterner tasks than these graceful but half-needless ones would probably devolve upon her. There would be a large house to care for; there would be company to entertain ; there would be Joe's rigorous and feeble old mother to wait upon ; and it would be contrary to all thrifty village traditions for her to keep more than one servant. Louisa had a little still, and she used to occupy herself pleasantly in summer weather with distilling the sweet and aromatic essences from roses and peppermint and spear- mint. By-and-by her still must be laid away. Her store of essences was already considerable, and there would be no time for her to distil for the mere pleasure of it. Then Joe's mother would think it foolishness; she had already hinted her opinion in the matter. Louisa dearly loved to sew a linen scam, not always for use, but for the simple, mild pleasure which she took in it. She would have been loath to confess how more than once she had ripped a seam for the mere delight of sewing it together again. Sitting at her window during long sweet afternoons, drawing her needle gently through the dainty fabric, she was peace itself. But there was small chance of such foolish comfort in the future
+>
+> Louisa had almost the enthusiasm of an artist over the mere order and cleanliness of her solitary home. She had throbs of genuine triumph at the sight of the windowpanes which she had polished until they shone like jewels.
+---
+
+.topic[A New England Nun]
+
+> Louisa, all alone by herself that night, wept a little, she hardly knew why, but the next morning, on waking, she felt like a queen who, after fearing lest her domain be wrested away from her, sees it firmly insured in her possession. Now the tall weeds and grasses might cluster around Caesar's little hermit hut, the snow might fall on its roof year in and year out, but he never would go on a rampage through the unguarded village. Now the little canary might turn itself into a peaceful yellow ball night after night, and have no need to wake and flutter with wild terror against its bars. Louisa could sew linen seams, and distil roses, and dust and polish and fold away in lavender, as long as she listed. That afternoon she sat with her needle-work at the window, and felt fairly steeped in peace. Lily Dyer, tall and erect and blooming, went past; but she felt no qualm. If Louisa Ellis had sold her birthright she did not know it, the taste of the pottage was so delicious, and had been her sole satisfaction for so long.  Serenity and placid narrowness had become to her as the birthright itself. She gazed ahead through a long reach of future days strung together like pearls in a rosary, every one like the others, and all smooth and flawless and innocent, and her heart went up in thankfulness. Outside was the fervid sunnier afternoon; the air was filled with the sounds of the busy harvest of men and birds and bees; there were halloos, metallic clattering, sweet calls, and long hummings. Louisa sat, prayerfully numbering her days, like an uncloistered nun.
+
+---
+
+.topic[The Yellow Wallpaper]
+
+> It is dull enough to confuse the eye in following, pronounced enough to constantly irritate and provoke study, and when you follow the lame uncertain curves for a little distance they suddenly commit suicide—plunge off at outrageous angles, destroy themselves in unheard of contradictions.
+>
+> The color is repellent, almost revolting; a smouldering unclean yellow, strangely faded by the slow-turning sunlight.
+
+---
+.topic[The Yellow Wallpaper]
+
+> Then he took me in his arms and called me a blessed little goose, and said he would go down to the cellar, if I wished, and have it whitewashed into the bargain.
+>
+> But he is right enough about the beds and windows and things.
+>
+> It is an airy and comfortable room as any one need wish, and, of course, I would not be so silly as to make him uncomfortable just for a whim.
+
+---
+.topic[The Yellow Wallpaper]
+> Out of another I get a lovely view of the bay and a little private wharf belonging to the estate. There is a beautiful shaded lane that runs down there from the house. I always fancy I see people walking in these numerous paths and arbors, but John has cautioned me not to give way to fancy in the least. He says that with my imaginative power and habit of story-making, a nervous weakness like mine is sure to lead to all manner of excited fancies, and that I ought to use my will and good sense to check the tendency. So I try.
+
+---
+.topic[The Yellow Wallpaper]
+
+> Such a peculiar odor, too! I have spent hours in trying to analyze it, to find what it smelled like.
+>
+> It is not bad—at first, and very gentle, but quite the subtlest, most enduring odor I ever met.
+>
+> In this damp weather it is awful, I wake up in the night and find it hanging over me.
+>
+> It used to disturb me at first. I thought seriously of burning the house—to reach the smell.
+>
+> But now I am used to it. The only thing I can think of that it is like is the COLOR of the paper! A yellow smell.
+>
+> There is a very funny mark on this wall, low down, near the mopboard. A streak that runs round the room. It goes behind every piece of furniture, except the bed, a long, straight, even SMOOCH, as if it had been rubbed over and over.
+>
+> I wonder how it was done and who did it, and what they did it for. Round and round and round—round and round and round—it makes me dizzy!
+
+---
+
+.topic[The Yellow Wallpaper]
+>Behind that outside pattern the dim shapes get clearer every day.
+>
+>It is always the same shape, only very numerous.
+>
+>And it is like a woman stooping down and creeping about behind that pattern. I don't like it a bit. I wonder—I begin to think—I wish John would take me away from here!
+
+---
+.topic[The Yellow Wallpaper]
+
+> It is the same woman, I know, for she is always creeping, and most women do not creep by daylight.
+>
+> I see her on that long road under the trees, creeping along, and when a carriage comes she hides under the blackberry vines.
+>
+> I don't blame her a bit. It must be very humiliating to be caught creeping by daylight!
+>
+> I always lock the door when I creep by daylight. I can't do it at night, for I know John would suspect something at once.
+>
+> And John is so queer now, that I don't want to irritate him. I wish he would take another room! Besides, I don't want anybody to get that woman out at night but myself.
+>
+> I often wonder if I could see her out of all the windows at once.
+>
+> But, turn as fast as I can, I can only see out of one at one time.
+>
+> And though I always see her, she MAY be able to creep faster than I can turn!
+>
+> I have watched her sometimes away off in the open country, creeping as fast as a cloud shadow in a high wind.
+
+---
+
+.topic[The Yellow Wallpaper]
+> It is so pleasant to be out in this great room and creep around as I please!
+>
+> I don't want to go outside. I won't, even if Jennie asks me to.
+>
+> For outside you have to creep on the ground, and everything is green instead of yellow.
+>
+> But here I can creep smoothly on the floor, and my shoulder just fits in that long smooch around the wall, so I cannot lose my way.
+
+---
+
+.topic[The Yellow Wallpaper]
+
+> It was nursery first and then playroom and gymnasium, I should judge; for the windows are barred for little children, and there are rings and things in the walls.
+
+<hr>
+
+> How those children did tear about here!
+>
+> This bedstead is fairly gnawed!
+
+---
