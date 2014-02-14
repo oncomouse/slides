@@ -175,7 +175,7 @@ function load_charts() {
 		{
 			values: process_slide_data([3, 0, 0, 1, 0, 1, 1, 0, 0, 7, 2, 7, 3]),
 			key: "Frequency of Simple Chorus Poems",
-			label: "rgba(104, 68, 50, 0.85)"
+			color: "rgba(104, 68, 50, 0.85)"
 		}];
  
 		d3.select('#slide9_figure1')    //Select the <svg> element you want to render the chart in.   
