@@ -59,7 +59,7 @@ end
 configure :build do
 
 	ignore "/**/*.rb"
-    ignore "remark_base_template.html"
+    ignore "remark_markdown_template.html"
 	set :http_prefix, "/slides"
 	#set :http_prefix, "/new2"
 	# Change this to build with a different file root.	
@@ -111,7 +111,7 @@ while parse_files.length > 0
         else
             yaml_options = {}
         end
-        proxy "#{file.sub(File.extname(file), "")}", "remark_base_template.html", :locals => {:markdown_source => file, :yaml_options => yaml_options}
+        proxy "#{file.sub(File.extname(file), "")}", "remark_markdown_template.html", :locals => {:markdown_source => file, :yaml_options => yaml_options}
     end 
     
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
