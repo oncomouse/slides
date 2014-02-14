@@ -64,7 +64,7 @@
 		= javascript_include_tag("lib/head.min.js")
 
 		- # Assemble the call to head.js (ie. establish which libraries need loading)
-		- head_js_call = "zepto_js, remark_js"
+		- head_js_call = "remark_js"
 		- if load_charts and chart_type == "Charts.js"
 			- head_js_call += ", Charts_js, chart_file_js"
 		- elsif load_charts and chart_type == "nv.d3.js"
@@ -72,8 +72,7 @@
 		- if attach_progress_bar
 			- head_js_call += ", progress_bar_js"
 		:javascript
-			var zepto_js = "#{javascript_path "lib/zepto.min.js"}",
-			    remark_js = "#{javascript_path "remark/remark.min.js"}";
+			var remark_js = "#{javascript_path "remark/remark.min.js"}";
 				
 			#{ if load_charts and chart_type == "Charts.js" then "var Charts_js = \"#{javascript_path "lib/Charts.js"}\";" end}
 			#{ if load_charts and chart_type == "nv.d3.js" then "var d3_js = \"#{javascript_path "lib/nvd3/d3.min.js"}\", nv_d3_js = \"#{javascript_path "lib/nvd3/nv.d3.min.js"}\", nv_d3_css = \"#{asset_path :css, "nvd3/nv.d3.css"}\";" end }
