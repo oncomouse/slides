@@ -38,7 +38,6 @@ layout: false
 					- # Skip the template file
 					- next if resource.source_file =~ /remark_markdown_template.html.haml/
 					- if resource.data["title"] and resource.destination_path.count("/") <= depth
-						-if resource.data["title"] == "Default Slide Title"
 						%li
 							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
 							%small
