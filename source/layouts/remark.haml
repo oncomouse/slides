@@ -42,6 +42,8 @@
 	- chart_file_js = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".js"))}[0]
 	- if !chart_file_js.nil?
 		- chart_file_js = chart_file_js.destination_path.gsub(/javascripts\//,"")
+	- else
+		- load_charts = false
 	
 
 - # Test for progress_bar support. Can be added by setting progress_bar to true in the slide metadata.
