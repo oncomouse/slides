@@ -78,7 +78,7 @@
 		- if attach_progress_bar
 			- head_js_array.push(javascript_path("remark/add-ons/progress-bar.js"))
 		- def variable_name(path)
-			- File.basename(path).gsub(".min", "").gsub(/\./, "_")
+			- File.basename(path).gsub(".min", "").gsub(/\W/, "_")
 		- head_js_call = head_js_array.map { |x| variable_name(x)}.join(", ")
 		:javascript
 			// The javascript files to be loaded are determined by Middleman at compile:
