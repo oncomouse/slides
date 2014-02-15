@@ -64,20 +64,27 @@
 		= javascript_include_tag("lib/head.min.js")
 
 		- # Assemble the call to head.js (ie. establish which libraries need loading)
-		- head_js_call = "remark_js"
+		- head_js_array = []
+		- head_js_array.push(javascript_path("remark/remark.min.js"))
 		- if load_charts and chart_type == "Charts.js"
-			- head_js_call += ", Charts_js, chart_file_js"
+			- head_js_array.push(javascript_path("lib/zepto.min.js"))
+			- head_js_array.push(javascript_path("lib/Charts.js"))
+			- head_js_array.push(javascript_path(chart_file_js))
 		- elsif load_charts and chart_type == "nv.d3.js"
-			- head_js_call += ", d3_js, nv_d3_js, nv_d3_css, chart_file_js"
+			- head_js_array.push(javascript_path("lib/nvd3/d3.min.js"))
+			- head_js_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
+			- head_js_array.push(asset_path(:css, "nvd3/nv.d3.css"))
+			- head_js_array.push(javascript_path(chart_file_js))
 		- if attach_progress_bar
-			- head_js_call += ", progress_bar_js"
+			- head_js_array.push(javascript_path("remark/add-ons/progress-bar.js"))
+		- def variable_name(path)
+			- File.basename(path).gsub(".min", "").gsub(/\./, "_")
+		- head_js_call = head_js_array.map { |x| variable_name(x)}.join(", ")
 		:javascript
-			var remark_js = "#{javascript_path "remark/remark.min.js"}";
-				
-			#{ if load_charts and chart_type == "Charts.js" then "var Charts_js = \"#{javascript_path "lib/Charts.js"}\";" end}
-			#{ if load_charts and chart_type == "nv.d3.js" then "var d3_js = \"#{javascript_path "lib/nvd3/d3.min.js"}\", nv_d3_js = \"#{javascript_path "lib/nvd3/nv.d3.min.js"}\", nv_d3_css = \"#{asset_path :css, "nvd3/nv.d3.css"}\";" end }
-			#{ if load_charts then "var chart_file_js = \"#{javascript_path chart_file_js}\";" end }
-			#{ if attach_progress_bar then "var progress_bar_js = \"#{javascript_path "remark/add-ons/progress-bar.js"}\";" end }
+			// The javascript files to be loaded are determined by Middleman at compile:
+			var #{
+				head_js_array.map { |x| "#{variable_name(x)} = \"#{x}\""}.join(",\n\t  ")
+			};
 				
 			// This call to head.js is automatically determined by Middleman at compile:
 			head.load(#{head_js_call}, function(){
