@@ -110,9 +110,8 @@
 				document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
 				
 				// Load the slideshow:
-				slideshow = remark.create();
-				
-				// Load any add-ons (may be none):
+				slideshow = remark.create();		
+				#{if head_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end}
 				#{
 					head_load_callbacks.join("\n  ")
 				}
