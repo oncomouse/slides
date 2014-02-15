@@ -54,12 +54,14 @@ helpers do
 			
 end
 
+ready do
+    ignore "remark_markdown_template.html"
+end
 
 # Build-specific configuration
 configure :build do
 
 	ignore "/**/*.rb"
-    ignore "remark_markdown_template.html"
 	set :http_prefix, "/slides"
 	#set :http_prefix, "/new2"
 	# Change this to build with a different file root.	
