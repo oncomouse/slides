@@ -30,7 +30,7 @@ class:middle
 
 .center[
 ** Hippolyte Havel**  
-![Hugo](/images/hugo.png)]
+![Hugo](images/hugo.png)]
 
 > Hugo is a small man in his late fifties. He has a head much too big for his body, a high forehead, crinkly long black hair streaked with gray, a square face with a pug nose, a walrus mustache, black eyes which peer nearsightedly from behind thick-lensed spectacles, tiny hands and feet. He is dressed in threadbare black clothes and his white shirt is frayed at collar and cuffs, but everything about him is fastidiously clean. Even his flowing Windsor tie is neatly tied. There is a foreign atmosphere about him, the stamp of an alien radical, a strong resemblance to the type Anarchist as portrayed, bomb in hand, in newspaper cartoons.
 
