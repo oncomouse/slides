@@ -67,6 +67,7 @@
 		- head_js_array = []
 		- head_load_callbacks = []
 		- head_js_array.push(javascript_path("remark/remark.min.js"))
+		- head_js_array.push(javascript_path("remark/add-ons/remark.language.js"))
 		- if load_charts and chart_type == "Charts.js"
 			- head_js_array.push(javascript_path("lib/zepto.min.js"))
 			- head_js_array.push(javascript_path("lib/Charts.js"))
