@@ -3,7 +3,7 @@ Language: remark markdown flavor
 Author: Ole Petter Bang <olepbang@gmail.com>
 */
 
-hljs.LANGUAGES.remark = function(){
+remark.highlighter.engine.registerLanguage("remark", function(){
   return {
     contains: [
       {
@@ -29,4 +29,4 @@ hljs.LANGUAGES.remark = function(){
       }
     ]
   };
-}();
+});
