@@ -1,3 +1,4 @@
+!!! 5
 %html
 	%head
 		%meta{ :charset => "utf-8" }/
@@ -23,36 +24,43 @@
 		<!--[if lt IE 9]>
 		= javascript_include_tag "lib/html5shiv.js"
 		<![endif]-->
-
+		
+		= javascript_include_tag "lib/head.min.js"
+		:javascript
+			var reveal_js = "#{javascript_path "reveal/reveal.min.js"}";
+			
+			head.load(
+				reveal_js,
+				function() {
+			        Reveal.initialize({
+			        	controls: false,
+			        	progress: true,
+			        	history: true,
+			        	center: false,
+			        	viewDistance: 3,
+			        	minScale: 0.2,
+			        	maxScale: 1,
+			        	margin: 0.1,
+      
+			        	theme: Reveal.getQueryHash().theme || "hj", // List available in stylesheets/reveal/themes
+			        	transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
+      
+			        	// Optional libraries used to extend on reveal.js
+			        	dependencies: [
+			        		{ src: 'javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+			        		// { src: 'javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			        		// { src: 'javascripts/reveal/plugin/markdown/markdown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			        		{ src: 'javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			        		{ src: 'javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+			        		{ src: 'javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+			        		// { src: 'javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
+			        		// { src: 'javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+			        	]
+			        });
+				}
+			);
 	%body
 		.reveal
 			.slides
 				= yield
-		= javascript_include_tag "lib/head.min.js", "reveal/reveal.min.js"
-
-		:javascript
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: false,
-				viewDistance: 3,
-				minScale: 0.2,
-				maxScale: 1,
-				margin: 0.1,
-
-				theme: Reveal.getQueryHash().theme || "#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}", // List available in stylesheets/reveal/themes
-				transition: Reveal.getQueryHash().transition || "#{(current_resource.data['transition']) ? current_resource.data['transition'] : "default"}", // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: '#{javascript_path "lib/classList.js"}', condition: function() { return !document.body.classList; } },
-					// { src: '#{javascript_path "reveal/plugin/markdown/marked.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					// { src: '#{javascript_path "reveal/plugin/markdown/markdown.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '#{javascript_path "reveal/plugin/highlight/highlight.js"}',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '#{javascript_path "reveal/plugin/zoom-js/zoom.js"}',  async: true, condition: function() { return !!document.body.classList; } },
-					{ src: '#{javascript_path "reveal/plugin/notes/notes.js"}',  async: true, condition: function() { return !!document.body.classList; } }
-					// { src: '#{javascript_path "reveal/plugin/search/search.js"}',  async: true, condition: function() { return !!document.body.classList; } }
-					// { src: '#{javascript_path "reveal/plugin/remotes/remotes.js"}',  async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+	
