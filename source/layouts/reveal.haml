@@ -35,7 +35,11 @@
 				controls: false,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
+				viewDistance: 3,
+				minScale: 0.2,
+				maxScale: 1,
+				margin: 0.1,
 
 				theme: Reveal.getQueryHash().theme || "#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}", // List available in stylesheets/reveal/themes
 				transition: Reveal.getQueryHash().transition || "#{(current_resource.data['transition']) ? current_resource.data['transition'] : "default"}", // default/cube/page/concave/zoom/linear/fade/none
