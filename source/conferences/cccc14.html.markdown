@@ -67,7 +67,9 @@ class: alaska
 ]
 
 .right-column[
+
 ![](http://upload.wikimedia.org/wikipedia/en/f/f6/Ingress_Intel_Map_full-screen.png)
+
 ]
 
 ---
@@ -202,3 +204,8 @@ class:dancing-bug3
 .copyright[
 ### "Tom the Dancing Bug" &copy; R. Bolling, 2013
 ]
+
+---
+class: center, middle
+
+# Thank You
