@@ -171,6 +171,9 @@ code
 	font-style: normal
 
 .twitter_badge
+	position: relative
+	margin-left: 30px
+	
 	&:before, &:after
 		font-family: 'icomoon'
 		speak: none
@@ -181,7 +184,10 @@ code
 		line-height: 1
 		-webkit-font-smoothing: antialiased
 		font:
-			size: 1.155em
+			size: 0.95em
 
-.twitter_badge:before 
-	content: "\22"
+	&:before 
+		content: "\22"
+		position: absolute
+		top: 7px
+		left: -30px
