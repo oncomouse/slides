@@ -12,17 +12,19 @@ class: center, middle,title
 ## GPS, Surveillance Culture, Personal Narrative
 ]
 
+.author[
 .title-block[
 ## Andrew Pilsch
-### .twitter_badge[@oncomouse]
 ## Arizona State University
-]
+### .twitter_badge[@oncomouse]
+]]
 
+.location[
 .title-block[
 ## CCCC 2014
 ## Indianapolis, IN
 ## March 21, 2014
-]
+]]
 
 ---
 class:alaska
