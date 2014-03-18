@@ -159,6 +159,7 @@ class:psychogeography
 ]
 
 ---
+class: metadata
 .left-column[
 
 ### GPS
