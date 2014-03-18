@@ -42,8 +42,8 @@
 			        	maxScale: 1,
 			        	margin: 0.1,
       
-			        	theme: Reveal.getQueryHash().theme || "hj", // List available in stylesheets/reveal/themes
-			        	transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
+			        	theme: Reveal.getQueryHash().theme || "#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}", // List available in stylesheets/reveal/themes
+			        	transition: Reveal.getQueryHash().transition || "#{(current_resource.data['transition']) ? current_resource.data['transition'] : "default"}", // default/cube/page/concave/zoom/linear/fade/none
       
 			        	// Optional libraries used to extend on reveal.js
 			        	dependencies: [
