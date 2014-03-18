@@ -114,6 +114,27 @@ class: alaska
 >
 > _Guy DeBord, "Introduction to the Critique of Urban Geography"_
 ]
+---
+class:psychogeography
+.left-column[
+
+### GPS
+
+.current[
+### Psychogeography
+]
+
+### Distant Reading
+
+### Surveillance
+]
+
+.right-column[
+
+![](http://mappingweirdstuff.files.wordpress.com/2009/06/debord-guide1.jpg)
+
+]
+
 
 ---
 .left-column[
@@ -138,6 +159,56 @@ class: alaska
 ]
 
 ---
+.left-column[
+
+### GPS
+
+### Psychogeography
+
+### Distant Reading
+
+.current[
+### Surveillance
+]
+
+]
+
+.right-column[
+
+> This is, at base, a factual dispute. Is it easy to draw sensitive inferences from phone metadata? How often do people conduct sensitive matters by phone, in a manner reflected by metadata?
+>
+>At the outset of this study, we shared the same hypothesis as our computer science colleagues—we thought phone metadata could be very sensitive. We did not anticipate finding much evidence one way or the other, however, since the MetaPhone participant population is small and participants only provide a few months of phone activity on average.
+>
+>We were wrong. We found that phone metadata is unambiguously sensitive, even in a small population and over a short time window. We were able to infer medical conditions, firearm ownership, and more, using solely phone metadata.
+>
+> — _Mayer &amp; Mulcher, "MetaPhone: The Sensitivity of Telephone Metadata"_
+
+]
+
+---
+.left-column[
+
+### GPS
+
+### Psychogeography
+
+### Distant Reading
+
+.current[
+### Surveillance
+]
+
+]
+
+.right-column[
+
+> Participant E had a long, early morning call with her sister. Two days later, she placed a series of calls to the local Planned Parenthood location. She placed brief additional calls two weeks later, and made a final call a month after.
+>
+> — _Mayer &amp; Mulcher, "MetaPhone: The Sensitivity of Telephone Metadata"_
+
+]
+
+---
 class:dancing-bug1
 .left-column[
 
@@ -154,6 +225,7 @@ class:dancing-bug1
 ]
 
 .right-column[
+
 ![Tom the Dancing Bug](http://media.boingboing.net/wp-content/uploads/2013/06/1144cbCOMIC-chagrin-falls-open-book.jpg)
 ]
 .copyright[
@@ -203,6 +275,29 @@ class:dancing-bug3
 ]
 .copyright[
 ### "Tom the Dancing Bug" &copy; R. Bolling, 2013
+]
+
+---
+class: utah
+
+.left-column[
+
+### GPS
+
+### Psychogeography
+
+### Distant Reading
+
+.current[
+### Surveillance
+]
+
+]
+
+.right-column[
+
+![](http://www.datacenterdynamics.com/sites/default/files/nsa%20utah%202_0.jpg)
+
 ]
 
 ---
