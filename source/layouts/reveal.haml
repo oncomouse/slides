@@ -13,6 +13,9 @@
 
 		= stylesheet_link_tag "reveal/reveal.css"
 		= stylesheet_link_tag "reveal/theme/#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}.css",  :id => "theme"
+		- slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
+		- if !slideshow_specific_css.nil?
+			= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
 
 		<!-- For syntax highlighting -->
 		= stylesheet_link_tag "reveal/hljs/zenburn.css"
