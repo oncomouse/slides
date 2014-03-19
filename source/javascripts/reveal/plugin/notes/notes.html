@@ -180,12 +180,14 @@
 							}
 							else {
 								notes.innerHTML = data.notes;
+								window.scroll(0,0);
 							}
 						}
 
 						// Showing and hiding fragments
 						if( data.fragment === 'next' ) {
 							currentSlide.contentWindow.Reveal.nextFragment();
+							
 						}
 						else if( data.fragment === 'prev' ) {
 							currentSlide.contentWindow.Reveal.prevFragment();
@@ -193,9 +195,8 @@
 						else {
 							// Update the note slides
 							currentSlide.contentWindow.Reveal.slide( data.indexh, data.indexv );
-							nextSlide.contentWindow.Reveal.slide( data.nextindexh, data.nextindexv );
+							nextSlide.contentWindow.Reveal.slide( data.nextindexh, data.nextindexv );	
 						}
-
 					}, false );
 
 					var start = new Date(),
