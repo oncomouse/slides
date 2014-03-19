@@ -39,7 +39,7 @@
 			        	controls: false,
 			        	progress: true,
 			        	history: true,
-			        	center: false,
+			        	center: true,
 			        	viewDistance: 3,
 			        	minScale: 0.2,
 			        	maxScale: 1,
@@ -47,23 +47,71 @@
       
 			        	theme: Reveal.getQueryHash().theme || "#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}", // List available in stylesheets/reveal/themes
 			        	transition: Reveal.getQueryHash().transition || "#{(current_resource.data['transition']) ? current_resource.data['transition'] : "default"}", // default/cube/page/concave/zoom/linear/fade/none
+						transitionSpeed: '#{(current_resource.data['transitionSpeed']) ? current_resource.data['transitionSpeed'] : "default"}',
       
 			        	// Optional libraries used to extend on reveal.js
 			        	dependencies: [
-			        		{ src: 'javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
-			        		// { src: 'javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			        		// { src: 'javascripts/reveal/plugin/markdown/markdown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			        		{ src: 'javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-			        		{ src: 'javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
-			        		{ src: 'javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
-			        		// { src: 'javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
-			        		// { src: 'javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+			        		{ src: '#{javascript_path "lib/classList.js"}', condition: function() { return !document.body.classList; } },
+			        		// { src: '#{javascript_path "reveal/plugin/markdown/marked.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			        		// { src: '#{javascript_path "reveal/plugin/markdown/markedown.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			        		{ src: '#{javascript_path "reveal/plugin/highlight/highlight.js"}',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			        		{ src: '#{javascript_path "reveal/plugin/zoom-js/zoom.js"}',  async: true, condition: function() { return !!document.body.classList; } },
+			        		{ src: '#{javascript_path "reveal/plugin/notes/notes.js"}',  async: true, condition: function() { return !!document.body.classList; } }
+			        		// { src: '#{javascript_path "reveal/plugin/search/search.js"}',  async: true, condition: function() { return !!document.body.classList; } }
+			        		// { src: '#{javascript_path "reveal/plugin/remotes/remotes.js"}',  async: true, condition: function() { return !!document.body.classList; } }
 			        	]
 			        });
 				}
 			);
 	%body
 		.reveal
+			- def icomoon_loader(format)
+				- icomoon_path = asset_path(:css, 'remark/fonts/icomoon/icomoon')
+				- return icomoon_path.sub(/\.css$/,".#{format}")
+			:sass
+				/* Include a Twitter Icon */
+				@font-face 
+					font-family: 'icomoon'
+					src: url('#{icomoon_loader('eot')}')
+					src: url('#{icomoon_loader('eot')}?#iefix') format('embedded-opentype'), url('#{icomoon_loader('woff')}') format('woff'), url('#{icomoon_loader('ttf')}') format('truetype'),url('#{icomoon_loader('svg')}#icomoon') format('svg')
+					font-weight: normal
+					font-style: normal
+
+				.twitter_badge
+					position: relative
+					margin-left: 1.15em !important
+					display: inline-block
+	
+					&:before, &:after
+						font-family: 'icomoon'
+						speak: none
+						font-style: normal
+						font-weight: normal
+						font-variant: normal
+						text-transform: none
+						line-height: 0.95em
+						-webkit-font-smoothing: antialiased
+						font:
+							size: 0.95em
+
+					&:before 
+						content: "\22"
+						position: absolute
+						top: -0.05em
+						left: -1.15em
+				#watermark
+					position: fixed
+					z-index: 1000
+					bottom: 0.25em
+					right: 0.5em
+					font-size: 0.7em
+					&:before
+						top: 0.23em !important
+				.reveal
+					h2, p
+						text-align: left
+			%p#watermark.twitter_badge
+				@oncomouse
 			.slides
 				= yield
 	
