@@ -1,0 +1,17 @@
+@import "bourbon/bourbon"
+@import "neat/neat"
+
+.place
+	img
+		width: 350px
+	.left-column
+		@include span-columns(4)
+	.right-column
+		@include span-columns(8)
+		+omega
+		text-align: center
+.ardois
+	img
+		width: 75%
+		display: block
+		margin: 0 auto
