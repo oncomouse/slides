@@ -112,7 +112,12 @@
 				document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
 				
 				// Load the slideshow:
-				slideshow = remark.create();		
+				slideshow = remark.create({
+					navigation: {
+						scroll: false,
+						touch: false
+					}
+				});		
 				#{if head_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end}
 				#{
 					head_load_callbacks.join("\n  ")
