@@ -47,6 +47,9 @@ helpers do
 	def javascript_path(file_path)
 		asset_path(:js, file_path)
 	end
+    def image_path(file_path)
+        asset_path(:images, file_path)
+    end
 	
 	def directories_with_slides
 		sitemap.resources.map{ |resource| if (!(resource.destination_path =~ /(javascripts|stylesheets|images|fonts)\//) and resource.destination_path =~ /\//) then resource.destination_path.gsub(/\/.*\.[A-Za-z]+$/,"") end }.delete_if {|x| x.nil? }.uniq
