@@ -1,0 +1,304 @@
+---
+layout: reveal
+title: RSA 14
+theme: simple
+transition: linear
+transitionSpeed: fast
+---
+:sass
+	@import bourbon/bourbon
+	.center
+		iframe.twitter-tweet
+			margin: auto !important
+	.reveal
+		img
+			border: 0 !important
+		h2
+			//line-height: 1.25em !important
+		blockquote
+			width: 100% !important
+			font:
+				style: normal !important
+			p
+				line-height: 1.35em !important
+				&:last-child
+					text-align: right
+					margin:
+						top: 0.5em
+					font:
+						weight: 400
+						style: italic
+					display: block
+					width: 100%
+					&:before
+						content: "—"
+					em
+						font-style: normal
+			text:
+				align: left
+	.title
+		h2
+			font:
+				weight: 400
+				size: 1.6em
+			margin-top: 1em
+	.things
+		margin-top: 2em !important
+		@include clearfix
+	.thing
+		float: left
+		&:nth-child(1), &:nth-child(2)
+			&:after
+				content: "⋯"
+				font-size: 150px
+				padding:
+					left: 50px
+					right: 50px
+	.references
+		width: 100%
+		margin: 0 auto !important
+		text-align: left
+		p
+			font-size: 0.65em !important
+			padding-left: 0.5in
+			text-indent: -0.5in
+%section.title
+	.title-block
+		%h1 Posthuman, <br> Nonhuman, <br> Inhuman
+	%h2 Andrew Pilsch, Arizona State
+	%aside.notes
+		:markdown
+			My talk today will explore a rhetoric of inhumanism. As I will argue, I consider inhumanism to be a darkly parasitic discourse on what I see as an overly optimistic posthuman turn in rhetorical theory, embodied at its fullest in the piecemeal body of scholarship we could refer to as "object-oriented rhetoric." This recent turn away from a human-oriented rhetorical theory culminates, I argue, a decades-long project of general academic posthumanism. Beginning with Foucault's evocation of the human as a design traced on the water's edge, its sand being slowly eroded by an oncoming tide of ... something else, the project of over-turing humanist philosophy's myriad of biases has played out in a number of ways. In the 1990s and early 2000s (when I got interested in the subject), posthumanism was all about robots:
+%section
+	= image_tag "http://i.telegraph.co.uk/multimedia/archive/02282/robocop_2282286b.jpg"
+	%aside.notes
+		:markdown
+			the cyborgs and information our bodies were destined to become. Rhetoricians have largely absorbed this cybernetic turn in the figure of technological/ecological composition: the rhetor as a composer at the heart of a web of digital/informatic technologies that has produced a mountain of exciting scholarship. From this cyborg moment, following the work of Carey Wolfe primarily, posthumanism has bafflingly, I think, turned to the question of the animal:
+%section
+	= image_tag "http://www.hotxblog.com/images/golden_eagle_hunting6.jpg"
+	%aside.notes
+		:markdown
+			overcoming the privileging of Descarte's *cogito* by recognizing the animal that we therefore are. This turn, I think, has proved more problematic for rhetorical theory. On the one hand, we have George Kennedy's account of animal communication as precursor to human persuasion and on the other, I argue, we have whatever it is people are doing to adapt Graham Harman's object-oriented ontology to the topic of rhetoric.
+%section
+	%h2 Posthumanism
+	.things
+		.thing
+			= image_tag "robot.png"
+		.thing
+			= image_tag "eagle.png"
+		.thing
+			= image_tag "rock.png"
+	%aside.notes
+		:markdown
+			It's important, I think, to acknowledge all of this (cyborgs, animals, stuff) as existing on a continuum of ideas provoked by Foucault's claim that the human was an intellectual construct for configuring the power structures that variously made imperialism, capitalism, and militarism possible for the last 500 years or so. In experimenting with what comes after this hoped-for erasure of the human, intellectual interest in posthumanism seems to have slipped into the realm of that which always surrounded and formerly silently undergirded our humanism: namely, this is the shift (best represented by OOO) from the posthuman to the nonhuman as focus of discourse. Today, however, I propose to discuss some problems, from a rhetorical standpoint, with the way this nonhuman turn is playing out in rhetorical theory, and, instead, propose a counterrhetoric to this turn to animals and stuff: 
+%section.center
+	%h1 Inhumanism
+	%aside.notes
+		:markdown
+			what I am calling "inhumanism."
+
+			In the nonhuman turn, posthumanism becomes a kind of liberal cosmopolitanism, the twin stranded philosophy of worldliness that
+%section
+	= image_tag "http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kwame_Anthony_Appiah.jpg/401px-Kwame_Anthony_Appiah.jpg"
+	%aside.notes
+		:markdown
+			Kwame Anthony Appiah defines as being of two intertwined notions: QUOTE "the idea that we have obligations to others, obligations that stretch beyond those to whom we are related by the ties of kith and kind" UNQUOTE and QUOTE "that we have to take seriously the value not just of human life but of particular human lives, which means taking an interest in the practices and beliefs that lend them significance" UNQUOTE. I'm thinking here of Jim Brown's concept of "decorous" relationships with objects or Nathaniel Rivers understanding of nonhumans as part of the "masses" appealed to by public rhetoric, when I think about object-oriented rhetoric as a project of *non-human cosmopolitanism*.
+%section
+	:markdown
+		> [W]e come to a point where each of us can realistically imagine contacting any other of our six billion conspecifics and sending that person something worth having: a radio, an antibiotic, a good idea. Unfortunately, we could also send, through negligence as easily as malice, things that will cause harm: a virus, an airborne pollutant, a bad idea.
+		>
+		> Appiah, _Cosmopolitanism_
+	%aside.notes
+		:markdown
+			However, as Appiah points out, these two threads can be both good and bad, 
+
+			> we come to a point where each of us can realistically imagine contacting any other of our six billion conspecifics and sending that person something worth having: a radio, an antibiotic, a good idea. Unfortunately, we could also send, through negligence as easily as malice, things that will cause harm: a virus, an airborne pollutant, a bad idea.
+			
+			So, while Appiah is pointedly interested in people, I think my point is at least worth considering as a thought experiment: what if object-oriented ontology is just extending the rhetoric of cosmopolitanism to objects? It seems that this is a distinct possibility. However, I am concerned that the rhetoric of object-oriented rhetoric is too concerned with the "sending something worth having" part of Appiah's understanding of cosmopolitan and is negligent about sending "things that will cause harm."
+			
+			Consider this example from Brown and Rivers's recent article "Composing the Carpenter's Workshop." In concluding their discussion of rhetoric and composition's ability to QUOTE "construct strange conversations" between sets of nonhuman objects, they offer the following example, of future composition-oriented classroom in which students are extruding a blue plastic object (that QUOTE "looks like a helmet") from a 3D printer. As this object emerges into being, QUOTE "the blue object is not, in fact, a helmet, but a puzzle
+%section
+	:markdown
+		> The challenge is to evenly apportion the water in all of the compartments by sliding open and close the dividers inside the sphere. The object of the object is to foreground water itself as a political actor. Aside from the human intention to fairly distribute fresh water (which might or might not be present), the puzzle presents water as an object with its own purposes and features, both of which make it difficult to control. Through this object, environmental rhetoric becomes something other than the task of shaping human hearts and minds to “save the world,” and instead becomes something more akin to the recognition that the “world itself” is likewise populated by a plethora of nonhuman political actors.
+		>
+		> Brown & Rivers, "Composing the Carpenter's Workshop"
+	%aside.notes
+		:markdown
+			> The challenge is to evenly apportion the water in all of the compartments by sliding open and close the dividers inside the sphere. The object of the object is to foreground water itself as a political actor. Aside from the human intention to fairly distribute fresh water (which might or might not be present), the puzzle presents water as an object with its own purposes and features, both of which make it difficult to control. Through this object, environmental rhetoric becomes something other than the task of shaping human hearts and minds to “save the world,” and instead becomes something more akin to the recognition that the “world itself” is likewise populated by a plethora of nonhuman political actors.
+			
+			So if I understand the lesson to take from Brown and Rivers here, the blue plastic object connects us with water in a new way, provoking our understanding of global environmentalism through the strange conversation between water and plastic thing (I'm riffing here, as Brown and Rivers don't explain this example in their essay). In other words, the students are marshaling this plastic object in order to provoke a richer experience of water, accessing one opaque object through a concrete, tangible thing, birthed for this purpose.
+
+			You see, all of this makes me think of images of colonial servants carrying their British employers across the landscape of Victorian India.
+%section.center
+	=image_tag "http://i.imgur.com/dY6ZF.jpg"
+	%aside.notes
+		:markdown
+			n my example, as with the puzzle, the servant, a specific object in the flat ontology compelled by OOO's worldview, is certainly provoking a richer understanding of the biodiversity of the opaque object of India's ecology. My specific comparison to the colonial mobilization of bodies is deliberate and ultimately provoked by Brown and Rivers's language. 
+
+			In mentioning ethical upshots of a rhetorical carpentry, they suggest that
+%section
+	:markdown
+		> Such an approach might very well inform an alternative exploration of subaltern others, simulating the experience of those at the margins. Such simulations will only be able to catch what Bogost calls the “exhaust” of a subaltern’s experience, but we would argue that rhetoric is well- suited for such a task.
+		>
+		> ... Objectifying others, if objects are taken as autonomous and always withdrawn, is here the most ethical approach. Bogost’s carpentry calls for us to create machines that simulate the experience of another, and one can imagine that rhetorical carpentry could make great strides by simulating the experience of both humans and nonhumans, presenting a unique site of persuasion and perhaps even identification.
+		>
+		> Brown & Rivers, "Composing the Carpenter's Workshop"
+	%aside.notes
+		:markdown
+			In mentioning ethical upshots of a rhetorical carpentry, they suggest that
+
+			> Such an approach might very well inform an alternative exploration of subaltern others, simulating the experience of those at the margins. Such simulations will only be able to catch what Bogost calls the “exhaust” of a subaltern’s experience, but we would argue that rhetoric is well- suited for such a task.
+
+			Horrifying as this claim may appear, they explain that
+
+			> Objectifying others, if objects are taken as autonomous and always withdrawn, is here the most ethical approach. Bogost’s carpentry calls for us to create machines that simulate the experience of another, and one can imagine that rhetorical carpentry could make great strides by simulating the experience of both humans and nonhumans, presenting a unique site of persuasion and perhaps even identification.
+
+			In this claim, then, software simulations of The Other's experience can provoke something like an ethical understanding, but, as with the blue plastic or the master's servant, what of the software enslaved to these simulations (nevermind the question of the software's author who may or may not accurately simulate anything)? Brown and Rivers, seem to be ignoring the "objects all the way down" implications of Harman's original insight. Additionally, given my counterexample of the servant carrying the master across India, objectifying people has, historically, the habit of opening up the instrumentalization of human bodies
+
+%section
+	= image_tag "http://africasacountry.com/wp-content/uploads/2011/09/osho-on-karl-marx.jpeg"
+
+	%aside.notes
+		:markdown
+			(cf. Marx, Karl). While Brown and Rivers argue that a Bogostian understanding of rhetorical carpentry can also open the space for an object to speak for itself (and it does), as Appiah reminds us, cosmopolitanism also has a dark side, laden with rhetorical goodwill doing bad as well as ill-will doing bad.
+
+%section
+	= image_tag "http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Gayatri_Chakravorty_Spivak_at_Goldsmiths_College.jpg/449px-Gayatri_Chakravorty_Spivak_at_Goldsmiths_College.jpg"
+	%aside.notes
+		:markdown
+			Moreover, given the usage of "subaltern" (one of the most loaded of terms in critical theory), looking at Gayatri Spivak's influential work on the concept is instructive. Writing on the question of the appropriation of class struggle and consciousness within the poststructural theories of Deleuze and Foucault, Spivak argues that in their work
+%section
+	:markdown
+		>  Are those who act and *struggle* mute, as opposed to those who act and *speak*? These immense problems are buried in the differences between the 'same' words: consciousness and conscience (both *conscience* in French), representation and re-presentation. The critique of ideological subject-constitution within state formations and systems of political economy can now be effaced, as can the active theoretical practice of the 'transformation of consciousness'. The banality of leftist intellectuals' lists of self-knowing, politically canny subalterns stands revealed; representing them, the intellectuals represent themselves as transparent.
+		>
+		> Spivak, "Can the Subaltern Speak?"
+	%aside.notes
+		:markdown
+			> Two senses of representation are being run together: representation as 'speaking' for, as in politics, and representation as 're-presentation', as in art or philosophy ... Are those who act and *struggle* mute, as opposed to those who act and *speak*? These immense problems are buried in the differences between the 'same' words: consciousness and conscience (both *conscience* in French), representation and re-presentation. The critique of ideological subject-constitution within state formations and systems of political economy can now be effaced, as can the active theoretical practice of the 'transformation of consciousness'. The banality of leftist intellectuals' lists of self-knowing, politically canny subalterns stands revealed; representing them, the intellectuals represent themselves as transparent.
+			
+			Can we not, now, suggest that there is something of this will to transparency at work in the carpentry model of rhetorical or philosophical speculation? Brown and Rivers, not to mention Bogost who is equally imbricated here, construct the carpenter as transparent vessel, building simulations and putting other objects into "strange conversations." As Brown writes on the decorum of objects,
+%section
+	:markdown
+		> By engaging with objects and putting them into relation with one another (and by understanding that we are *enmeshed* in this process rather than *in charge* of it) we can consider how objects act differently in different rhetorical situations.
+		>
+		> Brown, "The Decorum of Objects"
+	%aside.notes
+		:markdown
+			> By engaging with objects and putting them into relation with one another (and by understanding that we are *enmeshed* in this process rather than *in charge* of it) we can consider how objects act differently in different rhetorical situations.
+			
+			*We* put *them* into relation with one another (I can't help think of the selective breeding of horses here). *We* do all of this, and while this may only enmesh us in their relationship it still assigns the carpenter a privileged position: pushing two objects together, seeing what happens, and compiling our knowledge. This is the same kind of scientific worldview described in Nancy Merchant's *The Rape of Nature* or Martin Heidegger's concept of standing reserve.
+%section.center
+	%h2.fragment The World-For-Us
+	%h2.fragment The World-In-Itself
+	%h2.fragment <strong>The World-Without-Us</strong>
+	%aside.notes
+		:markdown
+			Moreover, this places us as rhetoricians into an interesting dichotomy between what Eugene Thacker calls (CLICK) "the world-for-us" (of correlationist philosophy) and (CLICK) "the world-in-itself" (of this classic scientific method). Rhetoric, prior to the nonhuman turn, has been a domain of the correlationist "world-for-us," and I argue that rhetorical carpentry is an attempt to shift rhetoric into the scientific "world-in-itself" of things as they are. I am dubious of this operation, for reasons I've already elucidated. 
+
+			However, what I am interested in, and what I think gives rhetoric a novel place in the construction of the posthumanities, is Thacker's third term (CLICK) "the world-without-us." As he writes,
+%section
+	:markdown
+		> the world-without-us cannot co-exist with the human world-for-us; the world-without-us is the subtraction of the human from the world. To say that the world-without-us is antagonistic to the human is to attempt to put things in human terms, in the terms of the world-for-us. To say that the world-without-us is neutral with respect to the human, is to attempt to put things in the terms of the world-in-itself. The world-without-us lies somewhere in between, in a nebulous zone that is at once impersonal and horrific. The world-without-us is as much a cultural concept as it is a scientific one.
+		>
+		> Thacker, _In the Dust of This Planet_
+	%aside.notes
+		:markdown
+			> the world-without-us cannot co-exist with the human world-for-us; the world-without-us is the subtraction of the human from the world. To say that the world-without-us is antagonistic to the human is to attempt to put things in human terms, in the terms of the world-for-us. To say that the world-without-us is neutral with respect to the human, is to attempt to put things in the terms of the world-in-itself. The world-without-us lies somewhere in between, in a nebulous zone that is at once impersonal and horrific. The world-without-us is as much a cultural concept as it is a scientific one. [@thacker_dust_2011, pp. 5-6]
+
+			From my perspective, especially contra Brown and Rivers, the world-without-us (the domain occupied by Harman's occluded objects) is fundamentally inhuman, neither human nor nonhuman: a third space between culture and science, between horror and impersonality. Thacker's book on horror and philosophy is a strong (though, I think, mostly overlooked) rebuke of the Ian Bogost version of OOO: we cannot hope to enlist nonhumans into "our" democracy. The domain of the Harmanian object is the world-without-us, a world of cold insanity. This horror is why Thacker privileges science fiction and, especially, weird horror as the best realm for thinking through this dimension of Being.
+
+			Following Thacker and in contrast to the concept of carpentry, I want to put forward that my concept of inhumanism is the rhetoric of the world-without-us,
+%section
+	= image_tag "http://www.metal-archives.com/images/4/2/3/3/4233.jpg"
+	%aside.notes
+		:markdown
+			a rhetoric of the creeping death, the things that ominously surround us,
+%section
+	= image_tag "http://upload.wikimedia.org/wikipedia/commons/f/ff/Air_.pollution_1.jpg"
+	%aside.notes
+		:markdown
+			fill our lungs with poison and mutated flu viruses, cover our skins with lesions and spots that might be cancer (we should get that looked at), and control the economic destinies of our lives in a million ways that we could never even know, control, or understand. It is the slowly dawning knowledge of the imminent collapse of our way of life and the co-emergent understanding of our imbrication in this collapse and our inability to stop it. Intensifying the layer of stuff alternately "churning" and "rumbling" just beyond human perception in the object-oriented philosophy of Graham Harman, Timothy Morton, and Ian Bogost, I want to suggest that nonhuman rhetoric offers a quaintly human attempt to grasp and control the inhuman, the rhetorical agencies that manipulate our fragile being beyond anything we could hope to "understand." In other words, I want to take very seriously the idea that our stuff may not be interested in participating in our experiments into the nature of nonhuman reality.
+
+			The gibbering insanity of the inhuman, to me, offers a counterrhetoric to the participatory (and vaguely neo-liberal) ideas of "democracy of objects" or "parliament of things"
+%section
+	= image_tag "http://37.media.tumblr.com/tumblr_m7o739j7cN1rysqqjo1_500.jpg"
+	%aside.notes
+		:markdown
+			or whatever Pee-wee's Playhouse of friendly talking furniture you want to assemble.
+%section
+	=image_tag "http://upload.wikimedia.org/wikipedia/commons/d/d3/Howard_Phillips_Lovecraft_in_1915_%282%29.jpg"
+	%aside.notes
+		:markdown
+			Following Thacker, and Graham Harman himself, I am sourcing my understanding of inhuman rhetoric from the weird fiction of H.P. Lovecraft. An obscure author of proto-science-fiction, the so-called "weird tale," for much of the twentieth century, Lovecraft has, in the last twenty years, exploded into the cultural limelight, with the publication of corrected editions of his work by Penguin and his canonization through publication in the elite and highly selective Library of America series. Behind this new centrality, though, lies a dark churning of the inhuman, this awareness of the increasing relevance of the world-without-us to our daily affairs.
+
+			To whit, we can see how Lovecraft is increasingly being used in academic discourse. In various blog posts, articles, and talks, object-oriented ecologist Timothy Morton has introduced the subject of his 2013 book on hyperobjects through a discussion of Lovecraft:
+%section
+	:markdown
+		> Hyperobjects are time-squished. To this extent H. P. Lovecraft’s monstrous god Cthulhu is a hyperobject, a giant squid-like being floating asleep in a non-Euclidean realm out there in the Universe. Our ecological devastation has summoned these Cthulhu-like hyperobjects to terrorize us.
+		>
+		> Morton, "Zero Landscapes in the Time of Hyperobjects"
+	%aside.notes
+		:markdown
+			> Hyperobjects are time-squished. To this extent H. P. Lovecraft’s monstrous god Cthulhu is a hyperobject, a giant squid-like being floating asleep in a non-Euclidean realm out there in the Universe. Our ecological devastation has summoned these Cthulhu-like hyperobjects to terrorize us.
+%section
+	=image_tag "http://img1.wikia.nocookie.net/__cb20100202021245/lovecraft/images/1/1b/Kraken-cthulhu.jpg"
+	%aside.notes
+		:markdown
+			Similarly, in _The Emergence of the Digital Humanities_ (2013), Steven E Jones suggests that the non-Euclidean geometries of Cthulhu's body and his submerged home of R'yleh offer a way of thinking about digital landscapes in video games. Alexis Madrigal on his blog for *The Atlantic* has suggested that Cthulhu's merciless and alien otherness is a way to think through the growing dominance of big data in shaping our lives.
+			
+			Global warming, digital realms, and big data: three *topoi* no doubt familiar to and discussed by many rhetoricians at this conference. All three evoked and explained through recourse to H.P. Lovecraft's most famous creation, the "great old one" he called Cthulhu. Most fully evoked in Lovecraft's famous story, "The Call of Cthulhu" (1926), Cthulhu represents an alien other, even on the level of the name. As Lovecraft explains in a 1934 letter to Duane Rimel,
+%section
+	:markdown
+		> the word is supposed to represent a fumbling human attempt to catch the phonetics of an *absolutely non-human word*. The name of the hellish entity was invented by beings whose vocal organs were not like man's, hence it has no relation to the human speech equipment. The syllables were determined by a physiological equipment wholly unlike ours, *hence could never be uttered perfectly by human throats*. In the story we have human beings who habitually use the word as best they can; but all they can do is to *approximate* it.
+		>
+		> Lovecraft, Letter to Duane Rimel, July 23, 1934
+	%aside.notes
+		:markdown
+			> the word is supposed to represent a fumbling human attempt to catch the phonetics of an *absolutely non-human word*. The name of the hellish entity was invented by beings whose vocal organs were not like man's, hence it has no relation to the human speech equipment. The syllables were determined by a physiological equipment wholly unlike ours, *hence could never be uttered perfectly by human throats*. In the story we have human beings who habitually use the word as best they can; but all they can do is to *approximate* it.
+
+			Neither object nor hailable as a human subject, Cthulhu lies beneath the oceans of the South Pacific, waiting for the stars to be right, so that he can return and devour us. His will is enacted in the world by those too feebleminded to resist his call or those whose artistic temperament opens them to the non-euclidian dream-world his consciousness inhabits during his slumber. 
+
+			In Michel Houellebecq's *H. P. Lovecraft: Against the World, Against Life*, the implications of this inhuman Cthulhu (and his use as a trope of bigness) become clear:
+%section
+	:markdown
+		> It is ridiculous to imagine that at the edge of the cosmos, other well-intentioned and wise beings await to guide us toward some sort of harmony. In order to imagine how they might treat us were we to come into contact with them, it might be best to recall how we treat "inferior intelligences" such as rabbits and frogs. In the best cases they serve as food for us, sometimes also, often in fact, we kill them for the sheer pleasure of killing. Thus, Lovecraft warned, would be the true picture of our future relationship to those other intelligent beings. Perhaps some of the more beautiful human species would be honored and would end up on a dissection table - that's all.
+		>
+		> Houellebecq, *Lovecraft: Against the World, Against Life*
+	%aside.notes
+		:markdown
+			In other words, Cthulhu is a model *to us* for how we relate to the animality we regulate to object status: sport or food. Similarly, with the increasing proliferation of mountains of e-waste throughout the parts of the world the West assigns to object status, the fate of objects and people-as-objects is just as dreary. Extracting from Houllebecq, I want to assert that Lovecraft provides us a model for beginning to think about the actual inhuman forces in our world that Cthulhu often stands as a trope for in our thinking.
+
+			Lovecraft constantly reminds readers that the central problem his writers face is their inability to accurately describe what they have seen with words. Accessing the world-without-us through the accumulation of forbidden knowledge (often in the form of grimoire such as the *Necronomicon* or *Cultes des Ghoules*), his narrators have encountered an agency beyond our own and their accounts of these encounters provide accounts for documenting these inhuman encounters. As such, his stories concern a disconnected (and often, as Harman notes, an unassimilable) account of various sense impressions, in which, for instance, Cthulhu is first described as QUOTE "an octopus, a dragon, and a human caricature ... but it was the *general outline* of the whole ... made it most shockingly frightful". As Lovecraft famously began the story that introduced Cthulhu,
+%section
+	:markdown
+		> The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the light into the peace and safety of a new dark age ...
+		>
+		> Lovecraft, "The Call of Cthulhu"
+	%aside.notes
+		:markdown
+			> The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the light into the peace and safety of a new dark age.
+%section
+	:markdown
+		> ... Theosophists have guessed at the awesome grandeur of the cosmic cycle wherein our world and human race form transient incidents. They have hinted at strange survivals in terms which would freeze the blood if not masked by a bland optimism. But it is not from them that there came the single glimpse of forbidden eons which chills me when I think of it and maddens me when I dream of it. That glimpse, like all dread glimpses of truth, flashed out from an accidental piecing together of separated things.
+		>
+		> Lovecraft, "The Call of Cthulhu"
+	%aside.notes
+		:markdown
+			> Theosophists have guessed at the awesome grandeur of the cosmic cycle wherein our world and human race form transient incidents. They have hinted at strange survivals in terms which would freeze the blood if not masked by a bland optimism. But it is not from them that there came the single glimpse of forbidden eons which chills me when I think of it and maddens me when I dream of it. That glimpse, like all dread glimpses of truth, flashed out from an accidental piecing together of separated things.
+
+
+%section
+	%h1 Thank You
+%section
+	%h2 References
+	.references
+		<p>Appiah, Kwame Anthony. <em>Cosmopolitanism: Ethics in a World of Strangers</em>. W. W. Norton &amp; Company, 2010. Print.</p>
+		<p>Brown Jr., James J. “The Decorum of Objects.” <em>Rhetorical Theory Conference</em>. University of South Carolina, Columbia, SC, 2011. Web. 17 May 2014.</p>
+		<p>Brown Jr., James J., and Nathaniel Rivers. “Composing the Carpenter’s Workshop.” <em>O-Zone</em> 1.1 (2014): 27–36. Print.</p>
+		<p>Gale, Nathan A. “Bridge Ont(E)Cology.” <em>O-Zone</em> 1.1 (2014): 128–135. Print.</p>
+		<p>Houellebecq, Michel. <em>H. P. Lovecraft: Against the World, Against Life</em>. Trans. Dorna Khazeni. San Francisco CA: McSweeney’s Believer Books, 2005. Print.</p>
+		<p>Lovecraft, Howard Phillips. <em>Selected Letters V: 1934-1937</em>. Ed. Donald Wonderei &amp; August Derleth. Sauk City, WI: Arkham House, 1976. Print.</p>
+		<p>---. <em>Tales</em>. New York: Library of America, 2005. Print.</p>
+		<p>Marbeck, Richard. “Unclenching the Fist: Embodying Rhetoric and Giving Objects Their Due.” <em>Rhetori</em> 38.1 (2008): 46–65. Print.</p>
+		<p>Spivak, Gayatri Chakravorty. “Can the Subaltern Speak?” <em>Marxism and the Interpretation of Culture</em>. Ed. Cary Nelson &amp; Lawrence Grossberg. Urbana, IL: Illinois UP, 1988. Print.</p>
+		<p>Thacker, Eugene. <em>In the Dust of This Planet: The Horror of Philosophy, Vol. 1</em>. Alresford, UK: Zero, 2011. Print.</p>
