@@ -97,7 +97,7 @@ activate :deploy do |deploy|
 	#ignore ".git/*"
 	#deploy.method = :rsync
 	#deploy.user = "eschaton"
-	#deploy.host = "dynamo.dreamhost.com"
+	#deploy.host = "copland.dreamhost.com"
 	#deploy.path = "~/www/andrew.pilsch.com/slides"
 end
 
