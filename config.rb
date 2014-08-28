@@ -15,6 +15,8 @@ compass_config do |config|
 end
 
 require "compass"
+require "bourbon"
+require "neat"
 
 ###
 # Page options, layouts, aliases and proxies
