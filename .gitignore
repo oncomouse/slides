@@ -2,6 +2,7 @@ build
 build/*
 source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
+Gemfile.lock
 
 # OS generated files #
 ######################
