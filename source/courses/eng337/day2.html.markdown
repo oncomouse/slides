@@ -1,0 +1,131 @@
+---
+title: ENG 337 - Day 2
+progress_bar: true
+---
+
+class: big
+
+## A Brief Overview
+
+### Nathaniel Hawthorne
+
+* Hawthorne's Family Arrived in Salem in 1630
+
+### The Novel
+
+* Published in 1850
+* Hawthorne's First Novel
+	* Had Been Celebrated Short Story Writer
+* Set Between 1642-1649
+
+---
+class: center
+
+## What's the Deal <br> w/ "The Custom House"?
+
+---
+
+### Hawthorne's Curse
+
+> His son, too, inherited the persecuting spirit, and made himself so conspicuous in the martyrdom of the witches, that their blood may fairly be said to have left a stain upon him. So deep a stain, indeed, that his old dry bones, in the Charter Street burial-ground, must still retain it, if they have not crumbled utterly to dust! I know not whether these ancestors of mine bethought themselves to repent, and ask pardon of Heaven for their cruelties; or whether they are now groaning under the heavy consequences of them, in another state of being. At all events, I, the present writer, as their representative, hereby take shame upon myself for their sakes, and **pray that any curse incurred by them**—as I have heard, and as the dreary and unprosperous condition of the race, for many a long year back, would argue to exist—may be now and henceforth removed.
+> 
+> — "The Custom-House" (10)
+
+---
+
+### Salem is a Curse?
+
+> This old town of Salem—my native place, though I have dwelt much away from it, both in boyhood and maturer years—possesses, or did possess, a hold on my affections, the force of which I have never realized during my seasons of actual residence here. Indeed, so far as its physical aspect is concerned, with its flat, unvaried surface, covered chiefly with wooden houses, few or none of which pretend to architectural beauty,—its irregularity, which is neither picturesque nor quaint, but only tame,—its long and lazy street, lounging wearisomely through the whole extent of the peninsula, with Gallows Hill and New Guinea at one end, and a view of the almshouse at the other,—such being the features of my native town, it would be quite as reasonable to form a sentimental attachment to a disarranged checker-board. **And yet, though invariably happiest elsewhere, there is within me a feeling for old Salem, which, in lack of a better phrase, I must be content to call affection**. The sentiment is probably assignable to the deep and aged roots which my family has struck into the soil.
+>
+> — "The Custom-House" (9)
+
+---
+class: big
+
+### America is Cursed?
+
+> Human nature will not flourish, any more than a potato, if it be planted and replanted, for too long a series of generations, in the same worn-out soil.
+>
+> — "The Custom-House" (11-12)
+
+---
+
+### Also, Haunting
+
+> With his own **ghostly** hand, the obscurely seen but majestic figure had imparted to me the scarlet symbol, and the little roll of explanatory manuscript. With his own ghostly voice, he had exhorted me, on the sacred consideration of my filial duty and reverence towards him,—who might reasonably regard himself as my official ancestor,—to bring his mouldy and moth-eaten lucubrations before the public. “Do this,” said the ghost of Mr. Surveyor Pue, emphatically nodding the head that looked so imposing within its memorable wig,—“do this, and the profit shall be all your own! You will shortly need it; for it is not in your days as it was in mine, when a man's office was a life-lease, and oftentimes an heirloom. But, I charge you, in this matter of old Mistress Prynne, give to your predecessor's memory the credit which will be rightfully due!” And I said to the ghost of Mr. Surveyor Pue, “I will!”
+>
+> — "The Custom-House" (29)
+
+---
+
+### Method: Moonlight
+
+>  ... all these details, so completely seen, are so spiritualised by the unusual light, that they seem to lose their actual substance, and become things of intellect. Nothing is too small or too trifling to undergo this change, and acquire dignity thereby. A child's shoe; the doll, seated in her little wicker carriage; the hobby-horse—whatever, in a word, has been used or played with during the day is now invested with a quality of strangeness and remoteness, though still almost as vividly present as by daylight. Thus, therefore, the floor of our familiar room has become a neutral territory, somewhere between the real world and fairy-land, where the Actual and the Imaginary may meet, and each imbue itself with the nature of the other. Ghosts might enter here without affrighting us.  It would be too much in keeping with the scene to excite surprise, were we to look about us and discover a form, beloved, but gone hence, now sitting quietly in a streak of this magic moonshine, with an aspect that would make us doubt whether it had returned from afar, or had never once stirred from our fireside.
+>
+> — "The Custom-House" (30)
+
+---
+
+### Method: Coal Fire
+
+> The somewhat dim coal fire has an essential Influence in producing the effect which I would describe. It throws its unobtrusive tinge throughout the room, with a faint ruddiness upon the walls and ceiling, and a reflected gleam upon the polish of the furniture. This warmer light mingles itself with the cold spirituality of the moon-beams, and communicates, as it were, a heart and sensibilities of human tenderness to the forms which fancy summons up. It converts them from snow-images into men and women. Glancing at the looking-glass, we behold—deep within its haunted verge—the smouldering glow of the half-extinguished anthracite, the white moon-beams on the floor, and a repetition of all the gleam and shadow of the picture, with one remove further from the actual, and nearer to the imaginative. Then, at such an hour, and with this scene before him, if a man, sitting all alone, cannot dream strange things, and make them look like truth, he need never try to write romances.
+>
+> — "The Custom-House" (31)
+---
+
+### Instinct
+
+> This long connection of a family with one spot, as its place of birth and burial, creates a kindred between the human being and the locality, quite independent of any charm in the scenery or moral circumstances that surround him. It is not love, but instinct ... (11)
+>
+>  My conclusion was that he had no soul, no heart, no mind; nothing, as I have already said, but instincts; and yet, withal, so cunningly had the few materials of his character been put together that there was no painful perception of deficiency, but, on my part, an entire contentment with what I found in him. (16)
+>
+> — "The Custom-House"
+
+---
+
+### Reason
+
+> Literature, its exertions and objects, were now of little moment in my regard. I cared not at this period for books; they were apart from me. Nature—except it were human nature—the nature that is developed in earth and sky, was, in one sense, hidden from me; and all the imaginative delight wherewith it had been spiritualized passed away out of my mind. (22)
+
+> It went with me on my sea-shore walks and rambles into the country, whenever—which was seldom and reluctantly—I bestirred myself to seek that invigorating charm of Nature which used to give me such freshness and activity of thought, the moment that I stepped across the threshold of the Old Manse. The same torpor, as regarded the capacity for intellectual effort, accompanied me home, and weighed upon me in the chamber which I most absurdly termed my study. Nor did it quit me when, late at night, I sat in the deserted parlour, lighted only by the glimmering coal-fire and the moon, striving to picture forth imaginary scenes, which, the next day, might flow out on the brightening page in many-hued description. (30)
+>
+> — "The Custom-House"
+
+---
+
+### Drab Hypocrisy
+
+> A throng of bearded men, in sad-coloured garments and grey steeple-crowned hats, inter-mixed with women, some wearing hoods, and others bareheaded, was assembled in front of a wooden edifice, the door of which was heavily timbered with oak, and studded with iron spikes.
+>
+> The founders of a new colony, whatever Utopia of human virtue and happiness they might originally project, have invariably recognised it among their earliest practical necessities to allot a portion of the virgin soil as a cemetery, and another portion as the site of a prison. 
+>
+> — "The Prison-Door" (1)
+
+
+---
+
+### The Letter
+
+> On the breast of her gown, in **fine** red cloth, surrounded with an **elaborate** embroidery and **fantastic** flourishes of gold-thread, appeared the letter A. It was so artistically done, and with so much fertility and gorgeous luxuriance of fancy, that it had all the effect of a last and fitting decoration to the apparel which she wore; and which was of a splendor in accordance with the taste of the age, but greatly beyond what was allowed by the sumptuary regulations of the colony.
+>
+> — Chapter II, "The Market-Place"
+
+> She bore on her breast, in the curiously embroidered letter, a specimen of her **delicate** and **imaginative** skill, of which the dames of a court might gladly have availed themselves, to add the richer and more spiritual adornment of human ingenuity to their fabrics of silk and gold. 
+> 
+> — Chapter V, "Hester at Her Needle"
+
+---
+
+### The Letter's Appeal
+
+> Or, once more, the electric thrill would give her warning—"Behold Hester, here is a companion!" and, looking up, she would detect the eyes of a young maiden glancing at the scarlet letter, shyly and aside, and quickly averted, with a faint, chill crimson in her cheeks as if her purity were somewhat sullied by that momentary glance. O Fiend, whose talisman was that fatal symbol, wouldst thou leave nothing, whether in youth or age, for this poor sinner to revere?
+>
+> — Chapter V, "Hester at Her Needle" (70)
+
+---
+
+### The Letter's Appeal 2
+
+> Here, indeed, in the sable simplicity that generally characterized the Puritanic modes of dress, there might be an infrequent call for the finer productions of her handiwork. Yet the taste of the age, demanding whatever was elaborate in compositions of this kind, did not fail to extend its influence over our stern progenitors, who had cast behind them so many fashions which it might seem harder to dispense with. Public ceremonies, such as ordinations, the installation of magistrates, and all that could give majesty to the forms in which a new government manifested itself to the people, were, as a matter of policy, marked by a stately and well-conducted ceremonial, and a sombre, but yet a studied magnificence. **Deep ruffs, painfully wrought bands, and gorgeously embroidered gloves, were all deemed necessary to the official state of men assuming the reins of power; and were readily allowed to individuals dignified by rank or wealth, even while sumptuary laws forbade these and similar extravagances to the plebeian order.**
+>
+> — Chapter V, "Hester at Her Needle" (66)
