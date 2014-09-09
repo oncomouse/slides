@@ -7,7 +7,7 @@ class: center, middle
 
 # *Adventures of <br> Huckleberry Finn*
 
-<h2 class="hug"> Day 1 </h2>
+<h2 class="hug"> Day 1: Genre and Education </h2>
 
 ---
 class:big
