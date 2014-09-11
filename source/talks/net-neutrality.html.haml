@@ -1141,7 +1141,7 @@ transitionSpeed: fast
 			At this moment, the FCC 
 %section
 	%p.big Visit:
-	%p.question http://www.fcc.gov/comments
+	%p.question= link_to "http://www.fcc.gov/comments", "http://www.fcc.gov/comments"
 	%p.big Click:
 	%p.question "14-28"
 	%aside.notes
@@ -1150,7 +1150,14 @@ transitionSpeed: fast
 
 			To contribute, visit http://www.fcc.gov/comments and click on "14-28" to enter your comments into the debate.
 
-			Beyond that, I would suggest two paths for action you can follow. 
+%section
+	%p.big Visit:
+	%p.question= link_to "https://www.battleforthenet.com", "https://www.battleforthenet.com"
+	%aside.notes
+		:markdown
+			A consortium of activists, companies, and concerned citizens have just this morning launched Battle for the Net which is organizing a letter writing and telephone campaign to push for net neutrality in Congress. At their website, you can sign their letter and receive help to call Arizona's members of Congress.
+
+			Beyond that, I would suggest two other paths for action you can follow. 
 %section
 	%p.bigger One
 	%aside.notes
