@@ -2,13 +2,14 @@
 layout: false
 ---
 
-- file_regex = /\.html/
-- depth = 0
+- depth = 1
+- path_hunt = "" # This is analogous to the base directory (relative to source/) where slides are stored.
 - if defined? directory
-	- file_regex = Regexp.new("#{directory.gsub("/","\\/")}\\/[^.]+.html")
-	- depth = directory.count("/") + 1
+	- path_hunt += "/#{directory}"
+	- depth += path_hunt.count("/")
 - else
 	- directory = nil
+- file_regex = Regexp.new("#{path_hunt.gsub("/","\\/")}\\/[^.]+.html")
 
 - # Naturalize a string that contains numbers
 - def naturalized s
@@ -39,10 +40,9 @@ layout: false
 					- next if resource.source_file =~ /remark_markdown_template.html.haml/
 					- if resource.data["title"] and resource.destination_path.count("/") <= depth
 						%li
-							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
-							%small
-								(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
+							= link_to "#{resource.data["title"]}",  resource.destination_path.gsub(path_hunt + "/", "")
+							%small (Remark)
 					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth
 						%li
-							= if directory.nil? then link_to resource.destination_path.gsub('index.html',""), resource.destination_path.gsub('index.html',"") else link_to "#{File.basename resource.destination_path.gsub('index.html',"")}/", resource.destination_path.sub(directory + "/","") end
+							= link_to resource.destination_path.gsub(path_hunt + "/", "").gsub("index.html","").capitalize, resource.destination_path.gsub(path_hunt + "/", "")
 				
