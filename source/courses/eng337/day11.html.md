@@ -1,0 +1,220 @@
+---
+title: ENG 337 - Day 11
+progress_bar: true
+---
+
+class: center, middle
+
+# *The House of Mirth*
+
+<h2 class="hug">Day 1</h2>
+---
+class: big
+## Edith Wharton
+
+* Born Into a Wealthy New York Family.
+* Talked Into Marrying Teddy Wharton at 23.
+	* He Was Basically Insane Their Whole Marriage
+	* Finally Allowed To Divorce Him at 51
+* Started Visiting One of the First Therapists
+	* He Suggested She Start Writing Fiction
+* After Early Success, Turned to Novels
+	* 1920's _The Age of Innocence_ Won Pulitzer
+	* First Woman to Do So
+
+---
+class: big
+
+
+## Edith Wharton Was Awesome
+
+* Visited And Wrote About Trenches in World War I
+* Had a Long Affair With Morton Fullerton, The Most Notorious Lover of His Generation
+* Expert On Interior Decoration
+	* _The Decoration of Houses_ (1897) Key In Inaugurating Modern Interior Design
+	* "The Mount," Her House Outside Boston Was a Testcase For Her Theories
+
+---
+class: big
+
+
+## Literary Naturalism
+
+* Branch of Realism
+	* Realism Only Sought To Depict Things As They Are
+* Naturalism Concerns Itself With Why
+	* Underlying Causes of Actions: Social, Hereditary, Etc.
+* Reflected Growing Influence of Psychology & Economics
+* Important Bridge Forward To Modernism
+	* It's Avant-Garde To Speculate About Motives
+
+---
+
+## Not Beautiful
+
+> He led her through the throng of returning holiday-makers, past sallow-faced girls in preposterous hats, and flat-chested women struggling with paper bundles and palm-leaf fans. Was it possible that she belonged to the same race? The dinginess, the crudity of this average section of womanhood made him feel how highly specialized she was.
+>
+> — Book 1, Chapter 1 (7)
+
+---
+class:small
+
+## A Room Of One's Own
+
+> "How delicious to have a place like this all to one's self! What a miserable thing it is to be a woman." She leaned back in a luxury of discontent.
+>
+>Selden was rummaging in a cupboard for the cake.
+>
+>"Even women," he said, "have been known to enjoy the privileges of a flat."
+>
+>"Oh, governesses—or widows. But not girls—not poor, miserable, marriageable girls!"
+>
+>"I even know a girl who lives in a flat."
+>
+>She sat up in surprise. "You do?"
+>
+>"I do," he assured her, emerging from the cupboard with the sought-for cake.
+>
+>"Oh, I know—you mean Gerty Farish." She smiled a little unkindly. "But I said MARRIAGEABLE—and besides, she has a horrid little place, and no maid, and such queer things to eat. Her cook does the washing and the food tastes of soap. I should hate that, you know."
+>
+> — Book 1, Chapter 1 (8)
+
+---
+
+
+## Born Free, Everywhere In Chains
+
+> As he watched her hand, polished as a bit of old ivory, with its slender pink nails, and the sapphire bracelet slipping over her wrist, he was struck with the irony of suggesting to her such a life as his cousin Gertrude Farish had chosen. She was so evidently the victim of the civilization which had produced her, that the links of her bracelet seemed like manacles chaining her to her fate.
+>
+> She seemed to read his thought. "It was horrid of me to say that of Gerty," she said with charming compunction. "I forgot she was your cousin. But we're so different, you know: she likes being good, and I like being happy. And besides, she is free and I am not. If I were, I daresay I could manage to be happy even in her flat. It must be pure bliss to arrange the furniture just as one likes, and give all the horrors to the ash-man. If I could only do over my aunt's drawing-room I know I should be a better woman."
+> 
+> — Book 1, Chapter 1 (9)
+
+---
+
+
+## Business
+
+> "Isn't marriage your vocation? Isn't it what you're all brought up for?"
+>
+> She sighed. "I suppose so. What else is there?"
+>
+> — Book 1, Chapter 1 (11)
+
+---
+
+## Shabby Chic
+
+> "Ah, there's the difference—a girl must, a man may if he chooses." She surveyed him critically. "Your coat's a little shabby—but who cares? It doesn't keep people from asking you to dine. If I were shabby no one would have me: a woman is asked out as much for her clothes as for herself. The clothes are the background, the frame, if you like: they don't make success, but they are a part of it. Who wants a dingy woman? We are expected to be pretty and well-dressed till we drop—and if we can't keep it up alone, we have to go into partnership."
+>
+> Selden glanced at her with amusement: it was impossible, even with her lovely eyes imploring him, to take a sentimental view of her case.
+>
+> "Ah, well, there must be plenty of capital on the look-out for such an investment. Perhaps you'll meet your fate tonight at the Trenors'."
+>
+> — Book 1, Chapter 1 (13)
+
+---
+
+class: small
+
+## Routine
+
+>"And having to work—do you mind that?"
+>
+>"Oh, the work itself is not so bad—I'm rather fond of the law."
+>
+>"No; but the being tied down: the routine—don't you ever want to get away, to see new places and people?"
+>
+>"Horribly—especially when I see all my friends rushing to the steamer."
+>
+>She drew a sympathetic breath. "But do you mind enough—to marry to get out of it?"
+>
+>Selden broke into a laugh. "God forbid!" he declared.
+>
+> — Book 1, Chapter 1 (13)
+
+<hr>
+
+> In the hansom she leaned back with a sigh. Why must a girl pay so dearly for her least escape from routine? Why could one never do a natural thing without having to screen it behind a structure of artifice?
+>
+> — Book 1, Chapter 2 (16)
+
+---
+class: small
+
+## Lily & Rosedale
+
+> Mr. Rosedale, it will be seen, was thus far not a factor to be feared—unless one put one's self in his power. And this was precisely what Miss Bart had done. Her clumsy fib had let him see that she had something to conceal; and she was sure he had a score to settle with her. Something in his smile told her he had not forgotten. She turned from the thought with a little shiver, but it hung on her all the way to the station, and dogged her down the platform with the persistency of Mr. Rosedale himself.
+>
+>...
+>
+> She began to cut the pages of a novel, tranquilly studying her prey through downcast lashes while she organized a method of attack. Something in his attitude of conscious absorption told her that he was aware of her presence: no one had ever been quite so engrossed in an evening paper! She guessed that he was too shy to come up to her, and that she would have to devise some means of approach which should not appear to be an advance on her part. It amused her to think that any one as rich as Mr. Percy Gryce should be shy; but she was gifted with treasures of indulgence for such idiosyncrasies, and besides, his timidity might serve her purpose better than too much assurance.
+>
+> — Book 1, Chapter 2 (18)
+---
+
+## Miss Bart's Education
+
+> Only one thought consoled her, and that was the contemplation of Lily's beauty. She studied it with a kind of passion, as though it were some weapon she had slowly fashioned for her vengeance. It was the last asset in their fortunes, the nucleus around which their life was to be rebuilt. She watched it jealously, as though it were her own property and Lily its mere custodian; and she tried to instill into the latter a sense of the responsibility that such a charge involved. She followed in imagination the career of other beauties, pointing out to her daughter what might be achieved through such a gift, and dwelling on the awful warning of those who, in spite of it, had failed to get what they wanted: to Mrs. Bart, only stupidity could explain the lamentable denouement of some of her examples.
+>
+> — Book 1, Chapter 3 (35)
+
+---
+
+## How Lily Really Feels?
+
+> It was not that Miss Bart was afraid of losing her newly-acquired hold over Mr. Gryce. Mrs. Dorset might startle or dazzle him, but she had neither the skill nor the patience to effect his capture. She was too self-engrossed to penetrate the recesses of his shyness, and besides, why should she care to give herself the trouble? At most it might amuse her to make sport of his simplicity for an evening—after that he would be merely a burden to her, and knowing this, she was far too experienced to encourage him. But the mere thought of that other woman, who could take a man up and toss him aside as she willed, without having to regard him as a possible factor in her plans, filled Lily Bart with envy. She had been bored all the afternoon by Percy Gryce—the mere thought seemed to waken an echo of his droning voice—but she could not ignore him on the morrow, she must follow up her success, must submit to more boredom, must be ready with fresh compliances and adaptabilities, and all on the bare chance that he might ultimately decide to do her the honour of boring her for life.
+>
+> — Book 1, Chapter 3 (27)
+
+---
+
+## The Game
+
+> She knew that Mr. Gryce was of the small chary type most inaccessible to impulses and emotions. He had the kind of character in which prudence is a vice, and good advice the most dangerous nourishment. But Lily had known the species before: she was aware that such a guarded nature must find one huge outlet of egoism, and she determined to be to him what his Americana had hitherto been: the one possession in which he took sufficient pride to spend money on it. She knew that this generosity to self is one of the forms of meanness, and she resolved so to identify herself with her husband's vanity that to gratify her wishes would be to him the most exquisite form of self-indulgence. The system might at first necessitate a resort to some of the very shifts and expedients from which she intended it should free her; but she felt sure that in a short time she would be able to play the game in her own way.
+>
+> — Book 1, Chapter 4 (50)
+
+---
+## Breath
+
+> "That's unjust, I think, because, as I understand it, one of the conditions of citizenship is not to think too much about money, and the only way not to think about money is to have a great deal of it."
+>
+>"You might as well say that the only way not to think about air is to have enough to breathe. That is true enough in a sense; but your lungs are thinking about the air, if you are not. And so it is with your rich people—they may not be thinking of money, but they're breathing it all the while; take them into another element and see how they squirm and gasp!"
+>
+> — Book 1, Chapter 6 (69)
+
+---
+## Waste
+
+> "That is certainly the sane view; but the queer thing about society is that the people who regard it as an end are those who are in it, and not the critics on the fence. It's just the other way with most shows—the audience may be under the illusion, but the actors know that real life is on the other side of the footlights. The people who take society as an escape from work are putting it to its proper use; but when it becomes the thing worked for it distorts all the relations of life." Selden raised himself on his elbow. "Good heavens!" he went on, "I don't underrate the decorative side of life. It seems to me the sense of splendour has justified itself by what it has produced. The worst of it is that so much human nature is used up in the process. If we're all the raw stuff of the cosmic effects, one would rather be the fire that tempers a sword than the fish that dyes a purple cloak. And a society like ours wastes such good material in producing its little patch of purple! ... "
+>
+> — Book 1, Chapter 6 (69)
+
+---
+class: small
+
+## Love, Actually
+
+> "That's what I told you—you're so sure of me that you can amuse yourself with experiments." She drew back the hand he had regained, and sat looking down on him sadly.
+>
+>"I am not making experiments," he returned. "Or if I am, it is not on you but on myself. I don't know what effect they are going to have on me—but if marrying you is one of them, I will take the risk."
+>
+>She smiled faintly. "It would be a great risk, certainly—I have never concealed from you how great."
+>
+>"Ah, it's you who are the coward!" he exclaimed.
+>
+> ... 
+>
+>She leaned on him for a moment, as if with a drop of tired wings: he felt as though her heart were beating rather with the stress of a long flight than the thrill of new distances. Then, drawing back with a little smile of warning—"I shall look hideous in dowdy clothes; but I can trim my own hats," she declared.
+>
+> — Book 1, Chapter 6 (73)
+
+---
+
+
+## Why So Serious?
+
+> "Were you serious?" she asked, with an odd thrill of gaiety which she might have caught up, in haste, from a heap of stock inflections, without having time to select the just note. Selden's voice was under better control. "Why not?" he returned. "You see I took no risks in being so." And as she continued to stand before him, a little pale under the retort, he added quickly: "Let us go down."
+>
+> — Book 1, Chapter 6 (74)
