@@ -11,6 +11,14 @@ class: center, middle
 
 ---
 
+## Lily's Art
+
+> > Mrs. Peniston, under ordinary circumstances, was as much bored by her excellent cousin as the recipient of such services usually is by the person who performs them. She greatly preferred the brilliant and unreliable Lily, who did not know one end of a crochet-needle from the other, and had frequently wounded her susceptibilities by suggesting that the drawing-room should be "done over." But when it came to hunting for missing napkins, or helping to decide whether the backstairs needed re-carpeting, Grace's judgment was certainly sounder than Lily's: not to mention the fact that the latter resented the smell of beeswax and brown soap, and behaved as though she thought a house ought to keep clean of itself, without extraneous assistance.
+>
+> — Book 1, Chapter 9
+
+---
+
 ## Tableux Vivants
 
 .center[.medusa[
