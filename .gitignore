@@ -3,6 +3,7 @@ build/*
 source/stylesheets/.sass-cache
 source/stylesheets/.sass-cache/*
 Gemfile.lock
+bower_components
 
 # OS generated files #
 ######################

@@ -63,6 +63,15 @@ ready do
     ignore "remark_markdown_template.html"
 end
 
+after_configuration do
+    if File.exists? "#{root}/.bowerrc"
+        @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+        sprockets.append_path File.join "#{root}", @bower_config["directory"]
+    else
+        sprockets.append_path File.join root, "bower_components"
+    end
+end
+
 # Build-specific configuration
 configure :build do
 
