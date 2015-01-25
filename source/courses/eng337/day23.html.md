@@ -67,8 +67,8 @@ class: center, middle
 >— Chapter 11, pg. 241-2
 
 ---
-## *The* Bear
 class: small
+## *The* Bear
 
 > "Well, maybe it's the other way round," he said. "Maybe he got holt to you."
 >
@@ -124,8 +124,8 @@ class: small
 > — Chapter 12, pg. 259
 
 ---
-## Like
 class: smaller
+## Like
 
 >It was exhilarating. I no longer had to worry about who saw me or about what was proper. To hell with all that, and as sweet as the yam actually was, it became like nectar with the thought. If only someone who had known me at school or at home would come along and see me now. How shocked they'd be! I'd push them into a side street and smear their faces with the peel. What a group of people we were, I thought. Why, you could cause us the greatest humiliation simply by confronting us with something we liked. Not all of us, but so many. Simply by walking up and shaking a set of chitterlings or a well-boiled hog maw at them during the clear light of day! What consternation it would cause! And I saw myself advancing upon Bledsoe, standing bare of his false humility in the crowded lobby of Men's House, and seeing him there and him seeing me and ignoring me and me enraged and suddenly whipping out a foot or two of chitterlings, raw, uncleaned and dripping sticky circles on the floor as I shake them in his face, shouting:
 >
