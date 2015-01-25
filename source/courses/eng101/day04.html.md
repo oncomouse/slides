@@ -51,6 +51,16 @@ class: middle
 ]]
 
 ---
+
+class: middle, center
+
+### Another Summary
+
+## Read This Article, Summarize It in 3 sentences.
+
+### Work in Groups of 4
+
+---
 class: middle, center
 ## Quoting
 
