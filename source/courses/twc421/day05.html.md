@@ -2,14 +2,23 @@
 title: TWC 421 - Day 5
 progress_bar: true
 ---
-class: center, middle
+class: center, middle, big
 
 .title-block[
 # TWC 421 - Day 05
-## Cohesion II, Skillz
+## Cohesion II, Clarity, Skills
 ]
 
 [http://oncomouse.github.io/slides/courses/twc421/day05.html](http://oncomouse.github.io/slides/courses/twc421/day04.html)
+
+---
+
+class: center, middle
+
+.title-block[
+## Site of the Day:
+## [http://english.clas.asu.edu/faculty-all](http://english.clas.asu.edu/faculty-all)
+]
 
 ---
 class: middle, center
@@ -58,3 +67,40 @@ class: center, middle
 ## Do the Exercise
 ### (On Blackboard)
 ]
+---
+class: middle, big
+
+## Wordy
+
+The executives issued _an announcement_ regarding the new program that resulted in _an increase_ in productivity.
+
+## Improved
+
+The executives _announced_ a program that _increased_ productivity.
+
+---
+class: middle, big
+
+## Avoid "do-nothing" Sentences
+
+- The author uses many devices in his poem to express a couple of ideas.
+- The characters display their various traits as they interact in several ways.
+- The conclusion of the story shows us the author’s viewpoint.
+---
+class: middle, big, center
+
+## To Be vs Action
+
+Andrew Pilsch is a strong communicator with his students.
+
+Andrew Pilsch communicates effectively with students.
+
+
+---
+class: center, middle, big
+
+## Map Skills to Action Verbs
+
+### Complete a Skills Inventory
+
+[http://www.quintcareers.com/action_verbs.html](http://www.quintcareers.com/action_verbs.html)
