@@ -28,7 +28,7 @@ code
 /* Two-column layout */
 .remark-slide-content
 	@include outer-container
-	h1,h2,h3,h4,h5,h6
+	& > h1,& > h2,& > h3,& > h4,& > h5,& > h6
 		&:first-child
 			margin-top: 0
 .left-column	
@@ -44,7 +44,7 @@ code
 			size: 1.5em
 
 .middle
-	*:first-child
+	& > *:first-child
 		margin-top: 0
 
 /* Utility Classes */
