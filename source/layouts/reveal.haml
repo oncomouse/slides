@@ -141,7 +141,7 @@
 					&:before
 						top: 0.23em !important
 			%p#watermark.twitter_badge
-				@oncomouse
+				= current_resource.data['twitter'] ? current_resource.data['twitter'] : '@oncomouse'
 			.slides
 				= yield
 	
