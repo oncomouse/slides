@@ -210,27 +210,6 @@ class: big
 * Up-to-date research about digital reading habits informs presentation
 
 ---
-.title-block[
-# 1. Project Goals
-## Methods
-]
-
-
-### Text Creation
-* Prototypes: "Guest's Confession" and _The Ambassadors_
-* Focus on New York Edition (1907-9)
-* Encoding (TEI/XML) and presentation (XLST, CSS)
-* Output: http://www.henryjamesarchive.org
-
-### Funding
-* Internal (ASU)
-* External (NEH)
-* Student encoders through new degree program
-
-### Applications
-* Pedagogy: Student-created critical editions
-
----
 class: center, middle, intertitle
 
 # 2. Book History
