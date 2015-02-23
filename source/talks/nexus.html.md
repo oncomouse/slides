@@ -334,9 +334,178 @@ class: center, middle, intertitle
 
 # 3. Project Architecture
 ---
+class: big
+.title-block[
+# 3. Project Architecture:
+## Screwing Around
+]
+
+> What is needed, then, is a full-text archive on the scale of Google Books that is like the vast hypertextual network that surrounds it (and from which it is curiously disconnected). Hand tagging at this scale is neither possible nor desirable; ironically, only algorithmic methods can free us from the tunnel vision that search potentially induces. Without this, the full text archive becomes something far less than the traditional library. 
+>
+> Stephen Ramsey, <br> "The Hermeneutics of Screwing Around"
+
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## Learn TEI By Accident?
+]
+
+* TEI does not respond to screwing around
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## Learn TEI By Accident?
+]
+
+* TEI does not respond to screwing around
+* TEI is an institutional artifact, not a writerly artifact
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## Learn TEI By Accident?
+]
+
+* TEI does not respond to screwing around
+* TEI is an institutional artifact, not a writerly artifact
+* TEI is very print-bound
+
+
+---
 
 class: bigger
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky
+## TEI is Finicky: An Example
 ]
+
+```bash
+andrew@Andrews-MacBook-Pro-3 ~/D/S/P/dhj-tei> 
+teitohtml5 --profile=dhj --profiledir=./Stylesheets/profiles/ xml/guest-confession.xml html/guest-confession.html
+
+Convert guest-confession.xml to /Users/andrew/Desktop/Software/Projects/dhj-tei/html/guest-confession.html (tei to html5) using profile dhj
+     [echo] XSLT generate HTML files (language en)
+
+BUILD FAILED
+/usr/share/xml/tei/stylesheet/html5/build-to.xml:37: The following error occurred while executing this line:
+/usr/share/xml/tei/stylesheet/common/teianttasks.xml:313: stylesheet /usr/share/xml/tei/stylesheet/html5/Stylesheets/profiles/dhj/html5/to.xsl doesn't exist.
+
+Total time: 2 seconds
+```
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## TEI is Finicky: Build System
+]
+
+.title-block[
+### Rakefile:
+#### [https://github.com/ruby/rake](https://github.com/ruby/rake)
+]
+```ruby
+$formats = ['html']
+
+def compile(file_name, format='html')
+	system("teito#{format == 'html' ? 'html5' : format} --profile=dhj --profiledir=#{Dir.pwd}/Stylesheets/profiles/ #{file_name} #{format}/#{File.basename(file_name, '.xml')}.#{format}")
+end
+
+# Index our xml directory and create new tasks for each file:
+Dir.glob("xml/**/*.xml").each do |xml_file|
+	task File.basename(xml_file, '.xml').to_sym do
+		$formats.each do |format|
+			compile(xml_file, format)
+		end
+	end
+end
+
+```
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## TEI is Finicky: Automation
+]
+
+.title-block[
+### Guardfile:
+#### [http://guardgem.org/](http://guardgem.org/)
+]
+``` ruby
+# Build a guard task for each of our XML files, corresponding to the Rakefile:
+Dir.glob("xml/**/*.xml").each do |xml_file|
+    guard 'rake', :task => File.basename(xml_file, '.xml') do
+        watch(xml_file)
+        watch('Stylesheets/css/dhj.css')
+    end
+end
+
+# Rebuild our stylesheets using Compass:
+guard :compass, configuration_file: 'config.rb', project_path: 'Stylesheets/css/' do
+    watch('Stylesheets/css/sass/**/*')
+end
+
+# Compile any HAML source into XML:
+guard :haml, input: 'haml', output: 'xml', default_ext: 'xml', haml_options: {format: :xhtml}
+```
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## TEI is Finicky: Don't Write XML
+]
+
+### guest-confession.xml
+
+``` xml
+<?xml version='1.0' encoding='utf-8' ?>
+<TEI xml:lang='en' xmlns='http://www.tei-c.org/ns/1.0'>
+	<teiHeader>
+	</teiHeader>
+	<text>
+		<front>
+		</front>
+		<body>
+			<pb n='161' xml:id='guestConfession-pg161' />
+			<p>
+			  <said who='#ms-guest'>"Do you think there is any danger?"</said>
+			  asked my companion.
+			</p>
+			<p>
+			  I made haste to assure her there was none.
+			  <said who='#david'>"The chapel has nothing in the nature of a spire, and even if it had, the fact of our being in a holy place ought to insure us against injury."</said>
+			</p>
+		</body>
+	</text>
+</TEI>
+```
+---
+.title-block[
+# 3. Project Architecture:
+## TEI is Finicky: Write HAML
+]
+
+.title-block[
+### guest-confession.haml
+#### [http://haml.info](http://haml.info)
+]
+``` haml
+!!! XML
+%TEI{ :xmlns => "http://www.tei-c.org/ns/1.0", "xml:lang" => "en"}
+	%teiHeader
+	%text
+		%front
+			
+		%body
+			%p
+				%said{ :who => '#ms-guest' } "Do you think there is any danger?"
+			
+				asked my companion.
+
+			%p
+				I made haste to assure her there was none.
+
+				%said{ :who => '#david' } "The chapel has nothing in the nature of a spire, and even if it had, the fact of our being in a holy place ought to insure us against injury."
+```

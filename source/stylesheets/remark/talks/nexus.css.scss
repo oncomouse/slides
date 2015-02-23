@@ -9,7 +9,7 @@ html {
 	}
 }
 
-p, ul li, ol li {
+p, ul li, ol li, h4 {
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 }
@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
 
+h4 {
+	font-weight: 300;
+}
 
 .single-space {
 	margin-top: 1rem;
@@ -78,4 +81,12 @@ table {
 	& > .title-block {
 		margin-top: 0;
 	}
+}
+
+pre {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;
 }
