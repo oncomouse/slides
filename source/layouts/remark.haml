@@ -69,6 +69,7 @@
 		- head_load_callbacks = []
 		- head_js_array.push(javascript_path("remark/remark.min.js"))
 		- #head_js_array.push('http://gnab.github.com/remark/downloads/remark-0.6.5.min.js')
+		- head_js_array.push(javascript_path("remark/add-ons/haml.language.js"))
 		- head_js_array.push(javascript_path("remark/add-ons/remark.language.js"))
 		- if load_charts and chart_type == "Charts.js"
 			- head_js_array.push(javascript_path("lib/zepto.min.js"))
