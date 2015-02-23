@@ -378,7 +378,7 @@ class: bigger
 class: bigger
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky: An Example
+## TEI is Finicky
 ]
 
 ```bash
@@ -398,7 +398,7 @@ Total time: 2 seconds
 class: bigger
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky: Build System
+## Use a Build System
 ]
 
 .title-block[
@@ -426,7 +426,7 @@ end
 class: bigger
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky: Automation
+## Automate Your Build
 ]
 
 .title-block[
@@ -454,7 +454,7 @@ guard :haml, input: 'haml', output: 'xml', default_ext: 'xml', haml_options: {fo
 class: bigger
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky: Don't Write XML
+## Don't Write XML
 ]
 
 ### guest-confession.xml
@@ -484,7 +484,7 @@ class: bigger
 ---
 .title-block[
 # 3. Project Architecture:
-## TEI is Finicky: Write HAML
+## Write HAML
 ]
 
 .title-block[
@@ -509,3 +509,15 @@ class: bigger
 
 				%said{ :who => '#david' } "The chapel has nothing in the nature of a spire, and even if it had, the fact of our being in a holy place ought to insure us against injury."
 ```
+---
+class: bigger
+.title-block[
+# 3. Project Architecture:
+## Further Work
+]
+
+* Figure Out Annotations
+* Learn XSLT
+	* OR Nokogiri Rewrites
+* Publicize Data Aggregation
+* Hosting?
