@@ -327,7 +327,7 @@ class: bigger
 ## Rock the Caslon
 ]
 
-.center[![Three Caslons of Henry James](/images/nexus/caslon.png)]
+.center[![Three Caslons of Henry James](../images/nexus/caslon.png)]
 
 ---
 class: center, middle, intertitle
