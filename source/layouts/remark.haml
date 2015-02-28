@@ -71,6 +71,7 @@
 		- #head_js_array.push('http://gnab.github.com/remark/downloads/remark-0.6.5.min.js')
 		- head_js_array.push(javascript_path("remark/add-ons/haml.language.js"))
 		- head_js_array.push(javascript_path("remark/add-ons/remark.language.js"))
+		- head_js_array.push(javascript_path("lib/zepto.min.js"))
 		- if load_charts and chart_type == "Charts.js"
 			- head_js_array.push(javascript_path("lib/zepto.min.js"))
 			- head_js_array.push(javascript_path("lib/Charts.js"))
@@ -122,7 +123,12 @@
 						scroll: false,
 						touch: true
 					}
-				});		
+				});
+				var image_scalar = {width: 0.85, height: 0.75 };
+				$(window).on('resize', function() {
+					$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+					$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+				}).resize();
 				#{if head_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end}
 				#{
 					head_load_callbacks.join("\n  ")
