@@ -25,12 +25,12 @@ class: middle, big
 >
 > — Parker, "Where Do English Departments Come From?"
 ---
-class: middle
+class: middle, big
 > Fighting that literature faction often makes you feel like you have invaded China. You can mount an all-out assault and think you're making an impression, but when the smoke clears, nothing has changed. The mandarins are untouched.
 >
 > — Hairston, "Breaking Our Bonds and Reaffirming Our Connections"
 
-> A mandarin is a public official, one with high political status, and one "marked by elaborate and refined language or literary style" (American Heritage Dictionary, 2nd ed., 1982). Once she has invoked the muses of history and poetry and the gods of war, Hairston then situates our discipline in a familial context when she write that our problems "originate close to home," in English departments (273). Isn't one of the first moves a successful coup d'état to kill the poets? **What did Harold Bloom say about killing the Father?**
+> Hairston then situates our discipline in a familial context when she write that our problems "originate close to home," in English departments (273). Isn't one of the first moves a successful coup d'état to kill the poets? **What did Harold Bloom say about killing the Father?**
 >
 > — Mead &  Morris, "The Bewitching of Composition"
 ---
