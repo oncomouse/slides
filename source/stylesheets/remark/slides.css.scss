@@ -102,6 +102,49 @@ code {
 	clear: both;
 }
 
+.bigger, .bullets {
+	ul li, ol li, p {
+		font: {
+			size: 1.67rem;
+		};
+		line: {
+			height: 2.5rem;
+		};
+	}
+	.topic {
+		font-size: (1.5em / 1.67);
+		line-height: 1.25rem;
+	}
+	.remark-slide-number {
+		line-height: 1.33rem;
+	}
+}
+.pushdown {
+	& > h1,h2,h3,h4,h5 {
+		&:first-child {
+			margin-top: 5rem;
+		}
+	}
+}
+p {
+	.big {
+		font: {
+			size: 1.33rem;
+		};
+		line: {
+			height: 2rem;
+		};
+	}
+	.bigger {
+		font: {
+			size: 1.67rem;
+		};
+		line: {
+			height: 2.5rem;
+		};
+	}
+}
+
 .big, .bullets {
 	ul li, ol li, p {
 		font: {
