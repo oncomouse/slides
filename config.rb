@@ -72,8 +72,11 @@ after_configuration do
     end
 end
 
+require_relative "./lib/build_cleaner"
+
 # Build-specific configuration
 configure :build do
+	activate :build_cleaner
 
 	ignore "/**/*.rb"
 	set :http_prefix, "/slides"
