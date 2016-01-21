@@ -10,7 +10,7 @@ class: bigger, middle
 
 1. Oral & Literate Civilizations
 1. From Epideictic to Forensic / Deliberative
-1. Alcidamas 🔥🔥🔥🔥
+1. Alcidamas
 
 ---
 class: big, middle
