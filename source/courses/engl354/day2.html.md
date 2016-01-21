@@ -15,7 +15,7 @@ class: bigger, middle
 ---
 class: big, middle
 
-> Assuming the context of a largely non-literate culture, we can postulate that both pieces were presented to audiences less "**literate**" than the speaker. Both pieces were delivered **orally** and were in that sense composed to be delivered orally. Both pieces were delivered **orally** and were in that sense composed, in large part, during the initial presentation and only later written down in full ... what survives of Parmenides and Gorgias represents a strange case of "**literate**" discourse presented to a preponderantly "**illiterate**" audience (Swearingen 147-8).
+> Assuming the context of a largely non-literate culture, we can postulate that both pieces were presented to audiences less "**literate**" than the speaker. Both pieces were delivered **orally** and were in that sense composed, in large part, during the initial presentation and only later written down in full ... what survives of Parmenides and Gorgias represents a strange case of "**literate**" discourse presented to a preponderantly "**illiterate**" audience (Swearingen 147-8).
 
 ---
 
@@ -155,7 +155,7 @@ class: big
 
 class: big, middle
 
-> Assuming the context of a largely non-literate culture, we can postulate that both pieces were presented to audiences less "literate" than the speaker. Both pieces were delivered orally and were in that sense composed to be delivered orally. Both pieces were delivered orally and were in that sense composed, in large part, during the initial presentation and only later written down in full ... what survives of Parmenides and Gorgias represents a strange case of "literate" discourse presented to a preponderantly "illiterate" audience (Swearingen 147-8).
+> Assuming the context of a largely non-literate culture, we can postulate that both pieces were presented to audiences less "literate" than the speaker. Both pieces were delivered orally and were in that sense composed, in large part, during the initial presentation and only later written down in full ... what survives of Parmenides and Gorgias represents a strange case of "literate" discourse presented to a preponderantly "illiterate" audience (Swearingen 147-8).
 
 ---
 
