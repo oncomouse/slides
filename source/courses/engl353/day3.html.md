@@ -61,6 +61,11 @@ class: big
 		* Proof
 		* Epilogue
 		* (Argument From Probability)
+---
+
+## Encomium
+
+> Praise is the expression in words of the eminence of a man's good qualities, and therefore we must display his actions as the product of such qualities. Encomium refers to what he has actually done; the mention of accessories, such as good birth and education, merely helps to make our story credible -- good fathers are likely to have good sons, and good training is likely to produce good character. Hence it is only when a man has already done something that we bestow encomiums upon him. Yet the actual deeds are evidence of the doer's character: even if a man has not actually done a given good thing, we shall bestow praise on him, if we are sure that he is the sort of man who would do it. To call any one blest is, it may be added, the same thing as to call him happy; but these are not the same thing as to bestow praise and encomium upon him; the two latter are a part of "calling happy," just as goodness is a part of happiness. (Aristotle, Rhetoric, Book I, Chapter 9)
  
 ---
 class: big
