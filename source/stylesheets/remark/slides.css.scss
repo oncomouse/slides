@@ -143,10 +143,21 @@ p {
 			height: 2.5rem;
 		};
 	}
+
+}
+ul li, ol li, p {
+	.normal {
+		font-size: 1rem;
+		line-height: 1.25rem;
+	}
 }
 
 .big, .bullets {
 	ul li, ol li, p {
+		.normal {
+			font-size: 1rem;
+			line-height: 1.25rem;
+		}
 		font: {
 			size: 1.33rem;
 		};
