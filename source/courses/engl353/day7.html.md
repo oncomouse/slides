@@ -1,0 +1,143 @@
+---
+title: ENGL 353 Day 7 (Phaedrus 1)
+progress_bar: false
+---
+
+class: middle, bigger
+
+.center[
+# Plato, *Phaedrus*
+]
+
+1. We Need To Talk
+1. Discussion Leaders
+1. Background
+1. Nature
+1. Speaking
+
+---
+## Discussion Leader (Jason)
+
+> We must realize that each of us is ruled by two principles which we follow wherever they lead: one is our inborn desire for pleasures, the other is our acquired judgement that pursues what is best. Sometimes these two are in agreement; but there are times when they quarrel inside us, and then sometimes one of them gains control, sometimes the other. Now when judgement is in control and leads us by reasoning toward what is best, that sort of self-control is called 'being in your right mind'; but when desire takes command in use and drages us without reasoning toward pleasure, then its command is known as 'outrageousness.' (237d-238a)
+
+In what respect is rhetoric a logical means to discern truth, and in what respect is it a means of manipulation? And, further, does the mere existence of this dual capacity undermine the legitimacy of the rhetorician?
+
+---
+class: big
+## Discussion Leader (Meaghan)
+
+> You've dashed my hopes of using you as my training partner, Socrates. (228e)
+
+Why do you think Phaedrus wanted to just summarize the speech rather than reading it?
+
+---
+class: big
+## Plato
+
+* Life: Born 429-423 BCE; Death 347 BCE
+* Founded First Organized Institute of Higher Learning (The Academy)
+* Arguably Invented Philosophy
+	* Moved from general "inquiry into knowledge"
+	* To an inquiry into the nature of being and the modes for living
+* First major Greek thinker whose work appears to have survived complete
+* Never speaks in any of his works (except the letters)
+
+---
+class: big
+## Socrates ("Socrates")
+
+* Life: 479 BCE; Death: 399 BCE
+* Hailed by the Oracle at Delphi as the wisest man in Athens
+	* "I know that I know nothing"
+	* Questioned people he considered wise
+	* Was Disappointed
+* All we know of him, we know from his students & critics
+	* Plato (~30 Dialogues)
+	* Xenophon (*Memorabilia*, *Hiero*, *Apology*, and *Symposium*)
+	* Aristophanes (*The Clouds*)
+* Socrates is different in all three authors
+	* Much more a Sophist in Xenophon & Aristophanes
+
+---
+class: big
+## Socratic Dialogue
+
+* "Know Thyself"
+* "Socratic" "Irony"
+* Plato Abandons Philosophical Tracts
+* Not Plays: Debates
+* Characters Were Real People
+	* Though Not (Always) Fairly Represented
+* Who Do We Believe?
+* Setting Is Important (esp. in *Phaedrus*)
+* [Stephanus Numbers](https://upload.wikimedia.org/wikipedia/commons/1/1c/Timaeus_stephanus_pages_32_33.jpg) (ie: *Phaedrus* 245b)
+	* Standard Reference for Plato
+
+---
+class: big
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+	* SOCRATES: Only if you first show me what you are holding in your left hand under your cloak (228d)
+	* PHAEDRUS: Stop playing hard to get! I know what I can say to make you give your speech. (236d)
+	* PHAEDRUS: Not yet, Socrates, not until this heat is over. Don't you see that it is almost exactly noon, 'straight up' as they say (242a)
+	
+---
+
+## Setting
+
+> SOCRATES: By Hera, it really is a beautiful resting place. The plane tree is tall and very broad; the chaste-tree, high as it is, is wonderfully shady, and since it is in full bloom, the whole place is filled with its fragrance. From under the plane tree the loveliest spring runs with very cool water—our feet cant testify to that. The place appears to be dedicated to Achelous and some of the Nympths, if we can judge from the statues and votive offerings. Feel the freshness of the air; how pretty and pleasant it is; how it echoes with the summery, sweet song of the cicadas' chorus! The most exquisite thing of all, of course, is the grassy slope: it rises so gently that you can rest your head perfectly when you lie down on it. You've really been the most marvelous guide, my dear Phaedrus.
+>
+> PHAEDRUS: And you, my remarkable friend, appear to be totally out of place. (230b-230c)
+---
+class: big
+## Nature / Self
+
+> SOCRATES: I am devoted to learning; landscapes and trees have nothing to teach me—only the people in the city can do that. (230d)
+
+> SOCRATES: I am still unable, as the Delphic inscription orders, to know myself; and it really seems to me ridiculous to look into other things before I have understood that. This is why I do not concern myself with them. I accept what is generally believed, and, as I was just saying, not into them but into my own self ... (229e-230a)
+---
+class: big
+## Myth
+
+> PHAEDRUS: do you really believe that legend? (229c)
+
+> SOCRATES: Now, Phaedrus, such explanations are amusing enough, but they are a job for a man I cannot envy at all. He'd have to be far too ingenious and work too hard—mainly because after that he will have to go on and give a rational account of the form of the Hippocentaurs, and then of the Chimaera; and a whole flood of Gorgons and Pegasuses and other monsters, in larger numbers and absurd forms, will overwhelm him. Anyone who does not believe in them, who wants to explain them away and make them plausible by means of some sort of rough ingenuity, will need a great deal of time. (229d-e)
+
+---
+class: big
+## Eloquence
+
+> SOCRATES: Then be quiet and listen. There's something really divine about this place, so don't be surprised if I'm quite taken by the Nymphs' madness as I go on with the speech. I'm on the edge of speaking in dithyrambs as it is. (238d)
+
+---
+class: big
+
+## Who Speaks?
+
+> SOCRATES: My friend, just as I was about to cross the river, the familiar divine sign came to me which, whenever it occurs, holds me back from something I am about to do. (242c)
+
+> SOCRATES: I'll never, as long as Lysias himself is present, allow you to practice your own speechmaking on me. (228e)
+
+> SOCRATES: The people who designed our language in the old days never thought of madness as something to be ashamed of or worthy of blame (244c)
+
+---
+## Mania / Knowledge (Inspiration / Interpretation)
+
+> SOCRATES: ... otherwise they would not have used the word '*manic*' for the finrest experts of all—the ones who tell the future—thereby weaving insanity into prophecy. They thought it was wonderful when it came as a gift of the god, and that's why they gave its name to prophecy; but nowadays people don't know the fine points, so they stick in a 't' and call it '*mantic*.' Similarly, the clear-headed study of the future, which uses birds and other signs was originally called *oionoïstic*, since it uses reasoning to bring intelligence and learning into human thought; but now modern speakers call it *oiōnistic*, putting on airs with tier long 'ō'. To the extent, then, that prophecy, *mantic*, is more perfect and more admirable than sign-based prediction, *oiōnistic*, in both name and aceivement, madness, from a god is finer than self-control of human origin, according to the testimony of the ancient language givers. (244c-d)
+---
+class: big
+## *Doxa* / *Eidos*
+
+> SOCRATES: The result is terribly noisy, very sweaty, and disorderly. Many souls are crippled by the incompetence of the drivers, and many wings break much of their plumage. After so much trouble, they all leave without having seen reality, uninitiated, and when they have gone they will depend on what they think is nourishment—their own opinions. (248b)
+
+---
+## *Ecstasis* & *Eidos*
+
+> SOCRATES: But not every soul is easily reminded of the reality there by what it finds here—not souls that got only a brief glance at the reality there, not souls who had such bad luck when they fell down here that they were twisted by bad company into lives of injustice so that they forgot the sacred objects they had seen before. Only a few remain whose memory is good enough; and they are startled when they see an image of what they saw up there. Then they are besides themselves, and their experience is beyond their comprehension because they cannot fully grasp what it is that they are seeing.
+>
+> Justice and self-control do not shine out through their images down here, and neither do the other objects of the soul's admiration; the senses are so murky that only a few people are able to make out, with difficulty, the original of the likenesses they encounter here. (250a-b)
