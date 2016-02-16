@@ -124,7 +124,7 @@ class: big
 
 ## The Problem
 
-> First, the debate between Poulakos and Schiappa, reactions to Black A thena, and responses to Knoblauch and Brannon independently give specific expression to the same general concerns, concerns about the relationships between our accounts of the past and our uses of those accounts to make sense of the present. Second, in each case concerns about representing the past are phrased as oppositions that pit "fact" against "fiction," calling into question the very concept of historical facticity. Third, read through each other, these three episodes move us through the problems of facticity, in the direction Schilb indicates, into issues of colonialism in the rhetoric of historiography and the historiography of rhetoric. (78)
+> First, the debate between Poulakos and Schiappa, reactions to *Black Athena*, and responses to Knoblauch and Brannon independently give specific expression to the same general concerns, concerns about the relationships between our accounts of the past and our uses of those accounts to make sense of the present. Second, in each case concerns about representing the past are phrased as oppositions that pit "fact" against "fiction," calling into question the very concept of historical facticity. Third, read through each other, these three episodes move us through the problems of facticity, in the direction Schilb indicates, into issues of colonialism in the rhetoric of historiography and the historiography of rhetoric. (78)
 
 > The Poulakos/Schiappa, *Black Athena*,and Knoblauch and Brannon debates raise questions of how the past and its uses presently legitimate(intentionally or not) knowledges that perpetuate unequal acquisitions of authority and exercises of power. In all three of the cases listed above, historiographic concerns about the articulation of ancient Greece within contemporary North America become debates about whether and how historically to situate hegemonic authority in classical and modern geographic locations. (78)
 ---
@@ -142,7 +142,7 @@ class: big
 class: big
 ## History as Authority
 
-> When history becomes a matter of understanding what count as facts?as well as a matter of sensing why those facts matter as such?acquiring the professionalized knowledge necessary to make the ancients different makes history a matter of scholastic fetish, the simple act of encasing and preserving a long-dead tradition. Doing history in this way becomes a matter of learning not to engage the past in terms of the present; rather, it becomes a matter of learning to isolate past from present. At the same time, exercising the historical authority of differentiation conceals and denies the power of the past in the present. (82)
+> When history becomes a matter of understanding what count as facts—as well as a matter of sensing why those facts matter as such—acquiring the professionalized knowledge necessary to make the ancients different makes history a matter of scholastic fetish, the simple act of encasing and preserving a long-dead tradition. Doing history in this way becomes a matter of learning not to engage the past in terms of the present; rather, it becomes a matter of learning to isolate past from present. At the same time, exercising the historical authority of differentiation conceals and denies the power of the past in the present. (82)
 ---
 ## "I'm More Ethical Than You"
 
