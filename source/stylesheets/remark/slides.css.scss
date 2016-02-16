@@ -152,6 +152,13 @@ ul li, ol li, p {
 	}
 }
 
+.small {
+	ul li, ol li, p {
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+}
+
 .big, .bullets {
 	ul li, ol li, p {
 		.normal {
