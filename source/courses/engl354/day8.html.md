@@ -1,0 +1,92 @@
+---
+title: 'ENGL 354 Day 8 (Jarratt)'
+progress_bar: false
+---
+class: middle, center, bigger
+
+# Jarratt <br> "The First Sophists and Feminism"
+
+1. Discussion Leaders
+1. First Assignment
+
+---
+## Discussion Leader (Zach)
+
+> This parallel can be traced even more closely into the realm of “style,” both as it refers specifically to language and in its more general reference to gesture,  appearance, and dress. The devaluation of both the sophists and women operates  as their reduction to a “style” devoid of substance. Both rhetoric and women are  trivialized by identification with sensuality, costume, and color – all of which are  supposed to be manipulated in attempts to persuade through deception. The Greek  goddess of persuasion, Peitho, is linked with marriage goddesses – not for her  domestic skill but because of her seductive powers and trickery.” (29)
+
+Why do you think women were excluded from the discussion of rhetoric? How different would our discussion  of rhetoric be if a woman’s perspective was taken into account during earlier discussions of  rhetoric? Would we have a better understanding/definition of rhetoric today?
+
+---
+class: small
+## Discussion Leader (Joe)
+
+> What I've discovered through this exploration is that, though the sophists may not be "feminists," current feminists are becoming sophists in the best sense of the word by describing rhetorical solutions to the crucial problem of defining a theory with the most power for changing women's lives. Sophistic rhetoric enables a feminist reading/writing practice of breaking into the "received histories" of the discourse of man (Spivak 1983, 186). Rewriting/rereading texts in terms of the narrative logic of difference opens avenues not only in literature but also in the history of rhetoric. Narratizing the social-historical differential specifically in rhetoric could trace the diversion of women's discursive energy into the schoolroom and drawing room, allowing a redefined "rhetoric" to include letters, texts on manners and education, and perhaps other forms as yet unidentified. It allows not only for the identification of new works but also offers a way to reread hegemonic texts as well, tracing the itinerary of male desire with a new critical perspective. Showing how feminist theory and literary critical work enact practices adumbrated by the democratic rhetoric of the sophists provides a way to recover a range of marginal voices in the history of rhetoric. Reciprocally, outlining the connections with sophistic rhetoric in current feminist reading and writing may offer increased leverage for dislodging the patriarchal institutions whose foundations were laid during the sophists time. (39)
+
+.normal[Do you agree with Jarrett’s interpretation of Sophists writers? How is Jarrett’s understanding of history similar/different than those made by the author’s we have read in this course?]
+
+.normal[Finally, I’m interested in the idea that texts can be reread to trace “the itinerary of male desire with a new critical perspective”. What do you think Jarrett means by this? Can you give an example of a historical text that you have read which contains the voice of “the Other” without explicitly referring to it?]
+---
+## First Assignment
+
+### From syllabus:
+
+>For the first paper, pick some aspect of the history of rhetoric during the period of the class that you would like to know more about. Think about something, specifically, that you found controversial or open to resolution in the course readings. Write a 6 page analysis of the state of this issue, and argue for a position you think resolves the issue or introduces some new dimension to consider.
+>
+>This paper will require you to conduct research outside of the material we have read for class.
+
+---
+class: big
+
+## Thesis
+
+> My attempt here will be to investigate the possibility that those two exclusions-of women and of sophists-may be related and to question the uses to which that relationship could be pursued both for feminism and for studies in the history of rhetoric. (27)
+
+> I'd like now to trace a part of that process of intellectual marginalization, through which the sophists take on a striking similarity to a discursive construct of woman. (29)
+
+---
+class: big
+## Method (Feminist Historiography)
+
+> They condemned the sophistic "style" for a range of features that, in fact, together sketch a profile of an alternative epistemic field: generic diversity, loose organization, a reliance on narrative, physical pleasure in language production and reception, a holistic psychology of communication, and an emphasis on the aural relation between speaker and listener. These features stand over against qualities of a patriarchal, philosophic discourse prepared (though not practiced) by Plato and fully formulated by Aristotle ... (34)
+
+---
+class: big
+## Tradition
+
+> Cixous counters with the point that "far from transmitting knowledge, [mastery] makes it [i.e., knowledge] still more inaccessible ... [It becomes] sacred,... Law's dirty trick. Only those people who already have a relationship of mastery... who are saturated with culture, have ever dared have access to the discourse that the master gives" (1986, 139). (35)
+
+> But instead of moving in the direction of fixing a law of logic, their works seem designed rather to call attention to the ways patterns of reasoning came to be accepted. (36)
+---
+## Tradition (Example)
+
+> Both Spivak and Cixous consider the question from the different perspectives of father and mother at the moment of birth. From that moment, Freud claims that a different logic is in play for the female, "since maternity is proved by the senses whereas paternity is a surmise based on a deduction and a premise" (*Moses and Monotheism* 153, quoted in Cixous 1986, 100). When this logic of deductionthe assignment of the name of the father to the son-becomes the privileged source of meaning and reference, as it clearly does for Freud, a challenge to privilege seeks a different logic, beginning from a different desire, tracing a new "itinerary." The point is not to fix irremediably two essential lines of logic, man's and woman's, but to locate legally and historically the falsely naturalized logic of patriarchy (as emerging from a particular set of *nomoi*) in contrast to an alternative experienced historically by women and creating necessarily different discursive products. (37)
+
+---
+## "Truth" & Usage <br> "Woman" & Women
+
+> I think the sophists provide an alternative to this seemingly fixed *logos* and, by extension, to a discourse of difference through their attention to *nomos*. An important term in the fifth-century B.C., *nomos* refers to provisional codes (habits or customs) of social and political behavior, socially constructed and historically (even geographically) specific. The codification of any set of *nomoi* is the work of rhetoric in its constructive role; the "reading" of *nomos* in any text is rhetoric's analytic or critical function. In opposition to *logos* as a permanent and "natural" structure of law, rationality or language, *nomos* can be called into play as an alternative, designating the human, and thus necessarily discursive, construction of changeable codes. The term operates at the nexus of language and history: it signifies the relativization of *logos*-the real conditions (*nomoi*) under which texts are produced in specific times and places. Though normally applied to law, by implication the term could be taken to deny the possibility of any discourse "literary" or "philosophic," for example-isolated from the operation of social customs and political power. (35-6) 
+
+---
+## Deconstruction
+
+> In hierarchical discourse, on the Derridean reading of Western philosophy, control is gained by the displacement of a degraded "other" in favor of a polar opposite. The congruence of logo and phallocentrism places both sophistic rhetoric and woman at the negative pole against philosophy and man. Indeed, Plato and Aristotle defined philosophy through the exclusion of rhetoric as the degraded term. For Plato, the sophists signified opinion as opposed to Truth, the materiality of the body (e.g., in association with cooking and cosmetics) vs. soul, practical knowledge vs. science, the temporal vs. the eternal, writing (explicitly as an artificial aid to memory) vs. speech (as the vehicle of intuited knowledge). This cluster of terms coincides on many counts with the cultural stereotype of the "feminine" operative in the West for centuries. The second wave of feminism, beginning with Beauvoir's The Second Sex, has exposed this gendered discourse of privilege, a process Gayatri Spivak has called "the production of a discourse of man through a certain metaphor of woman" (1983, 169). The character projected onto the feminine as "other" shares with Plato's sophists qualities of irrationality (or nonrationality), magical or hypnotic power, subjectivity, emotional sensitivity; all these are devalued in favor of their "masculine" or philosophic opposites—rationality, objectivity, detachment and so on. (29)
+---
+## Analogy
+
+> Though it's impossible to generalize about discourse in all the centuries since the sophists, it can be said that the suppression of difference crucial to the operation of philosophy has often relegated the heterogeneity of sophistic discourse to the margins of the serious public work of knowledge formation and communication; the exclusion of women from these processes has often been defended in the same terms (i.e., as an absence of "rationality"). This suppression of sophistic rhetoric might be traced in the Christian search for God's truth or in the medieval emphasis on dialectic over "grammar" (i.e., poetics) and rhetoric in the trivium. The most powerful occasion of this suppression, still operative today, comes with the relegation of rhetoric by seventeenth-century science to external "color" or supplemental "dress"meaning distorting obfuscation. The parallel oppression of women within those same intellectual systems is too well known, and too vast, to catalogue here. (30)
+---
+##Brief History of Feminist Thought
+
+> Moi describes first a discourse of equality-an assertion that women are like men and thus deserve equal treatment ... Despite the acknowledged usefulness and necessity of arguing for equality, a feminism sensitive to the results of historical inequalities valorizes women as they are, i.e., different. Thus develops stage two, a discourse of difference. Alcoff calls this approach "cultural feminism" and offers the work of Mary Daly as its most typical expression. If, in my initial comparison of the sophists and "woman," I had claimed an inherent value to the sophists' and women's style based only on their difference from the philosophers' regimented reasoning, my analysis could have been entered as an example of this kind of feminism. But both Moi and Alcoff explain how a feminism based on difference ultimately founders on the problem of essentialism; reinforcing difference leaves open the possibility of reproducing patriarchal exclusions. For both, poststructuralism offers a resolution for the discourse of difference, but the premises of post-structuralism are anti-foundationalist, undercutting any epistemological or linguistic fixity. Alcoff especially finds that the undecidability of poststructuralism leaves no room for political struggle. Through post-structuralism, we lose the bases of the two previous feminisms-universal human essence or essential sexual difference-which are the grounds of political action for women (31)
+---
+class: big
+## What the Sophists Contribute
+
+> Each individual must agonistically take sides in full knowledge that any position involves unpalatable political choices, acts of exclusion. Moi acknowledges the limits of human agency, but grants that some choice is possible. What she describes are rhetorical stances. And this dilemma is particularly related to sophistic rhetoric because of the latter's recognition of *dissoi logoi*—contradictory propositions—as the anti-foundation of any knowledge (32)
+
+---
+class: big
+## *Nomos* and Reading
+
+> Nomos offers a mode of reading centered on narratives encoded in the text and in the times. Such an analytic provides a useful alternative to the attempt to discover marginalized voices marked by characteristic stylistic features. Mary Jacobus observes that, because the feminine is so effectively suppressed in Western discourse, these features can't be counted on to appear at a surface level in texts, even by women. (36)
+---
