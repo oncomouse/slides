@@ -79,7 +79,7 @@ class: big
 1. Well, what's a syllogism?
 	1. Deductive argument
 	1. Series of propositions that, when taken together, prove a conclusion
-	1. All men are mortal <br> Socrates is mortal <br> Therefore, Socrates is mortal
+	1. All men are mortal <br> Socrates is a man <br> Therefore, Socrates is mortal
 1. Enthymeme do not necessarily have a formal structure
 1. Task of orator:
 	1. Match propositions to audience
