@@ -17,6 +17,11 @@ class: bigger
 
 > When scholars write about "space," they most often use the term metaphorically to describe the cultural landscape of laws, customs, and beliefs that form the geographies of our lives. (41)
 ---
+## Discussion Leader (Bekah)
+
+On page 46 Mountford asserts that the placement of women in un-intuitional, organic, domestic, and natural settings does not “suggest that these women preachers are without authority.” A few sentences later, however, she concludes almost the opposite - that their wisdom is “fleeting.” How do you think the domestic positioning of women, especially in Mountford’s example texts, affects their authority over their audiences?
+
+---
 class: big
 ## The Cultural
 
