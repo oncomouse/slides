@@ -13,7 +13,7 @@ Does being a good rhetorician only mean that one has the ability to easily persu
 ---
 ## Discussion Leader (Samantha)
 
-.burke-poem[.center[![](/images/burke.png)]]
+.burke-poem[.center[![](../../images/burke.png)]]
 
 Does the ending of the modernized poem suggest that man will end its own existence through desire for perfection/progress? If so, can our symbol-using system be the blame of this projected destruction, since this system ultimately causes men to strive for perfection?
 ---
