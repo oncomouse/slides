@@ -1,0 +1,117 @@
+---
+title: ENGL 353 Day 13 (Cicero 1)
+progress_bar: false
+---
+
+class: middle, bigger
+
+.center[
+# Cicero, *De Oratore* <br> Book I
+]
+---
+## Discussion Leader (Michael)
+
+> While the whole art of oratory is open to the view and is concerned in some measure with the common practice, custom and speech of mankind so that, whereas in all other arts that is most excellent which is farthest removed from the understanding and the mental capacity of the untrained, in oratory the very cardinal sin is to depart from the language of everyday life, and the usage approved by the sense of the community (I.iii)
+
+Why does Cicero consider "the cardinal sin" of an orator to be to "depart from the language of everyday life, and the usage approved by the sense of the community?"
+
+---
+class: bigger
+## Cicero's Three Styles
+
+1. The Plain Style (Attic)
+1. The Middle Style (Cicero)
+1. The Grand Style (Asiatic)
+---
+class: big
+## A Historical Shift
+
+1. End of Classical Athens
+	1. During Aristotle's Life, Greek City States Conquered by Macedonia
+	1. Alexander the Great
+1. Hellenism
+	1. [Kingdoms Arise After Alexander's Death](../../images/post-alexander.png)
+1. Eventual Collapse of Ptolemaic Egypt
+1. Rise of Roman Republic
+	1. Union of City States and Military Allies in Italy
+	1. Rapidly Expanding into Hellenistic World
+	1. [Map of the Republic](https://upload.wikimedia.org/wikipedia/commons/6/62/Roman_Republic-44BC.png)
+---
+class: bigger
+## Republican Government
+
+1. Rome is more Bureaucratic than Athens
+	1. [Government Model](https://upload.wikimedia.org/wikipedia/commons/f/f9/Roman_constitution.svg)
+1. Direct democracy is practiced in assembles
+	1. Organized by geography into tribes
+1. Senate has majority of power
+	1. Is republican rather than democratic
+1. Rhetoric Becomes Primarily a Matter for Law Courts
+---
+class: big
+## Cicero (Early Life)
+
+1. Major legal and political career at a dangerous time in the Republic
+	1. Increasing power of the senate
+	1. Decline of assemblies
+	1. Rome's military successes led to arrival of dictators
+1. Trained in Greek philosophy
+	1. Major translator of Greek to Latin
+1. Wrote *De Inventione*
+1. Won key legal decisions in favor of Republic during this period (80 BC)
+	
+---
+class: big
+## Cicero (Later Life)
+1. Elected Consul in 63BC
+	1. Successfully defended Rome from a coup attempt
+	1. Executed conspirators w/o trial
+1. Spoke against Julius Caesar's dictatorship
+	1. Was exiled
+	1. Began to write his memoirs (of which *De Oratore* is part)
+1. After Caesar's Murder, advocate for restoring the Republic
+1. Publicly Denounced Mark Antony and Supported Octavian (Emperor August)
+	1. Was killed in 43BC
+	1. Mark Antony nailed up his head and hands in the forum
+---
+## The Opening
+
+> When as often happens, brother Quintus, I think over and recall the days of old, those men always seem to me to have been singularly happy who, with the State at her best, and while enjoying high distinctions and the fame of their achievements, were able to maintain such a course of life that they could either engage in activity that involved no risk or enjoy a dignified repose. And time was when I used to imagine that I too should become entitled, with wellnigh universal approval, to some opportunity of leisure and of again directing my mind to the sublime pursuits beloved of us both, when once, the career of office complete and life too taking the turn toward its close, the endless toil of public speaking and the business of canvassing should have come to a standstill (I.i)
+---
+class: big
+## The Liberal Arts
+
+> As for ability again—there are many things to show it—our fellow-countrymen have far excelled the men of every other race. And considering all this, who would not rightly marvel that, in all the long record of ages, times, and states, so small a number of orators is to be found?
+>
+> But the truth is that this oratory is a greater thing, and has its sources in more arts and branches of study, than people suppose (I.iv)
+---
+class: big
+## Queen Rhetorica
+
+> To begin with, a knowledge of very many matters must be grasped, without which oratory is but an empty and ridiculous swirl of verbiage: and the distinctive style has to be formed, not only by the choice of words, but also by the arrangement of the same; and all the mental emotions, with which nature has endowed the human race, are to be intimately understood, because it is in calming or kindling the feelings of the audience that the full power and science of oratory are to be brought into play. (I.v)
+---
+class: big
+## Rhetoric as Civic Virtue (Crassus)
+
+> Or what achievement so mighty and glorious as that the impulses of the crowd, the consciences of the judges, the austerity of the Senate, should suffer transformation through the eloquence of one man? What function again is so kingly, so worthy of the free, so generous, as to bring help to the suppliant, to raise up those cast down, to bestow security, to set free from peril, to maintain men in their civil rights? What too is so indispensable as to have always in your grasp weapons wherewith you can defend yourself, or challenge the wicked man, or when provoked take your revenge? (I.viii)
+---
+class: big
+## Rhetoric and Ruination (Scaevola)
+
+> His sons, on the other hand, who were accomplished speakers and equipped for oratory with every advantage of nature or training, after they had taken over a State that was flourishing exceedingly because of their father's counsels and their ancestors' military achievements, wrecked the commonwealth by use of this eloquence to which, according to you, civil communities still look for their chief guidance. (I. ix)
+---
+## Gorgias? (Crassus)
+
+> For never will I say that there are not certain arts belonging exclusively to those who have employed all their energies in the mastery and exercise thereof, but my assertion will be that the complete and finished orator is he who on any matter whatever can speak with fullness and variety.
+>
+> Indeed in handling those causes which everybody acknowledges to be within the exclusive sphere of oratory, there is not seldom something to be brought forth and employed, not from practice in public speaking—the only thing you allow an orator—but from some more abstruse branch of knowledge. I ask, for instance, whether an advocate can either assail or defend a commander-in-chief without experience of the art of war, sometimes too without knowledge of the various regions of land or sea? (I.xiii-xiv)
+---
+class: big
+## Skill vs Career (Crassus)
+
+> Remember that I have not been speaking of my own skill, but of that of an orator. For what have men like myself either learned or had any chance of knowing, who entered upon practice before ever we reached the study of theory, whom our professional activities in public speaking, in the pursuit of office, in politics, and about the affairs of our friends, wore out ere we could form any conception of the importance of these other matters? (I.xvii)
+---
+class: big
+## The Ideal Orator
+
+> But since it is 'The Orator' we are seeking, we have to picture to ourselves in our discourse an orator from whom every blemish has been taken away, and one who moreover is rich in every merit. For even though the multiplicity of litigation, the diversity of issues, and the rabble of rusticity thronging our public places, give opportunity even to the most faulty speakers, we shall not for that reason lose sight of this our objective. (I.xxvi)
