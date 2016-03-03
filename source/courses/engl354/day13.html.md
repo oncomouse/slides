@@ -4,7 +4,7 @@ progress_bar: false
 ---
 class: middle, center, bigger
 
-# Lloyd Bitzer, "The Rhetorical Situation"
+# Richard Vatz, "The Myth of the Rhetorical Situation"
 ---
 ## Discussion Leader (Drew)
 
