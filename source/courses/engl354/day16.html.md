@@ -9,9 +9,26 @@ class: bigger, middle
 # Invitational Rhetoric
 ]
 ---
-## Discussion Leader ()
+## Discussion Leader (Jacy)
+
+>With the identification of the rhetorical mode of invitational rhetoric, rhetors will be able to recognize situations in which they seek not to persuade others but simply to create an environment that facilitates understanding, accords value and respect to others’ perspectives, and contributes to the development of relationships of equality. 
+
+With these goals in mind, which modes of communication are best suited for the application of invitational rhetoric, and why? Which modes of communication present obstacles for the application of invitational rhetoric, and what are they?
+
 ---
-## Discussion Leader ()
+class: bigger
+## Discussion Leader (Allison)
+
+Do you think traditional rhetoric or invitational rhetoric is more effective? Do traditional and invitational styles have to be set up as a dichotomy or is there a space where the two converge?
+---
+## Discussion Leader (Vanessa)
+
+> The universalist liberal humanism that grounds invitational rhetoric assumes shared interested between oppressors and oppressed, so that conflicts may ostensibly be solved through mutual invitation. In fact, the powerful rarely are willing to invite those less powerful into dialogue the oppresses are hard pressed to convince oppressors who benefit materially from oppression to be open to dialogue, let alone radical change. Many discussions are by “invitation only,” a phrase suggesting that invitation belongs to those who set the rules for exclusion. And when oppressors invite dialogue, we must examine on whose terms and under what conditions that invitation takes place.
+
+Do you think the oppressed always need an invitation to a discussion, or would you say that the oppressed have more liberty than simply “waiting for an invitation to speak”?
+
+Also, do you think this part of the article correlates to the part where Lozano-Reich and Cloud discuss gender inequality? Do you see the men representing the oppressors and the women representing the oppressed? 
+
 ---
 
 ## Terminological Refiguring
@@ -23,24 +40,24 @@ class: bigger, middle
 > rhetors tend to see their audiences as *opponents* and sometimes may be tempted to engage in questionable ethical practices to win their "*battles*" with them (Foss & Griffin 15).
 
 ---
-
+class: big
 ## Persuasion is Coercion?
 
 > Embedded in efforts to change others is a desire for control and domination, for the act of changing another establishes the power of the change agent over that other. In some instances, the power of the rhetor over another is overt, as it is, for example in laws that exert control over women's bodies ... But even in the cases where the strategies used are less coercive, rhetors who convince others to adopt their viewpoints exert control over part of those others' lives. (Foss & Griffin 3)
 
 ---
-
+class: big
 ## Tradition of Control
 
 > The traditional conception of rhetoric, in summary, is characterized by efforts to change others and thus to gain control over them, self-worth derived from and measured by the power exerted over others, and a devaluation of the life worlds of others. This is a rhetoric of patriarchy, reflecting its values of change, competition, and domination. But these are not the only values on which a rhetorical system can be constructed, and we would like to propose as one alternative a feminist rhetoric. (Foss & Griffin 4)
 
 ---
-class: big
 ## Patriarchal Bias
 
 > As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
 
 ---
+
 ## Patriarchal Bias
 
 > As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
@@ -79,7 +96,6 @@ class: big
 > Change may be the result of invitational rhetoric, but change is not its purpose. When change does occur as a result of understanding, it is different from the kind of change that typifies the persuasive interactions of traditional rhetoric. In the traditional model, change is defined as a shift in the audience in the direction requested by the rhetor, who then has gained some measure of power and control over the audience. In invitational rhetoric, change occurs in the audience or rhetor or both as a result of new understanding and insights gained in the exchange of ideas. (Foss & Griffin 6)
 
 ---
-class: big
 ## Safety and Systems
 
 > The three external conditions of safety, value, and freedom required for others to present their perspectives were created by the speech. The rhetors communicated safety when they suggested that they regarded the perspective of the judges as legitimate one that they would treat with respect and care. (Foss & Griffin 13)
