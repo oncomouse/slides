@@ -1,0 +1,129 @@
+---
+title: ENGL 353 Day 17 (Augustine)
+progress_bar: false
+---
+
+class: center, middle, bigger
+
+.crop[
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Simone_Martini_003.jpg/680px-Simone_Martini_003.jpg)
+]
+# Augustine <br> *On Christian Doctrine*
+
+---
+## Discussion Leader (Zipporah)
+
+> But as some men employ these coarsely, inelegantly, frigidly, while others use them with acuteness, elegance, and spirit, the work that I am speaking of ought to be undertaken by one who can argue and speak with wisdom, if not with eloquence, and with profit to his hearers, even though he profit them less than he would if he could speak with eloquence too. But we must beware of the man who abounds in eloquent nonsense, and so much the more if the hearer is pleased with what is not worth listening to, and thinks that because the speaker is eloquent what he says must be true. And this opinion is held even by those who think that the art of rhetoric should be taught; for they confess that "though wisdom without eloquence is of little service to states, yet eloquence without wisdom is frequently a positive injury, and is of service never." (7)
+
+When using rhetoric not just in the Spiritual setting but in all settings, is wisdom more important than eloquence or the other way around? Which early philosopher would agree with the notion of wisdom being more important than eloquence?
+
+---
+## Discussion Leader (Rachel)
+
+> And a number of other points bearing on the laws of eloquence could be found in this passage which I have chosen as an example. But an intelligent reader will not be so much instructed by carefully analysing it as kindled by reciting it with spirit. Nor was it composed by man's art and care, but it flowed forth in wisdom and eloquence from the Divine mind; wisdom not aiming at eloquence, yet eloquence not shrinking from wisdom. For if, as certain very eloquent and acute men have perceived and said, the rules which are laid down in the art of oratory could not have been observed, and noted, and reduced to system, if they had not first had their birth in the genius of orators, is it wonderful that they should be found in the messengers of Him who is the author of all genius? Therefore let us acknowledge that the canonical writers are not only wise but eloquent also, with an eloquence suited to a character and position like theirs. (21)
+
+When he says they have "an eloquence suited to a character and position like theirs," does he mean that because of their positions (being teachers of the Gospel), they are automatically inclined to be eloquent? Or does he mean that every good orator is, in a way, divinely inspired? For either case, do you agree with this?
+
+---
+class: bigger
+## The Middle Ages
+
+* Designates a period from roughly 5th century to 15th century
+* Bookended by two events:
+	1. The Fall of the Western Roman Empire
+	1. The Italian Renaissance
+* Marked by:
+	* Falling population in Western Europe
+	* Declining urban population
+	* Mass migrations
+	* Constant threat of invasion
+---
+class: big
+## Fall of Western Roman Empire
+
+* Hun invasion of Eastern Europe
+	* Displaced Germanic tribes
+	* Eventually encountered Western Rome
+* Roman political and economic decline
+	* Increasing military costs
+	* "More tax collectors than tax payers"
+* Crises meant breakdown in imperial control and peace
+	* Travel
+	* Communication
+* Key Events
+	* Diocletian splits empire in 276 (Rome and Constantinople)
+	* Sack of Rome in 410 by Visigoths
+	* Deposition of Romulus Augustulus in 476
+	
+
+---
+class: bigger
+## Medieval Rhetoric
+
+* Not viewed as important as Classical or Renaissance
+* However, important for survival of Rhetoric as a concept
+* Three rhetorical genres:
+	1. *Ars dictaminis*
+	1. *Ars praedicandi*
+	1. *Ars poetica*
+* Adapt Cicero and Aristotle to these three forms
+---
+class: big
+## St. Augustine of Hippo
+
+* Lived 354-430 AD
+* Major figure in history of Christianity
+	* Original sin
+	* Just war doctrine
+	* Rome as "City of God"
+* Important for philosophy
+	* *Confessions* considered early example of phenomenology
+	* Advocated for preservation of Classical philosophy
+* Taught rhetoric in Rome and provinces from 373-385
+* Converted to Christianity because of oratory
+	* Ambrose of Milan
+* Adapted rhetoric to Christian teaching
+---
+## Sources of Eloquence
+
+> For men of quick intellect and glowing temperament find it easier to become eloquent by reading and listening to eloquent speakers than by following rules for eloquence. And even outside the canon, which to our great advantage is fixed in a place of secure authority, there is no want of ecclesiastical writings, in reading which a man of ability will acquire a tinge of the eloquence with which they are written, even though he does not aim at this, but is solely intent on the matters treated of ... Indeed, I think there are scarcely any who can do both things—that is, speak well, and; in order to do this, think of the rules of speaking while they are speaking. For we must be careful that what we have got to say does not escape us whilst we are thinking about saying it according to the rules of art. Nevertheless, in the speeches of eloquent men, we find rules of eloquence carried out which the speakers did not think of as aids to eloquence at the time when they were speaking, whether they had ever learnt them, or whether they had never even met with them. For it is because they are eloquent that they exemplify these rules; it is not that they use them in order to be eloquent. (4)
+---
+## Recasting Classical Rhetoric
+
+> It is the duty, then, of the interpreter and teacher of Holy Scripture the defender of the true faith and the opponent of error, both to teach what is right and to refute what is wrong, and in the performance of this task to conciliate the hostile, to rouse the careless, and to tell the ignorant both what is occurring at present and what is probable in the future. But once that his hearers are friendly, attentive, and ready to learn, whether he has found them so, or has himself made them so the remaining objects are to be carried out in whatever way the case requires. If the hearers need teaching, the matter treated of must be made fully known by means of narrative. On the other hand, to clear up points that are doubtful requires reasoning and the exhibition of proof. If, however, the hearers require to be roused rather than instructed, in order that they may be diligent to do what they already know, and to bring their feelings into harmony with the truths they admit, greater vigor of speech is needed. Here entreaties and reproaches, exhortations and upbraidings, and all the other means of rousing the emotions, are necessary. (6)
+---
+## New Source of Wisdom
+
+> Now a man speaks with more or less wisdom just as he has made more or less progress in the knowledge of Scripture; I do not mean by reading them much and committing them to memory, but by understanding them aright and carefully searching into their meaning. For there are who read and yet neglect them; they read to remember the words, but are careless about knowing the meaning. It is plain we must set far above these the men who are not so retentive of the words, but see with the eyes of the heart into the heart of Scripture. Better than either of these, however, is the man who, when he wishes, can repeat the words, and at the same time correctly apprehends their meaning. (7)
+
+---
+## Ethos Reimagined
+
+> Now it is especially necessary for the man who is bound to speak wisely, even though he cannot speak eloquently, to retain in memory the words of Scripture. For the more he discerns the poverty of his own speech, the more he ought to draw on the riches of Scripture, so that what he says in his own words he may prove by the words of Scripture; and he himself, though small and weak in his own words, may gain strength and power from the confirming testimony of great men. For his proof gives pleasure when he cannot please by his mode of speech. (8)
+---
+## Avoid Rhetoric?
+
+> But if a man desire to speak not only with wisdom, but with eloquence also (and assuredly he will prove of greater service if he can do both), I would rather send him to read, and listen to, and exercise himself in imitating, eloquent men, than advise him to spend time with the teachers of rhetoric; especially if the men he reads and listens to are justly praised as having spoken, or as being accustomed to speak, not only with eloquence, but with wisdom also. For eloquent speakers are heard with pleasure; wise speakers with profit. And, therefore, Scripture does not say that the multitude of the eloquent, but "the multitude of the wise is the welfare of the world."(1) And as we must often swallow wholesome bitters, so we must always avoid unwholesome sweets. (8)
+---
+## Vernacular
+
+> Now a strong desire for clearness sometimes leads to neglect of the more polished forms of speech, and indifference about what sounds well, compared with what dearly expresses and conveys the meaning intended. Whence a certain author, when dealing with speech of this kind, says that there is in it "a kind of careful negligence."(1) Yet while taking away ornament, it does not bring in vulgarity of speech; though good teachers have, or ought to have, so great an anxiety about teaching that they will employ a word which cannot be made pure Latin without becoming obscure or ambiguous, but which when used according to the vulgar idiom is neither ambiguous nor obscure not in the way the learned, but rather in the way the unlearned employ it ... why should a teacher of godliness who is addressing an unlearned audience shrink from using assure instead of os, if he fear that the latter might be taken not as the singular of ossa, but as the singular of ora, seeing that African ears have no quick perception of the shortness or length of vowels? And what advantage is there in purity of speech which does not lead to understanding in the hearer, seeing that there is no use at all in speaking, if they do not understand us for whose sake we speak? (24)
+---
+class: big
+## Style
+
+> When they have once gained this end, they feast upon the truth itself with delight; and it is the fine characteristic of great minds that they love the truth in words, not just the words. For what is the use of a golden key if it cannot open what we want it to? Or what is the objection to a wooden one if it can do so, since we are asking nothing save that what is closed be opened? But as eating and learning have a certain similarity on to the other, because of the natural fastidiousness of most people, even the very food which is necessary for life's sustenance must have seasoning. (26; Thérèse Sullivan trans.)
+---
+## Divine Kairos
+
+> And when the hour is come that he must speak, he ought, before he opens his mouth, to lift up his thirsty soul to God, to drink in what he is about to pour forth, and to be himself filled with what he is about to distribute. For, as in regard to every matter of faith and love there are many things that may be said, and many ways of saying them, who knows what it is expedient at a given moment for us to say, or to be heard saying, except God who knows the hearts of all? And who can make us say what we ought, and in the way we ought, except Him in whose hand both we and our speeches are? Accordingly, he who is anxious both to know and to teach should learn all that is to be taught, and acquire such a faculty of speech as is suitable for a divine. But when the hour for speech arrives, let him reflect upon that saying of our Lord's as better suited to the wants of a pious mind "Take no thought how or what ye shall speak; for it shall be given you in that same hour what ye shall speak. For it is not ye that speak, but the Spirit of your Father which speaketh in you." (32)
+---
+class: big
+## Good Man Speaking Well
+
+> But whatever may be the majesty of the style, the life of the speaker will count for more in securing the hearer's compliance. The man who speaks wisely and eloquently, but lives wickedly, may, it is true, instruct many who are anxious to learn; though, as it is written, he "is unprofitable to himself." Wherefore, also, the apostle says: "Whether in pretense or in truth Christ is preached." Now Christ is the truth; yet we see that the truth can be preached, though not in truth,--that is, what is right and true in itself may be preached by a man of perverse and deceitful mind. (58)
+---
+class: bigger
+## Live Rhetorically
+
+> But if a person cannot do both, let him speak with wisdom, even though he cannot speak with eloquence, rather than with eloquence without wisdom. But if even this is impossible, let him conduct himself as not only to deserve a reward for himself, but also to offer an example to others; let his manner of life be, as it were, a flowering speech. (62; Thérèse Sullivan trans.)
