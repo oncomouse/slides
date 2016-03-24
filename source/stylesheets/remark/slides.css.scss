@@ -153,10 +153,17 @@ ul li, ol li, p {
 }
 
 .small {
-	ul li, ol li, p {
+	ul li, ol li {
 		font-size: 0.75rem;
 		line-height: 1rem;
 	}
+}
+
+.source {
+	font-size: 0.75rem;
+	line-height: 1rem;
+	bottom: 2rem;
+	position: absolute;
 }
 
 .big, .bullets {
