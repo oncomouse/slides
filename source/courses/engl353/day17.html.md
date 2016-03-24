@@ -9,6 +9,12 @@ class: center, middle, bigger
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Simone_Martini_003.jpg/680px-Simone_Martini_003.jpg)
 ]
 # Augustine <br> *On Christian Doctrine*
+---
+class: bigger
+## Announcement
+
+1. Office Hours This Week: 11:30-1:15
+1. Office Hours Next Week: 1:30-3:00
 
 ---
 ## Discussion Leader (Zipporah)
