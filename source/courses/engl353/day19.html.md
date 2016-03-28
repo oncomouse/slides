@@ -22,6 +22,11 @@ class: bigger
 
 ]
 ---
+### Walter Ong on Letter Writing
+
+> in the West through the Middle Ages and earlier almost all those devoted to writing regularly used the services of a scribe because the physical labour writing involved—scraping and polishing the animal skin or parchment, whitening it with chalk, resharpening goose-quill pens with what we still call a penknife, mixing ink, and all the rest—interfered with thought and composition. (Ong 30)
+
+---
 ### Violent Metaphors
 
 > Until now we have rehearsed our hearers in the preliminary training of grammar; now that the period of practice is over, we must lead them to the battlefield of composition. After all, if we have omitted so much up to this point regarding the incredibly wide choice of words and regarding the appreciation of their melody as well, what else can we call our work but the milk of learning, the training of a child? Thus far we have looked at the rudiments of education; now we move into the full manly power of knowledge (132)
