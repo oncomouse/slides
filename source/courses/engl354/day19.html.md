@@ -8,6 +8,11 @@ class: bigger, middle
 .center[
 # Walter J Ong <br> "Writing is a Technology that Restructures Thought"
 ]
+---
+class: bigger
+## Reminder
+
+1. Office Hours this week are from 1 until 3 on Wednesday
 
 ---
 ## Discussion Leader (Sarah)
@@ -15,6 +20,13 @@ class: bigger, middle
 > Technologies are artificial, but -- paradox again -- artificiality is natural to human beings. Technology, properly interiorized, does not degrade human life but on the contrary enhances it. (32)
 
 How has the ability to read and write enhanced our ability to understand different subjects and arguments? Does reading an article or paper detract from understanding and learning the author's claims when compared to them personally speaking the same opinion?
+
+---
+## Discussion Leader (Katherine)
+
+> given the human condition and the advantages conferred by writing, the invention of writing, and even of alphabetic writing, was sure to occur somewhere in the evolution of culture and consciousness: But to say that language is writing is, at best, uninformed. It provides egregious evidence of the unreflective chirographic and/or typographic squint that haunts us all.
+
+Given that we know written language allows for all types of new thoughts and wealth of ideas and innovation, which oral culture does not allowed for, do you think Ong over-emphasizes the value of learning oral language without it being constantly paired with the written? Do you think it's possible to express oneself accurately in writing or is Ong correct in asserting that written language is always an imperfect representation of the oral? 
 
 ---
 ## Literacy as "Normal"

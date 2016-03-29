@@ -9,6 +9,11 @@ class: center, middle, bigger
 
 # Alberic of Monte Cassino <br> *The Flowers of Rhetoric*
 ---
+class: bigger
+## Reminder
+
+1. Office Hours this week are from 1 until 3 on Wednesday
+---
 ### Discussion Leader (Shelby)
 
 **Chapter II, Section 5**
