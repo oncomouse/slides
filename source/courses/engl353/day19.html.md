@@ -9,6 +9,20 @@ class: center, middle, bigger
 
 # Alberic of Monte Cassino <br> *The Flowers of Rhetoric*
 ---
+### Discussion Leader (Shelby)
+
+**Chapter II, Section 5**
+
+Is there ever a situation in writing where this is wrong, like stream of conscious writing?
+
+---
+### Discussion Leader (Josh)
+
+> So if you want to render your reader attentive, you ought to offer him words which are true, honorable, and useful. For if you suggest things that are false, degraded or not likely to be of value to your listener, you will make him turn a deaf ear; even worse, you will create an attitude that what is to follow will be contemptible and vicious. (III)
+
+Previous works we have read discussed the truth and how to gain the audience's attention as separate topics, but Alberic presents them as being one and the same. Is Alberic's view that audiences will not listen to a speech unless it is "true, honorable, and useful" consistent with, or a departure from our earlier readings? 
+
+---
 class: bigger
 
 ### Page Images
