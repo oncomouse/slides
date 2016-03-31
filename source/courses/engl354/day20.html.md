@@ -6,6 +6,16 @@ class: center, middle, bigger
 
 
 # Lanham <br> “The Electronic Word”
+---
+## Discussion Leader (Heidi)
+
+> Electronic media will change not only the future texts but past ones as well. (269)
+
+> Electronic "textbooks" are democratizing education in all the arts in the same way that the invention of printing reinforced the spread of Protestantism. (272)
+
+> Rhetoric becomes, through the digital equivalences such a matrix can plot, a general theory for all the arts. And thus the central structure for a central curriculum in the arts and letters. (278)
+
+Knowing that this article was written in 1989, do you think that electronic media has changed pasts texts and the way we read and interact with them? What does Lanham mean when he says that electronic "textbooks" are democratizing education? And do you agree that it did? Do you think that rhetoric is a central structure for the arts today in universities, and if not then what is? 
 
 ---
 ## Discussion Leader (Ty)
@@ -13,7 +23,6 @@ class: center, middle, bigger
 > We have always had ways of triggering this oscillation, but the old ways--printing figures of sound and arrangement on the stylistic surface until it squeaked--were clumsy, slow unchangeable, and above all author-controlled...Make these changes electronically and the oscillations alter radically in frequency and wavelength. The difference is profound. You change Edens. And your new Eden becomes, not choosing one or the other attitudinal world...but determining what kind of oscillation between them you want to create and what stylistic patterns will create it. You return, by electronic ambages, to that Renaissance *sprezzatura* of rehearsed spontaneity which Newtonian science so unceremoniously set aside. (267-268)
 
 Does this changing relationship present a problem in which no "Great Work" (Paradise Lost or King Lear) is sacred and can be changed to suit the consumer's preference? Is this good or bad? Will this ease of access to electronic artistic programs and distribution networks (Word, Photoshop, music making programs and YouTube, forums, blogs) lead to a distillation of art? Can you think of ways this has already happened?
-
 ---
 class: big
 
