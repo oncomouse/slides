@@ -7,6 +7,21 @@ class: center, middle, bigger
 
 # Selfe and Self <br> "The Politics of the Interface"
 ---
+## Discussion Question (McKenna)
+
+> This continuing pattern has encouraged many teachers of English to turn— among other things— computer supported writing environments as places within which they and students can try to enact educational practices that are more democratic and less systematically oppressive: for example, student-centered, on-line discussion groups in which individuals discover their own motivations for using language; on-line conferences in which students’ race, gender, age, and sexual preference may not figure in the same ways that they do in more conventional face-to-face settings; collaborative groups in which students learn to negotiate discursive power.
+
+Which do you feel more comfortable in— online discourse groups like we see a lot on eCampus, or discussion within an actual class? Is your answer based on how comfortable you are or because of connivence? Do you believe the “rhetoric of technology” is actually better for students and a class overall?
+---
+## Discussion Question (Vanessa)
+
+> For the last decade, English composition teachers have been using computers in classrooms to create electronic forums—on local-area networks (LANs) and wide-area networks (WANs)—within which writers and readers can create, exchange, and comment on texts. These spaces, it has been noted, have the potential for supporting student-centered learning and discursive practices that can be different from—and some claim— more engaging and democratic than those occurring within traditional classroom settings?
+
+Do you think English teachers should incorporate more technology into their classrooms in order to enhance their students’ education about English literature, or do you think that educators should keep English literature classes to their traditional format of reading and writing everything from textbooks, novels, and papers?
+
+If you agree that more technology should be implemented into our educational classrooms, would you say that there should be a limit on the amount of time or percentage of technology that should be implemented? Why or why not?
+
+---
 class: big
 
 ## Power Along the Edges
