@@ -103,6 +103,10 @@ class: big
 
 > In addition, software designers for the Macintosh have already published scores of alternative icons and images that can be used by English composition teachers, and students, to customize primary computer interfaces. Matrix Communication Associates of Pittsburgh, for instance, is now marketing a package of African American computer graphics and has plans to market graphics packages that more adequately represent other ethnic groups as well (Creedy). (499)
 
-.center[.bigger[👍👍🏻👍🏼👍🏽👍🏾👍🏿]]
+.center[
+
+![](https://dl.dropboxusercontent.com/u/28696035/thumbs.png)
+
+]
 
 
