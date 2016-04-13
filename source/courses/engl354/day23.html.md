@@ -12,6 +12,11 @@ class: center, middle, bigger
 > The Third Sophist, contrariwise, is suggesting a rhetorical situation negotiated by *mêtis* rather than mastered by *technê*; and the cunning Cyborg is the figure (which is not One, but a network) that navigates the postmodern discursive world, characterized by the ecstasy of communication 'where meaning is dismembered and scattered to the wind' (Baudrillard, *Illusion* 121) and by civic bodies who, in Gorgias's words 'neither remember the past nor observe the present nor prophesy the future' (132).
 
 Is this process of decision making good, one in which mistakes from the past are not remembered and no future consequences are thought of when making a decision now? What does Gorgias mean when he says "nor observe the present"?
+
+---
+
+>Their persuasions by means of fictions are innumerable; for if everyone had recollection of the past, knowledge of the present, and foreknowledge of the future, the power of speech (logos) would not be so great.  But as it is, when men can neither remember the past nor observe the present nor prophesy the future, deception is easy; so that most men offer opinion (*nomos*) as advice to the soul. But opinion, being unreliable, involves those who accept it in equally uncertain fortunes. (Gorgias, *Encomium of Helen* 11)
+
 ---
 class: small
 ## Discussion Leader (Colton)
