@@ -18,9 +18,11 @@ In the larger audience of life, one can argue that everyone is a rhetorician, re
 ---
 ## Discussion Leader (Colin)
 
+.small[
 > The image of a viral/genetic connection between baboon and cat (two beings that, in Chauvin's words, have absolutely nothing to do with each other) suggests a new kind of model for thinking of rhetoric's "transversal communication" and travel in the world. A given rhetoric is not contained by the elements that comprise its rhetorical situation (exigence, rhetor, audience, constraints). Rather, a rhetoric emerges already infected by the viral intensities that are circulating in the social field. Moreover, this same rhetoric will go on to evolve in a parallel ways: between two "species" that have absolutely nothing to do with each other. What is shared between them is not the situation, but certain contagions and energy. This does not mean the shared rhetoric reproduces copies or models of "original" situations (any more than the shared G virus turns a cat into a baboon). Instead, the same rhetoric might manage to infect and connect various processes, events, and bodies.  (14)
-
+> 
 > These various rhetorics overlap through a kind of shared contagion, though the calls for local business support, the promotion of Liberal Arts, and the encouragement of literacy are hardly overlapping in terms of their exigencies or even their audiences. At the same time, of course, the "weird rhetoric" receives an increased circulation through these kinds of affective transmission. (18) 
+]
 
 Do you agree with the idea that rhetoric does not consist of speaker/receiver/exigencies, but rather exists in a unique and ever changing environment? In what ways has rhetoric taken on this "viral" adaptation? How has what we accept as rhetoric evolved with technological, social, and cultural "evolutions?" 
 
