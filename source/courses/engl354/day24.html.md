@@ -7,6 +7,24 @@ class: center, middle, bigger
 # Jenny Edbauer, "Unframing Models of Public Distribution: From Rhetorical Situation to Rhetorical Ecologies"
 
 ---
+## Discussion Leader (Veronica)
+
+> Place becomes decoupled from the notion of situs, or fixed (series of) locations, and linked instead to the in-between en/action of events and encounters. Place becomes a space of contacts, which are always changing and never discrete. The contact between two people on a busy city street is never simply a matter of those two bodies; rather, the two bodies carry with them the traces of effects from whole fields of culture and social histories. This is what it means to say that the social field is networked, connected, rather than a matter of place, sites, and home (10)
+
+
+How does Edbauer’s theory affect how rhetoric should be taught and exercised, not only in schools, but in the larger audience of life? In schools, the triangle allows for students to easily understand that there are connections between everything without going into depth.
+
+In the larger audience of life, one can argue that everyone is a rhetorician, regardless of awareness or not. Therefore, should everyone be taught Edbauer’s theory in order to better understand that everything is “networked” and “connected” in order that they may better understand reaching consequences of actions and communication? 
+---
+## Discussion Leader (Colin)
+
+> The image of a viral/genetic connection between baboon and cat (two beings that, in Chauvin's words, have absolutely nothing to do with each other) suggests a new kind of model for thinking of rhetoric's "transversal communication" and travel in the world. A given rhetoric is not contained by the elements that comprise its rhetorical situation (exigence, rhetor, audience, constraints). Rather, a rhetoric emerges already infected by the viral intensities that are circulating in the social field. Moreover, this same rhetoric will go on to evolve in a parallel ways: between two "species" that have absolutely nothing to do with each other. What is shared between them is not the situation, but certain contagions and energy. This does not mean the shared rhetoric reproduces copies or models of "original" situations (any more than the shared G virus turns a cat into a baboon). Instead, the same rhetoric might manage to infect and connect various processes, events, and bodies.  (14)
+
+> These various rhetorics overlap through a kind of shared contagion, though the calls for local business support, the promotion of Liberal Arts, and the encouragement of literacy are hardly overlapping in terms of their exigencies or even their audiences. At the same time, of course, the "weird rhetoric" receives an increased circulation through these kinds of affective transmission. (18) 
+
+Do you agree with the idea that rhetoric does not consist of speaker/receiver/exigencies, but rather exists in a unique and ever changing environment? In what ways has rhetoric taken on this "viral" adaptation? How has what we accept as rhetoric evolved with technological, social, and cultural "evolutions?" 
+
+---
 class: big
 
 ## Simplified Communication
