@@ -7,6 +7,12 @@ class: center, middle, bigger
 
 # Madeline de Scudéry, *Of Conversation*
 ---
+## Discussion Leader (Alyssa)
+
+> ...if it is not fitting to be always like Damophilus, talking of Sciences; if it be tedious to discourse of all the little cares of a Family; if it be not convenient to speak often of Cloths; if it is a want of judgement to discourse only of intrigues of Gallantry; if there is but little diversion in speaking of Genalogies if it is too mean to discourse of Lands fold or exchang’d; if it be likewise forbidden to speak too much of our own Affairs; if it too great a gravity id not diverting in Conversation; if there is folly in laughing too often, and in laughing without reason; if the relations of fatal and extraordinary Accidents are not acceptable; if the little Transactions of the Neighborhood are tedious to those who live not thereabouts; if those Conversations of little things that are whispered in the ear, are importunate; if those People are to blame who only discourse of Great Occurrences; if those eternal seekers of Cabinet Counsels are not in the right, what must we then talk of? And of what must the conversation be compos’d to render it both rational and pleasing?
+
+How can we have conversations that are of substance and that are not considered to be a waste of time if every subject is considered to be taboo, inappropriate for the speaker, or inappropriate for the audience?
+---
 ## Conversation
 
 > As Conversation is the bond of all humane Society, the greatest pleasure of well-bred People; and the most ordinary means of introducing into the World, not only Politeness, but also the purest Morals, and the love of Glory and Vertue: Methinks, the Company cannot entertain themselves more profitably, nor more agreeably, said *Cilenia*, then in examining what it is People call Conversation. For when Men only speak strictly according to the exigency of their Affairs, it cannot be so termed. The truth is, said *Amilcar*, a Lawyer pleading a Cause at the Barr; a Merchant negotiating with another; a General of an Army giving Orders; a King speaking of Affairs of State in his Council; all this is not what ought to be stiled Conversation. All those People may discourse well of their Interests, and Affairs: and yet not have that agreeable talent of Conversation, which is the sweetest charm of Life, and perhaps more rare than is believed.
