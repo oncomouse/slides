@@ -27,7 +27,7 @@
     "headjs": "~1.0.3",
     "html5shiv": "~3.7.2",
     "nvd3": "~1.1.15-beta",
-    "remark": "~0.7.0",
+    "remark": "^0.13.0",
     "reveal.js": "~2.6.2",
     "zepto": "~1.1.4"
   }
