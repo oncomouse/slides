@@ -14,6 +14,12 @@ class: center, middle, bigger
 ]
 
 If men being so dangerous that them teaching women is inadvisable, then what makes them more inherently qualified than women to wield such powers as knowledge and rhetoric? Even if it means women are less learned and less holy as a result? Is this another example of institutional oppression trumping logic? Or is there, as de la Cruz seems to argue, irrefutable proof in science and scripture alike that says inferior women should be taught by fellow inferior women or not at all?
+---
+## Discussion Leader (Meghan)
+
+> For there are many who study only to become ignorant, especially those of arrogant, restless, and prideful spirits, fond of innovations in the Law (the very thing that rejects all innovation). And so they are not content until, for the sake of saying what no one before them has said, they speak heresy. Of such men as these* the Holy Spirit says: “For wisdom will not enter into a malicious soul.” For them, more harm is worked by knowledge than by ignorance. A wit once observed that he who knows no Latin is not an utter fool, but he who does know it has met the prerequisites. And I might add that he is made a perfect fool (if foolishness can attain perfection) by having studied his bit of philosophy and theology and by knowing something of languages. For with that he can be foolish in several sciences and tongues; a great fool cannot be contained in his mother tongue alone. To such men, I repeat, study does harm, because it is like putting a sword in the hands of a madman:* though the sword be the noblest of instruments for defense, in his hands it becomes his own death and that of many others. This is what the Divine Letters became in the hands of that wicked Pelagius and of the perverse Arius, of that wicked Luther, and all the other heretics, like our own Dr. Cazalla (who was never either our own nor a doctor). Learning harmed them all, though it can be the best nourishment and life for the soul. For just as an infirm stomach, suffering from diminished heat, produces more bitter, putrid, and perverse humors the better the food that it is given, so too these evil persons give rise to worse opinions the more they study."
+
+In this passage, Sor Juana Ines de la Cruz posits that “more harm is worked by knowledge than by ignorance” when certain men continue to learn. Do you agree with her assumption, or do you think that her idea of harm could be simply deviance from the Catholic status quo? Does Sor Juana see progress as harmful?
 
 ---
 class: bigger
