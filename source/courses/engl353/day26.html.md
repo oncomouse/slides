@@ -7,6 +7,20 @@ class: center, middle, bigger
 
 # John Locke <br> *An Essay Concerning Human Understanding*
 ---
+## Discussion Leader (Blake)
+
+> It is an established opinion amongst some men, that there are in the understanding certain innate principles; some primary notions, ϰοιναὶ ἔννοιαι, characters, as it were, stamped upon the mind of man, which the soul receives in its very first being; and brings into the world with it. It would be sufficient to convince unprejudiced readers of the falseness of this supposition, if I should only shew (as I hope I shall in the following parts of this discourse) how men, barely by the use of their natural faculties, may attain to all the knowledge they have, without the help of any innate impressions; and may arrive at certainty, without any such original notions or principles.
+
+John Locke is credited with the creation of British Empiricism. A psychological principle dealing with how humans learn. According to this theory humans are born as blank slates, or having no inborn knowledge of anything. All knowledge is gleaned through a persons life either through the five senses or later reflection on those things. According to Locke, humans start of with simple ideas and add other simple ideas on those to create larger more complex ideas. Using what we now know about learning, what did Locke get right about learning and in what ways did he challenge preconceived notions about how human beings operate.
+
+---
+## Discussion Leader (Aaron)
+
+> He that hath names without ideas, wants meaning in his words, and speaks only empty sounds. He that hath complex ideas without names for them, wants liberty and dispatch in his expressions and is necessitated to use periphrases. He that uses his words loosely and unsteadily will either be not minded, or not understood. He that applies his names to ideas different from their common use, wants propriety to ideas in his language and speaks gibberish. And he that hath the ideas of substances disagreeing with the real existence of things so far wants the materials of true knowledge in his understanding, and hath instead thereof chimeras. (31)
+
+Is communication lost when there is a misunderstanding of certain word meanings between speaker and listener? Or do we have the ability as human being to put together what a person means? Does this lack of specific understanding or agreement between the two mean we are never communicating exactly what we mean and that all that really gets across is a piece of the message?
+
+---
 ## Language as Problem
 
 > From what has been said in the foregoing chapters, it is easy to perceive what imperfection there is in language, and how the very nature of words makes it almost unavoidable for many of them to be thoughts. doubtful and uncertain in their significations. To examine the perfection or imperfection of words, it is necessary first to consider their use and end: for as they are more or less fitted to attain that, so they are more or less perfect. We have, in the former part of this discourse, often upon occasion mentioned a double use of words.
