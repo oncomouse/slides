@@ -1,0 +1,110 @@
+---
+title: ENGL 353 Day 27 (Vicob)
+progress—bar: false
+---
+
+class: center, middle, bigger
+
+# Vico <br> *On the Study Methods of Our Time*
+---
+## Writing Assignment #3
+
+We have studied a variety of models for eloquence throughout this class, in addition to attempting to update some of these forms to the present. However, what do you find lacking? What are other ways of being persuasive today?
+
+For this final assignment, you have three options:
+
+1. Devise a rhetorical exercise for the needs of rhetors today and write an explanation of why you think your exercise is useful.
+2. Following some of the less pedagogical examples we have studied, compose a piece (written or otherwise) that embodies some aspect of eloquence today.
+3. Choose two texts we have studied in class and compare and contrast their discussion of one of the following topics
+	1. Style
+	1. The Ideal Orator
+	1. Morals and the Orator
+	1. Content of Rhetoric
+	1. Goal of Oratory
+---
+## Discussion Leader (Ana)
+
+.small[
+> But the greatest drawback of our educational methods is that we pay an excessive amount of attention to the natural sciences and not enough to ethics. Our chief fault is that we disregard that part of ethics which treats human characters, of its dispositions, its passions, and of the manner of adjusting these factors to public life and eloquence. We neglect that discipline which deals with the differential features of the virtues and vices, with good and bad behavior-patterns, with the typical characteristics of the various ages of man, of the two sexes, of social and economic class, race and nation, and with the art of seemly conduct in life, the most difficult of all arts...
+> 
+> Our young men, because of their training, which is focused on these studies, are unable to engage in the life of the community, to conduct themselves with sufficient wisdom and prudence; nor can they infuse into their speech a familiarity with human psychology or permeate their utterances with passion.
+]
+
+The war on liberal arts has been an ongoing struggle for quite some time now. If man is on a hunt for Truth,  as Vico points out, then why is abstract knowledge always placed on the backburner? How do arts, such as oratory, continue to thrive if its significance is continuously challenged?
+---
+## Discussion Leader (Taylor)
+
+.small[
+> The answer is that eloquence does not address itself to the rational part of our nature, but almost entirely to our passions. The rational part in us may be taken captive by a net woven of purely intellectual reasonings, but the passionate side of our nature can never be swayed and overcome unless this is done by more sensuous and materialistic means. The role of eloquence is to persuade; an orator is persuasive when he calls forth in his hearers the mood which he desires. Wise men induce this condition in themselves by an act of volition. This volition, in perfect obedience, follows the dictates of their intellect; consequently, it is enough for the speaker to point their duty to such wise men, and they do it. But the multitude, the *vulgus*, are overpowered and carried along by their appetite, which is tumultuous and turbulent; their soul is tainted, having contracted a contagion from the body, so that it follows the nature of the body, and is not moved except by bodily things. Therefore, the soul must be enticed by corporeal images and impelled to love; for once it loves, it is easily taught to believe; once it believes and loves, the fire of passion must be infused into it so as to break its inertia and force it to *will*. Unless the speaker can compass these three things, he has not achieved the effect of persuasion he has been powerless to convince.
+]
+
+Vico asserts that common sense is the guiding standard of eloquence, which is purposed for persuasion, yet he constantly sets eloquence separate from truth and rationality. He even states that in law courts orators have a harder time with cases that are based on truth rather than a case that is "false but plausible." Although eloquence strays from truth, Vico insists that students must strengthen their common sense in order to grow in eloquence. To Vico, what is the role and importance of eloquence in education?
+---
+## Discussion Leader (Joseph)
+
+> We enjoy many techniques which enable us to make progress in some branch of intellectual or practical activity; they like-wise had talents for progress in other fields. They devoted all their activity to certain arts which we almost totally neglect; we pursue some others which they apparently scorned.
+
+The focus of modern education has shifted from the arts to more STEM fields. We increasingly see subjects such as art, music, literature, and creative writing scrapped for standardized curriculum in math and science. Where do you think we should be focusing in our education system and what are the top three fields you would focus on? (Excluding higher education because you are allowed to major in a specific field.)
+---
+## Discussion Leader (Matt)
+
+.small[
+> Nature and life are full of incertitude; the foremost, indeed, the only name of our "arts" is to assure us that we have acted rightly. Criticism is the art of true speech; "*ars topica*," of eloquence. Traditional "topics" is the art of finding "the medium," i.e., the middle term: in the conventional language of scholasticism, "medium" indicates what the Latins call *argumentum*. Those who know all the low side, i.e., the lines of argument to be used,  are able (by an operation not in like reading the printed characters on a page) to grasp extemporaneously the elements of persuasion inherent in any Question or case. Individuals who have not achieved this ability hardly deserve the name of orator. In pressing, urgent affairs, which do not admit of delay or postponement, as most frequently occurs in our law courts – especially when it is a question of criminal cases, which offer to the eloquent order the greatest opportunity for the split was powers – it is the orders business to give immediate assistance to be accused, who is usually granted only a few hours in which to plead his defense. Our experts in philosophical criticism, instead, whenever they are confronted with some dubious point are wont to say: "give me some time to think it over!"
+]
+
+Vico states that to be an orator one must understand all elements of the argument in order speak on it. This idea goes against the ideas of the Sophists who can talk about topics that they may not fully understand, but it goes along with de copia so how would this fit in with the other means of rhetoric that we discussed in class? Using Vico’s reasoning, how would this make a better orator?
+
+---
+## Problem with The New Science
+
+> But, while he discovers a new cosmos of sciences, the great Chancellor proves to be rather the pioneer of a completely new universe than a prospector of this world of ours. His vast demands so exceed the utmost extent of man's effort that he seems to have indicated how we fall short of achieving an absolutely complete system of science rather than how we may remedy our cultural gaps.
+>
+> This was so, I believe, because those who occupy the heights of power yearn for the immense and the infinite. Thus Bacon acted in the intellectual field like the potentates of mighty empires, who, having gained supremacy in human affairs, squander immense wealth in attempts against the order of Nature herself ...
+---
+## Knowing as Historically Conditioned
+
+>We, the men of the modern age, have discovered many things of which the ancient were entirely ignorant; the ancients, on the other hand, knew much still unknown to us. We enjoy many techniques which enable us to make progress in some branch of intellectual or practical activity; they likewise had tools for progress in other fields. They devoted all their activity to certain arts which we almost totally neglect; we pursue some others which they apparently scored.
+
+---
+## Critique
+
+>Philosophical criticism is the subject which we compel our youths to take up first. Now, such speculative criticism, the main purpose of which is to cleanse its fundamental truths not only of all falsity, but also of the mere suspicion of error, places upon the same plane of falsity not only false thinking, but also those secondary verities and ideas which are based on probability alone, and commands us to clear our minds of. Such an approach is distinctly harmful, since training in common sense is essential to the education of adolescents, so that the faculty should be developed as early as possible; Else they break into odd or arrogant behavior when adulthood is reached. It is a positive fact that, just as knowledge originates in truth and air in fall city, so common sense arises from perceptions based on verisimilitude. Probabilities stand, so to speak, midway between truth and falsity, since things which most of the time are true, are only very seldom false.
+
+---
+## Problem of Critique
+
+>Our modern advocates of advanced criticism rank the unadulterated essence of "pure," primary truth before, outside, above the gross semblances of physical bodies. But the study of primal philosophical truths takes place at the same time when young minds are too immature, too unsure, to derive benefit from it.
+>
+> Just as old age is powerful and reason, so is adolescents in imagination.
+
+---
+## Oratory and the Audience
+>I may add that in the art of oratory the relationship between speaker and listeners is of the essence. It is in tune with the opinions of the audience that we have to arrange our speech. It often happens that people unmoved by forceful and compelling reasons can be jolted from there apathy, and made to change their minds by means of some trifling line of argument. Consequently, in order to be sure having touch all the soul strings of his listeners, the orator, then, should run through the complete set of the *loci* which schematize the evidence. It is quite unfair to blame Cicero for having insisted on many a point of little weight. It was exactly by those points of little weight that he was able to dominate the law courts, the Senate, and (most important of all) the assemblies of the people. It was by that method that he became the speaker most worthy of being considered a representative of Romes imperial greatness.
+
+---
+## Different Modes of Doing
+
+>Whom shall we believe? Arnauld, who rejects the *ars topica*, or Cicero, who asserts that his own eloquence is due to the art of skillfully arraying a set of effective lines of argument? Let others decide; as for me, I am unwilling to award to the one what I would have to take away from the other: I show limit myself to stating that a severely intellectualistic criticism enables us to achieve truth, while *ars topica* makes us eloquent.
+
+---
+## The Eloquence-Philosophy Continuum
+
+>It is significant that the representatives of the schools of ancient philosophy became the more eloquent in proportion as they were less inclined to a strictly philosophical criticism. The advocates of stoicism (for whom, as for our modern, pure reason is the regulative standard of truth), were the thinnest in leanest of all philosophers. The epicureans, according to whom the regulative standard of truth resides in sense-perception, were simple and expression, and unfolded their doctrines in more detail. The ancient academics instead, being disciples of Socrates who contended that he knew nothing but his own ignorance, we're masters of an overflowing in lavishly embellished expression. As for the Neo-academics, who admitted that they did not even know that they did not know anything, they overwhelmed their listeners with torrential outbursts and snowdrifts of oratory.
+
+---
+## Ethics (Again?!)
+
+>But the greatest drawback of our educational methods is that we pay an excessive amount of attention to the natural sciences and not enough to ethics. Our chief fault is that we disregard that part of ethics which streets of human character, of its dispositions, it's passions, and of the manner of adjusting these factors to public life at eloquence. We neglect that discipline which deals with the differential features of the virtues and vices, with good and bad behavior-patterns, with the typical characteristics of the various ages of men, of the two sexes, of social and economic class, race, and nation, and with the art of seemly conduct in life, the most difficult of all arts. As a consequence of this neglect, a noble an important branch of studies, i.e., the science of politics, lies almost abandoned and untended.
+>
+>Sense, in our time, the only target of our intellectual endeavors is truth,we devote all our efforts to the investigation of physical phenomena, because their nature seems unambiguous; but we fail to inquire into human nature which, because of the freedom of man's will, is difficult to determine.
+
+
+---
+## Philosophy and Eloquence: Desire
+
+>Two things only are capable of turning to good use the agitations of the soul, those evils of the inward man which spring from a single source: desire. One is philosophy, which acts to mitigate passion in the soul of the sage, so that those passions are transformed into virtues; the other is eloquence, which kindles these passions in the common sort, so that they perform the duties of virtue.
+
+---
+## Why Universities / Why Not Universities
+
+>What we need to know is contained in so many books in languages that are extinct, composed by authors belonging to nations long since vanished. These books contain allusions to customs often unknown, in corrupted codices; therefore the taming of any science or art has become so difficult for us, but at the present time no person can master even a single subject. This has made the establishment of universities necessary. In these universities, all branches of knowledge are taught by a number of scholars, each of whom is outstanding in his particular field but this advantage is offset by a drawback. Arts and sciences, all of which in the past where embraced by philosophy and animated by it with a unitary spirit, are, in our day, a naturally separated and destroyed it. In antiquity, floss of hers were remarkable for their coherence; their conduct was in full accord not only with the theories they professed but with their method of expounding them as well.
