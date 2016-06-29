@@ -1,4 +1,5 @@
 node_modules
+bin
 build
 build/*
 source/stylesheets/.sass-cache
