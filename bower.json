@@ -29,6 +29,9 @@
     "nvd3": "~1.1.15-beta",
     "remark": "^0.13.0",
     "reveal.js": "~2.6.2",
-    "zepto": "~1.1.4"
+    "zepto": "~1.1.4",
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0",
+    "compass-mixins": "^1.0.2"
   }
 }
