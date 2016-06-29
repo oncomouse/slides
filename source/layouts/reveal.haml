@@ -96,50 +96,59 @@
 			        });
 				}
 			);
+		- def icomoon_loader(format)
+			- icomoon_path = asset_path(:css, 'remark/fonts/icomoon/icomoon')
+			- return icomoon_path.sub(/\.css$/,".#{format}")
+		:scss
+			/* Include a Twitter Icon */
+			@font-face {
+				font-family: "icomoon";
+				src: url("#{icomoon_loader("eot")}");
+				src: url("#{icomoon_loader("eot")}?#iefix") format("embedded-opentype"), url("#{icomoon_loader("woff")}") format("woff"), url("#{icomoon_loader("ttf")}") format("truetype"), url("#{icomoon_loader("svg")}#icomoon") format("svg");
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			.twitter_badge {
+				position: relative;
+				margin-left: 1.15em !important;
+				display: inline-block;
+
+				&:before, &:after {
+					font-family: "icomoon";
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 0.95em;
+					-webkit-font-smoothing: antialiased;
+					font: {
+						size: 0.95em;
+					};
+				}
+
+				&:before {
+					content: '"';
+					position: absolute;
+					top: -0.05em;
+					left: -1.15em;
+				}
+			}
+
+			#watermark {
+				position: fixed;
+				z-index: 1000;
+				bottom: 0.25em;
+				right: 0.5em;
+				font-size: 0.9em;
+
+				&:before {
+					top: 0.23em !important;
+				}
+			}
 	%body
 		.reveal
-			- def icomoon_loader(format)
-				- icomoon_path = asset_path(:css, 'remark/fonts/icomoon/icomoon')
-				- return icomoon_path.sub(/\.css$/,".#{format}")
-			:sass
-				/* Include a Twitter Icon */
-				@font-face 
-					font-family: 'icomoon'
-					src: url('#{icomoon_loader('eot')}')
-					src: url('#{icomoon_loader('eot')}?#iefix') format('embedded-opentype'), url('#{icomoon_loader('woff')}') format('woff'), url('#{icomoon_loader('ttf')}') format('truetype'),url('#{icomoon_loader('svg')}#icomoon') format('svg')
-					font-weight: normal
-					font-style: normal
-
-				.twitter_badge
-					position: relative
-					margin-left: 1.15em !important
-					display: inline-block
-	
-					&:before, &:after
-						font-family: 'icomoon'
-						speak: none
-						font-style: normal
-						font-weight: normal
-						font-variant: normal
-						text-transform: none
-						line-height: 0.95em
-						-webkit-font-smoothing: antialiased
-						font:
-							size: 0.95em
-
-					&:before 
-						content: "\22"
-						position: absolute
-						top: -0.05em
-						left: -1.15em
-				#watermark
-					position: fixed
-					z-index: 1000
-					bottom: 0.25em
-					right: 0.5em
-					font-size: 0.9em
-					&:before
-						top: 0.23em !important
 			%p#watermark.twitter_badge
 				= current_resource.data['twitter'] ? current_resource.data['twitter'] : '@oncomouse'
 			.slides
