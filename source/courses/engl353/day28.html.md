@@ -18,6 +18,12 @@ class: bigger
 	* Are There Things In Class I Could Do Better?
 
 ---
+## Discussion Leader (Caitlin)
+
+> The sole and ultimate end of logic is the eviction of truth; one important end of eloquence, though, as appears from the first chapter, neither the sole, nor always the ultimate, is the conviction of the hearers. Pure logic regards only the subject, which is examined solely for the sake of the information. Truth, as such, is the proper aim of the examiner. Eloquence not only considers the subject, but also the speaker and the hearers, and both the subject and the speaker for the sake of the hearers, or rather for the sake of the effect intended to be produced in them.
+
+Campbell states that eloquence incorporates every aspect of rhetoric (the subject, speaker, and the hearers), and logic and truth only regard the subject and containing accurate information, respectively. In what ways would Campbell feel that eloquence in rhetoric has failed to obtain these standards today?
+---
 ## Discussion Leader (Zipporah)
 
 > The sole and ultimate end of logic is the eviction of truth; one, important end of eloquence, though, as appears from the first chapter, neither the sole, nor always the ultimate, is the conviction of the hearers. Pure logic regards only the subject, which is examined solely for the sake of information. Truth, as such, is the proper aim of the examiner. Eloquence not only considers the subject, but also the speaker and the hearers, and both the subject and the speaker for the sake of the hearers, or rather for the sake of the effect intended to be produced in them. (33)
