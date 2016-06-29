@@ -37,11 +37,12 @@ layout: false
 					- next if resource.data["hidden"] and resource.data["hidden"] == true
 					- # Skip the template file
 					- next if resource.source_file =~ /remark_markdown_template.html.haml/
+					- pageLayout = (resource.respond_to? :options) ? resource.options[:layout] : resource.data.layout
 					- if resource.data["title"] and resource.destination_path.count("/") <= depth
 						%li
 							= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")
 							%small
-								(#{resource.data["layout"] ? resource.data["layout"].capitalize : "Remark"})
+								(#{pageLayout ? pageLayout.capitalize : "Remark"})
 					- if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth
 						%li
 							= if directory.nil? then link_to resource.destination_path.gsub('index.html',"").capitalize, resource.destination_path.gsub('index.html',"") else link_to "#{File.basename resource.destination_path.gsub('index.html',"")}/".capitalize, resource.destination_path.sub(directory + "/","") end
