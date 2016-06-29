@@ -68,7 +68,7 @@ _.each(targets, (value, key) => {
 gulp.task('build:clean', () => {
 	return gulp.src(output)
 	.pipe(gulpif(nodeEnv === 'production', rimraf()));
-})
+});
 
 gulp.task('build:js', ['build:clean'], () => {
 	return gulp.src(_.flatten([
