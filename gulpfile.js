@@ -28,14 +28,13 @@ var targets = {
 		development: jsPath + '/**/*.js'
 	},
 	css: {
-		development: [cssPath + '/**/*.css.scss', cssPath + '/**/*.css'],
+		development: [cssPath + '/**/*.scss', cssPath + '/**/*.css'],
 		watch: [cssPath + '/**/*.scss', cssPath + '/**/*.css'] // OR: undefined
 	}
 }
-var output = '.tmp/dist';
 
 var postcssPlugins = [
-	require('autoprefixer')({browsers: 'last 3 versions'}),
+	require('autoprefixer')('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'),
 	require('postcss-easings'),
 	require('css-mqpacker')
 ];
@@ -51,11 +50,16 @@ var cssEnv = new Mincer.Environment();
 cssEnv.appendPath(cssPath);
 cssEnv.appendPath('bower_components');
 cssEnv.appendPath('node_modules');
+cssEnv.appendPath('./bower_components/bourbon/app/assets/stylesheets/');
+cssEnv.appendPath('./bower_components/neat/app/assets/stylesheets/');
 
 var nodeEnv = process.env.NODE_ENV;
 if(typeof nodeEnv === 'undefined') {
 	nodeEnv = 'development';
 }
+
+var output = (nodeEnv === 'production' ? 'build' : '.tmp/dist'); // See you in Hell, Middleman build system
+
 _.each(targets, (value, key) => {
 	if(typeof value[nodeEnv] === 'undefined') {
 		targets[key][nodeEnv] = targets[key].development;
@@ -80,6 +84,7 @@ gulp.task('build:js', ['build:clean'], () => {
 });
 
 gulp.task('build:css', ['build:clean'], () => {
+	console.log('Building in ' + nodeEnv);
 	var files = {}
 	return gulp.src(_.flatten([
 		targets.css[nodeEnv]
@@ -100,10 +105,8 @@ gulp.task('build:css', ['build:clean'], () => {
 	})))
 	.pipe(postcss(postcssPlugins))
 	.pipe(gulpif(nodeEnv === 'production', cssnano({autoprefixer: false})))
-	.pipe(rename((path) => {
-		// Restore the cached file extension:
-		path.extname = files[path.basename]
-	}))
+	.pipe(gulpif(nodeEnv === 'production', rename(path => path.extname = (path.basename.match(/\.css$/) ? '' : path.extname))))
+	.pipe(gulpif(nodeEnv !== 'production', rename(path => path.extname = files[path.basename])))
 	.pipe(gulp.dest(output + '/'+cssDir));
 });
 

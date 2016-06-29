@@ -47,11 +47,20 @@ ready do
     ignore "remark_markdown_template.html"
 end
 
-activate :external_pipeline,
-	name: :gulp,
-	command: "env NODE_ENV=#{build? ? "production" : "development"} node_modules/.bin/gulp #{build? ? "build" : "watch"}",
-	source: ".tmp/dist",
-	latency: 1
+if not build?
+	activate :external_pipeline,
+		name: :gulp,
+		command: "node_modules/.bin/gulp watch",
+		source: ".tmp/dist",
+		latency: 2
+end
+after_build do
+	activate :external_pipeline,
+		name: :gulp,
+		command: "env NODE_ENV=production node_modules/.bin/gulp build",
+		source: ".tmp/dist",
+		latency: 2
+end
 
 require_relative "./lib/build_cleaner"
 
@@ -60,6 +69,8 @@ configure :build do
 	activate :build_cleaner
 
 	ignore "/**/*.rb"
+	ignore "javascripts/*"
+	ignore "stylesheets/*"
 	set :http_prefix, "/slides"
 end
 
