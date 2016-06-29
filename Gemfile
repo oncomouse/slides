@@ -2,11 +2,18 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", ">=3.1.0"
-gem "compass", ">=0.12.0"
 gem "builder", ">=3.0"
-gem "middleman-deploy"
-gem "middleman-gh-pages"
+gem "compass", "~> 1.0"
+
+#gem "middleman", "~>3"
+#gem "middleman-deploy"
+#gem "middleman-gh-pages"
+
+gem "middleman", "~> 4"
+#gem 'middleman-compass', '>= 4.0.0'
+#gem "middleman-sprockets", ">= 4.0.0.rc.2"
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+
 gem "kramdown"
 gem "bourbon"
 gem "neat"

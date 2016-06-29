@@ -10,19 +10,21 @@ set :markdown, :fenced_code_blocks => true,
 							 :superscript => true
 
 # Change Compass configuration
-compass_config do |config|
-	 config.output_style = :compact
-end
-
-require "compass"
-require "bourbon"
-require "neat"
+#compass_config do |config|
+#	 config.output_style = :compact
+#end
+#
+#activate :sprockets
+#
+#require "compass"
+#require "bourbon"
+#require "neat"
 
 ###
 # Page options, layouts, aliases and proxies
 ###
 
-page "*", :layout => "remark"
+page "*.html", :layout => "remark"
 
 ###
 # Helpers
@@ -63,14 +65,20 @@ ready do
     ignore "remark_markdown_template.html"
 end
 
-after_configuration do
-    if File.exists? "#{root}/.bowerrc"
-        @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-        sprockets.append_path File.join "#{root}", @bower_config["directory"]
-    else
-        sprockets.append_path File.join root, "bower_components"
-    end
-end
+activate :external_pipeline,
+	name: :gulp,
+	command: "env NODE_ENV=#{build? ? "production" : "development"} node_modules/.bin/gulp #{build? ? "build" : "watch"}",
+	source: ".tmp/dist",
+	latency: 1
+
+#after_configuration do
+#    if File.exists? "#{root}/.bowerrc"
+#        @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+#        sprockets.append_path File.join "#{root}", @bower_config["directory"]
+#    else
+#        sprockets.append_path File.join root, "bower_components"
+#    end
+#end
 
 require_relative "./lib/build_cleaner"
 
@@ -107,7 +115,7 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-	deploy.method = :git
+	deploy.deploy_method = :git
 	#ignore ".git/*"
 	#deploy.method = :rsync
 	#deploy.user = "eschaton"
