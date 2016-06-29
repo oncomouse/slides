@@ -56,6 +56,7 @@
 		%title
 			- if slide_configuration_data['title']
 				= slide_configuration_data['title']
+		= stylesheet_link_tag("remark/fonts/icomoon/icomoon.css", :media => "all", :rel => "stylesheet" )
 		= stylesheet_link_tag("remark/slides.css", :media => "all", :rel => "stylesheet" )
 		- slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
 		- if !slideshow_specific_css.nil?
