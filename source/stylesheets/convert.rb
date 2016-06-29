@@ -13,7 +13,8 @@ require 'fileutils'
 #	FileUtils.rm(file)
 #end
 
-Dir.glob("**/*.css.scss").each do |file|
-	outputFile = file.sub(/\.css\.scss$/,".scss")
+Dir.glob("source/**/*.scss").each do |file|
+	next if File.basename(file) =~ /^_/
+	outputFile = file.sub(/\.scss$/,".css.scss")
 	FileUtils.mv(file, outputFile)
 end
