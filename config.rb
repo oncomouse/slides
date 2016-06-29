@@ -9,17 +9,6 @@ set :markdown, :fenced_code_blocks => true,
 							 :footnotes => true,
 							 :superscript => true
 
-# Change Compass configuration
-#compass_config do |config|
-#	 config.output_style = :compact
-#end
-#
-#activate :sprockets
-#
-#require "compass"
-#require "bourbon"
-#require "neat"
-
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -33,13 +22,6 @@ page "*.html", :layout => "remark"
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-
-#activate :blog do |blog|
-#	blog.prefix = "blog"
-#	blog.layout = "blog/layout"
-#	blog.summary_separator = /(READMORE)/
-#	blog.summary_length = 250
-#end
 
 class String
 	def naturalized
@@ -71,15 +53,6 @@ activate :external_pipeline,
 	source: ".tmp/dist",
 	latency: 1
 
-#after_configuration do
-#    if File.exists? "#{root}/.bowerrc"
-#        @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-#        sprockets.append_path File.join "#{root}", @bower_config["directory"]
-#    else
-#        sprockets.append_path File.join root, "bower_components"
-#    end
-#end
-
 require_relative "./lib/build_cleaner"
 
 # Build-specific configuration
@@ -88,39 +61,10 @@ configure :build do
 
 	ignore "/**/*.rb"
 	set :http_prefix, "/slides"
-	#set :http_prefix, "/new2"
-	# Change this to build with a different file root.	
-	#set :http_prefix, "/my/prefix/folder"
-
-	# For example, change the Compass output style for deployment
-	activate :minify_css
-
-	# Minify Javascript on build
-	activate :minify_javascript
-
-	#activate :gzip
-
-	# Enable cache buster
-	# activate :cache_buster
-
-	# Use relative URLs
-	#activate :relative_assets
-
-	# Compress PNGs after build
-	# I wouldn't use this.
-	#activate :smusher
-
-	# Or use a different image path
-	# set :http_path, "/Content/images/"
 end
 
 activate :deploy do |deploy|
 	deploy.deploy_method = :git
-	#ignore ".git/*"
-	#deploy.method = :rsync
-	#deploy.user = "eschaton"
-	#deploy.host = "copland.dreamhost.com"
-	#deploy.path = "~/www/andrew.pilsch.com/slides"
 end
 
 parse_files = Dir.entries("#{Dir.pwd}/source/")
