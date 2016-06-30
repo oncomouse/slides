@@ -25,6 +25,7 @@
     "mincer": "^1.4.1",
     "postcss": "^5.0.21",
     "postcss-easings": "^0.3.0",
+    "rucksack-css": "^0.8.6",
     "run-sequence": "^1.2.1"
   },
   "dependencies": {}
