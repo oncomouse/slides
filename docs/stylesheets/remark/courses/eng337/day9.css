@@ -1,1 +1,14 @@
-html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}.agenda{float:left;display:block;margin-right:2.35765%;width:82.94039%;margin-left:25.58941%}.agenda:last-child{margin-right:0}
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.agenda {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 25.58941%; }
+  .agenda:last-child {
+    margin-right: 0; }

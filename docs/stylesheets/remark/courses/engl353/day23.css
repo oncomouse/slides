@@ -1,1 +1,10 @@
-.wilson1 img{max-width:485px}.wilson1 img,.wilson3 img{margin-top:64px;margin-top:4rem}.wilson3 img{max-width:510px}.wilson4 b,.wilson4 strong{color:#000}
+.wilson1 img {
+  max-width: 485px;
+  margin-top: 4rem; }
+
+.wilson3 img {
+  max-width: 510px;
+  margin-top: 4rem; }
+
+.wilson4 strong, .wilson4 b {
+  color: black; }

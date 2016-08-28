@@ -1,1 +1,17 @@
-html{-webkit-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}.tennessee{float:left;display:block;margin-right:2.35765%;width:65.88078%;margin-left:17.05961%}.tennessee:last-child{margin-right:0}.jar img{height:600px}
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.tennessee {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  .tennessee:last-child {
+    margin-right: 0; }
+
+.jar img {
+  height: 600px; }

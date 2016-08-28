@@ -1,1 +1,2 @@
-.small li,.small p{font-size:.9em}
+.small p, .small li {
+  font-size: 0.9em; }

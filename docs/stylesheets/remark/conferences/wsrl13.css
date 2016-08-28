@@ -1,1 +1,60 @@
-.hamlet-quote blockquote>p{font-size:23.2px;font-size:1.45rem;line-height:24px;line-height:1.5rem;margin:0 auto}.hamlet-attribution{margin-left:3.75em}.moor{text-align:center}.moor h1{font-size:5.6em}.moor h2{font-size:1.6em}.more-moor .title-block{margin:0 auto;text-align:center}.more-moor h1{font-size:4.5em;line-height:.8em}.more-moor h2{font-size:3.4em}.moor-question{margin:0 auto;text-align:center}.moor-question h1{font-size:13.6em;line-height:.95em;margin:0}.science .title-block{text-align:center;margin-top:6em}.science .title-block h1{font-size:2.75em}.science .center h1{font-size:4.75em}.stalin blockquote{font-size:2.75em;font-weight:700}.stalin blockquote p{line-height:1}.hyperobjects img{max-height:45%}.nra{padding-top:7em!important}.latour .figure2{margin-top:3.5em}.distortion .title-block{margin-top:4em}.rocks img{max-height:57%}
+.hamlet-quote blockquote > p {
+  font-size: 1.45rem;
+  line-height: 1.5rem;
+  margin: 0 auto; }
+
+.hamlet-attribution {
+  margin-left: 3.75em; }
+
+.moor {
+  text-align: center; }
+  .moor h1 {
+    font-size: 5.6em; }
+  .moor h2 {
+    font-size: 1.6em; }
+
+.more-moor .title-block {
+  margin: 0 auto;
+  text-align: center; }
+.more-moor h1 {
+  font-size: 4.5em;
+  line-height: 0.8em; }
+.more-moor h2 {
+  font-size: 3.4em; }
+
+.moor-question {
+  margin: 0 auto;
+  text-align: center; }
+  .moor-question h1 {
+    font-size: 13.6em;
+    line-height: 0.95em;
+    margin: 0; }
+
+.science .title-block {
+  text-align: center;
+  margin-top: 6em; }
+  .science .title-block h1 {
+    font-size: 2.75em; }
+.science .center h1 {
+  font-size: 4.75em; }
+
+.stalin blockquote {
+  font-size: 2.75em;
+  font-weight: bold; }
+  .stalin blockquote p {
+    line-height: 1; }
+
+.hyperobjects img {
+  max-height: 45%; }
+
+.nra {
+  padding-top: 7em !important; }
+
+.latour .figure2 {
+  margin-top: 3.5em; }
+
+.distortion .title-block {
+  margin-top: 4em; }
+
+.rocks img {
+  max-height: 57%; }

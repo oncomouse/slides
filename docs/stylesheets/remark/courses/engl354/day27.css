@@ -1,1 +1,37 @@
-@import url(https://code.cdn.mozilla.net/fonts/fira.css);.remark-container{background:#eee8d5}.remark-slide-scaler{-webkit-box-shadow:0 0 30px #c9b67a;box-shadow:0 0 30px #c9b67a}.small blockquote p{font-size:.8em!important;line-height:1.25}.bigger .remark-slide-number{bottom:13px}.lofi{background:#002b36;color:#fdf6e3}.lofi *{font-family:Fira Mono!important}.lofi li,.lofi p{font-size:19px;line-height:1.25}.lofi em{font-style:normal;color:#2aa198}.lofi.big li,.lofi.big p{font-size:20px;font-size:1.25rem;line-height:1.35}.lofi strong{color:inherit}.lofi h1,.lofi h2{color:#268bd2}.lofi pre{font-family:Courier New,Courier,mono;font-size:16px}.lofi span.lo-fi{color:#2aa198}
+@import url(https://code.cdn.mozilla.net/fonts/fira.css);
+.remark-container {
+  background: #eee8d5; }
+
+.remark-slide-scaler {
+  box-shadow: 0 0 30px #c9b67a; }
+
+.small blockquote p {
+  font-size: 0.8em !important;
+  line-height: 1.25; }
+
+.bigger .remark-slide-number {
+  bottom: 13px; }
+
+.lofi {
+  background: #002b36;
+  color: #fdf6e3; }
+  .lofi * {
+    font-family: "Fira Mono" !important; }
+  .lofi p, .lofi li {
+    font-size: 19px;
+    line-height: 1.25; }
+  .lofi em {
+    font-style: normal;
+    color: #2aa198; }
+  .lofi.big p, .lofi.big li {
+    font-size: 1.25rem;
+    line-height: 1.35; }
+  .lofi strong {
+    color: inherit; }
+  .lofi h1, .lofi h2 {
+    color: #268bd2; }
+  .lofi pre {
+    font-family: "Courier New", Courier, mono;
+    font-size: 16px; }
+  .lofi span.lo-fi {
+    color: #2aa198; }
