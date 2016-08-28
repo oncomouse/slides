@@ -6,6 +6,7 @@ gem "builder", ">=3.0"
 gem "compass", "~> 1.0"
 
 gem "middleman", "~> 4"
+gem "middleman-compass"
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
 gem "kramdown"
