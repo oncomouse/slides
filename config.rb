@@ -75,9 +75,9 @@ configure :build do
 	set :http_prefix, "/slides"
 end
 
-activate :deploy do |deploy|
-	deploy.deploy_method = :git
-end
+#activate :deploy do |deploy|
+#	deploy.deploy_method = :git
+#end
 
 parse_files = Dir.entries("#{Dir.pwd}/source/")
 
