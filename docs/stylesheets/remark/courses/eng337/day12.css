@@ -1,31 +1,40 @@
+/* line 4, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
+/* line 9, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 5, day12.css.scss */
 .mrs-lloyd img {
   width: 45%; }
 
+/* line 10, day12.css.scss */
 .medusa {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em; }
+  /* line 20, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/mixins/_clearfix.scss */
   .medusa::after {
     clear: both;
     content: "";
     display: block; }
+  /* line 17, day12.css.scss */
   .medusa img {
     width: 45%;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
+    /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
     .medusa img:last-child {
       margin-right: 0; }
 
+/* line 25, day12.css.scss */
 .small p, .small li {
   font-size: 0.9em; }
+/* line 31, day12.css.scss */
 .small .topic {
   font-size: 1.66667em; }

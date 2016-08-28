@@ -1,14 +1,19 @@
+/* line 2, day11.css.scss */
 .chicago p, .skyscraper p {
   line-height: 1.25; }
 
+/* line 8, day11.css.scss */
 .chicago p {
   font-size: 0.67rem; }
+/* line 12, day11.css.scss */
 .chicago .topic {
   font-size: 2.23881em;
   line-height: 1.25rem; }
 
+/* line 19, day11.css.scss */
 .skyscraper p {
   font-size: 0.57rem; }
+/* line 23, day11.css.scss */
 .skyscraper .topic {
   font-size: 2.63158em;
   line-height: 1.25rem; }

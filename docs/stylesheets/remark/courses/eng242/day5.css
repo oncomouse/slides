@@ -1,18 +1,24 @@
+/* line 4, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
+/* line 9, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 6, day5.css.scss */
 .activity ul li, .activity ol li {
   line-height: 1.5; }
+/* line 11, day5.css.scss */
 .activity .left-column {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
+  /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .activity .left-column:last-child {
     margin-right: 0; }
+/* line 15, day5.css.scss */
 .activity .right-column {
   float: left;
   display: block;
@@ -21,9 +27,11 @@ html {
   margin-right: 0;
   margin-top: 0;
   padding-top: 0; }
+  /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .activity .right-column:last-child {
     margin-right: 0; }
 
+/* line 30, day5.css.scss */
 .credo p {
   margin-left: 0.5in;
   margin-bottom: 0;

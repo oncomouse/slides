@@ -10,10 +10,12 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+/* line 16, my-simple.css.scss */
 body {
   background: white;
   background-color: white; }
 
+/* line 20, my-simple.css.scss */
 .reveal {
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
@@ -21,6 +23,7 @@ body {
   letter-spacing: -0.02em;
   color: black; }
 
+/* line 27, my-simple.css.scss */
 ::selection {
   color: white;
   background: rgba(0, 0, 0, 0.99);
@@ -29,6 +32,7 @@ body {
 /*********************************************
  * HEADERS
  *********************************************/
+/* line 35, my-simple.css.scss */
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -43,12 +47,14 @@ body {
   text-transform: none;
   text-shadow: none; }
 
+/* line 50, my-simple.css.scss */
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
 
 /*********************************************
  * LINKS
  *********************************************/
+/* line 56, my-simple.css.scss */
 .reveal a:not(.image) {
   color: darkblue;
   text-decoration: none;
@@ -58,11 +64,13 @@ body {
   -o-transition: color .15s ease;
   transition: color .15s ease; }
 
+/* line 65, my-simple.css.scss */
 .reveal a:not(.image):hover {
   color: #0000f1;
   text-shadow: none;
   border: none; }
 
+/* line 70, my-simple.css.scss */
 .reveal .roll span:after {
   color: #fff;
   background: #00003f; }
@@ -70,6 +78,7 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
+/* line 77, my-simple.css.scss */
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
@@ -81,6 +90,7 @@ body {
   -o-transition: all .2s linear;
   transition: all .2s linear; }
 
+/* line 88, my-simple.css.scss */
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
   border-color: darkblue;
@@ -89,40 +99,50 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
+/* line 96, my-simple.css.scss */
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
   border-right-color: darkblue; }
 
+/* line 100, my-simple.css.scss */
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
   border-left-color: darkblue; }
 
+/* line 104, my-simple.css.scss */
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
   border-bottom-color: darkblue; }
 
+/* line 108, my-simple.css.scss */
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
   border-top-color: darkblue; }
 
+/* line 112, my-simple.css.scss */
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #0000f1; }
 
+/* line 115, my-simple.css.scss */
 .reveal .controls div.navigate-right.enabled:hover {
   border-left-color: #0000f1; }
 
+/* line 118, my-simple.css.scss */
 .reveal .controls div.navigate-up.enabled:hover {
   border-bottom-color: #0000f1; }
 
+/* line 121, my-simple.css.scss */
 .reveal .controls div.navigate-down.enabled:hover {
   border-top-color: #0000f1; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
+/* line 127, my-simple.css.scss */
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2); }
 
+/* line 130, my-simple.css.scss */
 .reveal .progress span {
   background: darkblue;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -134,5 +154,6 @@ body {
 /*********************************************
  * SLIDE NUMBER
  *********************************************/
+/* line 141, my-simple.css.scss */
 .reveal .slide-number {
   color: darkblue; }

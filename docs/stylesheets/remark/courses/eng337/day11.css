@@ -1,6 +1,9 @@
+/* line 1, day11.css.scss */
 .small {
   font-size: 0.95em; }
+  /* line 2, day11.css.scss */
   .small p {
     margin-top: 0.9em; }
+  /* line 10, day11.css.scss */
   .small .topic {
     font-size: 1.57895em; }

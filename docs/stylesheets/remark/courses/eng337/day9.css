@@ -1,14 +1,18 @@
+/* line 4, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
+/* line 9, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 4, day9.css.scss */
 .agenda {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 25.58941%; }
+  /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .agenda:last-child {
     margin-right: 0; }

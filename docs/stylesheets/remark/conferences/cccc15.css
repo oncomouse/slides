@@ -1,37 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+/* line 4, cccc15.css.scss */
 html {
   font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 300; }
+  /* line 7, cccc15.css.scss */
   html strong, html b {
     font-weight: 400;
     color: black; }
 
+/* line 13, cccc15.css.scss */
 p, ul li, ol li, h4 {
   font-size: 1.2rem;
   line-height: 1.5rem; }
 
+/* line 18, cccc15.css.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 400;
   line-height: 1; }
 
+/* line 24, cccc15.css.scss */
 .twitter_name {
   font-weight: 400 !important; }
 
+/* line 29, cccc15.css.scss */
 .cccc15 img {
   height: 55vh !important;
   max-height: 368px; }
 
+/* line 36, cccc15.css.scss */
 .hug .title-block {
   margin-top: 0; }
 
+/* line 20, ../../../../../../.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
 .images::after {
   clear: both;
   content: "";
   display: table; }
+/* line 43, cccc15.css.scss */
 .images p {
   max-width: 33%;
   float: left; }
 
+/* line 49, cccc15.css.scss */
 .bigger h1 {
   font-size: 6rem; }

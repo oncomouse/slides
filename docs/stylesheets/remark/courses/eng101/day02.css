@@ -1,5 +1,7 @@
+/* line 2, day02.css.scss */
 .big p, .big ol, .big ul {
   font-size: 1.8rem; }
 
+/* line 8, day02.css.scss */
 .hst img {
   max-width: 70%; }

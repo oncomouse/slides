@@ -1,86 +1,109 @@
 @charset "UTF-8";
+/* line 4, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
+/* line 9, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 4, mla14.css.scss */
 ul li, ol li {
   line-height: 1.75rem; }
 
+/* line 8, mla14.css.scss */
 .remark-slide-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+  /* line 20, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/mixins/_clearfix.scss */
   .remark-slide-content::after {
     clear: both;
     content: "";
     display: block; }
 
+/* line 12, mla14.css.scss */
 .half-column {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .half-column:last-child {
     margin-right: 0; }
+  /* line 15, mla14.css.scss */
   .half-column:nth-child(odd) {
     margin-right: 0; }
 
+/* line 21, mla14.css.scss */
 .slide2 ul {
   list-style: none; }
+/* line 25, mla14.css.scss */
 .slide2 li {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
   line-height: 1.25rem; }
 
+/* line 34, mla14.css.scss */
 .slide3 ol ol {
   list-style: lower-alpha; }
+/* line 39, mla14.css.scss */
 .slide3 .subgenre-list {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide3 .subgenre-list:last-child {
     margin-right: 0; }
+/* line 43, mla14.css.scss */
 .slide3 .definition-list {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-right: 0; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide3 .definition-list:last-child {
     margin-right: 0; }
+  /* line 48, mla14.css.scss */
   .slide3 .definition-list ul {
     list-style: none;
     padding-left: 0; }
 
+/* line 65, mla14.css.scss */
 .slide5 .key {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
   margin-right: 0; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide5 .key:last-child {
     margin-right: 0; }
+/* line 74, mla14.css.scss */
 .slide5 .graph {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide5 .graph:last-child {
     margin-right: 0; }
+/* line 79, mla14.css.scss */
 .slide5 ol {
   list-style: none;
   counter-reset: slide5 7;
   text-align: left;
   margin-left: 0.5em;
   padding-left: 0; }
+/* line 87, mla14.css.scss */
 .slide5 li {
   counter-increment: slide5;
   position: relative;
   margin: 0 0 6px 2em;
   padding: 4px 3px; }
+  /* line 93, mla14.css.scss */
   .slide5 li:before {
     position: absolute;
     top: 0px;
@@ -95,56 +118,72 @@ ul li, ol li {
     content: counter(slide5) ". ";
     padding-right: 5px; }
 
+/* line 113, mla14.css.scss */
 .slide6 canvas {
   margin: 0 auto;
   display: block; }
 
+/* line 120, mla14.css.scss */
 .slide8 table, .slide10 table {
   border: 1px solid black;
   padding: 0.5em;
   margin: 0 auto; }
+/* line 126, mla14.css.scss */
 .slide8 td, .slide10 td {
   padding: 0 0.5em; }
+  /* line 129, mla14.css.scss */
   .slide8 td:first-child, .slide10 td:first-child {
     padding: 0; }
 
+/* line 136, mla14.css.scss */
 .slide10 .chart {
   vertical-align: middle;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 57.35098%; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide10 .chart:last-child {
     margin-right: 0; }
+  /* line 141, mla14.css.scss */
   .slide10 .chart table {
     font-size: 0.72em;
     margin-top: 2em; }
+/* line 147, mla14.css.scss */
 .slide10 .legend {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
   margin-right: 0; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide10 .legend:last-child {
     margin-right: 0; }
+  /* line 152, mla14.css.scss */
   .slide10 .legend .column {
     text-align: left; }
+    /* line 155, mla14.css.scss */
     .slide10 .legend .column ul {
       list-style: none; }
+      /* line 158, mla14.css.scss */
       .slide10 .legend .column ul li {
         line-height: 1.25rem; }
+      /* line 162, mla14.css.scss */
       .slide10 .legend .column ul ul {
         list-style: disc;
         margin-bottom: 0.5em; }
 
+/* line 177, mla14.css.scss */
 .slide11 .chart {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-top: 1.2em; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide11 .chart:last-child {
     margin-right: 0; }
+/* line 183, mla14.css.scss */
 .slide11 .legend {
   float: left;
   display: block;
@@ -152,17 +191,21 @@ ul li, ol li {
   width: 23.23176%;
   margin-left: 8.5298%;
   margin-right: 0; }
+  /* line 89, ../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .slide11 .legend:last-child {
     margin-right: 0; }
+  /* line 190, mla14.css.scss */
   .slide11 .legend ul {
     list-style: none;
     padding: 0;
     text-align: left; }
+    /* line 195, mla14.css.scss */
     .slide11 .legend ul li {
       font-weight: bold;
       line-height: 1.1rem;
       margin-left: -4px;
       display: block; }
+      /* line 201, mla14.css.scss */
       .slide11 .legend ul li:before {
         content: "■";
         color: #000;
@@ -171,26 +214,37 @@ ul li, ol li {
         font-size: 3.15rem;
         position: relative;
         top: 7px; }
+      /* line 211, mla14.css.scss */
       .slide11 .legend ul li:nth-child(1):before {
         color: #00581a; }
+      /* line 215, mla14.css.scss */
       .slide11 .legend ul li:nth-child(2):before {
         color: #aad6e6; }
+      /* line 219, mla14.css.scss */
       .slide11 .legend ul li:nth-child(3):before {
         color: #ffb1b3; }
+      /* line 223, mla14.css.scss */
       .slide11 .legend ul li:nth-child(4):before {
         color: #a8e3bd; }
+      /* line 227, mla14.css.scss */
       .slide11 .legend ul li:nth-child(5):before {
         color: #fde910; }
+      /* line 231, mla14.css.scss */
       .slide11 .legend ul li:nth-child(6):before {
         color: #aa4203; }
+      /* line 235, mla14.css.scss */
       .slide11 .legend ul li:nth-child(7):before {
         color: #0056a7; }
+      /* line 239, mla14.css.scss */
       .slide11 .legend ul li:nth-child(8):before {
         color: #c99415; }
+      /* line 243, mla14.css.scss */
       .slide11 .legend ul li:nth-child(9):before {
         color: #317d82; }
+      /* line 247, mla14.css.scss */
       .slide11 .legend ul li:nth-child(10):before {
         color: #e6bea5; }
 
+/* line 256, mla14.css.scss */
 .remark-slide-container:nth-child(4) .remark-slide-number, .remark-slide-container:nth-child(5) .remark-slide-number, .remark-slide-container:nth-child(6) .remark-slide-number, .remark-slide-container:nth-child(7) .remark-slide-number, .remark-slide-container:nth-child(9) .remark-slide-number, .remark-slide-container:nth-child(11) .remark-slide-number {
   bottom: 13px; }

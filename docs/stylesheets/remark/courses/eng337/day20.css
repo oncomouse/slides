@@ -1,13 +1,19 @@
+/* line 1, day20.css.scss */
 .smaller {
   font-size: 0.85em; }
+  /* line 4, day20.css.scss */
   .smaller p {
     margin-top: 1em; }
+  /* line 8, day20.css.scss */
   .smaller .topic {
     font-size: 1.76471em; }
 
+/* line 13, day20.css.scss */
 .small {
   font-size: 0.95em; }
+  /* line 16, day20.css.scss */
   .small p {
     margin-top: 1em; }
+  /* line 20, day20.css.scss */
   .small .topic {
     font-size: 1.76471em; }

@@ -1,5 +1,6 @@
 /*	Display a line whose width indicates remaining slides
  * instead of the usual X/Y count. */
+/* line 6, progress-bar.css.scss */
 #remark-progress {
   height: 4px;
   min-width: 0;
@@ -9,6 +10,7 @@
   top: inherit !important;
   position: absolute; }
 
+/* line 16, progress-bar.css.scss */
 #remark-progress-content {
   -webkit-transition: width 0.5s ease-in;
   -moz-transition: width 0.5s ease-in;
@@ -16,6 +18,7 @@
   height: 100%;
   min-width: 0; }
 
+/* line 27, progress-bar.css.scss */
 .twitter_name {
   left: inherit;
   right: 20px; }

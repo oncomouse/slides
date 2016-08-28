@@ -1,33 +1,43 @@
+/* line 4, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
   box-sizing: border-box; }
 
+/* line 9, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/* line 5, day17.css.scss */
 .image img {
   display: block;
   margin: 0 auto;
   width: 95%; }
 
+/* line 13, day17.css.scss */
 .wallacestevens img {
   width: 58% !important; }
 
+/* line 19, day17.css.scss */
 .ezrapound img {
   width: 45% !important; }
 
+/* line 25, day17.css.scss */
 .plums h2, .barrow h2 {
   text-align: center; }
+/* line 29, day17.css.scss */
 .plums blockquote, .barrow blockquote {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   margin-left: 34.11922%; }
+  /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .plums blockquote:last-child, .barrow blockquote:last-child {
     margin-right: 0; }
 
+/* line 37, day17.css.scss */
 .reply h2 {
   text-align: center; }
+/* line 41, day17.css.scss */
 .reply blockquote {
   float: left;
   display: block;
@@ -35,11 +45,14 @@ html {
   width: 48.82117%;
   margin-left: 25.58941%;
   font-size: 0.95em; }
+  /* line 89, ../../../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_span-columns.scss */
   .reply blockquote:last-child {
     margin-right: 0; }
+  /* line 48, day17.css.scss */
   .reply blockquote p:first-child {
     margin-top: 0;
     text-align: center; }
+  /* line 53, day17.css.scss */
   .reply blockquote p {
     margin-top: 0.95em;
     line-height: 1.15rem; }

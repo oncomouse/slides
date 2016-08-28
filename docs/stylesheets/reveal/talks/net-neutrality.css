@@ -1,19 +1,26 @@
+/* line 2, net-neutrality.css.scss */
 .reveal blockquote {
   width: 90%;
   text-align: left;
   font-style: normal; }
+/* line 7, net-neutrality.css.scss */
 .reveal .left {
   text-align: left; }
+/* line 10, net-neutrality.css.scss */
 .reveal p.big {
   font-size: 2.5em; }
+/* line 13, net-neutrality.css.scss */
 .reveal p.bigger {
   font-size: 3.5em; }
+/* line 16, net-neutrality.css.scss */
 .reveal p.question {
   font-size: 2em; }
+/* line 19, net-neutrality.css.scss */
 .reveal #facebook {
   width: 500px;
   border: 0 !important;
   box-shadow: none !important; }
 
+/* line 26, net-neutrality.css.scss */
 #telecommunication {
   font-size: 0.875em; }

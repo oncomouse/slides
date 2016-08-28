@@ -1,87 +1,116 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+/* line 21, themes/solarized/_colors.scss */
 body {
   color: #586e75; }
 
+/* line 25, themes/solarized/_colors.scss */
 .remark-slide {
   background-color: #fdf6e3; }
 
 /* light is default mode, so pair with general html definition */
+/* line 32, themes/solarized/_colors.scss */
 html, .light {
   background-color: #fdf6e3;
   color: #657b83; }
+  /* line 5, themes/solarized/_utilities.scss */
   html *, .light * {
     color: #657b83; }
+  /* line 9, themes/solarized/_utilities.scss */
   html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
     color: #586e75;
     border-color: #657b83; }
+  /* line 14, themes/solarized/_utilities.scss */
   html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
     color: #586e75; }
 
+/* line 36, themes/solarized/_colors.scss */
 .dark {
   background-color: #002b36;
   color: #839496; }
+  /* line 5, themes/solarized/_utilities.scss */
   .dark * {
     color: #839496; }
+  /* line 9, themes/solarized/_utilities.scss */
   .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
     color: #93a1a1;
     border-color: #839496; }
+  /* line 14, themes/solarized/_utilities.scss */
   .dark a, .dark a:active, .dark a:visited {
     color: #93a1a1; }
 
+/* line 40, themes/solarized/_colors.scss */
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
+/* line 45, themes/solarized/_colors.scss */
 .emph {
   color: #cb4b16; }
 
+/* line 49, themes/solarized/_colors.scss */
 a, a > code {
   color: #d33682; }
 
+/* line 53, themes/solarized/_colors.scss */
 .inverse {
   background-color: #002b36;
   color: #839496; }
+  /* line 5, themes/solarized/_utilities.scss */
   .inverse * {
     color: #839496; }
+  /* line 9, themes/solarized/_utilities.scss */
   .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6 {
     color: #93a1a1;
     border-color: #839496; }
+  /* line 14, themes/solarized/_utilities.scss */
   .inverse a, .inverse a:active, .inverse a:visited {
     color: #93a1a1; }
+  /* line 56, themes/solarized/_colors.scss */
   .inverse h1, .inverse h2 {
     text-shadow: 1px 1px 2px rgba(131, 148, 150, 0.2); }
 
+/* line 61, themes/solarized/_colors.scss */
 .left-column {
   color: #839496; }
+  /* line 64, themes/solarized/_colors.scss */
   .left-column h1, .left-column h2, .left-column h3 {
     color: #839496; }
+  /* line 68, themes/solarized/_colors.scss */
   .left-column .current {
     color: #d33682; }
 
+/* line 74, themes/solarized/_colors.scss */
 #remark-progress {
   background-color: #dc322f; }
 
+/* line 80, themes/solarized/_colors.scss */
 .remark-slideshow {
   background: #fdf6e3; }
 
+/* line 85, themes/solarized/_colors.scss */
 .hljs-solarized_light:not(.inverse) pre, pre code {
   background: #eee8d5 !important;
   color: #657b83; }
 
+/* line 5, themes/solarized/_fonts.scss */
 body {
   font-family: "Droid Serif";
   font-size: 20px; }
 
+/* line 12, themes/solarized/_fonts.scss */
 h1, h2, h3 {
   font-family: "Yanone Kaffeesatz";
   font-weight: 400; }
 
+/* line 4, wsrl13.css.scss */
 .inverse h1 {
   color: #fdf6e3; }
+/* line 8, wsrl13.css.scss */
 .inverse h2 {
   color: #d33682; }
 
+/* line 16, wsrl13.css.scss */
 div.footnote {
   left: 50%;
   text-align: right; }

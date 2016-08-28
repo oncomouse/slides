@@ -1,57 +1,74 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+/* line 3, nexus.css.scss */
 html {
   font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 300; }
+  /* line 6, nexus.css.scss */
   html strong, html b {
     font-weight: 400;
     color: black; }
 
+/* line 12, nexus.css.scss */
 p, ul li, ol li, h4 {
   font-size: 1.2rem;
   line-height: 1.5rem; }
 
+/* line 17, nexus.css.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica", sans-serif;
   font-weight: 400;
   line-height: 1; }
 
+/* line 23, nexus.css.scss */
 h4 {
   font-weight: 300; }
 
+/* line 27, nexus.css.scss */
 .single-space {
   margin-top: 1rem; }
+  /* line 29, nexus.css.scss */
   .single-space > * {
     margin-top: 0; }
 
+/* line 35, nexus.css.scss */
 .nexus-title h1 {
   line-height: 1.15; }
 
+/* line 40, nexus.css.scss */
 .phantom {
   color: white !important; }
 
+/* line 45, nexus.css.scss */
 .big p, .big ul li, .big ol li, .big td, .big th {
   font-size: 1.43rem;
   line-height: 2rem; }
 
+/* line 52, nexus.css.scss */
 .bigger p, .bigger ul li, .bigger ol li {
   font-size: 2.15rem;
   line-height: 1.35; }
 
+/* line 59, nexus.css.scss */
 .center ol, .center ul {
   list-style: none; }
 
+/* line 65, nexus.css.scss */
 .nexus-title h1, .intertitle h1 {
   font-size: 4rem; }
 
+/* line 70, nexus.css.scss */
 table {
   width: 75%; }
 
+/* line 75, nexus.css.scss */
 .center table {
   margin: auto; }
 
+/* line 81, nexus.css.scss */
 .remark-slide-content > .title-block {
   margin-top: 0; }
 
+/* line 86, nexus.css.scss */
 pre {
   white-space: pre-wrap;
   /* CSS 3 */

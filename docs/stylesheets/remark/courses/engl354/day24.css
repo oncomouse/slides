@@ -1,6 +1,8 @@
+/* line 2, day24.css.scss */
 .small blockquote {
   font-size: 0.85em;
   margin-left: 0;
   margin-right: 0; }
+  /* line 8, day24.css.scss */
   .small blockquote p {
     line-height: 1.25; }

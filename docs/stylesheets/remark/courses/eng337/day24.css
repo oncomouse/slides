@@ -1,26 +1,33 @@
+/* line 2, day24.css.scss */
 .hough img {
   width: 100%; }
 
+/* line 8, day24.css.scss */
 .asu img {
   width: 120%; }
 
+/* line 14, day24.css.scss */
 .small p {
   font-size: 0.95em;
   margin-top: 1em; }
 
+/* line 21, day24.css.scss */
 .smallish p {
   font-size: 0.9em;
   margin-top: 1em; }
 
+/* line 28, day24.css.scss */
 .smaller p {
   font-size: 0.8em;
   margin-top: 1em; }
 
+/* line 36, day24.css.scss */
 .redness {
   width: 50%;
   margin: 0 auto;
   font-size: 1.5em;
   line-height: 2em; }
 
+/* line 44, day24.css.scss */
 .map img {
   width: 75%; }

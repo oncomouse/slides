@@ -1,4 +1,6 @@
+/* line 2, day25.css.scss */
 .small blockquote {
   font-size: 0.85em; }
+  /* line 5, day25.css.scss */
   .small blockquote p {
     line-height: 1.25; }

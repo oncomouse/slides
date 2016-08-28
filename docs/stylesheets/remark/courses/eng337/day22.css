@@ -1,7 +1,10 @@
+/* line 2, day22.css.scss */
 .doll img {
   width: 90%; }
 
+/* line 7, day22.css.scss */
 .small {
   font-size: 0.9em; }
+  /* line 10, day22.css.scss */
   .small .topic {
     font-size: 1.66667em; }

@@ -1,25 +1,34 @@
+/* line 2, slsa13.css.scss */
 .title h1 {
   font-size: 2.12em; }
+  /* line 5, slsa13.css.scss */
   .title h1 .subtitle {
     font-size: 0.84906em; }
 
+/* line 11, slsa13.css.scss */
 p {
   font-size: 1.1em;
   line-height: 1.5; }
 
+/* line 16, slsa13.css.scss */
 h2 {
   margin-bottom: 1em; }
 
+/* line 23, slsa13.css.scss */
 .yarn-conditioning img {
   height: 500px; }
 
+/* line 29, slsa13.css.scss */
 .carnegie-mansion img {
   width: 95%; }
 
+/* line 35, slsa13.css.scss */
 .brooklyn-bridge img {
   width: 85%; }
 
+/* line 41, slsa13.css.scss */
 .moor h1 {
   color: #000; }
+/* line 45, slsa13.css.scss */
 .moor h2 {
   font-size: 1.25em; }

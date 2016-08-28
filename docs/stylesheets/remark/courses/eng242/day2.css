@@ -1,18 +1,24 @@
+/* line 2, day2.css.scss */
 .painting1 h2, .painting2 h2 {
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 0; }
+/* line 12, day2.css.scss */
 .painting1 img, .painting2 img {
   display: block;
   margin: 0 auto; }
+/* line 17, day2.css.scss */
 .painting1 .topic, .painting2 .topic {
   bottom: 15px; }
 
+/* line 23, day2.css.scss */
 .painting1 img {
   width: 750px; }
 
+/* line 29, day2.css.scss */
 .painting2 img {
   width: 670px; }
 
+/* line 36, day2.css.scss */
 .remark-slide-container:nth-child(10) .topic, .remark-slide-container:nth-child(13) .topic, .remark-slide-container:nth-child(14) .topic {
   bottom: 15px; }

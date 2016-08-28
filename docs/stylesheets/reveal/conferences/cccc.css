@@ -1,20 +1,27 @@
+/* line 2, cccc.css.scss */
 .title h1, .title p, .title h2 {
   text-align: center !important; }
+/* line 6, cccc.css.scss */
 .title h2 {
   font-size: 1.85em; }
+/* line 10, cccc.css.scss */
 .title h3 {
   text-align: left; }
 
+/* line 15, cccc.css.scss */
 blockquote {
   font-style: normal !important;
   font-size: 0.75em !important;
   text-align: left; }
+  /* line 20, cccc.css.scss */
   blockquote p {
     line-height: 1.25em !important;
     margin-bottom: 1.25em !important; }
+    /* line 24, cccc.css.scss */
     blockquote p:last-child {
       margin-bottom: 0 !important; }
 
+/* line 31, cccc.css.scss */
 .dancing-bug1 img, .dancing-bug2 img, .dancing-bug3 img {
   position: absolute;
   top: -60px;
@@ -22,23 +29,29 @@ blockquote {
   max-width: none;
   max-height: none;
   margin: 0 !important; }
+/* line 40, cccc.css.scss */
 .dancing-bug1 .spacer, .dancing-bug2 .spacer, .dancing-bug3 .spacer {
   z-index: 2;
   width: 978px;
   height: 400px; }
+/* line 46, cccc.css.scss */
 .dancing-bug1 .copyright, .dancing-bug2 .copyright, .dancing-bug3 .copyright {
   position: absolute; }
+  /* line 49, cccc.css.scss */
   .dancing-bug1 .copyright h3, .dancing-bug2 .copyright h3, .dancing-bug3 .copyright h3 {
     font-size: 1rem; }
 
+/* line 56, cccc.css.scss */
 .dancing-bug1 img {
   top: -60px;
   clip: rect(96px, 949px, 493px, 11px); }
 
+/* line 63, cccc.css.scss */
 .dancing-bug2 img {
   top: -465px;
   clip: rect(496px, 948px, 898px, 11px); }
 
+/* line 70, cccc.css.scss */
 .dancing-bug3 img {
   top: -865px;
   clip: rect(896px, 946px, 1295px, 11px); }
