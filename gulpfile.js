@@ -71,12 +71,12 @@ _.each(targets, (value, key) => {
 	}
 });
 
-gulp.task('build:clean', () => {
-	return gulp.src(output)
-	.pipe(gulpif(nodeEnv === 'production', rimraf()));
-});
+//gulp.task('build:clean', () => {
+//	return gulp.src(output)
+//	.pipe(gulpif(nodeEnv === 'production', rimraf()));
+//});
 
-gulp.task('build:js', ['build:clean'], () => {
+gulp.task('build:js', () => {
 	return gulp.src(_.flatten([
 		targets.js[nodeEnv]
 	]))
@@ -85,7 +85,7 @@ gulp.task('build:js', ['build:clean'], () => {
 	.pipe(gulp.dest(output + '/' + jsDir));
 });
 
-gulp.task('build:css', ['build:clean'], () => {
+gulp.task('build:css', () => {
 	console.log('Building in ' + nodeEnv);
 	var files = {}
 	return gulp.src(_.flatten([
@@ -112,10 +112,15 @@ gulp.task('build:css', ['build:clean'], () => {
 	.pipe(gulp.dest(output + '/'+cssDir));
 });
 
+gulp.task('build:fonts', () => {
+	return gulp.src("source/stylesheets/remark/fonts/**/*")
+	.pipe(gulp.dest('docs/stylesheets/remark/fonts'))
+})
+
 gulp.task('build', (cb) => {
 	runSequence(
-		'build:clean',
-		['build:js', 'build:css'],
+		'build:js', //((nodeEnv === 'production') ? 'build:js' : ['build:js', 'build:css']),
+		//'build:fonts',
 		cb);
 });
 

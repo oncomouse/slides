@@ -71,7 +71,7 @@ configure :build do
 
 	ignore "/**/*.rb"
 	ignore "javascripts/*"
-	ignore "stylesheets/*"
+	#ignore "stylesheets/*"
 	set :http_prefix, "/slides"
 end
 
