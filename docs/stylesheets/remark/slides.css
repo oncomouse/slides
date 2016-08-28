@@ -1,26 +1,60 @@
 /*
-Error: File to import not found or unreadable: compass-mixins/lib/compass.
+Error: File to import not found or unreadable: libraries/sass-colors.
        Load paths:
          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets
          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets
          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets
          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets
-        on line 1 of /Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss
+         /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets
+         /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets
+         /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets
+         /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets
+        on line 1 of /Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_colors.scss
+        from line 2 of /Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_default.scss
+        from line 4 of /Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss
 
-1: @import "compass-mixins/lib/compass";
-2: @import "typebase";
-3: @import "bourbon";
-4: @import "neat";
-5: @import "themes/default/default";
-6: 
+1: @import "typebase";
+2: @import "bourbon";
+3: @import "neat";
+4: @import "themes/default/default";
+5: 
+6: //.remark-fading {
 
 Backtrace:
-/Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss:1
+/Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_colors.scss:1
+/Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_default.scss:2
+/Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss:4
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -146,4 +180,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass-mixins/lib/compass.\A        Load paths:\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A         on line 1 of /Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss\A \A 1: @import \"compass-mixins/lib/compass\";\A 2: @import \"typebase\";\A 3: @import \"bourbon\";\A 4: @import \"neat\";\A 5: @import \"themes/default/default\";\A 6: "; }
+  content: "Error: File to import not found or unreadable: libraries/sass-colors.\A        Load paths:\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets\A         on line 1 of /Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_colors.scss\A         from line 2 of /Users/apilsch/Projects/slides/source/stylesheets/remark/themes/default/_default.scss\A         from line 4 of /Users/apilsch/Projects/slides/source/stylesheets/remark/slides.css.scss\A \A 1: @import \"typebase\";\A 2: @import \"bourbon\";\A 3: @import \"neat\";\A 4: @import \"themes/default/default\";\A 5: \A 6: //.remark-fading {"; }
