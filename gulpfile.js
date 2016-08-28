@@ -60,7 +60,7 @@ if(typeof nodeEnv === 'undefined') {
 	nodeEnv = 'development';
 }
 
-var output = (nodeEnv === 'production' ? 'build' : '.tmp/dist'); // See you in Hell, Middleman build system
+var output = (nodeEnv === 'production' ? 'docs' : '.tmp/dist'); // See you in Hell, Middleman build system
 
 _.each(targets, (value, key) => {
 	if(typeof value[nodeEnv] === 'undefined') {
