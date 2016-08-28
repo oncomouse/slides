@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 242 - Day 1
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    .title-block[
+    # Welcome to ENG 242!
+    ## American Literature From 1860
+    ]
+    
+    ---
+    class: center, middle
+    
+    .title-block[
+    ## Syllabus Online:
+    # http://atp1.us/eng242
+    ]
+    ---
+    
+    .tennessee[
+    .title-block[
+    ## Anecdote of the Jar
+    ### Wallace Stevens
+    ]
+    
+    I placed a jar in Tennessee, <br/>
+    And round it was, upon a hill. <br/>
+    It made the slovenly wilderness <br/>
+    Surround that hill.
+    
+    The wilderness rose up to it, <br/>
+    And sprawled around, no longer wild. <br/>
+    The jar was round upon the ground <br/>
+    And tall and of a port in air.
+    
+    It took dominion every where. <br/>
+    The jar was gray and bare. <br/>
+    It did not give of bird or bush,<br/> 
+    Like nothing else in Tennessee.
+    ]
+    ---
+    class: middle, center, jar
+    
+    ![The Actual Jar In Question](http://media.liveauctiongroup.net/i/17890/17273243_1.jpg?v=8D085CCBA540110)
+    ---
+    class: big
+    ## For Tomorrow
+    
+    * Read:
+    	* Mark Twain, ["How To Tell A Story" (including "The Wounded Soldier" and "The Golden Arm")](http://www.gutenberg.org/ebooks/3250)
+    	* William Dean Howells, ["The Smiling Aspects of Life"](http://www.wsu.edu/~campbelld/amlit/howcrit.htm)
+    	* Mark Twain, ["The Celebrated Jumping Frog of Calaveras County"](http://twain.lib.virginia.edu/projects/price/frog.htm)</textarea>
+  </body>
+</html>

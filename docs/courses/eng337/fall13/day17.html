@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 337 - Day 17
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    # Agenda
+    .agenda[
+    
+    1. Glitz
+    1. Fake ID
+    1. Symbols & Dreams
+    
+    ]
+    
+    ---
+    class: middle
+    
+    > I'd seen it. Everybody had seen it. It was a rich cream color, bright with nickel, swollen here and there in its monstrous length with triumphant hatboxes and supper-boxes and tool-boxes, and terraced with a labyrinth of windshields that mirrored a dozen suns. Sitting down behind many layers of glass in a sort of **green** leather conservatory we started to town.
+    >
+    > I had talked with him perhaps half a dozen times in the past month and found, to my disappointment, that he had little to say. So my first impression, that he was a person of some undefined consequence, had gradually faded and he had become simply the proprietor of an elaborate roadhouse next door.
+    >
+    > — Chapter IV (pg. 64)
+    
+    ---
+    class: middle
+    > He took out a pile of shirts and began throwing them, one by one before us, shirts of sheer linen and thick silk and fine flannel which lost their folds as they fell and covered the table in many-colored disarray. While we admired he brought more and the soft rich heap mounted higher--shirts with stripes and scrolls and plaids in coral and apple-**green** and lavender and faint orange with monograms of Indian blue. Suddenly with a strained sound, Daisy bent her head into the shirts and began to cry stormily. 
+    >
+    >"They're such beautiful shirts," she sobbed, her voice muffled in the thick folds. "It makes me sad because I've never seen such--such beautiful shirts before."
+    >
+    > — Chapter V (pg. 92)
+    
+    ---
+    class: middle
+    > He looked at me sideways--and I knew why Jordan Baker had believed he was lying. He hurried the phrase "educated at Oxford," or swallowed it or choked on it as though it had bothered him before. And with this doubt his whole statement fell to pieces and I wondered if there wasn't something a little sinister about him after all.
+    >
+    > — Chapter IV (pg. 65)
+    
+    ---
+    class: middle
+    > It was a photograph of half a dozen young men in blazers loafing in an archway through which were visible a host of spires. There was Gatsby, looking a little, not much, younger--with a cricket bat in his hand.
+    > 
+    > Then it was all true. I saw the skins of tigers flaming in his palace on the Grand Canal; I saw him opening a chest of rubies to ease, with their crimson-lighted depths, the gnawings of his broken heart.
+    >
+    > — Chapter IV (pg. 67)
+    
+    ---
+    class: middle
+    > James Gatz--that was really, or at least legally, his name. He had changed it at the age of seventeen and at the specific moment that witnessed the beginning of his career--when he saw Dan Cody's yacht drop anchor over the most insidious flat on Lake Superior. It was James Gatz who had been loafing along the beach that afternoon in a torn **green** jersey and a pair of canvas pants, but it was already Jay Gatsby who borrowed a row-boat, pulled out to the _Tuolmee_ and informed Cody that a wind might catch him and break him up in half an hour. 
+    >
+    > — Chapter VI (pg. 98)
+    ---
+    class:middle
+    >"Who is this Gatsby anyhow?" demanded Tom suddenly. "Some big bootlegger?"
+    >
+    >"Where'd you hear that?" I inquired.
+    >
+    >"I didn't hear it. I imagined it. A lot of these newly rich people are just big bootleggers, you know."
+    >
+    >"Not Gatsby," I said shortly.
+    >
+    > — Chapter VI (pg. 107)
+    ---
+    class: middle
+    
+    >He told me all this very much later, but I've put it down here with the idea of exploding those first wild rumors about his antecedents, which weren't even faintly true. Moreover he told it to me at a time of confusion, when I had reached the point of believing everything and nothing about him. So I take advantage of this short halt, while Gatsby, so to speak, caught his breath, to clear this set of misconceptions away.
+    >
+    > — Chapter VI (pg. 101)
+    ---
+    class: middle
+    > "If it wasn't for the mist we could see your home across the bay," said Gatsby. "You always have a **green** light that burns all night at the end of your dock."  Daisy put her arm through his abruptly but he seemed absorbed in what he had just said. Possibly it had occurred to him that the colossal significance of that light had now vanished forever. Compared to the great distance that had separated him from Daisy it had seemed very near to her, almost touching her. It had seemed as close as a star to the moon. Now it was again a **green** light on a dock. His count of enchanted objects had diminished by one.
+    >
+    > — Chapter V (pg. 92-93)
+    
+    ---
+    class: middle
+    >"These things excite me SO," she whispered. "If you want to kiss me any time during the evening, Nick, just let me know and I'll be glad to arrange it for you. Just mention my name. Or present a **green** card. I'm giving out **green**----"
+    >
+    >"Look around," suggested Gatsby.
+    >
+    > — Chapter VI (pg. 104)
+    ---
+    class: middle
+    > As I went over to say goodbye I saw that the expression of bewilderment had come back into Gatsby's face, as though a faint doubt had occurred to him as to the quality of his present happiness. Almost five years! There must have been moments even that afternoon when Daisy tumbled short of his dreams--not through her own fault but because of the colossal vitality of his illusion. It had gone beyond her, beyond everything. He had thrown himself into it with a creative passion, adding to it all the time, decking it out with every bright feather that drifted his way. No amount of fire or freshness can challenge what a man will store up in his ghostly heart. 
+    >
+    > — Chapter V (pg. 95)
+    ---
+    class: middle
+    
+    > He wanted nothing less of Daisy than that she should go to Tom and say: "I never loved you." After she had obliterated three years with that sentence they could decide upon the more practical measures to be taken. One of them was that, after she was free, they were to go back to Louisville and be married from her house--just as if it were five years ago.
+    >
+    > — Chapter VI (pg. 109)
+    
+    > "I wouldn't ask too much of her," I ventured. "You can't repeat the past."
+    >
+    > "Can't repeat the past?" he cried incredulously. "Why of course you can!"
+    >
+    > — Chapter VI (pg. 110)
+    
+    ---
+    class: middle
+    > He hadn't once ceased looking at Daisy and I think he revalued everything in his house according to the measure of response it drew from her well-loved eyes. Sometimes, too, he stared around at his possessions in a dazed way as though in her actual and astounding presence none of it was any longer real. Once he nearly toppled down a flight of stairs.
+    >
+    > — Chapter V (pg. 91)
+    ---
+    class: middle
+    >Or perhaps I had merely grown used to it, grown to accept West Egg as a world complete in itself, with its own standards and its own great figures, second to nothing because it had no consciousness of being so, and now I was looking at it again, through Daisy's eyes. It is invariably saddening to look through new eyes at things upon which you have expended your own powers of adjustment.
+    >
+    > — Chapter VI (pg. 104)</textarea>
+  </body>
+</html>

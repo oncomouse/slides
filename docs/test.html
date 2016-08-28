@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Reveal Test Slides
+    </title>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
+    <link href="/slides/stylesheets/reveal/theme/night.css" rel="stylesheet" id="theme" />
+    <!-- For syntax highlighting -->
+    <link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="/slides/stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/slides/javascripts/lib/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      var head_js_load = ['/slides/javascripts/reveal/reveal.min.js'];
+      
+      head.load(
+      	head_js_load,
+      	function() {
+      		
+      		
+              Reveal.initialize({
+              	controls: false,
+              	progress: true,
+              	history: true,
+              	center: true,
+              	viewDistance: 3,
+              	minScale: 0.2,
+              	maxScale: 1,
+              	margin: 0.1,
+      
+              	theme: Reveal.getQueryHash().theme || "night", // List available in stylesheets/reveal/themes
+              	transition: Reveal.getQueryHash().transition || "zoom", // default/cube/page/concave/zoom/linear/fade/none
+      			transitionSpeed: 'default',
+      
+              	// Optional libraries used to extend on reveal.js
+              	dependencies: [
+              		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              	]
+              });
+      	}
+      );
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block; }
+        .twitter_badge:before, .twitter_badge:after {
+          font-family: "icomoon";
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 0.95em;
+          -webkit-font-smoothing: antialiased;
+          font-size: 0.95em; }
+        .twitter_badge:before {
+          content: '"';
+          position: absolute;
+          top: -0.05em;
+          left: -1.15em; }
+      
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em; }
+        #watermark:before {
+          top: 0.23em !important; }
+    </style>
+  </head>
+  <body>
+    <div class='reveal'>
+      <p class='twitter_badge' id='watermark'>
+        @oncomouse
+      </p>
+      <div class='slides'>
+        <section>
+          <h1>Reveal.js</h1>
+          <h3>HTML Presentations Made Easy</h3>
+          <p>
+            <small>
+              Created by
+              <a href="Hakim%20El%20Hattab">http://hakim.se</a>
+              <!--  -->
+              <a href="@hakimel">http://twitter.com/hakimel</a>
+            </small>
+          </p>
+        </section>
+        <section>
+          <h2>Custom Events</h2>
+          <p>
+            Additionally custom events can be triggered on a per slide basis by binding to the
+            <code>data-state</code>
+            name.
+          </p>
+          <pre><code contenteditable data-trim style='font-size: 18px; margin-top: 20px;'>Reveal.addEventListener( 'customevent', function() {
+          	console.log( '"customevent" has fired' );
+          } );</code></pre>
+        </section>
+        <section>
+          <h2>Heads Up</h2>
+          <p>
+            reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
+            support for CSS 3D transforms to see it in its full glory.
+          </p>
+          <aside class='notes'>
+            Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+          </aside>
+        </section>
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>Vertical Slides</h2>
+            <p>
+              Slides can be nested inside of other slides,
+              try pressing
+              <a class='navigate-down' href='#'>down.</a>
+            </p>
+            <a class='image navigate-down' href='#'>
+              <img alt='Down arrow' height='238' src='https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png' width='178'>
+            </a>
+          </section>
+          <section>
+            <h2>Basement Level 1</h2>
+            <p>Press( down or up to navigate.</p>
+          </section>
+          <section>
+            <h2>Basement Level 2</h2>
+            <p>Cornify</p>
+            <a class='test' href='http://cornify.com'>
+              <img alt='Unicorn' height='326' src='https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif' width='280'>
+            </a>
+          </section>
+          <section>
+            <h2>Basement Level 3</h2>
+            <p>That's( it, time to go back up.</p>
+            <a class='image' href='#/2'>
+              <img alt='Up arrow' height='238' src='https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png' style='-webkit-transform: rotate(180deg);' width='178'>
+            </a>
+          </section>
+        </section>
+        <section>
+          <h2>Slides</h2>
+          <p>
+            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es.
+          </p>
+        </section>
+        <section>
+          <h2>Point of View</h2>
+          <p>Press <strong>ESC</strong> to enter the slide overview.</p>
+          
+          <p>Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.</p>
+        </section>
+        <section>
+          <h2>Works in Mobile Safari</h2>
+          <p>
+            Try it out! You can swipe through the slides and pinch your way to the overview.
+          </p>
+        </section>
+        <section>
+          <h2>Marvelous Unordered List</h2>
+          <ul>
+            <li>No order here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Fantastic Ordered List</h2>
+          <ol>
+            <li>One is smaller than...</li>
+            <li>Two is smaller than...</li>
+            <li>Three!</li>
+          </ol>
+        </section>
+        <section id='transitions'>
+          <h2>Transition Styles</h2>
+          <p>You can select from different transitions, like: <br />
+          <a href="?transition=cube#/transitions">Cube -</a>
+          <a href="?transition=page#/transitions">Page -</a>
+          <a href="?transition=concave#/transitions">Concave -</a>
+          <a href="?transition=zoom#/transitions">Zoom -</a>
+          <a href="?transition=linear#/transitions">Linear -</a>
+          <a href="?transition=fade#/transitions">Fade -</a>
+          <a href="?transition=none#/transitions">None -</a>
+          <a href="?#/transitions">Default</a></p>
+        </section>
+        <section id='themes'>
+          <h2>Themes</h2>
+          <p>Reveal.js comes with a few themes built in: <br />
+          <a href="?theme=sky#/themes">Sky</a> -
+          <a href="?theme=beige#/themes">Beige -</a>
+          <a href="?theme=simple#/themes">Simple -</a>
+          <a href="?theme=serif#/themes">Serif -</a>
+          <a href="?theme=night#/themes">Night -</a>
+          <a href="?#/themes">Default</a></p>
+          <p>
+            <small>
+              * Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the %code()&lt;head&gt; using a %code()&lt;link&gt;.
+            </small>
+          </p>
+        </section>
+        <section>
+          <h2>Global State</h2>
+          <p>
+            Set %code()data-state="something" on a slide and %code()"something"
+            will be added as a class to the document element when the slide is open. This lets you
+            apply broader style changes, like switching the background.
+          </p>
+        </section>
+        <section data-state='customevent'>
+          <h2>Custom Events</h2>
+          <p>
+            Additionally custom events can be triggered on a per slide basis by binding to the %code()data-state name.
+          </p>
+        </section>
+        <section>
+          <section data-background='#007777'>
+            <h2>Slide Backgrounds</h2>
+            <p>
+              Set %code()data-background="#007777" on a slide to change the full page background to the given color. All CSS color formats are supported.
+            </p>
+            <a class='image navigate-down' href='#'>
+              <img alt='Down arrow' height='238' src='https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png' width='178'>
+            </a>
+          </section>
+          <section data-background='https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png'>
+            <h2>Image Backgrounds</h2>
+          </section>
+          <section data-background-repeat='repeat' data-background-size='100px' data-background='https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png'>
+            <h2>Repeated Image Backgrounds</h2>
+          </section>
+        </section>
+        <section data-background-transition='slide' data-background='#4d7e65' data-transition='linear'>
+          <h2>Background Transitions</h2>
+          <p>
+            Pass reveal.js the %code()backgroundTransition: 'slide' config argument to make backgrounds slide rather than fade.
+          </p>
+        </section>
+        <section data-background-transition='slide' data-background='#8c4738' data-transition='linear'>
+          <h2>Background Transition Override</h2>
+          <p>
+            You can override background transitions per slide by using %code()data-background-transition="slide".
+          </p>
+        </section>
+        <section>
+          <section>
+            <h2>Fragmented Views</h2>
+            <p>Hit the next arrow...</p>
+            <p class='fragment'>... to step through ...</p>
+            <ol>
+              <li class='fragment'>
+                <code>any type</code>
+              </li>
+              <li class='fragment'>
+                <em>of view</em>
+              </li>
+              <li class='fragment'>
+                <strong>fragments</strong>
+              </li>
+            </ol>
+            <aside class='notes'>
+              This slide has fragments which are also stepped through in the notes window.
+            </aside>
+          </section>
+          <section>
+            <h2>Fragment Styles</h2>
+            <p>There's a few styles of fragments, like:</p>
+            <p class='fragment grow'>grow</p>
+            <p class='fragment shrink'>shrink</p>
+            <p class='fragment roll-in'>roll-in</p>
+            <p class='fragment fade-out'>fade-out</p>
+            <p class='fragment highlight-red'>highlight-red</p>
+            <p class='fragment highlight-green'>highlight-green</p>
+            <p class='fragment highlight-blue'>highlight-blue</p>
+          </section>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

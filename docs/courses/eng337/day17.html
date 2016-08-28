@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 337 - Day 17
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    # *My Ántonia*
+    
+    <h2 class="hug">Day 3</h2>
+    ---
+    ## The Whole Operation
+    
+    > I propped my book open and stared listlessly at the page of the 'Georgics' where tomorrow's lesson began. It opened with the melancholy reflection that, in the lives of mortals the best days are the first to flee. '*Optima dies... prima fugit*.' I turned back to the beginning of the third book, which we had read in class that morning. '*Primus ego in patriam mecum... deducam Musas*'; 'for I shall be the first, if I live, to bring the Muse into my country.' Cleric had explained to us that 'patria' here meant, not a nation or even a province, but the little rural neighbourhood on the Mincio where the poet was born. This was not a boast, but a hope, at once bold and devoutly humble, that he might bring the Muse (but lately come to Italy from her cloudy Grecian mountains), not to the capital, the *palatia Romana*, but to his own little I country'; to his father's fields, 'sloping down to the river and to the old beech trees with broken tops.'
+    >
+    > — Book III, Chapter II
+    ---
+    ## Girl-hood
+    
+    >'Not me. I like to be lonesome. When I went to work for Mrs. Thomas I was nineteen years old, and I had never slept a night in my life when there weren't three in the bed. I never had a minute to myself except when I was off with the cattle.'
+    >
+    >Usually, when Lena referred to her life in the country at all, she dismissed it with a single remark, humorous or mildly cynical. But tonight her mind seemed to dwell on those early years. She told me she couldn't remember a time when she was so little that she wasn't lugging a heavy baby about, helping to wash for babies, trying to keep their little chapped hands and faces clean. She remembered home as a place where there were always too many children, a cross man and work piling up around a sick woman.
+    > — Book III, Chapter V
+    
+    ---
+    
+    ## Fortune
+    
+    > The wheat harvest was over, and here and there along the horizon I could see black puffs of smoke from the steam threshing-machines. The old pasture land was now being broken up into wheatfields and cornfields, the red grass was disappearing, and the whole face of the country was changing. There were wooden houses where the old sod dwellings used to be, and little orchards, and big red barns; all this meant happy children, contented women, and men who saw their lives coming to a fortunate issue
+    >
+    > — Book IV, Chapter III
+    ---
+    
+    ## Sewing
+    
+    > 'When she came home to do her sewing that summer before she was to be married, she was over here about every day. They've never had a sewing-machine at the Shimerdas', and she made all her things here. I taught her hemstitching, and I helped her to cut and fit. She used to sit there at that machine by the window, pedalling the life out of it—she was so strong—and always singing them queer Bohemian songs, like she was the happiest thing in the world.
+    >
+    > — Book IV, Chapter III
+    ---
+    
+    ## Death: First Violent, Then Slowly
+    
+    >'Of course it means you are going away from us for good,' she said with a sigh. 'But that don't mean I'll lose you. Look at my papa here; he's been dead all these years, and yet he is more real to me than almost anybody else. He never goes out of my life. I talk to him and consult him all the time. The older I grow, the better I know him and the more I understand him.'
+    >
+    > — Book IV, Chapter IV
+    ---
+    
+    ## Ántonia / Earth
+    
+    >She asked me whether I had learned to like big cities. 'I'd always be miserable in a city. I'd die of lonesomeness. I like to be where I know every stack and tree, and where all the ground is friendly. I want to live and die here. Father Kelly says everybody's put into this world for something, and I know what I've got to do. I'm going to see that my little girl has a better chance than ever I had. I'm going to take care of that girl, Jim.'
+    >
+    >I told her I knew she would. 'Do you know, Ántonia, since I've been away, I think of you more often than of anyone else in this part of the world. I'd have liked to have you for a sweetheart, or a wife, or my mother or my sister—anything that a woman can be to a man. The idea of you is a part of my mind; you influence my likes and dislikes, all my tastes, hundreds of times when I don't realize it. You really are a part of me.'
+    >
+    > — Book IV, Chapter IV
+    ---
+    ## Ántonia / Earth 2
+    
+    > As we walked through the apple orchard, grown up in tall bluegrass, Ántonia kept stopping to tell me about one tree and another. 'I love them as if they were people,' she said, rubbing her hand over the bark. 'There wasn't a tree here when we first came. We planted every one, and used to carry water for them, too—after we'd been working in the fields all day. Anton, he was a city man, and he used to get discouraged. But I couldn't feel so tired that I wouldn't fret about these trees when there was a dry time. They were on my mind like children. Many a night after he was asleep I've got up and come out and carried water to the poor things. And now, you see, we have the good of them. My man worked in the orange groves in Florida, and he knows all about grafting. There ain't one of our neighbours has an orchard that bears like ours.'
+    >
+    > — Book V, Chapter I
+    
+    ---
+    ## Memories
+    
+    > When I met Tiny Soderball in Salt Lake, she told me that Ántonia had not 'done very well'; that her husband was not a man of much force, and she had had a hard life. Perhaps it was cowardice that kept me away so long. My business took me West several times every year, and it was always in the back of my mind that I would stop in Nebraska some day and go to see Ántonia. But I kept putting it off until the next trip. I did not want to find her aged and broken; I really dreaded it. In the course of twenty crowded years one parts with many illusions. I did not wish to lose the early ones. Some memories are realities, and are better than anything that can ever happen to one again.
+    >
+    > — Book V, Chapter I
+    
+    ---
+    
+    ## A Kind of Life
+    
+    >I took a long walk north of the town, out into the pastures where the land was so rough that it had never been ploughed up, and the long red grass of early times still grew shaggy over the draws and hillocks. Out there I felt at home again. Overhead the sky was that indescribable blue of autumn; bright and shadowless, hard as enamel. To the south I could see the dun-shaded river bluffs that used to look so big to me, and all about stretched drying cornfields, of the pale-gold colour, I remembered so well. Russian thistles were blowing across the uplands and piling against the wire fences like barricades. Along the cattle-paths the plumes of goldenrod were already fading into sun-warmed velvet, grey with gold threads in it. I had escaped from the curious depression that hangs over little towns, and my mind was full of pleasant things; trips I meant to take with the Cuzak boys, in the Bad Lands and up on the Stinking Water. There were enough Cuzaks to play with for a long while yet. Even after the boys grew up, there would always be Cuzak himself! I meant to tramp along a few miles of lighted streets with Cuzak.
+    >
+    > — Book V, Chapter III
+    
+    ---
+    
+    ## The End?
+    
+    > This was the road over which Ántonia and I came on that night when we got off the train at Black Hawk and were bedded down in the straw, wondering children, being taken we knew not whither. I had only to close my eyes to hear the rumbling of the wagons in the dark, and to be again overcome by that obliterating strangeness. The feelings of that night were so near that I could reach out and touch them with my hand. I had the sense of coming home to myself, and of having found out what a little circle man's experience is. For Ántonia and for me, this had been the road of Destiny; had taken us to those early accidents of fortune which predetermined for us all that we can ever be. Now I understood that the same road was to bring us together again. Whatever we had missed, we possessed together the precious, the incommunicable past.
+    >
+    > — Book V, Chapter III</textarea>
+  </body>
+</html>

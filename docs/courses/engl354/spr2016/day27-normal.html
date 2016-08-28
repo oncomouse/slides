@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENGL 354 Day 27 (Stolley, Normal)
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class:  center, middle, bigger
+    
+    # Karl Stolley <br> *"The Lo-Fi Manifesto"*
+    
+    ---
+    ## Discussion Leader (Emily)
+    
+    .small[
+    > Producers deserve no forgiveness for their technological shortcomings or ignorance. None. A poor technological choice that denies access to anyone, for any reason, is ultimately a rhetorical problem—particularly when there are lo-fi technologies, like valid XHTML, that inherently address issues of access. The time has come to hold our colleagues and students accountable for their technological choices just as they would be held accountable for any other rhetorical choice.
+    >
+    > This is not about elitism; it is about raising our expectations of one another to embrace and take responsibility for all of the rhetorical concerns that comprise the digital medium—not just those that are easy, obvious, or convenient
+    ]
+    
+    Stolley argues that we should hold each other accountable for our technological choices just as we would be held accountable for any other rhetorical choice. With this being said, is the way we interact with technology becoming just as important as the way we interact with one another? As social media continues to develop into the primary way we communicate, do we as rhetors need to raise our expectations of one another since our words and actions will leave a digital history?
+    ---
+    ## Discussion Leader (Colin)
+    
+    > Discourse posted on the open Web can hardly be considered free if access requires costly software or particular devices.
+    >
+    > Additionally, the literacies and language we develop through engaging in digital scholarship and knowledge-making should enable us to speak confidently, unambiguously, and critically with one another about the intricacies and methods of digital production.
+    >
+    > And as teachers, we should actively work to provide students with sustainable, extensible production literacies through open, rhetorically grounded digital practices that emphasize the source in 'free and open source.
+    
+    Do you agree with this notion easier access to scholarly discussions of rhetoric (or any other discipline) through the use of "free and open sources?" What would a world like this look like? Do you think it would help or hinder academic discussion? 
+    
+    ---
+    ## The Time Has Come ...
+    
+    > The time has come to reject expensive consumer and prosumer software that hinders the extensibility of digital discourse and limits digital production literacy to programs and file formats that are destined for disruptive upgrades or obsolescence.
+    > 
+    > Digital scholars in the loosely defined fields of rhetoric and composition, computers and writing, and technical communication should create free and open source artifacts that are software- and device-independent. Discourse posted on the open Web can hardly be considered free if access requires costly software or particular devices.
+    ---
+    class:  big
+    ## What Are Lo-Fi Technologies?
+    
+    > Lo-fi production technologies are stable and free. They consist of and/or can retrograde to:
+    
+    1. Plain text files (.txt, .xml, .htm, .css, .js, etc.)
+    1. Plain text editors (Notepad, TextEdit, pico/nano, vi, etc.)
+    1. Standardized, human-readable forms of open languages expressed in plain text (XML, XHTML, CSS, JavaScript, etc.)
+    1. Single-media files (image, audio, video) in open formats
+    ---
+    class:  small
+    ## LOFI
+    
+    
+    >**Lossless**: Discourse presented through lo-fi production technologies neither degrades nor becomes trapped in the production itself. Text migrates and transforms from a single source (e.g., XML, or an application of XML) to any number of other devices and artifacts; images, video, and other media elements maintain their integrity as individual files that are orchestrated with one another at a reader’s moment of access, not at the producer’s moment of File > Import or File > Save.
+    >
+    >**Open**: Lo-fi artifacts’ source code and media elements are available for inspection, revision, and extension outside the scope of any one piece of production software and any one producer. Openness includes and encourages end-user/reader customization and repurposing.
+    >
+    >**Flexible**: Discourse artfully and rhetorically created with lo-fi production technologies can be experienced unobtrusively in multiple ways by different users equipped with a wide variety of conventional, mobile, and adaptive devices—all from a single artifact. No plugins, special downloads, or device-/reader-specific artifacts are required.
+    >
+    >**In(ter)dependent**: Lo-fi production technologies direct orchestration (like a recipe), not composition (like a TV dinner), allowing users and their devices full control to render (or not) and perhaps repurpose the media elements that constitute a digital artifact.
+    ---
+    ## Vendor Lock-In
+    
+    > As rhetoricians, we should resist allowing software, commercial or otherwise, to signify entire digital genres. But compare the number of results in a search engine for “rhetoric of PowerPoint” versus “rhetoric of slideshows.” The results are not encouraging—and suggest that “vendor lock-in” has as much of a grip on discourse as it does on scenes of production.
+    >
+    > But consider a software-independent, lo-fi alternative to PowerPoint: Eric Meyer, CSS guru and design wizard, developed and released into the public domain a Simple Standards-based Slide Show System (S5). Meyer’s system uses the lo-fi technologies of structural XHTML, media-specific CSS, and JavaScript (languages usually encountered on Web pages) to deploy slideshows. Unlike PowerPoint slideshows, which require either the PowerPoint software itself or the Microsoft PowerPoint Viewer for optimal viewing, S5 slideshows function in any modern web browser.
+    ---
+    class:  big
+    ## The Aims of the Digital Itself
+    
+    > The move away from the seeming inevitability of software like PowerPoint or Flash brings the aims of the digital genre itself into focus: a much more flexible, rhetorical approach to production than focusing on the features and limitations of a given piece of software.
+    ---
+    ## Access to the Format and Language Itself
+    
+    > But community-developed software, like the corporate counterparts it often mimics, does not inherently provide for an “under the hood” literate encounter with the materiality of digital production languages and formats that lo-fi production methods do. Lo-fi operates at the material level of technology (code); WYSIWYG software (which describes Web editors as much as word processors, page design tools, etc.) keeps code and file formats at arm’s length by design.
+    > 
+    >Put another way, lo-fi production methods open access to the languages that visual interfaces for digital production often obscure.
+    ---
+    ## Advantage of Open Standards
+    
+    > Production literacies anchored to open, standardized languages have a longer shelf-life than those tied to WYSIWYG software. Although languages, like software, are subject to future versions, languages often retain much of their essential character (e.g., SGML, HTML, and XML look and behave very similarly—despite the fact that SGML was standardized in 1986, and XML in 2000). Code written in earlier versions of a language are often viable even after a revision of the language: producers can still write HTML 4.01, even though XHTML 1.0 is preferable. But forget about trying to pass a Word 1.0 document around.
+    
+    ---
+    ## Roach Motels
+    
+    > Too many software programs create “roach motels” for content and information: the data checks in (via File > Import), but it never checks out. Such digital artifacts—the PowerPoint, the PDF—are only marginal improvements over the entrapped quality of analog/print information; and in some ways (e.g., dependence on a specific piece of software to view the artifact) are actually steps backward from the comparatively open access that books and other printed matter provide.
+    >
+    > The selfishness of closed, roach-motel formats and WYSIWYG software is implicit in the acronym: What YOU See is What YOU Get. As though YOU, the producer, were the only one who mattered in the digital rhetorical situation (if it looks good for me in Dreamweaver or FrontPage, so the logic goes, it must look good everywhere for everyone). In a time when screens range between postage-stamp-sized cell phones and 71-inch flat panel LCDs, it is lunacy to assume that what the producer sees is what everyone, indeed anyone, else sees.
+    ---
+    ## Data in the Stream
+    
+    > Any given digital artifact needs to be constructed not as a final resting place for discourse, but as a pause in a stream of further, unfettered access. A Web page listing an organization’s members’ names and email addresses, for example, can be far more open through the use of microformats. Rather than cutting and pasting the contents of the page, or returning each time the page’s information is needed, a user can, via the presence of the hCard microformat and a technology like Operator, import some or all of the membership’s contact information directly into her own email address book. Once email address books become microformat-friendly, the address book could query the URL containing the contact information and update entries automatically.
+    ---
+    ## Digital Literacy
+    
+    > Digital artifacts should outlast the software that played a role in their creation. Insisting on open standards and formats, not software packages, is the only way to make this happen.
+    >
+    > Software should not be selected based on its high-end features or the size of its installed user base in corporate settings. We should not trick ourselves into thinking we can better prepare students for the workforce by teaching exclusively the most commonly used word processor or page design software. Instead, we should provide students with a digital literacy that enables them to focus on the rhetorical situation of digital production, which includes familiarity with open standards and formats, and to command any production method, software-enabled or otherwise, that supports them.
+    ---
+    class:  big
+    ## Source Literacy
+    
+    > Source literacy holds the key not only to more sustainable and accessible digital discourse, but to our ability to substantively contribute to the many open-source projects, like Drupal, Moodle, and even Firefox, which would no doubt benefit from the expertise and values that members of our field have to share.</textarea>
+  </body>
+</html>

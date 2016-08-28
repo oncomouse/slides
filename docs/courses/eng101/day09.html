@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 101 - Day 9
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: middle, center
+    
+    .title-block[
+    # ENG101- Day 9
+    
+    ## Assignment #1 Detail
+    ]
+    
+    ---
+    class: center, middle
+    
+    ## [Assignment #1 Description](http://andrew.pilsch.com/courses/eng101spr2015/assignments.html#paper-1-take-a-position)
+    ## [Assignment #1 Grade Sheet](http://andrew.pilsch.com/courses/eng101spr2015/files/assignment1.pdf)
+    
+    ---
+    class: middle, center
+    .title-block[
+    ## Brainstorming
+    ### Start w/ a Problem
+    ]
+    
+    ---
+    class: middle
+    
+    ## Skeleton Outline
+    
+    1. My position is that The Burrito Shack is the best place at ASU Poly to eat lunch.
+    1. The Burrito Shack offers reasonably tasty, affordable burritos just off campus.
+    1. The Burrito Shack also offers a wide-range of combinations and offerings for every style of eater.
+    1. Other restaurants actually on campus do not have the same level of quality and flavor.
+    1. Additionally, focus on fresh, quality ingredients and many burrito options that feature vegetables makes The Burrito Shack a cut above the mostly fast food places that surround our campus.
+    1. Some might complain that the best place to eat on campus cannot be off campus, but I say that this issue of little concern.
+    1. Eating well at ASU Poly is important for maintaining a healthy and happy student body.
+    1. Arizona-style Mexican cuisine is delicious and a unique characteristic of our area.
+    1. Supporting local small business owners can make other restaurants near campus an enticing business prospect.
+    1. In conclusion, The Burrito Shack is worth the drive off campus.
+    ---
+    class: middle, big
+    
+    ## Cubing Exercise
+    
+    1. Describe it.
+    1. Compare it.
+    1. Associate it.
+    1. Analyze it.
+    1. Apply it.
+    1. Argue for and against it.</textarea>
+  </body>
+</html>

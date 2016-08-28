@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Henry James Digital Archive
+    </title>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
+    <link href="/slides/stylesheets/reveal/theme/hj.css" rel="stylesheet" id="theme" />
+    <!-- For syntax highlighting -->
+    <link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="/slides/stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/slides/javascripts/lib/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      var head_js_load = ['/slides/javascripts/reveal/reveal.min.js'];
+      
+      head.load(
+      	head_js_load,
+      	function() {
+      		
+      		
+              Reveal.initialize({
+              	controls: false,
+              	progress: true,
+              	history: true,
+              	center: true,
+              	viewDistance: 3,
+              	minScale: 0.2,
+              	maxScale: 1,
+              	margin: 0.1,
+      
+              	theme: Reveal.getQueryHash().theme || "hj", // List available in stylesheets/reveal/themes
+              	transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
+      			transitionSpeed: 'default',
+      
+              	// Optional libraries used to extend on reveal.js
+              	dependencies: [
+              		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              	]
+              });
+      	}
+      );
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block; }
+        .twitter_badge:before, .twitter_badge:after {
+          font-family: "icomoon";
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 0.95em;
+          -webkit-font-smoothing: antialiased;
+          font-size: 0.95em; }
+        .twitter_badge:before {
+          content: '"';
+          position: absolute;
+          top: -0.05em;
+          left: -1.15em; }
+      
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em; }
+        #watermark:before {
+          top: 0.23em !important; }
+    </style>
+  </head>
+  <body>
+    <div class='reveal'>
+      <p class='twitter_badge' id='watermark'>
+        @oncomouse
+      </p>
+      <div class='slides'>
+        <section class='center title'>
+          <h1>
+            Toward a
+            Digital
+            <br>
+            Henry James
+          </h1>
+          <h2>
+            Shawna Ross
+            <br>
+            Andrew Pilsch
+          </h2>
+          <h3>
+            Thursday, March 13, 2014
+          </h3>
+        </section>
+        <section class='center'>
+          <h2>
+            Henry James
+            <br>
+            lacks a sufficient online presence
+          </h2>
+        </section>
+        <section class='resources'>
+          <h2>James Resources Online:</h2>
+          <h3 class='hug'>The Ladder (Adrian Dover)</h3>
+          <ul>
+            <li>Most James eTexts
+              <ul>
+                <li>70 short stories</li>
+                <li>7 novels</li>
+                <li>3 plays</li>
+                <li>New York Edition prefaces</li>
+              </ul>
+            </li>
+            <li>Bibliography, indices, explanation of editorial policies and programming</li>
+          </ul>
+        </section>
+        <section class='resources'>
+          <h2>James Resources Online:</h2>
+          <h3 class='hug'>HJ Scholar's Guide to Web Sites (Richard D. Hathaway)</h3>
+          <ul>
+            <li>12 short stories, 2 nonfic, 7 novels, 3 novellas
+              <ul>
+                <li>Different file formats &amp; levels of proofreading</li>
+                <li>Rigorous proofreading found 600 errors on their original <em>Portrait of a Lady</em></li>
+                <li>Searchable concordance hosted by Nagoya U</li>
+              </ul>
+            </li>
+            <li>Comprehensive and generally up-to-date list of online James resources</li>
+          </ul>
+        </section>
+        <section class='resources'>
+          <h2 id="james-resources-online">James Resources Online</h2>
+          
+          <ul>
+            <li><strong>Center for Henry James Studies</strong> (Creighton)</li>
+            <li><strong>Calendar of the Letters of Henry James</strong> (UNL)
+              <ul>
+                <li>Database of bibliographic record of HJ's letters</li>
+                <li>Biographies of correspondents</li>
+              </ul>
+            </li>
+            <li><strong>The Henry James Resource Center</strong>
+              <ul>
+                <li>Biography, bibliography, list of adaptations, list of archives</li>
+              </ul>
+            </li>
+            <li><strong>Cambridge <em>Portrait of a Lady</em></strong> (Michael Anesko)
+              <ul>
+                <li>Uploadable .doc files of 6 different printings</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class='small'>
+          <h2 id="james-e-texts-br-on-general-sites">James E-texts <br /> On General Sites</h2>
+          
+          <table>
+            <thead>
+              <tr>
+                <th>Resource</th>
+                <th style="text-align: center">Texts</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HathiTrust</td>
+                <td style="text-align: center">82</td>
+                <td>Scanned Images</td>
+              </tr>
+              <tr>
+                <td>Gutenberg</td>
+                <td style="text-align: center">49</td>
+                <td>Inaccurate OCR</td>
+              </tr>
+              <tr>
+                <td>Making of America (Cornell)</td>
+                <td style="text-align: center">~12</td>
+                <td>Short Stories; Difficult to Search <br /> (<em>The Galaxy</em> &amp; <em>Atlantic Monthly</em>)</td>
+              </tr>
+              <tr>
+                <td>VIRGO (UVA)</td>
+                <td style="text-align: center">3</td>
+                <td>2 Novellas, 1 Short Story<br />65 by Poe, 39 by Twain, 25 by Crane</td>
+              </tr>
+              <tr>
+                <td>Wright American Fiction 1851-75</td>
+                <td style="text-align: center">1</td>
+                <td>Short Story Collection</td>
+              </tr>
+              <tr>
+                <td>Small Collections</td>
+                <td style="text-align: center">1-5</td>
+                <td>No information, apparatus, notes, <br />options for customizing</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <!-- (Eserver, Bibliomania,<br/> Gosh, Bartleby, Gaslight, Eldritch Press) -->
+        <section class='problem'>
+          <h2 id="whats-the-problem">What's the Problem?</h2>
+          
+          <blockquote>
+            <p>"[Placing texts online can be] a major contribution to scholarship without being a scholarly edition per se."</p>
+          
+            <p>— <em>Kenneth M. Price</em></p>
+          </blockquote>
+        </section>
+        <section class='problem'>
+          <h2 id="whats-the-problem">What's the Problem?</h2>
+          <blockquote>
+            <p>"Electronic editions without apparatus, without documentation of editorial principals, and without provision for suitable display are equally unacceptable for serious scholarly work."</p>
+          
+            <p>— <em>Michael Sperberg-McQueen</em></p>
+          </blockquote>
+        </section>
+        <section>
+          <h2 id="whats-the-problem">What's the Problem?</h2>
+          
+          <p>&nbsp;</p>
+          <h2 class='versus'>Web 1.0 <br> vs.<br> Scholarship 2.0</h2>
+        </section>
+        <section class='cambridge'>
+          <h2 id="print--digital-archives">Print &amp; Digital Archives</h2>
+          <div class='pull-left'>
+            <p><strong>Cambridge Edition</strong></p>
+            
+            <ul>
+              <li>Definitive Edition</li>
+              <li>Idealized Text</li>
+              <li>Academic Audience</li>
+              <li>Longevity</li>
+            </ul>
+          </div>
+          <div class='pull-right'>
+            <p><strong>HJDA Edition</strong></p>
+            
+            <ul>
+              <li>Interoperable Edition</li>
+              <li>Historicized Text</li>
+              <li>Multiple Audiences</li>
+              <li>Longevity</li>
+            </ul>
+          </div>
+        </section>
+        <section class='goals'>
+          <h2>Goals</h2>
+          <ul class='goals'>
+            <li>Accessibility and openness</li>
+            <li class='fragment'>Clarity and intuitiveness</li>
+            <li class='fragment'>Power and flexibility</li>
+            <li class='fragment'>Historicity and textuality</li>
+            <li class='fragment'>Contemporaneity</li>
+          </ul>
+        </section>
+        <section class='methods'>
+          <h2 id="methods">Methods</h2>
+          
+          <ul>
+            <li>Encoding: TEI/XML</li>
+            <li>Conversion: XLST, CSS</li>
+            <li>Output: http://www.henryjamesarchive.org</li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="funding">Funding</h2>
+          
+          <ul>
+            <li>ASU
+              <ul>
+                <li>IHR Seed Grant</li>
+                <li>Working Group support (?)</li>
+              </ul>
+            </li>
+            <li>NEH
+              <ul>
+                <li>ODH Start-Up and Implementation Grants</li>
+                <li>HRCC Foundations and Implementation Grants</li>
+                <li>Challenge Grant</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="contributions">Contributions</h2>
+          
+          <ul>
+            <li>Social value
+              <ul>
+                <li>Add to the open-access public record</li>
+                <li>Create online texts that are a pleasure to read</li>
+              </ul>
+            </li>
+            <li>Literary-critical value
+              <ul>
+                <li>Provide reliable e-texts of Henry James's fiction</li>
+                <li>Rethink the born-digital scholarly edition</li>
+              </ul>
+            </li>
+            <li>DH value
+              <ul>
+                <li>Construct plugins for our annotation system</li>
+                <li>Refine TEI annotation standards</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class='topics'>
+          <h2 id="topics-for-conversation">Topics for Conversation</h2>
+          
+          <ul>
+            <li>Feasibility (obstacles)</li>
+            <li>Creating a working group at ASU</li>
+            <li>Collaborating with the library</li>
+            <li>IHR Grant
+              <ul>
+                <li>suggestions for the application</li>
+                <li>suggestions for implementation
+                  <ul>
+                    <li>public event?</li>
+                    <li>symposium?</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

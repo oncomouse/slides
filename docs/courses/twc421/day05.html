@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      TWC 421 - Day 5
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle, big
+    
+    .title-block[
+    # TWC 421 - Day 05
+    ## Cohesion II, Clarity, Skills
+    ]
+    
+    [http://oncomouse.github.io/slides/courses/twc421/day05.html](http://oncomouse.github.io/slides/courses/twc421/day04.html)
+    
+    ---
+    
+    class: center, middle
+    
+    .title-block[
+    ## Site of the Day:
+    ## [http://english.clas.asu.edu/faculty-all](http://english.clas.asu.edu/faculty-all)
+    ]
+    
+    ---
+    class: middle, center
+    
+    .title-block[
+    ### Increase Cohesion
+    ### By Following the
+    ## Known / New Contract
+    ]
+    
+    .title-block[
+    
+    ### Knowledge Moves From
+    ## Known
+    ### To
+    ## New
+    ]
+    ---
+    class: middle, big
+    ## Consider
+    
+    Your Personal Identification Number (PIN) should arrive within three days after the card. The
+    bank currently does not have the software to allow cardholders to personalize their PINs. The
+    company selected a four-digit number for your PIN.
+    
+    .center[
+    ### Why Is This Confusing?
+    ]
+    
+    ---
+    class: middle, big
+    
+    ## Improved
+    
+    Your Personal Identification Number (PIN) should arrive within three days after the card. Your
+    PIN is a four-digit number that the bank has selected for you. Your PIN cannot be personalized
+    because the bank currently does not have the software to allow cardholders to personalize their
+    PINs.
+    ---
+    class: center, middle
+    
+    ## [Known / New Example](http://andrew.pilsch.com/courses/twc421spr2015/examples/day04_portland_example.pdf)
+    ---
+    class: center, middle
+    .title-block[
+    ## Do the Exercise
+    ### (On Blackboard)
+    ]
+    ---
+    class: middle, big
+    
+    ## Wordy
+    
+    The executives issued _an announcement_ regarding the new program that resulted in _an increase_ in productivity.
+    
+    ## Improved
+    
+    The executives _announced_ a program that _increased_ productivity.
+    
+    ---
+    class: middle, big
+    
+    ## Avoid "do-nothing" Sentences
+    
+    - The author uses many devices in his poem to express a couple of ideas.
+    - The characters display their various traits as they interact in several ways.
+    - The conclusion of the story shows us the author’s viewpoint.
+    ---
+    class: middle, big, center
+    
+    ## To Be vs Action
+    
+    Andrew Pilsch is a strong communicator with his students.
+    
+    Andrew Pilsch communicates effectively with students.
+    
+    
+    ---
+    class: center, middle, big
+    
+    ## Map Skills to Action Verbs
+    
+    ### Complete a Skills Inventory
+    
+    [http://www.quintcareers.com/action_verbs.html](http://www.quintcareers.com/action_verbs.html)</textarea>
+  </body>
+</html>

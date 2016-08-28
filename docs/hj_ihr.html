@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      Henry James, IHR Working Group Presentation
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: big
+    class: center, middle
+    
+    .title-block[
+    # Digital Henry James
+    ## IHR Nexus Working Group 
+    ]
+    
+    .title-block[
+    ### Shawna Ross <br/> Andrew Pilsch
+    ### May 9, 2014
+    ]
+    
+    ---
+    class: big
+    ## What We’re Doing
+    
+    * Online, TEI-Encoded Edition of Henry James’s Fiction & Criticism
+    * Not a Scholarly Edition
+    	* Texts, as published, & Variations
+    * Publicly Accessible, Open Source
+    	* Multiple Formats
+    	* Multiple Audiences
+    
+    ---
+    class: big
+    
+    ##Why We’re Doing It
+    
+    * James, Major Novelist: No Online Presence
+    * Incomplete, Typo-ridden eTexts
+    	* Project Gutenberg
+    * Unindexable, Difficult Images
+    	* HathiTrust
+    * Make Corpus for Scholars
+    * Make eBooks for Public
+    
+    ---
+    class: big
+    
+    ## Print vs. Digital
+    
+    .pull-left[
+    **Cambridge Edition**
+    
+    * Definitive Edition
+    * Idealized Text
+    * Academic Audience
+    * Longevity
+    ]
+    
+    .pull-right[
+    **HJDA Edition**
+    
+    * Interoperable Edition
+    * Historicized Text
+    * Multiple Audiences
+    * Longevity?
+    ]
+    
+    ---
+    class: big
+    
+    ##Web 1.0 vs. Scholarship 2.0
+    
+    * Limits of Static, Plain Text
+    * Rethink the Digital Archive
+    	* New Technologies for Born Digital Editions
+    	* New Ways of Interacting
+    * Starting New Generation of Archive
+    	* Not Repeating the Past
+    	* Make It New!
+    ---
+    class: big
+    
+    ## DH for Public/Scholar
+    
+    * Challenge
+    	* How to archive/market for Modernist studies?
+    	* While archiving/marketing to general public?
+    * Multiple Inputs / Multiple Facings?
+    * Potentially Interesting Public Humanities Project
+    * Multiple Archives / One Repository
+    
+    ---
+    class: big
+    
+    ## Other Considerations
+    
+    * Funding?
+    * Crowdsourcing?
+    * Archiving?
+    * Scope?
+    
+    ---
+    class: center, middle
+    
+    # Thanks</textarea>
+  </body>
+</html>

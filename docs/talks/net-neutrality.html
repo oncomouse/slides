@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Net Neutrality
+    </title>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
+    <link href="/slides/stylesheets/reveal/theme/lessig-asu.css" rel="stylesheet" id="theme" />
+    <!-- For syntax highlighting -->
+    <link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="/slides/stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/slides/javascripts/lib/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      var head_js_load = ['/slides/javascripts/reveal/reveal.min.js'];
+      
+      head.load(
+      	head_js_load,
+      	function() {
+      		
+      		
+              Reveal.initialize({
+              	controls: false,
+              	progress: true,
+              	history: true,
+              	center: true,
+              	viewDistance: 3,
+              	minScale: 0.2,
+              	maxScale: 1,
+              	margin: 0.1,
+      
+              	theme: Reveal.getQueryHash().theme || "lessig-asu", // List available in stylesheets/reveal/themes
+              	transition: Reveal.getQueryHash().transition || "none", // default/cube/page/concave/zoom/linear/fade/none
+      			transitionSpeed: 'fast',
+      
+              	// Optional libraries used to extend on reveal.js
+              	dependencies: [
+              		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              	]
+              });
+      	}
+      );
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block; }
+        .twitter_badge:before, .twitter_badge:after {
+          font-family: "icomoon";
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 0.95em;
+          -webkit-font-smoothing: antialiased;
+          font-size: 0.95em; }
+        .twitter_badge:before {
+          content: '"';
+          position: absolute;
+          top: -0.05em;
+          left: -1.15em; }
+      
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em; }
+        #watermark:before {
+          top: 0.23em !important; }
+    </style>
+  </head>
+  <body>
+    <div class='reveal'>
+      <p class='twitter_badge' id='watermark'>
+        @oncomouse
+      </p>
+      <div class='slides'>
+        <section class='title'>
+          <div class='title-block'>
+            <h1>
+              Net Neutrality:
+            </h1>
+            <h2>
+              What?<br>
+              How?<br>
+              Why?
+            </h2>
+          </div>
+          <aside class='notes'>
+            <p>Hello and welcome to this New York Times Cafe event on Net Neutrality. I'm Dr. Andrew Pilsch and today I'll be talking to you about the topic that's currently in the news and will really affect all of our lives, going forward: Net Neutrality.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>Who Am I?</h1>
+          <p class="question">Andrew Pilsch<br />
+          Assistant Professor<br />
+          ASU Polytechnic</p>
+          <aside class='notes'>
+            <p>First, though, a little about me. I teach in English in the College of Letters and Sciences at the ASU Polytechnic campus. My background is in a field called rhetoric, which is the study of persuasive discourse and the historical usage of communication to affect change in the world. Specifically, I study the ways in which digital technologies change the nature of discourse and how these changes in our communications change who we are and how we think. Basically, I'm interested in the way that digital technologies are remaking us as people and even what it means to be alive.</p>
+            
+            <p>Today, I've been asked to talk with you about</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Net Neutrality</p>
+          <aside class='notes'>
+            <p>net neutrality. This is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Complicated</p>
+          <aside class='notes'>
+            <p>complicated and</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Important</p>
+          <aside class='notes'>
+            <p>important issue that will, not to put too fine a point on it,</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Effect All of Us</p>
+          <aside class='notes'>
+            <p>effect all of us for years to come. To explain it simply, net neutrality is a dispute over the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Neutrality of the Network</p>
+          <aside class='notes'>
+            <p>neutrality of the network that makes up the Internet. Basically,</p>
+          </aside>
+        </section>
+        <section>
+          <p>
+            <img src="/slides/images/images/net-neutrality/comcast.png" alt="Comcast" />
+          </p>
+          <p>
+            <img src="/slides/images/images/net-neutrality/verizon.png" alt="Verizon" />
+          </p>
+          <aside class='notes'>
+            <p>Internet Service Providers (ISPs) want to charge you more to visit certain websites or deliver them at a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>higher or lower</p>
+          <aside class='notes'>
+            <p>higher or lower speed. Others, primarily web companies and Internet freedom advocates, say that such a change to a tiered model would fundamentally</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>destroy the Internet</p>
+          <p class='bigger fragment'>PERIOD</p>
+          <aside class='notes'>
+            <p>destroy the Internet, not just as we know it, but <strong>click</strong> PERIOD.</p>
+            
+            <p>Why this is, and how this issue came to pass, is a surprisingly complicated issue, stretching back to the</p>
+          </aside>
+        </section>
+        <section>
+          <p><img src="/slides/images/images/net-neutrality/railroad.png" alt="Railroad" /></p>
+          <aside class='notes'>
+            <p>1800s and the settlement of the American West after the Civil War. Additionally, the issue of settling network neutrality, an issue which literally threatens the way business is done and life is conducted in the 21st century, is bogged down in nuanced points of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Telecommunication Law</p>
+          <aside class='notes'>
+            <p>telecommunication law that often cloud the ability of the general public, such as all of us, to understand that this is not an issue limited to the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Technology Industry</p>
+          <aside class='notes'>
+            <p>technology industry, rather it is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Threat</p>
+          <aside class='notes'>
+            <p>threat to the idea of the Internet and the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Centrality</p>
+          <aside class='notes'>
+            <p>centrality it plays in our lives.</p>
+            
+            <p>As such, I have divided my talk tonight into three sections, related to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Three Questions</p>
+          <aside class='notes'>
+            <p>three questions:</p>
+          </aside>
+        </section>
+        <section>
+          <p class='question left'>1. What Is Net Neutrality?</p>
+          <p class='question left fragment'>2. How Did It Become an Issue?</p>
+          <p class='question left fragment'>3. Why Is It a Problem?</p>
+          <aside class='notes'>
+            <p>one, what is net neutrality? <strong>click</strong> two, how did it become such an issue? and <strong>click</strong> three, why is it a problem? In answering the first question, I'll get into the background on network neutrality and the broader legal issues informing this dispute. In answering the second, I'll explain how network neutrality is part of a broader debate over what the Internet actually is and how it should and does work. In answering the third, I'll get into some of the broader threats and issues involved in this dispute over definitions of what the Internet actually is.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>1.<br> What Is Net Neutrality?</h1>
+          <aside class='notes'>
+            <p>The debate surrounding network neutrality, as I mentioned, has to do with whether or not ISPs can charge more for higher access speeds to certain parts of the Internet. This dispute came to a head when Verizon brought a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Verizon v. FCC (2011)</p>
+          <aside class='notes'>
+            <p>suit in 2011 against the Federal Communication Commission (FCC) challenging the FCC's right to govern the way in which broadband ISPs can manage how the throughput of their network is managed. Back in January, the case, which had been appealed several times, was decided by a federal appeals court decided partly in favor of Verizon, concluding that as currently configured the FCC had</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>No Right to Regulate the Internet</p>
+          <aside class='notes'>
+            <p>no right to regulate the Internet in the way it was trying to do so, but also suggested in its ruling that the FCC</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Rethink</p>
+          <aside class='notes'>
+            <p>rethink its</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Governance Policies</p>
+          <aside class='notes'>
+            <p>governance policies for the Internet, which is why</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>This Debate Is Ongoing</p>
+          <aside class='notes'>
+            <p>this debate is ongoing, as we speak.</p>
+            
+            <p>So, what does all that mean? At its</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Heart</p>
+          <aside class='notes'>
+            <p>heart,</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Network Neutrality</p>
+          <aside class='notes'>
+            <p>network neutrality is a debate about whether or not the Internet can be regulated as what is called a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier. This idea of "common carrier" dates back to the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>1800s</p>
+          <aside class='notes'>
+            <p>1800s and was specifically developed to manage a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Crisis</p>
+          <aside class='notes'>
+            <p>crisis in the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Railroad Industry</p>
+          <aside class='notes'>
+            <p>railroad industry. At the time, as private companies</p>
+          </aside>
+        </section>
+        <section>
+          <p><img src="/slides/images/images/net-neutrality/railroad2.png" alt="Railroad2" /></p>
+          <aside class='notes'>
+            <p>laid track that crisscrossed the American West to move products to markets back East, competition between rail lines intensified. In order to compete, railroads competitively</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Lowered Their Price</p>
+          <aside class='notes'>
+            <p>lowered their price to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Attract Business</p>
+          <aside class='notes'>
+            <p>attract business. The situation reached a point where rail lines were</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Taking a Loss</p>
+          <aside class='notes'>
+            <p>taking a loss to ship any freight, meaning that it cost them money every time they agreed to hail anything. Realizing that this situation would lead to a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Collapse</p>
+          <aside class='notes'>
+            <p>collapse of a vital industry, the US government had to intervene.</p>
+            
+            <p>The</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Designation</p>
+          <aside class='notes'>
+            <p>designation of a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier was the result. Rather than</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Nationalize</p>
+          <aside class='notes'>
+            <p>nationalize the railroads, as a country like France did when faced with the same issue, the US government can define certain</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Interstate Commerce Networks</p>
+          <aside class='notes'>
+            <p>interstate commerce networks, such as railroads in this example, as of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Vital National Importance</p>
+          <aside class='notes'>
+            <p>vital national importance and label them</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carriers</p>
+          <aside class='notes'>
+            <p>common carriers. What this means, in practice, is that a company, thus designated, is granted limited</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Exemptions</p>
+          <aside class='notes'>
+            <p>exemptions to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Monopoly Laws</p>
+          <aside class='notes'>
+            <p>monopoly laws in exchange for agreeing to certain</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Federally Mandated Conditions</p>
+          <aside class='notes'>
+            <p>federally mandated conditions, the most important of which is that these common carriers have to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Accept All Customers</p>
+          <aside class='notes'>
+            <p>accept all customers.</p>
+            
+            <p>So, as an example, say I owned a tannery in</p>
+          </aside>
+        </section>
+        <section>
+          <p><img src="/slides/images/images/net-neutrality/bisbee.png" alt="Bisbee" /></p>
+          <aside class='notes'>
+            <p>Bisbee. I need to ship the leather I make to Omaha to sell it at market, in order to turn a profit, as there isn't a big market in Bisbee for leather. I have to use the railroad to do this. As a tannery owner, it's unreasonably expensive and unnecessarily wasteful to build a railroad between Bisbee and El Paso to ship my leather.</p>
+          </aside>
+        </section>
+        <section>
+          <p><img src="/slides/images/images/net-neutrality/railroad3.png" alt="Railroad3" /></p>
+          <aside class='notes'>
+            <p>So, I can use the railroad that already exists. But, say the railroad company owner also owns a tannery and doesn't want to ship my leather, as it competes with his business and limits his profits. If the railroad hadn't been designated as a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier, he could</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Refuse</p>
+          <aside class='notes'>
+            <p>refuse to transport my product on his rail line. Because it is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier, the law says he has to charge me the same rate he charges everyone else to ship my product to market.</p>
+            
+            <p>What, though, does this have to do with watching</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/grumpy-cat.png" alt="Grumpy cat" /></p>
+          <aside class='notes'>
+            <p>cat videos or taking a quiz on Blackboard, you might ask? Which, frankly, would be a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Good Question</p>
+          <aside class='notes'>
+            <p>good question.</p>
+            
+            <p>Well, a key extension to the common carrier definition came in 1934, with the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Communication Act of 1934</p>
+          <aside class='notes'>
+            <p>Communications Act of 1934, which defined that the telephone system was a common carrier analogous to a shipping or railroad company. Any</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Telephone Company</p>
+          <aside class='notes'>
+            <p>telephone company in the US has to charge a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Flat Rate</p>
+          <aside class='notes'>
+            <p>flat rate to all who want to use its services and it cannot</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Discriminate</p>
+          <aside class='notes'>
+            <p>discriminate against customers.</p>
+            
+            <p>Now, you may not remember this, but have any of you ever used a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Modem?</p>
+          <aside class='notes'>
+            <p>modem to dial the Internet? <strong>Pause</strong></p>
+            
+            <p>Back in the day, placing a call to an ISP over the telephone network with a modem was the only way to access the Internet. At this time, any question about whether or not the Internet was a common carrier was</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Moot</p>
+          <aside class='notes'>
+            <p>moot, as the Internet happened through a network that was, at least for the end users, already regulated as a common carrier.</p>
+            
+            <p>The development of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Broadband Internet</p>
+          <aside class='notes'>
+            <p>broadband Internet changed all that, however. How many of you have Internet through Cox or some other</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cable Company?</p>
+          <aside class='notes'>
+            <p>cable company? <strong>Pause</strong></p>
+            
+            <p>Most of you? Exactly.</p>
+            
+            <p>This shift to cable Internet in the home was actually a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Huge Problem</p>
+          <aside class='notes'>
+            <p>huge problem for Internet regulation. While cable television providers are granted</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Local Monopolies</p>
+          <aside class='notes'>
+            <p>local monopolies, their business is defined as an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Information Service</p>
+          <aside class='notes'>
+            <p>information service, which is not seen as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Interstate Commerce</p>
+          <aside class='notes'>
+            <p>interstate commerce and therefore not governed by Federal law. Instead, cable companies are regulated by states and municipalities. Any service dealing with communication (radio, TV, etc) is governed by rules set by the FCC (even if those rules are "pass it along to the states"), and the FCC defines a whole array of different</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Services</p>
+          <aside class='notes'>
+            <p>services that confirm to different ideas of what the service is or does. With the move to cable, the legal status of the Internet is</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Murky</p>
+          <aside class='notes'>
+            <p>murky: is it a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Telecommunication Service</p>
+          <aside class='notes'>
+            <p>telecommunication service (which is the common carrier definition used to regulate the telephone network) or is it an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Information Service</p>
+          <aside class='notes'>
+            <p>information service (which is the designation for things like TV or radio). As it stands, the FCC considers the Internet an information service, which was the basis of Verizon's 2010 suit against the FCC.</p>
+            
+            <p>What this means in practical terms is that the FCC cannot tell cable ISPs how to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Manage Their Networks</p>
+          <aside class='notes'>
+            <p>manage their networks. As such, a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cable ISP</p>
+          <aside class='notes'>
+            <p>cable ISP such as Cox could, say, offer to let Google</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Pay To Deliver</p>
+          <aside class='notes'>
+            <p>pay to deliver its online music store to customers at a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Higher Speed</p>
+          <aside class='notes'>
+            <p>higher-than-normal speed. If, then, Google's service arrived at your computer</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Faster</p>
+          <aside class='notes'>
+            <p>faster than Apple's store, people might start to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Prefer</p>
+          <aside class='notes'>
+            <p>prefer Google's service. Cox can do this because they are not regulated as a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier: this is analogous to the railroad refusing to carry (or charging me more for freight) in my tannery example, earlier.</p>
+            
+            <p>Ok, so another question you may be asking:</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>How?</p>
+          <aside class='notes'>
+            <p>how does a cable company's ability to charge more for higher speeds effect the Internet? Well, that question has more to do with the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Nature of the Internet</p>
+          <aside class='notes'>
+            <p>nature of the Internet, itself, an aspect that we often</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Overlook</p>
+          <aside class='notes'>
+            <p>overlook when we think or talk about it. Based on its</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>"Inter": "Between"</p>
+          <p class='big'>"Net": "Network"</p>
+          <aside class='notes'>
+            <p>etymology ("inter" meaning between and "net" networks), the Internet is actually a series of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Protocols</p>
+          <aside class='notes'>
+            <p>protocols and technologies that allow privately managed networks to find each other and communicate. Originally conceived as a way to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Link</p>
+          <aside class='notes'>
+            <p>link research networks, and funded by the Defense Department as a way to build a network that could route data if large chunks of it were destroyed by</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/mushroom-cloud.png" alt="Mushroom cloud" /></p>
+          <aside class='notes'>
+            <p>nuclear war, btw, the Internet is actually a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Vast Collection</p>
+          <aside class='notes'>
+            <p>vast collection of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Local Networks</p>
+          <aside class='notes'>
+            <p>local networks strung together through</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/fiber-optic.png" alt="Fiber optic" /></p>
+          <aside class='notes'>
+            <p>fiber optic cable and able to locate each other thanks to technologies such as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>DNS</p>
+          <aside class='notes'>
+            <p>DNS (Domain Name System), a protocol that translates a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>URL</p>
+          <aside class='notes'>
+            <p>universal resource locater (URL) such as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>asu.edu <br>=<br> 129.219.10.58</p>
+          <aside class='notes'>
+            <p>"asu.edu" into a number that can be found through a series of telecommunication routers.</p>
+            
+            <p>So, in other words, the Internet is nothing but a conglomeration of privately held and maintained networks, many of which are owned and operated by broadband Internet providers.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/traceroute.png" alt="Traceroute" /></p>
+          <aside class='notes'>
+            <p>Here's a screen capture of a customer of Comcast, one of the largest and most aggressively anti-Net-Neutrality cable ISPs, running a command called traceroute to a server owned by Netflix. Traceroute is a command used to debug network connectivity and it returns all the hubs (called routers) through which a packet of information is shipped between the user's home computer (192.168.1.1 in the above example) to Netflix's streaming video server with the IP address of 108.175.39.182. Note how for most of these steps, the routers are owned by Comcast (indicated by the "comcast.net" URLs) before heading to Level 3, who is a large peering company that manages heavy duty fiberoptic backbones that move a lot of Internet traffic.</p>
+            
+            <p>Ok, so what this shows is that the Internet, for most of us, is at least partly</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Coterminous</p>
+          <aside class='notes'>
+            <p>coterminous with the networks of our</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cable Companies</p>
+          <aside class='notes'>
+            <p>cable companies. And if the cable companies can manage</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>How</p>
+          <aside class='notes'>
+            <p>how and</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>What</p>
+          <aside class='notes'>
+            <p>what we see, the can effectively</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Control the Internet</p>
+          <aside class='notes'>
+            <p>control the Internet, because for most of us, they are partly one and the same.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>2. <br> How Did This Happen?</h1>
+          <aside class='notes'>
+            <p>As I mentioned before, while not always happy about the FCC regulations regarding net neutrality, cable companies mostly accepted the FCC's rules that regulated them as common carriers for the first few years in which broadband Internet became a reality in America. However, all of this changed when a certain company began to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/netflix-logo.png" alt="Netflix logo" /></p>
+          <aside class='notes'>
+            <p>stream videos "on demand" over the network.</p>
+            
+            <p>So, how many of you have watched something on Netflix in the last week? A lot of you, as I thought.</p>
+            
+            <p>Netflix has become ubiquitous in US households. I've even required it as a "textbook" in a class I taught on post-apocalyptic TV and literature. In fact, as the NYT reported back in February,</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>30%</p>
+          <aside class='notes'>
+            <p>30% of all Internet traffic in North America during prime time is now Netflix videos. And that figure rises to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>50%</p>
+          <aside class='notes'>
+            <p>50% if you include YouTube. Google and Netflix account for 50% of all network traffic between the hours of 6 and midnight in the US. Think about that. <strong>Pause</strong></p>
+            
+            <p>This</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Increase</p>
+          <aside class='notes'>
+            <p>increase in traffic from, specifically, Netflix is the justification for why cable ISPs want to charge these companies more to peer with (deliver content through) their networks: they argue that they cannot possibly</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Keep Up With Demand</p>
+          <aside class='notes'>
+            <p>keep up with this new demand. Most evidence suggests that this claim is only true if ISPs chose to no longer continue their current rate of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Network Expansion</p>
+          <aside class='notes'>
+            <p>network expansion, which some claim they would like today.</p>
+            
+            <p>However, a story the <em>New York Times</em> has been covering for a few months suggests a different</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Interpretation</p>
+          <aside class='notes'>
+            <p>interpretation, one that points toward the core of the issues surrounding the need to establish network neutrality on</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Firm, legal footing</p>
+          <aside class='notes'>
+            <p>firm, legal footing. For months, Comcast customers complained that Netflix videos were becoming so</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Slow</p>
+          <aside class='notes'>
+            <p>slow that the service was essentially</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Unusable</p>
+          <aside class='notes'>
+            <p>unusable.  It was then revealed by Netflix's CEO that Comcast had asked Netflix to stop using third party peering services and that for a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Fee</p>
+          <aside class='notes'>
+            <p>fee, it could peer directly with Comcast. In a NYT article from March 20, 2014, entitled</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>"Netflix Chief Alters View on Net Neutrality"</p>
+          <aside class='notes'>
+            <p>"Netflix Chief Alters View on Net Neutrality," it is reported that "once Netflix agreed to pay Comcast for the better connection, Netflix customers were no longer experiencing the delays they had suffered recently when streaming video."</p>
+            
+            <p>Now, I'm not going to use the term</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>"Shakedown"</p>
+          <aside class='notes'>
+            <p>"shakedown" but &#8230; well &#8230;</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Draw Your Own Conclusions</p>
+          <aside class='notes'>
+            <p>draw your own conclusions.</p>
+            
+            <p>The Netflix deal is interesting, because, as the NYT makes clear, "the definition of net neutrality needs to be expanded to encompass those activities that occur further away from the final customer." This dispute involved, as the NYT says, "connections not in the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Last Mile</p>
+          <aside class='notes'>
+            <p>last mile but at the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Front Gates</p>
+          <aside class='notes'>
+            <p>front gate," so not the part of the network that faces customers but that which faces businesses.</p>
+            
+            <p>This story highlights the fact that most conversations about net neutrality end up being about Netflix and many mention its</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Massive Bandwidth Consumption</p>
+          <aside class='notes'>
+            <p>massive bandwidth consumption in America as key to this centrality. However, as I want to argue in this section of tonight's talk, the actual issue here is that Netflix is using the Internet to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Directly Compete</p>
+          <aside class='notes'>
+            <p>directly compete with cable's core business, which is still charging people exorbitant rates for television.</p>
+            
+            <p>Part of the reason why debates over net neutrality have come to a head is that an increasing number of people are</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cutting the Cable</p>
+          <aside class='notes'>
+            <p>turning away from cable TV and doing most of their video consumption through</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Streaming Services</p>
+          <aside class='notes'>
+            <p>streaming services offered by Google, Apple, Amazon, Netflix, and Hulu who are also the most commonly mentioned companies involved in Net Neutrality. The concern for people advocating for net neutrality is that the cable ISPs want to convert the Internet to a model that works more like how we pay for</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cable</p>
+          <aside class='notes'>
+            <p>cable in order to get more money from people who aren't</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Bundling</p>
+          <aside class='notes'>
+            <p>bundling their cable TV with their cable Internet.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/tiered-internet.png" alt="Tiered internet" /></p>
+          <aside class='notes'>
+            <p>This is an artist's rendering of how this might work once implemented: <strong>explain image</strong></p>
+            
+            <p>This tiered model is how we pay for cable. How many of you have had to or wanted to pay more for cable to buy a package of cable channels when all you really wanted was one channel (like BBC America or ESPN U for me)?</p>
+            
+            <p>The issue with this whole model, on a more basic level is the fundamental difference between TV and the Internet. TV is what's called a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Broadcast Medium</p>
+          <aside class='notes'>
+            <p>broadcast medium, while the Internet is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Point-to-Point Medium</p>
+          <aside class='notes'>
+            <p>point-to-point medium. You may be most familiar with the term broadcast medium in relation to things like</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>TV & Radio</p>
+          <aside class='notes'>
+            <p>television and radio, but in thinking about the differences between the Internet and</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Previous Media Forms</p>
+          <aside class='notes'>
+            <p>previous media forms, the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Similarities</p>
+          <aside class='notes'>
+            <p>similarities between most forms of media culture become apparent in</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Opposition</p>
+          <aside class='notes'>
+            <p>opposition to the Internet. With a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Radio Broadcast</p>
+          <aside class='notes'>
+            <p>radio broadcast, for instance, a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Content Provider</p>
+          <aside class='notes'>
+            <p>content provider</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Transmits</p>
+          <aside class='notes'>
+            <p>transmits</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Content</p>
+          <aside class='notes'>
+            <p>content (songs, talk, ads, etc.) to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Consumers</p>
+          <aside class='notes'>
+            <p>a network of receivers who consume the media. This</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Broadcast Model</p>
+          <aside class='notes'>
+            <p>broadcast model is how TV works, it's how newspapers work, it's even how films work (if you think about it). The broader point here is that a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Centralized Group</p>
+          <aside class='notes'>
+            <p>centralized group of content creators act as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Gatekeepers</p>
+          <aside class='notes'>
+            <p>gatekeepers to determine who has access to their expensive distribution networks. Broadcast, in this much broader understanding, is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>One-directional</p>
+          <aside class='notes'>
+            <p>one directional medium in which a group determines who has</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Access</p>
+          <aside class='notes'>
+            <p>access to the system.</p>
+            
+            <p>The Internet, as I mentioned early, however,</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Doesn't work like this</p>
+          <aside class='notes'>
+            <p>doesn't work like this. It is a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Point-to-point</p>
+          <aside class='notes'>
+            <p>point-to-point medium:</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Anyone</p>
+          <aside class='notes'>
+            <p>anyone connected online can act as a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Content Transmitter</p>
+          <aside class='notes'>
+            <p>content transmitter as well as a content receiver. This</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Democratic Model</p>
+          <aside class='notes'>
+            <p>democratic model would be broken or at least damaged in a post-neutrality Internet: the cable companies are, in effect, attempting to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Transform</p>
+          <aside class='notes'>
+            <p>transform the Internet into a more broadcast medium.</p>
+            
+            <p>The shift away from this point-to-point model to a broadcast one is further muddled by the FCC's classification of the Internet as an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Information Service</p>
+          <aside class='notes'>
+            <p>information service. In the FCC's understanding, an information service would be something like TV (which is defined in this manner) or some other service in which users call up an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>External Source</p>
+          <aside class='notes'>
+            <p>external source and receives the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Content</p>
+          <aside class='notes'>
+            <p>content they</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Request</p>
+          <aside class='notes'>
+            <p>request. While this is part of the Internet's function, the important fact about the physical architecture of the network is that anyone using the Internet can start such a service, it is</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Not Broadcast</p>
+          <p class='bigger fragment'>By Design</p>
+          <aside class='notes'>
+            <p>not broadcast, <strong>Click</strong> by design. Having said that, this</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Classification Problem</p>
+          <aside class='notes'>
+            <p>classification problem highlights one of the issues I want to return to in a bit: the FCC, in defining the Internet as a broadcast medium, reveals that the people responsible for</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Regulating the Internet</p>
+          <aside class='notes'>
+            <p>regulating the Internet lack a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Fundamental Understanding</p>
+          <aside class='notes'>
+            <p>fundamental understanding of what it does and how it works.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>This is Very Dangerous</p>
+          <aside class='notes'>
+            <p>This is a very dangerous set of conditions.</p>
+            
+            <p>This point is really important to remember. We often experience the Internet as a broadcast medium, one in which we visit sites and receive content, but the principles that undergird the Internet and, more importantly, shape the start-up nature of Internet business means that</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>New Players</p>
+          <aside class='notes'>
+            <p>new players are constantly arriving to shape the way we use the Internet.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Anyone Can Do This</p>
+          <aside class='notes'>
+            <p>Anyone can do this. You can post things on the Internet any time, as long as you have a connection.</p>
+          </aside>
+        </section>
+        <section>
+          <h1>3. <br> Why Is This a Problem?</h1>
+          <aside class='notes'>
+            <p>Having said that, why is the ability to choose what businesses live and what businesses die online such a problem? Besides granting a private industry</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Control</p>
+          <aside class='notes'>
+            <p>control over free enterprise, looking at some of the original debates over net neutrality can highlight one of the main problems with a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Non-neutral Network</p>
+          <aside class='notes'>
+            <p>non-neutral network.</p>
+            
+            <p>"Net Neutrality" term was first coined to capture the broader and more disastrous results, now playing out, of the 2002 decision by FCC chairman Michael Powell to categorize the broadband Internet as an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Information Service</p>
+          <aside class='notes'>
+            <p>information service instead of a telecommunication service (which would have, and still would, make it subject to common carrier laws). As a NYT article from April of this year makes clear, at the time of the decision, Powell argued that,</p>
+          </aside>
+        </section>
+        <section>
+          <blockquote>
+            <p>While the Internet and broadband systems were built “with the help of the government,” Mr. Powell said, “they have suffered terribly chronic underinvestment.” In 2002, when Mr. Powell was chairman of the F.C.C., the agency voted to regulate cable-modem broadband service as a lightly regulated “information service” rather than as a “common carrier.”</p>
+          </blockquote>
+          <aside class='notes'>
+            <blockquote>
+              <p>While the Internet and broadband systems were built “with the help of the government,” Mr. Powell said, “they have suffered terribly chronic underinvestment.” In 2002, when Mr. Powell was chairman of the F.C.C., the agency voted to regulate cable-modem broadband service as a lightly regulated “information service” rather than as a “common carrier.”</p>
+            </blockquote>
+            
+            <p>Reflecting on this</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Disastrous</p>
+          <aside class='notes'>
+            <p>disastrous 2002 decision (the result of several decades of deregulation fever in Washington) led a Columbia law professor named</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/tim-wu.png" alt="Tim wu" /></p>
+          <aside class='notes'>
+            <p>Tim Wu to start labeling the broader issues at stake in a common carrier regulated Internet as "net neutrality" in a 2003 paper. Wu's original call to arms about network neutrality is still really interesting for focusing on why this is such an issue. He wrote in 2003 that,</p>
+          </aside>
+        </section>
+        <section>
+          <blockquote>
+            <p>The promotion of network neutrality is no different than the challenge of promoting fair evolutionary competition in any privately owned environment, whether a telephone network, operating system, or even a retail store. Government regulation in such contexts invariably tries to help ensure that the short-term interests of the owner do not prevent the best products or applications becoming available to end-users. The same interest animates the promotion of network neutrality: preserving a Darwinian competition among <strong>every conceivable use of the Internet</strong> so that only the best survive.</p>
+          
+            <p>— <em>Tim Wu, "Network Neutrality, Broadband Discrimination" (2003)</em></p>
+          </blockquote>
+          <aside class='notes'>
+            <blockquote>
+              <p>The promotion of network neutrality is no different than the challenge of promoting fair evolutionary competition in any privately owned environment, whether a telephone network, operating system, or even a retail store. Government regulation in such contexts invariably tries to help ensure that the short-term interests of the owner do not prevent the best products or applications becoming available to end-users. The same interest animates the promotion of network neutrality: preserving a Darwinian competition among every conceivable use of the Internet so that only the best survive.</p>
+            </blockquote>
+            
+            <p>What particularly interests me about Wu's position here is the phrase "every conceivable use of the Internet." In 2003, the Internet was similar but radically less pervasive. Netflix was shipping DVDs via mail but had yet to begin streaming. Unlimited streaming music streaming services such as Spotify were still five years away. ASU Online wasn't even a dream yet.</p>
+            
+            <p>The point of all this, as Wu is trying to make clear, is that the Internet is a remarkably effective</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Platform</p>
+          <aside class='notes'>
+            <p>platform for doing</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>New Things</p>
+          <aside class='notes'>
+            <p>new things. In other words, we don't even know</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/frieza.png" alt="Frieza" /></p>
+          <aside class='notes'>
+            <p>the Internet's final form, yet. Evolution and constant innovation are part of the platform's core affordances. By converting the Internet in the US to work more like cable television, where new companies and even individuals hosting sites do not get the same</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Preferential Treatment</p>
+          <aside class='notes'>
+            <p>preferential treatment as big players is at risk of standardizing the Internet landscape, of finally and absolutely determining the shape of the Internet.</p>
+            
+            <p>So, in a way, this is a question of maintaining</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Online Innovation</p>
+          <aside class='notes'>
+            <p>online innovation. Moreover, part of a related issue is that potentially stifling this innovation is being done in order to make some very wealthy cable companies</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Slightly Richer</p>
+          <aside class='notes'>
+            <p>slightly richer. Why, then, is this happening? Many higher-ups in the FCC have close relationships with cable companies.</p>
+            
+            <p>Another related issue that is perhaps more concerning than the ability for online companies to continue to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Innovate and Compete</p>
+          <aside class='notes'>
+            <p>innovate and to compete in a free environment is the questions of an Internet</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Master Switch</p>
+          <aside class='notes'>
+            <p>master switch that moves away from a neutral Internet suggest, which draws is a concept Tim Wu develops in his 2010 called <em>The Master Switch: The Rise and Fall of Information Empires</em>. Back in 2000, an FBI program called</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Carnivore</p>
+          <aside class='notes'>
+            <p>Carnivore was first revealed in a series of Freedom of Information Act requests. Carnivore was a system for conducting targeted Internet</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Surveillance</p>
+          <aside class='notes'>
+            <p>surveillance through a specially configuration that would have been mandated to be installed in all ISP networks throughout the Internet. Beyond the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Privacy</p>
+          <aside class='notes'>
+            <p>privacy implications of such surveillance, another major concern with Carnivore was that these computers, through which all Internet traffic in North America would have flowed, were government owned and government controlled. In effect, if they were to somehow be</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Turned Off</p>
+          <aside class='notes'>
+            <p>turned off or adapted as filters, the US government could effectively</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Shut down the Internet</p>
+          <aside class='notes'>
+            <p>shut down the Internet or remove specific traffic segments.</p>
+            
+            <p>The plan was eventually abandoned in favor of private firms that collect all data and pass it along to the FBI as well as NSA efforts revealed by Jon Snowden, which are arguably worse from a privacy standpoint, but from the perspective of net neutrality are actually an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Improvement</p>
+          <aside class='notes'>
+            <p>improvement. There are concerns being now raised that a non-neutral network would be subject to the same kind of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Alarmist Fears</p>
+          <aside class='notes'>
+            <p>alarmist fears associated with Carnivore, but now the ability to kill the entire Internet or control what is seen online would be in the hands of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Private Firms</p>
+          <aside class='notes'>
+            <p>private firms.</p>
+            
+            <p>These concerns are related to issues with how a non-neutral network would be implemented in the US. The major concern rests with a concept called</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Algorithmic Filtering</p>
+          <aside class='notes'>
+            <p>"algorithmic filtering." If you have ever used</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/facebook.svg" id="facebook" alt="Facebook" /></p>
+          <aside class='notes'>
+            <p>Facebook, and I suspect that most of you have, you've encountered an algorithmically filtered corner of the Internet. On Facebook, a complicated series of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Computer Algorithms</p>
+          <aside class='notes'>
+            <p>computer algorithms determine the stories that you will be most interested in. In fact, as you probably remember, Facebook got a ton of flak recently for publishing results of a study where they</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Tweaked</p>
+          <aside class='notes'>
+            <p>tweaked the algorithm to see if they could make their users</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Happier</p>
+          <aside class='notes'>
+            <p>happier or more</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Depressed</p>
+          <aside class='notes'>
+            <p>depressed.</p>
+            
+            <p>As the NYT reported when the story broke in June, Facebook "reported that, for one week in January 2012, it had altered the number of positive and negative posts in the news feeds of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>689,003</p>
+          <aside class='notes'>
+            <p>689,003 randomly selected users to see what effect the changes had on the tone of the posts the recipients then wrote." Scary stuff.</p>
+            
+            <p>The</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Concern</p>
+          <aside class='notes'>
+            <p>concern with a non-neutral net is that</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Everything</p>
+          <aside class='notes'>
+            <p>everything on the Internet would start to operate like Facebook: only showing stories that some third party, ungoverned by any regulation (as, with the Facebook study, which did not have IRB approval to experiment on human subjects), could determine or at least</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Nudge</p>
+          <aside class='notes'>
+            <p>nudge you toward what content you see online. This discussion vis-a-vis algorithmic filtering and net neutrality recently came to a head with the events in</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/ferguson.png" alt="Ferguson" /></p>
+          <aside class='notes'>
+            <p>Ferguson. Zeynep Tufecki published a story on Medium called</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>"What Happens to #Ferguson Affects Ferguson"</p>
+          <aside class='notes'>
+            <p><a href="https://medium.com/message/ferguson-is-also-a-net-neutrality-issue-6d2f3db51eb0">What Happens to #Ferguson Affects Ferguson</a> discussing the difference in coverage of the unfolding police response to the murder of Michael Brown on Facebook and Twitter. As you may be familiar, Twitter was littered with coverage of the protests and the brutal police response. Additionally, as Tufecki noted and others confirmed, Facebook largely avoided the topic.</p>
+            
+            <p>Though there's no way to verify this claim, as Facebook's</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Filtering Algorithm</p>
+          <aside class='notes'>
+            <p>filtering algorithms are massive trade secrets, Tufecki suggests (coupled with the Facebook emotion studied published a few months before Ferguson) that perhaps Facebook's desire to show its users</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Happy Stories</p>
+          <aside class='notes'>
+            <p>happy stories could be partly behind the seeming lack of coverage for Ferguson on Facebook. Now, this speculation is veering close to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/tinfoil-hat.png" alt="Tinfoil hat" /></p>
+          <aside class='notes'>
+            <p>tinfoil hat, conspiracy territory, but Tufecki's point is worth considering: what if algorithmic filtering on one corner of the Internet effectively</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Quashed</p>
+          <aside class='notes'>
+            <p>quashed a major story as it developed and was covered on</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Non-filtered Media</p>
+          <aside class='notes'>
+            <p>non-filtered media such as Twitter?</p>
+            
+            <p>If the whole Internet worked more like Facebook or sites like Upworthy, how would a major watershed moment in recent Internet history, such as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/arab-spring.png" alt="Arab spring" /></p>
+          <aside class='notes'>
+            <p>The Arab Spring, even happen. By transforming the Internet from an</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>All-comers Welcome</p>
+          <aside class='notes'>
+            <p>all-comers welcome common carrier into a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Filtered Network</p>
+          <aside class='notes'>
+            <p>filtered network where those how have the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Most Money</p>
+          <aside class='notes'>
+            <p>most money have the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Loudest Voices</p>
+          <aside class='notes'>
+            <p>loudest voices, we risk losing a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Precious & Important Tool</p>
+          <aside class='notes'>
+            <p>precious and important tool that is radically reshaping human history. In this way, even more than the issues with competition and innovation for online businesses, which is still really important, net neutrality is a debate about</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>The Future of Freedom of Speech</p>
+          <aside class='notes'>
+            <p>the future of freedom of speech and freedom of information online.</p>
+            
+            <p>The concern is that in the age of a non-neutral network, all of the Internet would look like, as</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/homer-simpson.png" alt="Homer simpson" /></p>
+          <aside class='notes'>
+            <p>Homer Simpson once described <em>USA Today</em>, "the only paper in America that's not afraid to tell the truth, that everything is just fine." The Internet would transform a loud and unruly collection of voices to one where there's one story being told and that is the story that those with money and power want to tell us.</p>
+            
+            <p>So, tonight we've learned that Net Neutrality is a debate about applying</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Common Carrier</p>
+          <aside class='notes'>
+            <p>common carrier laws to the Internet, something that the FCC (perhaps due to corporate pressure) is unwilling to do. Then we saw that this debate ultimately will determine whether the Internet will continue to be a</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Cultural Commons</p>
+          <aside class='notes'>
+            <p>cultural commons or will operate more like how cable TV currently works. Finally, we saw some of the frightening and potentially</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Devastating Consequences</p>
+          <aside class='notes'>
+            <p>devastating consequences that would result from a non-neutral network. I want to leave with a sense of</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>What You <br> Can Do</p>
+          <aside class='notes'>
+            <p>what you can do if you're concerned about net neutrality.</p>
+            
+            <p>At this moment, the FCC</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Visit:</p>
+          <p class='question'><a href="http://www.fcc.gov/comments">http://www.fcc.gov/comments</a></p>
+          <p class='big'>Click:</p>
+          <p class='question'>"14-28"</p>
+          <aside class='notes'>
+            <p>is still debating its new policies regarding the open internet, and the original public comment period, which generated more than 1 million remarks from citizens all across the country, has been extended until the 15th of September, so you have a few more days if you want your voice heard.</p>
+            
+            <p>To contribute, visit http://www.fcc.gov/comments and click on "14-28" to enter your comments into the debate.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='big'>Visit:</p>
+          <p class='question'><a href="https://www.battleforthenet.com">https://www.battleforthenet.com</a></p>
+          <aside class='notes'>
+            <p>A consortium of activists, companies, and concerned citizens have just this morning launched Battle for the Net which is organizing a letter writing and telephone campaign to push for net neutrality in Congress. At their website, you can sign their letter and receive help to call Arizona's members of Congress.</p>
+            
+            <p>Beyond that, I would suggest two other paths for action you can follow.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>One</p>
+          <aside class='notes'>
+            <p>One, start reading up on the</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/eff.png" alt="Eff" /></p>
+          <aside class='notes'>
+            <p>Electronic Frontier Foundation, a policy and lobbying group committed to the values of an open Internet. They have been staging various protests in support of a neutral Internet, and they are a good avenue for participation.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Two</p>
+          <aside class='notes'>
+            <p>Two, start educating yourself and to</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>Vote!</p>
+          <aside class='notes'>
+            <p>vote in congressional elections. The US Congress is ultimately responsible for administrating the FCC and establishing America's Internet law. And, as former Senator</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/images/net-neutrality/ted-stevens.png" alt="Ted stevens" /></p>
+          <aside class='notes'>
+            <p>Ted Stevens showed when he referred to the Internet as "a series of tubes," the people governing this important medium are not particularly savvy about its workings. Read up on candidates, find those who support an open Internet, contribute to their campaigns (either monetarily or through volunteering), and vote!</p>
+            
+            <p>To conclude, I want to leave you with these remarks</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'><img src="/slides/images/net-neutrality/net-comments.png" alt="Net comments" /></p>
+          <aside class='notes'>
+            <p>from the FCC's collection of 1.1 million comments on new open internet policy, which you can see summarized in this infographic. Written by TC Ferrell of Banks, Alaska, it is poignant and points to the issues at stake (it's also a great reference to HG Wells's <em>The Time Machine</em>):</p>
+            
+            <blockquote>
+              <p>As a user who already suffers slow internet due to geography and income, I say that keeping the internet an equal opportunity environment is essential to the proliferation of the thing itself. If some users benefit from a change that causes many to suffer then it is a step in the wrong direction. It would be easy to say that this proposal is a shameless grab for wealth and power, but I choose to say what is difficult: there is a critical moment coming; one that will be of vital importance to the human race for all time to come, and there are individuals in a position to raise up humanity to a height inconceivable. However, those individuals are also in a position to drive a wedge between themselves and the remainder of humanity permanently, not unlike the morlocks of Wells' dystopia. Choose the righteous path. Choose the path that leads to a strong, unified humankind. Thank you.</p>
+            </blockquote>
+            
+            <p>Thanks for coming out tonight, everyone. We have some time for discussion, so I want to hear from all of you.</p>
+          </aside>
+        </section>
+        <section>
+          <p class='bigger'>What Do You Think?</p>
+          <aside class='notes'>
+            <p>What do you think about this issue? What do you want to know more about?</p>
+          </aside>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

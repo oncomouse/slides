@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 337 - Day 3
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    # *Scarlet Letter*
+    
+    <h2 class="hug"> Day 2: Symbols, Signs, & Pearl</h2>
+    
+    
+    ---
+    ### Hestor as Symbol
+    
+    > Throughout them all, giving up her individuality, she would become the general symbol at which the preacher and moralist might point, and in which they might vivify and embody their images of woman's frailty and sinful passion. 
+    >
+    > — Chapter V, "Hester at Her Needle" (63)
+    
+    > A clump of scrubby trees, such as alone grew on the peninsula, did not so much conceal the cottage from view, as seem to denote that here was some object which would fain have been, or at least ought to be, concealed. 
+    >
+    > — Chapter V, "Hester at Her Needle" (65)
+    
+    ---
+    
+    ### Symbolic "A"
+    
+    > The vulgar, who, in those dreary old times, were always contributing a grotesque horror to what interested their imaginations, had a story about the scarlet letter which we might readily work up into a terrific legend. They averred that the symbol was not mere scarlet cloth, tinged in an earthly dye-pot, but was red-hot with infernal fire, and could be seen glowing all alight whenever Hester Prynne walked abroad in the night-time. And we must needs say it seared Hester's bosom so deeply, that perhaps there was more truth in the rumour than our modern incredulity may be inclined to admit.
+    >
+    > — Chapter V, "Hester at Her Needle" (70)
+    
+    ---
+    
+    ### Pearl's Symbolism
+    
+    > Certainly there was no physical defect. By its perfect shape, its vigour, and its natural dexterity in the use of all its untried limbs, the infant was worthy to have been brought forth in Eden: worthy to have been left there to be the plaything of the angels after the world's first parents were driven out. The child had a native grace which does not invariably co-exist with faultless beauty; its attire, however simple, always impressed the beholder as if it were the very garb that precisely became it best. But little Pearl was not clad in rustic weeds ... So magnificent was the small figure when thus arrayed, and such was the splendour of Pearl's own proper beauty, shining through the gorgeous robes which might have extinguished a paler loveliness, that there was an absolute circle of radiance around her on the darksome cottage floor. And yet a russet gown, torn and soiled with the child's rude play, made a picture of her just as perfect. Pearl's aspect was imbued with a spell of infinite variety; in this one child there were many children, comprehending the full scope between the wild-flower prettiness of a peasant-baby, and the pomp, in little, of an infant princess. Throughout all, however, there was a trait of passion, a certain depth of hue, which she never lost ...
+    >
+    > — Chapter VI, "Pearl" (72)
+    
+    ---
+    
+    ### Pearl New World
+    
+    > "Ay, indeed!" cried good old Mr. Wilson. "What little bird of scarlet plumage may this be? Methinks I have seen just such figures when the sun has been shining through a richly painted window, and tracing out the golden and crimson images across the floor. But that was in the old land. Prithee, young one, who art thou, and what has ailed thy mother to bedizen thee in this strange fashion? Art thou a Christian child—ha? Dost know thy catechism? Or art thou one of those naughty elfs or fairies whom we thought to have left behind us, with other relics of Papistry, in merry old England?"
+    >
+    > — Chapter VIII, "The Elf-Child and the Minster" (86)
+    
+    ---
+    
+    ### Pearl Amongst the Dead
+    >"There is no law, nor reverence for authority, no regard for human ordinances or opinions, right or wrong, mixed up with that child's composition," remarked he, as much to himself as to his companion. "I saw her, the other day, bespatter the Governor himself with water at the cattle-trough in Spring Lane. What, in heaven's name, is she? Is the imp altogether evil? Hath she affections? Hath she any discoverable principle of being?"
+    >
+    >"None, save the freedom of a broken law," answered Mr. Dimmesdale, in a quiet way, as if he had been discussing the point within himself, "Whether capable of good, I know not." ...
+    >
+    > ... So she drew her mother away, skipping, dancing, and frisking fantastically among the hillocks of the dead people, like a creature that had nothing in common with a bygone and buried generation, nor owned herself akin to it. It was as if she had been made afresh out of new elements, and must perforce be permitted to live her own life, and be a law unto herself without her eccentricities being reckoned to her for a crime.
+    >
+    > — Chapter X, "The Leech and His Patient" (106)
+    
+    ---
+    
+    ### Pearl and the A
+    
+    > ... all were visible, but with a singularity of aspect that seemed to give another moral interpretation to the things of this world than they had ever borne before. And there stood the minister, with his hand over his heart; and Hester Prynne, with the embroidered letter glimmering on her bosom; and little Pearl, herself a symbol, and the connecting link between those two. They stood in the noon of that strange and solemn splendour, as if it were the light that is to reveal all secrets, and the daybreak that shall unite all who belong to one another.
+    >
+    > — Chapter XII, "The Minister's Vigil" (121)
+    ---
+    ### What Does it Mean?
+    
+    > "Silly Pearl," said she, "what questions are these? There are many things in this world that a child must not ask about. What know I of the minister's heart? And as for the scarlet letter, I wear it for the sake of its gold thread."
+    >
+    > In all the seven bygone years, Hester Prynne had never before been false to the symbol on her bosom. It may be that it was the talisman of a stern and severe, but yet a guardian spirit, who now forsook her; as recognising that, in spite of his strict watch over her heart, some new evil had crept into it, or some old one had never been expelled. As for little Pearl, the earnestness soon passed out of her face.
+    >
+    > — Chapter XV, "Hester and Pearl" (141)
+    
+    ---
+    
+    ### Angel?
+    	
+    > We impute it, therefore, solely to the disease in his own eye and heart, that the minister, looking upward to the zenith, beheld there the appearance of an immense letter,—the letter A,—marked out in lines of dull red light. Not but the meteor may have shown itself at that point, burning duskily through a veil of cloud; but with no such shape as his guilty imagination gave it; or, at least, with so little definiteness, that another's guilt might have seen another symbol in it.
+    >
+    > — Chapter XII, "The Minister's Vigil" (122)
+    
+    > “And since Satan saw fit to steal it, your reverence must needs handle him without gloves, henceforward,” remarked the old sexton, grimly smiling. “But did your reverence hear of the portent that was seen last night?—a great red letter in the sky,—the letter A, which we interpret to stand for Angel. For, as our good Governor Winthrop was made an angel this past night, it was doubtless held fit that there should be some notice thereof!”
+    >
+    > — Chapter XII, "The Minister's Vigil" (124)
+    
+    ---
+    
+    ### Able?
+    
+    > There glimmered the embroidered letter, with comfort in its unearthly ray. Elsewhere the token of sin, it was the taper of the sick-chamber. It had even thrown its gleam, in the sufferer's hard extremity, across the verge of time. It had shown him where to set his foot, while the light of earth was fast becoming dim, and ere the light of futurity could reach him. In such emergencies, Hester's nature showed itself warm and rich; a well-spring of human tenderness, unfailing to every real demand, and inexhaustible by the largest. Her breast, with its badge of shame, was but the softer pillow for the head that needed one. She was self-ordained a Sister of Mercy; or, we may rather say, the world's heavy hand had so ordained her, when neither the world nor she looked forward to this result. The letter was the symbol of her calling. Such helpfulness was found in her,—so much power to do, and power to sympathize,—that many people refused to interpret the scarlet A by its original signification. They said that it meant Able; so strong was Hester Prynne, with a woman's strength.
+    >
+    > — Chapter XIII, "Another View of Hester" (127)
+    
+    ---
+    
+    ### Portents of Doom
+    
+    > Nothing was more common, in those days, than to interpret all meteoric appearances, and other natural phenomena, that occurred with less regularity than the rise and set of sun and moon, as so many revelations from a supernatural source. Thus, a blazing spear, a sword of flame, a bow, or a sheaf of arrows, seen in the midnight sky, prefigured Indian warfare. Pestilence was known to have been foreboded by a shower of crimson light. We doubt whether any marked event, for good or evil, ever befell New England, from its settlement down to Revolutionary times, of which the inhabitants had not been previously warned by some spectacle of this nature. Not seldom, it had been seen by multitudes. Oftener, however, its credibility rested on the faith of some lonely eye-witness, who beheld the wonder through the colored, magnifying, and distorting medium of his imagination, and shaped it more distinctly in his after-thought. It was, indeed, a majestic idea, that the destiny of nations should be revealed, in these awful hieroglyphics, on the cope of heaven. A scroll so wide might not be deemed too expansive for Providence to write a people's doom upon.
+    >
+    > — Chapter XII, "The Minister's Vigil"
+    
+    ---
+    ### Nature as Nonjudgemental
+    
+    >Hester gazed after him a little while, looking with a half fantastic curiosity to see whether the tender grass of early spring would not be blighted beneath him and show the wavering track of his footsteps, sere and brown, across its cheerful verdure. She wondered what sort of herbs they were which the old man was so sedulous to gather. Would not the earth, quickened to an evil purpose by the sympathy of his eye, greet him with poisonous shrubs of species hitherto unknown, that would start up under his fingers? Or might it suffice him that every wholesome growth should be converted into something deleterious and malignant at his touch? Did the sun, which shone so brightly everywhere else, really fall upon him? Or was there, as it rather seemed, a circle of ominous shadow moving along with his deformity whichever way he turned himself? And whither was he now going?
+    >
+    > — Chapter XV, "Hester and Pearl"
+    
+    ---
+    
+    ### Necromancy
+    
+    > The victim was for ever on the rack; it needed only to know the spring that controlled the engine: and the physician knew it well. Would he startle him with sudden fear? As at the waving of a magician's wand, up rose a grisly phantom—up rose a thousand phantoms—in many shapes, of death, or more awful shame, all flocking round about the clergyman, and pointing with their fingers at his breast!
+    >
+    > — Chapter XI, "The Interior of a Heart" (110)
+    
+    ---
+    
+    ### Hester as Wizard
+    
+    > Men bolder than these had overthrown and rearranged—not actually, but within the sphere of theory, which was their most real abode—the whole system of ancient prejudice, wherewith was linked much of ancient principle. Hester Prynne imbibed this spirit. She assumed a freedom of speculation, then common enough on the other side of the Atlantic, but which our forefathers, had they known it, would have held to be a deadlier crime than that stigmatised by the scarlet letter. In her lonesome cottage, by the seashore, thoughts visited her such as dared to enter no other dwelling in New England; shadowy guests, that would have been as perilous as demons to their entertainer, could they have been seen so much as knocking at her door.
+    >
+    > — Chapter XIII, "Another View of Hester" (129)</textarea>
+  </body>
+</html>

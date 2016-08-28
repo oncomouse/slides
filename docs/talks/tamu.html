@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Texas A&M
+    </title>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+    <link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
+    <link href="/slides/stylesheets/reveal/theme/simple.css" rel="stylesheet" id="theme" />
+    <!-- For syntax highlighting -->
+    <link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="/slides/stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/slides/javascripts/lib/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      var head_js_load = ['/slides/javascripts/reveal/reveal.min.js'];
+      
+      head.load(
+      	head_js_load,
+      	function() {
+      		
+      		
+              Reveal.initialize({
+              	controls: false,
+              	progress: true,
+              	history: true,
+              	center: true,
+              	viewDistance: 3,
+              	minScale: 0.2,
+              	maxScale: 1,
+              	margin: 0.1,
+      
+              	theme: Reveal.getQueryHash().theme || "simple", // List available in stylesheets/reveal/themes
+              	transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
+      			transitionSpeed: 'fast',
+      
+              	// Optional libraries used to extend on reveal.js
+              	dependencies: [
+              		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              	]
+              });
+      	}
+      );
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block; }
+        .twitter_badge:before, .twitter_badge:after {
+          font-family: "icomoon";
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 0.95em;
+          -webkit-font-smoothing: antialiased;
+          font-size: 0.95em; }
+        .twitter_badge:before {
+          content: '"';
+          position: absolute;
+          top: -0.05em;
+          left: -1.15em; }
+      
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em; }
+        #watermark:before {
+          top: 0.23em !important; }
+    </style>
+  </head>
+  <body>
+    <div class='reveal'>
+      <p class='twitter_badge' id='watermark'>
+        @oncomouse
+      </p>
+      <div class='slides'>
+        <style>
+          @charset "UTF-8";
+          #watermark {
+            display: none; }
+          
+          .reveal blockquote {
+            text-align: left;
+            font-style: normal !important;
+            border: 0px;
+            box-shadow: none;
+            width: 100% !important; }
+            .reveal blockquote p {
+              line-height: 1.35em !important;
+              margin-bottom: 18px; }
+          .reveal ul {
+            font-size: 1.25em;
+            line-height: 1.25; }
+            .reveal ul ul {
+              font-size: inherit; }
+          .reveal h2.big {
+            font-size: 2.5em; }
+          .reveal section img {
+            border: 0;
+            box-shadow: none;
+            max-height: 668px; }
+          .reveal section.quote blockquote {
+            position: relative; }
+            .reveal section.quote blockquote:before {
+              content: "“";
+              color: rgba(0, 0, 0, 0.4);
+              position: absolute;
+              left: -40px;
+              top: 16px;
+              font-size: 6.5rem;
+              font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+              z-index: 2;
+              width: 40px; }
+          
+          .title h2 {
+            font-weight: 400;
+            font-size: 1.6em;
+            line-height: 0.95em;
+            margin-top: 1em; }
+            .title h2.small {
+              font-size: 1.25em; }
+          .title p {
+            font-size: 1.75em; }
+          
+          .title-block {
+            margin-top: 2em !important; }
+            .title-block:first-child {
+              margin-top: 0 !important; }
+            .title-block h1, .title-block h2 {
+              color: black;
+              margin-top: 0 !important; }
+            .title-block h1 + h2 {
+              margin-top: .75em !important; }
+          
+          .big p {
+            font-size: 1.25em; }
+          
+          .works-cited p {
+            padding-left: 0.5in;
+            text-indent: -0.5in;
+            text-align: left;
+            font-size: 0.55em; }
+          .works-cited strong {
+            letter-spacing: -4px; }
+        </style>
+        <section class='title'>
+          <div class='title-block'>
+            <h1>What is <br> Transhumanism?</h1>
+          </div>
+          <div class='title-block'>
+            <h2>Andrew Pilsch</h2>
+            <h2>January 26, 2015</h2>
+          </div>
+        </section>
+        <section>
+          <h2>Research Origins</h2>
+          <ul>
+            <li class='fragment'>Computer Science</li>
+            <li class='fragment'>Science Fiction as Cultural Symptom</li>
+            <li class='fragment'>Rhetoric of Critical Theory</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Research Futures</h2>
+        </section>
+        <section>
+          <h2 id="inhumanism">Inhumanism</h2>
+          
+          <ul>
+            <li>Inhuman Autonomous Systems
+              <ul>
+                <li>Economies</li>
+                <li>Pandemics</li>
+                <li>Climates</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="rhetoric-and-futurism">Rhetoric and Futurism</h2>
+          
+          <ul>
+            <li>Tropes of Futurism
+              <ul>
+                <li>"Biology is Wrong"</li>
+                <li>"People are Data"</li>
+                <li>"Space must be Managed"</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class='title'>
+          <h2 class='big'>
+            <strong>Part I <br></strong>
+          </h2>
+          <p>What Is Transhumanism?</p>
+        </section>
+        <section class='quote'>
+          <h2 id="max-more">Max More</h2>
+          
+          <blockquote>
+            <p>Transhumanism is a class of philosophies of life that seek the continuation and acceleration of the evolution of intelligent life beyond its currently human form and human limitations by means of science and technology, guided by life-promoting principles and values.</p>
+          </blockquote>
+        </section>
+        <section>
+          <div class='title-block'>
+            <h2>Transhuman Technologies</h2>
+            <h3>(More)</h3>
+          </div>
+          <ul>
+            <li class='fragment'>neuroscience and neuropharmacology</li>
+            <li class='fragment'>life extension</li>
+            <li class='fragment'>nanotechnology</li>
+            <li class='fragment'>artificial ultraintelligence</li>
+            <li class='fragment'>space habitation</li>
+          </ul>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/startrek.jpg" alt="Startrek" />
+        </section>
+        <section class='quote'>
+          <h2 id="cary-wolfe">Cary Wolfe</h2>
+          
+          <blockquote>
+            <p>As one of the central figures associated with transhumanism, the Oxford philosopher Nick Bostrom, makes clear, this sense of posthumanism derives directly from ideals of human perfectibility, rationality, and agency inherited from Renaissance humanism and the Enlightenment.</p>
+          </blockquote>
+        </section>
+        <section class='quote'>
+          <h2 id="cary-wolfe">Cary Wolfe</h2>
+          <blockquote>
+            <p>"the human" is achieved by escaping or repressing not just its animal origins in nature, the biological, and the evolutionary, but more generally by transcending the bonds of materiality and embodiment altogether. In this respect, my sense of posthumanism is the <em>opposite</em> of transhumanism, and in this light, transhumanism should be seen as an <em>intensification</em> of humanism. (emph. in original)</p>
+          </blockquote>
+        </section>
+        <section class='title'>
+          <h2 class='big'>
+            <strong>Part II <br></strong>
+          </h2>
+          <p>Transhumanism as a Religion of Technology?</p>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/religion-noble.jpg" alt="Religion noble" />
+        </section>
+        <section>
+          <div class='title-block'>
+            <h2>Transhuman Technologies</h2>
+            <h3>(More)</h3>
+          </div>
+          <ul>
+            <li>neuroscience and neuropharmacology</li>
+            <li>life extension</li>
+            <li>nanotechnology</li>
+            <li>artificial ultraintelligence</li>
+            <li>space habitation</li>
+          </ul>
+        </section>
+        <section class='quote'>
+          <h2 id="nicholas-agar">Nicholas Agar</h2>
+          
+          <blockquote>
+            <p>radical enhancement involves improving significant human attributes and abilities to levels that greatly exceed what is currently possible for human beings.</p>
+          </blockquote>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/usain-bolt1.jpg" alt="Usain bolt1" />
+        </section>
+        <section>
+          <img src="/slides/images/tamu/the-flash1.jpg" alt="The flash1" />
+        </section>
+        <section>
+          <img src="/slides/images/tamu/usain-bolt2.jpg" alt="Usain bolt2" />
+        </section>
+        <section>
+          <img src="/slides/images/tamu/the-flash2.jpg" alt="The flash2" />
+        </section>
+        <section class='quote'>
+          <h2 id="max-more">Max More</h2>
+          
+          <blockquote>
+            <p>What you have made us is glorious, yet deeply flawed. You seem to have lost interest in our further evolution some 100,000 years ago. Or perhaps you have been biding your time, waiting for us to take the next step ourselves. Either way, we have reached our childhood’s end.</p>
+          
+            <p>We have decided that it is time to amend the human constitution.</p>
+          </blockquote>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/star-child.jpg" alt="Starchild" />
+        </section>
+        <section>
+          <img src="/slides/images/tamu/lucy.jpg" alt="Lucy" />
+        </section>
+        <section class='title'>
+          <h2 class='big'>
+            <strong>Part III <br></strong>
+          </h2>
+          <p>Transhumanism as a Rhetoric of Technology?</p>
+        </section>
+        <section>
+          <h2>FM-2030</h2>
+          <ul>
+            <li class='fragment'>How Fluid Are You?</li>
+            <li class='fragment'>How High Tech Is Your Attention Span?</li>
+            <li class='fragment'>What Is Your Level Of Humanity?</li>
+          </ul>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/ray-terry.jpg" alt="Ray and Terry's Longevity Products" />
+        </section>
+        <section class='quote'>
+          <h2 id="julian-huxley">Julian Huxley</h2>
+          
+          <blockquote>
+            <p>The human species can, if it wishes, transcend itself —not just sporadically, an individual here in one way, an individual there in another way, but in its entirety, as humanity. We need a name for this new belief. Perhaps transhumanism will serve: man remaining man, but trans­cending himself, by realizing new possibilities of and for his human nature.</p>
+          </blockquote>
+        </section>
+        <section class='title'>
+          <h3>
+            <strong>Evolutionary Futurist <br> Rhetoric of Technology, I</strong>
+          </h3>
+          <p>
+            <em>Automata Theory</em>
+          </p>
+        </section>
+        <section class='quote'>
+          <h2 id="john-von-neumann">John von Neumann</h2>
+          
+          <blockquote>
+            <p>[Complex systems] can be viewed as made up of parts which to a certain extent are independent, elementary units. We may, therefore, to this extent, view as the first part of the problem the structure and functioning of such elementary units individually. The second part of the problem consists of understanding how these elements are organized into a whole, and how the functioning of the whole is expressed in terms of these elements.</p>
+          </blockquote>
+        </section>
+        <section class='quote big'>
+          <h2 id="john-von-neumann">John von Neumann</h2>
+          
+          <blockquote>
+            <p>life is a process which can be abstracted away from any particular medium.</p>
+          </blockquote>
+        </section>
+        <section class='title'>
+          <h3>
+            <strong>Evolutionary Futurist <br> Rhetoric of Technology, II</strong>
+          </h3>
+          <p>
+            <em>The Whirlpool of Research</em>
+          </p>
+        </section>
+        <section class='quote'>
+          <h2 id="pierre-teilhard-de-chardin">Pierre Teilhard de Chardin</h2>
+          
+          <blockquote>
+            <p>And by his work, too, inasmuch as man inevitably at the term of everything he creates, finds man again, at a slightly higher level: a man who has always grown greater, either through sensorial penetration into the immense and the infinitesimal &#8230; or (which is perhaps the most astonishing of all forms of progress) by direct multiplication and acceleration of his cerebral faculty of thought.</p>
+          </blockquote>
+        </section>
+        <section>
+          <img src="/slides/images/tamu/how-we-became-posthuman.jpg" alt="How We Became Posthuman" />
+        </section>
+        <section>
+          <h2>Transhumanism <br> & <br> Utopia</h2>
+        </section>
+        <section>
+          <h1>Thank You</h1>
+        </section>
+        <section class='works-cited'>
+          <p>Fm-2030. <em>Are You a Transhuman?: Monitoring and Stimulating Your Personal Rate of Growth in a Rapidly Changing World</em>. New York, NY: Warner, 1989. Print.</p>
+          
+          <p>Agar, Nicholas. <em>Humanity’s End: Why We Should Reject Radical Enhancement</em>. Cambridge, MA: MIT UP, 2010. Print.</p>
+          
+          <p><strong>––––––</strong>. <em>Truly Human Enhancement: A Philosophical Defense of Limits</em>. Cambridge, MA: MIT UP, 2013. Print.</p>
+          
+          <p>Dyson, Freeman. “A Walk through Johnny von Neumann’s Garden.” <em>Notices of the AMS</em> 60.2 (Feb. 2013): 154–161. Print.</p>
+          
+          <p>Dyson, George. <em>Turing’s Cathedral: The Origins of the Digital Universe</em>. New York: Pantheon, 2012. Print.</p>
+          
+          <p>Hayles, N. Katherine. <em>How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics</em>. Chicago: Chicago UP, 1999. Print.</p>
+          
+          <p>Huxley, Julian. “Transhumanism.” <em>New Bottles For New Wine</em>. New York: Harper, 1957. 13–17. Print.</p>
+          
+          <p>Langton, Christopher G. “Artificial Life.” <em>Artificial Life: Proceedings Of An Interdisciplinary Workshop On The Synthesis And Simulation Of Living Systems</em>. Ed. Christopher G. Langton. Redwood City, CA: Westview Press, 1989. Print.</p>
+          
+          <p>More, Max. “A Letter to Mother Nature.” <em>Max More.com</em>. 1999. Web. 16 Jan. 2015.</p>
+          
+          <p><strong>––––––</strong>. “Transhumanism: Towards a Future Philosophy.” <em>Max More.com</em>. 1996. Web. 16 Jan. 2015.</p>
+          
+          <p>Noble, David F. <em>The Religion of Technology: The Divinity of Man and the Spirit of Invention</em>. New York: Knopf, 1997. Print.</p>
+          
+          <p>Teilhard de Chardin, Pierre. <em>Activation of Energy</em>. Trans. Rent Hague. New York: Harcourt, 1971. Print.</p>
+          
+          <p>Than, Ker. “Hang in There: The 25-Year Wait for Immortality.” <em>LiveScience.com</em> (04 Nov. 2005). Web. 27 June 2012.</p>
+          
+          <p>“The Transhumanist FAQ 3.0.” Humanity+. Jan. 2013. Web. 16 Jan. 2015.</p>
+          
+          <p>Ulam, Stanislaw. “Tribute to John von Neumann, 1903-1957.” <em>Bulletin of the American Mathematical Society</em> 64.3 (May 1958): 1–49. Print.</p>
+          
+          <p>Von Neumann, John. “The General and Logical Theory of Automata.” <em>Collected Works Volume V: Design of Computers, Theory of Automata and Numerical Analysis</em>. Ed. A.H. Taub. New York: Pergamon, 1963. 288–326. Print.</p>
+          
+          <p>Ward, Mark. <em>Virtual Organisms: The Startling World of Artificial Life</em>. New York: Macmillan, 2000. Print.</p>
+          
+          <p>Wolfe, Cary. <em>What Is Posthumanism?</em> Minneapolis, MN: Minnesota UP, 2009. Print.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
