@@ -52,6 +52,7 @@ end
 						<% end
 					end
 					if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth 
+						next if "#{File.basename resource.destination_path.gsub('index.html',"")}/" =~ /^_/ # Throw out directories starting with "_" (hide them)
 						directories << capture_html do %>
 					<li>
 						<%= if directory.nil? then link_to resource.destination_path.gsub('index.html',"").capitalize, resource.destination_path.gsub('index.html',"") else link_to "#{File.basename resource.destination_path.gsub('index.html',"")}/".capitalize, resource.destination_path.sub(directory + "/","") end %>
