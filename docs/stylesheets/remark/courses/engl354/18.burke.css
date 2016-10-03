@@ -90,3 +90,15 @@
   left: 251px;
   width: 365px;
   font-size: 1.25rem; }
+
+/* line 88, 18.burke.css.scss */
+img {
+  max-width: 90%; }
+
+/* line 92, 18.burke.css.scss */
+.zotero4 img {
+  max-width: 55%; }
+
+/* line 97, 18.burke.css.scss */
+.zotero5 img {
+  max-width: 70%; }
