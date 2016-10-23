@@ -358,3 +358,13 @@ img {
 		left: -1.15em;
 	}
 }
+
+// Slide font size utility:
+@for $i from 18 through 50{
+	.f#{$i}px {
+		p {
+			font-size: $i * 1px;
+			line-height: 1.4;
+		}
+	}
+}
