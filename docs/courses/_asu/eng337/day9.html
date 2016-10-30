@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENG 337 - Day 9
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar['width'] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    # *Adventures of <br> Huckleberry Finn*
+    
+    <h2 class="hug"> Day 4  </h2>
+    
+    ---
+    
+    ## The End
+    
+    > All modern American literature comes from one book by Mark Twain called *Huckleberry Finn*. If you read it you must stop where the Nigger Jim is stolen from the boys. That is the real end. The rest is just cheating. But it's the best book we've had. All American writing comes from that. There was nothing before. There has been nothing as good since.
+    >
+    > — Ernest Hemingway, "The Green Hills of Africa"
+    
+    ---
+    ## The End?
+    
+    > Tom's most well now, and got his bullet around his neck on a watch-guard for a watch, and is always seeing what time it is, and so there ain't nothing more to write about, and I am rotten glad of it, because if I'd a knowed what a trouble it was to make a book I wouldn't a tackled it, and ain't a-going to no more.  But I reckon I got to light out for the Territory ahead of the rest, because Aunt Sally she's going to adopt me and sivilize me, and I can't stand it.  I been there before.
+    >
+    > — Chapter The Last
+    
+    
+    
+    ---
+    
+    ## The End?, cont.
+    
+    > Like Huckleberry Finn, the River itself has no beginning or end. In its beginning, it is not yet the River; in its end, it is no longer the River. What we call its headwaters is only a selection from among the innumerable sources which flow together to compose it. At what point in its course does the Mississippi become what the Mississippi means? It is both one and many; it is the Mississippi of this book only after its union with the Big Muddy— the Missouri; it derives some of its character from the Ohio, the Tennessee and other confluents. And at the end it merely disappears among its deltas: it is no longer there, but it is still where it was, hundreds of miles to the North. The River cannot tolerate any design, to a story which is its story, that might interfere with its dominance. Things must merely happen, here and there, to the people who live along its shores or who commit themselves to its current. And it is as impossible for Huck as for the River to have a beginning or end—a career. So the book has the right, the only possible concluding sentence. I do not think that any book ever written ends more certainly with the right word
+    >
+    > — T.S. Eliot, "Introduction to _Huck Finn_" (1950)
+    
+    ---
+    
+    ## The End?, cont.
+    
+    > Readers sometimes deplore the fact that the story descends to the level of Tom Sawyer from the moment that Tom himself re-appears. Such readers protest that the escapades invented by Tom, in the attempted “rescue” of Jim, are only a tedious development of themes with which we were already too familiar—even while admitting that the escapades themselves are very amusing, and some of the incidental observations memorable. But it is right that the mood of the end of the book should bring us back to that of the beginning. Or, if this was not the right ending for the book, what ending would have been right?
+    > 
+    > — T.S. Eliot, "Introduction to _Huck Finn_" (1950)
+    
+    ---
+    
+    ## Borrowing
+    
+    > Along during the morning I borrowed a sheet and a white shirt off of the clothes-line; and I found an old sack and put them in it, and we went down and got the fox-fire, and put that in too.  I called it borrowing, because that was what pap always called it; but Tom said it warn't borrowing, it was stealing.  He said we was representing prisoners; and prisoners don't care how they get a thing so they get it, and nobody don't blame them for it, either.  It ain't no crime in a prisoner to steal the thing he needs to get away with, Tom said; it's his right; and so, as long as we was representing a prisoner, we had a perfect right to steal anything on this place we had the least use for to get ourselves out of prison with.  He said if we warn't prisoners it would be a very different thing, and nobody but a mean, ornery person would steal when he warn't a prisoner.  So we allowed we would steal everything there was that come handy.  And yet he made a mighty fuss, one day, after that, when I stole a watermelon out of the nigger-patch and eat it; and he made me go and give the niggers a dime without telling them what it was for. Tom said that what he meant was, we could steal anything we needed. Well, I says, I needed the watermelon. But he said I didn't need it to get out of prison with; there's where the difference was.
+    >
+    > — Chapter 35
+    ---
+    
+    ## Snakes
+    
+    >"*Please*, Mars Tom—*doan*' talk so!  I can't *stan*' it!  He'd *let* me shove his head in my mouf—fer a favor, hain't it?  I lay he'd wait a pow'ful long time 'fo' I *ast* him.  En mo' en dat, I doan' *want* him to sleep wid me."
+    >
+    >"Jim, don't act so foolish.  A prisoner's *got* to have some kind of a dumb pet, and if a rattlesnake hain't ever been tried, why, there's more glory to be gained in your being the first to ever try it than any other way you could ever think of to save your life."
+    >
+    >"Why, Mars Tom, I doan' *want* no sich glory.  Snake take 'n bite Jim's chin off, den *whah* is de glory?  No, sah, I doan' want no sich doin's."
+    >
+    >"Blame it, can't you *try*?  I only *want* you to try—you needn't keep it up if it don't work."
+    >
+    >"But de trouble all *done* ef de snake bite me while I's a tryin' him. Mars Tom, I's willin' to tackle mos' anything 'at ain't onreasonable, but ef you en Huck fetches a rattlesnake in heah for me to tame, I's gwyne to *leave*, dat's *shore*."
+    >
+    > — Chapter 38
+    
+    ---
+    
+    ## Acted Well
+    
+    > Then the others softened up a little, too, and I was mighty thankful to that old doctor for doing Jim that good turn; and I was glad it was according to my judgment of him, too; because I thought he had a good heart in him and was a good man the first time I see him.  Then they all agreed that Jim had acted very well, and was deserving to have some notice took of it, and reward.  So every one of them promised, right out and hearty, that they wouldn't cuss him no more.
+    >
+    >Then they come out and locked him up.
+    >
+    > — Chapter 42
+    
+    ---
+    
+    ## One of the Family
+    
+    > We had Jim out of the chains in no time, and when Aunt Polly and Uncle Silas and Aunt Sally found out how good he helped the doctor nurse Tom, they made a heap of fuss over him, and fixed him up prime, and give him all he wanted to eat, and a good time, and nothing to do.  And we had him up to the sick-room, and had a high talk; and Tom give Jim forty dollars for being prisoner for us so patient, and doing it up so good, and Jim was pleased most to death, and busted out, and says:
+    >
+    > — Chapter The Last
+    
+    ---
+    
+    ## Why?
+    
+    > Jim could a got out of that window-hole before this, only there wouldn't be no use trying to travel with a ten-foot chain on his leg.  Why, drat it, Huck, it's the stupidest arrangement I ever see. You got to invent all the difficulties.  Well, we can't help it; we got to do the best we can with the materials we've got. Anyhow, there's one thing—there's more honor in getting him out through a lot of difficulties and dangers, where there warn't one of them furnished to you by the people who it was their duty to furnish them, and you had to contrive them all out of your own head.
+    >
+    > — Chapter 35
+    
+    ---
+    
+    
+    ## Romanticism
+    
+    > Then comes Sir Walter Scott with his enchantments, and by his single might checks this wave of progress, and even turns it back; sets the world in love with dreams and phantoms; with decayed and swinish forms of religion; with decayed and degraded systems of government; with the sillinesses and emptinesses, sham grandeurs, sham gauds, and sham chivalries of a brainless and worthless long-vanished society. He did measureless harm; more real and lasting harm, perhaps, than any other individual that ever wrote. Most of the world has now outlived good part of these harms, though by no means all of them; but in our South they flourish pretty forcefully still. Not so forcefully as half a generation ago, perhaps, but still forcefully. 
+    >
+    > — _Life on the Mississippi_, Ch. 46
+    
+    ---
+    
+    
+    ## Romanticism, cont.
+    
+    > There, the genuine and wholesome civilization of the nineteenth century is curiously confused and commingled with the Walter Scott Middle-Age sham civilization; and so you have practical, common-sense, progressive ideas, and progressive works; mixed up with the duel, the inflated speech, and the jejune romanticism of an absurd past that is dead, and out of charity ought to be buried. But for the Sir Walter disease, the character of the Southerner—or Southron, according to Sir Walter's starchier way of phrasing it—would be wholly modern, in place of modern and medieval mixed, and the South would be fully a generation further advanced than it is. It was Sir Walter that made every gentleman in the South a Major or a Colonel, or a General or a Judge, before the war; and it was he, also, that made these gentlemen value these bogus decorations. For it was he that created rank and caste down there, and also reverence for rank and caste, and pride and pleasure in them. Enough is laid on slavery, without fathering upon it these creations and contributions of Sir Walter.
+    >
+    > — _Life on the Mississippi_, Ch. 46
+    
+    ---
+    
+    
+    ## Romanticism, cont.
+    
+    > Sir Walter had so large a hand in making Southern character, as it existed before the war, that he is in great measure responsible for the war. It seems a little harsh toward a dead man to say that we never should have had any war but for Sir Walter; and yet something of a plausible argument might, perhaps, be made in support of that wild proposition. The Southerner of the American Revolution owned slaves; so did the Southerner of the Civil War: but the former resembles the latter as an Englishman resembles a Frenchman. The change of character can be traced rather more easily to Sir Walter's influence than to that of any other thing or person.
+    >
+    > — _Life on the Mississippi_, Ch. 46
+    ---
+    ## Why, Indeed?
+    
+    > "Then what on earth did _you_ want to set him free for, seeing he was already free?"
+    >
+    > "Well, that _is_ a question, I must say; and just like women!  **Why, I wanted the _adventure_ of it**; and I'd a waded neck-deep in blood to—"
+    >
+    > — Chapter 42</textarea>
+  </body>
+</html>
