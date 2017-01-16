@@ -360,7 +360,7 @@ img {
 }
 
 // Slide font size utility:
-@for $i from 18 through 50{
+@for $i from 18 through 70 {
 	.f#{$i}px {
 		p, li {
 			font-size: $i * 1px;
