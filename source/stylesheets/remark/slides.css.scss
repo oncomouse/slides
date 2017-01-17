@@ -366,5 +366,8 @@ img {
 			font-size: $i * 1px;
 			line-height: 1.4;
 		}
+		small {
+			font-size: $i * 0.85px;
+		}
 	}
 }
