@@ -85,6 +85,13 @@ code {
 
 /* Utility Classes */
 
+.no-margin {
+	blockquote {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 .blockquote {
 	display: block;
 	margin: {
