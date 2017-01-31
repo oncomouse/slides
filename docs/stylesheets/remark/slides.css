@@ -466,6 +466,11 @@ img {
 .f18px small {
   font-size: 15.3px; }
 
+/* line 380, slides.css.scss */
+span.f18px {
+  font-size: 18px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f19px p, .f19px li {
   font-size: 19px;
@@ -473,6 +478,11 @@ img {
 /* line 376, slides.css.scss */
 .f19px small {
   font-size: 16.15px; }
+
+/* line 380, slides.css.scss */
+span.f19px {
+  font-size: 19px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f20px p, .f20px li {
@@ -482,6 +492,11 @@ img {
 .f20px small {
   font-size: 17px; }
 
+/* line 380, slides.css.scss */
+span.f20px {
+  font-size: 20px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f21px p, .f21px li {
   font-size: 21px;
@@ -489,6 +504,11 @@ img {
 /* line 376, slides.css.scss */
 .f21px small {
   font-size: 17.85px; }
+
+/* line 380, slides.css.scss */
+span.f21px {
+  font-size: 21px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f22px p, .f22px li {
@@ -498,6 +518,11 @@ img {
 .f22px small {
   font-size: 18.7px; }
 
+/* line 380, slides.css.scss */
+span.f22px {
+  font-size: 22px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f23px p, .f23px li {
   font-size: 23px;
@@ -505,6 +530,11 @@ img {
 /* line 376, slides.css.scss */
 .f23px small {
   font-size: 19.55px; }
+
+/* line 380, slides.css.scss */
+span.f23px {
+  font-size: 23px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f24px p, .f24px li {
@@ -514,6 +544,11 @@ img {
 .f24px small {
   font-size: 20.4px; }
 
+/* line 380, slides.css.scss */
+span.f24px {
+  font-size: 24px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f25px p, .f25px li {
   font-size: 25px;
@@ -521,6 +556,11 @@ img {
 /* line 376, slides.css.scss */
 .f25px small {
   font-size: 21.25px; }
+
+/* line 380, slides.css.scss */
+span.f25px {
+  font-size: 25px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f26px p, .f26px li {
@@ -530,6 +570,11 @@ img {
 .f26px small {
   font-size: 22.1px; }
 
+/* line 380, slides.css.scss */
+span.f26px {
+  font-size: 26px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f27px p, .f27px li {
   font-size: 27px;
@@ -537,6 +582,11 @@ img {
 /* line 376, slides.css.scss */
 .f27px small {
   font-size: 22.95px; }
+
+/* line 380, slides.css.scss */
+span.f27px {
+  font-size: 27px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f28px p, .f28px li {
@@ -546,6 +596,11 @@ img {
 .f28px small {
   font-size: 23.8px; }
 
+/* line 380, slides.css.scss */
+span.f28px {
+  font-size: 28px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f29px p, .f29px li {
   font-size: 29px;
@@ -553,6 +608,11 @@ img {
 /* line 376, slides.css.scss */
 .f29px small {
   font-size: 24.65px; }
+
+/* line 380, slides.css.scss */
+span.f29px {
+  font-size: 29px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f30px p, .f30px li {
@@ -562,6 +622,11 @@ img {
 .f30px small {
   font-size: 25.5px; }
 
+/* line 380, slides.css.scss */
+span.f30px {
+  font-size: 30px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f31px p, .f31px li {
   font-size: 31px;
@@ -569,6 +634,11 @@ img {
 /* line 376, slides.css.scss */
 .f31px small {
   font-size: 26.35px; }
+
+/* line 380, slides.css.scss */
+span.f31px {
+  font-size: 31px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f32px p, .f32px li {
@@ -578,6 +648,11 @@ img {
 .f32px small {
   font-size: 27.2px; }
 
+/* line 380, slides.css.scss */
+span.f32px {
+  font-size: 32px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f33px p, .f33px li {
   font-size: 33px;
@@ -585,6 +660,11 @@ img {
 /* line 376, slides.css.scss */
 .f33px small {
   font-size: 28.05px; }
+
+/* line 380, slides.css.scss */
+span.f33px {
+  font-size: 33px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f34px p, .f34px li {
@@ -594,6 +674,11 @@ img {
 .f34px small {
   font-size: 28.9px; }
 
+/* line 380, slides.css.scss */
+span.f34px {
+  font-size: 34px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f35px p, .f35px li {
   font-size: 35px;
@@ -601,6 +686,11 @@ img {
 /* line 376, slides.css.scss */
 .f35px small {
   font-size: 29.75px; }
+
+/* line 380, slides.css.scss */
+span.f35px {
+  font-size: 35px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f36px p, .f36px li {
@@ -610,6 +700,11 @@ img {
 .f36px small {
   font-size: 30.6px; }
 
+/* line 380, slides.css.scss */
+span.f36px {
+  font-size: 36px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f37px p, .f37px li {
   font-size: 37px;
@@ -617,6 +712,11 @@ img {
 /* line 376, slides.css.scss */
 .f37px small {
   font-size: 31.45px; }
+
+/* line 380, slides.css.scss */
+span.f37px {
+  font-size: 37px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f38px p, .f38px li {
@@ -626,6 +726,11 @@ img {
 .f38px small {
   font-size: 32.3px; }
 
+/* line 380, slides.css.scss */
+span.f38px {
+  font-size: 38px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f39px p, .f39px li {
   font-size: 39px;
@@ -633,6 +738,11 @@ img {
 /* line 376, slides.css.scss */
 .f39px small {
   font-size: 33.15px; }
+
+/* line 380, slides.css.scss */
+span.f39px {
+  font-size: 39px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f40px p, .f40px li {
@@ -642,6 +752,11 @@ img {
 .f40px small {
   font-size: 34px; }
 
+/* line 380, slides.css.scss */
+span.f40px {
+  font-size: 40px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f41px p, .f41px li {
   font-size: 41px;
@@ -649,6 +764,11 @@ img {
 /* line 376, slides.css.scss */
 .f41px small {
   font-size: 34.85px; }
+
+/* line 380, slides.css.scss */
+span.f41px {
+  font-size: 41px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f42px p, .f42px li {
@@ -658,6 +778,11 @@ img {
 .f42px small {
   font-size: 35.7px; }
 
+/* line 380, slides.css.scss */
+span.f42px {
+  font-size: 42px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f43px p, .f43px li {
   font-size: 43px;
@@ -665,6 +790,11 @@ img {
 /* line 376, slides.css.scss */
 .f43px small {
   font-size: 36.55px; }
+
+/* line 380, slides.css.scss */
+span.f43px {
+  font-size: 43px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f44px p, .f44px li {
@@ -674,6 +804,11 @@ img {
 .f44px small {
   font-size: 37.4px; }
 
+/* line 380, slides.css.scss */
+span.f44px {
+  font-size: 44px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f45px p, .f45px li {
   font-size: 45px;
@@ -681,6 +816,11 @@ img {
 /* line 376, slides.css.scss */
 .f45px small {
   font-size: 38.25px; }
+
+/* line 380, slides.css.scss */
+span.f45px {
+  font-size: 45px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f46px p, .f46px li {
@@ -690,6 +830,11 @@ img {
 .f46px small {
   font-size: 39.1px; }
 
+/* line 380, slides.css.scss */
+span.f46px {
+  font-size: 46px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f47px p, .f47px li {
   font-size: 47px;
@@ -697,6 +842,11 @@ img {
 /* line 376, slides.css.scss */
 .f47px small {
   font-size: 39.95px; }
+
+/* line 380, slides.css.scss */
+span.f47px {
+  font-size: 47px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f48px p, .f48px li {
@@ -706,6 +856,11 @@ img {
 .f48px small {
   font-size: 40.8px; }
 
+/* line 380, slides.css.scss */
+span.f48px {
+  font-size: 48px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f49px p, .f49px li {
   font-size: 49px;
@@ -713,6 +868,11 @@ img {
 /* line 376, slides.css.scss */
 .f49px small {
   font-size: 41.65px; }
+
+/* line 380, slides.css.scss */
+span.f49px {
+  font-size: 49px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f50px p, .f50px li {
@@ -722,6 +882,11 @@ img {
 .f50px small {
   font-size: 42.5px; }
 
+/* line 380, slides.css.scss */
+span.f50px {
+  font-size: 50px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f51px p, .f51px li {
   font-size: 51px;
@@ -729,6 +894,11 @@ img {
 /* line 376, slides.css.scss */
 .f51px small {
   font-size: 43.35px; }
+
+/* line 380, slides.css.scss */
+span.f51px {
+  font-size: 51px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f52px p, .f52px li {
@@ -738,6 +908,11 @@ img {
 .f52px small {
   font-size: 44.2px; }
 
+/* line 380, slides.css.scss */
+span.f52px {
+  font-size: 52px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f53px p, .f53px li {
   font-size: 53px;
@@ -745,6 +920,11 @@ img {
 /* line 376, slides.css.scss */
 .f53px small {
   font-size: 45.05px; }
+
+/* line 380, slides.css.scss */
+span.f53px {
+  font-size: 53px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f54px p, .f54px li {
@@ -754,6 +934,11 @@ img {
 .f54px small {
   font-size: 45.9px; }
 
+/* line 380, slides.css.scss */
+span.f54px {
+  font-size: 54px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f55px p, .f55px li {
   font-size: 55px;
@@ -761,6 +946,11 @@ img {
 /* line 376, slides.css.scss */
 .f55px small {
   font-size: 46.75px; }
+
+/* line 380, slides.css.scss */
+span.f55px {
+  font-size: 55px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f56px p, .f56px li {
@@ -770,6 +960,11 @@ img {
 .f56px small {
   font-size: 47.6px; }
 
+/* line 380, slides.css.scss */
+span.f56px {
+  font-size: 56px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f57px p, .f57px li {
   font-size: 57px;
@@ -777,6 +972,11 @@ img {
 /* line 376, slides.css.scss */
 .f57px small {
   font-size: 48.45px; }
+
+/* line 380, slides.css.scss */
+span.f57px {
+  font-size: 57px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f58px p, .f58px li {
@@ -786,6 +986,11 @@ img {
 .f58px small {
   font-size: 49.3px; }
 
+/* line 380, slides.css.scss */
+span.f58px {
+  font-size: 58px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f59px p, .f59px li {
   font-size: 59px;
@@ -793,6 +998,11 @@ img {
 /* line 376, slides.css.scss */
 .f59px small {
   font-size: 50.15px; }
+
+/* line 380, slides.css.scss */
+span.f59px {
+  font-size: 59px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f60px p, .f60px li {
@@ -802,6 +1012,11 @@ img {
 .f60px small {
   font-size: 51px; }
 
+/* line 380, slides.css.scss */
+span.f60px {
+  font-size: 60px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f61px p, .f61px li {
   font-size: 61px;
@@ -809,6 +1024,11 @@ img {
 /* line 376, slides.css.scss */
 .f61px small {
   font-size: 51.85px; }
+
+/* line 380, slides.css.scss */
+span.f61px {
+  font-size: 61px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f62px p, .f62px li {
@@ -818,6 +1038,11 @@ img {
 .f62px small {
   font-size: 52.7px; }
 
+/* line 380, slides.css.scss */
+span.f62px {
+  font-size: 62px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f63px p, .f63px li {
   font-size: 63px;
@@ -825,6 +1050,11 @@ img {
 /* line 376, slides.css.scss */
 .f63px small {
   font-size: 53.55px; }
+
+/* line 380, slides.css.scss */
+span.f63px {
+  font-size: 63px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f64px p, .f64px li {
@@ -834,6 +1064,11 @@ img {
 .f64px small {
   font-size: 54.4px; }
 
+/* line 380, slides.css.scss */
+span.f64px {
+  font-size: 64px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f65px p, .f65px li {
   font-size: 65px;
@@ -841,6 +1076,11 @@ img {
 /* line 376, slides.css.scss */
 .f65px small {
   font-size: 55.25px; }
+
+/* line 380, slides.css.scss */
+span.f65px {
+  font-size: 65px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f66px p, .f66px li {
@@ -850,6 +1090,11 @@ img {
 .f66px small {
   font-size: 56.1px; }
 
+/* line 380, slides.css.scss */
+span.f66px {
+  font-size: 66px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f67px p, .f67px li {
   font-size: 67px;
@@ -857,6 +1102,11 @@ img {
 /* line 376, slides.css.scss */
 .f67px small {
   font-size: 56.95px; }
+
+/* line 380, slides.css.scss */
+span.f67px {
+  font-size: 67px;
+  line-height: 1.4; }
 
 /* line 372, slides.css.scss */
 .f68px p, .f68px li {
@@ -866,6 +1116,11 @@ img {
 .f68px small {
   font-size: 57.8px; }
 
+/* line 380, slides.css.scss */
+span.f68px {
+  font-size: 68px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f69px p, .f69px li {
   font-size: 69px;
@@ -874,6 +1129,11 @@ img {
 .f69px small {
   font-size: 58.65px; }
 
+/* line 380, slides.css.scss */
+span.f69px {
+  font-size: 69px;
+  line-height: 1.4; }
+
 /* line 372, slides.css.scss */
 .f70px p, .f70px li {
   font-size: 70px;
@@ -881,3 +1141,8 @@ img {
 /* line 376, slides.css.scss */
 .f70px small {
   font-size: 59.5px; }
+
+/* line 380, slides.css.scss */
+span.f70px {
+  font-size: 70px;
+  line-height: 1.4; }
