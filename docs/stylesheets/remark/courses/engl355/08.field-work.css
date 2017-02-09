@@ -1,0 +1,13 @@
+/* line 2, 08.field-work.css.scss */
+.anna .pull-left {
+  margin-left: -5%;
+  width: 52%; }
+/* line 6, 08.field-work.css.scss */
+.anna .pull-right {
+  width: 29%;
+  float: left; }
+/* line 10, 08.field-work.css.scss */
+.anna .pull-righter {
+  float: right;
+  margin-right: -6%;
+  margin-top: 1.4em; }
