@@ -382,3 +382,13 @@ img {
 		line-height: 1.4;
 	}
 }
+
+.two-column {
+	column-count: 2;
+	column-width: 44%;
+	column-gap: 6%;
+	column-fill: auto;
+	h2 {
+		column-span: all;
+	}
+}
