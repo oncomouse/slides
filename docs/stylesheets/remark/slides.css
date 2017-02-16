@@ -1146,3 +1146,13 @@ span.f69px {
 span.f70px {
   font-size: 70px;
   line-height: 1.4; }
+
+/* line 386, slides.css.scss */
+.two-column {
+  column-count: 2;
+  column-width: 44%;
+  column-gap: 6%;
+  column-fill: auto; }
+  /* line 391, slides.css.scss */
+  .two-column h2 {
+    column-span: all; }
