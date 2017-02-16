@@ -1,0 +1,32 @@
+/* line 1, 10.sentences-readings.css.scss */
+.vd {
+  position: relative; }
+
+/* line 4, 10.sentences-readings.css.scss */
+.top-left,
+.top-right,
+.bot-left,
+.bot-right {
+  position: absolute;
+  width: 50%;
+  height: 50%; }
+
+/* line 12, 10.sentences-readings.css.scss */
+.top-left {
+  top: 0;
+  left: 0; }
+
+/* line 16, 10.sentences-readings.css.scss */
+.top-right {
+  top: 0;
+  right: 0; }
+
+/* line 20, 10.sentences-readings.css.scss */
+.bot-left {
+  bottom: 0;
+  left: 0; }
+
+/* line 24, 10.sentences-readings.css.scss */
+.bot-right {
+  bottom: 0;
+  right: 0; }
