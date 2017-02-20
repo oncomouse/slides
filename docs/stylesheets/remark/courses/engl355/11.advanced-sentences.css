@@ -1,8 +1,8 @@
-/* line 1, 10.sentences-readings.css.scss */
+/* line 1, 11.advanced-sentences.css.scss */
 .vd {
   position: relative; }
 
-/* line 4, 10.sentences-readings.css.scss */
+/* line 4, 11.advanced-sentences.css.scss */
 .top-left,
 .top-right,
 .bot-left,
@@ -11,22 +11,22 @@
   width: 50%;
   height: 50%; }
 
-/* line 12, 10.sentences-readings.css.scss */
+/* line 12, 11.advanced-sentences.css.scss */
 .top-left {
   top: 0;
   left: 0; }
 
-/* line 16, 10.sentences-readings.css.scss */
+/* line 16, 11.advanced-sentences.css.scss */
 .top-right {
   top: 0;
   right: 0; }
 
-/* line 20, 10.sentences-readings.css.scss */
+/* line 20, 11.advanced-sentences.css.scss */
 .bot-left {
   bottom: 0;
   left: 0; }
 
-/* line 24, 10.sentences-readings.css.scss */
+/* line 24, 11.advanced-sentences.css.scss */
 .bot-right {
   bottom: 0;
   right: 0; }
