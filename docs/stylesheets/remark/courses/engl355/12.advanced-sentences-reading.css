@@ -1,0 +1,11 @@
+/* line 1, 12.advanced-sentences-reading.css.scss */
+.stress {
+  color: #dc322f; }
+
+/* line 4, 12.advanced-sentences-reading.css.scss */
+.topic {
+  font-size: inherit;
+  display: inline;
+  position: relative;
+  bottom: auto;
+  right: auto; }
