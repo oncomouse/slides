@@ -14,7 +14,7 @@
 }
 
 #remark-progress-content {
-	@include transition(width 0.5s ease-in);
+	transition: width 0.5s ease-in;
 
 	height: 100%;
 	min-width: 0;
