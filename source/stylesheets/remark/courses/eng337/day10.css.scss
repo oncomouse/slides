@@ -1,8 +1,10 @@
 @import "bourbon";
 
+$modular-scale-ratio: $golden;
+
 .daisy_miller_title {
 	margin: {
-		top: golden-ratio(1em, 3);
+		top: modular-scale(3,1em);
 	};
 	font: {
 		size: 1.5em;
