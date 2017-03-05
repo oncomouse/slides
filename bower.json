@@ -31,7 +31,7 @@
     "reveal.js": "~2.6.2",
     "zepto": "~1.1.4",
     "bourbon": "^4.2.7",
-    "neat": "^1.8.0",
+    "neat": "2.0.0",
     "compass-mixins": "^1.0.2"
   }
 }

@@ -6,15 +6,11 @@ ul li, ol li {
 }
 
 .remark-slide-content {
-	@include outer-container;
+	@include grid-container;
 }
 
 .half-column {
-	@include span-columns(6);
-
-	&:nth-child(odd) {
-		@include omega;
-	}
+	@include grid-column(6);
 }
 
 .slide2 {
@@ -37,13 +33,11 @@ ul li, ol li {
 	}
 
 	.subgenre-list {
-		@include span-columns(4);
+		@include grid-column(4);
 	}
 
 	.definition-list {
-		@include span-columns(8);
-
-		@include omega;
+		@include grid-column(8);
 
 		ul {
 			list-style: none;
@@ -63,9 +57,7 @@ ul li, ol li {
 	}
 
 	.key {
-		@include span-columns(5);
-
-		@include omega;
+		@include grid-column(5);
 
 		//margin: 0 auto
  
@@ -73,7 +65,7 @@ ul li, ol li {
 
 	.graph {
 		//margin: 0 auto
-		@include span-columns(7);
+		@include grid-column(7);
 	}
 
 	ol {
@@ -136,7 +128,7 @@ ul li, ol li {
 	.chart {
 		vertical-align: middle;
 
-		@include span-columns(7);
+		@include grid-column(7);
 
 		table {
 			font-size: 0.72em;
@@ -145,9 +137,9 @@ ul li, ol li {
 	}
 
 	.legend {
-		@include span-columns(5);
+		@include grid-column(5);
 
-		@include omega;
+		
 
 		.column {
 			text-align: left;
@@ -165,9 +157,7 @@ ul li, ol li {
 				}
 			}
 
-			//@include span-columns(6)
-			//&:nth-child(odd)
-			//	@include omega
+			//@include grid-column(6)
 	 
 		}
 	}
@@ -175,17 +165,17 @@ ul li, ol li {
 
 .slide11 {
 	.chart {
-		@include span-columns(8);
+		@include grid-column(8);
 
 		margin-top: 1.2em;
 	}
 
 	.legend {
-		@include span-columns(3);
+		@include grid-column(3);
 
 		@include shift(1);
 
-		@include omega;
+		
 
 		ul {
 			list-style: none;
