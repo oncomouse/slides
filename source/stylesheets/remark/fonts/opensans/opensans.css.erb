@@ -1,6 +1,6 @@
 <%
 def opensans_loader(file)
-	asset_path(:css, 'remark/fonts/opensans/opensans').sub(/opensans\.css$/,"") + file
+	"#{app.config[:http_prefix] === '/' ? '' : app.config[:http_prefix]}/stylesheets/remark/fonts/opensans/" + file
 end
 %>
 /* Include a Twitter Icon */

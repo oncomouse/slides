@@ -1,6 +1,6 @@
 <%
 def icomoon_loader(format)
-	icomoon_path = asset_path(:css, 'remark/fonts/icomoon/icomoon')
+	icomoon_path = "#{app.config[:http_prefix] === '/' ? '' : app.config[:http_prefix]}/stylesheets/remark/fonts/icomoon/icomoon.css"
 	return icomoon_path.sub(/\.css$/,".#{format}")
 end
 %>
