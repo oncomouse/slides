@@ -7,13 +7,13 @@
 	}
 
 	.left-column {
-		@include span-columns(4);
+		@include grid-columns(4);
 	}
 
 	.right-column {
-		@include span-columns(8);
+		@include grid-columns(8);
 
-		@include omega;
+		;
 
 		text-align: center;
 	}
