@@ -481,14 +481,6 @@ code {
 .hug {
   margin-top: 0; }
 
-/* line 4, ../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
-html {
-  box-sizing: border-box; }
-
-/* line 9, ../../../../../.rvm/gems/ruby-2.3.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 /* line 14, hj2.css.scss */
 html {
   font-family: WilliamsCaslonText, "Georgia", "Cambria", "Times New Roman", "Times", serif; }

@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 .hug .title-block {
   margin-top: 0; }
 
-/* line 20, ../../../../../../.rvm/gems/ruby-2.3.1/gems/bourbon-4.2.7/app/assets/stylesheets/addons/_clearfix.scss */
+/* line 20, ../../../../../../.rvm/gems/ruby-2.3.1/gems/bourbon-4.3.3/app/assets/stylesheets/addons/_clearfix.scss */
 .images::after {
   clear: both;
   content: "";
