@@ -63,11 +63,11 @@ after_build do
 		latency: 2
 end
 
-require_relative "./lib/build_cleaner"
+#require_relative "./lib/build_cleaner"
 
 # Build-specific configuration
 configure :build do
-	activate :build_cleaner
+	#activate :build_cleaner
 
 	ignore "/**/*.rb"
 	ignore "javascripts/*"
