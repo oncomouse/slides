@@ -2,7 +2,7 @@
 @import "neat";
 
 .agenda {
-	@include grid-columns(10);
+	@include grid-column(10);
 
 	@include grid-push(3);
 }

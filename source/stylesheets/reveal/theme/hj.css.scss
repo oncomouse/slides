@@ -173,11 +173,11 @@ $scale: 1.25;
 }
 
 .pull-left, .pull-right {
-	@include span-columns(6);
+	@include grid-column(6);
 }
 
 .pull-right {
-	@include omega;
+	;
 }
 
 .problem {

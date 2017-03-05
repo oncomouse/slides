@@ -27,7 +27,7 @@
 	}
 
 	blockquote {
-		@include grid-columns(4);
+		@include grid-column(4);
 
 		@include grid-push(4);
 	}
@@ -39,7 +39,7 @@
 	}
 
 	blockquote {
-		@include grid-columns(6);
+		@include grid-column(6);
 
 		@include grid-push(3);
 
