@@ -4,7 +4,7 @@
 .tennessee {
 	@include span-columns(8);
 
-	@include shift(2);
+	@include grid-push(2);
 }
 
 .jar {

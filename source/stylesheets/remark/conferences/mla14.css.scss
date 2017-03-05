@@ -173,7 +173,7 @@ ul li, ol li {
 	.legend {
 		@include grid-column(3);
 
-		@include shift(1);
+		@include grid-push(1);
 
 		
 

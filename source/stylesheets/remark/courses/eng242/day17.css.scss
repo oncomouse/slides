@@ -29,7 +29,7 @@
 	blockquote {
 		@include span-columns(4);
 
-		@include shift(4);
+		@include grid-push(4);
 	}
 }
 
@@ -41,7 +41,7 @@
 	blockquote {
 		@include span-columns(6);
 
-		@include shift(3);
+		@include grid-push(3);
 
 		font-size: 0.95em;
 
