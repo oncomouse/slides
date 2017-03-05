@@ -48,36 +48,20 @@ ready do
     ignore "remark_markdown_template.html"
 end
 
-if not build?
-	activate :external_pipeline,
-		name: :gulp,
-		command: "node_modules/.bin/gulp watch",
-		source: ".tmp/dist",
-		latency: 2
-end
-after_build do
-	activate :external_pipeline,
-		name: :gulp,
-		command: "env NODE_ENV=production node_modules/.bin/gulp build",
-		source: ".tmp/dist",
-		latency: 2
+activate :sprockets
+after_configuration do
+	@bower_config = {"directory" => "bower_components"}
+	sprockets.append_path File.join "#{root}", @bower_config["directory"]
+	sprockets.append_path File.join "#{root}", @bower_config["directory"], "bourbon", "app", "assets", "stylesheets"
+	sprockets.append_path File.join "#{root}", @bower_config["directory"], "neat", "core"
+	compass_config do |config|
+			config.add_import_path File.join "#{root}", @bower_config["directory"]
+	end
 end
 
-#require_relative "./lib/build_cleaner"
-
-# Build-specific configuration
 configure :build do
-	#activate :build_cleaner
-
-	ignore "/**/*.rb"
-	ignore "javascripts/*"
-	#ignore "stylesheets/*"
 	set :http_prefix, "/slides"
 end
-
-#activate :deploy do |deploy|
-#	deploy.deploy_method = :git
-#end
 
 parse_files = Dir.entries("#{Dir.pwd}/source/")
 
