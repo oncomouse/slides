@@ -1,8 +1,6 @@
-/* line 1, day17.css.scss */
 .crop {
   overflow: hidden;
   margin: auto auto -3rem;
   height: 451px; }
-  /* line 5, day17.css.scss */
   .crop img {
     margin-top: -28px; }

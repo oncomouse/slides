@@ -1,50 +1,37 @@
 @import url(https://code.cdn.mozilla.net/fonts/fira.css);
-/* line 20, day27.css.scss */
 .remark-container {
   background: #eee8d5; }
 
-/* line 23, day27.css.scss */
 .remark-slide-scaler {
   box-shadow: 0 0 30px #c9b67a; }
 
-/* line 31, day27.css.scss */
 .small blockquote p {
   font-size: 0.8em !important;
   line-height: 1.25; }
 
-/* line 39, day27.css.scss */
 .bigger .remark-slide-number {
   bottom: 13px; }
 
-/* line 44, day27.css.scss */
 .lofi {
   background: #002b36;
   color: #fdf6e3; }
-  /* line 47, day27.css.scss */
   .lofi * {
     font-family: "Fira Mono" !important; }
-  /* line 50, day27.css.scss */
   .lofi p, .lofi li {
     font-size: 19px;
     line-height: 1.25; }
-  /* line 54, day27.css.scss */
   .lofi em {
     font-style: normal;
     color: #2aa198; }
-  /* line 59, day27.css.scss */
   .lofi.big p, .lofi.big li {
     font-size: 1.25rem;
     line-height: 1.35; }
-  /* line 64, day27.css.scss */
   .lofi strong {
     color: inherit; }
-  /* line 67, day27.css.scss */
   .lofi h1, .lofi h2 {
     color: #268bd2; }
-  /* line 70, day27.css.scss */
   .lofi pre {
     font-family: "Courier New", Courier, mono;
     font-size: 16px; }
-  /* line 74, day27.css.scss */
   .lofi span.lo-fi {
     color: #2aa198; }

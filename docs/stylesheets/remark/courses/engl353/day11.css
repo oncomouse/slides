@@ -1,33 +1,23 @@
-/* line 1, day11.css.scss */
 .names {
   margin-top: 5rem; }
-  /* line 3, day11.css.scss */
   .names h1 {
     font-size: 6rem;
     line-height: 7.3rem; }
-    /* line 6, day11.css.scss */
     .names h1 .small {
       font-size: 2rem;
       font-weight: normal; }
-    /* line 10, day11.css.scss */
     .names h1 .lato {
       margin-left: -30px; }
-    /* line 13, day11.css.scss */
     .names h1 .ocrates {
       margin-left: -5px; }
 
-/* line 19, day11.css.scss */
 .dates {
   margin-top: -37px; }
-  /* line 21, day11.css.scss */
   .dates .socrates {
     margin-left: 58px; }
-  /* line 24, day11.css.scss */
   .dates .plato {
     margin-left: 26px; }
-  /* line 27, day11.css.scss */
   .dates .aristotle {
     margin-left: 52px; }
-  /* line 30, day11.css.scss */
   .dates .alexander {
     margin-left: 106px; }

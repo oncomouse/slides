@@ -1,44 +1,32 @@
-/* line 2, day19.css.scss */
 .fruit .pull-left {
   width: 58%; }
-/* line 5, day19.css.scss */
 .fruit .pull-right {
   width: 36%; }
 
-/* line 11, day19.css.scss */
 .histories img {
   max-width: 55%; }
 
-/* line 17, day19.css.scss */
 .audience .pull-left {
   width: 27%; }
-  /* line 19, day19.css.scss */
   .audience .pull-left img {
     margin-top: 1.35rem; }
-/* line 23, day19.css.scss */
 .audience .pull-right {
   width: 73%; }
 
-/* line 29, day19.css.scss */
 .lucifer .crop {
   overflow: hidden;
   margin: auto auto -3rem;
   height: 262px; }
-  /* line 33, day19.css.scss */
   .lucifer .crop img {
     margin-top: -5px;
     max-width: 54%; }
 
-/* line 40, day19.css.scss */
 .metaphor .pull-right {
   width: 32%; }
-  /* line 42, day19.css.scss */
   .metaphor .pull-right img {
     margin-top: 1.35rem; }
-/* line 46, day19.css.scss */
 .metaphor .pull-left {
   width: 68%; }
 
-/* line 52, day19.css.scss */
 .persuasion img {
   max-width: 60%; }

@@ -1,13 +1,9 @@
-/* line 2, day21.css.scss */
 .small p, .small li {
   font-size: 0.9em; }
-/* line 7, day21.css.scss */
 .small p {
   margin-top: 1.25em; }
 
-/* line 14, day21.css.scss */
 .smaller p, .smaller li {
   font-size: 0.75em; }
-/* line 19, day21.css.scss */
 .smaller p {
   margin-top: 1.25em; }

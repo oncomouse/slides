@@ -1,13 +1,9 @@
-/* line 2, day18.css.scss */
 .small p, .small li {
   font-size: 0.9em; }
-/* line 7, day18.css.scss */
 .small p {
   margin-top: 1.15em; }
 
-/* line 14, day18.css.scss */
 .smaller p, .smaller li {
   font-size: 0.8em; }
-/* line 19, day18.css.scss */
 .smaller p {
   margin-top: 0.75em; }

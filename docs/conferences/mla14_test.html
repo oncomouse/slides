@@ -15,10 +15,14 @@
       var remark_js = "/slides/javascripts/remark/remark.min.js",
       	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
       	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  d3_js = "/slides/javascripts/lib/nvd3/d3.min.js",
+      	  nv_d3_js = "/slides/javascripts/lib/nvd3/nv.d3.min.js",
+      	  nv_d3_css = "/slides/stylesheets/nvd3/nv.d3.css",
+      	  mla14_test_js = "/slides/javascripts/charts/conferences/mla14_test.js";
       	
       // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, d3_js, nv_d3_js, nv_d3_css, mla14_test_js, function(){
       
       	// Ugly fix of HAML's formatting problems:
       	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
@@ -36,7 +40,8 @@
       		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar['height'] + 'px');
       	}).resize();*/
       	
-      	
+      	// Load any add-ons:
+      	load_charts();
       });
     </script>
   </head>

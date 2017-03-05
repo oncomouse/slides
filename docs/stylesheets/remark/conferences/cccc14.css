@@ -1,105 +1,80 @@
-/* line 24, ../themes/default/_colors.scss */
 body {
   color: black; }
 
-/* line 28, ../themes/default/_colors.scss */
 .remark-slide {
   background-color: white; }
 
-/* line 34, ../themes/default/_colors.scss */
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
-/* line 39, ../themes/default/_colors.scss */
 .emph, strong {
   color: #002387; }
 
-/* line 43, ../themes/default/_colors.scss */
 a, a > code {
   color: #002387; }
 
-/* line 47, ../themes/default/_colors.scss */
 .inverse {
   background: black;
   color: white; }
-  /* line 51, ../themes/default/_colors.scss */
   .inverse h1, .inverse h2 {
     text-shadow: 1px 1px 2px rgba(136, 136, 136, 0.2); }
 
-/* line 56, ../themes/default/_colors.scss */
 .left-column {
   color: #0d0d0d; }
-  /* line 59, ../themes/default/_colors.scss */
   .left-column h1, .left-column h2, .left-column h3 {
     color: #0d0d0d; }
-  /* line 63, ../themes/default/_colors.scss */
   .left-column .current {
     color: #0d0d0d; }
 
-/* line 69, ../themes/default/_colors.scss */
 #remark-progress-content {
   background-color: #002387; }
 
-/* line 76, ../themes/default/_colors.scss */
 .hljs-solarized_light:not(.inverse) pre, .hljs-solarized_light:not(.inverse) pre code {
   background: #0d0d0d !important;
   color: #777; }
 
-/* line 3, cccc14.css.scss */
 li {
   margin-bottom: 1em; }
 
-/* line 8, cccc14.css.scss */
 .alaska img, .psychogeography img, .utah img {
   width: 95%;
   margin: 0 auto;
   display: block; }
 
-/* line 16, cccc14.css.scss */
 .author h2, .author h3 {
   font-weight: 600; }
 
-/* line 23, cccc14.css.scss */
 .left-column {
   margin-top: 3em; }
-  /* line 26, cccc14.css.scss */
   .left-column h3 {
     font-size: 1.1rem;
     opacity: 0.5; }
-  /* line 32, cccc14.css.scss */
   .left-column .current h3 {
     opacity: 1;
     color: #002387; }
 
-/* line 40, cccc14.css.scss */
 .metadata blockquote {
   font-size: 0.95em; }
 
-/* line 46, cccc14.css.scss */
 .dancing-bug1 img, .dancing-bug2 img, .dancing-bug3 img {
   position: absolute;
   width: 600px; }
-/* line 51, cccc14.css.scss */
 .dancing-bug1 .copyright, .dancing-bug2 .copyright, .dancing-bug3 .copyright {
   position: absolute;
   top: 429px;
   left: 455px; }
-  /* line 56, cccc14.css.scss */
   .dancing-bug1 .copyright h3, .dancing-bug2 .copyright h3, .dancing-bug3 .copyright h3 {
     font-size: 1rem; }
 
-/* line 63, cccc14.css.scss */
 .dancing-bug1 img {
   top: 112px;
   clip: rect(58px, 584px, 302px, 0px); }
 
-/* line 70, cccc14.css.scss */
 .dancing-bug2 img {
   top: -137px;
   clip: rect(307px, 584px, 551px, 0px); }
 
-/* line 77, cccc14.css.scss */
 .dancing-bug3 img {
   top: -386px;
   clip: rect(552px, 584px, 797px, 0px); }

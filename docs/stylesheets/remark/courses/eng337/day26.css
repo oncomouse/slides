@@ -1,66 +1,49 @@
-/* line 1, day26.css.scss */
 .rinehart {
   font-size: 0.85em; }
-  /* line 5, day26.css.scss */
   .rinehart * {
     line-height: 1.25; }
-  /* line 8, day26.css.scss */
   .rinehart .one {
     width: 50%;
     text-align: left;
     margin: 0 auto;
       margin-bottom: 1em; }
-  /* line 15, day26.css.scss */
   .rinehart .two {
     width: 75%;
     text-align: left;
     margin: 0 auto;
       margin-bottom: 1em; }
-  /* line 22, day26.css.scss */
   .rinehart .indent {
     text-align: right; }
 
-/* line 27, day26.css.scss */
 .church {
   font-size: 0.9em; }
-  /* line 31, day26.css.scss */
   .church .topic {
     font-size: 1.66667em; }
 
-/* line 36, day26.css.scss */
 .light {
   font-family: "Georgia";
   font-size: 0.9em; }
 
-/* line 45, day26.css.scss */
 .definition ol li {
   margin-bottom: 1em; }
-  /* line 49, day26.css.scss */
   .definition ol li li {
     margin-bottom: 0; }
-/* line 56, day26.css.scss */
 .definition ul {
   padding-left: 0; }
 
-/* line 61, day26.css.scss */
 .small {
   font-size: 0.90em; }
 
-/* line 65, day26.css.scss */
 .smaller {
   font-size: 0.80em; }
 
-/* line 70, day26.css.scss */
 .dream blockquote {
   font-style: italic; }
 
-/* line 75, day26.css.scss */
 .dream {
   font-size: 0.85em; }
-  /* line 79, day26.css.scss */
   .dream p {
     margin-top: 1em;
     line-height: 1.25; }
-  /* line 83, day26.css.scss */
   .dream .topic {
     font-size: 1.875em; }

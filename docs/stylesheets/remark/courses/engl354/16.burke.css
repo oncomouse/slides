@@ -1,4 +1,3 @@
-/* line 3, 16.burke.css.scss */
 #pentad1 {
   position: absolute;
   width: 365px;
@@ -6,7 +5,6 @@
   margin: 0;
   left: 251px; }
 
-/* line 10, 16.burke.css.scss */
 #pentad2 {
   width: 365px;
   position: absolute;
@@ -15,7 +13,6 @@
   margin: 0;
   left: 195px; }
 
-/* line 18, 16.burke.css.scss */
 #pentad3 {
   width: 365px;
   position: absolute;
@@ -24,7 +21,6 @@
   margin: 0;
   left: 308px; }
 
-/* line 26, 16.burke.css.scss */
 #pentad4 {
   width: 365px;
   margin: 0;
@@ -33,7 +29,6 @@
   transform: rotate(36deg);
   left: 217px; }
 
-/* line 34, 16.burke.css.scss */
 #pentad5 {
   width: 365px;
   margin: 0;
@@ -42,7 +37,6 @@
   transform: rotate(-36deg);
   left: 286px; }
 
-/* line 43, 16.burke.css.scss */
 #agent {
   position: absolute;
   top: 136px;
@@ -50,7 +44,6 @@
   font-weight: bold;
   font-size: 1.25rem; }
 
-/* line 50, 16.burke.css.scss */
 #act {
   position: absolute;
   top: 281px;
@@ -58,7 +51,6 @@
   font-weight: bold;
   font-size: 1.25rem; }
 
-/* line 57, 16.burke.css.scss */
 #agency {
   position: absolute;
   top: 500px;
@@ -66,7 +58,6 @@
   font-weight: bold;
   font-size: 1.25rem; }
 
-/* line 64, 16.burke.css.scss */
 #purpose {
   position: absolute;
   top: 281px;
@@ -74,7 +65,6 @@
   font-weight: bold;
   font-size: 1.25rem; }
 
-/* line 71, 16.burke.css.scss */
 #scene {
   position: absolute;
   top: 505px;
@@ -82,7 +72,6 @@
   font-weight: bold;
   font-size: 1.25rem; }
 
-/* line 79, 16.burke.css.scss */
 #ratio {
   position: absolute;
   text-align: center;

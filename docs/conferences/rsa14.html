@@ -100,82 +100,177 @@
       </p>
       <div class='slides'>
         <style>
-          @charset "UTF-8";
-          /* line 4, (__TEMPLATE__) */
-          .center iframe.twitter-tweet {
-            margin: auto !important; }
+          /*
+          Error: File to import not found or unreadable: bourbon.
+                 Load paths:
+                   /Users/apilsch/Projects/slides/source/stylesheets
+                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
+                   Compass::SpriteImporter
+                   /Users/apilsch/Projects/slides/source/stylesheets
+                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
+                   Compass::SpriteImporter
+                   /Users/apilsch/Projects/slides/source/stylesheets
+                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
+                   Compass::SpriteImporter
+                  on line 1 of (__TEMPLATE__)
           
-          /* line 10, (__TEMPLATE__) */
-          .reveal img {
-            border: 0 !important; }
-          /* line 19, (__TEMPLATE__) */
-          .reveal blockquote {
-            width: 100% !important;
-            font-style: normal !important;
-            text-align: left; }
-            /* line 25, (__TEMPLATE__) */
-            .reveal blockquote p {
-              line-height: 1.35em !important; }
-              /* line 28, (__TEMPLATE__) */
-              .reveal blockquote p:last-child {
-                text-align: right;
-                margin-top: 0.5em;
-                font-weight: 400;
-                font-style: italic;
-                display: block;
-                width: 100%; }
-                /* line 40, (__TEMPLATE__) */
-                .reveal blockquote p:last-child:before {
-                  content: "—"; }
-                /* line 44, (__TEMPLATE__) */
-                .reveal blockquote p:last-child em {
-                  font-style: normal; }
+          1: @import "bourbon";
+          2: 
+          3: .center {
+          4: 	iframe.twitter-tweet {
+          5: 		margin: auto !important;
+          6: 	}
           
-          /* line 57, (__TEMPLATE__) */
-          .title h2 {
-            font-weight: 400;
-            font-size: 1.6em;
-            margin-top: 1em; }
-          
-          /* line 66, (__TEMPLATE__) */
-          .title-block {
-            margin-top: 2em !important; }
-            /* line 69, (__TEMPLATE__) */
-            .title-block:first-child {
-              margin-top: 0 !important; }
-            /* line 73, (__TEMPLATE__) */
-            .title-block h1, .title-block h2 {
-              margin-top: 0 !important; }
-          
-          /* line 78, (__TEMPLATE__) */
-          .things {
-            margin-top: 2em !important; }
-            /* line 20, /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bourbon-4.3.3/app/assets/stylesheets/addons/_clearfix.scss */
-            .things::after {
-              clear: both;
-              content: "";
-              display: table; }
-          
-          /* line 84, (__TEMPLATE__) */
-          .thing {
-            float: left; }
-            /* line 88, (__TEMPLATE__) */
-            .thing:nth-child(1):after, .thing:nth-child(2):after {
-              content: "⋯";
-              font-size: 150px;
-              padding-left: 50px;
-              padding-right: 50px; }
-          
-          /* line 99, (__TEMPLATE__) */
-          .references {
-            width: 100%;
-            margin: 0 auto !important;
-            text-align: left; }
-            /* line 104, (__TEMPLATE__) */
-            .references p {
-              font-size: 0.75em !important;
-              padding-left: 0.5in;
-              text-indent: -0.5in; }
+          Backtrace:
+          (__TEMPLATE__):1
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:71:in `evaluate'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.6/lib/tilt/template.rb:100:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:56:in `render_with_options'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:184:in `block in compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:162:in `instance_eval'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:162:in `compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:141:in `internal_compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:273:in `compile_filter'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:20:in `compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:22:in `block (2 levels) in compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:22:in `each'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:22:in `block in compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:95:in `compile_root'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/compiler.rb:22:in `compile'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/engine.rb:66:in `initialize'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:33:in `new'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:33:in `evaluate'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.6/lib/tilt/template.rb:100:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:9:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:184:in `_render_with_all_renderers'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:147:in `block in render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:146:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/sitemap/resource.rb:154:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:112:in `process_request'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:66:in `block in call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `catch'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/urlmap.rb:68:in `block in call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/urlmap.rb:53:in `each'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/urlmap.rb:53:in `call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/lint.rb:49:in `_call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/lint.rb:37:in `call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/builder.rb:153:in `call'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/mock.rb:74:in `request'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/rack-2.0.1/lib/rack/mock.rb:56:in `get'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:232:in `block in output_resource'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:225:in `output_resource'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:462:in `call_with_index'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:433:in `process_incoming_jobs'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:415:in `block in worker'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:406:in `fork'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:406:in `worker'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:397:in `block in create_workers'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `each'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `each_with_index'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `create_workers'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:338:in `work_in_processes'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:252:in `map'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:131:in `output_files'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:71:in `block in run!'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:70:in `run!'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:80:in `block in build'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.2/lib/active_support/notifications.rb:166:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:79:in `build'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `block in invoke_all'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `each'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `map'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:133:in `invoke_all'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/group.rb:232:in `dispatch'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:115:in `invoke'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor.rb:40:in `block in register'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/command.rb:27:in `run'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/invocation.rb:126:in `invoke_command'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor.rb:369:in `dispatch'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/thor-0.19.4/lib/thor/base.rb:444:in `start'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/bin/middleman:23:in `load'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/bin/middleman:23:in `<top (required)>'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/bin/bundle:23:in `load'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/bin/bundle:23:in `<main>'
+          */
+          body:before {
+            white-space: pre;
+            font-family: monospace;
+            content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A         on line 1 of (__TEMPLATE__)\A \A 1: @import \"bourbon\";\A 2: \A 3: .center {\A 4: 	iframe.twitter-tweet {\A 5: 		margin: auto !important;\A 6: 	}"; }
         </style>
         <section class='title'>
           <div class='title-block'>

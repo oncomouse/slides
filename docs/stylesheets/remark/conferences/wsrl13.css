@@ -1,80 +1,60 @@
-/* line 4, wsrl13.css.scss */
 .hamlet-quote blockquote > p {
   font-size: 1.45rem;
   line-height: 1.5rem;
   margin: 0 auto; }
 
-/* line 11, wsrl13.css.scss */
 .hamlet-attribution {
   margin-left: 3.75em; }
 
-/* line 17, wsrl13.css.scss */
 .moor {
   text-align: center; }
-  /* line 20, wsrl13.css.scss */
   .moor h1 {
     font-size: 5.6em; }
-  /* line 24, wsrl13.css.scss */
   .moor h2 {
     font-size: 1.6em; }
 
-/* line 30, wsrl13.css.scss */
 .more-moor .title-block {
   margin: 0 auto;
   text-align: center; }
-/* line 35, wsrl13.css.scss */
 .more-moor h1 {
   font-size: 4.5em;
   line-height: 0.8em; }
-/* line 40, wsrl13.css.scss */
 .more-moor h2 {
   font-size: 3.4em; }
 
-/* line 45, wsrl13.css.scss */
 .moor-question {
   margin: 0 auto;
   text-align: center; }
-  /* line 49, wsrl13.css.scss */
   .moor-question h1 {
     font-size: 13.6em;
     line-height: 0.95em;
     margin: 0; }
 
-/* line 59, wsrl13.css.scss */
 .science .title-block {
   text-align: center;
   margin-top: 6em; }
-  /* line 65, wsrl13.css.scss */
   .science .title-block h1 {
     font-size: 2.75em; }
-/* line 71, wsrl13.css.scss */
 .science .center h1 {
   font-size: 4.75em; }
 
-/* line 78, wsrl13.css.scss */
 .stalin blockquote {
   font-size: 2.75em;
   font-weight: bold; }
-  /* line 84, wsrl13.css.scss */
   .stalin blockquote p {
     line-height: 1; }
 
-/* line 93, wsrl13.css.scss */
 .hyperobjects img {
   max-height: 45%; }
 
-/* line 98, wsrl13.css.scss */
 .nra {
   padding-top: 7em !important; }
 
-/* line 105, wsrl13.css.scss */
 .latour .figure2 {
   margin-top: 3.5em; }
 
-/* line 113, wsrl13.css.scss */
 .distortion .title-block {
   margin-top: 4em; }
 
-/* line 121, wsrl13.css.scss */
 .rocks img {
   max-height: 57%; }
