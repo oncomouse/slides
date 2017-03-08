@@ -63,7 +63,7 @@ configure :build do
 	set :http_prefix, "/slides"
 end
 
-parse_files = Dir.entries("#{Dir.pwd}/source/")
+parse_files = Dir.entries(File.join(root, "source"))
 
 # Oh boy, recursion!
 while parse_files.length > 0
