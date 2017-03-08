@@ -24,6 +24,6 @@ source 'https://rails-assets.org' do
     gem "rails-assets-zepto", "~>1.1.4"
     gem "rails-assets-bourbon", ">=4.2.7"
     gem "rails-assets-neat", "2.0.0"
-	gem "rails-assets-reveal.js", "~>2.6.2"
-	gem "rails-assets-classlist", "~>2014.7.23"
+	gem "rails-assets-icomoon"
+	gem "rails-assets-open-sans"
 end
