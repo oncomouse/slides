@@ -3,12 +3,13 @@
 source 'http://rubygems.org'
 
 gem "builder", ">=3.0"
-gem "compass", "~> 1.0"
+#gem "compass", "~> 1.0"
 
 gem "middleman", "~> 4"
 gem "middleman-sprockets"
 gem "middleman-autoprefixer"
-gem "middleman-compass"
+#gem "middleman-compass"
+gem "middleman4-sprockets3-sassc"
 gem "opal"
 
 gem "kramdown"
