@@ -22,6 +22,7 @@ source 'https://rails-assets.org' do
     gem "rails-assets-html5shiv", "~>3.7.2"
     gem "rails-assets-nvd3", "~>1.1.15.beta"
     gem "rails-assets-remark", ">=0.13.0"
+	gem "rails-assets-reveal.js", "~>2.6.2"
     gem "rails-assets-zepto", "~>1.1.4"
     gem "rails-assets-bourbon", ">=4.2.7"
     gem "rails-assets-neat", "2.0.0"
