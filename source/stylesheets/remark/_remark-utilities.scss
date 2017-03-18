@@ -311,10 +311,13 @@ img {
 }
 
 .phantom {
-	color: white !important;
+	color: $base_background_color !important;
 	img, img.phantom {
 		opacity: 0;
 	}
+}
+.inverse .phantom {
+	color: $inverse_background_color !important;
 }
 
 
