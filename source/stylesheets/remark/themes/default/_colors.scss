@@ -25,7 +25,7 @@ body {
 	color: $base_font_color;
 }
 
-.remark-slide {
+.remark-slide, .remark-slide-content {
 	background: {
 		color: $base_background_color;
 	};
