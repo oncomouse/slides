@@ -10,7 +10,7 @@
 	- if slideshow_source =~ /^---/
 		- slide_configuration_data = YAML.load slideshow_source.split(/---/)[1]
 	- else
-		- slide_configuration_data = yaml_options
+		- slide_configuration_data = {}
 - else
 	- slideshow_source = File.open(current_page.source_file).read
 	- slide_configuration_data = current_resource.data
