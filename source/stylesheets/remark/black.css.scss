@@ -1,0 +1,17 @@
+@import "typebase";
+@import "bourbon";
+@import "neat";
+@import "themes/black/black";
+@import "remark-utilities";
+.remark-slide-content {
+	padding: 1em 2em;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1.35em;
+}
+.remark-slide-number {
+	font-weight: 400;
+	opacity: 0.75;
+	letter-spacing: -2px;
+}
