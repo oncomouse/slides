@@ -3,13 +3,10 @@
 source 'http://rubygems.org'
 
 gem "builder", ">=3.0"
-#gem "compass", "~> 1.0"
 
 gem "middleman", "~> 4"
 gem "middleman-sprockets"
 gem "middleman-autoprefixer"
-#gem "middleman-compass"
-gem "middleman4-sprockets3-sassc"
 gem "opal"
 
 gem "kramdown"
@@ -28,4 +25,5 @@ source 'https://rails-assets.org' do
     gem "rails-assets-neat", "2.0.0"
 	gem "rails-assets-icomoon"
 	gem "rails-assets-open-sans"
+	gem "rails-assets-classlist"
 end
