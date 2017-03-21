@@ -48,9 +48,9 @@
               		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
               		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
               		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
-              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		//{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		//{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		//{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
               		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
               		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
               	]
@@ -59,12 +59,10 @@
       );
     </script>
     <style>
-      /* line 1, (__TEMPLATE__) */
       .twitter_badge {
         position: relative;
         margin-left: 1.15em !important;
         display: inline-block; }
-        /* line 6, (__TEMPLATE__) */
         .twitter_badge:before, .twitter_badge:after {
           font-family: "icomoon";
           speak: none;
@@ -75,21 +73,18 @@
           line-height: 0.95em;
           -webkit-font-smoothing: antialiased;
           font-size: 0.95em; }
-        /* line 20, (__TEMPLATE__) */
         .twitter_badge:before {
-          content: '"';
+          content: "\f099";
           position: absolute;
           top: -0.05em;
           left: -1.15em; }
       
-      /* line 28, (__TEMPLATE__) */
       #watermark {
         position: fixed;
         z-index: 1000;
         bottom: 0.25em;
         right: 0.5em;
         font-size: 0.9em; }
-        /* line 35, (__TEMPLATE__) */
         #watermark:before {
           top: 0.23em !important; }
     </style>

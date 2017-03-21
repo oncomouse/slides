@@ -2,12 +2,49 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Slides</title>
-    <link href="/slides/stylesheets/global.css" rel="stylesheet" media="all" />
+    <base target='_blank'>
+    <title>
+      Black & White Test Slides
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/black.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+      	}).resize();*/
+      	
+      	// Load any add-ons:
+      	attach_progress_bar(slideshow);
+      });
+    </script>
   </head>
   <body>
-    <div id='content'>
-      <blockquote class="twitter-tweet" lang="en"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-tweet twitter-tweet-rendered" title="Embedded Tweet" height="210" style="display: block; max-width: 99%; min-width: 220px; padding: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; margin: 10px 0px; border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187); border-width: 1px; border-style: solid; box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 3px; position: static; visibility: visible; width: 500px;"><html><head><style type="text/css"></style><base target="_blank"><link type="text/css" rel="stylesheet" href="http://platform.twitter.com/embed/timeline.6a72a50e1a93dc4d97ff897124263ab7.default.css"></head><body><div class="root standalone-tweet ltr twitter-tweet not-touch" dir="ltr" data-dt-months="Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec" data-dt-full="%{hours12}:%{minutes} %{amPm} - %{day} %{month} %{year}" data-dt-am="AM" data-dt-pm="PM" data-iframe-title="Embedded Tweet" data-scribe="page:tweet" id="twitter-widget-0" lang="en" data-twitter-event-id="0"><blockquote class="tweet subject expanded h-entry" data-tweet-id="345590813763440641" cite="https://twitter.com/jamesjbrownjr/status/345590813763440641" data-scribe="section:subject"><div class="header"><div class="h-card p-author" data-scribe="component:author"><a class="u-url profile" href="https://twitter.com/jamesjbrownjr" aria-label="Jim (screen name: jamesjbrownjr)" data-scribe="element:user_link"><img class="u-photo avatar" alt="" src="https://pbs.twimg.com/profile_images/66750753/me_normal.jpg" data-src-2x="https://pbs.twimg.com/profile_images/66750753/me_bigger.jpg" data-scribe="element:avatar"><span class="full-name"><span class="p-name customisable-highlight" data-scribe="element:name">Jim</span></span><span class="p-nickname" dir="ltr" data-scribe="element:screen_name">@<b>jamesjbrownjr</b></span></a></div><a class="follow-button profile" href="https://twitter.com/jamesjbrownjr" role="button" data-scribe="component:followbutton" title="Follow Jim on Twitter"><i class="ic-button-bird"></i>Follow</a></div><div class="content e-entry-content" data-scribe="component:tweet"><p class="e-entry-title">If only someone out there was working on human-oriented rhetoric/philosophy/ontology. <a href="https://twitter.com/search?q=%23HOR&amp;src=hash" data-query-source="hashtag_click" class="hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag">#<b>HOR</b></a> <a href="https://twitter.com/search?q=%23HOP&amp;src=hash" data-query-source="hashtag_click" class="hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag">#<b>HOP</b></a> <a href="https://twitter.com/search?q=%23HOO&amp;src=hash" data-query-source="hashtag_click" class="hashtag customisable" dir="ltr" rel="tag" data-scribe="element:hashtag">#<b>HOO</b></a></p><div class="dateline collapsible-container"><a class="u-url customisable-highlight long-permalink" href="https://twitter.com/jamesjbrownjr/statuses/345590813763440641" data-datetime="2013-06-14T17:17:25+0000" data-scribe="element:full_timestamp"><time pubdate="" class="dt-updated" datetime="2013-06-14T17:17:25+0000" title="Time posted: 14 Jun 2013, 17:17:25 (UTC)">10:17 AM - 14 Jun 2013</time></a></div></div><div class="footer customisable-border" data-scribe="component:footer"><span class="stats-narrow customisable-border"><span class="stats" data-scribe="component:stats"><a href="https://twitter.com/jamesjbrownjr/statuses/345590813763440641" title="View Tweet on Twitter" data-scribe="element:favorite_count"><span class="stats-favorites"><strong>1</strong> favorite</span></a></span></span><ul class="tweet-actions" role="menu" aria-label="Tweet actions" data-scribe="component:actions"><li><a href="https://twitter.com/intent/tweet?in_reply_to=345590813763440641" class="reply-action web-intent" title="Reply" data-scribe="element:reply"><i class="ic-reply ic-mask"></i><b>Reply</b></a></li><li><a href="https://twitter.com/intent/retweet?tweet_id=345590813763440641" class="retweet-action web-intent" title="Retweet" data-scribe="element:retweet"><i class="ic-retweet ic-mask"></i><b>Retweet</b></a></li><li><a href="https://twitter.com/intent/favorite?tweet_id=345590813763440641" class="favorite-action web-intent" title="Favorite" data-scribe="element:favorite"><i class="ic-fav ic-mask"></i><b>Favorite</b></a></li></ul></div></blockquote></div></body></html></iframe></blockquote>
-    </div>
+    <textarea id='source'>class: f45px
+    .f75px[Hello]  
+    Welcome to my presentation</textarea>
   </body>
 </html>

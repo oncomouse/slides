@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5 {
 body {
   color: black; }
 
-.remark-slide {
+.remark-slide, .remark-slide-content {
   background-color: white; }
 
 html * {
@@ -326,6 +326,9 @@ img {
   .phantom img, .phantom img.phantom {
     opacity: 0; }
 
+.inverse .phantom {
+  color: black !important; }
+
 /* Include a Twitter Icon */
 .twitter_badge {
   position: relative;
@@ -341,7 +344,7 @@ img {
     -webkit-font-smoothing: antialiased;
     font-size: 0.95em; }
   .twitter_badge:before {
-    content: "\22";
+    content: "\f099";
     position: absolute;
     top: 0.3em;
     left: -1.15em; }
@@ -874,6 +877,806 @@ span.f69px {
 
 span.f70px {
   font-size: 70px;
+  line-height: 1.4; }
+
+.f71px p, .f71px li {
+  font-size: 71px;
+  line-height: 1.4; }
+.f71px small {
+  font-size: 60.35px; }
+
+span.f71px {
+  font-size: 71px;
+  line-height: 1.4; }
+
+.f72px p, .f72px li {
+  font-size: 72px;
+  line-height: 1.4; }
+.f72px small {
+  font-size: 61.2px; }
+
+span.f72px {
+  font-size: 72px;
+  line-height: 1.4; }
+
+.f73px p, .f73px li {
+  font-size: 73px;
+  line-height: 1.4; }
+.f73px small {
+  font-size: 62.05px; }
+
+span.f73px {
+  font-size: 73px;
+  line-height: 1.4; }
+
+.f74px p, .f74px li {
+  font-size: 74px;
+  line-height: 1.4; }
+.f74px small {
+  font-size: 62.9px; }
+
+span.f74px {
+  font-size: 74px;
+  line-height: 1.4; }
+
+.f75px p, .f75px li {
+  font-size: 75px;
+  line-height: 1.4; }
+.f75px small {
+  font-size: 63.75px; }
+
+span.f75px {
+  font-size: 75px;
+  line-height: 1.4; }
+
+.f76px p, .f76px li {
+  font-size: 76px;
+  line-height: 1.4; }
+.f76px small {
+  font-size: 64.6px; }
+
+span.f76px {
+  font-size: 76px;
+  line-height: 1.4; }
+
+.f77px p, .f77px li {
+  font-size: 77px;
+  line-height: 1.4; }
+.f77px small {
+  font-size: 65.45px; }
+
+span.f77px {
+  font-size: 77px;
+  line-height: 1.4; }
+
+.f78px p, .f78px li {
+  font-size: 78px;
+  line-height: 1.4; }
+.f78px small {
+  font-size: 66.3px; }
+
+span.f78px {
+  font-size: 78px;
+  line-height: 1.4; }
+
+.f79px p, .f79px li {
+  font-size: 79px;
+  line-height: 1.4; }
+.f79px small {
+  font-size: 67.15px; }
+
+span.f79px {
+  font-size: 79px;
+  line-height: 1.4; }
+
+.f80px p, .f80px li {
+  font-size: 80px;
+  line-height: 1.4; }
+.f80px small {
+  font-size: 68px; }
+
+span.f80px {
+  font-size: 80px;
+  line-height: 1.4; }
+
+.f81px p, .f81px li {
+  font-size: 81px;
+  line-height: 1.4; }
+.f81px small {
+  font-size: 68.85px; }
+
+span.f81px {
+  font-size: 81px;
+  line-height: 1.4; }
+
+.f82px p, .f82px li {
+  font-size: 82px;
+  line-height: 1.4; }
+.f82px small {
+  font-size: 69.7px; }
+
+span.f82px {
+  font-size: 82px;
+  line-height: 1.4; }
+
+.f83px p, .f83px li {
+  font-size: 83px;
+  line-height: 1.4; }
+.f83px small {
+  font-size: 70.55px; }
+
+span.f83px {
+  font-size: 83px;
+  line-height: 1.4; }
+
+.f84px p, .f84px li {
+  font-size: 84px;
+  line-height: 1.4; }
+.f84px small {
+  font-size: 71.4px; }
+
+span.f84px {
+  font-size: 84px;
+  line-height: 1.4; }
+
+.f85px p, .f85px li {
+  font-size: 85px;
+  line-height: 1.4; }
+.f85px small {
+  font-size: 72.25px; }
+
+span.f85px {
+  font-size: 85px;
+  line-height: 1.4; }
+
+.f86px p, .f86px li {
+  font-size: 86px;
+  line-height: 1.4; }
+.f86px small {
+  font-size: 73.1px; }
+
+span.f86px {
+  font-size: 86px;
+  line-height: 1.4; }
+
+.f87px p, .f87px li {
+  font-size: 87px;
+  line-height: 1.4; }
+.f87px small {
+  font-size: 73.95px; }
+
+span.f87px {
+  font-size: 87px;
+  line-height: 1.4; }
+
+.f88px p, .f88px li {
+  font-size: 88px;
+  line-height: 1.4; }
+.f88px small {
+  font-size: 74.8px; }
+
+span.f88px {
+  font-size: 88px;
+  line-height: 1.4; }
+
+.f89px p, .f89px li {
+  font-size: 89px;
+  line-height: 1.4; }
+.f89px small {
+  font-size: 75.65px; }
+
+span.f89px {
+  font-size: 89px;
+  line-height: 1.4; }
+
+.f90px p, .f90px li {
+  font-size: 90px;
+  line-height: 1.4; }
+.f90px small {
+  font-size: 76.5px; }
+
+span.f90px {
+  font-size: 90px;
+  line-height: 1.4; }
+
+.f91px p, .f91px li {
+  font-size: 91px;
+  line-height: 1.4; }
+.f91px small {
+  font-size: 77.35px; }
+
+span.f91px {
+  font-size: 91px;
+  line-height: 1.4; }
+
+.f92px p, .f92px li {
+  font-size: 92px;
+  line-height: 1.4; }
+.f92px small {
+  font-size: 78.2px; }
+
+span.f92px {
+  font-size: 92px;
+  line-height: 1.4; }
+
+.f93px p, .f93px li {
+  font-size: 93px;
+  line-height: 1.4; }
+.f93px small {
+  font-size: 79.05px; }
+
+span.f93px {
+  font-size: 93px;
+  line-height: 1.4; }
+
+.f94px p, .f94px li {
+  font-size: 94px;
+  line-height: 1.4; }
+.f94px small {
+  font-size: 79.9px; }
+
+span.f94px {
+  font-size: 94px;
+  line-height: 1.4; }
+
+.f95px p, .f95px li {
+  font-size: 95px;
+  line-height: 1.4; }
+.f95px small {
+  font-size: 80.75px; }
+
+span.f95px {
+  font-size: 95px;
+  line-height: 1.4; }
+
+.f96px p, .f96px li {
+  font-size: 96px;
+  line-height: 1.4; }
+.f96px small {
+  font-size: 81.6px; }
+
+span.f96px {
+  font-size: 96px;
+  line-height: 1.4; }
+
+.f97px p, .f97px li {
+  font-size: 97px;
+  line-height: 1.4; }
+.f97px small {
+  font-size: 82.45px; }
+
+span.f97px {
+  font-size: 97px;
+  line-height: 1.4; }
+
+.f98px p, .f98px li {
+  font-size: 98px;
+  line-height: 1.4; }
+.f98px small {
+  font-size: 83.3px; }
+
+span.f98px {
+  font-size: 98px;
+  line-height: 1.4; }
+
+.f99px p, .f99px li {
+  font-size: 99px;
+  line-height: 1.4; }
+.f99px small {
+  font-size: 84.15px; }
+
+span.f99px {
+  font-size: 99px;
+  line-height: 1.4; }
+
+.f100px p, .f100px li {
+  font-size: 100px;
+  line-height: 1.4; }
+.f100px small {
+  font-size: 85px; }
+
+span.f100px {
+  font-size: 100px;
+  line-height: 1.4; }
+
+.f101px p, .f101px li {
+  font-size: 101px;
+  line-height: 1.4; }
+.f101px small {
+  font-size: 85.85px; }
+
+span.f101px {
+  font-size: 101px;
+  line-height: 1.4; }
+
+.f102px p, .f102px li {
+  font-size: 102px;
+  line-height: 1.4; }
+.f102px small {
+  font-size: 86.7px; }
+
+span.f102px {
+  font-size: 102px;
+  line-height: 1.4; }
+
+.f103px p, .f103px li {
+  font-size: 103px;
+  line-height: 1.4; }
+.f103px small {
+  font-size: 87.55px; }
+
+span.f103px {
+  font-size: 103px;
+  line-height: 1.4; }
+
+.f104px p, .f104px li {
+  font-size: 104px;
+  line-height: 1.4; }
+.f104px small {
+  font-size: 88.4px; }
+
+span.f104px {
+  font-size: 104px;
+  line-height: 1.4; }
+
+.f105px p, .f105px li {
+  font-size: 105px;
+  line-height: 1.4; }
+.f105px small {
+  font-size: 89.25px; }
+
+span.f105px {
+  font-size: 105px;
+  line-height: 1.4; }
+
+.f106px p, .f106px li {
+  font-size: 106px;
+  line-height: 1.4; }
+.f106px small {
+  font-size: 90.1px; }
+
+span.f106px {
+  font-size: 106px;
+  line-height: 1.4; }
+
+.f107px p, .f107px li {
+  font-size: 107px;
+  line-height: 1.4; }
+.f107px small {
+  font-size: 90.95px; }
+
+span.f107px {
+  font-size: 107px;
+  line-height: 1.4; }
+
+.f108px p, .f108px li {
+  font-size: 108px;
+  line-height: 1.4; }
+.f108px small {
+  font-size: 91.8px; }
+
+span.f108px {
+  font-size: 108px;
+  line-height: 1.4; }
+
+.f109px p, .f109px li {
+  font-size: 109px;
+  line-height: 1.4; }
+.f109px small {
+  font-size: 92.65px; }
+
+span.f109px {
+  font-size: 109px;
+  line-height: 1.4; }
+
+.f110px p, .f110px li {
+  font-size: 110px;
+  line-height: 1.4; }
+.f110px small {
+  font-size: 93.5px; }
+
+span.f110px {
+  font-size: 110px;
+  line-height: 1.4; }
+
+.f111px p, .f111px li {
+  font-size: 111px;
+  line-height: 1.4; }
+.f111px small {
+  font-size: 94.35px; }
+
+span.f111px {
+  font-size: 111px;
+  line-height: 1.4; }
+
+.f112px p, .f112px li {
+  font-size: 112px;
+  line-height: 1.4; }
+.f112px small {
+  font-size: 95.2px; }
+
+span.f112px {
+  font-size: 112px;
+  line-height: 1.4; }
+
+.f113px p, .f113px li {
+  font-size: 113px;
+  line-height: 1.4; }
+.f113px small {
+  font-size: 96.05px; }
+
+span.f113px {
+  font-size: 113px;
+  line-height: 1.4; }
+
+.f114px p, .f114px li {
+  font-size: 114px;
+  line-height: 1.4; }
+.f114px small {
+  font-size: 96.9px; }
+
+span.f114px {
+  font-size: 114px;
+  line-height: 1.4; }
+
+.f115px p, .f115px li {
+  font-size: 115px;
+  line-height: 1.4; }
+.f115px small {
+  font-size: 97.75px; }
+
+span.f115px {
+  font-size: 115px;
+  line-height: 1.4; }
+
+.f116px p, .f116px li {
+  font-size: 116px;
+  line-height: 1.4; }
+.f116px small {
+  font-size: 98.6px; }
+
+span.f116px {
+  font-size: 116px;
+  line-height: 1.4; }
+
+.f117px p, .f117px li {
+  font-size: 117px;
+  line-height: 1.4; }
+.f117px small {
+  font-size: 99.45px; }
+
+span.f117px {
+  font-size: 117px;
+  line-height: 1.4; }
+
+.f118px p, .f118px li {
+  font-size: 118px;
+  line-height: 1.4; }
+.f118px small {
+  font-size: 100.3px; }
+
+span.f118px {
+  font-size: 118px;
+  line-height: 1.4; }
+
+.f119px p, .f119px li {
+  font-size: 119px;
+  line-height: 1.4; }
+.f119px small {
+  font-size: 101.15px; }
+
+span.f119px {
+  font-size: 119px;
+  line-height: 1.4; }
+
+.f120px p, .f120px li {
+  font-size: 120px;
+  line-height: 1.4; }
+.f120px small {
+  font-size: 102px; }
+
+span.f120px {
+  font-size: 120px;
+  line-height: 1.4; }
+
+.f121px p, .f121px li {
+  font-size: 121px;
+  line-height: 1.4; }
+.f121px small {
+  font-size: 102.85px; }
+
+span.f121px {
+  font-size: 121px;
+  line-height: 1.4; }
+
+.f122px p, .f122px li {
+  font-size: 122px;
+  line-height: 1.4; }
+.f122px small {
+  font-size: 103.7px; }
+
+span.f122px {
+  font-size: 122px;
+  line-height: 1.4; }
+
+.f123px p, .f123px li {
+  font-size: 123px;
+  line-height: 1.4; }
+.f123px small {
+  font-size: 104.55px; }
+
+span.f123px {
+  font-size: 123px;
+  line-height: 1.4; }
+
+.f124px p, .f124px li {
+  font-size: 124px;
+  line-height: 1.4; }
+.f124px small {
+  font-size: 105.4px; }
+
+span.f124px {
+  font-size: 124px;
+  line-height: 1.4; }
+
+.f125px p, .f125px li {
+  font-size: 125px;
+  line-height: 1.4; }
+.f125px small {
+  font-size: 106.25px; }
+
+span.f125px {
+  font-size: 125px;
+  line-height: 1.4; }
+
+.f126px p, .f126px li {
+  font-size: 126px;
+  line-height: 1.4; }
+.f126px small {
+  font-size: 107.1px; }
+
+span.f126px {
+  font-size: 126px;
+  line-height: 1.4; }
+
+.f127px p, .f127px li {
+  font-size: 127px;
+  line-height: 1.4; }
+.f127px small {
+  font-size: 107.95px; }
+
+span.f127px {
+  font-size: 127px;
+  line-height: 1.4; }
+
+.f128px p, .f128px li {
+  font-size: 128px;
+  line-height: 1.4; }
+.f128px small {
+  font-size: 108.8px; }
+
+span.f128px {
+  font-size: 128px;
+  line-height: 1.4; }
+
+.f129px p, .f129px li {
+  font-size: 129px;
+  line-height: 1.4; }
+.f129px small {
+  font-size: 109.65px; }
+
+span.f129px {
+  font-size: 129px;
+  line-height: 1.4; }
+
+.f130px p, .f130px li {
+  font-size: 130px;
+  line-height: 1.4; }
+.f130px small {
+  font-size: 110.5px; }
+
+span.f130px {
+  font-size: 130px;
+  line-height: 1.4; }
+
+.f131px p, .f131px li {
+  font-size: 131px;
+  line-height: 1.4; }
+.f131px small {
+  font-size: 111.35px; }
+
+span.f131px {
+  font-size: 131px;
+  line-height: 1.4; }
+
+.f132px p, .f132px li {
+  font-size: 132px;
+  line-height: 1.4; }
+.f132px small {
+  font-size: 112.2px; }
+
+span.f132px {
+  font-size: 132px;
+  line-height: 1.4; }
+
+.f133px p, .f133px li {
+  font-size: 133px;
+  line-height: 1.4; }
+.f133px small {
+  font-size: 113.05px; }
+
+span.f133px {
+  font-size: 133px;
+  line-height: 1.4; }
+
+.f134px p, .f134px li {
+  font-size: 134px;
+  line-height: 1.4; }
+.f134px small {
+  font-size: 113.9px; }
+
+span.f134px {
+  font-size: 134px;
+  line-height: 1.4; }
+
+.f135px p, .f135px li {
+  font-size: 135px;
+  line-height: 1.4; }
+.f135px small {
+  font-size: 114.75px; }
+
+span.f135px {
+  font-size: 135px;
+  line-height: 1.4; }
+
+.f136px p, .f136px li {
+  font-size: 136px;
+  line-height: 1.4; }
+.f136px small {
+  font-size: 115.6px; }
+
+span.f136px {
+  font-size: 136px;
+  line-height: 1.4; }
+
+.f137px p, .f137px li {
+  font-size: 137px;
+  line-height: 1.4; }
+.f137px small {
+  font-size: 116.45px; }
+
+span.f137px {
+  font-size: 137px;
+  line-height: 1.4; }
+
+.f138px p, .f138px li {
+  font-size: 138px;
+  line-height: 1.4; }
+.f138px small {
+  font-size: 117.3px; }
+
+span.f138px {
+  font-size: 138px;
+  line-height: 1.4; }
+
+.f139px p, .f139px li {
+  font-size: 139px;
+  line-height: 1.4; }
+.f139px small {
+  font-size: 118.15px; }
+
+span.f139px {
+  font-size: 139px;
+  line-height: 1.4; }
+
+.f140px p, .f140px li {
+  font-size: 140px;
+  line-height: 1.4; }
+.f140px small {
+  font-size: 119px; }
+
+span.f140px {
+  font-size: 140px;
+  line-height: 1.4; }
+
+.f141px p, .f141px li {
+  font-size: 141px;
+  line-height: 1.4; }
+.f141px small {
+  font-size: 119.85px; }
+
+span.f141px {
+  font-size: 141px;
+  line-height: 1.4; }
+
+.f142px p, .f142px li {
+  font-size: 142px;
+  line-height: 1.4; }
+.f142px small {
+  font-size: 120.7px; }
+
+span.f142px {
+  font-size: 142px;
+  line-height: 1.4; }
+
+.f143px p, .f143px li {
+  font-size: 143px;
+  line-height: 1.4; }
+.f143px small {
+  font-size: 121.55px; }
+
+span.f143px {
+  font-size: 143px;
+  line-height: 1.4; }
+
+.f144px p, .f144px li {
+  font-size: 144px;
+  line-height: 1.4; }
+.f144px small {
+  font-size: 122.4px; }
+
+span.f144px {
+  font-size: 144px;
+  line-height: 1.4; }
+
+.f145px p, .f145px li {
+  font-size: 145px;
+  line-height: 1.4; }
+.f145px small {
+  font-size: 123.25px; }
+
+span.f145px {
+  font-size: 145px;
+  line-height: 1.4; }
+
+.f146px p, .f146px li {
+  font-size: 146px;
+  line-height: 1.4; }
+.f146px small {
+  font-size: 124.1px; }
+
+span.f146px {
+  font-size: 146px;
+  line-height: 1.4; }
+
+.f147px p, .f147px li {
+  font-size: 147px;
+  line-height: 1.4; }
+.f147px small {
+  font-size: 124.95px; }
+
+span.f147px {
+  font-size: 147px;
+  line-height: 1.4; }
+
+.f148px p, .f148px li {
+  font-size: 148px;
+  line-height: 1.4; }
+.f148px small {
+  font-size: 125.8px; }
+
+span.f148px {
+  font-size: 148px;
+  line-height: 1.4; }
+
+.f149px p, .f149px li {
+  font-size: 149px;
+  line-height: 1.4; }
+.f149px small {
+  font-size: 126.65px; }
+
+span.f149px {
+  font-size: 149px;
+  line-height: 1.4; }
+
+.f150px p, .f150px li {
+  font-size: 150px;
+  line-height: 1.4; }
+.f150px small {
+  font-size: 127.5px; }
+
+span.f150px {
+  font-size: 150px;
   line-height: 1.4; }
 
 .two-column {

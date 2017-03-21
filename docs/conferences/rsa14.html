@@ -47,9 +47,9 @@
               		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
               		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
               		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              		{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-              		{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
-              		{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
+              		//{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              		//{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
+              		//{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
               		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
               		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
               	]
@@ -58,12 +58,10 @@
       );
     </script>
     <style>
-      /* line 1, (__TEMPLATE__) */
       .twitter_badge {
         position: relative;
         margin-left: 1.15em !important;
         display: inline-block; }
-        /* line 6, (__TEMPLATE__) */
         .twitter_badge:before, .twitter_badge:after {
           font-family: "icomoon";
           speak: none;
@@ -74,21 +72,18 @@
           line-height: 0.95em;
           -webkit-font-smoothing: antialiased;
           font-size: 0.95em; }
-        /* line 20, (__TEMPLATE__) */
         .twitter_badge:before {
-          content: '"';
+          content: "\f099";
           position: absolute;
           top: -0.05em;
           left: -1.15em; }
       
-      /* line 28, (__TEMPLATE__) */
       #watermark {
         position: fixed;
         z-index: 1000;
         bottom: 0.25em;
         right: 0.5em;
         font-size: 0.9em; }
-        /* line 35, (__TEMPLATE__) */
         #watermark:before {
           top: 0.23em !important; }
     </style>
@@ -101,58 +96,18 @@
       <div class='slides'>
         <style>
           /*
-          Error: File to import not found or unreadable: bourbon.
-                 Load paths:
-                   /Users/apilsch/Projects/slides/source/stylesheets
-                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
-                   Compass::SpriteImporter
-                   /Users/apilsch/Projects/slides/source/stylesheets
-                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
-                   Compass::SpriteImporter
-                   /Users/apilsch/Projects/slides/source/stylesheets
-                   /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets
-                   Compass::SpriteImporter
+          SassC::SyntaxError: Error: File to import not found or unreadable: bourbon.
+                 Parent style sheet: (__TEMPLATE__)
                   on line 1 of (__TEMPLATE__)
+          >> @import "bourbon";
+             ^
           
-          1: @import "bourbon";
-          2: 
-          3: .center {
-          4: 	iframe.twitter-tweet {
-          5: 		margin: auto !important;
-          6: 	}
           
           Backtrace:
           (__TEMPLATE__):1
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sassc-1.11.2/lib/sassc/engine.rb:47:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:71:in `evaluate'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.6/lib/tilt/template.rb:100:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.7/lib/tilt/template.rb:109:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:56:in `render_with_options'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:184:in `block in compile'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/filters.rb:162:in `instance_eval'
@@ -168,7 +123,7 @@
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/haml-4.0.7/lib/haml/engine.rb:66:in `initialize'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:33:in `new'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:33:in `evaluate'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.6/lib/tilt/template.rb:100:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.7/lib/tilt/template.rb:109:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:9:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
@@ -206,17 +161,17 @@
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:462:in `call_with_index'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:433:in `process_incoming_jobs'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:415:in `block in worker'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:406:in `fork'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:406:in `worker'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:397:in `block in create_workers'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `each'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `each_with_index'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:396:in `create_workers'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:338:in `work_in_processes'
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.10.0/lib/parallel.rb:252:in `map'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:482:in `call_with_index'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:453:in `process_incoming_jobs'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:435:in `block in worker'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:426:in `fork'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:426:in `worker'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:417:in `block in create_workers'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:416:in `each'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:416:in `each_with_index'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:416:in `create_workers'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:358:in `work_in_processes'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/parallel-1.11.1/lib/parallel.rb:264:in `map'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
@@ -270,7 +225,7 @@
           body:before {
             white-space: pre;
             font-family: monospace;
-            content: "Error: File to import not found or unreadable: bourbon.\A        Load paths:\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A          /Users/apilsch/Projects/slides/source/stylesheets\A          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/compass-core-1.0.3/stylesheets\A          Compass::SpriteImporter\A         on line 1 of (__TEMPLATE__)\A \A 1: @import \"bourbon\";\A 2: \A 3: .center {\A 4: 	iframe.twitter-tweet {\A 5: 		margin: auto !important;\A 6: 	}"; }
+            content: "SassC::SyntaxError: Error: File to import not found or unreadable: bourbon.\A        Parent style sheet: (__TEMPLATE__)\A         on line 1 of (__TEMPLATE__)\A >> @import \"bourbon\";\A    ^\A "; }
         </style>
         <section class='title'>
           <div class='title-block'>

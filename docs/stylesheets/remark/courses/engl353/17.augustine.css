@@ -1,0 +1,6 @@
+.crop {
+  overflow: hidden;
+  margin: auto auto -3rem;
+  height: 451px; }
+  .crop img {
+    margin-top: -28px; }
