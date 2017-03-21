@@ -1,1 +1,1 @@
-// = require classlist/classList.min
+// = require classlist
