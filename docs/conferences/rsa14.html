@@ -96,16 +96,43 @@
       <div class='slides'>
         <style>
           /*
-          SassC::SyntaxError: Error: File to import not found or unreadable: bourbon.
-                 Parent style sheet: (__TEMPLATE__)
+          Error: File to import not found or unreadable: bourbon.
                   on line 1 of (__TEMPLATE__)
-          >> @import "bourbon";
-             ^
           
+          1: @import "bourbon";
+          2: 
+          3: .center {
+          4: 	iframe.twitter-tweet {
+          5: 		margin: auto !important;
+          6: 	}
           
           Backtrace:
           (__TEMPLATE__):1
-          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sassc-1.11.2/lib/sassc/engine.rb:47:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+          /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:71:in `evaluate'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/tilt-2.0.7/lib/tilt/template.rb:109:in `render'
           /Users/apilsch/.rvm/gems/ruby-2.3.1/gems/middleman-core-4.2.1/lib/middleman-core/renderers/haml.rb:56:in `render_with_options'
@@ -225,7 +252,7 @@
           body:before {
             white-space: pre;
             font-family: monospace;
-            content: "SassC::SyntaxError: Error: File to import not found or unreadable: bourbon.\A        Parent style sheet: (__TEMPLATE__)\A         on line 1 of (__TEMPLATE__)\A >> @import \"bourbon\";\A    ^\A "; }
+            content: "Error: File to import not found or unreadable: bourbon.\A         on line 1 of (__TEMPLATE__)\A \A 1: @import \"bourbon\";\A 2: \A 3: .center {\A 4: 	iframe.twitter-tweet {\A 5: 		margin: auto !important;\A 6: 	}"; }
         </style>
         <section class='title'>
           <div class='title-block'>
