@@ -1,5 +1,4 @@
 ---
-class: big
 title: Henry James, IHR Working Group Presentation
 progress_bar: true
 hidden: true
