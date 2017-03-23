@@ -1,0 +1,11 @@
+.gold {
+  color: #F3CE24; }
+
+.blue {
+  color: #528CDA; }
+
+.bottom {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  line-height: 1; }
