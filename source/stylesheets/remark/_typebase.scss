@@ -52,7 +52,9 @@ ul, ol {
 		margin-left: 1.5rem;
 	}
 }
-
+ol + ul, ul + ol {
+	margin-top: -1 * $leading;
+}
 blockquote {
 	line-height: $leading;
 	margin-top: $leading;
