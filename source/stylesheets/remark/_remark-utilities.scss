@@ -347,9 +347,9 @@ img {
 }
 
 // Slide font size utility:
-@for $i from 18 through 150 {
+@for $i from 5 through 150 {
 	.f#{$i}px {
-		p, li {
+		p, li, td {
 			font-size: $i * 1px;
 			line-height: 1.4;
 		}
