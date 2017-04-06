@@ -377,3 +377,12 @@ img {
 		column-span: all;
 	}
 }
+.three-column {
+	column-count: 3;
+	column-width: 26%;
+	column-gap: 6%;
+	column-fill: auto;
+	h2 {
+		column-span: all;
+	}
+}
