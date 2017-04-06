@@ -2403,3 +2403,11 @@ span.f150px {
   column-fill: auto; }
   .two-column h2 {
     column-span: all; }
+
+.three-column {
+  column-count: 3;
+  column-width: 26%;
+  column-gap: 6%;
+  column-fill: auto; }
+  .three-column h2 {
+    column-span: all; }

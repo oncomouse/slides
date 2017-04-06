@@ -2404,6 +2404,14 @@ span.f150px {
   .two-column h2 {
     column-span: all; }
 
+.three-column {
+  column-count: 3;
+  column-width: 26%;
+  column-gap: 6%;
+  column-fill: auto; }
+  .three-column h2 {
+    column-span: all; }
+
 .remark-slide-content {
   padding: 1em 2em; }
 
