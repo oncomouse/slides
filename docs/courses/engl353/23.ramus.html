@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENGL 353 Ramus
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+      	}).resize();*/
+      	
+      	
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: center, middle
+    
+    # Peter Ramus, From *Arguments in Rhetoric Against Quintilian*
+    ---
+    class: f27px
+    ## Purpose in Writing
+    
+    > Yet now Quintilian follows Aristotle's and Cicero's confusion of dialectic and rhetoric. Indeed he makes it worse by fabrications of his own, and by including in his teachings all the disputes concerning all the arts he had read or heard something about  grammar,mathematics, philosophy, drama, wrestling, rhetoric.  We shall distinguish the art of rhetoric from the other arts, and make it a single one of the liberal arts, not a confusedmixture of all arts; we shall separate its true properties, remove weak and useless subtleties, and point out the things that are missing. Thus, just as I previously attacked the Aristotelian obscurity in Cicero, so now in almost the same way I shall attack it in Quintilian. (2)
+    ---
+    class: f24px
+    ## Wasted Youth
+    
+    > Finally, we shall rely on the supreme help of unwavering reason in our attempt to establish the true description and practice of the arts on which, up to this time, I have placed my energy and enthusiasm.  For how many days, indeed how many years and ages do we suppose are wretchedly spent on false conjectures about these disciplines?  I wish I had not known the wretched-ness of wasting so much of my youth in this way. I wish that the scholars of rhetoric and dialectic would heed my advice and would sometimes think of the truth and usefulness of their subjects instead of tenaciously and obstinately quarreling over matters which they have naively accepted at a first hearing, without ever giving them proper consideration.  As a result, if the arts were taught with greater conciseness they would certainly be more easily understood, and once the true method for their use was revealed, they would be more easy to practice. (2)
+    ---
+    class: f22px
+    ## Fallacious
+    
+    > But the writings of these scholars reveal that while they indeed collected a lot of material, they did not evaluate it sufficiently, for in some places I look in vain for a syllogism.  And they did not arrange it in a sufficiently fitting order, for elsewhere I find a lack of method.  I confidently state that I have truly judged and correctly organized this same material in my teachings.  Why so?  Because the dialectical and rhetorical arts of Aristotle, Cicero, and Quintilian are fallacious and confused in their treatment of the dialectical and rhetorical usage of reason, and then of speech  the usage, I repeat, which one observes in their books.  Mine are truthful and distinct, as both the art and its practice prove when they have been thoroughly investigated.  This is the first, the middle, and the final support of my argument.  I do not make evil use of the testimonies of men who can lie, but I establish my argument by the truthfulness of unwavering, natural usage, the usage, I repeat, which I have been following for so many years with the greatest effort through daily practice and by experience in the subject. (3)
+    ---
+    class: f20px
+    ## Good Man?
+    
+    > Listen to me with willing and impartial minds to the extent that unwavering reason will convince, to the extent that certain conclusion will establish, finally to the extent that truth itself  which cannot be refuted or disproved  will hold firm.
+    >
+    > And so first of all let us put forward the definition in which Quintilian outlined for us his ideal orator, and let us refer to this point of dispute everything relevant from all parts of his *Institutiones*. "I teach," he says, "that the orator cannot be perfect unless he is a good man. Consequently I demand from him not only outstanding skill in speaking but all the virtuous qualities of character."...
+    >
+    > What then can be said against this definition of an orator? I assert indeed that such a definition of an orator seems to me to be useless and stupid: Why? Because a definition of any artist which covers more than is included in the rules of his art is superfluous and defective. For the artist must be defined according to the rules of his art, so that only as much of the art as the true, proper principles cover  this much is attributed to the artist, and nothing further.
+    ---
+    class: f40px
+    ## Syllogism
+    
+    1. "The definition of an artist which covers more than is included within the limits of the art is faulty."
+    1. "But the definition of the artist of oratory handed down to us by Quintilian covers more than is included within the limits of the art."
+    1. "Quintilian's definition of the orator is as a result defective."
+    ---
+    class: f25px
+    ## Orator?
+    
+    > This is what Quintilian says, and consequently when he wishes to give a name to a human being who is an ideal leader in the republic and is perfect in every virtue and branch of knowledge, he calls him an "orator" - as if to make him a god rather than just a man skilled in a single art.  Yet at this point Quintilian has proposed that he should give instructions about one certain art and virtue, not about perfection in every art and vir-tue.  He thinks rhetoric is one of the liberal arts, not in fact a common art, and yet at the same time he deems rhetoric to be an art, a science, and a virtue.  For in these books on oratory he has not described any science of civic skills, any theory of life and its duties, nor finally, in the sections dealing with rhetoric, any instruction in those virtues which he claims are parts of the art of oratory.
+    ---
+    class: f34px
+    ## Narrow Definition
+    
+    > Dialectic therefore should draw on the general strengths of human reason in the consideration and the arrangement of the subject matter, while grammar should analyze purity of speech in etymology, syntax, and prosody for the purpose of speaking correctly, and also in orthography for the purpose of writing correctly.  Rhetoric should demonstrate the embellishment of speech first in tropes and figures, second in dignified delivery. 
+    ---
+    class: f36px
+    ## Virtue is Rhetoric?
+    
+    > But Quintilian will persist, as in fact he does, in the same proposition, and indeed he will urge even more keenly that rhetoric is a virtue - this is in the second chapter of the second book -and that no one can be an orator unless he is a good man (this is in the first chapter of the twelfth book) and for this reason, I believe, he will conclude that instruction in virtue is a part of rhetoric.
+    ---
+    class: f23px
+    ## Tone
+    
+    > What then, O Quintilian? is he who knows what is honest and just, himself honest and just?  How few are the spendthrifts and cutthroats who do not know what is honest and just?  If the orator should be fearful in the case of Milo, you say he will not speak well.  What then is the result?  Will rhetoric therefore mean bravery?  Undoubtedly the grammarian will not be able to speak correctly if he is frightened, because when he is upset by fear he will pronounce syllables as long instead of short, or short instead of long.  And because of his confused memory he will produce impurities of diction and solecisms.  Is grammar therefore a moral virtue?  Of what sort will the relationship between the two be?  Indeed it is one thing to be something that is necessary to the other - quite another thing to be a part, a limb of it.  I shall not object to your opinion that moral virtue is undoubtedly useful and suitable for the use of all arts, but in no way shall I admit that any art is a moral virtue.
+    ---
+    class: f23px
+    ## No Persuasion, Only Reason
+    
+    > Nor indeed should we consider it possible that rhetorical judgment is one thing and dialectical judgment another, since for evaluating whether something is truly useful, suitable, fitting, or has the qualities it seems to have, there is one faculty of judgment which the syllogism alone executes and accomplishes.  For something to be under-stood as true or false by the rule of the syllogism is no different than it would be for a subject of control and debate to be spoken truly or falsely.  Why should I say here that Quintilian knew nothing of the theory of judgment or of the teaching of the syllogism when he himself denies that any at all can exist?  Why should I now make a case with many arguments that Quintilian has no train-ing in dialectic?  For he not only confesses what I argue, but openly declares it.  He says that two arts are claimed by the dialecticians - one invention, the other judgment - but he does not believe what he says, because he maintains that there is no art of judgment.
+    ---
+    class: f30px
+    ## Temporality?
+    
+    > He says a lot of things that are partly false, partly true, about the use of arguments.  He also adds some things about arrangement which have nothing to do with syllogism and method since they concern a certain type of artistic arrange-ment.  Although Quintilian orders that a speech should not descend from its most powerful to its weakest point, afterwards in the first chapter of the seventh book he will say the opposite, for there he will teach that the strongest argument against the accused must be refuted first before the weakest can be dealt with.</textarea>
+  </body>
+</html>
