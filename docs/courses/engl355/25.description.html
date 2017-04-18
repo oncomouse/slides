@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <base target='_blank'>
+    <title>
+      ENGL 355 Description
+    </title>
+    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+    <script src="/slides/javascripts/lib/head.min.js"></script>
+    <script>
+      // The javascript files to be loaded are determined by Middleman at compile:
+      var remark_js = "/slides/javascripts/remark/remark.min.js",
+      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+      	
+      // This call to head.js is automatically determined by Middleman at compile:
+      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+      
+      	// Ugly fix of HAML's formatting problems:
+      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+      	
+      	// Load the slideshow:
+      	var slideshow = remark.create({
+      		navigation: {
+      			scroll: false,
+      			touch: true
+      		}
+      	});
+      	/*var image_scalar = {width: 0.85, height: 0.75 };
+      	$(window).on('resize', function() {
+      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+      	}).resize();*/
+      	
+      	
+      });
+    </script>
+  </head>
+  <body>
+    <textarea id='source'>class: middle, center
+    
+    # Description
+    ---
+    class: f55px
+    ## Description
+    
+    .center[[**Assignment Sheet**](http://andrew.pilsch.com/courses/engl355spr2017/assignments/description.pdf)]
+    ---
+    class: f27px
+    ## Pure Description
+    
+    > I placed a jar in Tennessee,  
+    > And round it was, upon a hill.  
+    > It made the slovenly wilderness   
+    > Surround that hill.  
+    > 
+    > The wilderness rose up to it,  
+    > And sprawled around, no longer wild.    
+    > The jar was round upon the ground   
+    > And tall and of a port in air.  
+    > 
+    > It took dominion everywhere.   
+    > The jar was gray and bare.  
+    > It did not give of bird or bush,    
+    > Like nothing else in Tennessee.
+    >
+    > — Wallace Stevens, "Anecdote of the Jar"
+    
+    ---
+    class: f55px
+    ## Italo Calvino
+    
+    .center[[From *Invisible Cities*](https://www.sccs.swarthmore.edu/users/00/pwillen1/lit/citysum.htm)]</textarea>
+  </body>
+</html>
