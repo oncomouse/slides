@@ -1,6 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
+git_source(:github) { |name| "https://github.com/#{name}.git" }
 
 gem "builder", ">=3.0"
 
@@ -12,7 +13,7 @@ gem "opal"
 gem "kramdown"
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "oj" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
-gem "therubyracer", "=0.12.1" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
+gem "therubyracer", "~>0.12" if not RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 gem "emoji_data", github: 'oncomouse/emoji_data.rb', branch: 'master'
 
 source 'https://rails-assets.org' do
