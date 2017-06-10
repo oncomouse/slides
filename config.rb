@@ -9,6 +9,8 @@ set :markdown, :fenced_code_blocks => true,
 							 :footnotes => true,
 							 :superscript => true
 
+Haml::TempleEngine.disable_option_validator!
+
 ###
 # Page options, layouts, aliases and proxies
 ###
