@@ -28,3 +28,4 @@ function attach_progress_bar(slideshow) {
 	showSlideListener(undefined);
 }
 ;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("remark/add-ons/progress-bar");

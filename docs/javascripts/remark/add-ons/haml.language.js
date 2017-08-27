@@ -124,3 +124,5 @@ remark.highlighter.engine.registerLanguage("haml", function(){
     ]
   };
 });
+;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("remark/add-ons/haml.language");

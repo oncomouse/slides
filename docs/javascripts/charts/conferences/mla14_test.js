@@ -247,3 +247,4 @@ function load_charts() {
 }
 
 ;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("charts/conferences/mla14_test");

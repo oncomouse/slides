@@ -1,282 +1,283 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <base target='_blank'>
-    <title>
-      MLA 14
-    </title>
-    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/conferences/mla14.css" rel="stylesheet" media="all" />
-    <script src="/slides/javascripts/lib/head.min.js"></script>
-    <script>
-      // The javascript files to be loaded are determined by Middleman at compile:
-      var remark_js = "/slides/javascripts/remark/remark.min.js",
-      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
-      	  Charts_js = "/slides/javascripts/lib/Charts.js",
-      	  mla14_js = "/slides/javascripts/charts/conferences/mla14.js";
-      	
-      // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, Charts_js, mla14_js, function(){
-      
-      	// Ugly fix of HAML's formatting problems:
-      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-      	
-      	// Load the slideshow:
-      	var slideshow = remark.create({
-      		navigation: {
-      			scroll: false,
-      			touch: true
-      		}
-      	});
-      	/*var image_scalar = {width: 0.85, height: 0.75 };
-      	$(window).on('resize', function() {
-      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-      	}).resize();*/
-      	
-      	// Load any add-ons:
-      	load_charts();
-      });
-    </script>
-  </head>
-  <body>
-    <textarea id='source'>class: center, middle, title
-    
-    # Quantifying Yeats’s Dialogues
-    
-    .title-block[
-    ## Shawna Ross
-    ## Arizona State University
-    ]
-    
-    ### .twitter_badge[[@ShawnaRoss](http://twitter.com/ShawnaRoss)]
-    
-    ---
-    class: slide2, middle
-    
-    ### Some of Yeats's Dialogue Poems
-    
-    .half-column[
-    
-    * “The Phases of the Moon”
-    * “The Double Vision of Michael Robartes”
-    * “Ego Dominus Tuus”
-    * “The Coat, the Boat, and the Shoes”
-    * “Adam’s Curse”
-    * “The People”
-    * “A Dialogue of Self and Soul”
-    * “Anashuya and Vijaya”
-    * “The Indian upon God”
-    * “The Hosting of the Sidhe”
-    * “He Hears the Cry of the Sidhe”
-    
-    
-    ]
-    .half-column[
-    
-    * “The Brown Penny”
-    * “The Dolls”
-    * “Owen Aherne and His Dancers”
-    * “I Am of Ireland”
-    * “The Grey Rock”
-    * “The Three Beggars”
-    * “The Black Tower”
-    * “The Curse of Cromwell”
-    * “The Three Bushes”
-    * “Fergus and the Druid”
-    * “Cuchulain’s Fight with the Sea”
-    
-    ]
-    
-    ---
-    class: slide3, middle
-    ### Dialogue Subgenres
-    
-    .subgenre-list[
-    
-    1. Self-quoting 
-    1. Hypothetical 
-    1. 3rd person
-    1. 1st person			
-    1. Juxtaposed			
-    1. Dramatic			
-    1. Choral			
-    	7. Simple			
-    	7. Framed-quote		
-    	7. Narration		
-    	7. Dramatic		
-    	7. Experimental		
-    1. Imperative			
-    1. Combination		
-    1. Incidental
-    ]		
-    
-    .definition-list[
-    
-    * Speaker quotes self
-    * Speaker quotes impossible speaker
-    * Speaker acts as 3rd person narrator
-    * Speaker acts as 1st person narrator
-    * Bare quotes w/out narrative infrastructure
-    * Set up like a play w/speaker labels
-    * Uses refrains or choruses
-    * No other quotation system involved
-    * Chorus is a 3rd person narrated quotation
-    * Chorus is narrative infrastructure for verses
-    * Verses are 3rd person narrated quotations
-    * Miscellaneous structures used only once
-    * Speaker quotes what he tells someone to say
-    * Combines multiple quotation strategies
-    * Quotations not integral to poetic structure
-    ]
-    
-    ---
-    class: slide4, center
-    
-    .title-block[
-    ### Percentage of Dialogue Poems over Entire Career
-    <canvas id="slide4_figure1" width="580" height="200"></canvas>
-    ]
-    
-    .title-block[
-    ### Number of Dialogue Poems over Entire Career
-    <canvas id="slide4_figure2" width="580" height="200"></canvas>
-    ]
-    
-    ---
-    class: slide5, center,middle
-    
-    ### Percentage of Dialogue Poems
-    
-    .graph[
-    
-    <canvas id="slide5_figure1" width="450" height="350"></canvas>
-    
-    ]
-    .key[
-    
-    1. Michael Robartes and the Dancer (1921)
-    1. The Tower (1928)
-    1. The Winding Stair (1929)
-    1. Parnell’s Funeral and Other Poems (1935)
-    1. New Poems (1938)
-    1. Last Poems (1939)
-    ]
-    ---
-    class: slide6, center, middle
-    
-    ### Frequency of Dramatic Dialogues
-    
-    <canvas id="slide6_figure1" width="670" height="350"></canvas>
-    
-    ---
-    class: slide7, center, middle
-    
-    ### Frequency of Chorus Poems
-    
-    <canvas id="slide7_figure1" width="670" height="350"></canvas>
-    
-    ---
-    class: slide8, middle
-    
-    ### Variety of Dialogue Types by Collection
-    
-    | Collection | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 7a | 7b | 7c | 7d | 7e | 
-    |------------|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
-    | Cross      |   | **1** | **2** |   | **1** | **1** | **3 ** |   |   |    | **3**  |    |    |    |    |
-    | Rose       |   |   | 2 |   | 1 |   |    |   | **1** |    |    |    |    |    |    |
-    | Wind       | **1** | 2 | 1 |   |   |   |    |   | 2 |    |    |    |    |    |    |
-    | S Woods    |   |   |   | **3** |   | 1 | 2  | **1** |   | 1  | 1  | **1**  |    |    |    |
-    | Helmet     | 2 | 1 |   | 1 | 1 |   |    |   |   | 2  |    |    |    |    |    |
-    | Resp       |   | 1 | 2 | 1 |   |   | 2  |   | 2 | 2  | 1  |    | **1**  |    |    |
-    | W Swans    | 1 |   | 3 | 1 | 1 | 4 | 1  |   |   | 3  | 1  |    |    |    |    |
-    | Robartes   | **1** |   | 2 |   |   | 2 |    |   |   | 1  |    |    |    |    |    |
-    | Tower      |   | 1 |   |   |   |   |    |   |   | 3  |    |    |    |    |    |
-    | Stair      |   | **1** | 2 | 3 | 1 | 3 | 10 | **1** | 1 |    | 7  | 1  | 1  |    | **1**  |
-    | Parnell    |   |   | 1 |   |   |   | 2  |   |   | 1  | 2  |    |    |    |    |
-    | New        |   |   | 1 | **2** |   |   | **12** |   |   | 1  | 7  | **1**  | **1**  | **3**  |    |
-    | Last       |   |   | **1** | **1** |   | **1** | **5**  |   |   | **2**  | **3**  |    |    |    | **2**  |
-    
-    
-    ---
-    class: slide9, middle, center
-    
-    ### Total Choruses vs. Simple Choruses
-    
-    <canvas id="slide9_figure1" width="670" height="350"></canvas>
-    
-    ---
-    class: slide10, middle
-    
-    .chart[
-    
-    | Collection | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 7a | 7b | 7c | 7d | 7e | 
-    |------------|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
-    | Cross      |   | **1** | **2** |   | **1** | **1** | **3 ** |   |   |    | **3**  |    |    |    |    |
-    | Rose       |   |   | 2 |   | 1 |   |    |   | **1** |    |    |    |    |    |    |
-    | Wind       | **1** | 2 | 1 |   |   |   |    |   | 2 |    |    |    |    |    |    |
-    | S Woods    |   |   |   | **3** |   | 1 | 2  | **1** |   | 1  | 1  | **1**  |    |    |    |
-    | Helmet     | 2 | 1 |   | 1 | 1 |   |    |   |   | 2  |    |    |    |    |    |
-    | Resp       |   | 1 | 2 | 1 |   |   | 2  |   | 2 | 2  | 1  |    | **1**  |    |    |
-    | W Swans    | 1 |   | 3 | 1 | 1 | 4 | 1  |   |   | 3  | 1  |    |    |    |    |
-    | Robartes   | **1** |   | 2 |   |   | 2 |    |   |   | 1  |    |    |    |    |    |
-    | Tower      |   | 1 |   |   |   |   |    |   |   | 3  |    |    |    |    |    |
-    | Stair      |   | **1** | 2 | 3 | 1 | 3 | 10 | **1** | 1 |    | 7  | 1  | 1  |    | **1**  |
-    | Parnell    |   |   | 1 |   |   |   | 2  |   |   | 1  | 2  |    |    |    |    |
-    | New        |   |   | 1 | **2** |   |   | **12** |   |   | 1  | 7  | **1**  | **1**  | **3**  |    |
-    | Last       |   |   | **1** | **1** |   | **1** | **5**  |   |   | **2**  | **3**  |    |    |    | **2**  |
-    ]
-    
-    .legend[
-    .column[
-    
-    * **New Appearances:**
-    * _Wind Among the Reeds_:
-    	* the self-quoting
-    * _In the Seven Woods_:
-    	* the imperative
-    	* the first-person narrative
-    	* the framed-quote choral
-    * _Responsibilities_:
-    	* the narration choral
-    * _The Winding Stair_:
-    	* the combination choral
-    ]
-    
-    .column[
-    
-    * **Final Appearances:**
-    * _Michael Robartes and the Dancer_:
-    	* self-quoting 
-    * _The Winding Stair_:
-    	* imperative
-    	* hypothetical
-    ]
-    ]
-    ---
-    class: slide11, middle, center
-    
-    ### Relative Proportions of Each Dialogue Category
-    
-    .chart[
-    <canvas id="slide11_figure1" width="500" height="380"></canvas>
-    ]
-    .legend[
-    
-    * Self-Quoting
-    * Hypothetical
-    * 3rd Person
-    * 1st Person
-    * Juxtaposed
-    * Dramatic
-    * Choral
-    * Imperative
-    * Combination
-    * Incidental
-    ]</textarea>
-  </body>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+MLA 14
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/conferences/mla14.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+  	  Charts_js = "/slides/javascripts/lib/Charts.js",
+  	  mla14_js = "/slides/javascripts/charts/conferences/mla14.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, Charts_js, mla14_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	// Load any add-ons:
+  	load_charts();
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>class: center, middle, title
+
+# Quantifying Yeats’s Dialogues
+
+.title-block[
+## Shawna Ross
+## Arizona State University
+]
+
+### .twitter_badge[[@ShawnaRoss](http://twitter.com/ShawnaRoss)]
+
+---
+class: slide2, middle
+
+### Some of Yeats's Dialogue Poems
+
+.half-column[
+
+* “The Phases of the Moon”
+* “The Double Vision of Michael Robartes”
+* “Ego Dominus Tuus”
+* “The Coat, the Boat, and the Shoes”
+* “Adam’s Curse”
+* “The People”
+* “A Dialogue of Self and Soul”
+* “Anashuya and Vijaya”
+* “The Indian upon God”
+* “The Hosting of the Sidhe”
+* “He Hears the Cry of the Sidhe”
+
+
+]
+.half-column[
+
+* “The Brown Penny”
+* “The Dolls”
+* “Owen Aherne and His Dancers”
+* “I Am of Ireland”
+* “The Grey Rock”
+* “The Three Beggars”
+* “The Black Tower”
+* “The Curse of Cromwell”
+* “The Three Bushes”
+* “Fergus and the Druid”
+* “Cuchulain’s Fight with the Sea”
+
+]
+
+---
+class: slide3, middle
+### Dialogue Subgenres
+
+.subgenre-list[
+
+1. Self-quoting 
+1. Hypothetical 
+1. 3rd person
+1. 1st person			
+1. Juxtaposed			
+1. Dramatic			
+1. Choral			
+	7. Simple			
+	7. Framed-quote		
+	7. Narration		
+	7. Dramatic		
+	7. Experimental		
+1. Imperative			
+1. Combination		
+1. Incidental
+]		
+
+.definition-list[
+
+* Speaker quotes self
+* Speaker quotes impossible speaker
+* Speaker acts as 3rd person narrator
+* Speaker acts as 1st person narrator
+* Bare quotes w/out narrative infrastructure
+* Set up like a play w/speaker labels
+* Uses refrains or choruses
+* No other quotation system involved
+* Chorus is a 3rd person narrated quotation
+* Chorus is narrative infrastructure for verses
+* Verses are 3rd person narrated quotations
+* Miscellaneous structures used only once
+* Speaker quotes what he tells someone to say
+* Combines multiple quotation strategies
+* Quotations not integral to poetic structure
+]
+
+---
+class: slide4, center
+
+.title-block[
+### Percentage of Dialogue Poems over Entire Career
+<canvas id="slide4_figure1" width="580" height="200"></canvas>
+]
+
+.title-block[
+### Number of Dialogue Poems over Entire Career
+<canvas id="slide4_figure2" width="580" height="200"></canvas>
+]
+
+---
+class: slide5, center,middle
+
+### Percentage of Dialogue Poems
+
+.graph[
+
+<canvas id="slide5_figure1" width="450" height="350"></canvas>
+
+]
+.key[
+
+1. Michael Robartes and the Dancer (1921)
+1. The Tower (1928)
+1. The Winding Stair (1929)
+1. Parnell’s Funeral and Other Poems (1935)
+1. New Poems (1938)
+1. Last Poems (1939)
+]
+---
+class: slide6, center, middle
+
+### Frequency of Dramatic Dialogues
+
+<canvas id="slide6_figure1" width="670" height="350"></canvas>
+
+---
+class: slide7, center, middle
+
+### Frequency of Chorus Poems
+
+<canvas id="slide7_figure1" width="670" height="350"></canvas>
+
+---
+class: slide8, middle
+
+### Variety of Dialogue Types by Collection
+
+| Collection | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 7a | 7b | 7c | 7d | 7e | 
+|------------|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Cross      |   | **1** | **2** |   | **1** | **1** | **3 ** |   |   |    | **3**  |    |    |    |    |
+| Rose       |   |   | 2 |   | 1 |   |    |   | **1** |    |    |    |    |    |    |
+| Wind       | **1** | 2 | 1 |   |   |   |    |   | 2 |    |    |    |    |    |    |
+| S Woods    |   |   |   | **3** |   | 1 | 2  | **1** |   | 1  | 1  | **1**  |    |    |    |
+| Helmet     | 2 | 1 |   | 1 | 1 |   |    |   |   | 2  |    |    |    |    |    |
+| Resp       |   | 1 | 2 | 1 |   |   | 2  |   | 2 | 2  | 1  |    | **1**  |    |    |
+| W Swans    | 1 |   | 3 | 1 | 1 | 4 | 1  |   |   | 3  | 1  |    |    |    |    |
+| Robartes   | **1** |   | 2 |   |   | 2 |    |   |   | 1  |    |    |    |    |    |
+| Tower      |   | 1 |   |   |   |   |    |   |   | 3  |    |    |    |    |    |
+| Stair      |   | **1** | 2 | 3 | 1 | 3 | 10 | **1** | 1 |    | 7  | 1  | 1  |    | **1**  |
+| Parnell    |   |   | 1 |   |   |   | 2  |   |   | 1  | 2  |    |    |    |    |
+| New        |   |   | 1 | **2** |   |   | **12** |   |   | 1  | 7  | **1**  | **1**  | **3**  |    |
+| Last       |   |   | **1** | **1** |   | **1** | **5**  |   |   | **2**  | **3**  |    |    |    | **2**  |
+
+
+---
+class: slide9, middle, center
+
+### Total Choruses vs. Simple Choruses
+
+<canvas id="slide9_figure1" width="670" height="350"></canvas>
+
+---
+class: slide10, middle
+
+.chart[
+
+| Collection | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8 | 9 | 10 | 7a | 7b | 7c | 7d | 7e | 
+|------------|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Cross      |   | **1** | **2** |   | **1** | **1** | **3 ** |   |   |    | **3**  |    |    |    |    |
+| Rose       |   |   | 2 |   | 1 |   |    |   | **1** |    |    |    |    |    |    |
+| Wind       | **1** | 2 | 1 |   |   |   |    |   | 2 |    |    |    |    |    |    |
+| S Woods    |   |   |   | **3** |   | 1 | 2  | **1** |   | 1  | 1  | **1**  |    |    |    |
+| Helmet     | 2 | 1 |   | 1 | 1 |   |    |   |   | 2  |    |    |    |    |    |
+| Resp       |   | 1 | 2 | 1 |   |   | 2  |   | 2 | 2  | 1  |    | **1**  |    |    |
+| W Swans    | 1 |   | 3 | 1 | 1 | 4 | 1  |   |   | 3  | 1  |    |    |    |    |
+| Robartes   | **1** |   | 2 |   |   | 2 |    |   |   | 1  |    |    |    |    |    |
+| Tower      |   | 1 |   |   |   |   |    |   |   | 3  |    |    |    |    |    |
+| Stair      |   | **1** | 2 | 3 | 1 | 3 | 10 | **1** | 1 |    | 7  | 1  | 1  |    | **1**  |
+| Parnell    |   |   | 1 |   |   |   | 2  |   |   | 1  | 2  |    |    |    |    |
+| New        |   |   | 1 | **2** |   |   | **12** |   |   | 1  | 7  | **1**  | **1**  | **3**  |    |
+| Last       |   |   | **1** | **1** |   | **1** | **5**  |   |   | **2**  | **3**  |    |    |    | **2**  |
+]
+
+.legend[
+.column[
+
+* **New Appearances:**
+* _Wind Among the Reeds_:
+	* the self-quoting
+* _In the Seven Woods_:
+	* the imperative
+	* the first-person narrative
+	* the framed-quote choral
+* _Responsibilities_:
+	* the narration choral
+* _The Winding Stair_:
+	* the combination choral
+]
+
+.column[
+
+* **Final Appearances:**
+* _Michael Robartes and the Dancer_:
+	* self-quoting 
+* _The Winding Stair_:
+	* imperative
+	* hypothetical
+]
+]
+---
+class: slide11, middle, center
+
+### Relative Proportions of Each Dialogue Category
+
+.chart[
+<canvas id="slide11_figure1" width="500" height="380"></canvas>
+]
+.legend[
+
+* Self-Quoting
+* Hypothetical
+* 3rd Person
+* 1st Person
+* Juxtaposed
+* Dramatic
+* Choral
+* Imperative
+* Combination
+* Incidental
+]
+</textarea>
+</body>
 </html>

@@ -325,3 +325,9 @@
   }
 
 }(typeof window !== "undefined" ? window : this, document));
+;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("html5shiv/html5shiv");
+;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("html5shiv");
+;
+if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("lib/html5shiv");

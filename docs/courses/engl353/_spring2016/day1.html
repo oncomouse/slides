@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <base target='_blank'>
-    <title>
-      ENGL 353 Day 1 (Course Overview)
-    </title>
-    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-    <script src="/slides/javascripts/lib/head.min.js"></script>
-    <script>
-      // The javascript files to be loaded are determined by Middleman at compile:
-      var remark_js = "/slides/javascripts/remark/remark.min.js",
-      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
-      	
-      // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
-      
-      	// Ugly fix of HAML's formatting problems:
-      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-      	
-      	// Load the slideshow:
-      	var slideshow = remark.create({
-      		navigation: {
-      			scroll: false,
-      			touch: true
-      		}
-      	});
-      	/*var image_scalar = {width: 0.85, height: 0.75 };
-      	$(window).on('resize', function() {
-      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-      	}).resize();*/
-      	
-      	
-      });
-    </script>
-  </head>
-  <body>
-    <textarea id='source'>class: center, middle
-    
-    # [Syllabus](http://andrew.pilsch.com/courses/engl353spr2016)
-    
-    # [eCampus](http://ecampus.tamu.edu)
-    
-    ---
-    class: center, middle
-    
-    ![](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fdownloads.bbc.co.uk%2Frmhttp%2Fschools%2Fprimaryhistory%2Fimages%2Fancient_greeks%2Fgreek_world%2Fg_map_city_states.jpg&f=1)</textarea>
-  </body>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 353 Day 1 (Course Overview)
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# [Syllabus](http://andrew.pilsch.com/courses/engl353spr2016)
+
+# [eCampus](http://ecampus.tamu.edu)
+
+---
+class: center, middle
+
+![](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fdownloads.bbc.co.uk%2Frmhttp%2Fschools%2Fprimaryhistory%2Fimages%2Fancient_greeks%2Fgreek_world%2Fg_map_city_states.jpg&f=1)
+
+</textarea>
+</body>
 </html>

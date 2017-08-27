@@ -1,254 +1,258 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <base target='_blank'>
-    <title>
-      ENGL 353 Plato, Gorgias I
-    </title>
-    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-    <script src="/slides/javascripts/lib/head.min.js"></script>
-    <script>
-      // The javascript files to be loaded are determined by Middleman at compile:
-      var remark_js = "/slides/javascripts/remark/remark.min.js",
-      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
-      	
-      // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
-      
-      	// Ugly fix of HAML's formatting problems:
-      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-      	
-      	// Load the slideshow:
-      	var slideshow = remark.create({
-      		navigation: {
-      			scroll: false,
-      			touch: true
-      		}
-      	});
-      	/*var image_scalar = {width: 0.85, height: 0.75 };
-      	$(window).on('resize', function() {
-      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-      	}).resize();*/
-      	
-      	
-      });
-    </script>
-  </head>
-  <body>
-    <textarea id='source'>class: middle, center
-    
-    # Plato, *Gorgias*
-    
-    ---
-    class: f29px
-    ## Discussion Leader (Mercedes)
-    
-    > SOCRATES: Oratory doesn’t need to have any knowledge of the state of their subject matters; it only needs to have discovered a persuasion device in order to make itself appear to those who don’t have knowledge that it knows more than those who actually do have it. (459b)
-    
-    In what platform, do we see individuals attempting to persuade other individuals, while possessing no knowledge or expertise about the subject? What are these consequences, whether good and bad?
-    ---
-    class: no-margin
-    ## Discussion Leader (Daniel)
-    
-    > SOCRATES: Yes, the one who puts someone to death unjustly is, my friend, and he's to be pitied besides. But the one who does so justly isn't to be envied.
-    >
-    > POLUS: Surely the one who's put to death unjustly is the one who's both to be pitied and miserable.
-    >
-    > SOCRATES: Less so than the one putting him to death, Polus, and less than the one who's unjustly put to death.
-    >
-    > POLUS: How can that be, Socrates?
-    >
-    > SOCRATES: It's because doing what's unjust is actually the greatest of evils.
-    >
-    > POLUS: Really? Is that the greatest? Isn't suffering what's unjust a greater one?
-    >
-    > SOCRATES: No, not in the least.
-    >
-    > POLUS: So you'd want to suffer what's unjust rather than do it?
-    >
-    > SOCRATES: I certainly wouldn't want either, but if it had to be one or the other, I would choose suffering over doing what is unjust. (469 b-c)
-    ---
-    class: f31px
-    ## Discussion Leader (Daniel)
-    How can it be better to suffer what's unjust than to commit what's unjust? Is it a question of morals, or is it a question of what just in the eyes of the state? Compared to how civilization is today, would you welcome being a tyrant if it meant committing what's unjust in Socrates (Plato's) definition?
-    
-    
-    ---
-    class: f37px
-    ## Dialogue vs Speech
-    
-    
-    > SOCRATES: Very good, Callicles. But would he be willing to have a discussion with us? I'd like to find out from the man what his craft can accomplish, and what it is that he both makes claims about and teaches. As for the other thing, the presentation, let him put that on another time, as you suggest. (447c)
-    ---
-    class: f35px
-    ## "Good enough"
-    
-    > POLUS: By Zeus, Chaerephon! Try me, if you like! I think Gorgias is quite worn out. He's only just now finished a long discourse.
-    >
-    > CHAEREPHON: Really, Polus? Do you think you'd give more admirable answers than Gorgias?
-    >
-    > POLUS: What does it matter, as long as they're good enough for you? (448b)
-    ---
-    class: f25px
-    ## *Dissoi Logi*
-    
-    > CHAEREPHON: Now then, since he's an expert in a craft, what is it, and what would be the correct thing to call him?
-    >
-    > POLUS: Many among men are the crafts devised by experience, Chaerephon, the results of experience. Yes, it is experience that causes our times to march along the way of craft, whereas inexperience causes it to march along the way of chance. Of these various crafts various men partake in various ways, the best men partaking of the best of them. Our Gorgias is indeed in this group; he partakes of the most admirable of the crafts.
-    >
-    > SOCRATES: Polus certainly appears to have prepared himself admirably for giving speeches, Gorgias. But he's not doing what he promised Chaerephon. (448c-d)
-    ---
-    class: f27px
-    ## Different Languages
-    
-    > GORGIAS: Why don't you question him then, if you like?
-    >
-    > SOCRATES: No, I won't, not as long as you yourself may want to answer. I'd much rather ask you. It's clear to me, especially from what he said, that Polus has devoted himself more to what is called oratory then to discussing.
-    >
-    > POLUS: Why do you say that, Socrates?
-    >
-    > SOCRATES: Because, Polus, when Chaerephon ask you what craft Gorgias is knowledgeable in, you sing its praises as though someone were discrediting it. But you haven't answered what it is. (448d-e)
-    ---
-    class: f21px, no-margin
-    ## Disciplines Are Their Content?
-    
-    > SOCRATES: Come on, then. Please complete your answers in the terms of my question. Since oratory is one of those crafts which mostly uses speech, and since there are also others of that source, try to say *what* it is that oratory, which exercise its influence through speeches, is about. Imagine someone asking me about any of the crafts I mentioned just now, "Socrates, what is the craft of arithmetic?" I tell him, just as you told me, that it's one of those that exercise their influence by means of speech.  And if you continued, "what are they crafts about?" I'd say that they're about even and odd, however many of each there might be. If he did asked, "what is the craft you call computation?" I'd say that this one, too, is one of those that exercise their influence entirely by speech. And if he in continued, "what is it about?" I'd answer in the style of those who drop motions in the Assembly that in other respects competition is like arithmetic – for it's about the same thing, even and odd – yet it differs from arithmetic insofar as computation examines the quantity of even and odd, both in relation to themselves in relation to each other. And if someone asks about astronomy and I replied that it, too, exercise its influence by means of speech, then if he asked, "what are the speeches of astronomy about, Socrates?" I'd say there about the motions of the stars, the sun and the moon, and their relative velocities. (451b-c)
-    ---
-    class: f36px
-    ## What is the Content of Rhetoric?
-    
-    
-    > SOCRATES: Tell us then: What are the crafts about? Of the things there are, which is the one that these speeches used by oratory are concerned with?
-    > 
-    > GORGIAS: The greatest of human concerns, Socrates, and the best.
-    > 
-    > SOCRATES: But that statement, too, is debatable, Gorgias. (451d)
-    ---
-    class: f26px
-    ## What is Rhetoric About?
-    
-    >SOCRATES: Listen then, Gorgias. You should know that I'm convinced I'm one of those people who in a discussion with someone else really want to have knowledge of the subject the discussions about. And I consider you one of them, too.
-    >
-    >GORGIAS: Well, what's the point, Socrates?
-    >
-    >SOCRATES: Let me tell you now. You can know for sure that I don't know what this persuasion derived from oratory that you're talking about is, or what subjects it's persuasion about. Even though I do have my suspicions about which persuasion I think you mean, and what it's about, I'll still ask you just the same what you say is persuasion produced by oratory is, and what it's about. (453b)
-    ---
-    class: f23px
-    ## Doing vs Learning
-    
-    > SOCRATES: Does a person who teaches some subject or other persuade people about what he's teaching, or not?
-    > 
-    > GORGIAS: He certainly does, Socrates. He persuades most of all.
-    > 
-    > SOCRATES: Let's talk once more about the same crafts we were talking about just now. Doesn't arithmetic or the arithmetician teachers everything that pertains to numbers?
-    > 
-    > GORGIAS: Yes, he does.
-    > 
-    > SOCRATES: And he also persuades?
-    > 
-    > GORGIAS: Yes.
-    > 
-    > SOCRATES: So arithmetic is also a producer of persuasion. (453d-e)
-    ---
-    class: f25px
-    ## Method
-    
-    > GORGIAS: The persuasion I mean, Socrates, is the kind that takes place in law courts and in those other large gatherings, as I was saying a moment ago. And it's concerned with those matters that are just and unjust.
-    > 
-    > SOCRATES: Yes, Gorgias, I suspected that this was the persuasion you meant, and that these are the matters it's persuasion about. But so you won't be surprised if in a moment I ask you again another question like this, about what seems to be clear, and yet I go on with my questioning – as I say, I'm asking questions so that we can conduct an orderly discussion. It's not you I'm after; it's to prevent our getting in the habit of second-guessing and snatching each other statements away ahead of time. It's to allow you to work out your assumption any way you want to. (454b-c)
-    ---
-    class: f23px, no-margin
-    ## Gorgia's Defense
-    
-    > GORGIAS: One should, however, use oratory like any other competitive skill, Socrates. In other cases, two, one ought not to use a competitive skill against any and everybody, just because he has learned boxing, or boxing and wrestling combined, or fighting armor, so as to make himself be superior to his friends as well as to his enemies. That's no reason to strike, stab, or kill one's own friends! Imagine someone who after attending wrestling school, getting his body into good shape and becoming a boxer, went on to strike his father and mother or any other family member or friend. By Zeus, that's no reason to hate physical trainers and people who teach fighting in armor, and exile them from their cities! For while these people imparted their skills to be used justly against enemies and wrongdoers, and in defense, not aggression, their pupils perverted their strength and skill and misuse them. So it's not their teachers who are wicked, nor is this a reason why the craft should be a cause of wickedness; the ones who miss use it are supposedly the wicked ones. (456d-457a)
-    ---
-    class: f27px
-    ## Polus Arrives (Awkwardly)
-    
-    > POLUS: Really, Socrates? Is what you're now saying about oratory what you actually think of it? Or do you really think, just because Gorgias was too ashamed not to concede your further claim that the orator also knows what's just, what's admirable, and what's good, and that if you came to him without already having this knowledge to begin with, he said that he would teach him himself, and then from this admission maybe some inconsistency crept into his statements – just the thing that gives you delight, you're the one who leads him on to face such questions – who do you think would deny that he himself knows what's just and would teach others? To lead your arguments to such an outcome is a sign of great rudeness. (461b-c)
-    
-    ---
-    class: no-margin, two-column, f22px
-    ## Knack
-    
-    > POLUS: Tell me, Socrates, since you think Gorgias is confused about oratory, what do you say it is?
-    > 
-    > SOCRATES: Are you asking me what craft I say it is?
-    > 
-    > POLUS: Yes, I am.
-    > 
-    > SOCRATES: To tell you the truth, Polus, I don’t think it’s a craft at all.
-    > 
-    > POLUS: Well then, what do you think oratory is?
-    > 
-    > SOCRATES: In the treatise that I read recently, it’s the thing that you say has produced craft.
-    > 
-    > POLUS: What do you mean?
-    > 
-    > SOCRATES: I mean a knack.
-    > 
-    > POLUS: So you think oratory’s a knack?
-    > 
-    > SOCRATES: Yes, I do, unless you say it’s something else.
-    > 
-    > POLUS: A knack for what?
-    > 
-    > SOCRATES: For producing a certain gratification and pleasure. (462b-c)
-    
-    ---
-    class: no-margin, two-column, f22px
-    ## Pastry Baking?
-    
-    > SOCRATES: Ask me now what craft I think pastry baking is.
-    > 
-    > POLUS: All right, I will. What craft is pastry baking?
-    > 
-    > SOCRATES: It isn’t one at all, Polus. Now say, “What is it then?”
-    > 
-    > POLUS: All right.
-    > 
-    > SOCRATES: It’s a knack. Say, “A knack for what?”
-    > 
-    > POLUS: All right.
-    > 
-    > SOCRATES: For producing gratification and pleasure, Polus.
-    > 
-    > POLUS: So oratory is the same thing as pastry baking?
-    > 
-    > SOCRATES: Oh no, not at all, although it is a part of the same practice.
-    > 
-    > POLUS: What practice do you mean?
-    > 
-    > SOCRATES: … I call it flattery, basically … This part *seems* to be acraft, but in my account of it it isn't a craft but a knack and a routine. I call oratory [and pastry-baking] a part of this, too, along with cosmetics and sophistry. (462d-463b)
-    
-    ---
-    class: f28px
-    ## Doing / Suffering Injustice
-    
-    > SOCRATES: It's because doing what's unjust is actually the greatest of evils.
-    > 
-    > POLUS: Really? Is *that* the greatest? Isn't suffering what's unjust a greater one?
-    > 
-    > SOCRATES: No, not in the least.
-    > 
-    > POLUS: So you'd want to suffer what's unjust rather than do it?
-    > 
-    > SOCRATES: I certainly wouldn't want either, but if it had to be one or the other, I would choose suffering over doing what's unjust. (469b-c)
-    ---
-    class: f30px
-    ## Deserved / Is
-    
-    > SOCRATES: Now wasn't this the point to dispute between us, my friend? You considered Archelaus happy, a man who committed the greatest crimes without paying what was due, whereas I took the opposite view, that whoever avoids paying his due for his wrongdoing, whether he's Archelaus or any other man, deserves to be miserable beyond all other men, and that one who does what's unjust is always more miserable than the one who suffers it, and the one who avoids paying what's due always more miserable than the one who does pay it. Weren't these the things I said? (479d-e)
-    
-    ---
-    class: f22px, no-margin
-    ## Oratory as a Means of Self Correction
-    
-    > SOCRATES: So, if oratory is used to defend injustice, Polus, one's own or that of one's relatives, companions, or children, or that of one's country when it acts unjustly, it is of no use to us at all, unless one takes it to be useful for the opposite purpose: that he should accuse himself first and foremost, and then too his family and anyone else dear to him who happens to behave unjustly at any time; and that he should not keep his wrongdoing hidden but bring it out into the open, so that he may pay his due and get well; and compel himself and the others not to play the coward, but to grit his teeth and present himself with grace and courage as to a doctor for cauterization and surgery, pursuing what's good and admirable without taking any account of the pain. And if his unjust behavior merits flogging, he should present himself to be whipped; if it merits imprisonment, to be imprisoned; if a fine, to pay it; if exile, to be exiled; and if execution, to be executed. He should be his own chief accuser, and the accuser of other members of his family, and use his oratory for the purpose of getting rid of the greatest evil, injustice, as the unjust acts are being exposed.  (480c-d)</textarea>
-  </body>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 353 Plato, Gorgias I
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: middle, center
+
+# Plato, *Gorgias*
+
+---
+class: f29px
+## Discussion Leader (Mercedes)
+
+> SOCRATES: Oratory doesn’t need to have any knowledge of the state of their subject matters; it only needs to have discovered a persuasion device in order to make itself appear to those who don’t have knowledge that it knows more than those who actually do have it. (459b)
+
+In what platform, do we see individuals attempting to persuade other individuals, while possessing no knowledge or expertise about the subject? What are these consequences, whether good and bad?
+---
+class: no-margin
+## Discussion Leader (Daniel)
+
+> SOCRATES: Yes, the one who puts someone to death unjustly is, my friend, and he's to be pitied besides. But the one who does so justly isn't to be envied.
+>
+> POLUS: Surely the one who's put to death unjustly is the one who's both to be pitied and miserable.
+>
+> SOCRATES: Less so than the one putting him to death, Polus, and less than the one who's unjustly put to death.
+>
+> POLUS: How can that be, Socrates?
+>
+> SOCRATES: It's because doing what's unjust is actually the greatest of evils.
+>
+> POLUS: Really? Is that the greatest? Isn't suffering what's unjust a greater one?
+>
+> SOCRATES: No, not in the least.
+>
+> POLUS: So you'd want to suffer what's unjust rather than do it?
+>
+> SOCRATES: I certainly wouldn't want either, but if it had to be one or the other, I would choose suffering over doing what is unjust. (469 b-c)
+---
+class: f31px
+## Discussion Leader (Daniel)
+How can it be better to suffer what's unjust than to commit what's unjust? Is it a question of morals, or is it a question of what just in the eyes of the state? Compared to how civilization is today, would you welcome being a tyrant if it meant committing what's unjust in Socrates (Plato's) definition?
+
+
+---
+class: f37px
+## Dialogue vs Speech
+
+
+> SOCRATES: Very good, Callicles. But would he be willing to have a discussion with us? I'd like to find out from the man what his craft can accomplish, and what it is that he both makes claims about and teaches. As for the other thing, the presentation, let him put that on another time, as you suggest. (447c)
+---
+class: f35px
+## "Good enough"
+
+> POLUS: By Zeus, Chaerephon! Try me, if you like! I think Gorgias is quite worn out. He's only just now finished a long discourse.
+>
+> CHAEREPHON: Really, Polus? Do you think you'd give more admirable answers than Gorgias?
+>
+> POLUS: What does it matter, as long as they're good enough for you? (448b)
+---
+class: f25px
+## *Dissoi Logi*
+
+> CHAEREPHON: Now then, since he's an expert in a craft, what is it, and what would be the correct thing to call him?
+>
+> POLUS: Many among men are the crafts devised by experience, Chaerephon, the results of experience. Yes, it is experience that causes our times to march along the way of craft, whereas inexperience causes it to march along the way of chance. Of these various crafts various men partake in various ways, the best men partaking of the best of them. Our Gorgias is indeed in this group; he partakes of the most admirable of the crafts.
+>
+> SOCRATES: Polus certainly appears to have prepared himself admirably for giving speeches, Gorgias. But he's not doing what he promised Chaerephon. (448c-d)
+---
+class: f27px
+## Different Languages
+
+> GORGIAS: Why don't you question him then, if you like?
+>
+> SOCRATES: No, I won't, not as long as you yourself may want to answer. I'd much rather ask you. It's clear to me, especially from what he said, that Polus has devoted himself more to what is called oratory then to discussing.
+>
+> POLUS: Why do you say that, Socrates?
+>
+> SOCRATES: Because, Polus, when Chaerephon ask you what craft Gorgias is knowledgeable in, you sing its praises as though someone were discrediting it. But you haven't answered what it is. (448d-e)
+---
+class: f21px, no-margin
+## Disciplines Are Their Content?
+
+> SOCRATES: Come on, then. Please complete your answers in the terms of my question. Since oratory is one of those crafts which mostly uses speech, and since there are also others of that source, try to say *what* it is that oratory, which exercise its influence through speeches, is about. Imagine someone asking me about any of the crafts I mentioned just now, "Socrates, what is the craft of arithmetic?" I tell him, just as you told me, that it's one of those that exercise their influence by means of speech.  And if you continued, "what are they crafts about?" I'd say that they're about even and odd, however many of each there might be. If he did asked, "what is the craft you call computation?" I'd say that this one, too, is one of those that exercise their influence entirely by speech. And if he in continued, "what is it about?" I'd answer in the style of those who drop motions in the Assembly that in other respects competition is like arithmetic – for it's about the same thing, even and odd – yet it differs from arithmetic insofar as computation examines the quantity of even and odd, both in relation to themselves in relation to each other. And if someone asks about astronomy and I replied that it, too, exercise its influence by means of speech, then if he asked, "what are the speeches of astronomy about, Socrates?" I'd say there about the motions of the stars, the sun and the moon, and their relative velocities. (451b-c)
+---
+class: f36px
+## What is the Content of Rhetoric?
+
+
+> SOCRATES: Tell us then: What are the crafts about? Of the things there are, which is the one that these speeches used by oratory are concerned with?
+> 
+> GORGIAS: The greatest of human concerns, Socrates, and the best.
+> 
+> SOCRATES: But that statement, too, is debatable, Gorgias. (451d)
+---
+class: f26px
+## What is Rhetoric About?
+
+>SOCRATES: Listen then, Gorgias. You should know that I'm convinced I'm one of those people who in a discussion with someone else really want to have knowledge of the subject the discussions about. And I consider you one of them, too.
+>
+>GORGIAS: Well, what's the point, Socrates?
+>
+>SOCRATES: Let me tell you now. You can know for sure that I don't know what this persuasion derived from oratory that you're talking about is, or what subjects it's persuasion about. Even though I do have my suspicions about which persuasion I think you mean, and what it's about, I'll still ask you just the same what you say is persuasion produced by oratory is, and what it's about. (453b)
+---
+class: f23px
+## Doing vs Learning
+
+> SOCRATES: Does a person who teaches some subject or other persuade people about what he's teaching, or not?
+> 
+> GORGIAS: He certainly does, Socrates. He persuades most of all.
+> 
+> SOCRATES: Let's talk once more about the same crafts we were talking about just now. Doesn't arithmetic or the arithmetician teachers everything that pertains to numbers?
+> 
+> GORGIAS: Yes, he does.
+> 
+> SOCRATES: And he also persuades?
+> 
+> GORGIAS: Yes.
+> 
+> SOCRATES: So arithmetic is also a producer of persuasion. (453d-e)
+---
+class: f25px
+## Method
+
+> GORGIAS: The persuasion I mean, Socrates, is the kind that takes place in law courts and in those other large gatherings, as I was saying a moment ago. And it's concerned with those matters that are just and unjust.
+> 
+> SOCRATES: Yes, Gorgias, I suspected that this was the persuasion you meant, and that these are the matters it's persuasion about. But so you won't be surprised if in a moment I ask you again another question like this, about what seems to be clear, and yet I go on with my questioning – as I say, I'm asking questions so that we can conduct an orderly discussion. It's not you I'm after; it's to prevent our getting in the habit of second-guessing and snatching each other statements away ahead of time. It's to allow you to work out your assumption any way you want to. (454b-c)
+---
+class: f23px, no-margin
+## Gorgia's Defense
+
+> GORGIAS: One should, however, use oratory like any other competitive skill, Socrates. In other cases, two, one ought not to use a competitive skill against any and everybody, just because he has learned boxing, or boxing and wrestling combined, or fighting armor, so as to make himself be superior to his friends as well as to his enemies. That's no reason to strike, stab, or kill one's own friends! Imagine someone who after attending wrestling school, getting his body into good shape and becoming a boxer, went on to strike his father and mother or any other family member or friend. By Zeus, that's no reason to hate physical trainers and people who teach fighting in armor, and exile them from their cities! For while these people imparted their skills to be used justly against enemies and wrongdoers, and in defense, not aggression, their pupils perverted their strength and skill and misuse them. So it's not their teachers who are wicked, nor is this a reason why the craft should be a cause of wickedness; the ones who miss use it are supposedly the wicked ones. (456d-457a)
+---
+class: f27px
+## Polus Arrives (Awkwardly)
+
+> POLUS: Really, Socrates? Is what you're now saying about oratory what you actually think of it? Or do you really think, just because Gorgias was too ashamed not to concede your further claim that the orator also knows what's just, what's admirable, and what's good, and that if you came to him without already having this knowledge to begin with, he said that he would teach him himself, and then from this admission maybe some inconsistency crept into his statements – just the thing that gives you delight, you're the one who leads him on to face such questions – who do you think would deny that he himself knows what's just and would teach others? To lead your arguments to such an outcome is a sign of great rudeness. (461b-c)
+
+---
+class: no-margin, two-column, f22px
+## Knack
+
+> POLUS: Tell me, Socrates, since you think Gorgias is confused about oratory, what do you say it is?
+> 
+> SOCRATES: Are you asking me what craft I say it is?
+> 
+> POLUS: Yes, I am.
+> 
+> SOCRATES: To tell you the truth, Polus, I don’t think it’s a craft at all.
+> 
+> POLUS: Well then, what do you think oratory is?
+> 
+> SOCRATES: In the treatise that I read recently, it’s the thing that you say has produced craft.
+> 
+> POLUS: What do you mean?
+> 
+> SOCRATES: I mean a knack.
+> 
+> POLUS: So you think oratory’s a knack?
+> 
+> SOCRATES: Yes, I do, unless you say it’s something else.
+> 
+> POLUS: A knack for what?
+> 
+> SOCRATES: For producing a certain gratification and pleasure. (462b-c)
+
+---
+class: no-margin, two-column, f22px
+## Pastry Baking?
+
+> SOCRATES: Ask me now what craft I think pastry baking is.
+> 
+> POLUS: All right, I will. What craft is pastry baking?
+> 
+> SOCRATES: It isn’t one at all, Polus. Now say, “What is it then?”
+> 
+> POLUS: All right.
+> 
+> SOCRATES: It’s a knack. Say, “A knack for what?”
+> 
+> POLUS: All right.
+> 
+> SOCRATES: For producing gratification and pleasure, Polus.
+> 
+> POLUS: So oratory is the same thing as pastry baking?
+> 
+> SOCRATES: Oh no, not at all, although it is a part of the same practice.
+> 
+> POLUS: What practice do you mean?
+> 
+> SOCRATES: … I call it flattery, basically … This part *seems* to be acraft, but in my account of it it isn't a craft but a knack and a routine. I call oratory [and pastry-baking] a part of this, too, along with cosmetics and sophistry. (462d-463b)
+
+---
+class: f28px
+## Doing / Suffering Injustice
+
+> SOCRATES: It's because doing what's unjust is actually the greatest of evils.
+> 
+> POLUS: Really? Is *that* the greatest? Isn't suffering what's unjust a greater one?
+> 
+> SOCRATES: No, not in the least.
+> 
+> POLUS: So you'd want to suffer what's unjust rather than do it?
+> 
+> SOCRATES: I certainly wouldn't want either, but if it had to be one or the other, I would choose suffering over doing what's unjust. (469b-c)
+---
+class: f30px
+## Deserved / Is
+
+> SOCRATES: Now wasn't this the point to dispute between us, my friend? You considered Archelaus happy, a man who committed the greatest crimes without paying what was due, whereas I took the opposite view, that whoever avoids paying his due for his wrongdoing, whether he's Archelaus or any other man, deserves to be miserable beyond all other men, and that one who does what's unjust is always more miserable than the one who suffers it, and the one who avoids paying what's due always more miserable than the one who does pay it. Weren't these the things I said? (479d-e)
+
+---
+class: f22px, no-margin
+## Oratory as a Means of Self Correction
+
+> SOCRATES: So, if oratory is used to defend injustice, Polus, one's own or that of one's relatives, companions, or children, or that of one's country when it acts unjustly, it is of no use to us at all, unless one takes it to be useful for the opposite purpose: that he should accuse himself first and foremost, and then too his family and anyone else dear to him who happens to behave unjustly at any time; and that he should not keep his wrongdoing hidden but bring it out into the open, so that he may pay his due and get well; and compel himself and the others not to play the coward, but to grit his teeth and present himself with grace and courage as to a doctor for cauterization and surgery, pursuing what's good and admirable without taking any account of the pain. And if his unjust behavior merits flogging, he should present himself to be whipped; if it merits imprisonment, to be imprisoned; if a fine, to pay it; if exile, to be exiled; and if execution, to be executed. He should be his own chief accuser, and the accuser of other members of his family, and use his oratory for the purpose of getting rid of the greatest evil, injustice, as the unjust acts are being exposed.  (480c-d)
+
+
+</textarea>
+</body>
 </html>

@@ -1,149 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <base target='_blank'>
-    <title>
-      ENG 337 - Day 16
-    </title>
-    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-    <script src="/slides/javascripts/lib/head.min.js"></script>
-    <script>
-      // The javascript files to be loaded are determined by Middleman at compile:
-      var remark_js = "/slides/javascripts/remark/remark.min.js",
-      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
-      	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
-      	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
-      	
-      // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
-      
-      	// Ugly fix of HAML's formatting problems:
-      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-      	
-      	// Load the slideshow:
-      	var slideshow = remark.create({
-      		navigation: {
-      			scroll: false,
-      			touch: true
-      		}
-      	});
-      	/*var image_scalar = {width: 0.85, height: 0.75 };
-      	$(window).on('resize', function() {
-      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-      	}).resize();*/
-      	
-      	// Load any add-ons:
-      	attach_progress_bar(slideshow);
-      });
-    </script>
-  </head>
-  <body>
-    <textarea id='source'>class: center, middle
-    
-    # *My Ántonia*
-    
-    <h2 class="hug">Day 2</h2>
-    ---
-    ## Out with the Old
-    
-    > We were to move to Black Hawk in March, and as soon as grandfather had fixed the date he let Jake and Otto know of his intention. Otto said he would not be likely to find another place that suited him so well; that he was tired of farming and thought he would go back to what he called the 'wild West.' Jake Marpole, lured by Otto's stories of adventure, decided to go with him. We did our best to dissuade Jake. He was so handicapped by illiteracy and by his trusting disposition that he would be an easy prey to sharpers. Grandmother begged him to stay among kindly, Christian people, where he was known; but there was no reasoning with him. He wanted to be a prospector. He thought a silver mine was waiting for him in Colorado.
-    >
-    > — Book II, Chapter I
-    
-    ---
-    ## New, New World
-    
-    > Black Hawk, the new world in which we had come to live, was a clean, well-planted little prairie town, with white fences and good green yards about the dwellings, wide, dusty streets, and shapely little trees growing along the wooden sidewalks. In the centre of the town there were two rows of new brick 'store' buildings, a brick schoolhouse, the court-house, and four white churches. Our own house looked down over the town, and from our upstairs windows we could see the winding line of the river bluffs, two miles south of us. That river was to be my compensation for the lost freedom of the farming country.
-    >
-    > — Book II, Chapter I
-    ---
-    ## New World, New Customs
-    
-    > We came to Black Hawk in March, and by the end of April we felt like town people. Grandfather was a deacon in the new Baptist Church, grandmother was busy with church suppers and missionary societies, and I was quite another boy, or thought I was. Suddenly put down among boys of my own age, I found I had a great deal to learn. Before the spring term of school was over, I could fight, play 'keeps,' tease the little girls, and use forbidden words as well as any boy in my class.
-    >
-    > — Book II, Chapter I
-    
-    ---
-    ## Hard Work
-    
-    > Those girls had grown up in the first bitter-hard times, and had got little schooling themselves. But the younger brothers and sisters, for whom they made such sacrifices and who have had 'advantages,' never seem to me, when I meet them now, half as interesting or as well educated. The older girls, who helped to break up the wild sod, learned so much from life, from poverty, from their mothers and grandmothers; they had all, like Ántonia, been early awakened and made observant by coming at a tender age from an old country to a new.
-    >
-    > — Book II, Chapter IX
-    
-    > One result of this family solidarity was that the foreign farmers in our county were the first to become prosperous. After the fathers were out of debt, the daughters married the sons of neighbours—usually of like nationality—and the girls who once worked in Black Hawk kitchens are to-day managing big farms and fine families of their own; their children are better off than the children of the town women they used to serve.
-    >
-    > — Book II, Chapter IX
-    ---
-    ## Sliding Doors
-    
-    >If, instead of going to the end of the railroad, old Mr. Shimerda had stayed in New York and picked up a living with his fiddle, how different Ántonia's life might have been!
-    >
-    > — Book II, Chapter XII
-    
-    > 'Why, sure, Jim.' A moment later she drew her face away and whispered indignantly, 'Why, Jim! You know you ain't right to kiss me like that. I'll tell your grandmother on you!'
-    >
-    > 'Lena Lingard lets me kiss her,' I retorted, 'and I'm not half as fond of her as I am of you.'
-    >
-    >'Lena does?' Tony gasped. 'If she's up to any of her nonsense with you, I'll scratch her eyes out!' She took my arm again and we walked out of the gate and up and down the sidewalk. 'Now, don't you go and be a fool like some of these town boys. You're not going to sit around here and whittle store-boxes and tell stories all your life. You are going away to school and make something of yourself. I'm just awful proud of you. You won't go and get mixed up with the Swedes, will you?'
-    >
-    > — Book II, Chapter XII
-    ---
-    ## Town Life
-    
-    > One could hang about the drugstore; and listen to the old men who sat there every evening, talking politics and telling raw stories. One could go to the cigar factory and chat with the old German who raised canaries for sale, and look at his stuffed birds. But whatever you began with him, the talk went back to taxidermy. There was the depot, of course; I often went down to see the night train come in, and afterward sat awhile with the disconsolate telegrapher who was always hoping to be transferred to Omaha or Denver, 'where there was some life.' He was sure to bring out his pictures of actresses and dancers. He got them with cigarette coupons, and nearly smoked himself to death to possess these desired forms and faces. For a change, one could talk to the station agent; but he was another malcontent; spent all his spare time writing letters to officials requesting a transfer. He wanted to get back to Wyoming where he could go trout-fishing on Sundays. 
-    >
-    > — Book II, Chapter XII
-    ---
-    
-    ## Dead World
-    
-    
-    > Winter lies too long in country towns; hangs on until it is stale and shabby, old and sullen. On the farm the weather was the great fact, and men's affairs went on underneath it, as the streams creep under the ice. But in Black Hawk the scene of human life was spread out shrunken and pinched, frozen down to the bare stalk.
-    >
-    > — Book II, Chapter VII
-    
-    ---
-    
-    ## Something To Do
-    
-    > At last there was something to do in those long, empty summer evenings, when the married people sat like images on their front porches, and the boys and girls tramped and tramped the board sidewalks—northward to the edge of the open prairie, south to the depot, then back again to the post-office, the ice-cream parlour, the butcher shop. Now there was a place where the girls could wear their new dresses, and where one could laugh aloud without being reproved by the ensuing silence. That silence seemed to ooze out of the ground, to hang under the foliage of the black maple trees with the bats and shadows. Now it was broken by lighthearted sounds. First the deep purring of Mr. Vanni's harp came in silvery ripples through the blackness of the dusty-smelling night; then the violins fell in—one of them was almost like a flute. They called so archly, so seductively, that our feet hurried toward the tent of themselves. Why hadn't we had a tent before?
-    >
-    > — Book II, Chapter VIII
-    ---
-    ## Nothing To Do
-    
-    >In the evening I used to prowl about, hunting for diversion. There lay the familiar streets, frozen with snow or liquid with mud. They led to the houses of good people who were putting the babies to bed, or simply sitting still before the parlour stove, digesting their supper. Black Hawk had two saloons. One of them was admitted, even by the church people, to be as respectable as a saloon could be. Handsome Anton Jelinek, who had rented his homestead and come to town, was the proprietor. In his saloon there were long tables where the Bohemian and German farmers could eat the lunches they brought from home while they drank their beer. Jelinek kept rye bread on hand and smoked fish and strong imported cheeses to please the foreign palate. I liked to drop into his bar-room and listen to the talk. But one day he overtook me on the street and clapped me on the shoulder.
-    >
-    >'Jim,' he said, 'I am good friends with you and I always like to see you. But you know how the church people think about saloons. Your grandpa has always treated me fine, and I don't like to have you come into my place, because I know he don't like it, and it puts me in bad with him.'
-    >
-    > — Book II, Chapter XII
-    ---
-    ## Propriety, pt. 1
-    > After I refused to join 'the Owls,' as they were called, I made a bold resolve to go to the Saturday night dances at Firemen's Hall. I knew it would be useless to acquaint my elders with any such plan. Grandfather didn't approve of dancing, anyway; he would only say that if I wanted to dance I could go to the Masonic Hall, among 'the people we knew.' It was just my point that I saw altogether too much of the people we knew.
-    >
-    > — Book II, Chapter XII
-    ---
-    class: smaller
-    ## Propriety, pt. 2
-    > 'No, it ain't money. I wish it was. But I've heard things. You must 'a' known it would come back to me sometime.' She dropped into a chair, and, covering her face with her apron, began to cry. 'Jim,' she said, 'I was never one that claimed old folks could bring up their grandchildren. But it came about so; there wasn't any other way for you, it seemed like.'
-    >
-    >I put my arms around her. I couldn't bear to see her cry.
-    >
-    >'What is it, grandmother? Is it the Firemen's dances?'
-    >
-    >She nodded.
-    >
-    >'I'm sorry I sneaked off like that. But there's nothing wrong about the dances, and I haven't done anything wrong. I like all those country girls, and I like to dance with them. That's all there is to it.'
-    >
-    >'But it ain't right to deceive us, son, and it brings blame on us. People say you are growing up to be a bad boy, and that ain't just to us.'
-    >
-    >'I don't care what they say about me, but if it hurts you, that settles it. I won't go to the Firemen's Hall again.'
-    >
-    > — Book II, Chapter XIII</textarea>
-  </body>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENG 337 - Day 16
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+  	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+  	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, progress_bar_js, progress_bar_css, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	// Load any add-ons:
+  	attach_progress_bar(slideshow);
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+
+class: center, middle
+
+# *My Ántonia*
+
+<h2 class="hug">Day 2</h2>
+---
+## Out with the Old
+
+> We were to move to Black Hawk in March, and as soon as grandfather had fixed the date he let Jake and Otto know of his intention. Otto said he would not be likely to find another place that suited him so well; that he was tired of farming and thought he would go back to what he called the 'wild West.' Jake Marpole, lured by Otto's stories of adventure, decided to go with him. We did our best to dissuade Jake. He was so handicapped by illiteracy and by his trusting disposition that he would be an easy prey to sharpers. Grandmother begged him to stay among kindly, Christian people, where he was known; but there was no reasoning with him. He wanted to be a prospector. He thought a silver mine was waiting for him in Colorado.
+>
+> — Book II, Chapter I
+
+---
+## New, New World
+
+> Black Hawk, the new world in which we had come to live, was a clean, well-planted little prairie town, with white fences and good green yards about the dwellings, wide, dusty streets, and shapely little trees growing along the wooden sidewalks. In the centre of the town there were two rows of new brick 'store' buildings, a brick schoolhouse, the court-house, and four white churches. Our own house looked down over the town, and from our upstairs windows we could see the winding line of the river bluffs, two miles south of us. That river was to be my compensation for the lost freedom of the farming country.
+>
+> — Book II, Chapter I
+---
+## New World, New Customs
+
+> We came to Black Hawk in March, and by the end of April we felt like town people. Grandfather was a deacon in the new Baptist Church, grandmother was busy with church suppers and missionary societies, and I was quite another boy, or thought I was. Suddenly put down among boys of my own age, I found I had a great deal to learn. Before the spring term of school was over, I could fight, play 'keeps,' tease the little girls, and use forbidden words as well as any boy in my class.
+>
+> — Book II, Chapter I
+
+---
+## Hard Work
+
+> Those girls had grown up in the first bitter-hard times, and had got little schooling themselves. But the younger brothers and sisters, for whom they made such sacrifices and who have had 'advantages,' never seem to me, when I meet them now, half as interesting or as well educated. The older girls, who helped to break up the wild sod, learned so much from life, from poverty, from their mothers and grandmothers; they had all, like Ántonia, been early awakened and made observant by coming at a tender age from an old country to a new.
+>
+> — Book II, Chapter IX
+
+> One result of this family solidarity was that the foreign farmers in our county were the first to become prosperous. After the fathers were out of debt, the daughters married the sons of neighbours—usually of like nationality—and the girls who once worked in Black Hawk kitchens are to-day managing big farms and fine families of their own; their children are better off than the children of the town women they used to serve.
+>
+> — Book II, Chapter IX
+---
+## Sliding Doors
+
+>If, instead of going to the end of the railroad, old Mr. Shimerda had stayed in New York and picked up a living with his fiddle, how different Ántonia's life might have been!
+>
+> — Book II, Chapter XII
+
+> 'Why, sure, Jim.' A moment later she drew her face away and whispered indignantly, 'Why, Jim! You know you ain't right to kiss me like that. I'll tell your grandmother on you!'
+>
+> 'Lena Lingard lets me kiss her,' I retorted, 'and I'm not half as fond of her as I am of you.'
+>
+>'Lena does?' Tony gasped. 'If she's up to any of her nonsense with you, I'll scratch her eyes out!' She took my arm again and we walked out of the gate and up and down the sidewalk. 'Now, don't you go and be a fool like some of these town boys. You're not going to sit around here and whittle store-boxes and tell stories all your life. You are going away to school and make something of yourself. I'm just awful proud of you. You won't go and get mixed up with the Swedes, will you?'
+>
+> — Book II, Chapter XII
+---
+## Town Life
+
+> One could hang about the drugstore; and listen to the old men who sat there every evening, talking politics and telling raw stories. One could go to the cigar factory and chat with the old German who raised canaries for sale, and look at his stuffed birds. But whatever you began with him, the talk went back to taxidermy. There was the depot, of course; I often went down to see the night train come in, and afterward sat awhile with the disconsolate telegrapher who was always hoping to be transferred to Omaha or Denver, 'where there was some life.' He was sure to bring out his pictures of actresses and dancers. He got them with cigarette coupons, and nearly smoked himself to death to possess these desired forms and faces. For a change, one could talk to the station agent; but he was another malcontent; spent all his spare time writing letters to officials requesting a transfer. He wanted to get back to Wyoming where he could go trout-fishing on Sundays. 
+>
+> — Book II, Chapter XII
+---
+
+## Dead World
+
+
+> Winter lies too long in country towns; hangs on until it is stale and shabby, old and sullen. On the farm the weather was the great fact, and men's affairs went on underneath it, as the streams creep under the ice. But in Black Hawk the scene of human life was spread out shrunken and pinched, frozen down to the bare stalk.
+>
+> — Book II, Chapter VII
+
+---
+
+## Something To Do
+
+> At last there was something to do in those long, empty summer evenings, when the married people sat like images on their front porches, and the boys and girls tramped and tramped the board sidewalks—northward to the edge of the open prairie, south to the depot, then back again to the post-office, the ice-cream parlour, the butcher shop. Now there was a place where the girls could wear their new dresses, and where one could laugh aloud without being reproved by the ensuing silence. That silence seemed to ooze out of the ground, to hang under the foliage of the black maple trees with the bats and shadows. Now it was broken by lighthearted sounds. First the deep purring of Mr. Vanni's harp came in silvery ripples through the blackness of the dusty-smelling night; then the violins fell in—one of them was almost like a flute. They called so archly, so seductively, that our feet hurried toward the tent of themselves. Why hadn't we had a tent before?
+>
+> — Book II, Chapter VIII
+---
+## Nothing To Do
+
+>In the evening I used to prowl about, hunting for diversion. There lay the familiar streets, frozen with snow or liquid with mud. They led to the houses of good people who were putting the babies to bed, or simply sitting still before the parlour stove, digesting their supper. Black Hawk had two saloons. One of them was admitted, even by the church people, to be as respectable as a saloon could be. Handsome Anton Jelinek, who had rented his homestead and come to town, was the proprietor. In his saloon there were long tables where the Bohemian and German farmers could eat the lunches they brought from home while they drank their beer. Jelinek kept rye bread on hand and smoked fish and strong imported cheeses to please the foreign palate. I liked to drop into his bar-room and listen to the talk. But one day he overtook me on the street and clapped me on the shoulder.
+>
+>'Jim,' he said, 'I am good friends with you and I always like to see you. But you know how the church people think about saloons. Your grandpa has always treated me fine, and I don't like to have you come into my place, because I know he don't like it, and it puts me in bad with him.'
+>
+> — Book II, Chapter XII
+---
+## Propriety, pt. 1
+> After I refused to join 'the Owls,' as they were called, I made a bold resolve to go to the Saturday night dances at Firemen's Hall. I knew it would be useless to acquaint my elders with any such plan. Grandfather didn't approve of dancing, anyway; he would only say that if I wanted to dance I could go to the Masonic Hall, among 'the people we knew.' It was just my point that I saw altogether too much of the people we knew.
+>
+> — Book II, Chapter XII
+---
+class: smaller
+## Propriety, pt. 2
+> 'No, it ain't money. I wish it was. But I've heard things. You must 'a' known it would come back to me sometime.' She dropped into a chair, and, covering her face with her apron, began to cry. 'Jim,' she said, 'I was never one that claimed old folks could bring up their grandchildren. But it came about so; there wasn't any other way for you, it seemed like.'
+>
+>I put my arms around her. I couldn't bear to see her cry.
+>
+>'What is it, grandmother? Is it the Firemen's dances?'
+>
+>She nodded.
+>
+>'I'm sorry I sneaked off like that. But there's nothing wrong about the dances, and I haven't done anything wrong. I like all those country girls, and I like to dance with them. That's all there is to it.'
+>
+>'But it ain't right to deceive us, son, and it brings blame on us. People say you are growing up to be a bad boy, and that ain't just to us.'
+>
+>'I don't care what they say about me, but if it hurts you, that settles it. I won't go to the Firemen's Hall again.'
+>
+> — Book II, Chapter XIII
+
+
+
+</textarea>
+</body>
 </html>

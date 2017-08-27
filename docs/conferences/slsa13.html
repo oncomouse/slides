@@ -1,169 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <base target='_blank'>
-    <title>
-      SLSA 13
-    </title>
-    <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-    <link href="/slides/stylesheets/remark/conferences/slsa13.css" rel="stylesheet" media="all" />
-    <script src="/slides/javascripts/lib/head.min.js"></script>
-    <script>
-      // The javascript files to be loaded are determined by Middleman at compile:
-      var remark_js = "/slides/javascripts/remark/remark.min.js",
-      	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-      	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-      	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
-      	
-      // This call to head.js is automatically determined by Middleman at compile:
-      head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
-      
-      	// Ugly fix of HAML's formatting problems:
-      	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-      	
-      	// Load the slideshow:
-      	var slideshow = remark.create({
-      		navigation: {
-      			scroll: false,
-      			touch: true
-      		}
-      	});
-      	/*var image_scalar = {width: 0.85, height: 0.75 };
-      	$(window).on('resize', function() {
-      		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-      		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-      	}).resize();*/
-      	
-      	
-      });
-    </script>
-  </head>
-  <body>
-    <textarea id='source'>class: center, middle, title
-    
-    # "I am afraid of a draught of cool air": <br/>.subtitle[Lovecraft, Air Conditioning, <br/> &amp; Autophagic Modernity]
-    
-    ## SLSA 2013 <br/> University of Notre Dame <br/> Oct. 5, 2013
-    ## **Andrew Pilsch** <br/> Arizona State University
-    
-    ---
-    class: middle
-    
-    ### autophagy, n
-    
-    > 1. The action of feeding upon oneself; _spec_. metabolic consumption of the body's own tissue, as in starvation or certain diseases.
-    >
-    > 2. Chiefly _Cell Biol_. Autolysis of cells; the breaking down or consumption of cellular constituents; _spec_. the enclosure of a portion of cytoplasm within a vacuole, leading to lysosomal digestion of the contents.
-    > 
-    > — _Oxford English Dictionary_, 3rd Ed.
-    
-    ---
-    class: center, middle
-    ![H.P. Lovecraft](http://www.vol1brooklyn.com/wp-content/uploads/2012/03/lovecraft.jpeg)
-    ---
-    
-    class: middle
-    
-    > The place was a four-story mansion of brownstone, dating apparently from the late forties, and fitted with woodwork and marble **whose stained and sullied splendour argued a descent from high levels of tasteful opulence**. In the rooms, large and lofty, and decorated with impossible paper and ridiculously ornate stucco cornices, there lingered a depressing mustiness and hint of obscure cookery.
-    >
-    > — H.P. Lovecraft, "Cool Air," _Tales_, p. 158
-    
-    ---
-    
-    class: middle
-    
-    > The figure before me was short but exquisitely proportioned, and clad in somewhat formal dress of perfect cut and fit. A high-bred face of masterful though not arrogant expression was adorned by a short iron-grey full beard, and an old-fashioned pince-nez shielded the full, dark eyes and surmounted an aquiline nose which gave a Moorish touch to a physiognomy otherwise dominantly Celtiberian. Thick, well-trimmed hair that argued the punctual calls of a barber was parted gracefully above a high forehead; and the whole picture was one of striking intelligence and **superior blood and breeding**.
-    >
-    > — H.P. Lovecraft, "Cool Air," _Tales_, p. 160
-    
-    ---
-    class:middle
-    
-    > **A kind of dark, slimy trail** led from the open bathroom door to the hall door, and thence to the desk, where **a terrible little pool had accumulated**. Something was scrawled there in pencil in an awful, blind hand on a piece of paper **hideously smeared as though by the very claws that traced the hurried last words**. Then the trail led to the couch and ended unutterably.
-    >
-    > — H.P. Lovecraft, "Cool Air," _Tales_, p. 165-6
-    ---
-    class: center,middle
-    
-    .yarn-conditioning[
-    ![Yarn Conditioning](http://www.textilehistory.org/images/CramerSystems1913.jpg)
-    ]
-    ---
-    class: center, middle
-    
-    .carnegie-mansion[
-    ![Carnegie Mansion](http://ephemeralnewyork.files.wordpress.com/2011/11/carnegiemansion.jpg)
-    ]
-    ---
-    
-    class: center,middle
-    
-    ![Artificial Weather](http://yellowedandcreased.files.wordpress.com/2012/02/airwonder_1929_08.jpg?w=400&h=552)
-    
-    ---
-    
-    class:middle
-    
-    > He clearly understood my needs at a glance, and ministered to them with a master's deftness; the while reassuring me in a finely modulated though oddly hollow and timbreless voice that **he was the bitterest of sworn enemies to death**, and had sunk his fortune and lost all his friends in a lifetime of bizarre experiment devoted to its bafflement and extirpation.
-    >
-    >...
-    >
-    > I remember his tactfully consoling me about my weak heart by insisting that **will and consciousness are stronger than organic life itself**, so that if a bodily frame be but originally healthy and carefully preserved, it may through a scientific enhancement of these qualities retain a kind of nervous animation despite the most serious impairments, defects, or even absences in the battery of specific organs.
-    >
-    > — H.P. Lovecraft, "Cool Air," _Tales_, p. 161
-    
-    ---
-    class:middle
-    
-    >To Malone the sense of latent mystery in existence was always present. **In youth he had felt the hidden beauty and ecstasy of things, and had been a poet; but poverty and sorrow and exile had turned his gaze in darker directions, and he had thrilled at the imputations of evil in the world around**. Daily life had fur him come to be a phantasmagoria of macabre shadow-studies
-    >
-    > — H.P. Lovecraft, "The Horror at Red Hook," _Tales_, p. 127
-    
-    ---
-    class: center, middle
-    ![1920s New York Skyline](http://static.environmentalgraffiti.com/sites/default/files/images/http-inlinethumb50.webshots.com-35505-2067018480104237032S600x600Q85.jpg)
-    
-    ---
-    
-    class: middle
-    
-    > Red Hook is a maze of hybrid squalor near the ancient waterfront opposite Governor's Island, with dirty highways climbing the hill from the wharves to that higher ground where the decayed lengths of Clinton and Court Streets lead off toward the Borough Hall ... The population is a hopeless tangle and enigma; Syrian, Spanish, Italian, and Negro elements impinging upon one another, and fragments of Scandinavian and American belts lying not far distant. **It is a babel of sound and filth, and sends out strange cries to answer the lapping oily waves at its grimy piers and the monstrous organ litanies of the harbour whistles**.
-    >
-    > — H.P. Lovecraft, "The Horror at Red Hook," _Tales_, p. 129
-    
-    ---
-    
-    class: middle
-    
-    > That came when we went out on the flat roof (Crane and Loveman are on the fourth and top story) and saw the thing in all its unlimited and unglassed magnificence. It was something mightier than the dreams of old-world legend---a constellation of infernal majesty---a poem in Babylonian fire! ...  **Added to the weird lights are the weird sounds of the port, where the traffick of all the world comes to a focus. Fog-horns, ships' bells, the creak of distant windlasses** ... visions of far shores of India, where bright-plumed birds are roused to song by the incense of strange garden-girt pagodas, and gaudy-robed camel-drivers barter before sandalwood taverns with deep-voiced sailers having the sea's mysteries in their eyes. Silks and spices, curiously-wrought ornaments of Bengal gold, and gods and elephants strangely carven in jade and carnelian. Ah, me! Would that I could express the magick of the scene!
-    >
-    > — H.P. Lovecraft, Letter to Mrs. F.C. Clark, September 1924
-    
-    ---
-    class: center,middle
-    .brooklyn-bridge[
-    ![Brooklyn Bridge](http://www.paulrwilliamsproject.org/site_files/images/3b26128u.jpg)
-    ]
-    
-    ---
-    class: center,middle
-    
-    .title-block[.moor[
-    # #moor
-    ## Materialist and Object-Oriented Rhetoric
-    ]
-    ]
-    ---
-    class: middle, works-cited
-    ## Works Cited
-    
-    * Cooper, Gail. _Air-conditioning America: Engineers and the Controlled Environment, 1900-1960_. Baltimore: Johns Hopkins UP, 1998.
-    * Latour, Bruno. _We Have Never Been Modern_. Translated by Catherine Porter. Cambridge, MA: Harvard UP, October 1993.
-    * Lovecraft, Howard Phillips. _Letters from New York_. Edited by S. T Joshi and David E Schultz. San Francisco, CA: Night Shade, 2005.
-    * .ibid[]. _Selected Letters I: 1911-1924_. Edited by Donald Wonderei and August Derleth. Sauk City, WI: Arkham House, 1965.
-    * .ibid[]. _Tales_. New York: Library of America, 2005.
-    * Thacker, Eugene. _In The Dust of This Planet: The Horror Of Philosophy, Vol. 1_. Alresford, UK: Zero, 2011.</textarea>
-  </body>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+SLSA 13
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/conferences/slsa13.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>class: center, middle, title
+
+# "I am afraid of a draught of cool air": <br/>.subtitle[Lovecraft, Air Conditioning, <br/> &amp; Autophagic Modernity]
+
+## SLSA 2013 <br/> University of Notre Dame <br/> Oct. 5, 2013
+## **Andrew Pilsch** <br/> Arizona State University
+
+---
+class: middle
+
+### autophagy, n
+
+> 1. The action of feeding upon oneself; _spec_. metabolic consumption of the body's own tissue, as in starvation or certain diseases.
+>
+> 2. Chiefly _Cell Biol_. Autolysis of cells; the breaking down or consumption of cellular constituents; _spec_. the enclosure of a portion of cytoplasm within a vacuole, leading to lysosomal digestion of the contents.
+> 
+> — _Oxford English Dictionary_, 3rd Ed.
+
+---
+class: center, middle
+![H.P. Lovecraft](http://www.vol1brooklyn.com/wp-content/uploads/2012/03/lovecraft.jpeg)
+---
+
+class: middle
+
+> The place was a four-story mansion of brownstone, dating apparently from the late forties, and fitted with woodwork and marble **whose stained and sullied splendour argued a descent from high levels of tasteful opulence**. In the rooms, large and lofty, and decorated with impossible paper and ridiculously ornate stucco cornices, there lingered a depressing mustiness and hint of obscure cookery.
+>
+> — H.P. Lovecraft, "Cool Air," _Tales_, p. 158
+
+---
+
+class: middle
+
+> The figure before me was short but exquisitely proportioned, and clad in somewhat formal dress of perfect cut and fit. A high-bred face of masterful though not arrogant expression was adorned by a short iron-grey full beard, and an old-fashioned pince-nez shielded the full, dark eyes and surmounted an aquiline nose which gave a Moorish touch to a physiognomy otherwise dominantly Celtiberian. Thick, well-trimmed hair that argued the punctual calls of a barber was parted gracefully above a high forehead; and the whole picture was one of striking intelligence and **superior blood and breeding**.
+>
+> — H.P. Lovecraft, "Cool Air," _Tales_, p. 160
+
+---
+class:middle
+
+> **A kind of dark, slimy trail** led from the open bathroom door to the hall door, and thence to the desk, where **a terrible little pool had accumulated**. Something was scrawled there in pencil in an awful, blind hand on a piece of paper **hideously smeared as though by the very claws that traced the hurried last words**. Then the trail led to the couch and ended unutterably.
+>
+> — H.P. Lovecraft, "Cool Air," _Tales_, p. 165-6
+---
+class: center,middle
+
+.yarn-conditioning[
+![Yarn Conditioning](http://www.textilehistory.org/images/CramerSystems1913.jpg)
+]
+---
+class: center, middle
+
+.carnegie-mansion[
+![Carnegie Mansion](http://ephemeralnewyork.files.wordpress.com/2011/11/carnegiemansion.jpg)
+]
+---
+
+class: center,middle
+
+![Artificial Weather](http://yellowedandcreased.files.wordpress.com/2012/02/airwonder_1929_08.jpg?w=400&h=552)
+
+---
+
+class:middle
+
+> He clearly understood my needs at a glance, and ministered to them with a master's deftness; the while reassuring me in a finely modulated though oddly hollow and timbreless voice that **he was the bitterest of sworn enemies to death**, and had sunk his fortune and lost all his friends in a lifetime of bizarre experiment devoted to its bafflement and extirpation.
+>
+>...
+>
+> I remember his tactfully consoling me about my weak heart by insisting that **will and consciousness are stronger than organic life itself**, so that if a bodily frame be but originally healthy and carefully preserved, it may through a scientific enhancement of these qualities retain a kind of nervous animation despite the most serious impairments, defects, or even absences in the battery of specific organs.
+>
+> — H.P. Lovecraft, "Cool Air," _Tales_, p. 161
+
+---
+class:middle
+
+>To Malone the sense of latent mystery in existence was always present. **In youth he had felt the hidden beauty and ecstasy of things, and had been a poet; but poverty and sorrow and exile had turned his gaze in darker directions, and he had thrilled at the imputations of evil in the world around**. Daily life had fur him come to be a phantasmagoria of macabre shadow-studies
+>
+> — H.P. Lovecraft, "The Horror at Red Hook," _Tales_, p. 127
+
+---
+class: center, middle
+![1920s New York Skyline](http://static.environmentalgraffiti.com/sites/default/files/images/http-inlinethumb50.webshots.com-35505-2067018480104237032S600x600Q85.jpg)
+
+---
+
+class: middle
+
+> Red Hook is a maze of hybrid squalor near the ancient waterfront opposite Governor's Island, with dirty highways climbing the hill from the wharves to that higher ground where the decayed lengths of Clinton and Court Streets lead off toward the Borough Hall ... The population is a hopeless tangle and enigma; Syrian, Spanish, Italian, and Negro elements impinging upon one another, and fragments of Scandinavian and American belts lying not far distant. **It is a babel of sound and filth, and sends out strange cries to answer the lapping oily waves at its grimy piers and the monstrous organ litanies of the harbour whistles**.
+>
+> — H.P. Lovecraft, "The Horror at Red Hook," _Tales_, p. 129
+
+---
+
+class: middle
+
+> That came when we went out on the flat roof (Crane and Loveman are on the fourth and top story) and saw the thing in all its unlimited and unglassed magnificence. It was something mightier than the dreams of old-world legend---a constellation of infernal majesty---a poem in Babylonian fire! ...  **Added to the weird lights are the weird sounds of the port, where the traffick of all the world comes to a focus. Fog-horns, ships' bells, the creak of distant windlasses** ... visions of far shores of India, where bright-plumed birds are roused to song by the incense of strange garden-girt pagodas, and gaudy-robed camel-drivers barter before sandalwood taverns with deep-voiced sailers having the sea's mysteries in their eyes. Silks and spices, curiously-wrought ornaments of Bengal gold, and gods and elephants strangely carven in jade and carnelian. Ah, me! Would that I could express the magick of the scene!
+>
+> — H.P. Lovecraft, Letter to Mrs. F.C. Clark, September 1924
+
+---
+class: center,middle
+.brooklyn-bridge[
+![Brooklyn Bridge](http://www.paulrwilliamsproject.org/site_files/images/3b26128u.jpg)
+]
+
+---
+class: center,middle
+
+.title-block[.moor[
+# #moor
+## Materialist and Object-Oriented Rhetoric
+]
+]
+---
+class: middle, works-cited
+## Works Cited
+
+* Cooper, Gail. _Air-conditioning America: Engineers and the Controlled Environment, 1900-1960_. Baltimore: Johns Hopkins UP, 1998.
+* Latour, Bruno. _We Have Never Been Modern_. Translated by Catherine Porter. Cambridge, MA: Harvard UP, October 1993.
+* Lovecraft, Howard Phillips. _Letters from New York_. Edited by S. T Joshi and David E Schultz. San Francisco, CA: Night Shade, 2005.
+* .ibid[]. _Selected Letters I: 1911-1924_. Edited by Donald Wonderei and August Derleth. Sauk City, WI: Arkham House, 1965.
+* .ibid[]. _Tales_. New York: Library of America, 2005.
+* Thacker, Eugene. _In The Dust of This Planet: The Horror Of Philosophy, Vol. 1_. Alresford, UK: Zero, 2011.
+</textarea>
+</body>
 </html>
