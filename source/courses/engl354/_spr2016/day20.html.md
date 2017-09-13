@@ -26,7 +26,7 @@ Does this changing relationship present a problem in which no "Great Work" (Para
 ---
 class: big
 
-> But once all this was done, unintermediated thought,or at least what seemed like unintermediated thought, was both possible and democratizable. And this unselfconscious transparency has become a stylistic, one might almost say a cultural, ideal for Western civilization. The best style is the style not noticed; the best manners,the most unobtrusive; convincing behavior spontaneous and unselfconscious. (266)
+> But once all this was done, unintermediated thought, or at least what seemed like unintermediated thought, was both possible and democratizable. And this unselfconscious transparency has become a stylistic, one might almost say a cultural, ideal for Western civilization. The best style is the style not noticed; the best manners, the most unobtrusive; convincing behavior spontaneous and unselfconscious. (266)
 
 ---
 class: big
@@ -40,7 +40,7 @@ class: big
 ---
 class: big
 
-> The classical notion of decorum, like modern equivalents—"clarity," "authenticity," and so on—measures an effect on the beholder. IF a style works, if it creates the transparent illusion, it is decorous. Decorum is such a poor descriptive term precisely because it describes so many different kinds of verbal patterns yet allows only one virtue, unselfconscious transparency. (276)
+> The classical notion of decorum, like modern equivalents—"clarity," "authenticity," and so on—measures an effect on the beholder. If a style works, if it creates the transparent illusion, it is decorous. Decorum is such a poor descriptive term precisely because it describes so many different kinds of verbal patterns yet allows only one virtue, unselfconscious transparency. (276)
 
 ---
 
@@ -71,7 +71,7 @@ class: big
 ---
 class: big
 
-> We will have to think about canonical expansion from a technological as well as a theoretical perspective. If nowadays students read only what they are assigned,soon they can be assigned almost anything they should read-and will have their own copy of it. In university literature courses,we will soon have to teach students who have been brought up on interactive electronic "texts," and we will have to prepare them for a world of work which relies on the electronic word. I don't think we can sit out this technological revolution; why not use it? (272-273)
+> We will have to think about canonical expansion from a technological as well as a theoretical perspective. If nowadays students read only what they are assigned, soon they can be assigned almost anything they should read-and will have their own copy of it. In university literature courses,we will soon have to teach students who have been brought up on interactive electronic "texts," and we will have to prepare them for a world of work which relies on the electronic word. I don't think we can sit out this technological revolution; why not use it? (272-273)
 
 ---
 class: big
@@ -107,6 +107,6 @@ class: big
 ---
 
 
-> Pixeled print *destabilizes* the arts and letters in an essentially rhetorical way,returns them to that characteristic oscillation between looking AT symbols and looking THROUGH them which the rhetorical *paideia* instilled as a native address to the world. Our present squabble in the public prints about teaching Western culture is usually animated on both sides by a radical misapprehension about what "Western Culture" has always been. We are asked to believe that it has been a print-stable collection of Great Ideas enshrined in Great Books, and we now quarrel about which books are, for our present needs, really Great. But Western education has in its essence been rhetorical, has been based, that is,not on a set of great ideas,but on a manner of apprehension; it has taught as central not knowledge but how knowledge is held. (286)
+> Pixeled print *destabilizes* the arts and letters in an essentially rhetorical way, returns them to that characteristic oscillation between looking AT symbols and looking THROUGH them which the rhetorical *paideia* instilled as a native address to the world. Our present squabble in the public prints about teaching Western culture is usually animated on both sides by a radical misapprehension about what "Western Culture" has always been. We are asked to believe that it has been a print-stable collection of Great Ideas enshrined in Great Books, and we now quarrel about which books are, for our present needs, really Great. But Western education has in its essence been rhetorical, has been based, that is, not on a set of great ideas,but on a manner of apprehension; it has taught as central not knowledge but how knowledge is held. (286)
 
 ---
