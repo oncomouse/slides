@@ -56,10 +56,10 @@ count: false
 class: inverse, middle, center
 ## Against Rocketship Ideology
 ---
-class: inverse, f21px
+class: inverse, f24px
 ## Eugene Thacker<br><small>*Cosmic Pessimism*</small>
 
-> Both moral and metaphysical pessimism point to another kind, a pessimism that is neither subjective nor objective, neither for-us nor in-itself, and instead a pessimism of the world-without-us. We could call this a cosmic pessimism ... but this sounds too majestic, too full of wonder, too much the bitter aftertaste of the Great Beyond. Words falter. And so do ideas. And so we have a cosmic pessimism, a pessimism that is first and last a pessimism about cosmos, about the necessity and possibility of order. The contours of cosmic pessimism are a drastic scaling-up or scaling-down of the human point of view, the unhuman orientation of deep space and deep time, and all of this shad- owed by an impasse, a primordial insignificance, the impossibility of ever adequately accounting for one’s relationship to thought — all that remains of pessimism is the desiderata of affects — agonistic, impassive, defiant, reclusive, filled with sorrow and flailing at that architectonic chess match called philosophy, a  ailing that pessimism tries to raise to the level of an art form (though what usually results is slapstick). (12-3)
+> Both moral and metaphysical pessimism point to another kind, a pessimism that is neither subjective nor objective, neither for-us nor in-itself, and instead a pessimism of the world-without-us. We could call this a cosmic pessimism ... but this sounds too majestic, too full of wonder, too much the bitter aftertaste of the Great Beyond. Words falter. And so do ideas. And so we have a cosmic pessimism, a pessimism that is first and last a pessimism about cosmos, about the necessity and possibility of order. The contours of cosmic pessimism are a drastic scaling-up or scaling-down of the human point of view, the unhuman orientation of deep space and deep time, and all of this shadowed by an impasse, a primordial insignificance, the impossibility of ever adequately accounting for one’s relationship to thought… (12-3)
 ---
 class: inverse, f26px
 ## Sam Kriss on Colonialism
