@@ -247,6 +247,9 @@ img {
 }
 
 .title {
+	p {
+		line-height: 1 !important;
+	}
 	strong {
 		font-weight: 600;
 	}
