@@ -111,9 +111,6 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
-.emph, strong {
-  color: #002387; }
-
 a, a > code {
   color: #002387; }
 
@@ -288,18 +285,10 @@ img {
     line-height: 1.1em;
     margin: 0; }
 
-.title h1 {
-  font-size: 2.4em;
-  color: #000000; }
-  .title h1 .subtitle {
-    font-size: 0.83333em;
-    color: #000000; }
-.title h2 {
-  font-size: 1.4em;
-  font-weight: normal; }
-.title h3 {
-  font-size: 1.2em;
-  font-weight: normal; }
+.title p {
+  line-height: 1 !important; }
+.title strong {
+  font-weight: 600; }
 
 .works-cited ul, .works-cited ol {
   list-style-type: none;
@@ -355,8 +344,8 @@ img {
 .f5px p, .f5px li, .f5px td {
   font-size: 5px;
   line-height: 1.4; }
-.f5px small {
-  font-size: 4.25px; }
+  .f5px p small, .f5px li small, .f5px td small {
+    font-size: 4.25px; }
 
 span.f5px {
   font-size: 5px;
@@ -369,8 +358,8 @@ span.f5px {
 .f6px p, .f6px li, .f6px td {
   font-size: 6px;
   line-height: 1.4; }
-.f6px small {
-  font-size: 5.1px; }
+  .f6px p small, .f6px li small, .f6px td small {
+    font-size: 5.1px; }
 
 span.f6px {
   font-size: 6px;
@@ -383,8 +372,8 @@ span.f6px {
 .f7px p, .f7px li, .f7px td {
   font-size: 7px;
   line-height: 1.4; }
-.f7px small {
-  font-size: 5.95px; }
+  .f7px p small, .f7px li small, .f7px td small {
+    font-size: 5.95px; }
 
 span.f7px {
   font-size: 7px;
@@ -397,8 +386,8 @@ span.f7px {
 .f8px p, .f8px li, .f8px td {
   font-size: 8px;
   line-height: 1.4; }
-.f8px small {
-  font-size: 6.8px; }
+  .f8px p small, .f8px li small, .f8px td small {
+    font-size: 6.8px; }
 
 span.f8px {
   font-size: 8px;
@@ -411,8 +400,8 @@ span.f8px {
 .f9px p, .f9px li, .f9px td {
   font-size: 9px;
   line-height: 1.4; }
-.f9px small {
-  font-size: 7.65px; }
+  .f9px p small, .f9px li small, .f9px td small {
+    font-size: 7.65px; }
 
 span.f9px {
   font-size: 9px;
@@ -425,8 +414,8 @@ span.f9px {
 .f10px p, .f10px li, .f10px td {
   font-size: 10px;
   line-height: 1.4; }
-.f10px small {
-  font-size: 8.5px; }
+  .f10px p small, .f10px li small, .f10px td small {
+    font-size: 8.5px; }
 
 span.f10px {
   font-size: 10px;
@@ -439,8 +428,8 @@ span.f10px {
 .f11px p, .f11px li, .f11px td {
   font-size: 11px;
   line-height: 1.4; }
-.f11px small {
-  font-size: 9.35px; }
+  .f11px p small, .f11px li small, .f11px td small {
+    font-size: 9.35px; }
 
 span.f11px {
   font-size: 11px;
@@ -453,8 +442,8 @@ span.f11px {
 .f12px p, .f12px li, .f12px td {
   font-size: 12px;
   line-height: 1.4; }
-.f12px small {
-  font-size: 10.2px; }
+  .f12px p small, .f12px li small, .f12px td small {
+    font-size: 10.2px; }
 
 span.f12px {
   font-size: 12px;
@@ -467,8 +456,8 @@ span.f12px {
 .f13px p, .f13px li, .f13px td {
   font-size: 13px;
   line-height: 1.4; }
-.f13px small {
-  font-size: 11.05px; }
+  .f13px p small, .f13px li small, .f13px td small {
+    font-size: 11.05px; }
 
 span.f13px {
   font-size: 13px;
@@ -481,8 +470,8 @@ span.f13px {
 .f14px p, .f14px li, .f14px td {
   font-size: 14px;
   line-height: 1.4; }
-.f14px small {
-  font-size: 11.9px; }
+  .f14px p small, .f14px li small, .f14px td small {
+    font-size: 11.9px; }
 
 span.f14px {
   font-size: 14px;
@@ -495,8 +484,8 @@ span.f14px {
 .f15px p, .f15px li, .f15px td {
   font-size: 15px;
   line-height: 1.4; }
-.f15px small {
-  font-size: 12.75px; }
+  .f15px p small, .f15px li small, .f15px td small {
+    font-size: 12.75px; }
 
 span.f15px {
   font-size: 15px;
@@ -509,8 +498,8 @@ span.f15px {
 .f16px p, .f16px li, .f16px td {
   font-size: 16px;
   line-height: 1.4; }
-.f16px small {
-  font-size: 13.6px; }
+  .f16px p small, .f16px li small, .f16px td small {
+    font-size: 13.6px; }
 
 span.f16px {
   font-size: 16px;
@@ -523,8 +512,8 @@ span.f16px {
 .f17px p, .f17px li, .f17px td {
   font-size: 17px;
   line-height: 1.4; }
-.f17px small {
-  font-size: 14.45px; }
+  .f17px p small, .f17px li small, .f17px td small {
+    font-size: 14.45px; }
 
 span.f17px {
   font-size: 17px;
@@ -537,8 +526,8 @@ span.f17px {
 .f18px p, .f18px li, .f18px td {
   font-size: 18px;
   line-height: 1.4; }
-.f18px small {
-  font-size: 15.3px; }
+  .f18px p small, .f18px li small, .f18px td small {
+    font-size: 15.3px; }
 
 span.f18px {
   font-size: 18px;
@@ -551,8 +540,8 @@ span.f18px {
 .f19px p, .f19px li, .f19px td {
   font-size: 19px;
   line-height: 1.4; }
-.f19px small {
-  font-size: 16.15px; }
+  .f19px p small, .f19px li small, .f19px td small {
+    font-size: 16.15px; }
 
 span.f19px {
   font-size: 19px;
@@ -565,8 +554,8 @@ span.f19px {
 .f20px p, .f20px li, .f20px td {
   font-size: 20px;
   line-height: 1.4; }
-.f20px small {
-  font-size: 17px; }
+  .f20px p small, .f20px li small, .f20px td small {
+    font-size: 17px; }
 
 span.f20px {
   font-size: 20px;
@@ -579,8 +568,8 @@ span.f20px {
 .f21px p, .f21px li, .f21px td {
   font-size: 21px;
   line-height: 1.4; }
-.f21px small {
-  font-size: 17.85px; }
+  .f21px p small, .f21px li small, .f21px td small {
+    font-size: 17.85px; }
 
 span.f21px {
   font-size: 21px;
@@ -593,8 +582,8 @@ span.f21px {
 .f22px p, .f22px li, .f22px td {
   font-size: 22px;
   line-height: 1.4; }
-.f22px small {
-  font-size: 18.7px; }
+  .f22px p small, .f22px li small, .f22px td small {
+    font-size: 18.7px; }
 
 span.f22px {
   font-size: 22px;
@@ -607,8 +596,8 @@ span.f22px {
 .f23px p, .f23px li, .f23px td {
   font-size: 23px;
   line-height: 1.4; }
-.f23px small {
-  font-size: 19.55px; }
+  .f23px p small, .f23px li small, .f23px td small {
+    font-size: 19.55px; }
 
 span.f23px {
   font-size: 23px;
@@ -621,8 +610,8 @@ span.f23px {
 .f24px p, .f24px li, .f24px td {
   font-size: 24px;
   line-height: 1.4; }
-.f24px small {
-  font-size: 20.4px; }
+  .f24px p small, .f24px li small, .f24px td small {
+    font-size: 20.4px; }
 
 span.f24px {
   font-size: 24px;
@@ -635,8 +624,8 @@ span.f24px {
 .f25px p, .f25px li, .f25px td {
   font-size: 25px;
   line-height: 1.4; }
-.f25px small {
-  font-size: 21.25px; }
+  .f25px p small, .f25px li small, .f25px td small {
+    font-size: 21.25px; }
 
 span.f25px {
   font-size: 25px;
@@ -649,8 +638,8 @@ span.f25px {
 .f26px p, .f26px li, .f26px td {
   font-size: 26px;
   line-height: 1.4; }
-.f26px small {
-  font-size: 22.1px; }
+  .f26px p small, .f26px li small, .f26px td small {
+    font-size: 22.1px; }
 
 span.f26px {
   font-size: 26px;
@@ -663,8 +652,8 @@ span.f26px {
 .f27px p, .f27px li, .f27px td {
   font-size: 27px;
   line-height: 1.4; }
-.f27px small {
-  font-size: 22.95px; }
+  .f27px p small, .f27px li small, .f27px td small {
+    font-size: 22.95px; }
 
 span.f27px {
   font-size: 27px;
@@ -677,8 +666,8 @@ span.f27px {
 .f28px p, .f28px li, .f28px td {
   font-size: 28px;
   line-height: 1.4; }
-.f28px small {
-  font-size: 23.8px; }
+  .f28px p small, .f28px li small, .f28px td small {
+    font-size: 23.8px; }
 
 span.f28px {
   font-size: 28px;
@@ -691,8 +680,8 @@ span.f28px {
 .f29px p, .f29px li, .f29px td {
   font-size: 29px;
   line-height: 1.4; }
-.f29px small {
-  font-size: 24.65px; }
+  .f29px p small, .f29px li small, .f29px td small {
+    font-size: 24.65px; }
 
 span.f29px {
   font-size: 29px;
@@ -705,8 +694,8 @@ span.f29px {
 .f30px p, .f30px li, .f30px td {
   font-size: 30px;
   line-height: 1.4; }
-.f30px small {
-  font-size: 25.5px; }
+  .f30px p small, .f30px li small, .f30px td small {
+    font-size: 25.5px; }
 
 span.f30px {
   font-size: 30px;
@@ -719,8 +708,8 @@ span.f30px {
 .f31px p, .f31px li, .f31px td {
   font-size: 31px;
   line-height: 1.4; }
-.f31px small {
-  font-size: 26.35px; }
+  .f31px p small, .f31px li small, .f31px td small {
+    font-size: 26.35px; }
 
 span.f31px {
   font-size: 31px;
@@ -733,8 +722,8 @@ span.f31px {
 .f32px p, .f32px li, .f32px td {
   font-size: 32px;
   line-height: 1.4; }
-.f32px small {
-  font-size: 27.2px; }
+  .f32px p small, .f32px li small, .f32px td small {
+    font-size: 27.2px; }
 
 span.f32px {
   font-size: 32px;
@@ -747,8 +736,8 @@ span.f32px {
 .f33px p, .f33px li, .f33px td {
   font-size: 33px;
   line-height: 1.4; }
-.f33px small {
-  font-size: 28.05px; }
+  .f33px p small, .f33px li small, .f33px td small {
+    font-size: 28.05px; }
 
 span.f33px {
   font-size: 33px;
@@ -761,8 +750,8 @@ span.f33px {
 .f34px p, .f34px li, .f34px td {
   font-size: 34px;
   line-height: 1.4; }
-.f34px small {
-  font-size: 28.9px; }
+  .f34px p small, .f34px li small, .f34px td small {
+    font-size: 28.9px; }
 
 span.f34px {
   font-size: 34px;
@@ -775,8 +764,8 @@ span.f34px {
 .f35px p, .f35px li, .f35px td {
   font-size: 35px;
   line-height: 1.4; }
-.f35px small {
-  font-size: 29.75px; }
+  .f35px p small, .f35px li small, .f35px td small {
+    font-size: 29.75px; }
 
 span.f35px {
   font-size: 35px;
@@ -789,8 +778,8 @@ span.f35px {
 .f36px p, .f36px li, .f36px td {
   font-size: 36px;
   line-height: 1.4; }
-.f36px small {
-  font-size: 30.6px; }
+  .f36px p small, .f36px li small, .f36px td small {
+    font-size: 30.6px; }
 
 span.f36px {
   font-size: 36px;
@@ -803,8 +792,8 @@ span.f36px {
 .f37px p, .f37px li, .f37px td {
   font-size: 37px;
   line-height: 1.4; }
-.f37px small {
-  font-size: 31.45px; }
+  .f37px p small, .f37px li small, .f37px td small {
+    font-size: 31.45px; }
 
 span.f37px {
   font-size: 37px;
@@ -817,8 +806,8 @@ span.f37px {
 .f38px p, .f38px li, .f38px td {
   font-size: 38px;
   line-height: 1.4; }
-.f38px small {
-  font-size: 32.3px; }
+  .f38px p small, .f38px li small, .f38px td small {
+    font-size: 32.3px; }
 
 span.f38px {
   font-size: 38px;
@@ -831,8 +820,8 @@ span.f38px {
 .f39px p, .f39px li, .f39px td {
   font-size: 39px;
   line-height: 1.4; }
-.f39px small {
-  font-size: 33.15px; }
+  .f39px p small, .f39px li small, .f39px td small {
+    font-size: 33.15px; }
 
 span.f39px {
   font-size: 39px;
@@ -845,8 +834,8 @@ span.f39px {
 .f40px p, .f40px li, .f40px td {
   font-size: 40px;
   line-height: 1.4; }
-.f40px small {
-  font-size: 34px; }
+  .f40px p small, .f40px li small, .f40px td small {
+    font-size: 34px; }
 
 span.f40px {
   font-size: 40px;
@@ -859,8 +848,8 @@ span.f40px {
 .f41px p, .f41px li, .f41px td {
   font-size: 41px;
   line-height: 1.4; }
-.f41px small {
-  font-size: 34.85px; }
+  .f41px p small, .f41px li small, .f41px td small {
+    font-size: 34.85px; }
 
 span.f41px {
   font-size: 41px;
@@ -873,8 +862,8 @@ span.f41px {
 .f42px p, .f42px li, .f42px td {
   font-size: 42px;
   line-height: 1.4; }
-.f42px small {
-  font-size: 35.7px; }
+  .f42px p small, .f42px li small, .f42px td small {
+    font-size: 35.7px; }
 
 span.f42px {
   font-size: 42px;
@@ -887,8 +876,8 @@ span.f42px {
 .f43px p, .f43px li, .f43px td {
   font-size: 43px;
   line-height: 1.4; }
-.f43px small {
-  font-size: 36.55px; }
+  .f43px p small, .f43px li small, .f43px td small {
+    font-size: 36.55px; }
 
 span.f43px {
   font-size: 43px;
@@ -901,8 +890,8 @@ span.f43px {
 .f44px p, .f44px li, .f44px td {
   font-size: 44px;
   line-height: 1.4; }
-.f44px small {
-  font-size: 37.4px; }
+  .f44px p small, .f44px li small, .f44px td small {
+    font-size: 37.4px; }
 
 span.f44px {
   font-size: 44px;
@@ -915,8 +904,8 @@ span.f44px {
 .f45px p, .f45px li, .f45px td {
   font-size: 45px;
   line-height: 1.4; }
-.f45px small {
-  font-size: 38.25px; }
+  .f45px p small, .f45px li small, .f45px td small {
+    font-size: 38.25px; }
 
 span.f45px {
   font-size: 45px;
@@ -929,8 +918,8 @@ span.f45px {
 .f46px p, .f46px li, .f46px td {
   font-size: 46px;
   line-height: 1.4; }
-.f46px small {
-  font-size: 39.1px; }
+  .f46px p small, .f46px li small, .f46px td small {
+    font-size: 39.1px; }
 
 span.f46px {
   font-size: 46px;
@@ -943,8 +932,8 @@ span.f46px {
 .f47px p, .f47px li, .f47px td {
   font-size: 47px;
   line-height: 1.4; }
-.f47px small {
-  font-size: 39.95px; }
+  .f47px p small, .f47px li small, .f47px td small {
+    font-size: 39.95px; }
 
 span.f47px {
   font-size: 47px;
@@ -957,8 +946,8 @@ span.f47px {
 .f48px p, .f48px li, .f48px td {
   font-size: 48px;
   line-height: 1.4; }
-.f48px small {
-  font-size: 40.8px; }
+  .f48px p small, .f48px li small, .f48px td small {
+    font-size: 40.8px; }
 
 span.f48px {
   font-size: 48px;
@@ -971,8 +960,8 @@ span.f48px {
 .f49px p, .f49px li, .f49px td {
   font-size: 49px;
   line-height: 1.4; }
-.f49px small {
-  font-size: 41.65px; }
+  .f49px p small, .f49px li small, .f49px td small {
+    font-size: 41.65px; }
 
 span.f49px {
   font-size: 49px;
@@ -985,8 +974,8 @@ span.f49px {
 .f50px p, .f50px li, .f50px td {
   font-size: 50px;
   line-height: 1.4; }
-.f50px small {
-  font-size: 42.5px; }
+  .f50px p small, .f50px li small, .f50px td small {
+    font-size: 42.5px; }
 
 span.f50px {
   font-size: 50px;
@@ -999,8 +988,8 @@ span.f50px {
 .f51px p, .f51px li, .f51px td {
   font-size: 51px;
   line-height: 1.4; }
-.f51px small {
-  font-size: 43.35px; }
+  .f51px p small, .f51px li small, .f51px td small {
+    font-size: 43.35px; }
 
 span.f51px {
   font-size: 51px;
@@ -1013,8 +1002,8 @@ span.f51px {
 .f52px p, .f52px li, .f52px td {
   font-size: 52px;
   line-height: 1.4; }
-.f52px small {
-  font-size: 44.2px; }
+  .f52px p small, .f52px li small, .f52px td small {
+    font-size: 44.2px; }
 
 span.f52px {
   font-size: 52px;
@@ -1027,8 +1016,8 @@ span.f52px {
 .f53px p, .f53px li, .f53px td {
   font-size: 53px;
   line-height: 1.4; }
-.f53px small {
-  font-size: 45.05px; }
+  .f53px p small, .f53px li small, .f53px td small {
+    font-size: 45.05px; }
 
 span.f53px {
   font-size: 53px;
@@ -1041,8 +1030,8 @@ span.f53px {
 .f54px p, .f54px li, .f54px td {
   font-size: 54px;
   line-height: 1.4; }
-.f54px small {
-  font-size: 45.9px; }
+  .f54px p small, .f54px li small, .f54px td small {
+    font-size: 45.9px; }
 
 span.f54px {
   font-size: 54px;
@@ -1055,8 +1044,8 @@ span.f54px {
 .f55px p, .f55px li, .f55px td {
   font-size: 55px;
   line-height: 1.4; }
-.f55px small {
-  font-size: 46.75px; }
+  .f55px p small, .f55px li small, .f55px td small {
+    font-size: 46.75px; }
 
 span.f55px {
   font-size: 55px;
@@ -1069,8 +1058,8 @@ span.f55px {
 .f56px p, .f56px li, .f56px td {
   font-size: 56px;
   line-height: 1.4; }
-.f56px small {
-  font-size: 47.6px; }
+  .f56px p small, .f56px li small, .f56px td small {
+    font-size: 47.6px; }
 
 span.f56px {
   font-size: 56px;
@@ -1083,8 +1072,8 @@ span.f56px {
 .f57px p, .f57px li, .f57px td {
   font-size: 57px;
   line-height: 1.4; }
-.f57px small {
-  font-size: 48.45px; }
+  .f57px p small, .f57px li small, .f57px td small {
+    font-size: 48.45px; }
 
 span.f57px {
   font-size: 57px;
@@ -1097,8 +1086,8 @@ span.f57px {
 .f58px p, .f58px li, .f58px td {
   font-size: 58px;
   line-height: 1.4; }
-.f58px small {
-  font-size: 49.3px; }
+  .f58px p small, .f58px li small, .f58px td small {
+    font-size: 49.3px; }
 
 span.f58px {
   font-size: 58px;
@@ -1111,8 +1100,8 @@ span.f58px {
 .f59px p, .f59px li, .f59px td {
   font-size: 59px;
   line-height: 1.4; }
-.f59px small {
-  font-size: 50.15px; }
+  .f59px p small, .f59px li small, .f59px td small {
+    font-size: 50.15px; }
 
 span.f59px {
   font-size: 59px;
@@ -1125,8 +1114,8 @@ span.f59px {
 .f60px p, .f60px li, .f60px td {
   font-size: 60px;
   line-height: 1.4; }
-.f60px small {
-  font-size: 51px; }
+  .f60px p small, .f60px li small, .f60px td small {
+    font-size: 51px; }
 
 span.f60px {
   font-size: 60px;
@@ -1139,8 +1128,8 @@ span.f60px {
 .f61px p, .f61px li, .f61px td {
   font-size: 61px;
   line-height: 1.4; }
-.f61px small {
-  font-size: 51.85px; }
+  .f61px p small, .f61px li small, .f61px td small {
+    font-size: 51.85px; }
 
 span.f61px {
   font-size: 61px;
@@ -1153,8 +1142,8 @@ span.f61px {
 .f62px p, .f62px li, .f62px td {
   font-size: 62px;
   line-height: 1.4; }
-.f62px small {
-  font-size: 52.7px; }
+  .f62px p small, .f62px li small, .f62px td small {
+    font-size: 52.7px; }
 
 span.f62px {
   font-size: 62px;
@@ -1167,8 +1156,8 @@ span.f62px {
 .f63px p, .f63px li, .f63px td {
   font-size: 63px;
   line-height: 1.4; }
-.f63px small {
-  font-size: 53.55px; }
+  .f63px p small, .f63px li small, .f63px td small {
+    font-size: 53.55px; }
 
 span.f63px {
   font-size: 63px;
@@ -1181,8 +1170,8 @@ span.f63px {
 .f64px p, .f64px li, .f64px td {
   font-size: 64px;
   line-height: 1.4; }
-.f64px small {
-  font-size: 54.4px; }
+  .f64px p small, .f64px li small, .f64px td small {
+    font-size: 54.4px; }
 
 span.f64px {
   font-size: 64px;
@@ -1195,8 +1184,8 @@ span.f64px {
 .f65px p, .f65px li, .f65px td {
   font-size: 65px;
   line-height: 1.4; }
-.f65px small {
-  font-size: 55.25px; }
+  .f65px p small, .f65px li small, .f65px td small {
+    font-size: 55.25px; }
 
 span.f65px {
   font-size: 65px;
@@ -1209,8 +1198,8 @@ span.f65px {
 .f66px p, .f66px li, .f66px td {
   font-size: 66px;
   line-height: 1.4; }
-.f66px small {
-  font-size: 56.1px; }
+  .f66px p small, .f66px li small, .f66px td small {
+    font-size: 56.1px; }
 
 span.f66px {
   font-size: 66px;
@@ -1223,8 +1212,8 @@ span.f66px {
 .f67px p, .f67px li, .f67px td {
   font-size: 67px;
   line-height: 1.4; }
-.f67px small {
-  font-size: 56.95px; }
+  .f67px p small, .f67px li small, .f67px td small {
+    font-size: 56.95px; }
 
 span.f67px {
   font-size: 67px;
@@ -1237,8 +1226,8 @@ span.f67px {
 .f68px p, .f68px li, .f68px td {
   font-size: 68px;
   line-height: 1.4; }
-.f68px small {
-  font-size: 57.8px; }
+  .f68px p small, .f68px li small, .f68px td small {
+    font-size: 57.8px; }
 
 span.f68px {
   font-size: 68px;
@@ -1251,8 +1240,8 @@ span.f68px {
 .f69px p, .f69px li, .f69px td {
   font-size: 69px;
   line-height: 1.4; }
-.f69px small {
-  font-size: 58.65px; }
+  .f69px p small, .f69px li small, .f69px td small {
+    font-size: 58.65px; }
 
 span.f69px {
   font-size: 69px;
@@ -1265,8 +1254,8 @@ span.f69px {
 .f70px p, .f70px li, .f70px td {
   font-size: 70px;
   line-height: 1.4; }
-.f70px small {
-  font-size: 59.5px; }
+  .f70px p small, .f70px li small, .f70px td small {
+    font-size: 59.5px; }
 
 span.f70px {
   font-size: 70px;
@@ -1279,8 +1268,8 @@ span.f70px {
 .f71px p, .f71px li, .f71px td {
   font-size: 71px;
   line-height: 1.4; }
-.f71px small {
-  font-size: 60.35px; }
+  .f71px p small, .f71px li small, .f71px td small {
+    font-size: 60.35px; }
 
 span.f71px {
   font-size: 71px;
@@ -1293,8 +1282,8 @@ span.f71px {
 .f72px p, .f72px li, .f72px td {
   font-size: 72px;
   line-height: 1.4; }
-.f72px small {
-  font-size: 61.2px; }
+  .f72px p small, .f72px li small, .f72px td small {
+    font-size: 61.2px; }
 
 span.f72px {
   font-size: 72px;
@@ -1307,8 +1296,8 @@ span.f72px {
 .f73px p, .f73px li, .f73px td {
   font-size: 73px;
   line-height: 1.4; }
-.f73px small {
-  font-size: 62.05px; }
+  .f73px p small, .f73px li small, .f73px td small {
+    font-size: 62.05px; }
 
 span.f73px {
   font-size: 73px;
@@ -1321,8 +1310,8 @@ span.f73px {
 .f74px p, .f74px li, .f74px td {
   font-size: 74px;
   line-height: 1.4; }
-.f74px small {
-  font-size: 62.9px; }
+  .f74px p small, .f74px li small, .f74px td small {
+    font-size: 62.9px; }
 
 span.f74px {
   font-size: 74px;
@@ -1335,8 +1324,8 @@ span.f74px {
 .f75px p, .f75px li, .f75px td {
   font-size: 75px;
   line-height: 1.4; }
-.f75px small {
-  font-size: 63.75px; }
+  .f75px p small, .f75px li small, .f75px td small {
+    font-size: 63.75px; }
 
 span.f75px {
   font-size: 75px;
@@ -1349,8 +1338,8 @@ span.f75px {
 .f76px p, .f76px li, .f76px td {
   font-size: 76px;
   line-height: 1.4; }
-.f76px small {
-  font-size: 64.6px; }
+  .f76px p small, .f76px li small, .f76px td small {
+    font-size: 64.6px; }
 
 span.f76px {
   font-size: 76px;
@@ -1363,8 +1352,8 @@ span.f76px {
 .f77px p, .f77px li, .f77px td {
   font-size: 77px;
   line-height: 1.4; }
-.f77px small {
-  font-size: 65.45px; }
+  .f77px p small, .f77px li small, .f77px td small {
+    font-size: 65.45px; }
 
 span.f77px {
   font-size: 77px;
@@ -1377,8 +1366,8 @@ span.f77px {
 .f78px p, .f78px li, .f78px td {
   font-size: 78px;
   line-height: 1.4; }
-.f78px small {
-  font-size: 66.3px; }
+  .f78px p small, .f78px li small, .f78px td small {
+    font-size: 66.3px; }
 
 span.f78px {
   font-size: 78px;
@@ -1391,8 +1380,8 @@ span.f78px {
 .f79px p, .f79px li, .f79px td {
   font-size: 79px;
   line-height: 1.4; }
-.f79px small {
-  font-size: 67.15px; }
+  .f79px p small, .f79px li small, .f79px td small {
+    font-size: 67.15px; }
 
 span.f79px {
   font-size: 79px;
@@ -1405,8 +1394,8 @@ span.f79px {
 .f80px p, .f80px li, .f80px td {
   font-size: 80px;
   line-height: 1.4; }
-.f80px small {
-  font-size: 68px; }
+  .f80px p small, .f80px li small, .f80px td small {
+    font-size: 68px; }
 
 span.f80px {
   font-size: 80px;
@@ -1419,8 +1408,8 @@ span.f80px {
 .f81px p, .f81px li, .f81px td {
   font-size: 81px;
   line-height: 1.4; }
-.f81px small {
-  font-size: 68.85px; }
+  .f81px p small, .f81px li small, .f81px td small {
+    font-size: 68.85px; }
 
 span.f81px {
   font-size: 81px;
@@ -1433,8 +1422,8 @@ span.f81px {
 .f82px p, .f82px li, .f82px td {
   font-size: 82px;
   line-height: 1.4; }
-.f82px small {
-  font-size: 69.7px; }
+  .f82px p small, .f82px li small, .f82px td small {
+    font-size: 69.7px; }
 
 span.f82px {
   font-size: 82px;
@@ -1447,8 +1436,8 @@ span.f82px {
 .f83px p, .f83px li, .f83px td {
   font-size: 83px;
   line-height: 1.4; }
-.f83px small {
-  font-size: 70.55px; }
+  .f83px p small, .f83px li small, .f83px td small {
+    font-size: 70.55px; }
 
 span.f83px {
   font-size: 83px;
@@ -1461,8 +1450,8 @@ span.f83px {
 .f84px p, .f84px li, .f84px td {
   font-size: 84px;
   line-height: 1.4; }
-.f84px small {
-  font-size: 71.4px; }
+  .f84px p small, .f84px li small, .f84px td small {
+    font-size: 71.4px; }
 
 span.f84px {
   font-size: 84px;
@@ -1475,8 +1464,8 @@ span.f84px {
 .f85px p, .f85px li, .f85px td {
   font-size: 85px;
   line-height: 1.4; }
-.f85px small {
-  font-size: 72.25px; }
+  .f85px p small, .f85px li small, .f85px td small {
+    font-size: 72.25px; }
 
 span.f85px {
   font-size: 85px;
@@ -1489,8 +1478,8 @@ span.f85px {
 .f86px p, .f86px li, .f86px td {
   font-size: 86px;
   line-height: 1.4; }
-.f86px small {
-  font-size: 73.1px; }
+  .f86px p small, .f86px li small, .f86px td small {
+    font-size: 73.1px; }
 
 span.f86px {
   font-size: 86px;
@@ -1503,8 +1492,8 @@ span.f86px {
 .f87px p, .f87px li, .f87px td {
   font-size: 87px;
   line-height: 1.4; }
-.f87px small {
-  font-size: 73.95px; }
+  .f87px p small, .f87px li small, .f87px td small {
+    font-size: 73.95px; }
 
 span.f87px {
   font-size: 87px;
@@ -1517,8 +1506,8 @@ span.f87px {
 .f88px p, .f88px li, .f88px td {
   font-size: 88px;
   line-height: 1.4; }
-.f88px small {
-  font-size: 74.8px; }
+  .f88px p small, .f88px li small, .f88px td small {
+    font-size: 74.8px; }
 
 span.f88px {
   font-size: 88px;
@@ -1531,8 +1520,8 @@ span.f88px {
 .f89px p, .f89px li, .f89px td {
   font-size: 89px;
   line-height: 1.4; }
-.f89px small {
-  font-size: 75.65px; }
+  .f89px p small, .f89px li small, .f89px td small {
+    font-size: 75.65px; }
 
 span.f89px {
   font-size: 89px;
@@ -1545,8 +1534,8 @@ span.f89px {
 .f90px p, .f90px li, .f90px td {
   font-size: 90px;
   line-height: 1.4; }
-.f90px small {
-  font-size: 76.5px; }
+  .f90px p small, .f90px li small, .f90px td small {
+    font-size: 76.5px; }
 
 span.f90px {
   font-size: 90px;
@@ -1559,8 +1548,8 @@ span.f90px {
 .f91px p, .f91px li, .f91px td {
   font-size: 91px;
   line-height: 1.4; }
-.f91px small {
-  font-size: 77.35px; }
+  .f91px p small, .f91px li small, .f91px td small {
+    font-size: 77.35px; }
 
 span.f91px {
   font-size: 91px;
@@ -1573,8 +1562,8 @@ span.f91px {
 .f92px p, .f92px li, .f92px td {
   font-size: 92px;
   line-height: 1.4; }
-.f92px small {
-  font-size: 78.2px; }
+  .f92px p small, .f92px li small, .f92px td small {
+    font-size: 78.2px; }
 
 span.f92px {
   font-size: 92px;
@@ -1587,8 +1576,8 @@ span.f92px {
 .f93px p, .f93px li, .f93px td {
   font-size: 93px;
   line-height: 1.4; }
-.f93px small {
-  font-size: 79.05px; }
+  .f93px p small, .f93px li small, .f93px td small {
+    font-size: 79.05px; }
 
 span.f93px {
   font-size: 93px;
@@ -1601,8 +1590,8 @@ span.f93px {
 .f94px p, .f94px li, .f94px td {
   font-size: 94px;
   line-height: 1.4; }
-.f94px small {
-  font-size: 79.9px; }
+  .f94px p small, .f94px li small, .f94px td small {
+    font-size: 79.9px; }
 
 span.f94px {
   font-size: 94px;
@@ -1615,8 +1604,8 @@ span.f94px {
 .f95px p, .f95px li, .f95px td {
   font-size: 95px;
   line-height: 1.4; }
-.f95px small {
-  font-size: 80.75px; }
+  .f95px p small, .f95px li small, .f95px td small {
+    font-size: 80.75px; }
 
 span.f95px {
   font-size: 95px;
@@ -1629,8 +1618,8 @@ span.f95px {
 .f96px p, .f96px li, .f96px td {
   font-size: 96px;
   line-height: 1.4; }
-.f96px small {
-  font-size: 81.6px; }
+  .f96px p small, .f96px li small, .f96px td small {
+    font-size: 81.6px; }
 
 span.f96px {
   font-size: 96px;
@@ -1643,8 +1632,8 @@ span.f96px {
 .f97px p, .f97px li, .f97px td {
   font-size: 97px;
   line-height: 1.4; }
-.f97px small {
-  font-size: 82.45px; }
+  .f97px p small, .f97px li small, .f97px td small {
+    font-size: 82.45px; }
 
 span.f97px {
   font-size: 97px;
@@ -1657,8 +1646,8 @@ span.f97px {
 .f98px p, .f98px li, .f98px td {
   font-size: 98px;
   line-height: 1.4; }
-.f98px small {
-  font-size: 83.3px; }
+  .f98px p small, .f98px li small, .f98px td small {
+    font-size: 83.3px; }
 
 span.f98px {
   font-size: 98px;
@@ -1671,8 +1660,8 @@ span.f98px {
 .f99px p, .f99px li, .f99px td {
   font-size: 99px;
   line-height: 1.4; }
-.f99px small {
-  font-size: 84.15px; }
+  .f99px p small, .f99px li small, .f99px td small {
+    font-size: 84.15px; }
 
 span.f99px {
   font-size: 99px;
@@ -1685,8 +1674,8 @@ span.f99px {
 .f100px p, .f100px li, .f100px td {
   font-size: 100px;
   line-height: 1.4; }
-.f100px small {
-  font-size: 85px; }
+  .f100px p small, .f100px li small, .f100px td small {
+    font-size: 85px; }
 
 span.f100px {
   font-size: 100px;
@@ -1699,8 +1688,8 @@ span.f100px {
 .f101px p, .f101px li, .f101px td {
   font-size: 101px;
   line-height: 1.4; }
-.f101px small {
-  font-size: 85.85px; }
+  .f101px p small, .f101px li small, .f101px td small {
+    font-size: 85.85px; }
 
 span.f101px {
   font-size: 101px;
@@ -1713,8 +1702,8 @@ span.f101px {
 .f102px p, .f102px li, .f102px td {
   font-size: 102px;
   line-height: 1.4; }
-.f102px small {
-  font-size: 86.7px; }
+  .f102px p small, .f102px li small, .f102px td small {
+    font-size: 86.7px; }
 
 span.f102px {
   font-size: 102px;
@@ -1727,8 +1716,8 @@ span.f102px {
 .f103px p, .f103px li, .f103px td {
   font-size: 103px;
   line-height: 1.4; }
-.f103px small {
-  font-size: 87.55px; }
+  .f103px p small, .f103px li small, .f103px td small {
+    font-size: 87.55px; }
 
 span.f103px {
   font-size: 103px;
@@ -1741,8 +1730,8 @@ span.f103px {
 .f104px p, .f104px li, .f104px td {
   font-size: 104px;
   line-height: 1.4; }
-.f104px small {
-  font-size: 88.4px; }
+  .f104px p small, .f104px li small, .f104px td small {
+    font-size: 88.4px; }
 
 span.f104px {
   font-size: 104px;
@@ -1755,8 +1744,8 @@ span.f104px {
 .f105px p, .f105px li, .f105px td {
   font-size: 105px;
   line-height: 1.4; }
-.f105px small {
-  font-size: 89.25px; }
+  .f105px p small, .f105px li small, .f105px td small {
+    font-size: 89.25px; }
 
 span.f105px {
   font-size: 105px;
@@ -1769,8 +1758,8 @@ span.f105px {
 .f106px p, .f106px li, .f106px td {
   font-size: 106px;
   line-height: 1.4; }
-.f106px small {
-  font-size: 90.1px; }
+  .f106px p small, .f106px li small, .f106px td small {
+    font-size: 90.1px; }
 
 span.f106px {
   font-size: 106px;
@@ -1783,8 +1772,8 @@ span.f106px {
 .f107px p, .f107px li, .f107px td {
   font-size: 107px;
   line-height: 1.4; }
-.f107px small {
-  font-size: 90.95px; }
+  .f107px p small, .f107px li small, .f107px td small {
+    font-size: 90.95px; }
 
 span.f107px {
   font-size: 107px;
@@ -1797,8 +1786,8 @@ span.f107px {
 .f108px p, .f108px li, .f108px td {
   font-size: 108px;
   line-height: 1.4; }
-.f108px small {
-  font-size: 91.8px; }
+  .f108px p small, .f108px li small, .f108px td small {
+    font-size: 91.8px; }
 
 span.f108px {
   font-size: 108px;
@@ -1811,8 +1800,8 @@ span.f108px {
 .f109px p, .f109px li, .f109px td {
   font-size: 109px;
   line-height: 1.4; }
-.f109px small {
-  font-size: 92.65px; }
+  .f109px p small, .f109px li small, .f109px td small {
+    font-size: 92.65px; }
 
 span.f109px {
   font-size: 109px;
@@ -1825,8 +1814,8 @@ span.f109px {
 .f110px p, .f110px li, .f110px td {
   font-size: 110px;
   line-height: 1.4; }
-.f110px small {
-  font-size: 93.5px; }
+  .f110px p small, .f110px li small, .f110px td small {
+    font-size: 93.5px; }
 
 span.f110px {
   font-size: 110px;
@@ -1839,8 +1828,8 @@ span.f110px {
 .f111px p, .f111px li, .f111px td {
   font-size: 111px;
   line-height: 1.4; }
-.f111px small {
-  font-size: 94.35px; }
+  .f111px p small, .f111px li small, .f111px td small {
+    font-size: 94.35px; }
 
 span.f111px {
   font-size: 111px;
@@ -1853,8 +1842,8 @@ span.f111px {
 .f112px p, .f112px li, .f112px td {
   font-size: 112px;
   line-height: 1.4; }
-.f112px small {
-  font-size: 95.2px; }
+  .f112px p small, .f112px li small, .f112px td small {
+    font-size: 95.2px; }
 
 span.f112px {
   font-size: 112px;
@@ -1867,8 +1856,8 @@ span.f112px {
 .f113px p, .f113px li, .f113px td {
   font-size: 113px;
   line-height: 1.4; }
-.f113px small {
-  font-size: 96.05px; }
+  .f113px p small, .f113px li small, .f113px td small {
+    font-size: 96.05px; }
 
 span.f113px {
   font-size: 113px;
@@ -1881,8 +1870,8 @@ span.f113px {
 .f114px p, .f114px li, .f114px td {
   font-size: 114px;
   line-height: 1.4; }
-.f114px small {
-  font-size: 96.9px; }
+  .f114px p small, .f114px li small, .f114px td small {
+    font-size: 96.9px; }
 
 span.f114px {
   font-size: 114px;
@@ -1895,8 +1884,8 @@ span.f114px {
 .f115px p, .f115px li, .f115px td {
   font-size: 115px;
   line-height: 1.4; }
-.f115px small {
-  font-size: 97.75px; }
+  .f115px p small, .f115px li small, .f115px td small {
+    font-size: 97.75px; }
 
 span.f115px {
   font-size: 115px;
@@ -1909,8 +1898,8 @@ span.f115px {
 .f116px p, .f116px li, .f116px td {
   font-size: 116px;
   line-height: 1.4; }
-.f116px small {
-  font-size: 98.6px; }
+  .f116px p small, .f116px li small, .f116px td small {
+    font-size: 98.6px; }
 
 span.f116px {
   font-size: 116px;
@@ -1923,8 +1912,8 @@ span.f116px {
 .f117px p, .f117px li, .f117px td {
   font-size: 117px;
   line-height: 1.4; }
-.f117px small {
-  font-size: 99.45px; }
+  .f117px p small, .f117px li small, .f117px td small {
+    font-size: 99.45px; }
 
 span.f117px {
   font-size: 117px;
@@ -1937,8 +1926,8 @@ span.f117px {
 .f118px p, .f118px li, .f118px td {
   font-size: 118px;
   line-height: 1.4; }
-.f118px small {
-  font-size: 100.3px; }
+  .f118px p small, .f118px li small, .f118px td small {
+    font-size: 100.3px; }
 
 span.f118px {
   font-size: 118px;
@@ -1951,8 +1940,8 @@ span.f118px {
 .f119px p, .f119px li, .f119px td {
   font-size: 119px;
   line-height: 1.4; }
-.f119px small {
-  font-size: 101.15px; }
+  .f119px p small, .f119px li small, .f119px td small {
+    font-size: 101.15px; }
 
 span.f119px {
   font-size: 119px;
@@ -1965,8 +1954,8 @@ span.f119px {
 .f120px p, .f120px li, .f120px td {
   font-size: 120px;
   line-height: 1.4; }
-.f120px small {
-  font-size: 102px; }
+  .f120px p small, .f120px li small, .f120px td small {
+    font-size: 102px; }
 
 span.f120px {
   font-size: 120px;
@@ -1979,8 +1968,8 @@ span.f120px {
 .f121px p, .f121px li, .f121px td {
   font-size: 121px;
   line-height: 1.4; }
-.f121px small {
-  font-size: 102.85px; }
+  .f121px p small, .f121px li small, .f121px td small {
+    font-size: 102.85px; }
 
 span.f121px {
   font-size: 121px;
@@ -1993,8 +1982,8 @@ span.f121px {
 .f122px p, .f122px li, .f122px td {
   font-size: 122px;
   line-height: 1.4; }
-.f122px small {
-  font-size: 103.7px; }
+  .f122px p small, .f122px li small, .f122px td small {
+    font-size: 103.7px; }
 
 span.f122px {
   font-size: 122px;
@@ -2007,8 +1996,8 @@ span.f122px {
 .f123px p, .f123px li, .f123px td {
   font-size: 123px;
   line-height: 1.4; }
-.f123px small {
-  font-size: 104.55px; }
+  .f123px p small, .f123px li small, .f123px td small {
+    font-size: 104.55px; }
 
 span.f123px {
   font-size: 123px;
@@ -2021,8 +2010,8 @@ span.f123px {
 .f124px p, .f124px li, .f124px td {
   font-size: 124px;
   line-height: 1.4; }
-.f124px small {
-  font-size: 105.4px; }
+  .f124px p small, .f124px li small, .f124px td small {
+    font-size: 105.4px; }
 
 span.f124px {
   font-size: 124px;
@@ -2035,8 +2024,8 @@ span.f124px {
 .f125px p, .f125px li, .f125px td {
   font-size: 125px;
   line-height: 1.4; }
-.f125px small {
-  font-size: 106.25px; }
+  .f125px p small, .f125px li small, .f125px td small {
+    font-size: 106.25px; }
 
 span.f125px {
   font-size: 125px;
@@ -2049,8 +2038,8 @@ span.f125px {
 .f126px p, .f126px li, .f126px td {
   font-size: 126px;
   line-height: 1.4; }
-.f126px small {
-  font-size: 107.1px; }
+  .f126px p small, .f126px li small, .f126px td small {
+    font-size: 107.1px; }
 
 span.f126px {
   font-size: 126px;
@@ -2063,8 +2052,8 @@ span.f126px {
 .f127px p, .f127px li, .f127px td {
   font-size: 127px;
   line-height: 1.4; }
-.f127px small {
-  font-size: 107.95px; }
+  .f127px p small, .f127px li small, .f127px td small {
+    font-size: 107.95px; }
 
 span.f127px {
   font-size: 127px;
@@ -2077,8 +2066,8 @@ span.f127px {
 .f128px p, .f128px li, .f128px td {
   font-size: 128px;
   line-height: 1.4; }
-.f128px small {
-  font-size: 108.8px; }
+  .f128px p small, .f128px li small, .f128px td small {
+    font-size: 108.8px; }
 
 span.f128px {
   font-size: 128px;
@@ -2091,8 +2080,8 @@ span.f128px {
 .f129px p, .f129px li, .f129px td {
   font-size: 129px;
   line-height: 1.4; }
-.f129px small {
-  font-size: 109.65px; }
+  .f129px p small, .f129px li small, .f129px td small {
+    font-size: 109.65px; }
 
 span.f129px {
   font-size: 129px;
@@ -2105,8 +2094,8 @@ span.f129px {
 .f130px p, .f130px li, .f130px td {
   font-size: 130px;
   line-height: 1.4; }
-.f130px small {
-  font-size: 110.5px; }
+  .f130px p small, .f130px li small, .f130px td small {
+    font-size: 110.5px; }
 
 span.f130px {
   font-size: 130px;
@@ -2119,8 +2108,8 @@ span.f130px {
 .f131px p, .f131px li, .f131px td {
   font-size: 131px;
   line-height: 1.4; }
-.f131px small {
-  font-size: 111.35px; }
+  .f131px p small, .f131px li small, .f131px td small {
+    font-size: 111.35px; }
 
 span.f131px {
   font-size: 131px;
@@ -2133,8 +2122,8 @@ span.f131px {
 .f132px p, .f132px li, .f132px td {
   font-size: 132px;
   line-height: 1.4; }
-.f132px small {
-  font-size: 112.2px; }
+  .f132px p small, .f132px li small, .f132px td small {
+    font-size: 112.2px; }
 
 span.f132px {
   font-size: 132px;
@@ -2147,8 +2136,8 @@ span.f132px {
 .f133px p, .f133px li, .f133px td {
   font-size: 133px;
   line-height: 1.4; }
-.f133px small {
-  font-size: 113.05px; }
+  .f133px p small, .f133px li small, .f133px td small {
+    font-size: 113.05px; }
 
 span.f133px {
   font-size: 133px;
@@ -2161,8 +2150,8 @@ span.f133px {
 .f134px p, .f134px li, .f134px td {
   font-size: 134px;
   line-height: 1.4; }
-.f134px small {
-  font-size: 113.9px; }
+  .f134px p small, .f134px li small, .f134px td small {
+    font-size: 113.9px; }
 
 span.f134px {
   font-size: 134px;
@@ -2175,8 +2164,8 @@ span.f134px {
 .f135px p, .f135px li, .f135px td {
   font-size: 135px;
   line-height: 1.4; }
-.f135px small {
-  font-size: 114.75px; }
+  .f135px p small, .f135px li small, .f135px td small {
+    font-size: 114.75px; }
 
 span.f135px {
   font-size: 135px;
@@ -2189,8 +2178,8 @@ span.f135px {
 .f136px p, .f136px li, .f136px td {
   font-size: 136px;
   line-height: 1.4; }
-.f136px small {
-  font-size: 115.6px; }
+  .f136px p small, .f136px li small, .f136px td small {
+    font-size: 115.6px; }
 
 span.f136px {
   font-size: 136px;
@@ -2203,8 +2192,8 @@ span.f136px {
 .f137px p, .f137px li, .f137px td {
   font-size: 137px;
   line-height: 1.4; }
-.f137px small {
-  font-size: 116.45px; }
+  .f137px p small, .f137px li small, .f137px td small {
+    font-size: 116.45px; }
 
 span.f137px {
   font-size: 137px;
@@ -2217,8 +2206,8 @@ span.f137px {
 .f138px p, .f138px li, .f138px td {
   font-size: 138px;
   line-height: 1.4; }
-.f138px small {
-  font-size: 117.3px; }
+  .f138px p small, .f138px li small, .f138px td small {
+    font-size: 117.3px; }
 
 span.f138px {
   font-size: 138px;
@@ -2231,8 +2220,8 @@ span.f138px {
 .f139px p, .f139px li, .f139px td {
   font-size: 139px;
   line-height: 1.4; }
-.f139px small {
-  font-size: 118.15px; }
+  .f139px p small, .f139px li small, .f139px td small {
+    font-size: 118.15px; }
 
 span.f139px {
   font-size: 139px;
@@ -2245,8 +2234,8 @@ span.f139px {
 .f140px p, .f140px li, .f140px td {
   font-size: 140px;
   line-height: 1.4; }
-.f140px small {
-  font-size: 119px; }
+  .f140px p small, .f140px li small, .f140px td small {
+    font-size: 119px; }
 
 span.f140px {
   font-size: 140px;
@@ -2259,8 +2248,8 @@ span.f140px {
 .f141px p, .f141px li, .f141px td {
   font-size: 141px;
   line-height: 1.4; }
-.f141px small {
-  font-size: 119.85px; }
+  .f141px p small, .f141px li small, .f141px td small {
+    font-size: 119.85px; }
 
 span.f141px {
   font-size: 141px;
@@ -2273,8 +2262,8 @@ span.f141px {
 .f142px p, .f142px li, .f142px td {
   font-size: 142px;
   line-height: 1.4; }
-.f142px small {
-  font-size: 120.7px; }
+  .f142px p small, .f142px li small, .f142px td small {
+    font-size: 120.7px; }
 
 span.f142px {
   font-size: 142px;
@@ -2287,8 +2276,8 @@ span.f142px {
 .f143px p, .f143px li, .f143px td {
   font-size: 143px;
   line-height: 1.4; }
-.f143px small {
-  font-size: 121.55px; }
+  .f143px p small, .f143px li small, .f143px td small {
+    font-size: 121.55px; }
 
 span.f143px {
   font-size: 143px;
@@ -2301,8 +2290,8 @@ span.f143px {
 .f144px p, .f144px li, .f144px td {
   font-size: 144px;
   line-height: 1.4; }
-.f144px small {
-  font-size: 122.4px; }
+  .f144px p small, .f144px li small, .f144px td small {
+    font-size: 122.4px; }
 
 span.f144px {
   font-size: 144px;
@@ -2315,8 +2304,8 @@ span.f144px {
 .f145px p, .f145px li, .f145px td {
   font-size: 145px;
   line-height: 1.4; }
-.f145px small {
-  font-size: 123.25px; }
+  .f145px p small, .f145px li small, .f145px td small {
+    font-size: 123.25px; }
 
 span.f145px {
   font-size: 145px;
@@ -2329,8 +2318,8 @@ span.f145px {
 .f146px p, .f146px li, .f146px td {
   font-size: 146px;
   line-height: 1.4; }
-.f146px small {
-  font-size: 124.1px; }
+  .f146px p small, .f146px li small, .f146px td small {
+    font-size: 124.1px; }
 
 span.f146px {
   font-size: 146px;
@@ -2343,8 +2332,8 @@ span.f146px {
 .f147px p, .f147px li, .f147px td {
   font-size: 147px;
   line-height: 1.4; }
-.f147px small {
-  font-size: 124.95px; }
+  .f147px p small, .f147px li small, .f147px td small {
+    font-size: 124.95px; }
 
 span.f147px {
   font-size: 147px;
@@ -2357,8 +2346,8 @@ span.f147px {
 .f148px p, .f148px li, .f148px td {
   font-size: 148px;
   line-height: 1.4; }
-.f148px small {
-  font-size: 125.8px; }
+  .f148px p small, .f148px li small, .f148px td small {
+    font-size: 125.8px; }
 
 span.f148px {
   font-size: 148px;
@@ -2371,8 +2360,8 @@ span.f148px {
 .f149px p, .f149px li, .f149px td {
   font-size: 149px;
   line-height: 1.4; }
-.f149px small {
-  font-size: 126.65px; }
+  .f149px p small, .f149px li small, .f149px td small {
+    font-size: 126.65px; }
 
 span.f149px {
   font-size: 149px;
@@ -2385,8 +2374,8 @@ span.f149px {
 .f150px p, .f150px li, .f150px td {
   font-size: 150px;
   line-height: 1.4; }
-.f150px small {
-  font-size: 127.5px; }
+  .f150px p small, .f150px li small, .f150px td small {
+    font-size: 127.5px; }
 
 span.f150px {
   font-size: 150px;

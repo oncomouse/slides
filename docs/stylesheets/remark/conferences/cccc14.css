@@ -8,9 +8,6 @@ html * {
   color-profile: sRGB;
   rendering-intent: auto; }
 
-.emph, strong {
-  color: #002387; }
-
 a, a > code {
   color: #002387; }
 
