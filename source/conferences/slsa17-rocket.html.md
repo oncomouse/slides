@@ -15,6 +15,19 @@ class: inverse, center, middle, f40px, title
 
 **<small>SLSA 2017 ◊ Tempe, AZ ◊ November 11,2017</small>**
 ---
+class: inverse, middle, center
+## <small>Two Conversations About the Future:</small><br>In Theory
+---
+class: inverse, f21px
+## Alex Williams and Nick Srnicek<br><small>"#ACCELERATE MANIFESTO"</small>
+
+> We need to revive the argument that was traditionally made for post-capitalism: not only is capitalism an unjust and perverted system, but it is also a system that holds back progress. Our technological development is being suppressed by capitalism, as much as it has been unleashed. Accelerationism is the basic belief that these capacities can and should be let loose by moving beyond the limitations imposed by capitalist society. The movement towards a surpassing of our current constraints must include more than simply a struggle for a more rational global society. We believe it must also include recovering the dreams which transfixed many from the middle of the Nineteenth Century until the dawn of the neoliberal era, of the quest of Homo Sapiens towards expansion beyond the limitations of the earth and our immediate bodily forms. These visions are today viewed as relics of a more innocent moment. Yet they both diagnose the staggering lack of imagination in our own time, and offer the promise of a future that is affectively invigorating, as well as intellectually energising. (361)
+---
+class: inverse, f24px
+## Eugene Thacker<br><small>*Cosmic Pessimism*</small>
+
+> Both moral and metaphysical pessimism point to another kind, a pessimism that is neither subjective nor objective, neither for-us nor in-itself, and instead a pessimism of the world-without-us. We could call this a cosmic pessimism ... but this sounds too majestic, too full of wonder, too much the bitter aftertaste of the Great Beyond. Words falter. And so do ideas. And so we have a cosmic pessimism, a pessimism that is first and last a pessimism about cosmos, about the necessity and possibility of order. The contours of cosmic pessimism are a drastic scaling-up or scaling-down of the human point of view, the unhuman orientation of deep space and deep time, and all of this shadowed by an impasse, a primordial insignificance, the impossibility of ever adequately accounting for one’s relationship to thought… (12-3)
+---
 class: center, middle, inverse
 ## <small>Two Conversations About the Future:</small><br>In Fiction
 ---
@@ -33,12 +46,7 @@ class: inverse, f22px
 > Theosophists have guessed at the awesome grandeur of the cosmic cycle wherein our world and human race form transient incidents. They have hinted at strange survivals in terms which would freeze the blood if not masked by a bland optimism. (167)
 ---
 class: inverse, middle, center
-## <small>Two Conversations About the Future:</small><br>In Theory
----
-class: inverse, f21px
-## Alex Williams and Nick Srnicek<br><small>"#ACCELERATE MANIFESTO"</small>
-
-> We need to revive the argument that was traditionally made for post-capitalism: not only is capitalism an unjust and perverted system, but it is also a system that holds back progress. Our technological development is being suppressed by capitalism, as much as it has been unleashed. Accelerationism is the basic belief that these capacities can and should be let loose by moving beyond the limitations imposed by capitalist society. The movement towards a surpassing of our current constraints must include more than simply a struggle for a more rational global society. We believe it must also include recovering the dreams which transfixed many from the middle of the Nineteenth Century until the dawn of the neoliberal era, of the quest of Homo Sapiens towards expansion beyond the limitations of the earth and our immediate bodily forms. These visions are today viewed as relics of a more innocent moment. Yet they both diagnose the staggering lack of imagination in our own time, and offer the promise of a future that is affectively invigorating, as well as intellectually energising. (361)
+## Against Rocketship Ideology
 ---
 class: inverse, f21px
 name: clear-lake
@@ -52,14 +60,6 @@ class: center, middle, inverse
 ---
 template: clear-lake
 count: false
----
-class: inverse, middle, center
-## Against Rocketship Ideology
----
-class: inverse, f24px
-## Eugene Thacker<br><small>*Cosmic Pessimism*</small>
-
-> Both moral and metaphysical pessimism point to another kind, a pessimism that is neither subjective nor objective, neither for-us nor in-itself, and instead a pessimism of the world-without-us. We could call this a cosmic pessimism ... but this sounds too majestic, too full of wonder, too much the bitter aftertaste of the Great Beyond. Words falter. And so do ideas. And so we have a cosmic pessimism, a pessimism that is first and last a pessimism about cosmos, about the necessity and possibility of order. The contours of cosmic pessimism are a drastic scaling-up or scaling-down of the human point of view, the unhuman orientation of deep space and deep time, and all of this shadowed by an impasse, a primordial insignificance, the impossibility of ever adequately accounting for one’s relationship to thought… (12-3)
 ---
 class: inverse, f26px
 ## Sam Kriss on Colonialism
