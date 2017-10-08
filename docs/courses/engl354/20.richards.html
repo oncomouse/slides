@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Richards II
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# I.A. Richards, "The Philosophy of Rhetoric"
+---
+class: f26px
+## Context
+
+> Now for the sense of "context." Most generally it is a name for a whole cluster of events that recur together – including the required conditions as well as whatever we may pick out as cause or effect. But the modes of causal recurrence on which meaning depends are peculiar through that delegated efficacy I have been talking about. In these context one item – typically a word – takes over the duties and parts which can then be omitted from the recurrence. There is thus an abridgment of the context only shown in the behavior of living things, and most extensively and drastically shown by man. When this abridgment happens, what the sign or word – the item with these delegated powers – means is the missing part of the context. (34)
+---
+class: f29px
+## Cognitive Sorting
+
+> A particular impression is already a product of concrescence. Behind, or in it, there has been a coming together of *sortings*. When we take a number of particular impressions – of a number of different white things, say – and abstract from them an idea of whiteness, we are explicitly reversing a process which has already been implicitly at work in our perception of them as all white. Our risk is to confuse the abstractness we thus arrive at intellectually with the primordial abstractness out of which these impressions have already grown – before ever any conscious explicit reflection it takes place. (36)
+---
+class: f30px
+
+## All Discourse is Over-Determined
+> Preeminently what the theorem would discourage,  is our habit of behaving as though, if a passage means one thing it cannot at the same time mean another thing and an incompatible thing. Freud taught us that a dream may mean a dozen different things; he has persuaded us that some symbols are, as he says, "over-determined" and mean many different selections from among their causes. This theorem goes further, and regards all discourse – outside the technicalities of science – as over-determined, as having multiplicity of meaning. (38-9)
+---
+class: f30px
+## Explanation: Less Neutral Than We Think
+> It has been so necessary to us, especially since the physical basis of civilization became technical, to care at least sometimes for the truth only and keep the poachers sometimes out, that we have exaggerated enormously the extent of pure exposition. It is a relatively rare occurrence outside the routine of train services and the tamer, more settled parts of the sciences. We have exaggerated our success for strategic reasons – some of them good, because encouraging, if we do not too much hoodwink ourselves. (41)
+---
+class: f32px
+
+## Why Rhetoric?
+
+> We shall find, preeminently in the subject of rhetoric, that interpretations and opinions about interpretations that are not primarily steps of partisan policy are excessively hard to arrive at. And thereby we re-discover that the world – so far from being a solid a matter of fact dash is rather a fabric of conventions, which for obscure reasons it has suited us in the past to manufacture and support. And that sometimes is a dismaying rediscovery which seems to unsettle our foundation. (41-2)
+
+
+</textarea>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Richards I
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  	
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  	
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		}
+  	});
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# I.A. Richards, "The Philosophy of Rhetoric"
+---
+class: f27px
+## This is All Happening in Language
+
+> In my introductory lecture I urged that there is room for a persistent, systematic, detailed inquiry into how words work that will take the place of the discredited subject which goes by the name of Rhetoric. I went on to argue that this inquiry…must take charge of the criticism of its own assumptions and not accept them, more than it can help, ready-made from other studies. How words mean, is not a question to which we can safely accept an answer either as an inheritance from common sense, that curious growth, or as something vouched for by another science, by psychology, say—since other sciences use words themselves and not least delusively when they address themselves to these questions (23).
+---
+class: f31px
+## The New Rhetoric
+
+> The result is that a revived Rhetoric, or study of verbal understanding and misunderstanding, must itself undertake its own inquiry into the modes of meaning—not only, as with the old Rhetoric, on a macroscopic scale, discussing the effects of different disposals of large parts of a discourse—but also on a microscopic scale, discussing the effects of using theorems about the structure of the fundamental conjectural units of meaning and the conditions through which they, and their interconnections arise (23-4)
+---
+class: f31px
+## Move Beyond Combat
+
+> Among the general themes of the old Rhetoric there is one which is especially pertinent to our inquiry. The old Rhetoric was an offspring of dispute; it developed as the rationale of pleadings and persuadings; it was the theory of the battle of words and has always been itself dominated by the combative impulse. Perhaps what it has most to teach us is the narrowing and blinding influence of that preoccupation, that debater's interest.
+>
+> Persuasion is only one among the aims of discourse. (24)
+---
+class: f23px
+## Two Problems
+
+> I have two sets of problems in view: One set I have just been talking about – the division of the various aims of discourse, the purposes for which we speak or write; in brief, the functions of language. The other set of problems goes deeper, and, if we can set it right we, the problems about the language functions are best approach from it. I can indicate these deeper problems in many ways: what is the connection between the mind and the world by which events in the mind mean other events in the world? Or "how does a thought come to be 'of'whatever it is that it is a thought of?" Or "what is the relation between a thing and it's name?" The last indication may not seem to carry as far as the others; but they are all the same problem and I put the 'name'-formulation in it because an over simple view of naming, or rather a treatment of words in general as though they were names (usually of ideas) has been a main defect in the traditional study. (28)
+---
+class: f25px
+## Behaviorism
+
+> I can start the theorem safely by remarking that we are things peculiarly responsive to other things. To develop this we have to consider the peculiarities of our responsiveness … now consider our own minds' simplest operations. Do we ever respond to a stimulus in a way which is not influenced by the other things that happened to us with more less similar stimuli struck us in the past? Probably never. A new kind of stimulus might perhaps give rise to a new kind of sensation, a new kind of pain say. But even so we should probably recognize it is a pain of some sort. Effects from more or less similar happenings in the past would come in to give a response it's character in this as far as it went would be meaning. Meaning of a lowly kind, no doubt, the kind of meeting that the least developed animals live by. (29-30)
+---
+class: f40px
+## Delegated Efficacy
+> If we sum up thus far by saying that meaning is *delegated efficacy*, that description applies above all to the meaning of words, whose virtue is to be substitutes exerting the powers of what is not there. They do this as other signs do it, though in a more complex fashions, through their contacts. (32)
+
+
+</textarea>
+</body>
+</html>
