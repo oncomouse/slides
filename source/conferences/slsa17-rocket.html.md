@@ -52,7 +52,7 @@ class: inverse, f21px
 name: clear-lake
 ## Sam Kriss <br><small>"Manifesto of the Committee to Abolish Outer Space"</small>
 
-> What will Mars look like in ten years, fifty, a hundred, five hundred? It’s a question that breeds monsters. Maybe domed cities, maybe tidy spa resorts on the shores of the Hellas basin. Or there could be dark and vast robots there, colossi wreathed in smoke and fire striding across the planet’s surface, digging deep scars into the rock with metal jaws, stripping out the useful minerals and burning the rest in an atomic blaze. We might see the streaming furrows of a dust storm on the horizon, while the last colonist gnaws at the bones of her fellow adventurers, driven mad by that tiny dot in the night sky that was once her home. The whole thing might have been blasted into fragments and melted down for slag. Still, the worst outcome might be for Mars to end up looking like the area around Clear Lake, south of Houston, the site of NASA’s Johnson Space Center, where our planet faintly touches the blank idiocy of outer space.
+> What will Mars look like in ten years, fifty, a hundred, five hundred? It’s a question that breeds monsters. Maybe domed cities, maybe tidy spa resorts on the shores of the Hellas basin. Or there could be dark and vast robots there, colossi wreathed in smoke and fire striding across the planet’s surface, digging deep scars into the rock with metal jaws, stripping out the useful minerals and burning the rest in an atomic blaze. We might see the streaming furrows of a dust storm on the horizon, while the last colonist gnaws at the bones of her fellow adventurers, driven mad by that tiny dot in the night sky that was once her home. The whole thing might have been blasted into fragments and melted down for slag. **Still, the worst outcome might be for Mars to end up looking like the area around Clear Lake, south of Houston, the site of NASA’s Johnson Space Center, where our planet faintly touches the blank idiocy of outer space.**
 ---
 count: false
 class: center, middle, inverse
@@ -60,12 +60,6 @@ class: center, middle, inverse
 ---
 template: clear-lake
 count: false
----
-class: inverse, f26px
-## Sam Kriss on Colonialism
-
-> Only in the final chapters [of Robert Zurbin's *The Case for Mars*] does something like a reason why we should want to go to Mars emerge: Space colonization should be read as an exact analogue to Christopher Columbus’s pillage of the Americas. (Columbus is mentioned four times in the book, Marx only once; this is always a bad sign.) By opening up the Americas to settlement, Columbus created something new and unique called “Western humanist civilization.” Out of stifling feudal ignorance grew a society in which “human life and human rights are held precious beyond price,” a world of restless dynamism where scientific innovation is upheld and every effort is made to improve the quality of life for all.
-
 ---
 class: inverse, f22px
 ## Sam Kriss on Colonialism
