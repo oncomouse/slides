@@ -79,3 +79,7 @@ class: inverse, f21px
 class: inverse, f46px
 ## Xenofeminism
 > XF is not a bid for revolution, but a wager on the long game of history, demanding imagination, dexterity and persistence. (0x00)
+---
+class: center, middle, inverse
+
+# Thank You
