@@ -2385,6 +2385,14 @@ span.f150px {
   height: 150px;
   max-height: 72px; }
 
+.tc-white,
+.tc-white * {
+  color: white !important; }
+
+.tc-black,
+.tc-black * {
+  color: black !important; }
+
 .two-column {
   column-count: 2;
   column-width: 44%;
