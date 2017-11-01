@@ -353,7 +353,15 @@ img {
 		max-height: 72px;
 	}
 }
-
+// Text color
+.tc-white,
+.tc-white * {
+	color: white !important;
+}
+.tc-black,
+.tc-black * {
+	color: black !important;
+}
 .two-column {
 	column-count: 2;
 	column-width: 44%;
