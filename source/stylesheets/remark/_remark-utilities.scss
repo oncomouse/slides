@@ -335,7 +335,10 @@ img {
 // Slide font size utility:
 @for $i from 5 through 150 {
 	.f#{$i}px {
-		p, li, td {
+		p,
+		li,
+		td,
+		.remark-code {
 			font-size: $i * 1px;
 			line-height: 1.4;
 			& small {
