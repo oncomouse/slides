@@ -5,10 +5,11 @@ $times: "Times New Roman", Times, serif;
 
 $body-font: "Open Sans", $helvetica;
 $body-font-weight: 400;
-$body-font-strong-weight: 700;
+$body-font-strong-weight: 600;
 $header-font: "Open Sans", $helvetica;
 $header-font-weight: 600;
 $header-font-soft-weight: 400;
+$code-font: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 
 @media all and (max-width: 30em) {
 	body {
@@ -43,3 +44,5 @@ h1, h2, h3, h4, h5 {
 		};
 	}
 }
+
+.remark-code, .remark-inline-code { font-family: $code-font; }
