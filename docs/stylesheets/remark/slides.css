@@ -1,7 +1,7 @@
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
+@import url(fonts/opensans/opensans.css);
 @import url("https://cdn.rawgit.com/tonsky/FiraCode/8fdf83ff/distr/fira_code.css");
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i");
 html {
   /* Change default typefaces here */
   font-family: serif;
@@ -91,13 +91,13 @@ code {
   body {
     font-size: 16px !important; } }
 html {
-  font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 400; }
   html strong {
-    font-weight: 600; }
+    font-weight: 700; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 600; }
   h1 .soft, h2 .soft, h3 .soft, h4 .soft, h5 .soft {
     font-weight: 400; }
@@ -258,7 +258,7 @@ ul li .normal, ol li .normal, p .normal {
   list-style: none; }
 
 .agenda, .topic {
-  font-family: "Fira Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 600; }
 
 .agenda {
