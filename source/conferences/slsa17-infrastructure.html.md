@@ -180,6 +180,19 @@ class: inverse, f44px
 3. Society
 
 ]
+---
+class: inverse, f44px
+## Edwards' Terms & Scales for Infrastructure Studies
+
+.pull-left[
+
+**Terms**
+
+1. Time
+2. Space
+3. Society
+
+]
 .pull-right[
 
 **Scales**
