@@ -11,7 +11,7 @@ class: inverse, center, middle, f40px, title
 
 **Andrew Pilsch**  
 **<small>Texas A&M University</small>**  
-**<small>@oncomouse</small>**
+**<small><span class="twitter_badge">@oncomouse</span></small>**
 
 **<small>SLSA 2017 ◊ Tempe, AZ ◊ November 11,2017</small>**
 ---
