@@ -194,8 +194,8 @@ code {
   font-size: 1.15em;
   line-height: 1.4em; }
 
-.inverse h1 {
-  line-height: 0.8em;
+.title h1 {
+  line-height: 0.9em;
   margin-bottom: 1.618em; }
 
 .pull-left {

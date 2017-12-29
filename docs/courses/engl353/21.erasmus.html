@@ -16,13 +16,13 @@ ENGL 353 Erasmus I
   	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
   	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
   	  twemoji_js = "/slides/javascripts/lib/twemoji.js";
-  	
+  
   // This call to head.js is automatically determined by Middleman at compile:
   head.load(remark_js, haml_language_js, remark_language_js, zepto_js, twemoji_js, function(){
   
   	// Ugly fix of HAML's formatting problems:
   	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-  	
+  
   	// Load the slideshow:
   	var slideshow = remark.create({
   		navigation: {

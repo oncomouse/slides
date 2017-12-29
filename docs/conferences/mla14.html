@@ -18,13 +18,13 @@ MLA 14
   	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
   	  Charts_js = "/slides/javascripts/lib/Charts.js",
   	  mla14_js = "/slides/javascripts/charts/conferences/mla14.js";
-  	
+  
   // This call to head.js is automatically determined by Middleman at compile:
   head.load(remark_js, haml_language_js, remark_language_js, zepto_js, Charts_js, mla14_js, function(){
   
   	// Ugly fix of HAML's formatting problems:
   	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-  	
+  
   	// Load the slideshow:
   	var slideshow = remark.create({
   		navigation: {
