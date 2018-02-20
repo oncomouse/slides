@@ -1,0 +1,78 @@
+.coil1 .context,
+.coil1 .observation,
+.coil1 .interpretation,
+.coil1 .lessons {
+  display: block;
+  height: 550px;
+  width: 220px;
+  border: 1px solid black;
+  border-radius: 110px / 275px;
+  background: transparent;
+  position: absolute;
+  top: 80px; }
+.coil1 .context {
+  left: 40px; }
+.coil1 .observation {
+  left: 235px; }
+.coil1 .interpretation {
+  left: 430px; }
+.coil1 .lessons {
+  left: 625px; }
+.coil1 .contextContent,
+.coil1 .observationContent,
+.coil1 .interpretationContent,
+.coil1 .lessonsContent {
+  position: absolute;
+  width: 170px;
+  height: 360px;
+  top: 188px; }
+.coil1 .contextContent {
+  left: 66px; }
+.coil1 .observationContent {
+  left: 261px; }
+.coil1 .interpretationContent {
+  left: 456px; }
+.coil1 .lessonsContent {
+  left: 651px; }
+
+.coil2 .context,
+.coil2 .observation,
+.coil2 .interpretation,
+.coil2 .lessons {
+  display: block;
+  height: 550px;
+  width: 220px;
+  border: 1px solid black;
+  border-radius: 110px / 275px;
+  background: transparent;
+  position: absolute;
+  top: 80px; }
+.coil2 .context {
+  left: 40px; }
+.coil2 .observation {
+  left: 235px; }
+.coil2 .interpretation {
+  left: 430px; }
+.coil2 .lessons {
+  left: 625px; }
+.coil2 .contextContent,
+.coil2 .observationContent,
+.coil2 .interpretationContent,
+.coil2 .lessonsContent {
+  position: absolute;
+  width: 170px;
+  height: 360px;
+  top: 188px; }
+.coil2 .contextContent {
+  left: 66px; }
+.coil2 .observationContent {
+  left: 261px; }
+.coil2 .interpretationContent {
+  left: 456px; }
+.coil2 .lessonsContent {
+  left: 651px; }
+.coil2 .contextContent,
+.coil2 .observationContent,
+.coil2 .interpretationContent,
+.coil2 .lessonsContent {
+  top: 168px; }

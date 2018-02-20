@@ -1,0 +1,65 @@
+@function circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, $i:1) {
+    @return $firstCircleOffset + (($i - 1) * ($circleWidth - $circleOverlap));
+}
+
+@mixin coil($circleWidth: 220px, $circleHeight: 550px, $firstCircleOffset: 40px, $circleOverlap: 25px) {
+    .context,
+    .observation,
+    .interpretation,
+    .lessons {
+        display: block;
+        height: $circleHeight;
+        width: $circleWidth;
+        border: 1px solid black;
+        border-radius: #{$circleWidth / 2} / #{$circleHeight / 2};
+        background: transparent;
+        position: absolute;
+        top: 80px;
+    }
+    .context {
+        left: circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 1);
+    }
+    .observation {
+        left: circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 2);
+    }
+    .interpretation {
+        left: circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 3);
+    }
+    .lessons {
+        left: circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 4);
+    }
+    .contextContent,
+    .observationContent,
+    .interpretationContent,
+    .lessonsContent {
+        position: absolute;
+        width: $circleWidth - 50px;
+        height: $circleHeight - 190px;
+        top: 188px;
+    }
+    .contextContent {
+        left: 26px + circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 1);
+    }
+    .observationContent {
+        left: 26px + circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 2);
+    }
+    .interpretationContent {
+        left: 26px + circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 3);
+    }
+    .lessonsContent {
+        left: 26px + circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, 4);
+    }
+}
+
+.coil1 {
+    @include coil();
+}
+.coil2 {
+    @include coil();
+    .contextContent,
+    .observationContent,
+    .interpretationContent,
+    .lessonsContent {
+        top: 168px;
+    }
+}
