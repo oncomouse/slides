@@ -31,6 +31,10 @@
 - slideshow_css_file = slide_configuration_data.has_key?("css") ? slide_configuration_data["css"] : "slides"
 - slideshow_css_file = "remark/themes/#{slide_configuration_data["theme"]}/theme" if slide_configuration_data.has_key?("theme")
 
+- load_mermaid = false
+- if slideshow_source =~ /\<div class=["']mermaid/
+	- load_mermaid = true
+
 - # Test for Charts.js support
 - # To load chart support, you also need to have a javascript file in source/javascripts/XX/YY.js where XX and YY matches the file path of your remark presentation (so source/remark/XX/YY.html is how you get the values).
 - # This javascript file needs to have one function, called "load_charts()."
@@ -76,6 +80,10 @@
 		- head_js_array.push(javascript_path("remark/add-ons/haml.language.js"))
 		- head_js_array.push(javascript_path("remark/add-ons/remark.language.js"))
 		- head_js_array.push(javascript_path("lib/zepto.min.js"))
+		- if load_mermaid
+			- head_js_array.push(javascript_path("lib/nvd3/d3.min.js"))
+			- head_js_array.push(javascript_path("lib/mermaid.js"))
+			- head_js_array.push(asset_path(:css, "mermaid/mermaid.css"))
 		- if has_emoji
 			- head_js_array.push(javascript_path("lib/twemoji.js"))
 			- head_load_callbacks.push("twemoji.parse(document.body);")
@@ -137,6 +145,7 @@
 					}, lightningTimer);
 					document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
 				}
+				#{if load_mermaid then "mermaid.initialize({startOnLoad:true});" end}
 				/*var image_scalar = {width: 0.85, height: 0.75 };
 				$(window).on('resize', function() {
 					$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
