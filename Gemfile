@@ -8,7 +8,8 @@ gem "builder", ">=3.0"
 gem "middleman", "~> 4"
 gem "middleman-sprockets"
 gem "middleman-autoprefixer"
-gem "opal"
+gem "middleman-livereload"
+gem 'opal', '~> 0.10.5'
 
 gem "kramdown"
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
@@ -23,7 +24,7 @@ source 'https://rails-assets.org' do
     gem "rails-assets-remark", ">=0.13.0"
 	gem "rails-assets-reveal.js", "~>2.6.2"
     gem "rails-assets-zepto", "~>1.1.4"
-    gem "rails-assets-bourbon", ">=4.2.7"
+    gem "rails-assets-bourbon", "~>4"
     gem "rails-assets-neat", "2.0.0"
 	gem "rails-assets-icomoon"
 	gem "rails-assets-open-sans"

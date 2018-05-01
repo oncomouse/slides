@@ -21,6 +21,8 @@ end
 
 page "*.html", :layout => "remark"
 
+activate :livereload, host: "0.0.0.0"
+
 ###
 # Helpers
 ###
