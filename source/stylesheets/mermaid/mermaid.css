@@ -1,3 +1,15 @@
 /*
  * = require mermaid
  */
+.arrowheadPath {
+    stroke: #333;
+    fill: #333;
+}
+.inverse .path {
+    stroke: #CCC;
+    fill: #CCC;
+}
+.inverse .arrowheadPath {
+    stroke: #CCC;
+    fill: #CCC;
+}
