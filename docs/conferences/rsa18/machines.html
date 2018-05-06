@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+Events in Flux
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/conferences/rsa18/machines.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+  	  d3_js = "/slides/javascripts/lib/nvd3/d3.min.js",
+  	  mermaid_js = "/slides/javascripts/lib/mermaid.js",
+  	  mermaid_css = "/slides/stylesheets/mermaid/mermaid.css",
+  	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js",
+  	  progress_bar_css = "/slides/stylesheets/remark/add-ons/progress-bar.css";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, d3_js, mermaid_js, mermaid_css, progress_bar_js, progress_bar_css, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	var loadMermaid = true;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	// Load any add-ons:
+  	attach_progress_bar(slideshow);
+    var twitter_name = "<span class=\"twitter_badge\">@oncomouse</span>";
+    $('.remark-slide-content').slice(1).each(function(i,slide){
+    	$(slide).append('<div class="twitter_name">' + twitter_name +  '</div>');
+    });
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: inverse, center, middle, f40px, title
+
+# Events in Flux:<br>Software Architecture and Rhetorical Subtraction
+
+**Andrew Pilsch**  
+**Texas A&M University**  
+**<span class="twitter_badge">@oncomouse</span>**  
+**he/his**
+
+**RSA 2018 ◊ Minneapolis, MN ◊ June 1, 2018**
+---
+class: inverse, quote, f28px
+
+## Doug Eyman
+
+> While rhetoric provides the primary theory and methods for the field of digital rhetoric, the objects of study must be digital (electronic) compositions rather than speeches or print texts. This is not to say that scholars of digital rhetoric may not make connections between analog and digital objects or focus on the cultural and socio-historical circumstances that lead to, influence, or are imbricated with the construction of digital texts, but that the primary boundary condition for the field is the distinction between analog and digital forms of communication.
+> 
+> – *Digital Rhetoric*
+---
+class: center, middle, inverse
+
+![Design Patterns Book Cover](https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg)
+---
+class: inverse
+## Pub-Sub
+
+<div class="mermaid center">
+graph TB;
+    pub(Publisher)-->|Hey|sub1(Subscriber);
+    pub-->|Hey|sub2(Subscriber);
+    pub-->|Hey|pubsub1(Publisher/Subscriber);
+    pubsub1-->|Sup?|sub1;
+</div>
+---
+class: inverse
+## Pub-Sub Lightbulbs
+
+<div class="mermaid center">
+graph TB;
+    pub1(Publisher #1)-->|On|lb(Light Bulb Controller);
+</div>
+---
+class: inverse
+## Pub-Sub Lightbulbs
+
+<div class="mermaid center">
+graph TB;
+    pub1(Publisher #1)-->|On|lb(Light Bulb Controller);
+    pub2(Publisher #2)-->|Off|lb;
+</div>
+---
+class: inverse, f55px
+## Pub-Sub Lightbulbs
+
+<div class="mermaid center">
+graph TB;
+    pub1(Publisher #1)-->|On|lb(Light Bulb Controller);
+    pub2(Publisher #2)-->|Off|lb;
+</div>
+.center[
+
+Oh, &*%$!
+
+]
+---
+class: inverse
+## Flux
+
+.center[
+
+![Flux Logo](https://i2.wp.com/www.codice.cc/wp-content/uploads/2016/09/flux-logo.png?fit=512%2C512)
+
+]
+---
+class: inverse
+## Flux
+<div class="mermaid center">
+graph TD;
+    ac(Action)-->|Something Happened|di(Dispatcher);
+    di-->|Reduce|st(Store);
+    st-->|Push Updates|vi(View);
+    vi-->|The User Did Something|ac;
+</div>
+---
+class: inverse
+## Flux Lightbulbs
+
+<div class="mermaid center">
+graph TD;
+    lv(Login Form)-->|User Logged In|ac(Action);
+    ac-->|Login Action|di(Dispatcher);
+    di-->|Login Action|st(Store);
+    st-->|Lightbulb State Has Changed|lb(Light Bulb Controller);
+    st-->lv;
+</div>
+---
+class: inverse, center, middle
+
+![](https://www.topoi.org/wp-content/uploads/2014/03/Klepsydra_Karnak-Tempel.jpg)
+---
+class: inverse, f27px, quote
+## Susan Leigh Star
+> By experience and by affinity, some of us begin not with Pasteur, but with the monster, the outcast. Our multiplicity has not been the multiple personality of the executive, but that of the abused child, the half- breed. We are the ones who have done the invisible work of creating a unity of action in the face of a multiplicity of selves, as well as, and at the same time, the invisible work of lending unity to the face of the torturer or of the executive. We have usually been the delegated to, the disciplined.
+> 
+> – "Power, Technology, and the Phenomenology of Conventions: On Being Allergic to Onions"
+---
+class: inverse, f26px, quote
+## Erasmus
+> To take compression of language first, who will speak more succinctly than the man who can readily and without hesitation pick out from a huge army of words, from the whole range of figures of speech, the feature that contributes most effectively to brevity? And as for compression of content, who will show the greatest mastery in setting out his subject in the fewest possible words if not the man who has carefully worked out what are the salient points of his case, the pillars so to speak on which it rests, distinguishing them from the subsidiary points and things brought in merely for embellishment?
+> 
+> – *De Copia*
+---
+class: inverse, f26px, quote
+## Shawna Ross
+>  Both Jamesian style and social media are **forms of verbal compression that are dense, allusive, and lossless, self-contained programs that can output large quantities of information by referring to a tiny percentage of the original data**. And both only work if you know how to read them. Accordingly, the Jamesian narrator’s fundamental task—to arrange and interpret data streams (consciousness, expression, dialogue, action, text)—is the position that needs to be taken up by today’s social media user, who increasingly “knows” friends and family through data streams.
+> 
+> – "Hashtags, Algorithmic Compression, and Henry James’s Late Style"
+---
+class: inverse
+## Flux
+<div class="mermaid center">
+graph TD;
+    ac(Action)-->|Something Happened|di(Dispatcher);
+    di-->|Reduce|st(Store);
+    st-->|Push Updates|vi(View);
+    vi-->|The User Did Something|ac;
+</div>
+---
+class: inverse, f30px, quote
+## Susan Leigh Star
+> The power of feminist analysis is to move from the experience of being a non-user, an outcast or a castaway, to the analysis of the fact of McDonald's (and by extension, many other technologies)- and implicitly to the fact that 'it might have been otherwise,' - there is nothing necessary or inevitable about the presence of such franchises. We can bring a stranger's eye to such experiences.
+> 
+> – "Power, Technology, and the Phenomenology of Conventions"
+---
+class: inverse, quote, f40px
+## Susan Leigh Star
+
+> When standards change, it is easier to see the invisible work and the invisible memberships that have anchored them in place.
+> 
+> – "Power, Technology, and the Phenomenology of Conventions"
+
+</textarea>
+</body>
+</html>

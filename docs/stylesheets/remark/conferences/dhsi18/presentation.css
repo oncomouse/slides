@@ -1,0 +1,4 @@
+.quote blockquote p:last-child {
+  line-height: 1.25;
+  text-align: right;
+  font-size: 0.9em; }

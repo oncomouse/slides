@@ -29,8 +29,37 @@ ENG 337 - Day 14
   		navigation: {
   			scroll: false,
   			touch: true
-  		}
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
   	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
   	/*var image_scalar = {width: 0.85, height: 0.75 };
   	$(window).on('resize', function() {
   		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
