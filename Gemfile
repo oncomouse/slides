@@ -8,7 +8,6 @@ gem "builder", ">=3.0"
 gem "middleman", "~> 4"
 gem "middleman-sprockets"
 gem "middleman-autoprefixer"
-gem "middleman-livereload"
 gem 'opal', '~> 0.10.5'
 
 gem "kramdown"
