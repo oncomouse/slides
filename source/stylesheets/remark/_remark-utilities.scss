@@ -335,6 +335,7 @@ img {
 // Slide font size utility:
 @for $i from 5 through 150 {
 	.f#{$i}px {
+		blockquote,
 		p,
 		li,
 		td,
