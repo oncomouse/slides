@@ -130,38 +130,6 @@ graph BT;
     flap-->duck;
 </div>
 ---
-class: inverse, f45px
-## Composition, pt. 2
-
-~~~haskell
-f: X-->Y
-g: Y-->Z
-g∘f: X-->Z
-
-(g∘f) == g(f(x))
-~~~
----
-class: inverse, f24px
-## Composition, pt. 3
-
-~~~javascript
-var DonkeyStuff = compose(
-  makeNoise('Bray')
-)
-var ChickenStuff = compose(
-  makeNoise('Cluck')
-  , flapWings
-  , layEgg
-)
-var DuckStuff = compose(
-  makeNoise('Quack')
-  , flapWings
-  , layEgg
-)
-
-DuckStuff() // lay eggs, flap wings, quack
-~~~
----
 class: inverse, f43px
 ## *Design Patterns*
 
@@ -191,7 +159,7 @@ class: inverse, f25px, quote
 class: inverse, f26px, quote
 ## Richard Lanham
 
-> > And because all arts face the same technological pressures, they are going to find, create, new relationships through that technology, through their new digital equivalences. Such equivalences pose the most fundamental, and most obvious, challenges to the structure and purpose of the university arts curriculum, and to the place of literary study in it. The shocked responses to chance techniques of creation in experimental music will no doubt be duplicated in responses to programs which create **aleatory poetry**.
+> And because all arts face the same technological pressures, they are going to find, create, new relationships through that technology, through their new digital equivalences. Such equivalences pose the most fundamental, and most obvious, challenges to the structure and purpose of the university arts curriculum, and to the place of literary study in it. The shocked responses to chance techniques of creation in experimental music will no doubt be duplicated in responses to programs which create **aleatory poetry**.
 > 
 > – "The Electronic Word"
 
