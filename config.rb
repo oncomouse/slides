@@ -73,20 +73,22 @@ while parse_files.length > 0
     file = parse_files.shift
     next if file =~ /^\./
     next if file =~ /remark_base/
-    
+
 	# If the file is a Markdown slide source, we proxy it to remark_markdown_template.html.haml
 	# This file will actually set up all the JavaScript and page layout things for
 	# the Markdown file, while loading the source as a Textarea, as Remark.js likes.
     if file =~ /(\.markdown|\.md)$/
-        markdown_source = File.open("#{Dir.pwd}/source/#{file}").read
+        markdown_source = ""
+        File.open("#{Dir.pwd}/source/#{file}") do |f|
+          markdown_source = f.read
+        end
         proxy "#{file.sub(File.extname(file), "")}", "remark_markdown_template.html", :locals => {:markdown_source => file}
-    end 
-    
+    end
+
 	# If the file is a directory, we proxy a directory index to /index.html.erb,
 	# which will build the index display for the various slide files we are generating.
 	if File.directory? "#{Dir.pwd}/source/#{file}" and !(file =~ /(javascripts|stylesheets|images|fonts|layouts)/) and !(file =~ /^\./)
         proxy "#{file}/index.html", "index.html", :locals => {:directory => file}
-        
         parse_files += Dir.entries("#{Dir.pwd}/source/#{file}").map! { |x| if x =~ /^\./ then nil else "#{file}/#{x}" end }
         parse_files.compact!.uniq!
 	end
