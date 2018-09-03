@@ -32,9 +32,9 @@ end
 				<% end %>
 			</h1>
 			<%= Tilt['markdown'].new(config[:markdown]) { "This is [Andrew Pilsch](http://atp1.us)'s slide repository. It hosts slides made using both [Remark.js](http://remarkjs.com) and [Reveal.js](http://lab.hakim.se/reveal-js/)." }.render(app) %>
-		
+
 			<ul>
-				<% 
+				<%
 				files = []
 				directories = []
 				sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.sort{|a,b| naturalized(a.destination_path.to_s) <=> naturalized(b.destination_path.to_s)}.each do |resource|
@@ -44,15 +44,15 @@ end
 					pageLayout = (resource.respond_to? :options) ? resource.options[:layout] : resource.data.layout
 					if resource.data["title"] and resource.destination_path.count("/") <= depth
 						files << capture_html do %>
-			
+
 							<li>
 								<%= link_to "#{resource.data["title"]}", resource.destination_path.gsub("#{directory}/","")%>
 								<small><%= ("#{pageLayout ? pageLayout.capitalize : "Remark"}")%></small>
 							</li>
 						<% end
 					end
-					if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth 
-						next if "#{File.basename resource.destination_path.gsub('index.html',"")}/" =~ /^_/ # Throw out directories starting with "_" (hide them)
+					if resource.destination_path =~ /.+\/index.html/ and resource.destination_path != "#{directory}/index.html" and resource.destination_path.count("/") - 1 == depth
+						next if build? and "#{File.basename resource.destination_path.gsub('index.html',"")}/" =~ /^_/ # Throw out directories starting with "_" (hide them)
 						directories << capture_html do %>
 					<li>
 						<%= if directory.nil? then link_to resource.destination_path.gsub('index.html',"").capitalize, resource.destination_path.gsub('index.html',"") else link_to "#{File.basename resource.destination_path.gsub('index.html',"")}/".capitalize, resource.destination_path.sub(directory + "/","") end %>
@@ -70,4 +70,4 @@ end
 		</div>
 	</body>
 </html>
-				
+
