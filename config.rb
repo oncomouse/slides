@@ -4,7 +4,7 @@
 
 set :markdown_engine, :kramdown
 set :markdown, :fenced_code_blocks => true,
-							 :autolink => true, 
+							 :autolink => true,
 							 :smartypants => true,
 							 :footnotes => true,
 							 :superscript => true
@@ -43,11 +43,11 @@ helpers do
     def image_path(file_path)
         asset_path(:images, file_path)
     end
-	
+
 	def directories_with_slides
 		sitemap.resources.map{ |resource| if (!(resource.destination_path =~ /(javascripts|stylesheets|images|fonts)\//) and resource.destination_path =~ /\//) then resource.destination_path.gsub(/\/.*\.[A-Za-z]+$/,"") end }.delete_if {|x| x.nil? }.uniq
 	end
-			
+
 end
 
 ready do
