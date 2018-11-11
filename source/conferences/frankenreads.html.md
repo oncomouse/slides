@@ -60,7 +60,7 @@ class: inverse, center, middle
 ---
 class: inverse, middle, f30px
 
-> "The seas will rise and our cities will be swallowed by the oceans," Black Tom said. "The air will grow so hot we won't be able to breathe. The world will be remade for Him, and His kind. That white man was afraid of indifference; well, now he's going to find out what it's like.
+> **"The seas will rise and our cities will be swallowed by the oceans," Black Tom said. "The air will grow so hot we won't be able to breathe. The world will be remade for Him, and His kind.** That white man was afraid of indifference; well, now he's going to find out what it's like.
 >
 > "I don't know how long it'll take. Our time and their time isn't counted the same. Maybe as month? Maybe a hundred years? All this will pass. Humanity will be washed away. The globe will be theirs again, and it's me who did it. Black Tom did it. I gave them the world. (148)
 ---
@@ -71,17 +71,13 @@ class: inverse, middle, f34px
 class: inverse, middle, center
 ![](../images/frankenreads/vast-machine.jpg)
 ---
-class: inverse, middle, f30px
-
-> In order to imagine how they might treat us were we to come into contact with them, it might be best to recall how we treat "inferior intelligences" such as rabbits and frogs. In the best of cases they serve as food for us; sometimes also, often in fact, we kill them for the sheer pleasure of killing. This, Lovecraft warned, would be the true picture of our future relationship to those other intelligent beings. Perhaps some of the more beautiful human specimens would be honored and would end up on a dissection table - that's all. (32-3)
----
 class: center, inverse, middle
 
 ![](../images/frankenreads/after-future.jpg)
 ---
 class: middle, inverse, f30px
 
-> The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age. (167)
+> The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. **The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the deadly light into the peace and safety of a new dark age.** (167)
 ---
 class: center, middle, inverse
 
