@@ -1,0 +1,17 @@
+.title small {
+  font-size: 33px; }
+
+.lovecraft-books img {
+  max-width: 32%; }
+
+.lovecraft-philosophy img {
+  max-width: 49%; }
+
+.remark-slide-content {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.pacific-rim blockquote {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem; }

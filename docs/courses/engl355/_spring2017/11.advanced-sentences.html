@@ -12,9 +12,9 @@ ENGL 355 Advanced Sentences
 <script>
   // The javascript files to be loaded are determined by Middleman at compile:
   var remark_js = "/slides/javascripts/remark/remark.min.js",
-  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
   
   // This call to head.js is automatically determined by Middleman at compile:
   head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
@@ -39,6 +39,16 @@ ENGL 355 Advanced Sentences
   		}, lightningTimer);
   		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
   	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
   	var loadMermaid = false;
   	if(loadMermaid) {
   		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
@@ -73,54 +83,6 @@ ENGL 355 Advanced Sentences
 class: center, middle
 
 # Advanced Sentences
----
-class: vd
-
-.top-left[
-![](../../images/vd-1.png)
-]
----
-class: vd
-
-.top-left[
-![](../../images/vd-1.png)
-]
-
-.top-right[
-![](../../images/vd-2.png)
-]
----
-class: vd
-
-.top-left[
-![](../../images/vd-1.png)
-]
-
-.top-right[
-![](../../images/vd-2.png)
-]
-
-.bot-left[
-![](../../images/vd-3.png)
-]
----
-class: vd
-
-.top-left[
-![](../../images/vd-1.png)
-]
-
-.top-right[
-![](../../images/vd-2.png)
-]
-
-.bot-left[
-![](../../images/vd-3.png)
-]
-
-.bot-right[
-![](../../images/vd-4.png)
-]
 ---
 class: f35px
 ## Sentence Modification
@@ -579,6 +541,7 @@ class: f34px
 ## For Thursday
 
 Read through Charlotte Perkins Gilman's "The Yellow Wallpaper." Using the vocabulary we worked with last week and the stuff we learned today, find two moments in the text where you see something interesting happening with Gilman's sentence construction. As well, does Gilman favor a heavily or minimally modified style? Periodic or loose sentences? Right-, left-, or middle-branching sentences? Do these features change over the course of the story?
+
 
 </textarea>
 </body>

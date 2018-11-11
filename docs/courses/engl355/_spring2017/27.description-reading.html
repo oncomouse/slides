@@ -12,9 +12,9 @@ ENGL 355 Description Reading
 <script>
   // The javascript files to be loaded are determined by Middleman at compile:
   var remark_js = "/slides/javascripts/remark/remark.min.js",
-  	  haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-  	  remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-  	  zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
   
   // This call to head.js is automatically determined by Middleman at compile:
   head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
@@ -39,6 +39,16 @@ ENGL 355 Description Reading
   		}, lightningTimer);
   		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
   	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
   	var loadMermaid = false;
   	if(loadMermaid) {
   		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
