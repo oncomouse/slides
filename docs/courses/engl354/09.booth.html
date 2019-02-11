@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Booth
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# Wayne Booth <br> "The Revival of Rhetoric"
+---
+class: f32px
+## What is Rhetoric Today?
+
+> What, exactly, are we reviving? As applied to art, the term is today given every conceivable degree of narrowness and generality, meaning anything from mere ornamental figures that can be tacked on a discourse or subtracted at will to the whole range of all possible forms of discourse; as systematic study, rhetoric may be anything from a classification of ornamental figures to the theory of man as a logos-possessing animal. (8)
+---
+class: f21px
+## The Age of Rhetoric
+
+>  Here, as in much of current usage, rhetoric is still bombast, mere propaganda, perhaps necessary for the affairs of men but necessarily tainted, anti-literary. Now obviously I did not come here to plead for a revival of such stuff. But I might well have come to describe how it feels to live in an age dominated by it. A case could be made for the claim that we live in the most rhetorical age of all time, if by rhetoric we mean whatever men do to change each other's minds without giving good reasons for change. I have in mind not only our fantabulous annual expenditures on advertising and public relations and political campaigns, though these alone might brand us, quantitatively, as the most rhetorical age of all time. I am thinking even more about how image building and propaganda have come to dominate fields where traditionally one could expect to find not blandishment or trickery but either solid action or genuine argument. The hand that used to guide the plow now pens the Agricultural Association Press Release. The warrior's sword is now either literally a typewriter or, if still in fact a destructive weapon, one that is wielded not so much to win battles as to change men's minds. (8)
+---
+class: f29px
+## No Substance
+
+>  I could go on through almost every part of our lives and show a similar reliance on suasion rather than substance. In journalism we find traditional notions of news accuracy replaced more and more, especially in the news maga- zines, by standards of rhetorical effectiveness; in place of the facts we are titillated and aroused by weekly collections of little short  stories, rhetorically organized to sell an editorial point of view. Or again, our notions of personal worth, once decided by such hard substantive matters as moral virtue, or family history, or money in the bank, are now settled rhetorically (8-9)
+---
+class: f25px
+## Bad Rhetoric Society
+
+>  In short, it is not difficult to find signs that we are a rhetorical age, if we mean by that- once again-an age in which men try to change each other's minds without giving good reasons for change. I know of no past culture where power was so persistently thought of as power to manipulate men's minds; where beauty was so persistently tested by mere popularity or saleability; where the truth of propositions was so persistently judged by whether this or that group accepts them; where notions of human greatness were so persistently reduced to the question of fame or "national luminosity"; where, finally, educational goals and methods were so persistently reduced to the notion of conditioning or imposition of already formed ideas or practices upon an infinitely malleable material. (9)
+---
+class: f24px
+## Good Rhetoric Society
+
+> I can think of no previous society in which questions of political power were so persistently referred to the people for consultation and decision; where questions of beauty were so often decided not by arbitrary rules imposed by an elite but by reference to a genuine capacity of art works to please those who experience them; where questions of truth were so often tested by debate rather than settled by decree; where notions of human greatness were so consistently determined not by fiat of an hereditary aristocracy or plutocracy but by reference to standards testable on the popular pulse; where, finally, educational goals and methods were tested so constantly against practical experience, and where it was unfailingly assumed that, since all men are educable-that is, subject to good rhetoric-there is no limit to the good that can be done through improving the rhetoric of education. (10)
+---
+class: f38px
+## Liberation Through Rhetoric
+
+> Would not such a society-fully as rhetorical as the earlier one-be a noble thing indeed? All of the evils of a rhetorical age are thus corruptions of tendencies that might be ennobling, or at least liberating. (10)
+---
+class: f36px
+## Rhetoric Of Today
+
+>  But it would be naive to think that reviving Aristotle or Quintilian or Campbell or Whately could solve our problems if we only studied them carefully. For one thing, the age of rhetoric has invented forms of persuasion that earlier ages knew not of. Much, perhaps most, of our rhetoric occurs in informal situations (11)
+
+
+
+</textarea>
+</body>
+</html>
