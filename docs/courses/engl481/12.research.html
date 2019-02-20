@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 481 Research
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# Conducting Research
+---
+class: f24px, no-margin
+## Purpose of Dialogue
+
+> SOCRATES: On the other hand, take a man who thinks that a written discourse on any subject can only be a great amusement, that no discourse worth serious attention has ever been written in verse or prose, and that those that are recited in public without questioning and explanation, in the manner of the rhapsodes, are given only in order to produce conviction. He believes that at their very best these can only serve as reminders to those who already know. And he also thinks that only what is said for the sake of understanding and learning, what is truly written in the soul concerning what is just, noble, and good can be clear, perfect, and worth serious attention: Such discourses should be called his own legitimate children, first the discourse he may have discovered already within himself and then its sons and brothers who may have grown naturally in other souls insofar as these are worthy; to the rest, he turns his back. Such a man, Phaedrus, would be just what you and I both would pray to become. (277e-278b)
+---
+class: middle, center
+## Assignment Sheet
+---
+class: f44px
+## Finding Sources
+
+---
+class: f44px
+## Finding Sources
+
+1. [Google Scholar](http://scholar.google.com)
+---
+class: f44px
+## Finding Sources
+
+1. [Google Scholar](http://scholar.google.com)
+1. MLA Bibliography
+---
+class: f44px
+## Finding Sources
+
+1. [Google Scholar](http://scholar.google.com)
+1. MLA Bibliography
+1. [ TAMU Library Research Guide ](http://tamu.libguides.com/sb.php?subject_id=52283)
+---
+class: f44px
+## Getting Sources
+
+---
+class: f44px
+## Getting Sources
+
+1. [Library Front Page](http://libraries.tamu.edu)
+---
+class: f44px
+## Getting Sources
+
+1. [Library Front Page](http://libraries.tamu.edu)
+	* Databases
+---
+class: f44px
+## Getting Sources
+
+1. [Library Front Page](http://libraries.tamu.edu)
+	* Databases
+	* Catalogue
+---
+class: f44px
+## Getting Sources
+
+1. [Library Front Page](http://libraries.tamu.edu)
+	* Databases
+	* Catalogue
+	* Get It For Me (ILL)
+---
+class: f44px
+## Getting Sources
+
+1. [Library Front Page](http://libraries.tamu.edu)
+	* Databases
+	* Catalogue
+	* Get It For Me (ILL)
+	* eJournals
+---
+class: f46px
+## Evaluating Sources
+
+---
+class: f46px
+## Evaluating Sources
+
+1. [Review Credible Sources](http://flinders.libguides.com/evaluate)
+---
+class: f46px
+## Evaluating Sources
+
+1. [Review Credible Sources](http://flinders.libguides.com/evaluate)
+	* Scholarly ([journal](https://www.elsevier.com/reviewers/what-is-peer-review) or [book](http://www.aupresses.org/aaup-members/membership-list))
+---
+class: f46px
+## Evaluating Sources
+
+1. [Review Credible Sources](http://flinders.libguides.com/evaluate)
+	* Scholarly ([journal](https://www.elsevier.com/reviewers/what-is-peer-review) or [book](http://www.aupresses.org/aaup-members/membership-list))
+1. Recent?
+---
+class: f46px
+## Evaluating Sources
+
+1. [Review Credible Sources](http://flinders.libguides.com/evaluate)
+	* Scholarly ([journal](https://www.elsevier.com/reviewers/what-is-peer-review) or [book](http://www.aupresses.org/aaup-members/membership-list))
+1. Recent?
+1. Well-cited?
+---
+class: f46px
+## Evaluating Sources
+
+1. [Review Credible Sources](http://flinders.libguides.com/evaluate)
+	* Scholarly ([journal](https://www.elsevier.com/reviewers/what-is-peer-review) or [book](http://www.aupresses.org/aaup-members/membership-list))
+1. Recent?
+1. Well-cited?
+1. Do Other People Say It's Wrong?
+---
+class: f40px
+## Reading Sources
+
+---
+class: f40px
+## Reading Sources
+
+1. Books
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+	* Amazon Look Inside
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+	* Amazon Look Inside
+1. Articles
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+	* Amazon Look Inside
+1. Articles
+	* Abstracts
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+	* Amazon Look Inside
+1. Articles
+	* Abstracts
+	* Full-text search
+---
+class: f40px
+## Reading Sources
+
+1. Books
+	* Introduction
+	* Index
+	* Google Books
+	* Amazon Look Inside
+1. Articles
+	* Abstracts
+	* Full-text search
+	* Topic Sentences
+---
+class: f40px
+## Remembering Sources
+
+1. Write down the thesis of each article
+1. Annotate PDFs / Books
+	* Post-it Notes for library books
+	* Find a quote you need, write what it's about
+1. Keep Notes in One Location
+	* Dropbox
+	* Google Drive
+
+
+</textarea>
+</body>
+</html>
