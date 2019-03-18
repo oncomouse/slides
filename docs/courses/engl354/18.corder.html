@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Corder
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: middle, center, bigger
+
+# Jim W Corder <br> "Argument as Emergence, Rhetoric as Love"
+---
+class: f22px
+## Consciousness as Narration
+
+
+> All authors, to be sure, we are more particularly narrators, historians, tale-tellers. Going through experience, hooking some version of it to ourselves, accumulating what we know as evidence and insight, ignoring what does not look like evidence and insight to us, finding some pieces of life that become life for us, failing to find others, or choosing not to look, each of us creates the narrative that he or she is. We tell our lives and live our tales, enjoying where we can, tolerating what we must, turning away to re-tell, or sinking into madness and disorder if we cannot make (or re-make) our tale into a narrative we can live in. Each of us forms conceptions of the world, its institutions, its public, private, wide, or local histories, and each of us is the narrative that shows our living in and through the conceptions that are always being formed as the tales of our lives take their shape. In this history-making, as E. L. Doctorow says, "there is no fiction or non-fiction as we commonly understand the distinction" ("False Documents"). There is only our making, sometimes by design, sometimes not. (16)
+---
+class: f29px
+## Social Construction
+
+> When I say that we make the fictions that are our lives, I mean to identify a human activity, not a foolish or evil one. History as fiction may become evil, of course, if we refuse to see any history except the one we've already accepted or if we try to force that history upon others. At any rate, making the fiction of our lives—not at all the same as discovering a way to present an objective, externally verifiable history, which is not possible, anywhere—is not by nature limited, valueless, ignorant, despicable, or "merely subjective." It is human. It is what we do and are, even if we think we are doing and being something else. (17)
+---
+class: f31px
+## Language, Narrative, Invention
+
+> Whether consciously or not, we always station ourselves somewhere in our narratives when we use language. This means that invention always occurs. The process of invention may occur in a conscious, deliberate way, but it will occur, even if at some subterranean level. Any statement carries its history with it. We may speak without knowing all of our narratives, but the history is there. If the history of a statement someone else makes isn't apparent to us as hearers, then we have to go and find it. (17)
+---
+## The Narrative of the Other
+
+> If we learn or make up another's narrative so that it becomes part of our narrative, then we can live in some peace with the other. If the other's narrative will not enter our own, then something else happens, to which I'll return in a moment ...
+> 
+> This other is a narrative in another world; it is disruptive, shocking, initially at least incomprehensible, and...threatening.
+> 
+> When this happens, our narratives become indeed what they are perpetually becoming-arguments. The choosing we do to make our narratives (whether or not we are aware of the nature of our choosing) also makes our narratives into arguments. The narratives we tell (ourselves) create and define the worlds in which we hold our beliefs. Our narratives are the evidence we have of ourselves and of our convictions. Argument, then, is not something we make outside ourselves; argument is what we are. Each of us is an argument. We always live in, through, around, over, and under argument. All the choices we've made, accidentally or on purpose, in creating our histories/narratives have also made us arguments, or, I should go on to say, sets of congruent arguments, or in some instances, sets of conflicting arguments. (17-8)
+---
+class: f28px
+## Narrative and Contact
+
+>What happens, then, if the narrative of another crushes up against our own-disruptive, shocking, incomprehensible, threatening, suddenly showing us into a narrative not our own? What happens if a narrative not our own reveals to us that our own narrative was wanting all along, though it is the only evidence of our identity? What happens if the merest glimpse into another narrative sends us lurching, stunned by its differentness, either alarmed that such differentness could exist or astonished to see that our own narrative might have been or might yet be radically otherwise than it is? Do we hold our narratives? Keep telling the story we have been telling? (18-9)
+---
+class: f30px
+## Narrative's That Satisfy
+
+>  If Ms. Smith is steadfast in conviction and is outfitted with what she takes to be good evidence and sound reasoning, that means that she is living a narrative that is congruent with her expectations and satisfying to her needs. But if she speaks to Mr. Jones, who is at opposites and equally steadfast, who is his own satisfying narrative, then it's likely that Ms. Smith's evidence will not look like evidence to Mr. Jones, and Ms. Smith's reasoning will not look like reasoning. Evidence and reason are evidence and reason only if one lives in the narrative that creates and regards them.  (23)
+---
+class: f22px
+## Narrative and Rhetoric
+
+>As each understands and accepts the other, then they may move toward the truth.
+>
+>This, I would gladly agree, is the way we ought to argue, each accepting, understanding, and helping the other. However, I think the significant arguments that crowd us into each other are somewhat less kindly composed. I want to get to the place where we are threatened and where the setting doesn't seem to give us opportunity to reduce threat and to enter a mutual search for congruence and regard. I want to get to the place where we are advocates of contending narratives (with their accompanying feelings and thoughts), where we are adversaries, each seeming to propose the repudiation or annihilation of what the other lives, values, and is, where we are beyond being adversaries in that strange kind of argument we seldom attend to, where one offers the other a rightness so demanding, a beauty so stunning, a grace so fearful as to call the hearer to forego one identity for a startling new one. (24)
+---
+class: f25px
+## Emergence
+
+>  Argument is emergence toward the other. That requires a readiness to testify to an identity that is always emerging, a willingness to dramatize one's narrative in progress before the other; it calls for an untiring stretch toward the other, a reach toward enfolding the other. It is a risky revelation of the self, for the arguer is asking for an acknowledgment of his or her identity, is asking for witness from the other. In argument, the arguer must plunge on alone, with no assurance of welcome from the other, with no assurance whatever of un- conditional positive regard from the other. In argument, the arguer must, with no assurance, go out, inviting the other to enter a world that the arguer tries to make commodious, inviting the other to emerge as well, but with no assurance of kind or even thoughtful response. How does this happen? Better, how can it happen? (26)
+---
+class: f42px
+## Love?
+
+> I'll still insist that argument—that rhetoric itself—must begin, proceed, and end in love. (28)
+---
+class: f27px
+## Lesson Rhetoric Teaches Us
+
+> We arguers can learn the lessons that rhetoric itself wants to teach us. By its nature, invention asks us to open ourselves to the richness of creation, to plumb its depths, search its expanses, and track its chronologies. But the moment we speak (or write), we are no longer open; we have chosen, whether deliberately or not, and so have closed ourselves off from some possibilities. Invention wants openness; structure and style demand closure. We are asked to be perpetually open and always closing. If we stay open, we cannot speak or act; if we stand closed, we have succumbed to dogma and rigidity. Each utterance may deplete the inventive possibilities if a speaker falls into arrogance, ignorance, or dogma. (29)
+---
+class: f26px
+## Invention as Creation
+> Beyond any speaker's bound inventive world lies another: there lie the riches of creation, the great, unbounded possible universe of invention. All time is there, past, present, and future. The natural and the supernatural are there. All creation is there, ground and source for invention. The knowledge we have is formed out of the plentitude of creation, which is all before us, but must be sought again and again through the cycling process of rhetoric, closing to speak, opening again to invent again. In an unlimited universe of meaning, we can never foreclose on interpretation and argument. Invention is a name for a great miracle-the attempt to unbind time, to loosen the capacities of time and space into our speaking. This copiousness is eternally there, a plentitude for all. (29)
+
+
+</textarea>
+</body>
+</html>
