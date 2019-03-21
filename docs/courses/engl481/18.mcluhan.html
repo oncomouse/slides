@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 481 McLuhan I
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# Marshall McLuhan, "The Medium is the Message"
+
+---
+class: f24px
+## Media, Good or Bad
+
+> In a culture like ours, long accustomed to splitting and dividing all things as a means of control, it is sometimes a bit of a shock to be reminded that, in operational and practical fact, the medium is the message. This is merely to say that the personal and social consequences of any medium—that is, of any extension of ourselves—result from the new scale that is introduced into our affairs by each extension of ourselves, or by any new technology. Thus, with automation, for example, the new patterns of human association tend to eliminate jobs it is true. That is the negative result. Positively, automation creates roles for people, which is to say depth of involvement in their work and human association that our preceding mechanical technology had destroyed. Many people would be disposed to say that it was not the machine, but what one did with the machine, that was its meaning or message. (1)
+---
+class: f36px
+## Bold Claim
+
+>  This fact, characteristic of all media, means that the “content” of any medium is always another medium. The content of writing is speech, just as the written word is the content of print, and print is the content of the telegraph. If it is asked, “What is the content of speech?,” it is necessary to say, “It is an actual process of thought, which is in itself nonverbal.” (1)
+
+---
+class: f31px
+## Message?
+
+> What we are considering here, however, are the psychic and social consequences of the designs or patterns as they amplify or accelerate existing processes. For the “message” of any medium or technology is the change of scale or pace or pattern that it introduces into human affairs. The railway did not introduce movement or transportation or wheel or road into human society, but it accelerated and enlarged the scale of previous human functions, creating totally new kinds of cities and new kinds of work and leisure. (1)
+
+---
+class: f22px
+## Good Media vs Bad Media
+
+> In accepting an honorary degree from the University of Notre Dame a few years ago, General David Sarnoff made this statement: “We are too prone to make technological instruments the scapegoats for the sins of those who wield them. The products of modern science are not in themselves good or bad; it is the way they are used that determines their value.” That is the voice of the current somnambulism. Suppose we were to say, “Apple pie is in itself neither good nor bad; it is the way it is used that determines its value.” Or, “The smallpox virus is in itself neither good nor bad; it is the way it is used that determines its value.” Again, “Firearms are in themselves neither good nor bad; it is the way they are used that determines their value.” That is, if the slugs reach the right people firearms are good. If the TV tube fires the right ammunition at the right people it is good. I am not being per- verse. There is simply nothing in the Sarnoff statement that will bear scrutiny, for it ignores the nature of the medium, of any and all media, in the true Narcissus style of one hypnotized by the amputation and extension of his own being in a new technical form. (3-4)
+
+---
+class: f22px
+## Old Forms Become Visible
+
+> Just before an airplane breaks the sound barrier, sound waves become visible on the wings of the plane. The sudden visibility of sound just as sound ends is an apt instance of that great pattern of being that reveals new and opposite forms just as the earlier forms reach their peak performance. Mechanization was never so viv- idly fragmented or sequential as in the birth of the movies, the moment that trans- lated us beyond mechanism into the world of growth and organic interrelation. The movie, by sheer speeding up the mechanical, carried us from the world of sequence and connections into the world of creative configuration and structure. The message of the movie medium is that of transition from lineal connections to configurations. It is the transition that produced the now quite correct observation: “If it works, it’s obsolete.” When electric speed further takes over from mechanical movie sequences, then the lines of force in structures and in media become loud and clear. We return to the inclusive form of the icon. (4)
+
+---
+class: f24px
+## Rationality and Linearity
+
+> *A Passage to India* by E. M. Forster is a dramatic study of the inability of oral and intuitive oriental culture to meet with the rational, visual European patterns of experience. “Rational,” of course, has for the West long meant “uniform and continuous and sequential.” In other words, we have confused reason with literacy, and rationalism with a single technology. Thus in the electric age man seems to the conventional West to become irrational. In Forster’s novel the moment of truth and dislocation from the typographic trance of the West comes in the Marabar Caves. Adela Quested’s reasoning powers cannot cope with the total inclusive field of resonance that is India. After the Caves: “Life went on as usual, but had no consequences, that is to say, sounds did not echo nor thought develop. Everything seemed cut off at its root and therefore infected with illusion.” (6-7)
+
+---
+class: f25px
+## Loss and Trauma
+
+> Electric speed mingles the cultures of prehistory with the dregs of industrial marketeers, the nonliterate with semiliterate and the postliterate. Mental break- down of varying degrees is the very common result of uprooting and inundation with new information and endless new patterns of information. Wyndham Lewis made this a theme of his group of novels called *The Human Age*. The first of these, The *Childermass*, is concerned precisely with accelerated media change as a kind of massacre of the innocents. In our own world as we become more aware of the effects of technology on psychic formation and manifestation, we are losing all confidence in our right to assign guilt. Ancient prehistoric societies regard violent crime as pathetic. The killer is regarded as we do a cancer victim. “How terrible it must be to feel like that,” they say. (7)
+
+---
+class: f21px
+## Content as Virus
+
+> The American stake in literacy as a technology or uniformity applied to every level of education, government, industry, and social life is totally threatened by the electric technology. The threat of Stalin or Hitler was external. The electric technology is within the gates, and we are numb, deaf, blind, and mute about its encounter with the Gutenberg technology, on and through which the American way of life was formed. It is, however, no time to suggest strategies when the threat has not even been acknowledged to exist. I am in the position of Louis Pasteur telling doctors that their greatest enemy was quite invisible, and quite unrecognized by them. Our conventional response to all media, namely that it is how they are used that counts, is the numb stance of the technological idiot. For the “content” of a medium is like the juicy piece of meat carried by the burglar to distract the watchdog of the mind. The effect of the medium is made strong and intense just because it is given an- other medium as “content.” The content of a movie is a novel or a play or an opera. The effect of the movie form is not related to its program content. The “content” of writing or print is speech, but the reader is almost entirely unaware either of print or of speech. (8)
+
+---
+class: f23px
+## Formative Power of Media
+
+> If the formative power in the media are the media themselves, that raises a host of large matters that can only be mentioned here, although they deserve volumes. Namely’ that technological media are staples or natural resources, exactly as are coal and cotton and oil. Anybody will concede that society whose economy is dependent upon one or two major staples like cotton, or grain, or lumber, or fish, or cattle is going to have some obvious social patterns of organization as a result. Stress on a few major staples creates extreme instability in the economy but great endurance in the population. The pathos and humor of the American South are embedded in such an economy of limited staples. For a society configured by reliance on a few commodities accepts them as a social bond quite as much as the metropolis does the press. Cotton and oil, like radio and TV, become “fixed charges” on the entire psychic life of the community. And this pervasive fact creates the unique cultural flavor of any society. (10)
+
+</textarea>
+</body>
+</html>
