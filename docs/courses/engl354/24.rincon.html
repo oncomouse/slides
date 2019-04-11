@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Rincón
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# Minerva Orduño Rincón, "The Authenticity Trap of Mexican Food in America"
+
+---
+class: f34px
+## Rustic
+
+> Yet armchair anthropologists exhibit no such uncertainty. These self-appointed authorities wield the stamp of authenticity fearlessly when it comes to a restaurant’s handmade tortillas, cheap prices, colorful ambiance, and quaintness of the family who owns it. Little is said about the food’s taste. It’s the handmade tortilla that is seen as the pinnacle of Mexican culinary achievement, and a rustic quality is emphasized above all.
+
+---
+class: f25px
+## Gentrification
+
+> When foodie gentrification occurs, the food is spoken of only in terms of stereotypes, rather than in terms of flavor. Stereotypes, after all, are derived from commonly held notions, perhaps culled from a tourist’s view of Mexico, from films in which Puerto Rican or Spanish actors portray Mexican heroes or villains, or from shots of a tipsy Anthony Bourdain at a Oaxacan street food stand, awkwardly perched on a plastic bucket, a sweating bottle of Mexican lager or neon-colored sugar-cane soda nearby as a kindly, brown-faced *abuelita* quietly works over a hot *comal* and a stack of handmade corn tortillas. Or maybe it’s Rick Bayless rambling about the fiesta that is life in Mexico, shoving a rustic authentic dish into the camera as he insists his own version is more rustic, more traditional. 
+
+---
+class: f33px
+## Humble
+
+> The handmade tortilla, then, has become the indelible image of everything that Mexican food is: low-tech, rustic, of humble origins, and made by humble people. Is the tortilla important in Mexico and to Mexican people? Of course it is, but it isn't everything, only a small part of a much larger whole. Why is the American taco-eating public more concerned with the pedigree of their tortillas than the average Mexican? This is perhaps the core of the authenticity debate.
+
+---
+class: f34px
+## Imports
+
+> The authenticity argument inevitably and ridiculously veers toward the correctness of corn versus wheat tortillas. "Real tacos come on corn tortillas!" cry armchair critics. "Wheat is a European import into the Americas!" the authenticity stamp wielders might say. Indeed it is, as are cilantro and pork, yet they are two of the top ingredients and flavors associated with Mexican cuisine and rarely questioned in their authenticity.
+
+---
+class: f28px
+## Zen-like
+
+> As someone who has cooked for a living, the process of endlessly repeating the menial task of making corn tortillas — portioning, shaping, pressing, laying on a hot cast iron *comal*, flipping, and stacking — can have a zen-like appeal. That is, until the shift’s other designated tortilla flipper fails to show up, and as the fastest, most Mexican tortilla flipper in the land, it becomes your job to keep the tortillas stacked high. When you’re making tortillas at the most Instagram-friendly taco shop in town — an hourlong wait of hipsters lining up outside the door for the privilege of tasting your handmade tortilla — every day feels like the dreaded Taco Tuesday.
+
+---
+class: f22px
+## Authenticity
+
+> Never mind that chefs […] have been not so quietly modernizing food in Mexico, with the increasing attention of a worldwide food-obsessed media embracing the indigenous culinary traditions of Mexico and Mesoamerica and the European and Asian influences that commingled with them over the centuries.
+>
+> Olvera's food […] has been called both "not understandable as Mexican food" and a "thrill ... [which] sails right over ideas like tradition, authenticity, and modernity," the last statement coming from Pete Wells of the *New York Times*. Yet even Olvera's modern representations of Mexican cuisine cannot escape the ubiquitous demand for handmade tortillas — as though turning corn into a cooked disc is the ultimate achievement in Mexico's venerated history of cooking. Dear chefs of Mexico (and chefs everywhere specializing in Mexican cuisine), no matter what you do and achieve in your career and your cuisine, your efforts will always be reduced to just how good a tortilla you make.
+
+---
+class: f29px
+## Marketing
+
+> I confess to having wielded the authenticity stamp over the years. At one point, I sold my homemade sauces at Phoenix-area farmers' markets. Who was going to buy my mole poblano unless I told customers, “Yes, it’s an authentic recipe. Like the nuns in Puebla used to make.” My chile colorado sold a hell of a lot better if it was billed as “the only way that chile colorado is made in my home state of Sonora.”
+>
+> The caramel sauce couldn't be just caramel: It was cajeta de Celaya, and every single eight-ounce jar came with the story of the mountains of Guanajuato.
+
+---
+class: f23px
+## Flavor?
+
+> I fed customers the image of a pigtailed Mexican señorita. I spoke more of my hometown and my Mexican childhood to complete strangers than I ever would have cared to, when all I wanted to speak of was the flavor of the products I made, why I used certain combinations of chiles in my sauces, and why goat milk was so important. I would rather have discussed how great it was that the goat farmer from whom I sourced milk named one of the goat kids after me. It wasn’t possible to say any of these things to most people coming to my booth at the farmers market. Instead, I heard the same thing over and over: “I thought you said this was Mexican food. Where are the tortillas? Shouldn’t you have salsa?”
+>
+> I spun tales of authenticity and nostalgia, appealing to the glimpses of Mexico, real and imagined, the buyer may have had. How sad is it to operate in a market where food cannot be sold on taste alone but relies on the merit of the tales told?
+---
+class: f34px
+## Evolution
+
+> I became aware of the uselessness of my trying to make the following argument: Cuisine, like culture, evolves to reflect the time in which it exists. The Mexican food of today tastes different from the food of 10 or 20 years ago and undoubtedly is different from the food of “old Mexico.” Why would I, or anyone else, rustic tortilla press in hand, actively push for the backward evolution of food, all in the name of authenticity and tradition?
+
+</textarea>
+</body>
+</html>
