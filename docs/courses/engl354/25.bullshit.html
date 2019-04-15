@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<base target='_blank'>
+<title>
+ENGL 354 Young
+</title>
+<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/head.min.js"></script>
+<script>
+  // The javascript files to be loaded are determined by Middleman at compile:
+  var remark_js = "/slides/javascripts/remark/remark.min.js",
+  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
+  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
+  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
+  
+  // This call to head.js is automatically determined by Middleman at compile:
+  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
+  
+  	// Ugly fix of HAML's formatting problems:
+  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+  
+  	// Load the slideshow:
+  	var slideshow = remark.create({
+  		navigation: {
+  			scroll: false,
+  			touch: true
+  		},
+  		highlightLanguage: 'javascript',
+  		highlightStyle: 'zenburn'
+  	});
+  	// Lightning Timer!
+  	var lightningTimer = 0;
+  	if(lightningTimer > 0) {
+  		var lightningInterval = setInterval(function moveLightningSlide() {
+  			slideshow.gotoNextSlide();
+  		}, lightningTimer);
+  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  	}
+  	// Reload / re-init things that have to be shown to work:
+  	function loadExtraThings() {
+  		// Juxtapose
+  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
+  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+  			juxtapose.src += '';
+  			juxtapose.setAttribute('data-seen', 'true');
+  		}
+  	}
+  	slideshow.on('afterShowSlide', loadExtraThings);
+  	var loadMermaid = false;
+  	if(loadMermaid) {
+  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+  		mermaid.initialize({
+  			startOnLoad: false,
+  			cloneCssStyles: false
+  		});
+  		function initMermaid() {
+  			var diagrams = document.querySelectorAll('.mermaid');
+  			var i;
+  			for(i=0;i<diagrams.length;i++){
+  				if(diagrams[i].offsetWidth>0){
+  					mermaid.init(undefined, diagrams[i]);
+  				}
+  			}
+  		}
+  		slideshow.on('afterShowSlide', initMermaid);
+  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  	}
+  	/*var image_scalar = {width: 0.85, height: 0.75 };
+  	$(window).on('resize', function() {
+  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
+  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
+  	}).resize();*/
+  	
+  	
+  });
+</script>
+</head>
+<body>
+<textarea id='source'>
+class: center, middle
+
+# Anna M. Young, "The Politics of Wine and the Style of Bullshit"
+---
+class: f32px
+## Bullshit and Style
+
+> I argue in this essay that the aesthetic nature of wine and wine culture leads people to dismiss it as bullshit because it appears superficial and even silly. Further, I contend that dismissing aesthetics as bullshit is shortsighted and, well, bullshit—more and more, our politics are aesthetic in that they are styled. So, wine becomes a useful metonym of this broader cultural impulse to demean and sideline aesthetics and style as trivial rather than treat them as politically and culturally significant. (473)
+
+---
+class: f29px
+## False and Phony
+
+> In his seminal book, *On Bullshit*, Harry Frankfurt writes that the essence of bullshit is, “this lack of connection to a concern with truth—this indifference to how things really are” (8). But bullshit is not lying; it is something akin to bluffing. Frankfurt explains, “Unlike plain lying, however, [bullshit] is more especially not a matter of falsity but of fakery. ... For the essence of bullshit is not that it is *false* but that it is *phony*” (12, emphasis in the original). It is not hard to see how rhetorics and practices of wine and wine culture, or related rhetorics and practices of craft food, farm-to-table, and slow food, are labeled as bullshit. (473)
+
+---
+class: f24px
+## Darn Hipsters
+
+> Each of these beverage and food cultures seems like an overwrought fad, a hipster-controlled, Left Coast veneer—wine and wine culture, arguably the most aestheticized or styled of these, is sort of the poster-beverage for the epicenter of bullshit. If bullshit is about phoniness, it is also about vagueness. As Frankfurt explains, “the expression *bullshit* is often employed quite loosely ... with no specific literal meaning” and that bullshit is so “vast and amorphous that no crisp and perspicuous analysis of its concept can avoid being procrustean” (129, emphasis in the original). In other words, to label something bullshit in our everyday parlance is utterly unspecific except that it is clearly a negation, a rejection, a tossing off of something. And so, bullshit exists as a useful bin into which we can throw any number of things we would like to be rid of, or at least, that we would like to stop paying attention to if we ever attended to those things in the first place. (473)
+
+---
+class: f30px
+## Wine as Style
+
+> Even more than history or geography though, the highly aesthetic and styled nature of wine and wine culture makes it a prime target for accusations of bullshit because it seems so terribly fake. Wine is an industry. Many people have access to wine magazines, wine-themed travel and tourism, and wine tasting and pairing classes. And perhaps no food or beverage is as stylized as wine. Wine has body, it has legs, and it breathes (or needs to). Wine culture has an extensive and often ridiculous-seeming lexicon. And wine is often paired with style in discourses of taste. (474)
+
+---
+class: f22px
+## Gastronomic Politics
+
+> For instance, in the 1980 election cycle, John B. Anderson and his supporters were lampooned as auctioning off a large wheel of Brie and drinking white wine—real Americans eat American cheese slices and swill PBR [Pabst Blue Ribbon]. Clearly, Anderson did not get the message and was written off as elitist. Much more recently, the arrest of Henry Louis Gates, Jr. at his own Cambridge home led to the now-famous Beer Summit on the White House Lawn between President Obama, Gates, and his arresting officer, Sgt. James Crowley. Obama drank a Bud Light, Gates a Red Stripe, and Crowley a Blue Moon. […] Most of the rebel meetings of our Founding Fathers were based around a pub, or a big tub of beer, and many of them brewed beer on the side.” Simpson characterized the beers each chose as “session beers,” or beers created so the drinker can have pint after pint over a session of drinking. Eating brie, drinking wine, and hosting a beer summit may seem like red herrings, or even bullshit, but in a landscape engrossed with an aesthetic politics, these choices take on significant meaning. (474-5)
+
+---
+class: f25px
+## Style is Substance
+
+> Aesthetics and style are often treated as bullshit, connected to belletristic concerns with taste. As Donovan Conley explains, “rhetorical theorists dropped their interest in taste during the 19th century and have not given it serious consideration since” (225). And yet, our era is one in which culture, politics, and public life is aesthetics, an amplification of personal and group identity to an extreme in which tremendous power and influence rests in the hands of those who understand the world as styled. As Brummett argues, “Style and the images it entails are the chief sites of social and political struggle for most people in their everyday lives” (xiv). Like wine, style has tremendous symbolic meaning and potential and is a fundamental lens by which we ascertain beliefs and values about the world. (475)
+
+---
+class: f30px
+## Style as Ground
+
+> Echoing Hariman, Brummett defines style as “socially held sign systems composed of a wide range of signs beyond only language, systems that are used to accomplish rhetorical purposes across the cultural spectrum.” Just as wine is not merely a drink, style is not solely my shoes or my living room furniture. Rather, style is “the transcended ground on which the social is formed in late capitalism.” Style’s ubiquitous presence in our social experience highlights consumption as the mechanism of cultural production and links, implicitly, style with identity and politics. (475)
+
+---
+class: f34px
+## Attend to Bullshit
+
+> Wine and wine culture are not bullshit. The act of labeling wine culture bullshit means we are trying to throw it away so we do not have to attend to it, think about it, recognize it, or give it meaning. And yet, wine culture is really a symbolic object that links up to a larger aestheticized politics that demands our attention. Bullshit is a useful category, but we ought to be very careful about what we are trying to obscure. (475)
+
+</textarea>
+</body>
+</html>
