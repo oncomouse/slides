@@ -1058,7 +1058,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   -webkit-transition: background 800ms ease;
   -moz-transition: background 800ms ease;
   -ms-transition: background 800ms ease;
@@ -1110,7 +1110,7 @@ body {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

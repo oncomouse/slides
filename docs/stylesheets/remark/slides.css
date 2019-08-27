@@ -61,7 +61,7 @@ h4 {
   font-size: 0.625rem; }
 
 h5 {
-  font-size: 0.41667rem; }
+  font-size: 0.4166666667rem; }
 
 h6 {
   font-size: 0.3125rem; }
@@ -213,7 +213,7 @@ code {
   font-size: 1.67rem;
   line-height: 2.5rem; }
 .bigger .topic, .bullets .topic {
-  font-size: 0.8982em;
+  font-size: 0.8982035928em;
   line-height: 1.25rem; }
 .bigger .remark-slide-number, .bullets .remark-slide-number {
   line-height: 1.33rem; }
@@ -249,7 +249,7 @@ ul li .normal, ol li .normal, p .normal {
     font-size: 1rem;
     line-height: 1.25rem; }
 .big .topic, .bullets .topic {
-  font-size: 1.12782em;
+  font-size: 1.1278195489em;
   line-height: 1.25rem; }
 .big .remark-slide-number, .bullets .remark-slide-number {
   line-height: 1.33rem; }
