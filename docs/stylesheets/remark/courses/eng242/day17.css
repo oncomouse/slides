@@ -12,10 +12,10 @@
 .plums h2, .barrow h2 {
   text-align: center; }
 .plums blockquote, .barrow blockquote {
-  width: calc(33.3333333333% - 26.6666666667px);
+  width: calc(33.33333% - 26.66667px);
   float: left;
   margin-left: 20px;
-  margin-left: calc(33.3333333333% - 26.6666666667px + 40px); }
+  margin-left: calc(33.33333% - 26.66667px + 40px); }
 
 .reply h2 {
   text-align: center; }
