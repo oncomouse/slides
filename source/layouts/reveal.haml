@@ -18,17 +18,17 @@
 			= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
 
 		<!-- For syntax highlighting -->
-		= stylesheet_link_tag "reveal/hljs/zenburn.css", "remark/fonts/icomoon/icomoon"
+		= stylesheet_link_tag "reveal/hljs/zenburn.css", "https://cdn.jsdelivr.net/gh/layerssss/icomoon-bower/style.min.css"
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		:javascript
 			document.write( '<link rel="stylesheet" href="#{asset_path(:css,"reveal/print/").gsub(".css","")}' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 
 		<!--[if lt IE 9]>
-		= javascript_include_tag "lib/html5shiv.js"
+		= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
 		<![endif]-->
 		
-		= javascript_include_tag "lib/head.min.js"
+		= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"
 		- slideshow_source = IO.read(current_page.source_file)
 		- if slideshow_source =~ /[%<]canvas/
 			- chart_type = "Charts.js"
@@ -45,17 +45,17 @@
 		- head_js_array = []
 		- head_load_callbacks = []
 		- if load_charts and chart_type == "Charts.js"
-			- head_js_array.push(javascript_path("lib/zepto.min.js"))
-			- head_js_array.push(javascript_path("lib/Charts.js"))
+			- head_js_array.push("https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
+			- head_js_array.push("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js")
 			- head_js_array.push(javascript_path(chart_file_js))
 		- elsif load_charts and chart_type == "nv.d3.js"
-			- head_js_array.push(javascript_path("lib/nvd3/d3.min.js"))
-			- head_js_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
-			- head_js_array.push(asset_path(:css, "nvd3/nv.d3.css"))
+			- head_js_array.push("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js")
+			- head_js_array.push("https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js")
+			- head_js_array.push("https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css")
 			- head_js_array.push(javascript_path(chart_file_js))
 		- if load_charts
 			- head_load_callbacks.push("load_charts();")
-		-head_js_array.push("#{javascript_path "reveal/reveal.min.js"}")
+		-head_js_array.push("#{javascript_path "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"}")
 		- head_js_array.uniq!
 		- head_js_call = "['" + head_js_array.join("', '") + "']"#head_js_array.map { |x| variable_name(x)}.join(", ")
 		:javascript
@@ -84,7 +84,7 @@
       
 			        	// Optional libraries used to extend on reveal.js
 			        	dependencies: [
-			        		{ src: '#{javascript_path "lib/classList.js"}', condition: function() { return !document.body.classList; } },
+			        		{ src: '#{javascript_path "https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.201711092/classList.min.js"}', condition: function() { return !document.body.classList; } },
 			        		// { src: '#{javascript_path "reveal/plugin/markdown/marked.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			        		// { src: '#{javascript_path "reveal/plugin/markdown/markedown.js"}',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			        		//{ src: '#{javascript_path "reveal/plugin/highlight/highlight.js"}',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
