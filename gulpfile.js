@@ -26,23 +26,22 @@ var
   production = p.environments.production,
 
   css = {
-    in: src + 'assets/stylesheets/**/*.{css,scss,sass}',
-    out: dest + 'assets/stylesheets/',
+    in: src + 'stylesheets/**/*.{css,scss,sass}',
+    out: dest + 'stylesheets/',
   },
 
   sassOpts = {
-    imagePath: '../assets/images',
+    imagePath: '../images',
     includePaths: [bourbon, neat],
     errLogToConsole: true
   },
 
   autoprefixerOpts = {
-    browsers: ['last 3 versions', '> 5%']
   },
 
   images = {
-    in: src + 'assets/images/*',
-    out: dest + 'assets/images/'
+    in: src + 'images/*',
+    out: dest + 'images/'
   },
 
   serverOpts = {
@@ -75,7 +74,7 @@ gulp.task('images', function () {
 
 // Clean .tmp/
 gulp.task('clean', function () {
-  p.del([
+  return p.del([
     dest + '*'
   ]);
 });
@@ -91,26 +90,22 @@ gulp.task('sizereport', function () {
 // 4. SUPER TASKS
 
 // Development Task
-gulp.task('development', function (done) {
-  p.runSequence('clean', 'css', 'images', done);
-});
+gulp.task('development', gulp.series('clean', gulp.parallel('css', 'images')))
 
 // Production Task
-gulp.task('production', function (done) {
-  p.runSequence('clean', 'css', 'images', 'sizereport', done);
-});
+gulp.task('development', gulp.series('clean', gulp.parallel('css', 'images'), 'sizereport'))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
 // running 'middleman server'
-gulp.task('default', ['development'], function () {
+gulp.task('default', gulp.series('development', function () {
 
   p.browserSync.init(serverOpts);
 
-  gulp.watch(css.in, ['css']);
-  gulp.watch(images.in, ['images']);
+  gulp.watch(css.in, gulp.series('css'));
+  gulp.watch(images.in, gulp.series('images'));
 
-});
+}));
 
 function handleError(err) {
   console.log(err.toString());
