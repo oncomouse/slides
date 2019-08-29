@@ -12,11 +12,11 @@ $scale: 1.44;
 @import "http://cloud.webtype.com/css/e115d7e0-5ab8-48c5-b4bb-a7605ef90ab3.css";
 
 html {
-	font-family: WilliamsCaslonText, $georgia;
+	font-family: WilliamsCaslonText, $font-stack-georgia;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: WilliamsCaslonText, $georgia;
+	font-family: WilliamsCaslonText, $font-stack-georgia;
 	font-weight: 700;
 	line-height: 0.9em;
 }

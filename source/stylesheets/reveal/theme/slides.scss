@@ -9,7 +9,7 @@
 @import "../../remark/fonts/opensans/opensans.css";
 
 // Override theme settings (see template/settings.scss)
-$mainFont: "Open Sans", $helvetica;
+$mainFont: "Open Sans", $font-stack-helvetica;
 $mainColor: #000;
 $headingFont: $mainFont;
 $headingColor: #000;
