@@ -1,7 +1,5 @@
 /*! Typebase.less v0.1.0 | MIT License */
 /* Setup */
-@import url(fonts/opensans/opensans.css);
-@import url("https://cdn.rawgit.com/tonsky/FiraCode/8fdf83ff/distr/fira_code.css");
 html {
   /* Change default typefaces here */
   font-family: serif;
