@@ -4,9 +4,7 @@
 
 // 1. LOAD PLUGINS
 
-const gulp = require('gulp');
-const bourbon = require('bourbon').includePaths;
-const neat = require('bourbon-neat').includePaths;
+const gulp = require('gulp')
 const importer = require('node-sass-package-importer')
 const p = require('gulp-load-plugins')({ // This loads all the other plugins.
   DEBUG: false,
@@ -15,7 +13,7 @@ const p = require('gulp-load-plugins')({ // This loads all the other plugins.
     'vinyl-source-stream': 'source',
     'vinyl-buffer': 'buffer'
   },
-});
+})
 
 // 2. CONFIGURATION
 
@@ -49,7 +47,7 @@ gulp.task('css', function () {
     .pipe(production(p.cleanCss()))
     .pipe(development(p.sourcemaps.write()))
     .pipe(gulp.dest(css.out));
-});
+})
 
 // Image Optimization
 gulp.task('images', function () {
@@ -57,22 +55,22 @@ gulp.task('images', function () {
     .pipe(p.changed(images.out))
     .pipe(p.imagemin())
     .pipe(gulp.dest(images.out));
-});
+})
 
 // Clean .tmp/
 gulp.task('clean', function () {
   return p.del([
     dest + '*'
-  ]);
-});
+  ])
+})
 
 // Asset Size Report
 gulp.task('sizereport', function () {
   return gulp.src(dest + '**/*')
     .pipe(p.sizereport({
       gzip: true
-    }));
-});
+    }))
+})
 
 // 4. SUPER TASKS
 
@@ -88,9 +86,9 @@ gulp.task('development', gulp.series('clean', gulp.parallel('css', 'images'), 's
 gulp.task('default', gulp.series('development', function () {
   gulp.watch(css.in, gulp.series('css'));
   gulp.watch(images.in, gulp.series('images'));
-}));
+}))
 
-function handleError(err) {
-  console.log(err.toString());
-  this.emit('end');
+const handleError = err => {
+  console.log(err.toString())
+  this.emit('end')
 }
