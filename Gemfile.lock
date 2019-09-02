@@ -96,9 +96,19 @@ GEM
     rack (2.0.7)
     rails-assets-bourbon (4.3.4)
     rails-assets-classlist (2014.12.13)
+    rails-assets-d3 (3.3.13)
+    rails-assets-headjs (1.0.3)
     rails-assets-html5shiv (3.7.3)
+    rails-assets-icomoon (0.1.2)
+    rails-assets-mermaid (8.2.3)
     rails-assets-neat (2.0.0)
+    rails-assets-nvd3 (1.1.15.beta)
+      rails-assets-d3 (~> 3.3.13)
+    rails-assets-open-sans (1.1.0)
+    rails-assets-remark (0.14.0)
     rails-assets-reveal.js (2.6.2)
+    rails-assets-twemoji (12.0.1)
+    rails-assets-zepto (1.1.6)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -139,9 +149,17 @@ DEPENDENCIES
   oj
   rails-assets-bourbon (~> 4)!
   rails-assets-classlist!
+  rails-assets-headjs (~> 1.0.3)!
   rails-assets-html5shiv (~> 3.7.2)!
+  rails-assets-icomoon!
+  rails-assets-mermaid!
   rails-assets-neat (= 2.0.0)!
+  rails-assets-nvd3 (~> 1.1.15.beta)!
+  rails-assets-open-sans!
+  rails-assets-remark (>= 0.13.0)!
   rails-assets-reveal.js (~> 2.6.2)!
+  rails-assets-twemoji!
+  rails-assets-zepto (~> 1.1.4)!
   sass
   therubyracer (~> 0.12)
 
