@@ -28,7 +28,7 @@
 		= javascript_include_tag "lib/html5shiv.js"
 		<![endif]-->
 		
-		= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js"
+		= javascript_include_tag "lib/script.min.js"
 		- slideshow_source = IO.read(current_page.source_file)
 		- if slideshow_source =~ /[%<]canvas/
 			- chart_type = "Charts.js"

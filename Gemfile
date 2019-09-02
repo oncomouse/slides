@@ -21,7 +21,6 @@ gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 source 'https://rails-assets.org' do
   gem 'rails-assets-bourbon', '~>4'
   gem 'rails-assets-classlist'
-  gem 'rails-assets-headjs', '~>1.0.3'
   gem 'rails-assets-html5shiv', '~>3.7.2'
   gem 'rails-assets-icomoon'
   gem 'rails-assets-mermaid'
@@ -33,4 +32,3 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-twemoji'
   gem 'rails-assets-zepto', '~>1.1.4'
 end
-
