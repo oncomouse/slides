@@ -14,8 +14,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (9.6.1.1)
       execjs
     backports (3.15.0)
@@ -38,7 +38,6 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
-    hike (1.2.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     kramdown (1.17.0)
@@ -85,12 +84,7 @@ GEM
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
     minitest (5.11.3)
-    oj (3.9.0)
-    opal (0.10.6)
-      hike (~> 1.2)
-      sourcemap (~> 0.1.0)
-      sprockets (~> 3.1)
-      tilt (>= 1.4)
+    oj (3.9.1)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -98,7 +92,7 @@ GEM
     padrino-support (0.13.3.4)
       activesupport (>= 3.1)
     parallel (1.17.0)
-    public_suffix (3.1.1)
+    public_suffix (4.0.1)
     rack (2.0.7)
     rails-assets-bourbon (4.3.4)
     rails-assets-classlist (2014.12.13)
@@ -127,7 +121,6 @@ GEM
     sassc (2.2.0)
       ffi (~> 1.9)
     servolux (0.13.0)
-    sourcemap (0.1.1)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -154,7 +147,6 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-sprockets
   oj
-  opal (~> 0.10.5)
   rails-assets-bourbon (~> 4)!
   rails-assets-classlist!
   rails-assets-headjs (~> 1.0.3)!
@@ -172,4 +164,4 @@ DEPENDENCIES
   therubyracer (~> 0.12)
 
 BUNDLED WITH
-   1.17.2
+   2.0.2
