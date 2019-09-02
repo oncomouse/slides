@@ -34,6 +34,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-environments": "^0.1.2",
     "gulp-imagemin": "^6.1.0",
+    "gulp-include": "^2.4.1",
     "gulp-load-plugins": "^2.0.1",
     "gulp-noop": "^1.0.0",
     "gulp-sass": "^4.0.2",
@@ -45,7 +46,17 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "classlist": "^2.0.0",
+    "d3": "^3.4.4",
+    "html5shiv": "^3.7.3",
+    "mermaid": "^8.2.5",
+    "nvd3": "^1.8.6",
+    "remark-slide": "^0.14.0",
+    "twemoji": "^12.1.2",
+    "zepto": "^1.2.0"
+  },
   "engines": {
     "node": ">= 8.11.1"
   }

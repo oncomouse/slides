@@ -1,1 +1,1 @@
-// = require classlist
+//= require classlist/classlist.js

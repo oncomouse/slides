@@ -1,1 +1,1 @@
-// = require mermaid
+// = require mermaid/dist/mermaid.js

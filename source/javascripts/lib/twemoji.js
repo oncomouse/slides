@@ -1,1 +1,1 @@
-// = require twemoji/twemoji
+// = require twemoji/dist/twemoji.js

@@ -32,8 +32,12 @@ const sassOpts = {
   importer: importer(),
 }
 const autoprefixerOpts = {}
+const js = {
+  in: src + 'javascripts/**/*.js',
+  out: dest + 'javascripts/',
+}
 const images = {
-  in: src + 'images/*',
+  in: src + 'images/**/*.{png,jpg,gif,webp}',
   out: dest + 'images/'
 }
 // 3. WORKER TASKS
@@ -54,7 +58,18 @@ gulp.task('images', function () {
   return gulp.src(images.in)
     .pipe(p.changed(images.out))
     .pipe(p.imagemin())
-    .pipe(gulp.dest(images.out));
+    .pipe(gulp.dest(images.out))
+})
+
+gulp.task('js', function () {
+  return gulp.src(js.in)
+    .pipe(p.include({
+      includePaths: [
+        __dirname + '/node_modules',
+        __dirname + '/source/javascripts'
+      ],
+    }))
+    .pipe(gulp.dest(js.out))
 })
 
 // Clean .tmp/
@@ -75,17 +90,18 @@ gulp.task('sizereport', function () {
 // 4. SUPER TASKS
 
 // Development Task
-gulp.task('development', gulp.series('clean', gulp.parallel('css', 'images')))
+gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'images')))
 
 // Production Task
-gulp.task('development', gulp.series('clean', gulp.parallel('css', 'images'), 'sizereport'))
+gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css'), 'sizereport'))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
 // running 'middleman server'
 gulp.task('default', gulp.series('development', function () {
-  gulp.watch(css.in, gulp.series('css'));
-  gulp.watch(images.in, gulp.series('images'));
+  gulp.watch(js.in, gulp.series('js'))
+  gulp.watch(css.in, gulp.series('css'))
+  gulp.watch(images.in, gulp.series('images'))
 }))
 
 const handleError = err => {
