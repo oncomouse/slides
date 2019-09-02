@@ -79,21 +79,13 @@ gulp.task('clean', function () {
   ])
 })
 
-// Asset Size Report
-gulp.task('sizereport', function () {
-  return gulp.src(dest + '**/*')
-    .pipe(p.sizereport({
-      gzip: true
-    }))
-})
-
 // 4. SUPER TASKS
 
 // Development Task
 gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'images')))
 
 // Production Task
-gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css'), 'sizereport'))
+gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css')))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when

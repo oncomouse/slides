@@ -3,7 +3,6 @@
 ###
 # Compass
 ###
-
 set :markdown_engine, :kramdown
 set :markdown, fenced_code_blocks: true,
                autolink: true,

@@ -38,7 +38,6 @@
     "gulp-load-plugins": "^2.0.1",
     "gulp-noop": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-debug": "^3.0.0",
     "node-sass-package-importer": "^5.3.2",

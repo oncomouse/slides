@@ -100,7 +100,7 @@ attach_progress_bar = slide_configuration_data["progress_bar"]
           scriptjs_load_callbacks.push("twemoji.parse(document.body);")
         end
         if load_charts and chart_type == "Charts.js"
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js")
+          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js")
           scriptjs_array.push(javascript_path(chart_file_js))
         elsif load_charts and chart_type == "nv.d3.js"
           scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js")
