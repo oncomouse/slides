@@ -28,7 +28,7 @@
 		= javascript_include_tag "lib/html5shiv.js"
 		<![endif]-->
 		
-		= javascript_include_tag "lib/head.min.js"
+		= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js"
 		- slideshow_source = IO.read(current_page.source_file)
 		- if slideshow_source =~ /[%<]canvas/
 			- chart_type = "Charts.js"
@@ -42,31 +42,31 @@
 				- chart_file_js = chart_file_js.destination_path.gsub(/javascripts\//,"")
 			- else
 				- load_charts = false
-		- head_js_array = []
-		- head_load_callbacks = []
+		- scriptjs_array = []
+		- scriptjs_load_callbacks = []
 		- if load_charts and chart_type == "Charts.js"
-			- head_js_array.push(javascript_path("lib/zepto.min.js"))
-			- head_js_array.push(javascript_path("lib/Charts.js"))
-			- head_js_array.push(javascript_path(chart_file_js))
+			- scriptjs_array.push(javascript_path("lib/zepto.min.js"))
+			- scriptjs_array.push(javascript_path("lib/Charts.js"))
+			- scriptjs_array.push(javascript_path(chart_file_js))
 		- elsif load_charts and chart_type == "nv.d3.js"
-			- head_js_array.push(javascript_path("lib/nvd3/d3.min.js"))
-			- head_js_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
-			- head_js_array.push(asset_path(:css, "nvd3/nv.d3.css"))
-			- head_js_array.push(javascript_path(chart_file_js))
+			- scriptjs_array.push(javascript_path("lib/nvd3/d3.min.js"))
+			- scriptjs_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
+			- scriptjs_array.push(asset_path(:css, "nvd3/nv.d3.css"))
+			- scriptjs_array.push(javascript_path(chart_file_js))
 		- if load_charts
-			- head_load_callbacks.push("load_charts();")
-		-head_js_array.push("#{javascript_path "reveal/reveal.min.js"}")
-		- head_js_array.uniq!
-		- head_js_call = "['" + head_js_array.join("', '") + "']"#head_js_array.map { |x| variable_name(x)}.join(", ")
+			- scriptjs_load_callbacks.push("load_charts();")
+		-scriptjs_array.push("#{javascript_path "reveal/reveal.min.js"}")
+		- scriptjs_array.uniq!
+		- scriptjs_call = "['" + scriptjs_array.join("', '") + "']"#scriptjs_array.map { |x| variable_name(x)}.join(", ")
 		:javascript
-			var head_js_load = #{head_js_call};
+			var scriptjs_load = #{scriptjs_call};
 			
-			head.load(
-				head_js_load,
+			$script(
+				[scriptjs_load],
 				function() {
-					#{if head_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end}
+					#{if scriptjs_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end}
 					#{
-						head_load_callbacks.join("\n  ")
+						scriptjs_load_callbacks.join("\n  ")
 					}
 			        Reveal.initialize({
 			        	controls: false,
