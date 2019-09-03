@@ -103,7 +103,6 @@ attach_progress_bar = slide_configuration_data["progress_bar"]
         scriptjs_array.push(javascript_path("lib/nvd3/d3.min.js"))
         scriptjs_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
         concat stylesheet_link_tag('nvd3/nv.d3.css')
-        scriptjs_array.push(asset_path(:css, "nvd3/nv.d3.css"))
         scriptjs_array.push(javascript_path(chart_file_js))
       end
       if load_charts

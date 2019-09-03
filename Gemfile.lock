@@ -97,7 +97,6 @@ GEM
     rails-assets-bourbon (4.3.4)
     rails-assets-classlist (2014.12.13)
     rails-assets-d3 (3.3.13)
-    rails-assets-headjs (1.0.3)
     rails-assets-html5shiv (3.7.3)
     rails-assets-icomoon (0.1.2)
     rails-assets-mermaid (8.2.3)
@@ -149,7 +148,6 @@ DEPENDENCIES
   oj
   rails-assets-bourbon (~> 4)!
   rails-assets-classlist!
-  rails-assets-headjs (~> 1.0.3)!
   rails-assets-html5shiv (~> 3.7.2)!
   rails-assets-icomoon!
   rails-assets-mermaid!
