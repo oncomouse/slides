@@ -53,6 +53,7 @@
     "mermaid": "^8.2.5",
     "nvd3": "^1.8.6",
     "remark-slide": "^0.14.0",
+    "scriptjs": "^2.5.9",
     "twemoji": "^12.1.2",
     "zepto": "^1.2.0"
   },

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+      <% if current_resource.data['title'] %>
+        <%= current_resource.data['title'] %>
+      <% end %>
+    </title>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <%= stylesheet_link_tag "reveal/reveal.css" %>
+    <%= stylesheet_link_tag "reveal/theme/#{(current_resource.data['theme']) ? current_resource.data['theme'] : "default"}.css",  :id => "theme" %>
+    <% slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0] %>
+    <% if !slideshow_specific_css.nil? %>
+      <%= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" ) %>
+    <% end %>
+    <!-- For syntax highlighting -->
+    <%= stylesheet_link_tag "reveal/hljs/zenburn.css", "remark/fonts/icomoon/icomoon" %>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      
+      document.write( '<link rel="stylesheet" href="#{asset_path(:css,"reveal/print/").gsub(".css","")}' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+
+
+    </script>
+    <!--[if lt IE 9]>
+    <%= javascript_include_tag "lib/html5shiv.js" %>
+    <![endif]-->
+    <%= javascript_include_tag "lib/script.min.js" %>
+    <% slideshow_source = IO.read(current_page.source_file) %>
+    <% if slideshow_source =~ /[%<]canvas/ %>
+      <% chart_type = "Charts.js" %>
+      <% load_charts = true %>
+    <% elsif slideshow_source =~ /[%<]svg/ %>
+      <% chart_type = "nv.d3.js" %>
+      <% load_charts = true %>
+    <% end %>
+    <% if load_charts %>
+      <% chart_file_js = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".js"))}[0] %>
+      <% if !chart_file_js.nil? %>
+        <% chart_file_js = chart_file_js.destination_path.gsub(/javascripts\//,"") %>
+      <% else %>
+        <% load_charts = false %>
+      <% end %>
+    <% end %>
+    <% scriptjs_array = [] %>
+    <% scriptjs_load_callbacks = [] %>
+    <% if load_charts and chart_type == "Charts.js" %>
+      <% scriptjs_array.push(javascript_path("lib/zepto.min.js")) %>
+      <% scriptjs_array.push(javascript_path("lib/Charts.js")) %>
+      <% scriptjs_array.push(javascript_path(chart_file_js)) %>
+    <% elsif load_charts and chart_type == "nv.d3.js" %>
+      <% scriptjs_array.push(javascript_path("lib/nvd3/d3.min.js")) %>
+      <% scriptjs_array.push(javascript_path("lib/nvd3/nv.d3.min.js")) %>
+      <% concat stylesheet_link_tag('nvd3/nv.d3.css') %>
+      <% scriptjs_array.push(javascript_path(chart_file_js)) %>
+    <% end %>
+    <% if load_charts %>
+      <% scriptjs_load_callbacks.push("load_charts();") %>
+    <% end %>
+    <% scriptjs_array.push("#{javascript_path "reveal/reveal.min.js"}") %>
+    <% scriptjs_array.uniq! %>
+    <% scriptjs_call = "['" + scriptjs_array.join("', '") + "']"#scriptjs_array.map { |x| variable_name(x)}.join(", ") %>
+    <script>
+      var scriptjs_load = <%=scriptjs_call%>;
+
+      $script(
+        [scriptjs_load],
+        function () {
+          <%=if scriptjs_load_callbacks.length > 0 then "\n\t// Load any add-ons:" end%>
+          <%=
+            scriptjs_load_callbacks.join("\n  ")
+          %>
+          Reveal.initialize({
+            controls: false,
+            progress: true,
+            history: true,
+            center: true,
+            viewDistance: 3,
+            minScale: 0.2,
+            maxScale: 1,
+            margin: 0.1,
+
+            theme: Reveal.getQueryHash().theme || "<%=(current_resource.data['theme']) ? current_resource.data['theme'] : "default"%>", // List available in stylesheets/reveal/themes
+            transition: Reveal.getQueryHash().transition || "<%=(current_resource.data['transition']) ? current_resource.data['transition'] : "default"%>", // default/cube/page/concave/zoom/linear/fade/none
+            transitionSpeed: '<%=(current_resource.data['transitionSpeed']) ? current_resource.data['transitionSpeed'] : "default"%>',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+              {src: '<%=javascript_path "lib/classList.js"%>', condition: function () {return !document.body.classList;}},
+            ]
+          });
+        }
+      );
+
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block;
+      }
+
+      .twitter_badge:before {
+        content: "\f099";
+        position: absolute;
+        top: -0.05em;
+        left: -1.15em;
+      }
+
+      .twitter_badge:before,
+      .twitter_badge:after {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 0.95em;
+        -webkit-font-smoothing: antialiased;
+        font-size: 0.95em;
+      }
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em;
+      }
+
+      #watermark:before {
+        top: 0.23em !important;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <p class="twitter_badge" id="watermark">
+        <%= current_resource.data['twitter'] ? current_resource.data['twitter'] : '@oncomouse' %>
+      </p>
+      <div class="slides">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
+

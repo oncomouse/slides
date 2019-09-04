@@ -71,68 +71,65 @@ attach_progress_bar = slide_configuration_data["progress_bar"]
     <title>
       <%= slide_configuration_data["title"] if slide_configuration_data["title"]%>
     </title>
-    <%= stylesheet_link_tag("https://cdn.jsdelivr.net/gh/layerssss/icomoon-bower/style.min.css", :media => "all", :rel => "stylesheet" ) %>
-    <%= stylesheet_link_tag("https://cdn.rawgit.com/tonsky/FiraCode/8fdf83ff/distr/fira_code.css") %>
-    <%= stylesheet_link_tag("https://cdn.jsdelivr.net/gh/FontFaceKit/open-sans/open-sans.min.css") %>
-    <%= stylesheet_link_tag("remark/#{slideshow_css_file}.css", :media => "all", :rel => "stylesheet" ) %>
+  <%= stylesheet_link_tag("remark/fonts/icomoon/icomoon.css", :media => "all", :rel => "stylesheet" ) %>
+  <%= stylesheet_link_tag('remark/fonts/opensans/opensans.css', :media => "all", :rel => "stylesheet") %>
+  <%= stylesheet_link_tag('remark/fonts/firacode/fira_code.css', :media => "all", :rel => "stylesheet") %>
+    <%= stylesheet_link_tag("remark/#{slideshow_css_file}.css", :media => "all", :rel => "stylesheet" )%>
     <%
       slideshow_specific_css = sitemap.resources.select{|a| (a.destination_path.match current_resource.destination_path.gsub(/\.html/,".css"))}[0]
-      if !slideshow_specific_css.nil? and File.basename(slideshow_specific_css.destination_path) != "slides.css"%>
-        <%= stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )%>
-      <% end %>
-      <%= javascript_include_tag("https://cdnjs.cloudflare.com/ajax/libs/script.js/2.5.9/script.min.js")%>
-      <%
-        # Assemble the call to head.js (ie. establish which libraries need loading)
-        # We generate the call to the function, as well as any intialization code to run
-        # after head.load() has run.
-        scriptjs_array = []
-        scriptjs_load_callbacks = []
-        scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js")
-        scriptjs_array.push(javascript_path("remark/add-ons/haml.language.js"))
-        scriptjs_array.push(javascript_path("remark/add-ons/remark.language.js"))
-        scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
-        if load_mermaid
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/d3/5.11.0/d3.min.js")
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.2.5/mermaid.min.js")
+      if !slideshow_specific_css.nil? and File.basename(slideshow_specific_css.destination_path) != "slides.css"
+        concat stylesheet_link_tag(slideshow_specific_css.destination_path.gsub(/stylesheets\//,""), :media => "all", :rel => "stylesheet" )
+      end
+      concat javascript_include_tag("lib/script.min.js")
+      # Assemble the call to head.js (ie. establish which libraries need loading)
+      # We generate the call to the function, as well as any intialization code to run
+      # after head.load() has run.
+      scriptjs_array = []
+      scriptjs_load_callbacks = []
+      scriptjs_array.push(javascript_path("remark/remark.min.js"))
+      scriptjs_array.push(javascript_path("lib/zepto.min.js"))
+      if load_mermaid
+        scriptjs_array.push(javascript_path("lib/nvd3/d3.min.js"))
+        scriptjs_array.push(javascript_path("lib/mermaid.js"))
+      end
+      if has_emoji
+        scriptjs_array.push(javascript_path("lib/twemoji.js"))
+        scriptjs_load_callbacks.push("twemoji.parse(document.body);")
+      end
+      if load_charts and chart_type == "Charts.js"
+        scriptjs_array.push(javascript_path("lib/Charts.js"))
+        scriptjs_array.push(javascript_path(chart_file_js))
+      elsif load_charts and chart_type == "nv.d3.js"
+        scriptjs_array.push(javascript_path("lib/nvd3/d3.min.js"))
+        scriptjs_array.push(javascript_path("lib/nvd3/nv.d3.min.js"))
+        concat stylesheet_link_tag('nvd3/nv.d3.css')
+        scriptjs_array.push(javascript_path(chart_file_js))
+      end
+      if load_charts
+        scriptjs_load_callbacks.push("load_charts();")
+      end
+      if attach_progress_bar
+        scriptjs_array.push(javascript_path("remark/add-ons/progress-bar.js"))
+        concat stylesheet_link_tag('remark/add-ons/progress-bar.css')
+        scriptjs_load_callbacks.push "attach_progress_bar(slideshow);"
+      end
+      if attach_twitter_name
+        twitter_name = if slide_configuration_data["twitter_name"] then slide_configuration_data["twitter_name"] else default_twitter_name end
+        if twitter_name.split(/,\s+/).length > 1
+          twitter_name = twitter_name.split(/,\s+/)
         end
-        if has_emoji
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/twemoji.min.js")
-          scriptjs_load_callbacks.push("twemoji.parse(document.body);")
-        end
-        if load_charts and chart_type == "Charts.js"
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js")
-          scriptjs_array.push(javascript_path(chart_file_js))
-        elsif load_charts and chart_type == "nv.d3.js"
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js")
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js")
-          scriptjs_array.push("https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css")
-          scriptjs_array.push(javascript_path(chart_file_js))
-        end
-        if load_charts
-          scriptjs_load_callbacks.push("load_charts();")
-        end
-        if attach_progress_bar
-          scriptjs_array.push(javascript_path("remark/add-ons/progress-bar.js"))
-          scriptjs_array.push(asset_path(:css, "remark/add-ons/progress-bar.css"))
-          scriptjs_load_callbacks.push "attach_progress_bar(slideshow);"
-        end
-        if attach_twitter_name
-          twitter_name = if slide_configuration_data["twitter_name"] then slide_configuration_data["twitter_name"] else default_twitter_name end
-          if twitter_name.split(/,\s+/).length > 1
-            twitter_name = twitter_name.split(/,\s+/)
-          end
-          twitter_name_start = if slide_configuration_data["twitter_name_start"] then (slide_configuration_data["twitter_name_start"] - 1) else (default_twitter_name_start - 1) end
+        twitter_name_start = if slide_configuration_data["twitter_name_start"] then (slide_configuration_data["twitter_name_start"] - 1) else (default_twitter_name_start - 1) end
 
-          scriptjs_load_callbacks.push "var twitter_name = \"#{twitter_name.kind_of?(Array) ? '<span class=\"twitter_badge\">@' + twitter_name.join('</span> <span class=\"twitter_badge\">@') + '</span>' : '<span class=\"twitter_badge\">@' + twitter_name + '</span>'}\";"
-          scriptjs_load_callbacks.push "$('.remark-slide-content').slice(#{twitter_name_start}).each(function(i,slide){"
-          scriptjs_load_callbacks.push "\t$(slide).append('<div class=\"twitter_name\">' + twitter_name +  '</div>');"
-          scriptjs_load_callbacks.push "});"
-        end
-        def variable_name(path)
-          File.basename(path).gsub(".min", "").gsub(/\W/, "_")
-        end
-        scriptjs_array.uniq!
-        scriptjs_call = scriptjs_array.map { |x| variable_name(x)}.join(", ")
+        scriptjs_load_callbacks.push "var twitter_name = \"#{twitter_name.kind_of?(Array) ? '<span class=\"twitter_badge\">@' + twitter_name.join('</span> <span class=\"twitter_badge\">@') + '</span>' : '<span class=\"twitter_badge\">@' + twitter_name + '</span>'}\";"
+        scriptjs_load_callbacks.push "$('.remark-slide-content').slice(#{twitter_name_start}).each(function(i,slide){"
+        scriptjs_load_callbacks.push "\t$(slide).append('<div class=\"twitter_name\">' + twitter_name +  '</div>');"
+        scriptjs_load_callbacks.push "});"
+      end
+      def variable_name(path)
+        File.basename(path).gsub(".min", "").gsub(/\W/, "_")
+      end
+      scriptjs_array.uniq!
+      scriptjs_call = scriptjs_array.map { |x| variable_name(x)}.join(", ")
     %>
     <script>
 // The javascript files to be loaded are determined by Middleman at compile:
@@ -203,3 +200,4 @@ $script([<%=scriptjs_call%>], function(){
     <textarea id="source"><%= yield %></textarea>
   </body>
 </html>
+
