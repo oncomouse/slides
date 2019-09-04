@@ -1,5 +1,3 @@
-// gulpfile.js - https://jsua.co/mm-gulp
-
 'use strict'; // http://www.w3schools.com/js/js_strict.asp
 
 // 1. LOAD PLUGINS
