@@ -102,7 +102,7 @@ gulp.task('default', gulp.series('development', function () {
   gulp.watch(images.in, gulp.series('images'))
 }))
 
-const handleError = err => {
+const handleError = function (err) {
   console.log(err.toString())
   this.emit('end')
 }
