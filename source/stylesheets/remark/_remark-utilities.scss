@@ -367,19 +367,27 @@ img {
 	color: black !important;
 }
 .two-column {
-	column-count: 2;
-	column-width: 44%;
-	column-gap: 6%;
-	column-fill: auto;
+	// column-count: 2;
+	// column-width: 44%;
+	// column-gap: 6%;
+	// column-fill: auto;
+        & > ul, & > p {
+                column-count: 2;
+                column-gap: 6%;
+        }
 	h2 {
 		column-span: all;
 	}
 }
 .three-column {
-	column-count: 3;
-	column-width: 26%;
-	column-gap: 6%;
-	column-fill: auto;
+	// column-count: 2;
+	// column-width: 44%;
+	// column-gap: 6%;
+	// column-fill: auto;
+	& > ul, & > p {
+	        column-count: 3;
+	        column-gap: 6%;
+	}
 	h2 {
 		column-span: all;
 	}
