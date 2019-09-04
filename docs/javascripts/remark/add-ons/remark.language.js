@@ -31,5 +31,3 @@ remark.highlighter.engine.registerLanguage("remark", function(){
     ]
   };
 });
-;
-if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("remark/add-ons/remark.language");

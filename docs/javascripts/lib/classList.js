@@ -238,8 +238,3 @@ if (objCtr.defineProperty) {
 }
 
 ;
-if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("classlist/classList");
-;
-if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("classlist");
-;
-if (typeof(OpalLoaded) === 'undefined') OpalLoaded = []; OpalLoaded.push("lib/classList");

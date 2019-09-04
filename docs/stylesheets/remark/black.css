@@ -60,7 +60,7 @@ h4 {
   font-size: 0.625rem; }
 
 h5 {
-  font-size: 0.41667rem; }
+  font-size: 0.4166666667rem; }
 
 h6 {
   font-size: 0.3125rem; }
@@ -210,7 +210,7 @@ code {
   font-size: 1.67rem;
   line-height: 2.5rem; }
 .bigger .topic, .bullets .topic {
-  font-size: 0.8982em;
+  font-size: 0.8982035928em;
   line-height: 1.25rem; }
 .bigger .remark-slide-number, .bullets .remark-slide-number {
   line-height: 1.33rem; }
@@ -246,7 +246,7 @@ ul li .normal, ol li .normal, p .normal {
     font-size: 1rem;
     line-height: 1.25rem; }
 .big .topic, .bullets .topic {
-  font-size: 1.12782em;
+  font-size: 1.1278195489em;
   line-height: 1.25rem; }
 .big .remark-slide-number, .bullets .remark-slide-number {
   line-height: 1.33rem; }
@@ -3564,21 +3564,23 @@ span.f150px {
 .tc-black * {
   color: black !important; }
 
-.two-column {
-  column-count: 2;
-  column-width: 44%;
-  column-gap: 6%;
-  column-fill: auto; }
-  .two-column h2 {
-    column-span: all; }
+.two-column > ul, .two-column > p {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 6%;
+       column-gap: 6%; }
+.two-column h2 {
+  -moz-column-span: all;
+       column-span: all; }
 
-.three-column {
-  column-count: 3;
-  column-width: 26%;
-  column-gap: 6%;
-  column-fill: auto; }
-  .three-column h2 {
-    column-span: all; }
+.three-column > ul, .three-column > p {
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 6%;
+       column-gap: 6%; }
+.three-column h2 {
+  -moz-column-span: all;
+       column-span: all; }
 
 .indent {
   display: block;

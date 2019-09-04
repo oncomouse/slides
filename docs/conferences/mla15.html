@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8'>
-<title>
-MLA 15
-</title>
-<meta content='yes' name='apple-mobile-web-app-capable'>
-<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
-<link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
-<link href="/slides/stylesheets/reveal/theme/simple.css" rel="stylesheet" id="theme" />
-<!-- For syntax highlighting -->
-<link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
-<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-<script>
-  document.write( '<link rel="stylesheet" href="/slides/stylesheets/reveal/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-</script>
-<!--[if lt IE 9]>
-<script src="/slides/javascripts/lib/html5shiv.js"></script>
-<![endif]-->
-<script src="/slides/javascripts/lib/head.min.js"></script>
-<script>
-  var head_js_load = ['/slides/javascripts/reveal/reveal.min.js'];
-  
-  head.load(
-  	head_js_load,
-  	function() {
-  		
-  		
+  <head>
+    <meta charset="utf-8"/>
+    <title>
+        MLA 15
+    </title>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <link href="/slides/stylesheets/reveal/reveal.css" rel="stylesheet" />
+    <link href="/slides/stylesheets/reveal/theme/simple.css" rel="stylesheet" id="theme" />
+    <!-- For syntax highlighting -->
+    <link href="/slides/stylesheets/reveal/hljs/zenburn.css" rel="stylesheet" /><link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" />
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      
+      document.write( '<link rel="stylesheet" href="#{asset_path(:css,"reveal/print/").gsub(".css","")}' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+
+
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/slides/javascripts/lib/html5shiv.js"></script>
+    <![endif]-->
+    <script src="/slides/javascripts/lib/script.min.js"></script>
+    <script>
+      var scriptjs_load = ['/slides/javascripts/reveal/reveal.min.js'];
+
+      $script(
+        [scriptjs_load],
+        function () {
+          
+          
           Reveal.initialize({
-          	controls: false,
-          	progress: true,
-          	history: true,
-          	center: true,
-          	viewDistance: 3,
-          	minScale: 0.2,
-          	maxScale: 1,
-          	margin: 0.1,
-  
-          	theme: Reveal.getQueryHash().theme || "simple", // List available in stylesheets/reveal/themes
-          	transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
-  			transitionSpeed: 'fast',
-  
-          	// Optional libraries used to extend on reveal.js
-          	dependencies: [
-          		{ src: '/slides/javascripts/lib/classList.js', condition: function() { return !document.body.classList; } },
-          		// { src: '/slides/javascripts/reveal/plugin/markdown/marked.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          		// { src: '/slides/javascripts/reveal/plugin/markdown/markedown.js',  condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          		//{ src: '/slides/javascripts/reveal/plugin/highlight/highlight.js',  async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          		//{ src: '/slides/javascripts/reveal/plugin/zoom-js/zoom.js',  async: true, condition: function() { return !!document.body.classList; } },
-          		//{ src: '/slides/javascripts/reveal/plugin/notes/notes.js',  async: true, condition: function() { return !!document.body.classList; } }
-          		// { src: '/slides/javascripts/reveal/plugin/search/search.js',  async: true, condition: function() { return !!document.body.classList; } }
-          		// { src: '/slides/javascripts/reveal/plugin/remotes/remotes.js',  async: true, condition: function() { return !!document.body.classList; } }
-          	]
+            controls: false,
+            progress: true,
+            history: true,
+            center: true,
+            viewDistance: 3,
+            minScale: 0.2,
+            maxScale: 1,
+            margin: 0.1,
+
+            theme: Reveal.getQueryHash().theme || "simple", // List available in stylesheets/reveal/themes
+            transition: Reveal.getQueryHash().transition || "linear", // default/cube/page/concave/zoom/linear/fade/none
+            transitionSpeed: 'fast',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+              {src: '/slides/javascripts/lib/classList.js', condition: function () {return !document.body.classList;}},
+            ]
           });
-  	}
-  );
-</script>
-<style>
-  .twitter_badge {
-    position: relative;
-    margin-left: 1.15em !important;
-    display: inline-block; }
-    .twitter_badge:before, .twitter_badge:after {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 0.95em;
-      -webkit-font-smoothing: antialiased;
-      font-size: 0.95em; }
-    .twitter_badge:before {
-      content: "\f099";
-      position: absolute;
-      top: -0.05em;
-      left: -1.15em; }
-  
-  #watermark {
-    position: fixed;
-    z-index: 1000;
-    bottom: 0.25em;
-    right: 0.5em;
-    font-size: 0.9em; }
-    #watermark:before {
-      top: 0.23em !important; }
-</style>
-</head>
-<body>
-<div class='reveal'>
-<p class='twitter_badge' id='watermark'>
-@oncomouse
-</p>
-<div class='slides'>
-<style>
+        }
+      );
+
+    </script>
+    <style>
+      .twitter_badge {
+        position: relative;
+        margin-left: 1.15em !important;
+        display: inline-block;
+      }
+
+      .twitter_badge:before {
+        content: "\f099";
+        position: absolute;
+        top: -0.05em;
+        left: -1.15em;
+      }
+
+      .twitter_badge:before,
+      .twitter_badge:after {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 0.95em;
+        -webkit-font-smoothing: antialiased;
+        font-size: 0.95em;
+      }
+      #watermark {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0.25em;
+        right: 0.5em;
+        font-size: 0.9em;
+      }
+
+      #watermark:before {
+        top: 0.23em !important;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <p class="twitter_badge" id="watermark">
+        @oncomouse
+      </p>
+      <div class="slides">
+        <style>
   @charset "UTF-8";
   #watermark {
     background-color: rgba(255, 255, 255, 0.4); }
@@ -115,15 +121,19 @@ MLA 15
         width: 100%; }
         .reveal blockquote p:last-child:before {
           content: "—"; }
+  
   .reveal ul {
     font-size: 1.25em;
     line-height: 1.25; }
+  
   .reveal section img {
     border: 0;
     box-shadow: none;
     max-height: 668px; }
+  
   .reveal .backgrounds .slide-background {
     background-image: url(http://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif); }
+  
   .reveal .slides {
     left: 0 !important; }
     .reveal .slides > section {
@@ -133,6 +143,7 @@ MLA 15
   
   .title h1, .title h2 {
     text-align: left !important; }
+  
   .title h2 {
     font-weight: 400;
     font-size: 1.6em;
@@ -358,7 +369,7 @@ You wanted to have a wife without the challenges of actually dealing with anythi
 </aside>
 </section>
 
-</div>
-</div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>

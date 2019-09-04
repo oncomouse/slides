@@ -1,85 +1,80 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8'>
-<base target='_blank'>
-<title>
-ENGL 354 Gates and Foss & Griffin
-</title>
-<link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
-<link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-<script src="/slides/javascripts/lib/head.min.js"></script>
-<script>
-  // The javascript files to be loaded are determined by Middleman at compile:
-  var remark_js = "/slides/javascripts/remark/remark.min.js",
-  		haml_language_js = "/slides/javascripts/remark/add-ons/haml.language.js",
-  		remark_language_js = "/slides/javascripts/remark/add-ons/remark.language.js",
-  		zepto_js = "/slides/javascripts/lib/zepto.min.js";
-  
-  // This call to head.js is automatically determined by Middleman at compile:
-  head.load(remark_js, haml_language_js, remark_language_js, zepto_js, function(){
-  
-  	// Ugly fix of HAML's formatting problems:
-  	document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
-  
-  	// Load the slideshow:
-  	var slideshow = remark.create({
-  		navigation: {
-  			scroll: false,
-  			touch: true
-  		},
-  		highlightLanguage: 'javascript',
-  		highlightStyle: 'zenburn'
-  	});
-  	// Lightning Timer!
-  	var lightningTimer = 0;
-  	if(lightningTimer > 0) {
-  		var lightningInterval = setInterval(function moveLightningSlide() {
-  			slideshow.gotoNextSlide();
-  		}, lightningTimer);
-  		document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
-  	}
-  	// Reload / re-init things that have to be shown to work:
-  	function loadExtraThings() {
-  		// Juxtapose
-  		var juxtapose = document.querySelector('.remark-visible .juxtapose');
-  		if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
-  			juxtapose.src += '';
-  			juxtapose.setAttribute('data-seen', 'true');
-  		}
-  	}
-  	slideshow.on('afterShowSlide', loadExtraThings);
-  	var loadMermaid = false;
-  	if(loadMermaid) {
-  		// https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
-  		mermaid.initialize({
-  			startOnLoad: false,
-  			cloneCssStyles: false
-  		});
-  		function initMermaid() {
-  			var diagrams = document.querySelectorAll('.mermaid');
-  			var i;
-  			for(i=0;i<diagrams.length;i++){
-  				if(diagrams[i].offsetWidth>0){
-  					mermaid.init(undefined, diagrams[i]);
-  				}
-  			}
-  		}
-  		slideshow.on('afterShowSlide', initMermaid);
-  		initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
-  	}
-  	/*var image_scalar = {width: 0.85, height: 0.75 };
-  	$(window).on('resize', function() {
-  		$('img').css('max-width', parseInt($('.remark-slide-scaler').css('width')) * image_scalar["width"] + 'px');
-  		$('img').css('max-height', parseInt($('.remark-slide-scaler').css('height')) * image_scalar["height"] + 'px');
-  	}).resize();*/
-  	
-  	
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Gates and Foss & Griffin
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
   });
-</script>
-</head>
-<body>
-<textarea id='source'>
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
 class: center, middle
 
 # Sonja K. Foss & Cindy L. Griffin, “Beyond Persuasion: A Proposal for an Invitational Rhetoric”
@@ -163,5 +158,6 @@ class: f26px
 
 
 </textarea>
-</body>
+  </body>
 </html>
+

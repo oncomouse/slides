@@ -22,11 +22,11 @@ ul li, ol li {
 .slide3 ol ol {
   list-style: lower-alpha; }
 .slide3 .subgenre-list {
-  width: calc(33.33333% - 26.66667px);
+  width: calc(33.3333333333% - 26.6666666667px);
   float: left;
   margin-left: 20px; }
 .slide3 .definition-list {
-  width: calc(66.66667% - 33.33333px);
+  width: calc(66.6666666667% - 33.3333333333px);
   float: left;
   margin-left: 20px; }
   .slide3 .definition-list ul {
@@ -34,11 +34,11 @@ ul li, ol li {
     padding-left: 0; }
 
 .slide5 .key {
-  width: calc(41.66667% - 28.33333px);
+  width: calc(41.6666666667% - 28.3333333333px);
   float: left;
   margin-left: 20px; }
 .slide5 .graph {
-  width: calc(58.33333% - 31.66667px);
+  width: calc(58.3333333333% - 31.6666666667px);
   float: left;
   margin-left: 20px; }
 .slide5 ol {
@@ -56,8 +56,6 @@ ul li, ol li {
     position: absolute;
     top: 0px;
     left: -2em;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 3px;
     padding: 4px;
@@ -81,14 +79,14 @@ ul li, ol li {
 
 .slide10 .chart {
   vertical-align: middle;
-  width: calc(58.33333% - 31.66667px);
+  width: calc(58.3333333333% - 31.6666666667px);
   float: left;
   margin-left: 20px; }
   .slide10 .chart table {
     font-size: 0.72em;
     margin-top: 2em; }
 .slide10 .legend {
-  width: calc(41.66667% - 28.33333px);
+  width: calc(41.6666666667% - 28.3333333333px);
   float: left;
   margin-left: 20px; }
   .slide10 .legend .column {
@@ -102,7 +100,7 @@ ul li, ol li {
         margin-bottom: 0.5em; }
 
 .slide11 .chart {
-  width: calc(66.66667% - 33.33333px);
+  width: calc(66.6666666667% - 33.3333333333px);
   float: left;
   margin-left: 20px;
   margin-top: 1.2em; }
@@ -110,7 +108,7 @@ ul li, ol li {
   width: calc(25% - 25px);
   float: left;
   margin-left: 20px;
-  margin-left: calc(8.33333% - 21.66667px + 40px); }
+  margin-left: calc(8.3333333333% - 21.6666666667px + 40px); }
   .slide11 .legend ul {
     list-style: none;
     padding: 0;
