@@ -1,0 +1,109 @@
+@import "bourbon";
+
+.center {
+        iframe.twitter-tweet {
+                margin: auto !important;
+        }
+}
+
+.reveal {
+        img {
+                border: 0 !important;
+        }
+
+        h2 {
+                //line-height: 1.25em !important
+
+        }
+
+        blockquote {
+                width: 100% !important;
+                font: {
+                        style: normal !important;
+                };
+
+                p {
+                        line-height: 1.35em !important;
+
+                        &:last-child {
+                                text-align: right;
+                                margin: {
+                                        top: 0.5em;
+                                };
+                                font: {
+                                        weight: 400;
+                                        style: italic;
+                                };
+                                display: block;
+                                width: 100%;
+
+                                &:before {
+                                        content: "—";
+                                }
+
+                                em {
+                                        font-style: normal;
+                                }
+                        }
+                }
+
+                text: {
+                        align: left;
+                };
+        }
+}
+
+.title {
+        h2 {
+                font: {
+                        weight: 400;
+                        size: 1.6em;
+                };
+                margin-top: 1em;
+        }
+}
+
+.title-block {
+        margin-top: 2em !important;
+
+        &:first-child {
+                margin-top: 0 !important;
+        }
+
+        h1, h2 {
+                margin-top: 0 !important;
+        }
+}
+
+.things {
+        margin-top: 2em !important;
+
+        @include clearfix;
+}
+
+.thing {
+        float: left;
+
+        &:nth-child(1), &:nth-child(2) {
+                &:after {
+                        content: "⋯";
+                        font-size: 150px;
+                        padding: {
+                                left: 50px;
+                                right: 50px;
+                        };
+                }
+        }
+}
+
+.references {
+        width: 100%;
+        margin: 0 auto !important;
+        text-align: left;
+
+        p {
+                font-size: 0.75em !important;
+                padding-left: 0.5in;
+                text-indent: -0.5in;
+        }
+}
