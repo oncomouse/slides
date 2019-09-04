@@ -15,7 +15,7 @@ gem 'sass'
 gem 'emoji_data', github: 'oncomouse/emoji_data.rb', branch: 'master'
 gem 'kramdown'
 gem 'oj' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
-gem 'therubyracer', '~>0.12' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
+gem 'mini_racer' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 source 'https://rails-assets.org' do
