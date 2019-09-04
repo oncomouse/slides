@@ -46,6 +46,12 @@ const images = {
 gulp.task('css', function () {
   return gulp.src(css.in)
     .pipe(development(p.sourcemaps.init()))
+    .pipe(p.include({
+      includePaths: [
+        __dirname + '/node_modules',
+        __dirname + '/source/stylesheets'
+      ],
+    }))
     .pipe(p.sass(sassOpts).on('error', p.sass.logError))
     .pipe(p.autoprefixer(autoprefixerOpts)).on('error', handleError)
     .pipe(production(p.cleanCss()))
