@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.center iframe.twitter-tweet {
+  margin: auto !important; }
+
+.reveal img {
+  border: 0 !important; }
+.reveal blockquote {
+  width: 100% !important;
+  font-style: normal !important;
+  text-align: left; }
+  .reveal blockquote p {
+    line-height: 1.35em !important; }
+    .reveal blockquote p:last-child {
+      text-align: right;
+      margin-top: 0.5em;
+      font-weight: 400;
+      font-style: italic;
+      display: block;
+      width: 100%; }
+      .reveal blockquote p:last-child:before {
+        content: "—"; }
+      .reveal blockquote p:last-child em {
+        font-style: normal; }
+
+.title h2 {
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-top: 1em; }
+
+.title-block {
+  margin-top: 2em !important; }
+  .title-block:first-child {
+    margin-top: 0 !important; }
+  .title-block h1, .title-block h2 {
+    margin-top: 0 !important; }
+
+.things {
+  margin-top: 2em !important; }
+  .things::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.thing {
+  float: left; }
+  .thing:nth-child(1):after, .thing:nth-child(2):after {
+    content: "⋯";
+    font-size: 150px;
+    padding-left: 50px;
+    padding-right: 50px; }
+
+.references {
+  width: 100%;
+  margin: 0 auto !important;
+  text-align: left; }
+  .references p {
+    font-size: 0.75em !important;
+    padding-left: 0.5in;
+    text-indent: -0.5in; }
