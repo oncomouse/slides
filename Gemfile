@@ -9,9 +9,6 @@ gem 'builder', '>=3.0'
 
 gem 'middleman', '~> 4'
 gem 'middleman-autoprefixer'
-gem 'middleman-sprockets'
-gem 'opal', '~> 0.10.5'
-gem 'sass'
 
 gem 'emoji_data', github: 'oncomouse/emoji_data.rb', branch: 'master'
 gem 'kramdown'
