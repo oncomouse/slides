@@ -86,7 +86,7 @@ gulp.task('clean', function () {
 // 4. SUPER TASKS
 
 // Development Task
-gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'images')))
+gulp.task('production', gulp.series('clean', gulp.parallel('js', 'css', 'images')))
 
 // Production Task
 gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css')))
