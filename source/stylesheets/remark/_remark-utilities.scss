@@ -371,7 +371,7 @@ img {
 	// column-width: 44%;
 	// column-gap: 6%;
 	// column-fill: auto;
-        & > ul, & > p {
+        & > ul, & > p, & > ol {
                 column-count: 2;
                 column-gap: 6%;
         }
@@ -384,13 +384,21 @@ img {
 	// column-width: 44%;
 	// column-gap: 6%;
 	// column-fill: auto;
-	& > ul, & > p {
+	& > ul, & > p, & > ol {
 	        column-count: 3;
 	        column-gap: 6%;
 	}
 	h2 {
 		column-span: all;
 	}
+}
+.two-column,
+.three-column {
+  & > ul, & > ol {
+    & > li > ul, & > li > ol {
+      margin-left: 0;
+    }
+  }
 }
 .indent {
 	display: block;
