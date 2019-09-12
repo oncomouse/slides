@@ -3564,7 +3564,7 @@ span.f150px {
 .tc-black * {
   color: black !important; }
 
-.two-column > ul, .two-column > p {
+.two-column > ul, .two-column > p, .two-column > ol {
   -moz-column-count: 2;
        column-count: 2;
   -moz-column-gap: 6%;
@@ -3573,7 +3573,7 @@ span.f150px {
   -moz-column-span: all;
        column-span: all; }
 
-.three-column > ul, .three-column > p {
+.three-column > ul, .three-column > p, .three-column > ol {
   -moz-column-count: 3;
        column-count: 3;
   -moz-column-gap: 6%;
@@ -3581,6 +3581,13 @@ span.f150px {
 .three-column h2 {
   -moz-column-span: all;
        column-span: all; }
+
+.two-column > ul > li > ul, .two-column > ul > li > ol, .two-column > ol > li > ul, .two-column > ol > li > ol,
+.three-column > ul > li > ul,
+.three-column > ul > li > ol,
+.three-column > ol > li > ul,
+.three-column > ol > li > ol {
+  margin-left: 0; }
 
 .indent {
   display: block;
