@@ -15,6 +15,10 @@ const src = 'assets/' // The Middleman source folder
 const dest = '.tmp/'   // The "hot" build folder used by Middleman's external pipeline
 const development = p.environments.development
 const production = p.environments.production
+const fonts = {
+  in: src + '**/*.{ttf,woff,woff2}',
+  out: dest,
+}
 const css = {
   in: src + 'stylesheets/**/*.{css,scss,sass}',
   out: dest + 'stylesheets/',
@@ -53,6 +57,10 @@ gulp.task('css', function () {
     .pipe(gulp.dest(css.out));
 })
 
+gulp.task('fonts', function () {
+  return gulp.src(fonts.in).pipe(gulp.dest(fonts.out))
+})
+
 // Image Optimization
 gulp.task('images', function () {
   return gulp.src(images.in)
@@ -82,10 +90,10 @@ gulp.task('clean', function () {
 // 4. SUPER TASKS
 
 // Production Task
-gulp.task('production', gulp.series('clean', gulp.parallel('js', 'css', 'images')))
+gulp.task('production', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
 
 // Development Task
-gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css')))
+gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'fonts')))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
@@ -94,6 +102,7 @@ gulp.task('default', gulp.series('development', function () {
   gulp.watch(js.in, gulp.series('js'))
   gulp.watch(css.in, gulp.series('css'))
   gulp.watch(images.in, gulp.series('images'))
+  gulp.watch(fonts.in, gulp.series('fonts'))
 }))
 
 const handleError = function (err) {
