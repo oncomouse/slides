@@ -66,10 +66,11 @@ gulp.task('fonts', function () {
 })
 
 // Image Optimization
+// .pipe(p.changed(images.out))
+// .pipe(production(p.imagemin()))
+// Doing anything to the images takes FOREVER:
 gulp.task('images', function () {
   return gulp.src(images.in)
-    // .pipe(p.changed(images.out))
-    // .pipe(production(p.imagemin()))
     .pipe(gulp.dest(images.out))
 })
 
