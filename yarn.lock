@@ -983,12 +983,12 @@
     "@nodelib/fs.scandir" "2.1.2"
     fastq "^1.6.0"
 
-"@oncomouse/remark@^0.14.1":
+"@oncomouse/remark-slide@^0.14.1":
   version "0.14.1"
-  resolved "https://registry.yarnpkg.com/@oncomouse/remark/-/remark-0.14.1.tgz#2619fc0883c12597dc8602c954b50c48fddc4bb1"
-  integrity sha512-KjgRPqND//jsGdmwXcWEmnBL7ICMbVaC/4K/3sygomi+EtEN8gDJ7Osr9TqsFmPltKLsAQXn/lI1dUdpKHb15w==
+  resolved "https://registry.yarnpkg.com/@oncomouse/remark-slide/-/remark-slide-0.14.1.tgz#274848b0b914b668bb8461ace6808dc6a9d1172a"
+  integrity sha512-+A4P1HukLVU/kp0eISL3j4nJ853FZE+xD3ecwiP/uNg6tQtcunkeQTNk528S8Q5izs1SC/lSq+Aln3DxSFOafg==
   dependencies:
-    marked "0.3.9"
+    marked "^0.3.0"
 
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
@@ -5074,10 +5074,10 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.3.tgz#9fcb69bcfdb8717bfd0398c6ec2d93036ef8de60"
   integrity sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q==
 
-marked@0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.9.tgz#54ce6a57e720c3ac6098374ec625fcbcc97ff290"
-  integrity sha512-nW5u0dxpXxHfkHzzrveY45gCbi+R4PaO4WRZYqZNl+vB0hVGeqlFn0aOg1c8AKL63TrNFn9Bm2UP4AdiZ9TPLw==
+marked@^0.3.0:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+  integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
 
 matchdep@^2.0.0:
   version "2.0.0"
