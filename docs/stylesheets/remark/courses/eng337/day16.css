@@ -1,9 +1,1 @@
-.small p, .small li {
-  font-size: 0.9em; }
-.small p {
-  margin-top: 1.25em; }
-
-.smaller p, .smaller li {
-  font-size: 0.85em; }
-.smaller p {
-  margin-top: 1.25em; }
+.small li,.small p{font-size:.9em}.small p{margin-top:1.25em}.smaller li,.smaller p{font-size:.85em}.smaller p{margin-top:1.25em}

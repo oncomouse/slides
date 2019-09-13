@@ -1,3 +1,1 @@
-.big ol li, .big ul li, .big p {
-  font-size: 1.75rem;
-  line-height: 2.5rem; }
+.big ol li,.big p,.big ul li{font-size:1.75rem;line-height:2.5rem}

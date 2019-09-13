@@ -1,13 +1,1 @@
-.smaller {
-  font-size: 0.85em; }
-  .smaller p {
-    margin-top: 1em; }
-  .smaller .topic {
-    font-size: 1.7647058824em; }
-
-.small {
-  font-size: 0.95em; }
-  .small p {
-    margin-top: 1em; }
-  .small .topic {
-    font-size: 1.7647058824em; }
+.smaller{font-size:.85em}.smaller p{margin-top:1em}.smaller .topic{font-size:1.76471em}.small{font-size:.95em}.small p{margin-top:1em}.small .topic{font-size:1.76471em}
