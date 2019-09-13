@@ -65,7 +65,7 @@ gulp.task('fonts', function () {
 gulp.task('images', function () {
   return gulp.src(images.in)
     .pipe(p.changed(images.out))
-    .pipe(p.imagemin())
+    .pipe(production(p.imagemin()))
     .pipe(gulp.dest(images.out))
 })
 
@@ -93,7 +93,7 @@ gulp.task('clean', function () {
 gulp.task('production', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
 
 // Development Task
-gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'fonts')))
+gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
