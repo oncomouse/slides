@@ -7,7 +7,11 @@ const importer = require('node-sass-package-importer')
 const p = require('gulp-load-plugins')({ // This loads all the other plugins.
   DEBUG: false,
   pattern: ['gulp-*', 'gulp.*', 'del', 'vinyl-*'],
+  postRequireTransforms: {
+    'uglifyEs': x => x.default
+  }
 })
+console.log(p.uglifyEs)
 
 // 2. CONFIGURATION
 
@@ -38,7 +42,6 @@ const images = {
   in: src + 'images/**/*.{png,jpg,gif,webp}',
   out: dest + 'images/',
 }
-// 3. WORKER TASKS
 
 // CSS Preprocessing
 gulp.task('css', function () {
@@ -57,6 +60,7 @@ gulp.task('css', function () {
     .pipe(gulp.dest(css.out));
 })
 
+// Move fonts from assets:
 gulp.task('fonts', function () {
   return gulp.src(fonts.in).pipe(gulp.dest(fonts.out))
 })
@@ -64,11 +68,12 @@ gulp.task('fonts', function () {
 // Image Optimization
 gulp.task('images', function () {
   return gulp.src(images.in)
-    .pipe(p.changed(images.out))
-    .pipe(production(p.imagemin()))
+    // .pipe(p.changed(images.out))
+    // .pipe(production(p.imagemin()))
     .pipe(gulp.dest(images.out))
 })
 
+// JS Includes:
 gulp.task('js', function () {
   return gulp.src(js.in)
     .pipe(p.include({
@@ -77,6 +82,7 @@ gulp.task('js', function () {
         src + 'javascripts',
       ],
     }))
+    .pipe(production(p.uglifyEs()))
     .pipe(gulp.dest(js.out))
 })
 
@@ -87,18 +93,13 @@ gulp.task('clean', function () {
   ])
 })
 
-// 4. SUPER TASKS
-
-// Production Task
-gulp.task('production', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
-
-// Development Task
-gulp.task('development', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
+// Build Task
+gulp.task('build', gulp.series('clean', gulp.parallel('js', 'css', 'images', 'fonts')))
 
 // Default Task
 // This is the task that will be invoked by Middleman's exteranal pipeline when
 // running 'middleman server'
-gulp.task('default', gulp.series('development', function () {
+gulp.task('default', gulp.series('build', function () {
   gulp.watch(js.in, gulp.series('js'))
   gulp.watch(css.in, gulp.series('css'))
   gulp.watch(images.in, gulp.series('images'))
