@@ -3,3 +3,10 @@
 @import "neat";
 @import "themes/default/default";
 @import "remark-utilities";
+
+.remark-slide-scaler {
+  overflow: hidden;
+}
+.remark-slide {
+  position: initial;
+}
