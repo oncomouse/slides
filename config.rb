@@ -3,7 +3,6 @@
 ###
 # Compass
 ###
-
 set :markdown_engine, :kramdown
 set :markdown, fenced_code_blocks: true,
                autolink: true,
@@ -17,8 +16,16 @@ Haml::TempleEngine.disable_option_validator!
 # Page options, layouts, aliases and proxies
 ###
 
+activate :external_pipeline,
+         name: :gulp,
+         command: "yarn run #{build? ? 'production' : 'development'}",
+         source: '.tmp',
+         latency: 1
+
 configure :build do
   set :http_prefix, '/slides'
+
+  ignore 'assets/stylesheets/site'
 end
 
 page '*.html', layout: 'remark'
@@ -56,13 +63,12 @@ ready do
   ignore 'remark_markdown_template.html'
 end
 
-activate :autoprefixer
-activate :sprockets
-if defined? RailsAssets
-  RailsAssets.load_paths.each do |path|
-    sprockets.append_path path
-  end
-end
+# activate :sprockets
+# if defined? RailsAssets
+#   RailsAssets.load_paths.each do |path|
+#     sprockets.append_path path
+#   end
+# end
 
 # We have to parse through the source directory for two things:
 #  - Markdown slide files

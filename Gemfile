@@ -10,17 +10,19 @@ gem 'builder', '>=3.0'
 gem 'middleman', '~> 4'
 gem 'middleman-autoprefixer'
 gem 'middleman-sprockets'
+gem 'opal', '~> 0.10.5'
 gem 'sass'
 
 gem 'emoji_data', github: 'oncomouse/emoji_data.rb', branch: 'master'
 gem 'kramdown'
 gem 'oj' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
-gem 'mini_racer' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
+gem 'therubyracer', '~>0.12' if RbConfig::CONFIG['target_os'] !~ /mswin|mingw/i
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bourbon', '~>4'
   gem 'rails-assets-classlist'
+  gem 'rails-assets-headjs', '~>1.0.3'
   gem 'rails-assets-html5shiv', '~>3.7.2'
   gem 'rails-assets-icomoon'
   gem 'rails-assets-mermaid'
@@ -32,3 +34,4 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-twemoji'
   gem 'rails-assets-zepto', '~>1.1.4'
 end
+

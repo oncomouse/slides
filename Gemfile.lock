@@ -30,7 +30,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
-    fastimage (2.1.5)
+    fastimage (2.1.7)
     ffi (1.11.1)
     haml (5.1.2)
       temple (>= 0.8.0)
@@ -38,10 +38,11 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
+    hike (1.2.3)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     kramdown (1.17.0)
-    libv8 (7.3.492.27.1)
+    libv8 (3.16.14.19)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -83,10 +84,13 @@ GEM
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
-    mini_racer (0.2.6)
-      libv8 (>= 6.9.411)
     minitest (5.11.3)
     oj (3.9.1)
+    opal (0.10.6)
+      hike (~> 1.2)
+      sourcemap (~> 0.1.0)
+      sprockets (~> 3.1)
+      tilt (>= 1.4)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -99,6 +103,7 @@ GEM
     rails-assets-bourbon (4.3.4)
     rails-assets-classlist (2014.12.13)
     rails-assets-d3 (3.3.13)
+    rails-assets-headjs (1.0.3)
     rails-assets-html5shiv (3.7.3)
     rails-assets-icomoon (0.1.2)
     rails-assets-mermaid (8.2.3)
@@ -113,6 +118,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    ref (2.0.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -121,10 +127,14 @@ GEM
     sassc (2.2.0)
       ffi (~> 1.9)
     servolux (0.13.0)
+    sourcemap (0.1.1)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    temple (0.8.1)
+    temple (0.8.2)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
@@ -143,10 +153,11 @@ DEPENDENCIES
   middleman (~> 4)
   middleman-autoprefixer
   middleman-sprockets
-  mini_racer
   oj
+  opal (~> 0.10.5)
   rails-assets-bourbon (~> 4)!
   rails-assets-classlist!
+  rails-assets-headjs (~> 1.0.3)!
   rails-assets-html5shiv (~> 3.7.2)!
   rails-assets-icomoon!
   rails-assets-mermaid!
@@ -158,6 +169,7 @@ DEPENDENCIES
   rails-assets-twemoji!
   rails-assets-zepto (~> 1.1.4)!
   sass
+  therubyracer (~> 0.12)
 
 BUNDLED WITH
    2.0.2
