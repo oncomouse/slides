@@ -39,6 +39,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :build_dir, 'docs'
 
+# Extend String class with a "naturalized" method
 class String
   def naturalized
     scan(/[^\d\.]+|[\d\.]+/).collect { |f| f.match(/\d+(\.\d+)?/) ? f.to_f : f }
@@ -62,13 +63,6 @@ end
 ready do
   ignore 'remark_markdown_template.html'
 end
-
-# activate :sprockets
-# if defined? RailsAssets
-#   RailsAssets.load_paths.each do |path|
-#     sprockets.append_path path
-#   end
-# end
 
 # We have to parse through the source directory for two things:
 #  - Markdown slide files
