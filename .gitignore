@@ -8,6 +8,7 @@ bower_components
 .tmp
 .bundle
 .sass-cache
+yarn-error.log
 
 # OS generated files #
 ######################
