@@ -11,7 +11,6 @@ const p = require('gulp-load-plugins')({ // This loads all the other plugins.
     'uglifyEs': x => x.default
   }
 })
-console.log(p.uglifyEs)
 
 // 2. CONFIGURATION
 
