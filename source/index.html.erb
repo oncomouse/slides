@@ -38,7 +38,7 @@ end
 				files = []
 				directories = []
 				sitemap.resources.select{|a| (a.destination_path =~ file_regex)}.sort{|a,b| naturalized(a.destination_path.to_s) <=> naturalized(b.destination_path.to_s)}.each do |resource|
-					next if resource.data["hidden"] and resource.data["hidden"] == true
+					next if build? and resource.data["hidden"] and resource.data["hidden"] == true
 					# Skip the template file
 					next if resource.source_file =~ /remark_markdown_template.html.haml/
 					pageLayout = (resource.respond_to? :options) ? resource.options[:layout] : resource.data.layout
