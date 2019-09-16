@@ -56,7 +56,12 @@ helpers do
   end
 
   def directories_with_slides
-    sitemap.resources.map { |resource| if resource.destination_path !~ %r{(javascripts|stylesheets|images|fonts)/} && resource.destination_path =~ %r{/} then resource.destination_path.gsub(%r{/.*\.[A-Za-z]+$}, '') end }.delete_if(&:nil?).uniq
+    sitemap.resources.map do |resource|
+      if resource.destination_path !~ %r{(javascripts|stylesheets|images|fonts)/} &&
+         resource.destination_path =~ %r{/}
+        resource.destination_path.gsub(%r{/.*\.[A-Za-z]+$}, '')
+      end
+    end.delete_if(&:nil?).uniq
   end
 end
 
@@ -77,22 +82,32 @@ until parse_files.empty?
   next if file =~ /^\./
   next if file =~ /remark_base/
 
-  # If the file is a Markdown slide source, we proxy it to remark_markdown_template.html.haml
-  # This file will actually set up all the JavaScript and page layout things for
-  # the Markdown file, while loading the source as a Textarea, as Remark.js likes.
+  # If the file is a Markdown slide source, we proxy it to
+  # remark_markdown_template.html.haml. This file will actually set up all the
+  # JavaScript and page layout things for the Markdown file, while loading the
+  # source as a Textarea, as Remark.js likes.
   if file =~ /(\.markdown|\.md)$/
     markdown_source = ''
     File.open("#{Dir.pwd}/source/#{file}") do |f|
       markdown_source = f.read
     end
-    proxy file.sub(File.extname(file), '').to_s, 'remark_markdown_template.html', locals: { markdown_source: file }
+    proxy(
+      file.sub(File.extname(file), '').to_s,
+      'remark_markdown_template.html',
+      locals: { markdown_source: file }
+    )
   end
 
   # If the file is a directory, we proxy a directory index to /index.html.erb,
-  # which will build the index display for the various slide files we are generating.
-  next unless File.directory?("#{Dir.pwd}/source/#{file}") && file !~ /(javascripts|stylesheets|images|fonts|layouts)/ && file !~ /^\./
+  # which will build the index display for the various slide files we are
+  # generating.
+  next unless File.directory?("#{Dir.pwd}/source/#{file}") &&
+              file !~ /(javascripts|stylesheets|images|fonts|layouts)/ &&
+              file !~ /^\./
 
   proxy "#{file}/index.html", 'index.html', locals: { directory: file }
-  parse_files += Dir.entries("#{Dir.pwd}/source/#{file}").map! { |x| x =~ /^\./ ? nil : "#{file}/#{x}" }
+  parse_files += Dir.entries("#{Dir.pwd}/source/#{file}").map! do |x|
+    x =~ /^\./ ? nil : "#{file}/#{x}"
+  end
   parse_files.compact!.uniq!
 end
