@@ -371,7 +371,7 @@ img {
 // column-width: 44%;
 // column-gap: 6%;
 // column-fill: auto;
-& > ul, & > p, & > ol {
+& > blockquote, & > ul, & > p, & > ol {
         column-count: 2;
         column-gap: 6%;
 }
@@ -379,12 +379,15 @@ h2 {
         column-span: all;
 }
 }
+blockquote > p:first-child {
+  margin-top: 0;
+}
 .three-column {
 // column-count: 2;
 // column-width: 44%;
 // column-gap: 6%;
 // column-fill: auto;
-& > ul, & > p, & > ol {
+& > blockquote, & > ul, & > p, & > ol {
         column-count: 3;
         column-gap: 6%;
 }
