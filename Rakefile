@@ -9,7 +9,7 @@ task :serve do
 end
 
 task :deploy do
-  system 'git add source docs'
+  system 'git add source docs assets'
   system 'git commit -m "New Slides"'
   system 'git push -u'
 end
