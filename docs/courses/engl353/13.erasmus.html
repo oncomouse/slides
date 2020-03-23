@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Erasmus III
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js, progress_bar_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+.title-block[
+# Desiderius Erasmus
+
+## Variation
+]
+---
+class: f27px
+## Practice
+
+> It remains for me now to give some brief advice on the exercises by which this faculty may be developed. Once we have carefully committed the theory to memory, we should frequently take a group of sentences and deliberately set out to express each of them in as many versions as possible, as Quintilian advises, using the analogy of a piece of wax which can be moulded into one shape after another. This exercise will be more profitable if a group of students competes together orally or in writing on a common theme; they will all be helped individually by the suggestions made by other members of the group, and each of them will have his imagination stimulated by being given a starting-point. (I.ix)
+---
+class: f23px
+## Collecting and Choosing
+> One should collect a vast supply of words like this from all sides out of good authors, provide oneself with a varied equipment, and, as Quintilian remarks, heap up riches so that we find we have a wealth of words to hand whenever we require it. It will not be sufficient to prepare a copious apparatus or an abundant store of such words unless you have them not only at the ready but in full view, so that they present themselves to the eyes even if you are not looking for them. But here we must take special care not to do what some do and use the first thing that presents itself out of the heap in any context without exercising any choice at all. For in the first place you will hardly find two words anywhere so isodynamic that they are not kept apart by some distinction. What could be more identical in meaning than men and mortals? Yet the man who on every occasion said *all mortals* for *all men* was stigmatized in the words of the Greek proverb [sweet oils on lentils]. (I.xi)
+---
+class: f27px
+## Placing Words
+
+> There are many things for which the poets use one set of words, orators another. There are also words peculiar to different ages and centuries, and even the same authors often express the same thing by different means. So the first thing is to extract the best words one can from every type of writer, and whatever they are like, add them to the collection. No word is to be rejected, provided it occurs in an author who is at all respectable, for there is no word which would not be best one in some place or other. So however vulgar, unusual, poetic, archaic, novel, obsolete, harsh, barbarous, or foreign it may be, lay it up in its proper niche with its fellows, so that you may summon it if ever a use for it arises. (I.xi)
+---
+class: f21px
+## Synonyms
+
+* Vulgar Words – "those which will strike the hearer as rather too common for the dignity of the context"
+* Unusual Words – "we acquire our way of speaking not from the community at large but from the writings of learned men, so usage does not have the same prescriptive power"
+* Poetic Words – "words in the poets which should be used only sparingly, especially when writing prose"
+* Archaic Words – "add charm if they are incorporated in small quantities and in appropriate places like inlaid decorations"
+* Obsolete Words – "have fallen completely out of use and passed into oblivion"
+* Harsh Words – "those used in an uncomfortable metaphorical sense"
+* Foreign Words – "have a charm  … when introduced in the appropriate place"
+* Indecent Words – "not the usage of all and sundry, but of those whose speech is modest"
+* New Words – "completely new creations, existing words diverted into a new meaning, and new words made by compounding existing forms"
+---
+class: f22px
+## Other Methods
+
+* Enallage – Grammatical Variation
+	* Person (1st, 2nd, 3rd)
+	* Voice (active or passive)
+	* Part of Speech
+	* Tense (past, present, future)
+	* Mode (subjunctive, indicative, imperative)
+* Antonomasia – Something for Proper Name
+* Periphrasis – Expansion of Speech
+	* Etymology – explanation using origin of the word
+	* Signification – signs that accompany a condition
+	* Definition
+* Metaphor – Comparison of one thing to another based on similarity
+	* Allegory – Extended metaphor
+	* Catechresis – Deliberate misuse
+* Onomatopoeia – Words that sound like what they name
+* Metonomy – Symbol of a thing substituted for that thing
+* Synecdoche – Element of a thing substitute for that thing
+---
+class: f24px
+## More Methods
+
+* Equivalence – "adding, removing, or doubling a negative"
+* Paired Expressions – "operated … simply by the interchange of … elements"
+* Interchange of Correlated Expressions – "same class of opposites"
+* Auxesis – Heightening ("slain" for "killed")
+* Hyperbole – Exaggeration
+* Meiosis – Diminution ("touch" for "hit")
+* Arrangement
+	* Asyndeton – removing conjunctions
+	* Polysyndeton – adding conjunctions
+	* Epanalepsis – repeating a phrase at the beginning and end of a clause
+	* (Anaphora) – repeating the same phrase at the beginning of linked clauses
+
+
+
+</textarea>
+  </body>
+</html>
+
