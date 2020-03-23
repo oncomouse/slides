@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Erasmus II
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js, progress_bar_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+.title-block[
+# Desiderius Erasmus
+
+## The Abundant Style
+]
+---
+class: f21px
+## Purpose For Writing
+
+> The speech of man is a magnificent and impressive thing when it surges along like a golden river, with thoughts and words pouring out in rich abundance. Yet the pursuit of speech like this involves considerable risk … We find that a good many mortal men who make great efforts to achieve this godlike power of speech fall instead into mere glibness, which is both silly and offensive. They pile up a meaningless heap of words and expressions without any discrimination, and thus obscure the subject they are talking about, as well as belaboring the ears of their unfortunate audience. In fact, quite a few persons of no real education or understanding have, heaven help us, undertaken to give instruction in this very subject, and these, wile professing mastery of *copia*, have merely revealed their own total lack of it.
+>
+> Such considerations have induced me to put forward some ideas on *copia*, the abundant style, myself, treating its two aspects of content and expression, and giving some examples and patterns.  (I.i)
+---
+class: f26px
+## *Sprezzatura*
+
+> But, having thought many times already about how this grace is acquired (leaving aside those who have it from the stars), I have found quite a universal rule which in this matter seems to me valid above all others, and in all human affairs whether in word or deed: and that is to avoid affectation in every way possible as though it were some very rough and dangerous reef; and (to pronounce a new word perhaps) to practice in all things a certain *sprezzatura* [nonchalance], so as to conceal all art and make whatever is done or said appear to be without effort and almost without any thought about it.
+>
+> — Baldassare Castiglione, *The Book of the Courtier* (1528)
+---
+class: f26px
+## Historical Engagement
+
+> Now in case anyone should feel inclined to despise it as some newfangled discovery recently brought into the world within the four walls of my own study, I would have him know that this whole idea of being able to express one's meaning in a variety of ways is in a number of places touched on by that learned and thorough writer Quintilian; further, that a number of famous sophists blazed a trail, showing how to compress and abridge what was being said, and this they could not have done without at the same time demonstrating how to expand it. If their books were extant, or if Quintilian had been prepared to set out his recommendations in full, there would not have been such need of these modest injunctions of mine. (I.ii)
+---
+class: f22px
+## *Adiectio* and *Detractio*
+
+> The purpose of these instructions is to enable you so to include the essentials in the fewest possible words that nothing is lacking, or so to enlarge and enrich your expression of it that even so nothing is redundant. (I.vi)
+
+> To take compression of language first, who will speak more succinctly than the man who can readily and without hesitation pick out from a huge army of words, from the whole range of figures of speech, the feature that contributes most effectively to brevity? And as for compression of content, who will show the greatest mastery in setting out his subject in the fewest possible words if not the man who has carefully worked out what are the salient points of his case, the pillars so to speak on which it rests, distinguishing them from the subsidiary points and things brought in merely for embellishment? No one in fact will see more swiftly and surely what can be omitted without disadvantage than the man who can see where and how to make additions. (I.v)
+---
+class: f21px
+## *Sprezzatura* in Action
+> Variety is so powerful in every sphere that there is absolutely nothing, however brilliant, which is not dimmed if not commended by variety. Nature above all delights in variety; in all this huge concourse of things, she has left nothing anywhere unpainted by her wonderful technique of variety. Just as the eyes fasten themselves on some new spectacle, so the mind is always looking round for some fresh object of interest. If it is offered a monotonous succession of similarities, it very soon wearies and turns its attention elsewhere, and so everything gained by the speech is lost all at once. This disaster can easily be avoided by someone who has it at his fingertips to turn one idea into more shapes than Proteus himself is supposed to have turned into. Also this form of exercise will make no insignificant contribution to the ability to speak or write extempore, and will prevent us from standing there stammering and dumbfounded, or from disgracing ourselves by drying up in the middle. […] Otherwise, if we are not instructed in these techniques, we shall often be found unintelligible, harsh, or even totally unable to express ourselves. (I.viii)
+
+
+</textarea>
+  </body>
+</html>
+
