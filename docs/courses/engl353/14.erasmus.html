@@ -3,20 +3,21 @@
     <meta charset="utf-8">
     <base target="_blank">
     <title>
-      
+      ENGL 353 Erasmus IV
     </title>
   <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
   <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
   <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
     <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
-<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+<script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
 // The javascript files to be loaded are determined by Middleman at compile:
 var remark_js = "/slides/javascripts/remark/remark.min.js",
-	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
 ;
 
 // This call to head.js is automatically determined by Middleman at compile:
-$script([remark_js, zepto_js], function(){
+$script([remark_js, zepto_js, progress_bar_js], function(){
 
   // Ugly fix of HAML's formatting problems:
   document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
@@ -68,13 +69,45 @@ $script([remark_js, zepto_js], function(){
     initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
   }
   
-  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
 });
 
     </script>
   </head>
   <body>
     <textarea id="source">
+class: center, middle
+
+.title-block[
+# Desiderius Erasmus
+
+## "Your Letter Pleased Me Greatly"
+]
+---
+## Demonstration
+
+Let us, for example, take this sentence: "Your letter pleased me mightily"
+
+.two-column.f16px.no-margin[
+> *your*: There is no synonym for "your," but a periphrasis is possible: Your excellency's, your highness's, your majesty's. If we insert a proper name such as "Faustus" and say "Faustus's letter," we employ two forms of heterosis, the substitution of a noun for a pronoun and of a third person for a second. If we say "Faustine letters," using a derivative adjective instead of the genitive of the noun, that is yet another form of heterosis.
+>
+> *letter*: epistle, letter, note (synonym); epistolet, letterette, notelet (heterosis); pages, lines (synecdoche); what you wrote to me (periphrasis).
+>
+> *pleased*: delighted, refreshed, exhilarated (synonyms, though "exhilarated" is better considered a metaphor); brought pleasure, were a pleasure, were delightful (these and similar expressions illustrate periphrasis); bathed in delight, were honey-sweet, and so on (transferred or metaphorical expressions); were not unwelcome, not unpleasing (these result from the interchange of opposites). 
+>
+> *me*: my spirits, my heart, my eyes (periphrasis or Synecdoche); us (enallage of the number); Erasmus (heterosis of the person).
+>
+> *mightily*: greatly, intensely, extremely, wonderfully, marvellously, extraordinarily (synonym); mightily, hugely, superlatively, exceedingly, singularly (*auxesis* heightening); in no scant measure, on no small scale, in no common manner (opposites and negatives); it is impossible to say how much, it is beyond belief, I could not find words to express (these and similar expressions are on the way to hyperbole).(I.xxxiii)
+]
+---
+class: f27px
+## Rhetorical Machines
+
+> Erasmus’s most famous exercise of writing the sentence “tuae litterae me magnopere delectarunt” nearly two hundred different ways is a perfect example of an algorithmic attunement to language, a procedure that once again calls into question who or what is being trained and what kind of rhetor emerges from *De copia*’s pedagogical contraptions. Erasmus is demonstrating the output of these machines, but he is primarily focused on laying out his weird collection of whatsits, a curio cabinet of mechanisms that iterate through loops, spitting out arguments.
+>
+> – James J. Brown, Jr., ["The Machine That Therefore I Am,"](https://muse.jhu.edu/article/562412/pdf) 502-3
+
 
 </textarea>
   </body>
