@@ -1,0 +1,1 @@
+.others ol ul,.skipped ol ul{margin-left:0}.skipped ol{counter-reset:skipped 4}.skipped ol>li{counter-increment:skipped;padding-left:.5rem}.skipped ol>li::marker{content:counter(skipped) ". "}.others ol{counter-reset:others 8}.others ol>li{counter-increment:others;padding-left:.5rem}.others ol>li::marker{content:counter(others) ". "}
