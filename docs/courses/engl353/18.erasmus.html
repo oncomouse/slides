@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Erasmus VIII
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js, progress_bar_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+.title-block[
+# Desiderius Erasmus
+
+## Aftermath
+]
+---
+class: f27px
+## Rhetorical Machines
+
+> Erasmus’s most famous exercise of writing the sentence “tuae litterae me magnopere delectarunt” nearly two hundred different ways is a perfect example of an algorithmic attunement to language, a procedure that once again calls into question who or what is being trained and what kind of rhetor emerges from *De copia*’s pedagogical contraptions. Erasmus is demonstrating the output of these machines, but he is primarily focused on laying out his weird collection of whatsits, a curio cabinet of mechanisms that iterate through loops, spitting out arguments.
+>
+> – James J. Brown, Jr., ["The Machine That Therefore I Am,"](https://muse.jhu.edu/article/562412/pdf) 502-3
+---
+## Rhetoric's Algorithms
+
+.center[
+
+# [@YourLetterBot](https://twitter.com/YourLetterBot)
+
+# [My Copia Ate My Homework](http://oncomouse.github.io/homework-copia/)
+
+]
+---
+class: f36px
+
+## Basic Tracery Grammar
+```json
+{
+	"origin": "Hello!"
+}
+```
+
+<hr />
+
+**Output**:
+
+Hello!  
+Hello!  
+Hello!  
+Hello!  
+Hello!  
+Hello!  
+
+---
+class: middle, center
+
+![A Hash Table](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1200px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
+---
+class: f36px
+## Basic Tracery Grammar
+```json
+{
+	"origin": ["Hello!", "¡Hola!"]
+}
+```
+
+<hr>
+
+**Output**:
+
+¡Hola!  
+Hello!  
+¡Hola!  
+Hello!  
+Hello!  
+¡Hola!  
+---
+
+class: middle, center
+
+![An Array](https://media.geeksforgeeks.org/wp-content/uploads/Arrays1.png)
+---
+class: f29px
+
+```json
+{
+	"origin": ["#greeting#, #name#"],
+	"greeting": ["Hello", "Hola"],
+	"name": ["Andrew", "August", "Shawna"]
+}
+```
+<hr>
+
+**Output**:
+
+Hello, Andrew  
+Hola, August  
+Hello, Shawna  
+Hello, Andrew  
+Hola, Shawna  
+Hola, Andrew  
+
+---
+class: f40px
+## Tracery
+
+* [Online Editor](https://oncomouse.github.io/tracery-editor/)
+	* This will save locally in your browser
+	* You can also save a `.json` file to edit on different computers
+* [Online Tutorial](http://www.crystalcodepalace.com/traceryTut.html)
+* [Creating a Tracery Twitter Bot](https://andrew.pilsch.com/blog/2017/06/04/making-twitter-bots/)
+---
+class: f23px
+## Description
+
+> I use the term “artifact” because it sounds more formal and academic than “thing” but I want to keep it vague to allow you to respond how you want. An artifact could be a video, a digital project, a paper collage, origami, a series of journal entries, fan fiction, drawings, a painting, or even a traditional research essay. But it need not be any of those things. Rather than continue to analyze the history of rhetoric, I want you (or your group, if you choose to work in groups) to think about how to use the rhetorical tradition, as discussed by Erasmus and others that we have read this semester, as a living source of inspiration.
+>
+> The important thing about grading criteria for this portion of the assignment: I am less concerned with you producing something polished (or even finished), so much as I am interested in how you go about thinking about Erasmus and rhetoric and how you choose to think about embodying that connection.
+---
+class: f34px
+## Possible Projects
+
+.pull-left[
+* Tracery Grammar
+* .GIF Commonplace
+* 21st Century Commonplaces
+* Memory Palace
+* *Art of Memory*
+* Rhetorical Figures
+]
+
+.pull-right[
+* Fiction
+* Art
+* Computer Program
+* [Twine Game](https://twinery.org/)
+* Website
+* Video
+* Research Report
+* Other Ideas
+]
+
+
+</textarea>
+  </body>
+</html>
+
