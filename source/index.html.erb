@@ -12,7 +12,7 @@ else
 end
 
 # Naturalize a string that contains numbers
-def naturalized s
+def self.naturalized s
   s.scan(/[^\d\.]+|[\d\.]+/).collect { |f| f.match(/\d+(\.\d+)?/) ? f.to_f : f }
 end
 %>

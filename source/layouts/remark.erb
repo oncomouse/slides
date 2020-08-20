@@ -125,7 +125,7 @@ attach_progress_bar = slide_configuration_data["progress_bar"]
         scriptjs_load_callbacks.push "\t$(slide).append('<div class=\"twitter_name\">' + twitter_name +  '</div>');"
         scriptjs_load_callbacks.push "});"
       end
-      def variable_name(path)
+      def self.variable_name(path)
         File.basename(path).gsub(".min", "").gsub(/\W/, "_")
       end
       scriptjs_array.uniq!
