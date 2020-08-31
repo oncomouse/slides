@@ -11,3 +11,4 @@ gem 'middleman', '~> 4'
 
 gem 'emoji_data', github: 'oncomouse/emoji_data.rb', branch: 'master'
 gem 'kramdown'
+gem 'rake'
