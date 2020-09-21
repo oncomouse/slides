@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Burke
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Kenneth Burke, "The Rhetoric of Hitler's 'Battle'"
+---
+class: f36px
+## Purpose In Writing
+
+> Hitler's "Battle" is exasperating, even nauseating; yet the fact remains: If the reviewer but knocks off a few adverse attitudinizings and calls it a day, with a guaranty in advance that his article will have a favorable reception among the decent members of our population, he is contributing more to our gratification than to our enlightenment. (191)
+
+---
+class: f40px
+## Why Do This?
+
+> let us try also to discover what kind of "medicine" this medicine-man has concocted, that we may know, with greater accuracy, exactly what to guard against, if we are to forestall the concocting of similar medicine in America. (191)
+---
+class: f40px
+## Method
+
+* Burke proposes a "rhetorical analysis"
+	* Method of criticism
+		* Practiced by Plato
+	* Focuses on use of language to persuade audience
+* Critical reading
+	* Not *what* is said
+	* *How* it is said
+---
+class: f40px
+## Example: Rhetorical Triangle
+
+1. Ethos
+1. Logos
+1. Pathos
+---
+class: f40px
+## Example: Rhetorical Triangle
+
+1. Ethos
+	* Analyse / catalog construction of authority
+	* Evaluate effectiveness
+1. Logos
+1. Pathos
+---
+class: f40px
+## Example: Rhetorical Triangle
+
+1. Ethos
+	* Analyse / catalog construction of authority
+	* Evaluate effectiveness
+1. Logos
+	* Discuss logical arrangement
+	* Evaluate effectiveness
+1. Pathos
+---
+class: f40px
+## Example: Rhetorical Triangle
+
+1. Ethos
+	* Analyse / catalog construction of authority
+	* Evaluate effectiveness
+1. Logos
+	* Discuss logical arrangement
+	* Evaluate effectiveness
+1. Pathos
+	* Analyse / catalog use of emotion
+	* Evaluate effectiveness
+---
+class: f40px
+## Other Examples
+
+1. Metaphor
+1. Ideology
+1. Tropes
+---
+class: f40px
+## Other Examples
+
+1. Metaphor
+	* Extended discussion of a comparison
+	* How it is enforced
+	* What it means
+	* What effects it has on audience
+1. Ideology
+1. Tropes
+---
+class: f40px
+## Other Examples
+
+1. Metaphor
+1. Ideology
+	* Analysis of political beliefs
+	* Focus on speaker or audience (or both)
+	* How is ideology transmitted?
+	* How is it challenged?
+	* How is it enforced?
+1. Tropes
+---
+class: f40px
+## Other Examples
+
+1. Metaphor
+1. Ideology
+1. Tropes
+	* Greek meaning "turn" (origin of "turn of phrase")
+	* Things such as metaphor, metonymy, synecdoche, and irony
+	* Also repeating images / narrative patterns
+	* [TVTropes](http://tvtropes.org/)
+---
+class: f40px
+## "Rhetoric of Hitler's 'Battle'" & Tropes
+
+1. Geographical Materialization
+1. Common Enemy
+1. Projection Devices
+1. Inborn Dignity
+1. Symbolic Rebirth
+1. Commercial Use
+1. Unifying Voice
+
+---
+class: f30px
+## Geographical Materialization
+
+> Every movement that would recruit its followers from among many discordant and divergent bands, must have some spot towards which all roads lead. Each many may get there in his own way, but it must be the one unifying center of reference for all. Hitler considered this matter carefully, and decided that this center must be not merely a centralized hub of *ideas*, but a mecca geographically located, towards which all eyes could turn at the appointed hours of prayer… So he selected Munich, as the *materialization* of his unifying panacea. (192)
+---
+class: f36px
+## Common Enemy
+
+> If a movement must have its Rome, it must alos have its devil. For as Russell pointed out years ago, an important ingredient of unity in the Middle Ages (an ingredient that long did its unifying work despite the many factors driving towards disunity) was the symbol of a *common enemy*, the Prince of Evil himself. Men who can unite on nothing else can unite on the basis of a foe shared by all. (193)
+
+---
+class: f34px
+## Projection Devices
+
+> The "curative" process that comes with the ability to hand over one's ills to a scapegoat, thereby getting purification by dissociation…Hence if one can hand over his infirmities to a vessel, or "cause," outside the self, one can battle an external enemy instead of battling an enemy within. And the greater one's internal inadequacies, the greater the amount of evils one can load upon the back of "the enemy." (202-3)
+
+---
+class: f27px
+## Inborn Dignity
+
+> And this categorical dignity is considered to be an attribute of *all* men, if they will but avail themselves of it, by right thinking and right living. But Hitler gives this ennobling attitude an ominous twist by his theories of race and nation, whereby the "Aryan" is elevated above all others by the innate endowment of his blood, while other "races"…are innately inferior. This sinister secularized revision of Christian theology thus puts the sense of dignity upon a fighting basis, requiring the conquest of "inferior races." After the defeat of Germany in the World War, there were especially strong emotional needs that this compensatory doctrine of an *inborn* superiority could gratify. (202)
+
+---
+class: f35px
+## Symbolic Rebirth
+
+> The projective device of the scapegoat, coupled with the Hitlerite doctrine of inborn racial superiority, provides its followers with a "positive" view of life. They can again get the feel of *moving forward*, towards a *goal* (a promissory feature of which Hitler makes much). In Hitler, as the group's prophet, such rebirth involved a symbolic change of lineage. (203)
+---
+class: f33px
+## Commercial Use
+
+> Hitler obviously here had something to sell—and it was but a question of time until he sold it (i.e., got financial backers for his movement). For it provided a *noneconomic interpretation of economic ills*. As such, it served with maximum efficiency in deflecting the attention from the economic factors involved in modern conflict; hence by attacking "Jew finance" instead of *finance*, it could stimulate an enthusiastic movement that left "Aryan" finance in control. (204)
+
+---
+class: f24px
+## Unifying Voice
+
+> So, as against the disunity equations…we get a contrary purifying set; the wrange of the parliamentary is to be stilled by the giving of *one* voice to the whole people, this is to be the "inner voice" of Hitler, made uniform throughout the German boundaries, as leader and people were completely identified with each other. In sum: Hitler's inner voice, equals leader-people identification, equals unity, equals Reich, equals the mecca of Munich, equals plow, equals sword, equals work, equals war, equals army as midrib, equals responsibility (the personal responsibility of the absolute ruler), equals sacrifice, equals the theory of "German democracy" (the free popular choice of the leader, who then accepts the responsibility, and demands absolute obedience in exchange for his sacrifice), equals love (with the masses as feminine), equals idealism, equals obedience to nature, equals race, nation. (207)
+---
+class: f29px
+## What Does It All Mean?
+
+> Hence, I doubt whether the appeal was in the sloganizing element alone (particularly as even slogans can only be hammered home, in speech after speech, and two or three hours at a stretch, by endless variations on the themes). And Hitler himself somewhat justifies my interpretation by laying so much stress upon the *half-measures* of the middle-class politicians, and the contrasting *certainty* of his own methods. He was not offering people a *rival* world view; rather he was offering a world view to people who had no other to pit against it. (218)
+
+
+</textarea>
+  </body>
+</html>
+
