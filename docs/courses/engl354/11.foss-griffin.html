@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Foss & Griffin
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Sonja K. Foss & Cindy L. Griffin, “Beyond Persuasion: A Proposal for an Invitational Rhetoric”
+
+---
+class: f24px
+## Terminological Refiguring
+
+> Burke (1969) suggests that rhetors typically adjust their conduct to the external *resistance* they expect in the audience ... In invitational rhetoric, in contrast, resistance is not anticipated, and rhetors do not adapt their communication to expected resistance in the audience. Instead, they identify possible *impediments* to the creation of understanding and seek to minimize or neutralize them so they do not remain impediments. (Foss & Griffin 6)
+
+> Offering involves not *probing* or *invading* but *giving* ... (Foss & Griffin 7)
+
+> rhetors tend to see their audiences as *opponents* and sometimes may be tempted to engage in questionable ethical practices to win their "*battles*" with them (Foss & Griffin 15).
+
+---
+class: f32px
+## Persuasion is Coercion?
+
+> Embedded in efforts to change others is a desire for control and domination, for the act of changing another establishes the power of the change agent over that other. In some instances, the power of the rhetor over another is overt, as it is, for example in laws that exert control over women's bodies ... But even in the cases where the strategies used are less coercive, rhetors who convince others to adopt their viewpoints exert control over part of those others' lives. (Foss & Griffin 3)
+---
+class: f29px
+## Persuasion is Coercion?  (Example)
+> A student who tells another student that she ought to take a particular course, for example, controls or influences the nature of another's life, if only for a few minutes, if the other enrolls in the course or even considers enrolling in it. We suggest that a strikingly large part of many individuals' lives is spent in such efforts to change others, even when the desired changes have absolutely no impact on the lives of the change agents. Whether a friend enrolls in a particular course, for example, often is irrelevant to a student's own life. (Foss & Griffin 3)
+---
+class: f24px
+## Life World
+
+> The value of the self for rhetors in this rhetorical system comes from the rhetor's ability to demonstrate superior knowledge, skills, and qualifications in other words, authority—in order to dominate the perspectives and knowledge of those in their audiences. The value of the self derives not from a recognition of the uniqueness and inherent value of each living being but from gaining control over others. 
+>
+> The act of changing others not only establishes the power of the rhetor over others but also devalues the lives and perspectives of those others. The belief systems and behaviors others have created for living in the world are considered by rhetors to be inadequate or inappropriate and thus in need of change. […] Audience members are assumed to be naive and less expert than the rhetor if their views differ from the rhetor's own. 
+
+---
+class: f32px
+## Tradition of Control
+
+> The traditional conception of rhetoric, in summary, is characterized by efforts to change others and thus to gain control over them, self-worth derived from and measured by the power exerted over others, and a devaluation of the life worlds of others. This is a rhetoric of patriarchy, reflecting its values of change, competition, and domination. But these are not the only values on which a rhetorical system can be constructed, and we would like to propose as one alternative a feminist rhetoric. (Foss & Griffin 4)
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+> Patriarchy is a political-social system that insists that males are inherently dominating, superior to everything and everyone deemed weak, especially females, and endowed with the right to dominate and rule over the weak and to maintain that dominance through various forms of psychological terrorism and violence.
+>
+> — bell hooks, *Understanding Patriarchy*, pg 1
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+> Patriarchy is a political-social system that insists that males are inherently dominating, superior to everything and everyone deemed weak, especially females, and endowed with the right to dominate and rule over the weak and to maintain that dominance through various forms of psychological terrorism and violence.
+>
+> — bell hooks, *Understanding Patriarchy*, pg 1
+
+> What makes it feminist is not its use by a particular population of rhetors but rather the grounding of its assumptions in feminist principles and theories. (Foss & Griffin 5)
+
+---
+class: f24px
+## Definition
+
+> Invitational rhetoric is an invitation to understanding as a means to create a relationship rooted in *equality*, *immanent value*, and *self-determiniation*. Invitational rhetoric constitutes an invitation to the audience to enter the rhetor's world and to see it as the rhetor does. In presenting a particular perspective, the invitational rhetor does not judge or denigrate others' perspectives but is open to and tries to appreciate and validate those perspectives, even if they differ dramatically from the rhetor's own. Ideally, audience members accept the invitation offered by the rhetor by listening to and trying to understand the rhetor's perspective and then presenting their own. When this happens, rhetor and audience alike contribute to the thinking about an issue so that everyone involved gains a greater understanding of the issue in its subtlety, richness, and complexity. (Foss & Griffin 5)
+
+---
+class: f23px
+## Offering
+
+> When rhetors do not seek to impose their positions on audience members in invitational rhetoric, the presentation and function of individual perspectives differ significantly from their nature and function in traditional rhetorics. Individual perspectives are articulated in invitational rhetoric as carefully, completely, and passionately as possible to give them full expression and to invite their careful consideration by the participants in the interaction. This articulation occurs not through persuasive argument but through offering—the giving of expression to a perspective without advocating its support or seeking its acceptance. Offering involves not probing or invading but giving, a process “of wrapping around the given, of being available to her/him without insisting; our giving is a presence, an offering, an opening” (Gearhart, 1982, p. 198). In offering, rhetors tell what they currently know or understand; they present their vision of the world and show how it looks and works for them. (Foss & Griffin 7)
+---
+class: f25px
+## Without Pretext
+
+> As a rhetorical form, offering may appear to be similar to some traditional rhetorical strategies, such as the use of personal narrative as a form of support for a rhetor's position. But narrative as offering functions differently from narrative as a means of support. It is presented in offering for the purpose of articulating a viewpoint but not as a means to increase the likelihood of the audience's adherence to that viewpoint. The offering of a personal narrative is, itself, the goal; the means and the ends are the same in offering.Offering is not based on a dichotomy of cause and effect, an action done in the present to affect the future. […] In this mode, then, a story is not told as a means of supporting or achieving some other end but as an end in itself—simply offering the perspective the story represents. (Foss & Griffin 7)
+---
+class: f26px
+## Re-sourcement
+
+> Another form offering may take, particularly in a hostile situation or when a dominant perspective is very different from the one held by the rhetor, is re-sourcement (Gearhart, 1982). Re-sourcement is a response made by a rhetor according to a framework, assumptions, or principles other than those suggested in the precipitating message. In using re-sourcement, the rhetor deliberately draws energy from a new source—a source other than the indi vidual or system that provided the initial frame for the issue. It is a means, then, of communicating a perspective that is different from that of the individual who produced the message to which the rhetor is responding. (Foss & Griffin 9)
+---
+class: f20px
+## Re-sourcement Example
+
+> Re-sourcement in a discursive form is exemplified in a story told by Watzlawick, Weakland, and Fisch (1974) about a police officer who was 
+>
+> issuing a citation for a minor traffic violation when a hostile crowd began to gather around him. By the time he had given the offender his ticket, the mood of the crowd was ugly and the sergeant was not certain he would be able to get back to the relative safety of his patrol car. It then occurred to him to announce in a loud voice: "You have just witnessed the issuance of a traffic ticket by a member of your Oakland Police Department." And while the bystanders were busy trying to fathom the deeper meaning of this all too obvious communique, he got into his cruiser and drove off. (pp. 108–109) 
+>
+> The initial message presented to the police officer was framed in the context of opposition and hostility; he chose, however, to respond with a message grounded in a framework of simple explanation, cooperation, and respect. Re-sourcement, as a means of offering, allowed him to diffuse the situation and to communicate his own perspective—that he was doing the job he was hired by the crowd members, as taxpayers, to do. (Foss & Griffin 10)
+---
+class: f29px
+## Condition 1
+
+> The condition of *safety* involves the creation of a feeling of security and freedom from danger for the audience. Rhetoric contributes to a feeling of safety when it conveys to audience members that the ideas and feelings they share with the rhetor will be received with respect and care. When rhetoric establishes a safe context, the rhetor makes no attempt to hurt, degrade, or belittle audience members or their beliefs, and audience members do not fear rebuttal of or retribution for their most fundamental beliefs. (Foss & Griffin 10-11)
+---
+class: f22px
+## Condition 2
+> The condition of *value* is the acknowledgment that audience members have intrinsic or immanent worth. This value is what Benhabib (1992) calls "the principle of universal moral respect"—"the right of all beings capable of speech and action to be participants" in the conversation (p. 29). Barrett (1991) describes this condition as "respectfully, affirming others" while at the same time "one affirms oneself" (p. 148). 
+>
+> Value is created when rhetors approach audience members as "unrepeatable individuals" and eschew “distancing, depersonalizing, or paternalistic attitudes” (Walker, 1989, pp. 22, 23). As a result, audience members feel their identities are not forced upon or chosen for them by rhetors. Rhetors do not attempt to fit audience members into any particular roles but face "the 'otherness of the other,' one might say to face their 'alterity,' their irreducible distinctness and difference from the self" (Benhabib, 1992, p. 167). (Foss & Griffin 11)
+
+---
+class: f22px
+## Condition 3
+
+> *Freedom*, the power to choose or decide, is a third condition whose presence in an environment is a prerequisite for the possibility of mutual understanding. In invitational rhetoric, rhetors do not place restrictions on an interaction. Participants can bring any and all matters to the interaction for consideration; no subject matter is off limits, and all presuppositions can be challenged. The rhetor's ideas also are not privileged over those of the audience in invitational rhetoric. […]
+>
+> Freedom also is developed when a rhetor provides opportunities for others to develop and choose options from alternatives they, themselves, have created. Rather than presenting a predetermined set of options from which individuals may choose, a rhetor who wishes to facilitate freedom allows audience members to develop the options that seem appropriate to them, allowing for the richness and complexity of their unique subjective experiences. (Foss & Griffin 12)
+
+---
+class: f21px
+
+## Beyond Competition
+
+> Invitational rhetoric may serve as a way to allow these scholars to develop models for interaction not characterized by the opposition and competition that make the achievement of their goal difficult.
+>
+> The introduction of invitational rhetoric to the array of rhetorical forms available also serves a greater heuristic, inventive function than rhetoric previously has allowed. Traditional theories of rhetoric occur within preimposed or preconceived frameworks that are reflexive and reinforce the vocabularies and tenets of those frameworks. In rhetoric in which the rhetor seeks to impose change on others, an idea is adapted to the audience or is presented in ways that will be most persuasive to the audience; as a result, the idea stays lodged within the confines of the rhetorical system in which it was framed. Others may challenge the idea but only within the confines of the framework of the dispute already established. The inventive potential of rhetoric is restricted as the interaction converts the idea to the experience required by the framework.  (16)
+
+---
+class: f29px
+## Changing Change
+
+> Change may be the result of invitational rhetoric, but change is not its purpose. When change does occur as a result of understanding, it is different from the kind of change that typifies the persuasive interactions of traditional rhetoric. In the traditional model, change is defined as a shift in the audience in the direction requested by the rhetor, who then has gained some measure of power and control over the audience. In invitational rhetoric, change occurs in the audience or rhetor or both as a result of new understanding and insights gained in the exchange of ideas. (Foss & Griffin 6)
+
+---
+class: f21px
+## Intervening in Oppression
+
+> Although invitational rhetoric is not designed to create a specific change, such as the transformation of system of oppression into ones that value and nurture individuals, it may produce such an outcome. Invitational rhetoric may resist an oppressive system simply because it models an alternative to the system […]-it presents an alternative feminist vision rooted in affirmation and respect and thus shows how an alternative looks and works. Invitational rhetoric thus may transform an oppressive system precisely because it does not engage that system on its own terms, using arguments developed from the system's framework or orientation. Such arguments usually are co-opted by the dominant system and provide the impetus "to strengthen, refine, and embellish the original edifice," entrenching the system further. Invitational rhetoric, in contrast, enables rhetors to disengage from the dominance and mastery so common to a system of oppression and to create a reality of equality and mutuality in its place, allowing for options and possibilities not available within the familiar, dominant frame work. (Foss & Griffin 16-17)
+
+
+</textarea>
+  </body>
+</html>
+
