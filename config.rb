@@ -18,7 +18,7 @@ Haml::TempleEngine.disable_option_validator!
 
 activate :external_pipeline,
          name: :gulp,
-         command: "yarn run #{build? ? 'production' : 'development'}",
+         command: "npm run #{build? ? 'production' : 'development'}",
          source: '.tmp',
          latency: 1
 

@@ -41,7 +41,7 @@ const images = {
   in: src + 'images/**/*.{png,jpg,gif,webp}',
   out: dest + 'images/',
 }
-
+var sass = require('gulp-sass')(require('node-sass'));
 // CSS Preprocessing
 gulp.task('css', function () {
   return gulp.src(css.in)
@@ -52,7 +52,7 @@ gulp.task('css', function () {
         __dirname + '/node_modules',
       ],
     }))
-    .pipe(p.sass(sassOpts).on('error', p.sass.logError))
+    .pipe(sass(sassOpts).on('error', sass.logError))
     .pipe(p.autoprefixer(autoprefixerOpts)).on('error', handleError)
     .pipe(production(p.cleanCss()))
     .pipe(development(p.sourcemaps.write()))
