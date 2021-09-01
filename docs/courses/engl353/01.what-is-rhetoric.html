@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 What is Rhetoric?
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+# What is Rhetoric?
+---
+class: f48px
+## Three Goals
+
+1. **Origin**(s) of the Term
+1. **Egypt** and Oral Culture
+1. The Peloponnesian **War**
+---
+class: f48px
+## <small>Origins</small> Scholarly Dispute
+
+1. The Official Version
+1. The Minority Opinion
+1. Where I Stand
+---
+class: f34px
+## <small>Origins</small> The Official Version
+
+1. *tēn kaloumenēn rhētorikēn*, "the art which is called rhetoric" (*Gorgias* 448d)
+1. "Organized thought about public speaking" ([*Wikipedia*](https://en.wikipedia.org/wiki/Rhetoric#History))
+1. In contrast with philosophy (for Gorgias; for others)
+	* Knowledge specialization
+	* Disciplines / arts
+---
+class: f38px
+## <small>Origins</small> The Minority Opinion
+
+1. Rhetoric that does not speak its name
+	* Also, Socrates: "the art which is *called* rhetoric"
+1. Non-Western narratives
+	* China
+	* Mesopotamia (~2250BCE)
+	* Egypt (~2000BCE)
+1. Greek oratory (*Iliad*)
+---
+class: f38px
+## <small>Origins</small> Where I Stand
+
+1. Dispute: "can we call something prior to the origin of the term 'rhetoric?'"
+1. I say "yes"
+	* But: I've reviewed the literature
+	* Considered the two positions
+	* Made my choice
+	* Open to change
+---
+## Oral Society
+class: big, middle
+
+> Assuming the context of a largely non-literate culture, we can postulate that both pieces were presented to audiences less "literate" than the speaker. Both pieces were delivered orally and were in that sense composed to be delivered orally. Both pieces were delivered orally and were in that sense composed, in large part, during the initial presentation and only later written down in full ... what survives of Parmenides and Gorgias represents a strange case of "literate" discourse presented to a preponderantly "illiterate" audience (Swearingen 147-8).
+
+---
+
+class: big
+
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+
+
+---
+class: big
+## Oral Society (Ong)
+
+1. **Formulaic Style** – Information must be memorable to survive
+	* Milman Perry & *The Odyssey*
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. **Additive Rather Than Subordinate** — Information accumulates, rather than relates
+	* *Genesis* 1:1 "In the beginning God created heaven and earth. And the earth was void and empty, and darkness was on the face of the deep; and the spirit of God moved over the waters. And God said …" (Douay-Rheims translation)
+	* *Genesis* 1:1 "In the beginning, when God created the heavens and the earth, the earth was a formless wasteland, and darkness covered the abyss, while a mighty wind swept over the waters. Then God said …" (New American Bible)
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. **Aggregative Rather Than Analytic**
+	* Information is pithy and repeatable
+	* "sturdy oak tree", "beautiful princess", "clever Odysseus"
+	* "Farmers Fight"
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. **Redundant or Copious**
+	* Reiterate a key point or insight multiple times
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. **Conservative**
+	* Considerable Energy in Information Management Discourages New Ideas
+1. Agonistic
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. **Agonistic**
+	* Focused on Combat (physical and verbal)
+	* *Also* Good vs Evil, Vice vs Virtue
+	* Praise OR Blame (not both)
+1. Homeostatic
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. **Homeostatic**
+	* Information retained / structured according to present needs / relevance
+1. Situational Rather Than Abstract
+
+---
+class: big
+## Oral Society (Ong)
+
+1. Formulaic Style
+1. Additive Rather Than Subordinate
+1. Aggregative Rather Than Analytic
+1. Redundant or Copious
+1. Conservative
+1. Agonistic
+1. Homeostatic
+1. **Situational Rather Than Abstract**
+	* Knowledge references world ("moon" not "circle")
+	* "hammer, saw, hatchet, log" – remove one
+	* syllogism: "In the far north, where there is snow, all bears are white. Novaya Zemlya is in the far north and there is always snow there. What colour are the bears?"
+
+
+
+
+</textarea>
+  </body>
+</html>
+

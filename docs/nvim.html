@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      VIM
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js, progress_bar_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# VI: Visual Editor
+
+---
+## History
+
+* Developed First in 1976 by Bill Joy
+	* `ex` -- a line editor written w/ Chuck Haley
+	* `vi` (visual) was the screen editor for `ex`
+	* First released as `vi` in 1979
+* First developed on a Lear Siegler ADM-3A Terminal
+	* Had arrow keys printed on <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, and <kbd>l</kbd> to control cursor
+	* <kbd>Escape</kbd> was where <kbd>Tab</kbd> now is on standard keyboards
+* Included in BSD Unix, which Joy wrote
+* Dependent on AT&T's Original UNIX license, therefore non-free
+	* 1987: STEVIE (ST Editor for VI Enthusiasts)
+		* Limited vi
+	* 1990: Elvis
+		* Full vi
+		* Last release: 2003
+	* 1994: nvi
+		* Full vi, with "bug for bug" compatibility
+		* Last release: 1996
+	* Running `vi` on FreeBSD or Minix gets you Elvis
+	* Running `vi` on BSD Lite gets you nvi
+* Clones
+	* 1991: Vim (Vi IMproved)
+		* Based on STEVIE
+		* Still developed today
+	* 2014: Neovim
+		* Fork, refactor, and modernization of Vim
+---
+## Use
+
+* Vi is a modal editor
+	* Modal editors track different moments of input and do different things accordingly
+* Vi modes:
+	* **Insert** -- typing gets you text as a normal editor
+	* **Normal** -- typing triggers commands that move around and change the document
+	* **Replace** -- typing overwrites existing text
+	* **Visual** -- typing moves the cursor but highlights sections for copying and pasting
+* This contrasts with all other modern, extant text editors, which have one mode and use special modifier keys (<kbd>alt</kbd> or <kbd>ctrl</kbd>) to issue commands
+* Execution begins in Normal mode.
+	* Other modes are entered by typing the first letter of the desired mode (<kbd>i</kbd> for insert, etc.).
+	* Other modes are exited using <kbd>Escape</kbd>.
+* Most of the interest in Vi lies in Normal mode
+	* Movement is done with <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, and <kbd>l</kbd>
+	* But any command in normal mode can be modified as it is typed.
+	* So, typing <kbd>12k</kbd> will move up twelve lines.
+* Normal mode also features the concept of text-objects.
+	* Addressed by more shortcut keys.
+	* <kbd>iw</kbd> and <kbd>aw</kbd> are text objects for words
+		* <kbd>iw</kbd> selects "inside" the word
+		* <kbd>aw</kbd> selects "around" the word, including space
+	* There are text objects for sentences and paragraphs, as well as words.
+		* Also for things programmers need such as functions.
+* Text objects combine with commands in normal mode:
+	* <kbd>d</kbd> is the command for delete
+	* <kbd>y</kbd> is the command for copy (called yanking)
+	* To delete a word, type <kbd>diw</kbd>
+		* To delete the next 6 words type <kbd>6diw</kbd>
+		* To delete the previous 12 lines type <kbd>12dk</kbd>
+* There's a lot more to this, but you can also move by going toward the next or previous occurrence of a character. You can search. You can replace using the same search command.
+	* You can also do this in multiple files open at the same time.
+
+---
+## Culture
+
+* Steep learning curve
+	* Elitist as a result
+* Vim and Neovim also include programming languages to add features with plugins
+	* The Vim community is often hostile to plugins because it breaks the perceived purity of the language
+* Vi has an ancient blood feud with Emacs, another text editor from 1976.
+	* Emacs largely invented the modern text editor through their use of chorded keyboard shortcuts and only one mode
+	* Vi or Emacs was long a way of differentiating programmers
+	* This has died down somewhat as Emacs paradigmatic success in shaping modern text editors has diluted its use.
+* The Neovim fork of Vim, which added many modern editor features has shown that Vi is still widely used.
+
+
+</textarea>
+  </body>
+</html>
+
