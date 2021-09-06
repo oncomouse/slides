@@ -1,7 +1,80 @@
----
-title: 'ENGL 353 Pericles, "Funeral Oration"'
-progress_bar: false
----
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Pericles, "Funeral Oration"
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
 class: center, middle
 # Pericles <br> "Funeral Oration"
 ---
@@ -132,4 +205,10 @@ class: f28px
 ## <small>Speech</small> *Antidosis*
 
 > Try to be like these men, therefore: realize that happiness lies in liberty, and liberty in valor, and do not hold back from the dangers of war. Miser able men, who have no hope of prosperity, do not have a just reason to be generous with their lives; no, it is rather those who face the danger of a complete reversal of fortune for whom defeat would make the biggest difference: they are the ones who should risk their lives. Any man of intelligence will hold that death, when it comes unperceived to a man at full strength and with hope for his country, is not so bitter as miserable defeat for a man grown soft. (45)
+
+
+
+</textarea>
+  </body>
+</html>
 
