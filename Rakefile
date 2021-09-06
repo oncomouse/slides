@@ -13,3 +13,4 @@ task :deploy do
   system 'git commit -m "New Slides"'
   system 'git push -u'
 end
+ 
