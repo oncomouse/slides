@@ -1,7 +1,80 @@
----
-title: ENGL 353 Plato, Gorgias
-progress_bar: False
----
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Plato, Gorgias
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
 class: middle, center
 
 # Plato, *Gorgias*
@@ -469,3 +542,9 @@ class: f25px, no-margin
 ## The Ending
 
 > SOCRATES: So, listen to me and follow me to where I am, and when you've come here you'll be happy both during life and at its end, as the account indicates. Let someone despise you as a fool and throw dirt on you, if he likes. And, yes, by Zeus, confidently let him deal you that demeaning blow. Nothing terrible will happen to you if you really are an admirable and good man, one who practices excellence. And then, after we've practiced it together, then at last, if we think we should, we'll turn to politics, or then we'll deliberate about whatever subject we please, when we're better at deliberating than we are now. For it's a shameful thing for us, being in the condition we appear to be in at present—when we never think the same about the same subjects, the most important ones at that—to sound off as though we're somebodies. That's how far behind in education we've fallen. (527c-e)
+
+
+</textarea>
+  </body>
+</html>
+
