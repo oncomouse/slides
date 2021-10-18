@@ -1,0 +1,412 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Plato, Phaedrus
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: middle, center
+
+# Plato, *Phaedrus*
+---
+class: f33px
+## Socratic Dialogue
+
+* "Know Thyself"
+* "Socratic" "Irony"
+* Plato Abandons Philosophical Tracts
+* Not Plays: Debates
+* Characters Were Real People
+	* Though Not (Always) Fairly Represented
+* Who Do We Believe?
+* Setting Is Important (esp. in *Phaedrus* & *Euthyphro*)
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+	* SOCRATES: Only if you first show me what you are holding in your left hand under your cloak (228d)
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+	* SOCRATES: Only if you first show me what you are holding in your left hand under your cloak (228d)
+	* PHAEDRUS: Stop playing hard to get! I know what I can say to make you give your speech. (236d)
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+	* SOCRATES: Only if you first show me what you are holding in your left hand under your cloak (228d)
+	* PHAEDRUS: Stop playing hard to get! I know what I can say to make you give your speech. (236d)
+	* PHAEDRUS: Not yet, Socrates, not until this heat is over. Don't you see that it is almost exactly noon, 'straight up' as they say (242a)
+---
+class: f27px
+
+## *Phaedrus*
+
+* Only dialogue where Socrates leaves Athens
+* Benjamin Jowett and the dialogue about Platonic love
+* Jacques Derrida and the dialogue about writing
+* Dialogue about seduction of the text
+	* SOCRATES: Only if you first show me what you are holding in your left hand under your cloak (228d)
+	* PHAEDRUS: Stop playing hard to get! I know what I can say to make you give your speech. (236d)
+	* PHAEDRUS: Not yet, Socrates, not until this heat is over. Don't you see that it is almost exactly noon, 'straight up' as they say (242a)
+	* SOCRATES: You're really superhuman when it comes to speeches, Phaedrus; you're truly amazing. (242a)
+---
+class: f24px
+## Setting
+
+> SOCRATES: By Hera, it really is a beautiful resting place. The plane tree is tall and very broad; the chaste-tree, high as it is, is wonderfully shady, and since it is in full bloom, the whole place is filled with its fragrance. From under the plane tree the loveliest spring runs with very cool water---our feet can testify to that. The place appears to be dedicated to Achelous and some of the Nymphs, if we can judge from the statues and votive offerings. Feel the freshness of the air; how pretty and pleasant it is; how it echoes with the summery, sweet song of the cicadas' chorus! The most exquisite thing of all, of course, is the grassy slope: it rises so gently that you can rest your head perfectly when you lie down on it. You've really been the most marvelous guide, my dear Phaedrus.
+>
+> PHAEDRUS: And you, my remarkable friend, appear to be totally out of place. (230b-230c)
+---
+class: f32px
+## Nature / Self
+
+> SOCRATES: I am devoted to learning; landscapes and trees have nothing to teach me—only the people in the city can do that. (230d)
+---
+class: f32px
+## Nature / Self
+
+> SOCRATES: I am devoted to learning; landscapes and trees have nothing to teach me—only the people in the city can do that. (230d)
+
+> SOCRATES: I am still unable, as the Delphic inscription orders, to know myself; and it really seems to me ridiculous to look into other things before I have understood that. This is why I do not concern myself with them. I accept what is generally believed, and, as I was just saying, I look not into them but into my own self ... (229e-230a)
+---
+class: f28px
+
+## Doxa
+
+> SOCRATES: … Now I am well aware that none of these ideas can have come from me—I know my own ignorance. The only other possibility, I think, is that I was filled, like an empty jar, by the words of other people streaming in through my ears, though I'm so stupid that I've even forgotten where and from whom I heard them. (235c)
+---
+class: f28px
+## Doxa
+
+> SOCRATES: … Now I am well aware that none of these ideas can have come from me—I know my own ignorance. The only other possibility, I think, is that I was filled, like an empty jar, by the words of other people streaming in through my ears, though I'm so stupid that I've even forgetten where and from whom I heard them. (235c)
+
+> SOCRATES: … Ordinary people cannot see that they do not know the true nature of a particular subject, so they proceed as if they did; and because they do not work out an agreement at the start of the inquiry, they wind up as you would expect (*eikos*)—in conflict with themselves and each other. (237c)
+---
+class: f38px
+## Ecstasy
+
+> SOCRATES: It's a miracle, my friend; I'm in ecstasy. And it's all your doing, Phaedrus: I was looking at you while you were reading and it seemed to me the speech had made you radiant with delight; and since I believe you understand these matters better than I do, I followed your lead, and following you I shared your Bacchic frenzy (234d)
+---
+class: f25px
+## Repetitive
+
+> SOCRATES: What? Must we praise the speech even on the ground that its author has said what the situation demanded, and not instead simply on the ground that he has spoken in a clear and concise manner, with a precise turn of phrase? If we must, I will have to go along for your sake, since---surely because I am so ignorant---that passed me by. I paid attention only to the speech's style. As to the other part, I wouldn't even think that Lysias himself could be satisfied with it. For it seemed to me, Phaedrus---unless, of course, you disagree---that he said the same things two or even three times, as if he really didn't have much to say about the subject, almost as if he just weren't very interested in it. In fact, he seemed to me to be showing off, trying to demonstrate that he could say the same thing in two different ways, and say it just as well both times. (234E-235A)
+---
+class: f24px
+
+## Who Speaks?
+
+> SOCRATES: I'll never, as long as Lysias himself is present, allow you to practice your own speechmaking on me. (228e)
+---
+class: f24px
+
+## Who Speaks?
+
+> SOCRATES: I'll never, as long as Lysias himself is present, allow you to practice your own speechmaking on me. (228e)
+
+> SOCRATES: There's something really divine about this place, so don't be surprised if I'm quite taken by the Nymphs' madness as I go on with my speech. I'm on the edge of speaking in dithyrambs as it is. (238d)
+---
+class: f24px
+
+## Who Speaks?
+
+> SOCRATES: I'll never, as long as Lysias himself is present, allow you to practice your own speechmaking on me. (228e)
+
+> SOCRATES: There's something really divine about this place, so don't be surprised if I'm quite taken by the Nymphs' madness as I go on with my speech. I'm on the edge of speaking in dithyrambs as it is. (238d)
+
+> SOCRATES: My friend, just as I was about to cross the river, the familiar divine sign (*daimonion*) came to me which, whenever it occurs, holds me back from something I am about to do. (242c)
+---
+class: f24px
+
+## Who Speaks?
+
+> SOCRATES: I'll never, as long as Lysias himself is present, allow you to practice your own speechmaking on me. (228e)
+
+> SOCRATES: There's something really divine about this place, so don't be surprised if I'm quite taken by the Nymphs' madness as I go on with my speech. I'm on the edge of speaking in dithyrambs as it is. (238d)
+
+> SOCRATES: My friend, just as I was about to cross the river, the familiar divine sign (*daimonion*) came to me which, whenever it occurs, holds me back from something I am about to do. (242c)
+
+> SOCRATES: Well, Lysias certainly doesn't and neither does your speech, which you charmed me through your potion into delivering myself. (242e)
+
+---
+class: f24px,no-margin
+## Mania / Knowledge (Inspiration / Interpretation)
+
+> SOCRATES: ... otherwise they would not have used the word '*manic*' for the finest experts of all—the ones who tell the future—thereby weaving insanity into prophecy. They thought it was wonderful when it came as a gift of the god, and that's why they gave its name to prophecy; but nowadays people don't know the fine points, so they stick in a 't' and call it '*mantic*.' Similarly, the clear-headed study of the future, which uses birds and other signs was originally called *oionoïstic*, since it uses reasoning to bring intelligence and learning into human thought; but now modern speakers call it *oiōnistic*, putting on airs with their long 'ō'. To the extent, then, that prophecy, *mantic*, is more perfect and more admirable than sign-based prediction, *oiōnistic*, in both name and aceivement, madness, from a god is finer than self-control of human origin, according to the testimony of the ancient language givers. (244c-d)
+---
+class: f33px
+## *Doxa* / *Eidos*
+
+> SOCRATES: The result is terribly noisy, very sweaty, and disorderly. Many souls are crippled by the incompetence of the drivers, and many wings break much of their plumage. After so much trouble, they all leave without having seen reality, uninitiated, and when they have gone they will depend on what they think is nourishment—their own opinions. (248b)
+
+---
+class: f24px
+## *Ecstasis* & *Eidos* I
+
+> SOCRATES: But not every soul is easily reminded of the reality there by what it finds here—not souls that got only a brief glance at the reality there, not souls who had such bad luck when they fell down here that they were twisted by bad company into lives of injustice so that they forgot the sacred objects they had seen before. Only a few remain whose memory is good enough; and they are startled when they see an image of what they saw up there. Then they are besides themselves, and their experience is beyond their comprehension because they cannot fully grasp what it is that they are seeing. 
+>
+> Justice and self-control do not shine out through their images down here, and neither do the other objects of the soul's admiration; the senses are so murky that only a few people are able to make out, with difficulty, the original of the likenesses they encounter here. (250a-b)
+---
+class: f28px
+## *Ecstasis* & *Eidos* II
+
+> SOCRATES: But beauty was radiant to see at that time when the souls, along with the glorious chorus … saw that blessed and spectacular vision and were ushered into the mystery that we may rightly call the most blessed of all. And we who celebrated it were wholly perfect and free of all the troubles that awaited us in time to come and we gazed in rapture at sacred revealed objects that were perfect, and simple, and unshakeable and blissful. That was the ultimate vision, and we saw it in pure light because we were pure ourselves, not buried in this thing we are carrying around now, which we call a body, locked in it like an oyster in its shell. (250b-c)
+---
+class: f33px
+## What Makes a Speech Good?
+
+> SOCRATES: Won't someone who is to speak well and nobly have to have in mind the truth about the subject he is about to discuss?
+>
+> PHAEDRUS: What I have actually heard about this, Socrates, my friend, **is that it is not necessary for the intending orator to learn what is really just**, but only what will seem just to the crowd who will act as judges. (259e-260a)
+---
+class: f22px
+## Rhetoric and eidos
+
+> SOCRATES: And so, when a rhetorician who does not know good from bad addresses a city which knows no better and attempts to sway it, not praising a miserable donkey as if it were a horse, but bad as if it were good, and, having studied what the people believe, persuades them to do something bad instead of good—with that as its seed, what sort of crop do you think rhetoric can harvest?
+>
+> PHAEDRUS: A crop of really poor quality.
+>
+> SOCRATES: But could it be, my friend, that we have mocked the art of speaking more rudely than it deserves? For it might perhaps reply, "What bizarre nonsense! Look I am not forcing anyone to learn how to make speeches without knowing the truth; on the contrary, my advice, for what it is worth, is to take me up only after mastering the truth. But I do make this boast: even someone who knows the truth couldn't produce conviction on the basis of a systematic art without me." (260C-D)
+---
+class: f24px
+## Directing the Soul
+
+> SOCRATES: Well, then, isn't the rhetorical art, taken as a whole, a way of directing the soul by means of speech, not only in the lawcourts and on other public occasions but also in private? Isn't it one and the same art whether its subject is great or small, and no more to be held in esteem—if it is followed correctly—when its questions are serious than when they are trivial? Or what have you heard about all this?
+>
+> PHAEDRUS: Well, certainly not what *you* have! Artful speaking and writing is found mainly in the lawcourts; also perhaps in the Assembly. That's all I've heard.
+>
+> SOCRATES: Well, have you only heard of the rhetorical treatises of Nestor and Odysseus—those they wrote in their spare time in Troy? Haven't you also heard of the works of Palamedes? (261a-b)
+---
+class: f22px, no-margin
+## *Eidos* and the Directed Soul
+
+> SOCRATES: When someone utters the words "iron" or "silver," don't we all think of the same thing? ...
+>
+> SOCRATES: But what happens when we say "just" or "good"? Doesn't each one of us go in a different direction? Don't we differ with one another and even with ourselves? ...
+>
+> SOCRATES: Therefore, we agree about the former and disagree about the latter. ...
+>
+> SOCRATES: Now in which of these two cases are we most easily deceived? And when does rhetoric have greater power?
+>
+> PHAEDRUS: Clearly, when we wander in different directions.
+>
+> SOCRATES: It follows that whoever wants to acquire the art of rhetoric must first make systematic division and grasp the particular character of each of these two kinds of thing, both the kind where most people wander in different directions and the kind where they do not. (263a-b)
+---
+class: f23px, no-margin
+## Socrates the Sophist
+
+> SOCRATES: Well, now, what shall we say about love? Does it belong to the class where people differ or to that where they don't?
+>
+> PHAEDRUS: Oh, surely the class where they differ. Otherwise, do you think you could have spoken of it as you did a few minutes ago, first saying that it is harmful both to lover and beloved and then immediately afterward that it is the greatest good?
+>
+> SOCRATES: Very well put. But now tell me this—I can't remember at all because I was completely possessed by the gods: Did I define love at the beginning of my speech?
+>
+> PHAEDRUS: Oh, absolutely, by Zeus, you most certainly did.
+>
+> SOCRATES: Alas, how much more artful with speeches the Nymphs, daughters of Achelous, and Pan, son of Hermes, are, according to what you say, than Lysias, son of Cephalus! (263c-d)
+---
+class: f21px, no-margin
+## Potion and Audience
+
+> SOCRATES: All right, tell me this. Suppose someone came to your friend Eryximachus or his father Acumenus and said: “I know treatments to raise or lower (whichever I prefer) the temperature of people’s bodies; if I decide to, I can make them vomit or make their bowels move, and all sorts of things. On the basis of this knowledge, I claim to be a physician; and I claim to be able to make others physicians as well by imparting it to them.” What do you think they would say when they heard that?
+>
+> PHAEDRUS: What could they say? They would ask him if he also knew to whom he should apply such treatments, when, and to what extent.
+>
+> SOCRATES: What if he replied, “I have no idea. My claim is that whoever learns from me will manage to do what you ask on his own“?
+>
+> PHAEDRUS: I think they’d say the man’s mad if he thinks he’s a doctor just because he read a book or happened to come across a few potions; he knows nothing of the art. (268b-c)
+---
+class: f34px
+## Rhetoric as Soul Nourishing
+
+> SOCRATES: In both cases we need to determine the nature of something— of the body in medicine, of the soul in rhetoric. Otherwise, all we’ll have will be an empirical and artless practice. We won’t be able to supply, on the basis of an art, a body with the medicines and diet that will make it healthy and strong, or a soul with the reasons and customary rules for conduct that will impart to it the convictions and virtues we want. (270b)
+---
+class: f24px, no-margin
+## Directed Soul at Work
+
+> SOCRATES: Since the nature of speech is in fact to direct the soul, whoever intends to be a rhetorician must know how many kinds of soul there are. Their number is so-and-so many; each is of such-and-such a sort; hence some people have such-and-such a character and others have such-and-such. Those distinctions established, there are, in turn, so-and-so many kinds of speech, each of such-and-such a sort. People of such-and-such a character are easy to persuade by speeches of such-and-such a sort in connection with such-and-such an issue for this particular reason, while people of such-and-such another sort are difficult to persuade for those particular reasons.
+>
+> The orator must learn all this well, then put his theory into practice and develop the ability to discern each kind clearly as it occurs in the actions of real life. Otherwise, he won't be any better off than he was when he was still listening to those discussions in school. (271d-e)
+---
+class: f24px
+## Eikos
+
+> SOCRATES: Well, these people say that there is no need to be so solemn about all this and stretch it out to such lengths. For the fact is, as we said ourselves at the beginning of this discussion, that one who intends to be
+an able rhetorician has no need to know the truth about the things that
+are just or good or yet about the people who are such either by nature or upbringing. No one in a lawcourt, you see, cares at all about the truth of
+such matters. They only care about what is convincing. This is called “the likely,” and that is what a man who intends to speak according to art should concentrate on. Sometimes, in fact, whether you are prosecuting
+or defending a case, you must not even say what actually happened, if it
+was not likely to have happened—you must say something that is likely instead. Whatever you say, you should pursue what is likely and leave
+the truth aside: the whole art consists in cleaving to that throughout your speech. (272d-273a)
+---
+class: f25px
+## Limits of Eikos
+
+> SOCRATES: And it’s likely it was when he discovered this clever and artful technique that Tisias wrote that if a weak but spunky man is taken to court because he beat up a strong but cowardly one and stole his cloak or something else, neither one should tell the truth. The coward must say that the spunky man didn’t beat him up all by himself, while the latter must rebut this by saying that only the two of them were there, and fall back on that well-worn plea, “How could a man like me attack a man like him?” The strong man, naturally, will not admit his cowardice, but will try to invent some other lie, and may thus give his opponent the chance to refute him. And in other cases, speaking as the art dictates will take similar forms. Isn’t that so, Phaedrus? (275a-b)
+---
+class: f37px
+## Order and Chaos
+
+> SOCRATES: Well, this is what I’ve heard. Among the ancient gods of Naucratis in Egypt there was one to whom the bird called the ibis is sacred. The name of that divinity was Theuth, and it was he who first discovered number and calculation, geometry and astronomy, as well as the games of checkers and dice, and, above all else, writing. (274c-d)
+---
+class: f21px, no-margin
+## Writing!
+
+> The story goes that Thamus said much to Theuth, both for and against each art, which it would take too long to repeat. But when they came to writing, Theuth said: “O King, here is something that, once learned, will make the Egyptians wiser and will improve their memory; I have discovered a potion for memory and for wisdom.” Thamus, however, replied: “O most expert Theuth, one man can give birth to the elements of an art, but only another can judge how they can benefit or harm those who will use them. And now, since you are the father of writing, your affection for it has made you describe its effects as the opposite of what they really are. In fact, it will introduce forgetfulness into the soul of those who learn it: they will not practice using their memory because they will put their trust in writing, which is external and depends on signs that belong to others, instead of trying to remember from the inside, completely on their own. You have not discovered a potion for remembering, but for reminding; you provide your students with the appearance of wisdom, not with its reality. Your invention will en- able them to hear many things without being properly taught, and they will imagine that they have come to know much while for the most part they will know nothing. And they will be difficult to get along with, since they will merely appear to be wise instead of really being so.” (274d-275a)
+
+
+---
+class: no-margin
+## Ghosts
+
+> SOCRATES: Well, then, those who think they can leave written instructions for an art, as well as those who accept them, thinking that writing can yield results that are clear or certain, must be quite naive and truly ignorant of Ammon’s prophetic judgment: otherwise, how could they possibly think that words that have been written down can do more than remind those who already know what the writing is about?
+>
+> PHAEDRUS: Quite right.
+>
+> SOCRATES: You know, Phaedrus, writing shares a strange feature with painting. The offsprings of painting stand there as if they are alive, but if anyone asks them anything, they remain most solemnly silent. The same is true of written words. You’d think they were speaking as if they had some understanding, but if you question anything that has been said because you want to learn more, it continues to signify just that very same thing forever. When it has once been written down, every discourse roams about everywhere, reaching indiscriminately those with understanding no less than those who have no business with it, and it doesn’t know to whom it should speak and to whom it should not. And when it is faulted and attacked unfairly, it always needs its father’s support; alone, it can neither defend itself nor come to its own support. (275c-e)
+---
+class: f26px
+## Writing and the Soul
+
+> SOCRATES: Now tell me, can we discern another kind of discourse, a legitimate brother of this one? Can we say how it comes about, and how it is by nature better and more capable?
+>
+> PHAEDRUS: Which one is that? How do you think it comes about?
+> 
+> SOCRATES: It is a discourse that is written down, with knowledge, in the soul of the listener; it can defend itself, and it knows for whom it should speak and for whom it should remain silent.
+>
+> PHAEDRUS: You mean the living, breathing discourse of the man who knows, of which the written one can be fairly called an image. (276a)
+
+---
+class: f24px, no-margin
+## Purpose of Dialogue
+
+> SOCRATES: On the other hand, take a man who thinks that a written discourse on any subject can only be a great amusement, that no discourse worth serious attention has ever been written in verse or prose, and that those that are recited in public without questioning and explanation, in the manner of the rhapsodes, are given only in order to produce conviction. He believes that at their very best these can only serve as reminders to those who already know. And he also thinks that only what is said for the sake of understanding and learning, what is truly written in the soul concerning what is just, noble, and good can be clear, perfect, and worth serious attention: Such discourses should be called his own legitimate children, first the discourse he may have discovered already within himself and then its sons and brothers who may have grown naturally in other souls insofar as these are worthy; to the rest, he turns his back. Such a man, Phaedrus, would be just what you and I both would pray to become. (277e-278b)
+---
+class: f34px
+## Writing and Knowledge
+
+> SOCRATES: If any one of you has composed these things with a knowledge of the truth, if you can defend your writing when you are challenged, and if you can yourself make the argument that your writing is of little worth, then you must be called by a name derived not from these writings but rather from those things that you are seriously pursuing. (278c-d)
+
+
+</textarea>
+  </body>
+</html>
+
