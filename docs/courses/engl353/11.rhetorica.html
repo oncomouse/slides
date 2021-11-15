@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 353 Rhetorica Ad Herennium
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center
+
+# *Rhetorica Ad Herennium*
+---
+class: f35px
+## Origins
+
+* Anonymous author, late-80s BC
+	* Gaius Herennius, also unknown
+* Part of a move to popularize liberal arts
+	* political tool
+	* Greek-speaking elites
+	* L. Plotius Gallus, 93 BC, Latin rhetoric school
+---
+class: f36px
+## Survival
+
+* First complete Latin rhetoric manual
+* Attributed to Cicero
+	* Hence survival
+* Over 100 manuscript copies survive
+* Translated in French in 1282
+	* Vernacular languages in Renaissance
+
+---
+class: f34px
+## Composition
+
+* Synthesis of many rhetorical traditions
+* Roman attitude toward occupied territory
+* Contradictory nature
+* Perfunctory treatment of many topics
+
+---
+## Opening
+
+> Yet your desire, Gaius Herennius, has spurred me to compose a work on the Theory of Public Speaking, lest you should suppose that in a matter which concerns you I either lacked the will or shirked the labour. And I have undertaken this project the more gladly because I knew that you had good grounds in wishing to learn rhetoric, for it is true that copiousness and facility in expression bear abundant fruit, if controlled by proper knowledge and a strict discipline of the mind. (I.i)
+
+---
+## Justification
+
+> That is why I have omitted to treat those topics which, for the sake of futile self-assertion, Greek writers have adopted. For they, from fear of appearing to know too little, have gone in quest of notions irrelevant to the art, in order that the art might seem more difficult to understand. I, on the other hand, have treated those topics which seemed pertinent to the theory of public speaking. I have not been moved by hope of gain or desire for glory, as the rest have been, in undertaking to write, but have done so in order that, by my painstaking work, I may gratify your wish. To avoid prolixity, I shall now begin my discussion of the subject, as soon as I have given you this one injunction: Theory without continuous practice in speaking is of little avail; from this you may understand that the precepts of theory offered ought to be applied in practice. (I.ii)
+---
+## Five Canons of Rhetoric
+
+> The speaker, then, should possess the faculties of Invention, Arrangement, Style, Memory, and Delivery. Invention is the devising of matter, true or plausible, that would make the case convincing. Arrangement is the ordering and distribution of the matter, making clear the place to which each thing is to be assigned. Style is the adaptation of suitable words and sentences to the matter devised. Memory is the firm retention in the mind of the matter, words, and arrangement. Delivery is the graceful regulation of voice, countenance, and gesture. (II.iii)
+---
+## Methods of Instruction
+
+> All these faculties we can acquire by three means: Theory, Imitation, and Practice. By theory is meant a set of rules that provide a definite method and system of speaking. Imitation stimulates us to attain, in accordance with a studied method, the effectiveness of certain models in speaking. Practice is assiduous exercise and experience in speaking. (II.iv)
+---
+## Division of a Speech
+
+>  Invention is used for the six parts of a discourse: the Introduction, Statement of Facts, Division, Proof, Refutation, and Conclusion. The Introduction is the beginning of the discourse, and by it the hearer's mind is prepared for attention. The Narration or Statement of Facts sets forth the events that have occurred or might have occurred. By means of the Division we make clear what matters are agreed upon and what are contested, and announce what points we intend to take up. Proof is the presentation of our arguments, together with their corroboration. Refutation is the destruction of our adversaries' arguments. The Conclusion is the end of the discourse, formed in accordance with the principles of the art. (III.i)
+---
+## <small>Four Well-disposed Methods 1</small> Our Own Person
+
+> From the discussion of our own person we shall secure goodwill by praising our services without arrogance and revealing also our past conduct toward the republic, or toward our parents, friends, or the audience, and by making some reference to . . . provided that all such references are pertinent to the matter in question; likewise by setting forth our disabilities, need, loneliness, and misfortune,​25 and pleading for our hearers' aid, and at the same time showing that we have been unwilling to place our hope in anyone else. (V.i)
+
+---
+## <small>Four Well-disposed Methods 2</small> Our Adversary
+
+> From the discussion of the person of our adversaries we shall secure goodwill by bringing them into hatred, unpopularity, or contempt.​26 We shall force hatred upon them by adducing some base, high-handed, treacherous, cruel, impudent, malicious, or  p17 shameful act of theirs. We shall make our adversaries unpopular by setting forth their violent behaviour, their dominance, factiousness, wealth, lack of self-restraint, high birth, clients, hospitality, club allegiance, or marriage alliances, and by making clear that they rely more upon these supports than upon the truth. We shall bring our adversaries into contempt by presenting their idleness, cowardice, sloth, and luxurious habits. (V.ii)
+
+---
+## <small>Four Well-disposed Methods 3 & 4</small> Hearer and Facts
+
+> From the discussion of the person of our hearers goodwill is secured if we set forth the courage, wisdom, humanity, and nobility of past judgements they have rendered, and if we reveal what esteem they enjoy and with what interest their decision is awaited.
+> 
+> From the discussion of the facts themselves we shall render the hearer well-disposed by extolling our own cause with praise and by contemptuously disparaging that of our adversaries. (V.iii-iv)
+---
+## Enlarged Upon
+
+> If the cause has a discreditable character, we can make our Introduction with the following points: that the agent, not the action, ought to be considered; that we ourselves are displeased with the acts which our opponents say have been committed, and that these are unworthy, yes, heinous. Next, when we have for a time enlarged upon this idea, we shall show that nothing of the kind has been committed by us. Or we shall set forth the judgement rendered by others in an analogous case, whether that cause be of equal, or less, or greater importance; then we shall gradually approach our own cause and establish the analogy. The same result is achieved if we deny an intention to discuss our opponents or some extraneous matter and yet, by subtly inserting the words, do so. (VI.ii)
+---
+## *Progymnasmata*
+
+> The third type is not used in a cause actually pleaded in court, yet affords us convenient practice for handling the first two types more advantageously in actual cases. Of such narratives there are two kinds: one based on the facts, the other on the persons
+> 
+> The kind of narrative based on the exposition of the facts presents three forms: legendary, historical, and realistic. The legendary tale comprises events neither true nor probable, like those transmitted by   tragedies. The historical narrative is an account of exploits actually performed, but removed in time from the recollection of our age. Realistic narrative recounts imaginary events, which yet could have occurred, like the plots of comedies
+> 
+> A narrative based on the persons should present a lively style and diverse traits of character, such as austerity and gentleness, hope and fear, distrust and desire, hypocrisy and compassion, and the vicissitudes of life, such as reversal of fortune, unexpected disaster, sudden joy, and a happy outcome. But it is in practice exercises that these types will be worked out. How we should handle that type of Statement of Facts which belongs in actual causes I am about to explain. (VIII.i-iii)
+
+
+</textarea>
+  </body>
+</html>
+
