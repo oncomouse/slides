@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .chicago, .skyscraper {
 	p {
 		line-height: 1.25;
@@ -10,7 +12,7 @@
 	}
 
 	.topic {
-		font-size: (1.5em / 0.67);
+		font-size: math.div(1.5em, 0.67);
 		line-height: 1.25rem;
 	}
 }
@@ -21,7 +23,7 @@
 	}
 
 	.topic {
-		font-size: (1.5em / 0.57);
+		font-size: math.div(1.5em, 0.57);
 		line-height: 1.25rem;
 	}
 }

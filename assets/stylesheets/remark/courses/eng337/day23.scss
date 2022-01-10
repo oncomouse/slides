@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .small {
 	font: {
 		size: 0.95em;
@@ -8,7 +10,7 @@
 	}
 
 	.topic {
-		font-size: (1.5em / 0.8);
+		font-size: math.div(1.5em, 0.8);
 	}
 }
 
@@ -50,7 +52,7 @@
 	};
 
 	.topic {
-		font-size: (1.5em / 0.9);
+		font-size: math.div(1.5em, 0.9);
 	}
 }
 
@@ -93,6 +95,6 @@
 	};
 
 	.topic {
-		font-size: (1.5em / 0.8);
+		font-size: math.div(1.5em, 0.8);
 	}
 }

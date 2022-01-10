@@ -6,6 +6,8 @@
  *		user zoom.
  */
 
+@use "sass:math";
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -428,7 +430,7 @@ th {
 html {
 	/* Change default typefaces here */
 	font-family: serif;
-	font-size: $baseFontSize / 16 * 100%;
+	font-size: math.div($baseFontSize, 16) * 100%;
 
 	// Make everything look a little nicer in webkit
 	-webkit-font-smoothing: antialiased;
@@ -499,15 +501,15 @@ h3 {
 }
 
 h4 {
-	font-size: $scale / 2 * 1rem;
+	font-size: $scale * 0.5 * 1rem;
 }
 
 h5 {
-	font-size: $scale / 3 * 1rem;
+	font-size: math.div($scale, 3) * 1rem;
 }
 
 h6 {
-	font-size: $scale / 4 * 1rem;
+	font-size: $scale * 0.25 * 1rem;
 }
 
 /* Tables */

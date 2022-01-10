@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .rinehart {
 	font: {
 		size: 0.85em;
@@ -29,7 +31,7 @@
 		size: 0.9em;
 	};
 	.topic {
-		font-size: (1.5em / 0.9);
+		font-size: math.div(1.5em, 0.9);
 	}
 }
 
@@ -81,6 +83,6 @@
 		line-height: 1.25;
 	}
 	.topic {
-		font-size: (1.5em / 0.8);
+		font-size: math.div(1.5em, 0.8);
 	}
 }

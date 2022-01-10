@@ -1,3 +1,5 @@
+@use "sass:list";
+
 @function circleOffset($firstCircleOffset, $circleWidth, $circleOverlap, $i:1) {
     @return $firstCircleOffset + (($i - 1) * ($circleWidth - $circleOverlap));
 }
@@ -11,7 +13,7 @@
         height: $circleHeight;
         width: $circleWidth;
         border: 1px solid black;
-        border-radius: #{$circleWidth / 2} / #{$circleHeight / 2};
+        border-radius: list.slash($circleWidth * 0.5, $circleHeight * 0.5);
         background: transparent;
         position: absolute;
         top: 80px;
