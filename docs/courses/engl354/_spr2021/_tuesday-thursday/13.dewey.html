@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 13 (Dewey)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# John Dewey, From *The Public and Its Problems*
+---
+## Democracy as Idea; Democracy as Government
+
+> We have had occasion to refer in passing to the distinction between democracy as a social idea and political democracy as a system of government. The two are, of course, connected. The idea remains barren and empty save as it is incarnated in human relationships. Yet in discussion they must be distinguished. The idea of democracy is a wider and fuller idea than can be exemplified in the state even at its best. To be realized it must affect all modes of human association, the family, the school, industry, religion. And even as far as political arrangements are concerned, governmental institutions are but a mechanism for securing to an idea channels of effective operation. It will hardly do to say that criticisms of the political machinery leave the believer in the idea untouched. (119)
+---
+class: big
+## Machinery?
+
+> We object to the common supposition of the foes of existing democratic government that the accusations against it touch the social and moral aspirations and ideas which underlie the political forms. The old saying that the cure for the ills of democracy is more democracy is not apt if it means that the evils may be remedied by introducing more machinery of the same kind as that which already exists, or by refining and perfecting that machinery. (119)
+
+---
+class: big
+## Technology & Government
+
+> The transition from family and dynastic government supported by the loyalties of tradition to popular government was the outcome primarily of technological discoveries and inventions working a change in the customs by which men had been bound together. It was not due to the doctrines of doctrinaires. The forms to which we are accustomed in democratic governments represent the cumulative effect of a multitude of events, unpremeditated as far as political effects were concerned and having unpredictable consequences. (120)
+---
+class: big
+## Consciousness vs Education
+
+> We have every reason to think that whatever changes may take place in existing democratic machinery, they will be of a sort to make the interest of the public a more supreme guide and criterion of governmental activity, and to enable the public to form and manifest its purposes still more authoritatively. In this sense the cure for the ailments of democracy is more democracy. The prime difficulty, as we have seen, is that of discovering the means by which a scattered, mobile and manifold public may so recognize itself as to define and express its interests. This discovery is necessarily precedent to any fundamental change in the machinery. (121)
+---
+class: bigger
+## Democracy *is* Community
+
+> Regarded as an idea, democracy is not an alternative to other principles of associated life. It is the idea of community life itself. It is an ideal in the only intelligible sense of an ideal: namely, the tendency and movement of something which exists carried to its final limit, viewed as completed, perfected. (122)
+---
+## Compare to Lippmann on Education
+
+> To learn to be human is to develop through the give-and-take of communication an effective sense of being an individually distinctive member of a community; one who understands and appreciates its beliefs, desires and methods, and who contributes to a further conversion of organic powers into human resources and values. But this translation is never finished. The old Adam, the unregenerate element in human nature, persists. It shows itself wherever the method obtains of attaining results by use of force instead of by the method of communication and enlightenment. It manifests itself more subtly, pervasively, and effectually when knowledge and the instrumentalities of skill which are the product of communal life are employed in the service of wants and impulses which have not themselves been modified by reference to a shared interest. (125)
+---
+## Habit
+
+> The influence of habit is decisive because all distinctively human action has to be learned, and the very heart, blood and sinews of learning is creation of habitudes. Habits bind us to orderly and established ways of action because they generate ease, skill and interest in things to which we have grown used and because they instigate fear to walk in different ways, and because they leave us incapacitated for the trial of them. Habit does not preclude the use of thought, but it determines the channels within which it operates. Thinking is secreted in the interstices of habits. The sailor, miner, fisherman and farmer think, but their thoughts fall within the framework of accustomed occupations and relationships. We dream beyond the limits of use and wont, but only rarely does revery become a source of acts which break bounds; so rarely that we name those in whom it happens demonic geniuses and marvel at the spectacle. (128)
+---
+## Science as a Communication Problem
+
+> What is more important, however, is that so much of knowledge is not knowledge in the ordinary sense of the word, but is ‘‘science.’’ The quotation marks are not used disrespectfully, but to suggest the technical character of scientific material. The layman takes certain conclusions which get into circulation to be science. But the scientific inquirer knows that they constitute science only in connection with the methods by which they are reached. Even when true, they are not science in virtue of their correctness, but by reason of the apparatus which is employed in reaching them. This apparatus is so highly specialized that it requires more labor to acquire ability to use and understand it than to get skill in any other instrumentalities possessed by man. Science, in other words, is a highly specialized language, more difficult to learn than any natural language. (130)
+---
+## Infrastructure
+
+> Meanwhile the technological application of the complex apparatus which is science has revolutionized the conditions under which associated life goes on. This may be known as a fact which is stated in a proposition and assented to. But it is not known in the sense that men understand it. They do not know it as they know some machine which they operate, or as they know electric light and steam locomotives. They do not understand how the change has gone on nor how it affects their conduct. Not understanding its ‘‘how,’’ they cannot use and control its manifestations. They undergo the consequences, they are affected by them. They cannot manage them, though some are fortunate enough—what is commonly called good fortune—to be able to exploit some phase of the process for their own personal profit. But even the most shrewd and successful man does not in any analytic and systematic way—in a way worthy to compare with the knowledge which he has won in lesser affairs by means of the stress of experience—know the system within which he operates. (131)
+---
+## Scientific Democracy
+
+> Why should the public and its officers, even if the latter are termed statesmen, be wiser and more effective? The prime condition of a democratically organized public is a kind of knowledge and insight which does not yet exist. In its absence, it would be the height of absurdity to try to tell what it would be like if it existed. But some of the conditions which must be fulfilled if it is to exist can be indicated. We can borrow that much from the spirit and method of science even if we are ignorant of it as a specialized apparatus. An obvious requirement is freedom of social inquiry and of distribution of its conclusions. The notion that men may be free in their thought even when they are not in its expression and dissemination has been sedulously propagated. (131-2)
+---
+## News
+
+> A glance at the situation shows that the physical and external means of collecting information in regard to what is happening in the world have far outrun the intellectual phase of inquiry and organization of its results. Telegraph, telephone, and now the radio, cheap and quick mails, the printing press, capable of swift reduplication of material at low cost, have attained a remarkable development. But when we ask what sort of material is recorded and how it is organized, when we ask about the intellectual form in which the material is presented, the tale to be told is very different. ‘‘News’’ signifies something which has just happened, and which is new just because it deviates from the old and regular. But its *meaning* depends upon relation to what it imports, to what its social consequences are. (138-9)
+---
+## Art?
+
+> The freeing of the artist in literary presentation, in other words, is as much a precondition of the desirable creation of adequate opinion on public matters as is the freeing of social inquiry. Men’s conscious life of opinion and judgment often proceeds on a superficial and trivial plane. But their lives reach a deeper level. The function of art has always been to break through the crust of conventionalized and routine consciousness. Common things, a flower, a gleam of moonlight, the song of a bird, not things rare and remote, are means with which the deeper levels of life are touched so that they spring up as desire and thought. This process is art. Poetry, the drama, the novel, are proofs that the problem of presentation is not insoluble. Artists have always been the real purveyors of news, for it is not the outward happening in itself which is new, but the kindling by it of emotion, perception and appreciation. (141)
+
+</textarea>
+  </body>
+</html>
+

@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 7 (Writing Day 1)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center
+
+# Writing Day 1
+---
+## Scholarly Writing
+
+> Imagine that you enter a parlor. You come late. When you arrive, others have long preceded you, and they are engaged in a heated discussion, a discussion too heated for them to pause and tell you exactly what it is about. In fact, the discussion had already begun long before any of them got there, so that no one present is qualified to retrace for you all the steps that had gone before. You listen for a while, until you decide that you have caught the tenor of the argument; then you put in your oar. Someone answers; you answer him; another comes to your defense; another aligns himself against you, to either the embarrassment or gratification of your opponent, depending upon the quality of your ally's assistance. However, the discussion is interminable. The hour grows late, you must depart. And you do depart, with the discussion still vigorously in progress (Kenneth Burke, *The Philosophy of Literary Forms*)
+---
+
+## Reading Not For Fun (Reading For Research)
+
+1. "Why Does This Exist?"
+	* What problem is the author trying to solve?
+	* What's the conversation?
+	* Who are they engaging?
+		* Support
+		* Against
+1. "What Seems Interesting?"
+	* Mark things that seem important
+		* To You
+		* To the Author
+	* Find the thesis and circle it
+1. "What Do I Already Know?"
+	* Find familiar words / arguments
+		* How are they used?
+	* Summarize in margins what you think author means
+---
+
+![](https://dl.dropboxusercontent.com/u/28696035/Photo%20Feb%2009%2C%2012%2007%2042%20PM.jpg)
+
+---
+## Quoting, Summarizing, Paraphrasing
+
+* Three ways to bring in outside sources:
+	* **Quoting**: incorporating the words of others directly into your writing
+	* **Summarizing**: explaining briefly the major argument of a work
+	* **Paraphrasing**: presenting the specifics of someone else's idea in your words
+* Why we use outside sources (from [Purdue's OWL](https://owl.english.purdue.edu/owl/resource/563/01/))
+	* Provide support for claims or add credibility to your writing
+	* Refer to work that leads up to the work you are now doing
+	* Give examples of several points of view on a subject
+	* Call attention to a position that you wish to agree or disagree with
+	* Highlight a particularly striking phrase, sentence, or passage by quoting the original
+	* Distance yourself from the original by quoting it in order to cue readers that the words are not your own
+	* Expand the breadth or depth of your writing
+
+---
+## Three Examples
+
+### Quotation
+
+In reference to rhetoric's endless discussion of what it is, John Mucklebauer suggests that the field "seems never to stray very far from the question of what it is" (n.p.).
+
+### Paraphrasing
+
+Mucklebauer continues by arguing that this is ok and part of the process of rhetoric, maybe even rhetoric itself, is to never finally arrive at an answer to the question that inaugurates this discussion.
+
+### Summarizing
+
+John Mucklebauer's essay, "Returns of the Question," clarifies the debate about rhetoric's relationship with composition by suggesting that any such discussion is, instead, more importantly, to engage in the never-ending process of attempting to say once and for all what rhetoric actually is. In this cycle of eternal return, Mucklebauer suggests that any attempt to define rhetoric is only ever strategic, reminding us that such a strategic usage of language has always been at the core of our practice.
+
+---
+class: bigger
+## When To Use?
+
+1. **Quotation**—When the specific wording matters or the essay is important enough to walk through at length
+1. **Paraphrase**—When you don't want to quote but are using some detail (can be useful for grammar)
+1. **Summary**—When the work is only of peripheral importance to your argument
+
+---
+class: big
+## Summary
+
+* How Do I Do This?
+	* Put Yourself in Their Shoes
+	* But Don't Forget Who You Are
+* Two reasons
+	1. **Notes**—Need to remind yourself what the article said for later recall.
+	1. **Argument**—Need to support a specific point; summary then becomes *how* article relates to your work.
+* When would this be important?
+	1. The dreaded literature review
+	1. Ethos (good or bad)
+	1. Reminding readers of a tangential point or work they should know
+	1. Framing quotes (see next two slides)
+
+---
+## Quotation (Framing)
+
+* Make a quotation sandwich
+	* Introduce the quote
+	* Explain the quote
+* When introducing: who is speaking? who are they?
+	* "As Joe Smith writes ..." is ok
+	* "As rhetorician Joe Smith writes ..." is better
+	* "In a 1991 article on topos and logos, rhetorician Joe Smith argues ... " is best
+* Quotes don't speak for themselves
+* Don't say that a quotes says or reads
+	* "A quotes by William Shakespeare says" 
+	* "Orwell asserts an idea that"
+	* **NO**
+* Tell me why the quote matters
+	* To you
+	* To your argument
+	* To me
+* Use summarization to set up the context for the argument so it's clear to me
+---
+class: big
+## Quotation Framing (Bad Example)
+
+>  Susan Bordo writes about women and dieting. "Fiji is just one example. Until television was introduced in 1995, the islands had no reported cases of eating disorders. In 1998, three years after programs from the US and Britain began broadcasting there, 62 percent of the girls surveyed reported dieting." I think Bordo is right. Another point Bordo makes is that ... 
+
+(Example from *They Say I Say*)
+---
+## Quotation Framing (Good Example)
+
+> The feminist philosopher Susan Bordo deplores Western media's obsession with female thinness and dieting. Her basic complaint is that increasing numbers of women across the globe are being led to see themselves as fat and in need of a diet. Citing the islands of Fiji as a case in point, Bordo notes that "until television was introduced in 1995, the islands had no reported cases of eating disorders. In 1998, three years after programs from the US and Britain began broadcasting there, 62 percent of the girls surveyed reported dieting" (149-150). Bordo's point is that the Western cult of dieting is spreading even to remote places across the globe. Ultimately, Bordo complains, the culture of dieting will find you, regardless of where you live.
+
+(Example from *They Say I Say*)
+
+---
+class: big
+## Working With Quotes
+
+* Quote longer than four lines of essay body must be a block quote
+	* In MLA: indent by one inch, no quotation marks, citation information goes *after* the period.
+* Only quote relevant information.
+	* Generally statistics
+	* Things well said
+	* Specific verbiage that is important to your argument
+* To "edit" a quote use elipses (...) to indicate what was taken out
+* Can refer back to quote in later remarks (as we saw above, short phrase from quote, etc.)
+
+---
+class: middle, center
+# Exercise
+
+
+</textarea>
+  </body>
+</html>
+

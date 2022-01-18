@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Malinowski
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Bronislaw Malinowski, From *Myth in Primitive Psychology*
+---
+class: f32px
+## Myth As It Exists
+
+> Myth as it exists in a savage community, that is, in its living primitive form, is not merely a story told but a reality lived. It is not of the nature of fiction, such as we read today in a novel, but it is a living reality, believed to have once happened in primeval times, and continuing ever since to influence the world and human destinies … As our sacred story lives in our ritual, in our morality, as it governs our faith and controls our conduct, even so does his myth for the savage. (177)
+---
+class: f25px
+## Myth Alive
+
+> Studied alive, myth, as we shall see, is not symbolic, but a direct expression of its subject matter; it is not an explanation in satisfaction of a scientific interest, but a narrative resurrection of a primeval reality, told in satisfaction of deep religious wants, moral cravings, social submissions, assertions, even practical requirements. Myth fulfills in primitive culture an indispensable function: it expresses, enhances, and codifies belief; it safeguards and enforces morality; it vouches for the efficiency of ritual and contains practical rules for the guidance of man. Myth is thus a vital ingredient of human civilization; it is not an idle tale, but a hard-worked active force; it is not an intellectual explanation or an artistic imagery, but a pragmatic charter of primitive faith and moral wisdom. (177)
+---
+class: f31px
+## Myth as Charter
+
+> There is no important magic, no ceremony, no ritual without belief; and the belief is spun out into accounts of concrete precedent. The union is very intimate, for myth is not only looked upon as a commentary of additional information, but it is a warrant, a charter, and often even a practical guide to the activities with which it is connected. On the other hand the rituals, ceremonies, customs, and social organization contain at times direct references to myth, and they are regarded as the results of mythical event. (178)
+---
+class: f27px
+## Myth's Structuring Role
+
+> This is perhaps the most important point of the thesis which I am urging: I maintain that there exists a special class of stories, regarded as sacred, embodied in ritual, morals, and social organization, and which form an integral and active part of primitive culture. These stories live not by idle interest, not as fictitious or even as true narratives; but are to the natives a statement of a primeval, greater, and more relevant reality, by which the present life, fates, and activities of mankind are determined, the knowledge of which supplies man with the motive for ritual and moral actions, as well as with indications as to how to perform them. (178)
+---
+class: f36px
+## Myth Starts To Sound Like Rhetoric
+
+> The whole treatment appears to us faulty, because myths are treated as mere stories, because they are regarded as a primitive intellectual armchair occupation, because they are torn out of their life context, and studied from what they look like on paper, and not from what they do in life. (179)
+---
+class: f32px
+## Functional Aspect of a Story
+
+> The intellectual nature of a story is exhausted with its text, but the functional, cultural, and pragmatic aspect of any native tale is manifested as much in its enactment, embodiment, and contextual relations as in the text. It is easier to write down the story than to observe the diffuse, complex ways in which it enters into life, or to study its function by the vast social and cultural realities into which it enters. And this is the reason why we have so many texts and why we know so little about the very nature of myth. (179-80)
+---
+class: f24px
+## Why Myth?
+
+> The science of myth in living higher cultures, such as the present civilization of India, Japan, China, and last but not least, our own, might well be inspired by the comparative study of primitive folklore; and in its turn civilized culture could furnish important additions and explanations to savage mythology. This subject is very much beyond the scope of the present study. I do, however, want to emphasize the fact that anthropology should be not only the study of savage custom in the light of our mentality and our culture, but also the study of our own mentality in the distant perspective borrowed from Stone Age man. By dwelling mentally for some time among people of a simpler culture than our own, we may be able to see ourselves from a distance, we may be able to gain a new sense of proportion with regard to our own institutions, beliefs, and customs. (184)
+
+
+</textarea>
+  </body>
+</html>
+

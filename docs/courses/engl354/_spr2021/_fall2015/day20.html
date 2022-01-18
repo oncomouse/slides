@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 - Day 20 (Marback)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: bigger, middle
+
+.center[
+# Richard Marback
+]
+
+1. Rhetoric in the City
+1. Spatial and Rhetorical Power
+1. Writing the City
+1. Unclenching the Fist
+1. Where is Meaning?
+
+---
+
+class: middle
+
+## The Fate of the Open Hand
+
+> Yet open-handedness no longer embodies the rhetorical activities, perspectives, and values of persons who share life in cities. In the United States, material conditions and mass media representations of postindustrial urban space, as well as expressions of difference, questions of identity, and conflicts over multiculturalism, have overwhelmed the figure's resonance. Suburban sprawl, the proliferation of privatized consumer spaces, and the fortification of inner cities materialize inequalities that empty the open-handed appeal of its genuineness; at the same time, mass media representations of urban spaces as dangerous, decaying, and violent fuel suspicion and caution people against open-handed appeals. (74)
+
+.topic[Rhetoric in the City]
+
+---
+
+class: middle, big
+
+## City vs Community?
+
+> Young privileges city life over the ideal of community because classical rhetoric's dream of a rational cosmopolis today places undue constraints on the chaos of urban encounters and so limits future democratic possibilities for civic agency. Within the cultural, economic, material, and representational conditions of cities, Young argues that we realize democracy only by constantly renegotiating civic agency through our unassimilated difference. (75)
+
+.topic[Rhetoric in the City]
+
+---
+
+class: middle, big
+
+## Derrida's Urbran Practice
+
+> [Thomas] Kent, for one, rejects the concept of a discourse community because appeals to interpretive consensus are a form of "hermeneutical terror" that silences dissenting voices (135). In place of a misplaced longing for a community of consensus, Kent argues for an appreciation of "language-in-use," the "ongoing, incomplete, open-ended dialogue among myriad storytellers within the different language-games of social life" (136). (76)
+
+.topic[Rhetoric in the City]
+
+---
+class: middle
+
+## Architecture Has Changed; Has Rhetoric?
+
+> such talk has yet to suggest how either contemporary rhetoric physically inhabits cities or postmodern urban space physically inhabits rhetoric. The extent to which talk of unassimilated difference remains abstract and disembodied from urban space is demonstrated by Young's admission that her vision of city life remains an "unrealized social ideal" (227). Concepts such as "contact zone" similarly remain disembodied ideals to the extent that they are used to offer alternatives to contemporary rhetorical practices without also being thickly informed by geographic manifestations of borders and communities, assimilation and difference in urban space (76-77)
+
+> Through the figure of the fist, contemporary rhetoric and city life can productively inhabit each other. (78)
+
+.topic[Rhetoric in the City]
+
+---
+class: middle
+
+## Detroit and Power
+
+> The agonization of Detroit is thus both a spatial and a rhetorical practice. As spatial practice, representations of Detroit as the "first urban domino to fall" inscribe the urban landscape with borders that contain and isolate us from our agony. As rhetorical practice, geographic isolation from Detroit displaces agency to a place in the suburbs that is presumed to be universal. Such means of representing, as well as representations of Detroit and its citizens, constrain the agency of both those represented and those doing the representing. Detroit and its citizens become the agonized subjects of more general fears and anxieties. Through the mass media, Detroit's citizens are presented as images of abject otherness, their subjectivities determined by situatedness in a space which undoes agency. But it isn't so much the space that undoes agency as it is representations of the space; such representations undo not simply the agency of inner-city residents, they also undo the agency of suburban residents as well ... The hopelessness of Detroit becomes disconnected from and unrelated to both the rhetorical and material redistribution of affluence away from the inner city. (80)
+
+.topic[Spatial and Rhetorical Power]
+
+---
+class: big, middle
+
+## Representation at a Distance
+
+> According to this challenge, an area is not a "slum" simply because the people living there are poor and black. A community becomes a "slum" when the space is represented for everyone (including those who live there) by those who don't live there. As "first urban domino to fall," the agonized poverty of Detroit satisfies the rhetorical need for constructing an agency consolidated with economic privilege that silences an agency critical of conditions that define poverty and privilege. (82)
+
+.topic[Spatial and Rhetorical Power]
+
+---
+
+class: big, middle
+
+## Interpretation Makes Meaning
+
+> Rather, the figure of the Black-Power fist participates in struggles over representational power, challenging all Americans to confront the rhetorical and spatial dynamics of racialization that have constructed people as different and isolated them from each other. And it is in interpretations of the Black-Power fist that the meanings of poverty and privilege, isolation and difference, nonviolence and violence, black and white are made. (84)
+
+.topic[Spatial and Rhetorical Power]
+
+---
+class: middle
+
+## Material Theory of Rhetoric
+
+>A material theory of rhetoric would not reduce the text of the city (its representations as in agony or despair or hope or rage) to the bodies of its residents (mostly African-American) or to the landscape of the city itself (its abandoned factories and burned out homes). Neither would it reduce the bodies of the city's residents or the landscape of the city to a text. The first reduction dematerializes the force of rhetoric by making representations solely dependent on corporeal beings and physical conditions. Here, words have no influence over "reality"; they merely reflect it, such that the agony of Detroit's residents can be read off the images of dilapidated houses. The second reduction (making bodies and landscapes into texts) dematerializes the force of rhetoric by eliminating material conditions altogether. Here, words have no influence over reality because reality evaporates in signification and inner cities become commodities. A material theory of rhetoric maintains the dynamics of corporeality and spatiality and textuality not out of reverence for reality but out of recognition that the significance of spaces grounds in uses of texts at the same time that the meanings of texts ground in uses of spaces. Rhetoric is always already embodied. Meanings are made, then, through the ways we occupy, and are asked to occupy, spaces and texts. (86)
+
+.topic[Writing The City]
+
+---
+class: middle
+## Strategies of Memory, Hope, Fear
+
+> The point is to develop strategies for theorizing how inscriptions of memories, hopes, and fears on words, bodies, and cities, in discourses, cultural practices, and material spaces enable and constrain "gestures" of rhetorical agency. In a postindustrial urban landscape, agency is only had at the intersection of a vast range of cultural, instrumental, material, and social technologies that spread beyond the grasp of any individual subject. Within the maze of representational technologies and geographic boundaries, possibilities for agency seem overwhelmed. As a space endlessly represented by and for others, Detroit becomes a simulacrum for urban decline; the city's citizens become the quintessentially disempowered postmodern subjects. A material theory of rhetoric would enter into this maze, finding in a memorial gesture such as "Monument to Joe Louis" a landmark through which to remap the corporeal, spatial, and textual terrains of this most postmodern of cities and to reinscribe therein the material conditions, cultural practices, and social technologies of rhetorical agency. (87)
+
+.topic[Writing The City]
+
+---
+class: middle, big
+
+## Why Explanation?
+
+> We can easily sense the blatantly inflammatory nature of their act. It incenses us, repels us, disgusts and discourages us. Maybe it was these visceral responses the reporter wanted to give order to, to make sense of these sensations. To write her story the reporter needed the vandalism to be more than sensed, more than felt, she needed it to make sense, to be explainable and then explained. (47-48)
+
+.topic[Unclenching the Fist]
+
+---
+class: middle, big
+
+## Unclenching the Fist
+
+> Unclench the fist? Extend the open hand of rhetoric? How? How do people populate and communicate across the divide of racial segregation in urban areas? How do they gesture less menacingly toward each other in a landscape that so seems to encourage their gestures toward each other to be otherwise than they are? Divisiveness can seem so entrenched, so much a part of the landscape, so intractable, that a fist, the gesture of threat and fear, the seeming exhaustion of rhetoric, becomes unclenchable. The hand frozen in the gesture of a fist is no full embodiment of rhetoric, it is a parody of our civic interactions. (49)
+
+.topic[Unclenching the Fist]
+
+---
+
+class: big, middle
+
+## Experience & Rhetoric
+
+> Gestures of embodied rhetorical activity, like the closed fist, are expressive because they are so attuned with and do so resonate with the world of our experience. They are our experience. A fist makes us uncomfortable because it makes us immediately aware that we are in the presence of coercion’s embodiment. (49)
+
+.topic[Unclenching the Fist]
+
+---
+class: middle
+
+## The Distance of Meaning
+
+> The AP reporter who wanted me to tell her Monument to Joe Louis represents Black Power did not think meaning could simply be read off the object itself. If she did think that, she would not have needed me to tell her what The Fist represents. Just looking at it would have been enough. But just looking is not enough. She needed to verify a meaning that resides not in the object itself but outside it somewhere in the ethereal realms of interpretation, representation, and signification. Unfortunately if meaning cannot be read straight off the monument, then interpretation is even harder to discern. Questions about a meaning originating either in people’s intentions or in signifying structures satisfy less and provide far fewer answers because they spiral endlessly away from the object of interest itself. (50)
+
+.topic[Where is Meaning?]
+
+---
+class: big, middle
+
+## Problem of Interpretation
+
+> Revealed to the public the monument stands on its own, just there, as if unintended. Just there. A piece of the landscape. The Fist. Intentions and understandings are brought to it, it is an object made to mirror meanings. As a surface reflecting responses, the perceivable object comes to matter less than the interpretations it occasions. (51)
+
+.topic[Where is Meaning?]
+
+---
+class: big, middle
+## Beyond Derrida
+
+> If Graham is right when he suggests that each of us brings our own experiences to The Fist, we are at a loss to explain the actions of vandals whose experiences we do not share. We are unable to explain the vandalism as saying anything more about the vandals than it does about The Fist in particular or the landscape of race in Detroit in general. All this does is leave the AP reporter to search in vain beyond the monument itself, beyond the vandalism itself, even beyond Detroit itself, for some stable meaning and clear intention, some rhetorical bedrock that—always already buried deep beneath whatever might be said or written—forever eludes her. (51-52)
+
+.topic[Where is Meaning?]
+
+---
+class: big, middle
+
+## Objects Their Due
+> When we fail to give objects their due, when we oppose persistence of object to insistence on interpretation, we fail to consider that any object of rhetoric—or for that matter anything rhetorical—might be more than a mirror reflecting some idea that precedes it, shines through it, and exists despite our best efforts to change it. (52)
+
+> Attending to what gets done involves attention to physical actions, attention to the *things* that get done with discourse as well as attention to the *things* with which and through which discourse works. (54)
+
+.topic[Where is Meaning?]
+
+---
+class: middle
+
+## Interaction / Projection
+
+> Pouring paint and placing pictures Cashman and Price were doing more than interrupting The Fist’s projection of a representation. They were also doing more than projecting their own intention onto the bronze. I want to say instead that their engagement with the monument was projective. Not predetermined by either interpretation or representation, monument and vandals projectively engaged each other. Each reached out toward the other to meet in an underdetermined movement forward into embodying expression. Black Power was not in The Fist waiting for Cashman and Price to dislodge it. Whatever the monument might be said to represent, whatever the vandalism might be said to mean, emerged in the reach of each to the other. (57)
+
+.topic[Where is Meaning?]
+
+---
+class: middle
+
+## Vulnerability
+
+> In terms of the specific question asked by the AP reporter about The Fist representing Black Power, as well as the general problem raised by her question of giving an account of embodied rhetoric, the resources made available through Mitchell, Latour, Massumi, and Markell encourage us toward the task of developing vocabularies of projectivity that keep fact and fetish subject as well as responsive to each other. These would be vocabularies not of rhetorical agency but of rhetorical vulnerability. Rather than bringing to bear an account of an expression that claims facticity for itself, the vocabulary of embodied rhetoric highlights our availability to the projective contingency of events. (60)
+
+.topic[Where is Meaning?]
+
+
+</textarea>
+  </body>
+</html>
+

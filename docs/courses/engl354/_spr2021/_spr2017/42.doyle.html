@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Doyle
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Richard Doyle, From *Darwin's Pharmacy*
+---
+class: center, middle
+
+# Let's Do Evaluations: <br> [https://pica.tamu.edu](https://pica.tamu.edu)
+---
+class: f29px
+## Network, Writing, Mind
+
+> While such a webby map of mind might appear driven by the *parataxis*. of digital information technologies and their drift, Donald introduces this. sense of exteriority through the media technology that put Plato or, at least, the character of Socrates, into a panic: writing. In contact with practices of literacy, Donald argues, the brain undergoes a transformation of its. functional anatomy—the scribal mind now emerges from a distributed network. Donald treats the evolution of “external symbolic storage” as the brain’s new memory ally, a transformative one that enabled new kinds of prediction, social organization, and identity (27).
+---
+class: f24px
+## Chemistry, Rhythm, Communication
+
+>  [Donald] We are asked to handle now broadswords, now biplanes, now remote microsurgical hands. (2000, 36)
+>
+> We are essentially flexible organisms, due in part to the enormous dexterity of the mind-hand nexus invoked here by Donald in his rhythmic *repetitio* of “now.” So too is mind essentially flexible and subject to persuasion and alteration by the entire bramble of “brain-culture chemistry.” As Donald’s exuberant recourse to the rhetorical triplet “now … now … now” might remind us, even such technical communication involves the transformation of consciousness through chanting rhythms as well as more properly semantic information. (30-1)
+---
+class: f29px
+## Persuasion or Seduction
+
+> A return to our example of bird brains is instructive. If, with Charles Darwin, we remember that zebra finches and humans both likely replicate song and language in response to the pressures of sexual selection, we are then in a position to understand the strange persistence of ecodelics in the human toolkit. For practices of sexual selection—think the rhythm of grasshopper stridulation, think the flutter of a peacock feather, think the practiced warble of birdsong, the bugle and musk of deer—cultivate replicable traits in the evolution of reproduction by selecting not only for survival, but for *seduction*. (31-2)
+---
+class: f25px
+## From Danger to Seduction
+
+> The usual thought experiment summoned when imagining the evolutionary emergence of traits is danger—a tiger is often invoked as the ultimate challenge to the homind brain. No doubt such danger was an intensive vector—the “killer frisbee” and “Swiss army knife” of early humans, the handaxe, was clearly a hunting adjunct, carcass cleaning tool, and personal defense technology. Yet seduction, and its continual use of drugs, also informed and entrained the human brain into its contemporary capacities. Note that the cultural invention most associated with the brain in Donald’s treatment is memory, and for what is the memory used? The recall of “entire pharmacopieas” is perhaps not merely one memory among others, but a memory whose (rhetorical) replication is deeply implicated in the differential survival and evolution of human beings. (32-3)
+
+
+</textarea>
+  </body>
+</html>
+

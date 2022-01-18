@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Richards III
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# I.A. Richards, "The Philosophy of Rhetoric"
+---
+class: f30px
+## Explanation: Less Neutral Than We Think
+> It has been so necessary to us, especially since the physical basis of civilization became technical, to care at least sometimes for the truth only and keep the poachers sometimes out, that we have exaggerated enormously the extent of pure exposition. It is a relatively rare occurrence outside the routine of train services and the tamer, more settled parts of the sciences. We have exaggerated our success for strategic reasons – some of them good, because encouraging, if we do not too much hoodwink ourselves. (41)
+---
+class: f32px
+
+## Why Rhetoric?
+
+> We shall find, preeminently in the subject of rhetoric, that interpretations and opinions about interpretations that are not primarily steps of partisan policy are excessively hard to arrive at. And thereby we re-discover that the world – so far from being a solid a matter of fact dash is rather a fabric of conventions, which for obscure reasons it has suited us in the past to manufacture and support. And that sometimes is a dismaying rediscovery which seems to unsettle our foundation. (41-2)
+---
+class: f28px
+## Writing vs. Speaking
+
+> In conversation we do not ordinarily separate them so – unless we are asking questions about words. With languages which have not been used in writing and thus subjected to a special kind of grammatical analysis – it is worth recalling that grammar takes its name from a writing – there is often very great uncertainty as to where one word ends and another begins. The written form gives words far more independence then they possess as units of sound in speech and we derive thence a habit of supposing that they have far more independence as regards their meaning then they usually have any either written or spoken discourse. (47-8)
+---
+class: f29px
+## Science As Distortion of Language
+> At one end of the scale, in the strict exposition of some highly criticized and settled science through technicalized and rigid speech, a large proportion of them are independent. They mean the same whatever other words they are put with; or if a word fluctuates, it moves only into a small number of stable positions, which can be recorded and are anchored to definitions. That is the ideal limit towards which we aim in exposition. Unfortunately we tend – increasingly since the 17th century – to take rigid discourse as the norm, and impose its standards upon the rest of speech. (48)
+---
+class: f33px
+## Movement of Meaning
+> Often the whole utterance in which the cooperating meanings of the component words hang on one another is not itself stable in meaning. It offers not one meaning but a *movement* among meanings. Of course, even in the strictest prose we always have one thing that may be described as a movement of meeting. We have change as the sentence develops. In "the cat is on the mat" we begin with the cat and end with the mat. (48-9)
+---
+class: f29px
+## No Value Alone
+> I have been leading up – or down, if you like – to an extremely simple and obvious but fundamental remark: that no word can be judged as to whether it is good or bad, correct or incorrect, beautiful or ugly, or anything else that matters to a writer, in isolation. That seems so evident that I am almost ashamed to say it, and yet it flies straight in the face of the only doctrine that for 200 years has been officially inculcated – when any doctrine is inculcated in these matters. I mean the doctrine of usage. The doctrine that there is a right or a good use for every word and that literary virtue consists in making that good use of it. (51)
+---
+class: f26px
+## The Best Words for the Best Writers
+> It asserts that "good use is the general, present-day practice of the best writers." One bone we could pick would be with that "best." How are they the best writers except by using the words in the best ways? We settled that they *are* the best writers because we find them using their word successfully. We do not settle that theirs is the right, the "good usage" of the words because *they* use them so. Never was there a crazier case of putting the cart before the horse. It is as though we were to maintain that apples are healthy because wise people eat them, instead of recognizing that it is the other way about – that it is what the food will do for us which makes us eat it, not the fact that we eat it which makes it good food. (52)
+---
+class: f28px
+## Upside Down
+> This situation, I said a moment ago, is typical. We can hardly, I think, exaggerate in an estimate of the number of literary and rhetorical problems which, as usually formulated, are upside down in this fashion. For example, our common assumption that when a word such as *beautiful* or *art* or *religion* or *good*, is used in a great variety of ways, there will be found something in common to all the uses, something which is the fundamental or essential meaning of the word in the explanation of its use.  So we spend our wits trying to discover this common essential meaning, without considering that we are looking for it, most often, only as a result of a weak and hasty inductive argument. (61)
+---
+class: f27px
+## Poetic Meaning
+> I concluded then that these expressive or symbolic words get their feeling of being peculiarly fitting from the other words sharing the morpheme which supports them in the background of the mind. …
+>
+> A first extension is two words that sound alike but do not share a morpheme, do not have a common meaning but only some relevant meaning. Thus *blare*, *scare* and *dare* do not share a morpheme, but on occasion that peculiar force of *blare* may well come to it in part from the others. This, of course, is only recognizing on a larger, wider scale the principle that Lewis Carroll was using in Jabberwocky. It's relevance to the theories of rhymes and assonance is obvious. (62-3)
+
+
+</textarea>
+  </body>
+</html>
+

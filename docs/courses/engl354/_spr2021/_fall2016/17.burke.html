@@ -1,0 +1,349 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 17 (Burke)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Kenneth Burke, "The Rhetoric of Hitler's 'Battle'"
+---
+class: bigger
+## "Rhetoric of Hitler's 'Battle'" & Tropes
+
+1. Geographical Materialization
+1. Common Enemy
+1. Projection Devices
+1. Inborn Dignity
+1. Symbolic Rebirth
+1. Commercial Use
+1. Unifying Voice
+---
+class: bigger
+## "Rhetoric of Hitler's 'Battle'" & Tropes
+
+1. **Geographical Materialization**
+1. **Common Enemy**
+1. Projection Devices
+1. Inborn Dignity
+1. Symbolic Rebirth
+1. Commercial Use
+1. Unifying Voice
+---
+class: big
+## Projection Devices
+
+> The "curative" process that comes with the ability to hand over one's ills to a scapegoat, thereby getting purification by dissociation…Hence if one can hand over his infirmities to a vessel, or "cause," outside the self, one can battle an external enemy instead of battling an enemy within. And the greater one's internal inadequacies, the greater the amount of evils one can load upon the back of "the enemy." (202-3)
+
+---
+class: big
+## Symbolic Rebirth
+
+> The projective device of the scapegoat, coupled with the Hitlerite doctrine of inborn racial superiority, provides its followers with a "positive" view of life. They can again get the feel of *moving forward*, towards a *goal* (a promissory feature of which Hitler makes much). In Hitler, as the group's prophet, such rebirth involved a symbolic change of lineage. (203)
+---
+class: big
+## Commercial Use
+
+> Hitler obviously here had something to sell—and it was but a question of time until he sold it (i.e., got financial backers for his movement). For it provided a *noneconomic interpretation of economic ills*. As such, it served with maximum efficiency in deflecting the attention from the economic factors involved in modern conflict; hence by attacking "Jew finance" instead of *finance*, it could stimulate an enthusiastic movement that left "Aryan" finance in control. (204)
+
+---
+## Unifying Voice
+
+> So, as against the disunity equations…we get a contrary purifying set; the wrange of the parliamentary is to be stilled by the giving of *one* voice to the whole people, this is to be the "inner voice" of Hitler, made uniform throughout the German boundaries, as leader and people were completely identified with each other. In sum: Hitler's inner voice, equals leader-people identification, equals unity, equals Reich, equals the mecca of Munich, equals plow, equals sword, equals work, equals war, equals army as midrib, equals responsibility (the personal responsibility of the absolute ruler), equals sacrifice, equals the theory of "German democracy" (the free popular choice of the leader, who then accepts the responsibility, and demands absolute obedience in exchange for his sacrifice), equals love (with the masses as feminine), equals idealism, equals obedience to nature, equals race, nation. (207)
+---
+class: big
+## What Does It All Mean?
+
+> Hence, I doubt whether the appeal was in the sloganizing element alone (particularly as even slogans can only be hammered home, in speech after speech, and two or three hours at a stretch, by endless variations on the themes). And Hitler himself somewhat justifies my interpretation by laying so much stress upon the *half-measures* of the middle-class politicians, and the contrasting *certainty* of his own methods. He was not offering people a *rival* world view; rather he was offering a world view to people who had no other to pit against it. (218)
+---
+class: bigger
+## Burke's Method
+
+* The Pentad
+	* Developing around time of "The Rhetoric of Hitler's 'Battle'"
+* Expands on Five Journalism Questions:
+	1. Who?
+	1. What?
+	1. When?
+	1. Where?
+	1. How?
+
+---
+## The Pentad
+
+<div id="agent">Agent</div>
+---
+## The Pentad
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+---
+## The Pentad
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+<div id="agency">Agency</div>
+
+---
+## The Pentad
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+<div id="agency">Agency</div>
+<div id="purpose">Purpose</div>
+---
+## The Pentad
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+<div id="agency">Agency</div>
+<div id="purpose">Purpose</div>
+<div id="scene">Scene</div>
+---
+
+## The Pentad
+
+<hr id="pentad1">
+<hr id="pentad2">
+<hr id="pentad3">
+<hr id="pentad4">
+<hr id="pentad5">
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+<div id="agency">Agency</div>
+<div id="purpose">Purpose</div>
+<div id="scene">Scene</div>
+
+---
+
+## The Pentad
+
+<hr id="pentad1">
+<hr id="pentad2">
+<hr id="pentad3">
+<hr id="pentad4">
+<hr id="pentad5">
+
+<div id="agent">Agent</div>
+<div id="act">Act</div>
+<div id="agency">Agency</div>
+<div id="purpose">Purpose</div>
+<div id="scene">Scene</div>
+
+<div id="ratio">The Ratios</div>
+---
+class: big
+## Pentadic Ratios
+
+.pull-left[
+1. Agent-Act
+1. Agent-Agency
+1. Agent-Purpose
+1. Agent-Scene
+1. Act-Agency
+1. Act-Purpose
+1. Act-Scene
+1. Agency-Purpose
+1. Agency-Scene
+1. Purpose-Scene
+]
+---
+class: big
+## Pentadic Ratios
+
+.pull-left[
+1. Agent-Act
+1. Agent-Agency
+1. Agent-Purpose
+1. Agent-Scene
+1. Act-Agency
+1. Act-Purpose
+1. Act-Scene
+1. Agency-Purpose
+1. Agency-Scene
+1. Purpose-Scene
+]
+.pull-right[
+1. Act-Agent
+1. Agency-Agent
+1. Purpose-Agent
+1. Scene-Agent
+1. Agency-Act
+1. Purpose-Act
+1. Scene-Act
+1. Purpose-Agency
+1. Scene-Agency
+1. Scene-Purpose
+]
+---
+class: big
+## Brainstorming Pentadic Criticism
+
+1. Choose a subject
+	* Find something that seems to be using rhetoric in interesting ways
+---
+class: big
+## Brainstorming Pentadic Criticism
+
+1. Choose a subject
+	* Find something that seems to be using rhetoric in interesting ways
+1. Label the five terms:
+	* What is the act?
+	* What or who is the agent?
+	* What is the agent's purpose?
+	* What is the scene (time *and* place)?
+	* What is the agency?
+---
+class: big
+## Brainstorming Pentadic Criticism
+
+1. Choose a subject
+	* Find something that seems to be using rhetoric in interesting ways
+1. Label the five terms:
+	* What is the act?
+	* What or who is the agent?
+	* What is the agent's purpose?
+	* What is the scene (time *and* place)?
+	* What is the agency?
+1. Analyze the twenty ratios
+	* Does the first term structure the second term?
+---
+class: big
+## Brainstorming Pentadic Criticism
+
+1. Choose a subject
+	* Find something that seems to be using rhetoric in interesting ways
+1. Label the five terms:
+	* What is the act?
+	* What or who is the agent?
+	* What is the agent's purpose?
+	* What is the scene (time *and* place)?
+	* What is the agency?
+1. Analyze the twenty ratios
+	* Does the first term structure the second term?
+1. What is the dominate term most important to you?
+---
+class: big
+## Writing Pentadic Criticism
+
+1. Describe the object
+	* Explain circumstances
+	* Describe the scene
+---
+class: big
+## Writing Pentadic Criticism
+
+1. Describe the object
+	* Explain circumstances
+	* Describe the scene
+1. Explain five terms and cite examples
+	* How have you determined the pentad?
+	* Why?
+---
+class: big
+## Writing Pentadic Criticism
+
+1. Describe the object
+	* Explain circumstances
+	* Describe the scene
+1. Explain five terms and cite examples
+	* How have you determined the pentad?
+	* Why?
+1. Why is the dominate term most important?
+	* Cite examples where the dominate term is determining other terms
+---
+class: big
+## Writing Pentadic Criticism
+
+1. Describe the object
+	* Explain circumstances
+	* Describe the scene
+1. Explain five terms and cite examples
+	* How have you determined the pentad?
+	* Why?
+1. Why is the dominate term most important?
+	* Cite examples where the dominate term is determining other terms
+1. What conclusions can we draw from this?
+---
+class: center, big, middle
+
+## [Explanatory Chapter + Sample Essays](http://www.csudh.edu/ccauthen/576F12/pentadic.pdf)
+
+## Complete a Pentad (five terms, one dominate) for "Rhetoric of Hitler's 'Battle'"
+
+</textarea>
+  </body>
+</html>
+

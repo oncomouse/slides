@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Gates and Foss & Griffin
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Henry Louis Gates, Jr., From *The Signifying Monkey* <br> Sonja K. Foss & Cindy L. Griffin, “Beyond Persuasion: A Proposal for an Invitational Rhetoric”
+---
+class: f27px
+## Rhetoric Not Semantics
+
+> Black people vacated this signifier, then-incredibly-substituted as its concept a signified that stands for the system of rhetorical strategies peculiar to their own vernacular tradition. Rhetoric, then, has supplanted semantics in this most literal meta-confrontation within the structure of the sign. Some historical black community of speakers most certainly struck directly at the heart of the matter, on the ground of the referent itself, thereby demonstrating that even (or especially) the concepts signified by the signifier are themselves arbitrary. By an act of will, some historically nameless community of remarkably self-conscious speakers of English defined their ontological status as one of profound differences vis-a-vis the rest of society. (1554)
+---
+class: f28px
+## The Role of the Signifying Monkey
+
+> The poetry in which the Monkey's antics unfold is a signifying system: in marked contrast to the supposed transparency of normal speech, the poetry of these tales turns upon the free play of language itself, upon the displacement of meanings, precisely because it draws attention to its rhetorical structures and strategies and thereby draws attention to the force of the signifier.
+>
+> In opposition to the apparent transparency of speech, this poetry calls attention to itself as an extended linguistic sign, one composed of various forms of the signifiers peculiar to the black vernacular. (1558)
+
+---
+class: f23px
+## Insults
+
+> While the insult aspect of the Monkey's discourse is important to the tales, linguists have often failed to recognize that insult is not at all central to the nature of Signifyin(g); it is merely one mode of a rhetorical strategy that has several other modes, all of which share the use of troping. They have, in other words, mistaken the trees for the forest. For Signifyin(g) constitutes all of the language games, the figurative substitutions, the free associations held in abeyance by Lacan’s or Saussure’s paradigmatic axis, which disturb the seemingly coherent linearity of the syntagmatic chain of signifiers, in a way analogous to Freud's notion of how the unconscious relates to the conscious. The black vernacular trope of Signifyin(g) exists on this vertical axis, wherein the materiality of the signifier (the use of words as things, in Freud's terms of the discourse of the unconscious) not only ceases to be disguised but comes to bear prominently as the dominant mode of discourse. (1563-4)
+---
+class: f20px
+## Rhetorical Training
+
+From Richard A. Lanham, *The Motives of Eloquence*:
+
+> Start your student young. Teach him a minute concentration on the word, how to write it, speak it, remember it. … From the beginning, stress behavior as performance, reading aloud, speaking with gesture, a full range of histrionic adornment. … Develop elaborate memory schemes to keep them readily at hand. Teach, as theory of personality, a corresponding set of accepted personality types, a taxonomy of impersonation. … Nourish an acute sense of social situation. … Stress, too, the need for improvisation, ad-lib quickness, the coaxing of chance. Hold always before the student rhetoric's practical purpose: to win, to persuade. But train for this purpose with continual verbal play, rehearsal for the sake of rehearsal.
+>
+> Use the "case" method. … Practice this recreation always in an agnostic context. The aim is scoring. Urge the student to go into the world and observe its doings from this perspective. And urge him to continue his rehearsal method all his life, forever rehearsing a spontaneous real life. … Training in the word thus becomes a badge, as well as a diversion, of the leisure class.
+---
+class: f21px
+## Rhetoric
+
+> Signifyin(g), according to Mitchell-Kernan, operates so delightfully because "apparent meaning serves as a key which directs hearers to some shared knowledge, attitudes, and values or signals that reference must be produced metaphorically." The decoding of the figurative, she continues, depends "upon shared knowledge... and this shared knowledge operates on two levels." One of these two levels is that the speaker and his audience realize that "signifying is occurring and that the dictionary-syntactical meaning of the utterance is to be ignored." In addition, a silent second text, as it were, which corresponds rightly to what Mitchell-Kernan is calling "shared knowledge," must be brought to bear upon the manifest content of the speech act and "employed in the reinterpretation of the utterance.” Indeed, this element is of the utmost importance in the esthetics of Signifyin(g), for "it is the cleverness used in directing the attention of the hearer and audience to this shared knowledge upon which a speaker's artistic talent is judged." Signifyin(g), in other words, depends on the success of the signifier at invoking an absent meaning ambiguously "present” in a carefully wrought statement. (1579)
+---
+class: center, middle
+
+# Sonja K. Foss & Cindy L. Griffin, “Beyond Persuasion: A Proposal for an Invitational Rhetoric”
+
+---
+class: f24px
+## Terminological Refiguring
+
+> Burke (1969) suggests that rhetors typically adjust their conduct to the external *resistance* they expect in the audience ... In invitational rhetoric, in contrast, resistance is not anticipated, and rhetors do not adapt their communication to expected resistance in the audience. Instead, they identify possible *impediments* to the creation of understanding and seek to minimize or neutralize them so they do not remain impediments. (Foss & Griffin 6)
+
+> Offering involves not *probing* or *invading* but *giving* ... (Foss & Griffin 7)
+
+> rhetors tend to see their audiences as *opponents* and sometimes may be tempted to engage in questionable ethical practices to win their "*battles*" with them (Foss & Griffin 15).
+
+---
+class: f32px
+## Persuasion is Coercion?
+
+> Embedded in efforts to change others is a desire for control and domination, for the act of changing another establishes the power of the change agent over that other. In some instances, the power of the rhetor over another is overt, as it is, for example in laws that exert control over women's bodies ... But even in the cases where the strategies used are less coercive, rhetors who convince others to adopt their viewpoints exert control over part of those others' lives. (Foss & Griffin 3)
+
+---
+class: f32px
+## Tradition of Control
+
+> The traditional conception of rhetoric, in summary, is characterized by efforts to change others and thus to gain control over them, self-worth derived from and measured by the power exerted over others, and a devaluation of the life worlds of others. This is a rhetoric of patriarchy, reflecting its values of change, competition, and domination. But these are not the only values on which a rhetorical system can be constructed, and we would like to propose as one alternative a feminist rhetoric. (Foss & Griffin 4)
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+> Patriarchy is a political-social system that insists that males are inherently dominating, superior to everything and everyone deemed weak, especially females, and endowed with the right to dominate and rule over the weak and to maintain that dominance through various forms of psychological terrorism and violence.
+>
+> — bell hooks, *Understanding Patriarchy*, pg 1
+
+---
+class: f23px
+## Patriarchal Bias
+
+> As natural as an equation of rhetoric with persuasion seems for scholars of rhetoric, this conception is only one perspective on rhetoric and one, we suggest, with a patriarchal bias. (Foss & Griffin 2)
+
+> Patriarchy is a political-social system that insists that males are inherently dominating, superior to everything and everyone deemed weak, especially females, and endowed with the right to dominate and rule over the weak and to maintain that dominance through various forms of psychological terrorism and violence.
+>
+> — bell hooks, *Understanding Patriarchy*, pg 1
+
+> What makes it feminist is not its use by a particular population of rhetors but rather the grounding of its assumptions in feminist principles and theories. (Foss & Griffin 5)
+
+---
+class: f24px
+## Definition
+
+> Invitational rhetoric is an invitation to understanding as a means to create a relationship rooted in *equality*, *immanent value*, and *self-determiniation*. Invitational rhetoric constitutes an invitation to the audience to enter the rhetor's world and to see it as the rhetor does. In presenting a particular perspective, the invitational rhetor does not judge or denigrate others' perspectives but is open to and tries to appreciate and validate those perspectives, even if they differ dramatically from the rhetor's own. Ideally, audience members accept the invitation offered by the rhetor by listening to and trying to understand the rhetor's perspective and then presenting their own. When this happens, rhetor and audience alike contribute to the thinking about an issue so that everyone involved gains a greater understanding of the issue in its subtlety, richness, and complexity. (Foss & Griffin 5)
+
+---
+class: f34px
+
+## Rhetoric is a Battlefield?
+
+> Invitational rhetoric may serve as a way to allow these scholars to develop models for interaction not characterized by the opposition and competition that make the achievement of their goal difficult.
+
+---
+class: f29px
+## Changing Change
+
+> Change may be the result of invitational rhetoric, but change is not its purpose. When change does occur as a result of understanding, it is different from the kind of change that typifies the persuasive interactions of traditional rhetoric. In the traditional model, change is defined as a shift in the audience in the direction requested by the rhetor, who then has gained some measure of power and control over the audience. In invitational rhetoric, change occurs in the audience or rhetor or both as a result of new understanding and insights gained in the exchange of ideas. (Foss & Griffin 6)
+
+---
+class: f26px
+## Safety and Systems
+
+> The three external conditions of safety, value, and freedom required for others to present their perspectives were created by the speech. The rhetors communicated safety when they suggested that they regarded the perspective of the judges as legitimate one that they would treat with respect and care. (Foss & Griffin 13)
+
+> Although invitational rhetoric is not designed to create a specific change, such as the transformation of system of oppression into ones that value and nurture individuals, it may produce such an outcome. Invitational rhetoric may resist an oppressive system simply because it models an alternative to the system ... (Foss & Griffin 16-17)
+
+</textarea>
+  </body>
+</html>
+

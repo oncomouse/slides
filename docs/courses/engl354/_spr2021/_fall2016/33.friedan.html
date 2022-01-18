@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 33 (Friedan)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Betty Friedan, From *The Feminine Mystique*
+---
+class: f26px
+## Decline of Female Workforce
+
+> In the late fifties, a sociological phenomenon was suddenly remarked: a third of American women now worked, but most were no longer young and very few were pursuing careers. They were married women who held part-time jobs, selling or secretarial, to put their husbands through school, their sons through college, or to help pay the mortgage. Or they were widows supporting families. Fewer and fewer women were entering professional work. The shortages in the nursing, social work, and teaching professions caused crises in almost every American city. Concerned over the Soviet Union's lead in the space race, scientists noted that America's greatest source of unused brainpower was women. But girls would not study physics: it was "unfeminine."
+---
+class: f29px
+## Myth (Barthes)
+
+> The suburban housewife she was the dream image of the young American women and the envy, it was said, of women all over the world. The American housewife-freed by science and labor-saving appliances from the drudgery, the dangers of childbirth and the illnesses of her grandmother. She was healthy, beautiful, educated, concerned only about her husband, her children, her home. She had found true feminine fulfillment. As a housewife and mother, she was respected as a full and equal partner to man in his world. She was free to choose automobiles, clothes, appliances, supermarkets; she had everything that women ever dreamed of.
+---
+class: f29px
+## Speaking About Nameless
+
+> But on an April morning in 1959, I heard a mother of four, having coffee with four other mothers in a suburban development fifteen miles from New York, say in a tone of quiet desperation, "the problem.” And the others knew, without words, that she was not talking about a problem with her husband, or her children, or her home. Suddenly they realized they all shared the same problem, the problem that has no name. They began, hesitantly, to talk about it. Later, after they had picked up their children at nursery school and taken them home to nap, two of the women cried, in sheer relief, just to know they were not alone.
+---
+class: f26px
+## What Is It?
+
+> Just what was this problem that has no name? What were the words women used when they tried to express it? Sometimes a woman would say "I feel empty somehow…incomplete.” Or she would say, “I feel as if I don't exist.” Sometimes she blotted out the feeling with a tranquilizer. Sometimes she thought the problem was with her husband, or her children, or that what she really needed was to redecorate her house, or move to a better neighborhood, or have an affair, or another baby. Sometimes, she went to a doctor with symptoms she could hardly describe: "A tired feeling…I get so angry with the children it scares me…I feel like crying without any reason.” (A Cleveland doctor called it "the housewife's syndrome.") A number of women told me about great bleeding blisters that break out on their hands and arms.
+---
+class: f29px
+## Dismissal
+
+> The problem was dismissed by telling the housewife she doesn't realize how lucky she is-her own boss, no time clock, no junior executive gunning for her job. What if she isn't happy-does she think men are happy in this world? Does she really, secretly, still want to be a man? Doesn't she know yet how lucky she is to be a woman?
+>
+> The problem was also, and finally, dismissed by shrugging that , there are no solutions: this is what being a woman means, and what is wrong with American women that they can't accept their role gracefully?
+---
+class: f24px
+## Voice Inside
+
+> Even so, most men, and some women, still did not know that this problem was real. But those who had faced it honestly knew that all the superficial remedies, the sympathetic advice, the scolding words and the cheering words were somehow drowning the problem in unreality. A bitter laugh was beginning to be heard from American women. They were admired, envied, pitied, theorized over until they were sick of it, offered drastic solutions or silly choices that no one could take seriously. They got all kinds of advice from the growing armies of marriage and child-guidance counselors, psychotherapists, and armchair psychologists, on how to adjust to their role as housewives. No other road to fulfillment was offered to American women in the middle of the twentieth century. Most adjusted to their role and suffered or ignored the problem that has no name. It can be less painful, for a woman, not to hear the strange, dissatisfied voice stirring within her.
+---
+class: f22px
+## Range of the Problem
+
+> It is no longer possible to ignore that voice, to dismiss the desperation of so many American women. This is not what being a woman means, no matter what the experts say, For human suffering there is a reason; perhaps the reason has not been found because the right questions have not been asked, or pressed far enough. I do not accept the answer that there is no problem because American women have luxuries that women in other times, and lands never dreamed of; part of the strange newness of the problem is that it cannot be understood in terms of the age-old material problems of man: poverty, sickness, hunger, cold. The women who suffer this problem have a hunger that food cannot fill. It persists in women whose husbands are struggling internes and law clerks, or prosperous doctors and lawyers; in wives of workers and executives who make $5,000 a year or $50,000. It is not caused by lack of material advantages; it may not even be felt by women preoccupied with desperate problems of hunger, poverty or illness. And women who think it will be solved by more money, a bigger house, a second car, moving to a better suburb, often discover it gets worse.
+---
+class: f27px
+## Women of the Myth
+
+> They are not career women (although career women may have other problems); they are women whose greatest ambition has been marriage and children. For the oldest of these women, these daughters of the American middle class, no other dream was possible. The ones in their forties and fifties who once had other dreams gave them up and threw themselves joyously into life as housewives. For the youngest, the new wives and mothers, this was the only dream. They are the ones who quit high school and college to marry, or marked time in some job in which they had no real interest until they married. These women are very "feminine” in the usual sense, and yet they still suffer the problem.
+---
+class: f29px
+## Statement of Purpose
+
+> If I am right, the problem that has no name stirring in the minds of so many American women today is not a matter of loss of femininity or too much education, or the demands of domesticity. It is far more important than anyone recognizes. It is the key to , these other new and old problems which have been torturing women and their husbands and children, and puzzling their doctors and educators for years. It may well be the key to our future as a nation and a culture. We can no longer ignore that voice within women that says: "I want something more than my husband and my children and my home.”
+
+</textarea>
+  </body>
+</html>
+

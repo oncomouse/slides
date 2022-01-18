@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Shotwell
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Alexis Shotwell, from *Against Purity*
+---
+class: no-margin, f20px
+## Rhetorical Reading
+
+> Then I took a picture of the soap, which was fancy soap for an airplane bathroom: philosophy brand, part of its “pure grace” line. It narrated, all lowercase (lowercase font is to remind us to live life with curiosity, wisdom, and abundant joy, as their website notes): “philosophy: with clean hands we find our grace. we realize the slate can be as clean as we allow it to be.” On the plane from San Francisco to Ottawa, using something like 5.8 tons of greenhouse gasses for my personal trip, which I had not carbon offset, although the airline offered this option to me when I was buying my ticket, I had been feeling bad about using a plastic cup to have some ginger ale—but I had had some ginger ale because airline travel is irritating, flying itself is so evil that what weight does a single plastic cup hold, and I wanted some sugar and bubbles. I had been reflecting about what it meant to travel across the continent to a state experiencing a profound drought, using fossil fuels in order to talk with other scholars, many of whom had come from further away—Europe and Australia in particular—about what it means to inaugurate a term to name the time we are living in that identifies humans as responsible for harmful planetary transformation partially through our use of fossil fuels. I had doubts about what “clean hands” could mean in this context, and also how long they'd last after I finished rinsing the pure grace soap from my hands and touched literally anything. (1)
+
+---
+class: f25px
+## Anthropocene Definition
+
+> Mostly the people I've heard talking about the Anthropocene (or Capitalocene) are aiming to mobilize a transformation in our planetary political economy. Mostly, the markers used to measure this transformation measure the effects of human behavior on the world we live in, and often these effects are externalities to economic calculations, carried as body bur dens by living creatures or experienced as the entangled effects that alter or kill beings and ecosystems. Coral reefs change and die in relation to acidifying oceans, soil carries loads of lead or heavy metals from mining or auto mobile exhaust, new forms of rock are made out of plastic, plastiglomerates, or we acquire the radioisotope signatures of past nuclear bomb use, and we might mark these as dividing lines marking the beginning of the age we're in. (2)
+
+---
+class: f38px
+## Why Definition?
+
+> However we mark its start, thinking about the Anthropocene makes it difficult to feel that pure grace is available through hand soap used in carbon intensive travel across borders laid down on genocidally colonized land.  (2)
+
+---
+class: f22px
+## Purity *Ethos*
+
+> I turn to this product in part because the hand soap from my plane trip isn't listed on the *philosophy* website, and I want to talk about ingredients. But also this copy constellates brilliantly an ethos I believe we could—if it were measurable in geologic time-use to mark the beginning of the Anthropocene: roughly, the moment that humans worry that we have lost a natural state of purity or decide that purity is something we ought to pursue and defend. This ethos is the idea that we can access or recover a time and state before or without pollution, without impurity, before the fall from innocence, when the world at large is *truly beautiful*. This is a time of youth, blessing, but also interestingly, a natural state that precludes or resists education-*we perceive things as they should be, rather than how they are*. A piece of this ethos is perhaps also the sense that we can buy a product that brings this natural state of purity back, though particularly in certain left scenes, ideological purity seems to behave as a one-step facial cleanser. (3)
+
+---
+class: f31px
+## Purity is Hard
+
+> I'm focusing on the ingredients with chemical-ish names, but of course there is no particular reason to assume that the “natural” oils are so wonderful the entire world is chemical, after all. If philosophy, as a brand, can teach us anything, it is that in this world purity is never made simple. Aspirations to purity are, perhaps, usually exactly what this cleansing-toning-moisturizing face wash offers: misleading ad copy on one level and secret carcinogens as a cell boundary-crossing material reality on another. (4)
+
+---
+class: f24px
+## Argumentative Move
+
+> The delineation of theoretical purity, purity of classification, is always imbricated with the forever-failing attempt to delineate material purity-of race, ability, sexuality, or, increasingly, illness. The imbrication of failure with attempt, as I'll discuss, is a feature of classification itself. More significantly, the world always exceeds our conception of it. Despite this, we can still pursue changed worlds. Living well might feel impossible, and certainly living purely is impossible. The slate has never been clean, and we can't wipe off the surface to start fresh—there's no “fresh" to start. Endocrine-disrupting soap doesn't offer a purity made simple because there isn't one. All there is, while things perpetually fall apart, is the possibility of acting from where we are. Being against purity means that there is no primordial state we might wish to get back to, no Eden we have desecrated, no pretoxic body we might uncover through enough chia seeds and kombucha. (4)
+
+---
+class: no-margin f20px
+## Exigence
+
+> The not-simple “purity made simple” soap is one knot in a tapestry of products and ways of talking about the world. A hot-yoga studio franchise in my town, “Pure Yoga” enjoins people to become “pure yogis," offering a dizzy ing array of styles of yoga unmoored from any yoga tradition in particular; the owners of the studios have also recently opened a vegan restaurant that serves killer gluten-free, vegan onion rings. Hot yoga, they say, “not only helps you to detox flushing toxins out of the skin through sweat, but heats up the muscles allowing you to approach the postures from a safe place”. The shelves of ordinary food stores—let alone stores that self-identify as health-food stores-offer various products to de toxify our bodies. Cleanses, juice fasts, detox diets, ionic foot baths that draw poisons out through our feet, foot detox patches that you apply and that work overnight using herbs that activate “far infrared energy,” bottles that offer pure spring water (with or without fluoride), and Himalayan pink salt-rock lamps—all offer ways to manage something, something experienced by consumers as a toxin that we can be free of. There is a clear and growing concern about material toxins accumulating in human bodies even as there is little clarity about what a toxin actually is, if ionic baths actually cleanse anything, or how we practically might personally manage the complex systems that affect the air we breathe, the water we drink, and the substances we touch. (5-6)
+
+---
+class: f21px no-margin
+## Problem of Purity
+
+> Purity politics arise not only in our response to potential physical contamination; it is also an issue for our ethical and political situation in the world. How might our response to physical and political impurity be connected? Consider. Many of us are settlers living on unceded native land, stolen through genocidal colonial practices. We feed domestic animals more food than starving people lack, and spend money on the medical needs of pets while eating factory farmed meat and spraying our lawn with pesticides that produce cancer in domestic animals. We pay for cosmetic surgeries in a time when many people can't access basic health care. We recycle but take plane trips to Alaska. We worry about global warming and turn on the air conditioning. We think slavery is wrong, but eat chocolate and fish produced in contexts that meet every definition of nonchattel slavery. We believe that people deserve good working conditions but buy clothing produced in sweatshops and maquiladoras because we couldn't afford equitably sourced cloth ing even if we could find it. We cannot look directly at the past because we cannot imagine what it would mean to live responsibly toward it. We yearn for different futures, but we can't imagine how to get there from here. We're hypocrites, maybe, but that derogation doesn't encompass the nature of the problem that complexity poses for us.
+
+---
+class: f24px
+## Connections
+
+> The “moves” involved in the not-simple “purity made simple” face wash, in NIMBY politics, in avoiding BPA, in eating organic (or vegan or paleo or sugar-free), or in doing monthly detoxifying “cleanses” may seem very different from each other. And they may seem very different in turn than other practices I explore in this book-practices of forgetting in relation to our implication in colonialism or the history of disease designation, for example. There are obvious real differences involved, but they are threaded together. Let's call the line that links them “purity politics, or “purism” What's needed, instead of a pretense to purity that is impossible in the actually existing world, is something else. We need to shape better practices of responsibility and memory for our placement in relation to the past, our implication in the present, and our potential creation of different futures. (7-8)
+
+---
+class: f34px
+## Definition Shift
+
+> Toxicity is often framed as dose-dependent; the classic formulation is that the "dose makes the poison.” In purity discourse, pollutants are rendered as a different kind of toxicity-mere contact makes the poison. As Biss notes, the conception of the violable but delimited individual body that undergirds this conception of a being who can be pure and protected from pollution is long-standing. (11-12)
+
+---
+class: f23px
+## Rhetorical Index
+
+> Concepts and practices of purity and impurity, in relation to dirt as well as other things understood as dirty, tell us something about how people understand the world they live in, and thus how they can imagine the world becoming. In other words, purity practices are also productive normative formulations, they make a claim that a certain way of being is aspired to, good, or to be pursued. Concepts matter for what we do and how we are in the world. As Donna Haraway puts it, “Ideas' are themselves technologies for pursuing inquiries. It's not just that ideas are embedded in practices; they are technical practices of situated kinds”. While current practices may well be connected to the forms of primarily religious purity practice Douglas discusses, in this book I am more concerned with the practices that characterize and structure key modes of life today. Both sorts of practices, though, deploy a particular idea-as-technology of parsing, cleansing, and delineating. (13-14)
+
+---
+class: f40px
+## Final Thesis
+
+> To be against purity is, again, not to be for pollution, harm, sickness, or premature death. It is to be against the rhetorical or conceptual attempt to delineate and delimit the world into something separable, disentangled, and homogenous. (15)
+
+</textarea>
+  </body>
+</html>
+

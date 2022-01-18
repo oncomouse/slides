@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 4 (Booth & Poulakos)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: bigger, middle
+
+.center[
+## Booth, "The Revival or Rhetoric" <br/> Poulakos, "Toward a Sophistic Definition of Rhetoric"
+]
+
+1. Discussion Leaders
+1. Booth's Age of Rhetoric
+1. Re-considering the Sophists
+
+---
+class: big
+## Discussion Questions
+
+1. After hearing the side of the Sophists, do you still agree that Aristotle’s argument is more effective? Could you give examples? (Todd)
+1. Since bards read their audiences to decide which pieces of The Iliad and The Odyssey were most appropriate to tell to the current group of people at the time, do you think that bards were effective rhetors in addition to sophists? Did some of their skills get incorporated into the sophists’ methods? (Emily)
+
+---
+class: big
+## Discussion Questions
+
+1. After hearing the side of the Sophists, do you still agree that Aristotle’s argument is more effective? Could you give examples? (Todd)
+1. Since bards read their audiences to decide which pieces of The Iliad and The Odyssey were most appropriate to tell to the current group of people at the time, do you think that bards were effective rhetors in addition to sophists? Did some of their skills get incorporated into the sophists’ methods? (Emily)
+
+---
+class: bigger
+## Rhetoric's Revival?
+
+> The word "rhetoric" has for a long time served for both the study of the art of persuasion and for the art itself ... In the second sense rhetoric has never had a real quantitative revival because it has always thrived; but in the first sense we seem to be in the midst of a revival of rhetoric unmatched in the twentieth century. (8)
+
+---
+class: big
+## What is Rhetoric Today?
+
+> What, exactly, are we reviving? As applied to art, the term is today given every conceivable degree of narrowness and generality, meaning anything from mere ornamental figures that can be tacked on a discourse or subtracted at will to the whole range of all possible forms of discourse; as systematic study, rhetoric may be anything from a classification of ornamental figures to the theory of man as a logos-possessing animal. (8)
+
+---
+# The Age of Rhetoric
+
+> I have in mind not only our fantabulous annual expenditures on advertising and public relations and political campaigns, though these alone might brand us, quantitatively, as the most rhetorical age of all time. I am thinking even more about how image building and propaganda have come to dominate fields where traditionally one could expect to find not blandishment or trickery but either solid action or genuine argument. The hand that used to guide the plow now pens the Agricultural Association Press Release. The warrior's sword is now either literally a typewriter or, if still in fact a destructive weapon, one that is wielded not so much to win battles as to change men's minds. (8)
+
+
+---
+## Rhetoric for the Age of Rhetoric
+
+> But it would be naive to think that reviving Aristotle or Quintilian or Campbell or Whately could solve our problems if we only studied them carefully. For one thing, the age of rhetoric has invented forms of persuasion that earlier ages knew not of. Much, perhaps most, of our rhetoric occurs in informal situations; we need a rhetoric of the symposium, of the conference room-I would hope somewhat more respectable intellectually than what is now offered the public under terms like "group dynamics" and "conference techniques."  (11)
+---
+class: big
+## Rhetoric of Conclusions
+
+> Controversy is conducted as if all strong effects were equally valuable; to shock or simply to win are more important than the discovery of truth. I announce no secrets here, of course; many of our most prominent controversialists have explicitly repudiated reason in the name of rhetorical effects like shock or outrage. (9)
+
+---
+class: big
+## Rhetorical Problems
+
+> we are still bound to the directives of Plato's System of Idealism and Aristotle's System of Development. But because rhetoric came about as an activity grounded in human expérience, not in philosophical reflection, we must approach it by looking at those who practiced it before turning to those who reflected about it. (35)
+---
+class: big
+
+## New Definition of Rhetoric
+
+> The definition I wish to advance is: *Rhetoric is the art which seeks to capture in opportune moments that which is appropriate and attempts to suggest that which is possible*. Very briefly, this definition intimâtes that rhetoric is an artistic undertaking which concerns itself with the how, the when, and the what of expression and understands the why of purpose. Further, this définition links rhetoric to a movement originating in the sphère of actuality and striving to attain a place in that of potentiality. (36)
+---
+## Art?
+
+> The Sophists conceived of rhetoric primarily as a *techné* (art) whose medium is logos and whose double aim is *terpsis* (aesthetic pleasure) and *pistis* (belief). (36)
+
+> Conceiving of rhetoric as art is important because on the one hand it designates the sophistic view proper and on the other it helps piace the controversy between Plato and the Sophists in the right light. In particular, one may argue, rhetoric as art does not admit criteria appropriate to strictly epistemological or axiological matters; nor does it cali for the same considérations which rhetoric as argument does. Thus, some of the well-known Platonic charges against rhetoric become inapplicable.11 In distinction to episteme, rhetoric does not strive for cognitive certitude, the affirmation of logic, or the articulation of universals. Conditioned by the people who create it, rhetoric moves beyond the domain of logic and, satisfied with probability, lends itself to the flexibility of the contingent. (37)
+---
+class: bigger
+## A Practical Art
+
+> The sophistic insistence that speaking be done with respect to time does not stem from a philosophical position regarding the nature of logos but from the observation that if what is said is timely, its timeliness renders it more sensible, more rightful, and ultimately more persuasive. (40)
+---
+class: bigger
+## Keywords for Sophistic Rhetoric
+
+1. *kairos* (timing)
+1. *to prepon* (appropriateness)
+1. *to dynaton* (possibility)
+---
+class: big
+
+## How This Works
+
+> Both timeliness and appropriateness are rhetorical motifs whose essence cannot be apprehended strictly cognitively and whose application cannot be learnt mechanically. (42)
+
+> If persuasion is to occur, both qualities must be present in the spoken word. In short, the right thing must be said at the right time; inversely, the right time becomes apparent precisely because the right thing has been spoken. (42)
+---
+class: big
+
+## Desire for the Possible
+
+> The starting point for the articulation of the possible is the ontological assumption that the main driving forces in man's life are his desires," especially the desire to be other and to be elsewhere. Another relevant assumption is that the sphère of actuality always entails a lack, the absence of that which exists only in the future; more particularly, that actuality frustrâtes man when he dreams of being other and binds him to where he already is when he wants to be elsewhere. (42-3)
+
+---
+
+class: bigger
+## Booth & Poulakos as Method
+
+We have two theories of the relationship b/t rhetoric & rhetoric's history (Booth and Poulakos), which do you think is more correct?
+
+</textarea>
+  </body>
+</html>
+

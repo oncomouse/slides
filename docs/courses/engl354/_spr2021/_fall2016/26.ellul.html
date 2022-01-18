@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 26 (Ellul)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Jacques Ellul, From *Propaganda*
+---
+class: f25px
+## Science?
+
+> True modern propaganda can only function within the context of the modem scientific system. But what is it? Many observers look upon propaganda as a collection of "gimmicks" and of more or less serious practice. And psychologists and sociologists very often reject the scientific character of these practices. For our part, we completely agree that propaganda is a technique rather than a science. But it is a *modern* technique—that is it is based on one or more branches of science. Propaganda is the expression of these branches of science; it moves with them, shares in their successes and bears witness to their failures. The time is past when propaganda was a matter of individual inspiration, personal subtlety or the use of unsophisticated tricks. Now science has entered propaganda, as we shall reveal from four different points of view. (3-4)
+---
+class: f22px
+## Four Science Points
+
+> First of all, modern propaganda is based on scientific analyses of psychology and sociology…
+>
+> Second, propaganda is scientific in that it tends to establish a set of rules, rigorous, precise, and tested, that are not merely recipes but impose themselves on every propagandist, who is less and less free to follow his own impulses…
+>
+> Third, what is needed nowadays is an exact analysis of both the environment and the individual to be subjected to propaganda…
+>
+> Finally, one last trait reveals the scientific character of modern propaganda: the increasing attempt to control its use, measure its results, define its effects…
+>
+> It indicates that propaganda is no longer a self-contained action, covering up for evil deeds. It is an object of serious thought, and proceeds along scientific channels. (4-5)
+---
+class: f26px
+## Individual and Mass
+
+> Any modern propaganda will, first of all, address itself at one and the same time to the individual and to the masses, but cannot separate the two elements. For propaganda to address itself to the individual, in his isolation, apart from the crowd, is impossible. The individual is of no interest to the propagandist; as an isolated unit he presents much too much resistance to external action to be effective, propaganda cannot be concerned with detail, not only because to win men over one by one takes much too long, but also because to create certain convictions in an isolated individual is much too difficult. Propaganda ceases where simple dialogue begins…Modern propaganda reaches individuals enclosed in the mass and as participants in that mass, yet it also aims at a crowd, but only as a body composed of individuals. (6)
+---
+class: f26px
+## Lonely Crowd of Modernity
+
+> He therefore feels himself individually concerned as a person, as a participant. The movie spectator also is alone, though elbow to elbow with his neighbors, he still is, because of the darkness and the hypnotic attraction of the screen, perfectly alone. This is the situation of the "lonely crowd," or of isolation in the mass, which is a natural product of present-day society and which is both used and deepened by the mass media. The most favorable moment to seize a man and influence him is when he is alone in the mass: it is at this point that propaganda can be meat effective.
+>
+>We must emphasize this circle which we shall meet again and again; the structure of present-day society places the individual where he is most easily reached by propaganda. (8-9)
+
+
+</textarea>
+  </body>
+</html>
+

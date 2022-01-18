@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 LaCroix
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center
+
+# No, LaCroix Isn’t Poisoning You Like You’re A Giant Cockroach
+---
+class: f28px
+## Chemistry
+
+> Two weeks ago, a hullabaloo broke out over a lawsuit alleging that canned seltzer from LaCroix contains an ingredient found in “cockroach insecticide.” Suddenly, the canned water with the cult-like following didn’t sound so appetizing. But there was never any bug killer in the seltzer. Instead, the incident highlights an uncomfortable truth: Food and beverage production is essentially chemistry. Any discomfort we feel about that fact isn’t based on science.
+
+---
+class: f35px
+## Chain Letter
+
+> It sounds like scary stuff. But even if the chemicals are in the water, raising the alarm about them is a little bit like warning about the dangers of [dihydrogen monoxide](https://web.archive.org/web/19961031232918/http://media.circus.com/~no_dhmo/) — a substance that’s a major component of acid rain, that is known to corrode and oxidize metals and that can be fatal if inhaled. It is also better known by its common name, water.
+
+---
+class: f34px
+## Evidence
+
+> Linalool, for instance, is found in many fruits. “It’s a key to blueberry. If blueberry didn’t have it, it would taste totally different,” Reineccius said. It’s true that linalool is sometimes used in products that help control cockroaches, but implying that linalool is insecticide is like saying that citric acid (the thing that makes lemons tart) is a kind of paint remover simply because you found it on an ingredient list at your hardware store. 
+
+---
+class: f28px
+## "Natural"
+
+> The lawsuit claims that these ingredients have been listed by the Food and Drug Administration as synthetic, but that’s misleading. It’s true that these three ingredients appear on FDA lists of synthetic flavorings, but that’s just because they can also be synthesized in a lab. When they’re made that way, the FDA calls them “artificial” flavoring, and when they are extracted from a plant or animal they’re considered “natural,” though the FDA does not verify that labels of food products are accurate. So what’s really at issue here is not *what* ingredients are in LaCroix but *how* these ingredients were produced.
+
+---
+class: f31px
+## Definition
+
+> Although the FDA defines what a “natural” flavor is, it doesn’t currently have any official definitions for what “natural” means when applied to a whole product. FDA press officer Deborah Kotz said the agency would expect the term “natural” to mean that nothing artificial or synthetic had been added. The FDA recently called for public comment on the use of term “natural” for describing food products, Kotz said, and the agency is currently reviewing these comments to determine whether and how to define “natural” products.
+---
+class: f33px
+## Flavor
+
+> And so food chemists use their tools to create products that taste good when they reach your table. When you read the phrase “natural flavor” on a label, you might assume that, say, a coconut beverage contains some extract of coconut, but in fact some coconut flavoring is actually derived from castor oil. “It makes a beautiful coconut flavor, and it’s perfectly safe and wholesome,” Reineccius said. “You can label it ‘all-natural,’ but it’s not from coconut.”
+---
+class: f34px
+## Bug Spray
+
+> The great irony here is that, as food scientist Sarah Taber pointed out on Twitter, the whole reason that bug killers might contain things like linalool in the first place is because “makers realized people don’t want to spray ‘chemicals’ in their house to get rid of bugs, and preferred natural plant-based repellents.” Turns out, there’s no way around it: All the products we buy contain chemicals.
+
+
+</textarea>
+  </body>
+</html>
+

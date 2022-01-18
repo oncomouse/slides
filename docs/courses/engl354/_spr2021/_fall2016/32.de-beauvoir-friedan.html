@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 32 (de Beauvoir & Friedan)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Simone de Beauvoir, From *The Second Sex*
+# Betty Friedan, From *The Feminine Mystique*
+---
+class: f27px
+## The Other
+
+> The category of the Other is as primordial as consciousness itself. In the most primitive societies, in the most ancient mythologies, one finds the expression of a duality – that of the Self and the Other…
+>
+> Thus it is that no group ever sets itself up as the One without at once setting up the Other over against itself. If three travellers chance to occupy the same compartment, that is enough to make vaguely hostile ‘others’ out of all the rest of the passengers on the train. In small-town eyes all persons not belonging to the village are ‘strangers’ and suspect; to the native of a country all who inhabit other countries are ‘foreigners’…
+---
+class: f24px
+## Mutability of History
+
+> But proletarians have not always existed, whereas there have always been women. They are women in virtue of their anatomy and physiology. Throughout history they have always been subordinated to men, and hence their dependency is not the result of a historical event or a social change – it was not something that occurred. The reason why otherness in this case seems to be an absolute is in part that it lacks the contingent or incidental nature of historical facts. A condition brought about at a certain time can be abolished at some other time, as the Negroes of Haiti and others have proved: but it might seem that natural condition is beyond the possibility of change. In truth, however, the nature of things is no more immutably given, once for all, than is historical reality. If woman seems to be the inessential which never becomes the essential, it is because she herself fails to bring about this change.
+---
+class: f31px
+## History of "Naturalness"
+
+> Legislators, priests, philosophers, writers, and scientists have striven to show that the subordinate position of woman is willed in heaven and advantageous on earth. The religions invented by men reflect this wish for domination. In the legends of Eve and Pandora men have taken up arms against women. They have made use of philosophy and theology, as the quotations from Aristotle and St Thomas have shown. Since ancient times satirists and moralists have delighted in showing up the weaknesses of women.
+---
+class: f22px
+## Competition
+
+> It was only later, in the eighteenth century, that genuinely democratic men began to view the matter objectively. Diderot, among others, strove to show that woman is, like man, a human being. Later John Stuart Mill came fervently to her defence. But these philosophers displayed unusual impartiality. In the nineteenth century the feminist quarrel became again a quarrel of partisans. One of the consequences of the industrial revolution was the entrance of women into productive labour, and it was just here that the claims of the feminists emerged from the realm of theory and acquired an economic basis, while their opponents became the more aggressive. Although landed property lost power to some extent, the bourgeoisie clung to the old morality that found the guarantee of private property in the solidity of the family. Woman was ordered back into the home the more harshly as her emancipation became a real menace. Even within the working class the men endeavoured to restrain woman’s liberation, because they began to see the women as dangerous competitors – the more so because they were accustomed to work for lower wages.
+---
+class: f23px
+## How To Think About This
+
+> If we survey some of the works on woman, we note that one of the points of view most frequently adopted is that of the public good, the general interest; and one always means by this the benefit of society as one wishes it to be maintained or established. For our part, we hold that the only public good is that which assures the private good of the citizens; we shall pass judgement on institutions according to their effectiveness in giving concrete opportunities to individuals. But we do not confuse the idea of private interest with that of happiness, although that is another common point of view. Are not women of the harem more happy than women voters? Is not the housekeeper happier than the working-woman? It is not too clear just what the word happy really means and still less what true values it may mask. There is no possibility of measuring the happiness of others, and it is always easy to describe as happy the situation in which one wishes to place them.
+---
+class: f31px
+## Sense of Mystery
+
+> The problem lay buried, unspoken, for many years in the minds of American women. It was a strange stirring, a sense of dissatisfaction, a yearning that women suffered in the middle of the twentieth century in the United States. Each suburban wife struggled with it alone. As she made the beds, shopped for groceries, matched slipcover material, ate peanut butter sandwiches with her children, chauffeured Cub Scouts and Brownies, lay beside her husband at night-she was afraid to ask even of herself the silent question-"Is this all?"
+
+---
+class: f22px
+## Myth of Femininity
+
+>  Experts told them how to catch a man and keep him, how to breastfeed children and handle their toilet training, how to cope with sibling rivalry and adolescent rebellion; how to buy a dishwasher, bake bread, cook gourmet snails, and build a swimming pool with their own hands; how to dress, look, and act more feminine and make marriage more exciting; how to keep their husbands from dying young and their sons from growing into delinquents. They were taught to pity the neurotic, unfeminine, unhappy women who wanted to be poets or physicists or presidents. They learned that truly feminine women do not want careers, higher education, political rights—the independence and the opportunities that the old-fashioned feminists fought for. Some women, in their forties and fifties, still remembered painfully giving up those dreams, but most of the younger women no longer even thought about them. A thousand expert voices applauded their femininity, their adjustment, their new maturity. All they had to do was devote their lives from earliest girlhood to finding a husband and bearing children.
+---
+class: f29px
+## Baby Boom
+
+> By the end of the fifties, the United States birthrate was overtaking India's. The birth-control movement, renamed Planned Parenthood, was asked to find a method whereby women who had been advised that a third or fourth baby would be born dead or defective might have it anyhow. Statisticians were especially astounded at the fantastic increase in the number of babies among college women. Where once they had two children, now they had four, five, six. Women who had once wanted careers were now making careers out of having babies. So rejoiced *Life* magazine in a 1956 paean to the movement of American women back to the home.
+---
+
+
+</textarea>
+  </body>
+</html>
+

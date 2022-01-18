@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Day 22 (Perelman)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Chaim Perelman & Lucie Olbrechts-Tyteca <br> *The Philosophy of Rhetoric*
+---
+class: big
+## Rhetoric: Literature + Speculation
+
+> Schematic treatments [of rhetoric], some of them old and almost forgotten, others quite recent, have illuminated each other and have been integrated into an ancient discipline that has, however, been distorted for centuries and is neglected today. Problems generally approached from a purely literary viewpoint, together with others that are the concern of the most abstract speculation … are set in a dynamic context which brings out their significance and permits the vivd apprehension of the dialectical relationship between thought and action. (1375)
+---
+class: big
+## Problem w/ Aristotle
+
+> Up to now all these questions have either been entirely neglected or have been studied by a method and in a spirt that are foreign to the rhetorical point of view. The effect of restricting logic to the examination of the proofs termed "analytical" by Aristotle, together with the reduction of dialectical proofs—when anyone felt they were worth analyzing—to analytical proofs, was to remove from the study of reasoning all reference to argumentation. (1375)
+---
+class: bigger
+## Relativism
+
+> We combat uncompromising and irreducible philosophical oppositions presented by all kinds of absolutism: dualisms of reason and imagination, of knowledge and opinion, of irrefutable self-evidence and deceptive will, of a universally accepted objectivity and an incommunicable subjectivity, of a reality binding on everybody and values that are purely individual. (1376)
+---
+## Philosophy w/o Argument
+
+> To conceive of all progress in knowledge exclusively as an extension of the sphere occupied by these clear, distinct elements, to the point even of imagining that ultimately, with a perfect thought imitating divine thought, one could eliminate from knowledge everything that does not conform to this ideal of clarity and distinction—this means progressively reducing resort to argumentation up until the moment when its use becomes entirely superfluous. Pending the arrival of this moment, making use of it would stigmatize the branches of knowledge resorting to it as imperfectly constituted fields still in search of their method, and unworthy of the name of *science*. It is not surprising that such an attitude has turned logicians and philosophers away from the study of argumentation as something unworthy of their attention, leaving it in the hands of public-relations and propaganda experts who are generally suspected of a lack of scruple and of constant opposition to any sincere search for the truth. (1376)
+---
+class:big
+## Philosophy w/o Truth
+
+> Our own position is quite different. Instead of basing our philosophy on definitive, unquestionable truths, our starting point is that mean and groups of men adhere to opinions of all sorts with a variable intensity, which we can only know by putting it to the test. these beliefs are not always self-evident, and they rarely deal with clear and distinct ideas. The most generally accepted beliefs remain implicit and unformulated for a long time, for more often than not it is only on the occasion of a disagreement as to the consequences resulting from them that the problem of their formulation or more precise definition arises. (1376)
+---
+## Moral Calculus
+
+> The increased confidence thus brought about in the procedures and results of the mathematical and natural sciences went hand in hand with the casting aside of all the other means of proof, which were considered devoid of scientific value. Now this attitude was quite justifiable as long as there was the hope of finding a scientifically defensible solution to all actual human problems through an increasingly wide application of the calculus of probabilities. But if essential problems involving moral, social, political, philosophical, or religious order by their very nature elude the methods of the mathematical and natural sciences, it does not seem reasonable to scorn and reject all the techniques of reasoning characteristic of deliberation and discussion—in a word, of argumentation. (1377)
+---
+class: bigger
+## Beyond Subjective/Objective
+
+> The assertion that whatever is not objectively and indisputably valid belongs in the realm of the arbitrary and subjective creates an unbridgeable gulf between theoretical knowledge, which alone is rational, and action, for which motivations would be wholly irrational. (1377)
+---
+class: big
+## All Judgement is Situational
+
+> If judgements of reality are to provide an indisputable object of common understanding, the terms they contain must be free of all ambiguity, either because it is possible to know their true meaning, or because a unanimously accepted convention does away with all controversy on this subject. These two possibilities, which are respectively the approaches of realism and nominalism in the linguistic field, are both untenable, as they regard language either as a reflection of reality or as an arbitrary creation of an individual, and forget an essential element, the social aspect of language, which is an instrument of communication and influence on others. (1378)
+---
+class: bigger
+## Language & Community
+
+> All language is the language of a community, be this a community bound by biological ties, or by the practice of a common discipline or technique. (1378)
+---
+class: big
+## Argument & Freedom
+
+> Only the existence of an argumentation that is neither compelling nor arbitrary can give meaning to human freedom, a state in which a reasonable choice can be exercised. If freedom was no more than necessary adherence to a previously given natural order, it would exclude all possibility of choice; and if the exercise of freedom were not based on reasons, every choice would be irrational and would be reduced to an arbitrary decision operating in an intellectual void. (1378)
+
+</textarea>
+  </body>
+</html>
+

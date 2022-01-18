@@ -1,0 +1,257 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 - Day 18 (Kennedy)
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: bigger, middle
+
+.center[
+# George Kennedy <br> "A Hoot in the Dark"
+]
+
+---
+## Discussion Leader (Jacy)
+
+Kennedy states in his article that "Since conscious intent cannot be assumed in the case of most animal communication, the "meaning" is the interpretation given to the communication by another animal."
+
+Do you agree with this assertion, and, if so, do you think it is applicable to human communication?
+
+Kennedy goes on to say, "it remains the case that audience reception is a more primitive and a basic criterion of meaning than is authorial intent." 
+
+Which do you think is the more effective measure of meaning in a piece or rhetoric, authorial intent, audience reception, or some combination of both?
+
+---
+## Discussion Leader (Robin)
+
+> What is the meaning of a particular communication by an animal? Since conscious intent cannot be assumed in the case of most animal communication, the answer is that the ‘meaning’ is the interpretation given to the communication by another animal (7)
+
+Unlike other animals, it is accepted that humans do possess conscious intent when communicating. Does having conscious intent give the speaker the right to determine the entire or the majority of the meaning behind their communication? Does the fact that humans have a “second order” of intentionality (that is, the ability to conceptualize both their own beliefs and those of others) require the speaker to release some of their ownership of meaning to the audience?
+
+---
+## Rhetoric as Style, Rhetoric as Substance
+
+> After spending much of my Professional life teaching rhetoric, I began to wonder what I was talking about. My initial assumption, one generally shared by classicists and students of speech communication, though not by literary theorists, was that rhetoric emerged in Greece as an art of persuasion in public address; once it was formulated as a System of invention, arrangement, and style and widely taught as a useful skill under constitutional governments, it underwent a process of *letteraturizzazione* in which it affected, or if you prefer, infected, all forms of oral and written communication and molded audience expectations of communication. With changing political conditions, rhetoric repeatedly became more associated with matters of style than with argument, and in the sixteenth century Petrus Ramus carried this to the extreme of limiting rhetoric to style and delivery. ... From these sources, classical and early modern respectively, have developed two contrasting, though sometimes intersecting, modern views of rhetoric: the view of literary theorists that rhetoric is a quality of the use of language and most perfectly seen in the metaphor, and a revived view of rhetoric as a phenomenon of public discourse in which cultural and political values find expression. (1)
+
+---
+## Taxonomic Rhetoric
+
+> The term *rhetoric* has clearly had different meanings in different historical cultures and the phenomena that we call "rhetoric" have been called different things at different times. I suppose rhetoric is not a "substance" in the logical sense, though it does seem to me that there is something found in nature that either resembles rhetoric or possibly constitutes the starting point from which it has culturally evolved. If we could come to some understanding of that starting point we might be able to define a "genus" of which the various historical meanings of rhetoric are "species," and if we could do that we might be on the way to a more general theory of rhetoric that could be useful in studying speech, language, literature, art, religion, and other aspects of human society. (1-2)
+
+---
+## Rhetoric as Energy
+
+> I would provisionally describe the rhetoric of these sentences as a matter of their energy level. It is easy to see that they might be expressed in different degrees of shrillness or calmness of voice. Thus they also involve different degrees of expenditure of physical energy in their utterance. Rhetoric in the most generai sense may perhaps be identified with the energy inherent in communication: the emotional energy that impels the speaker to speak, the physical energy expended in the utterance, the energy level coded in the message, and the energy experienced by the recipient in decoding the message. In theory, one might even seek to identify some quantitative unit of rhetorical energy call it the "rheme" analogous to an erg or volt, by which rhetorical energy could be measured. I leave that to the experimentalists. (2)
+
+---
+class: big
+## Rhetorical Energy Beyond Language
+
+> It seems clear, however, that rhetorical energy is not found only in language. It is present also in physical actions, facial expressions, gestures, and signs generally. (4)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+
+---
+## Rhetoric is Prior To Speech
+
+> By "prior" I mean that rhetoric, as energy, has to exist in the speaker before speech can take place. It is prior in biological volution and prior psychologically in any specific instance. Speech cannot take piace without some force or motivation to articulate an utterance. The originator of a communication has to experience an exigence. But I also mean that rhetoric is prior to speech historically and in biological evolution. Speech would not have evolved among human beings unless rhetoric already existed. In fact, rhetoric is manifest in all animal life and existed long before the evolution of human beings. Nature has favored the development of communication skills; although they have some energy cost, they are less costly than physical motion, such as flight or fight. (4)
+
+---
+## Universal 
+
+> [Chomskey] does not mention rhetoric, but rhetoric seems to me exactly what animal and human communication, as he describes them, have in common. Animals, whether for physical or mental reasons, do not naturally employ human language, though some birds can learn to do so for limited purposes, and conversely human beings are inept in employing most systems of animal communication. We can, however, by observation learn to understand animal rhetoric and many animals can understand some features of human rhetoric that they share with us, such as gestures or sounds that express anger or friendliness or commande. We share a "deep" universal rhetoric. (6)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+
+.topic[Theses of Universal Rhetoric]
+---
+## Interpretation Precedes Meaning
+
+> More specifically, in nature the meaning is what the receiver does as a result of receiving the message, which should be some comfort to the pragmatist school of philosophers. If the receiver does nothing, the message has no meaning. The receiver's interpretation is "prior" in the sense that what the receiver is already conditioned to do on receipt of a certain message—the receiver's knowledge of the rhetorical code—determines what the receiver does when the message arrives. (7-8)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+
+
+.topic[Theses of Universal Rhetoric]
+---
+## Rhetoric is Prior to Intentionality
+
+> Actually there is even a kind of rhetoric among plants. Though clearly lacking in conscious intent, it is essential for the survival of the species. The term colors of rhetoric was frequently used in the past to describe figures of speech. The colors of flowers attract insects and birds and facilitate pollination. Plants also use odors to attract or repel animais. Coloration and scent are each a kind of rhetoric and the creation and perception of each involves the use of energy. This is purposive in nature, though not purposeful. (10)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+1. The Function of Rhetoric is the Survival of the Fittest
+1. The Rhetorical Code Evolves by Selective Variation
+
+---
+## The Function of Rhetoric is the Survival of the Fittest
+
+> Rhetoric acts as a mechanism for survival by facilitating successful adaptation of an organism to environmental change. Genetic mutation benefits the species by providing increased options for adaptation, but does little or nothing for the progenitive organism; within animal cultures, however, including human culture, rhetoric is a powerful force for the survival and well-being of the individuai, the family, and the social group as these exist at any given moment.  (10)
+---
+## The Rhetorical Code Evolves by Selective Variation
+
+> Nature selects for survival those individuals whose skills are most adaptive to their environment. Selective variation in rhetoric probably orìginates in small "mistakes" in using either a nonhuman or human code, in novel combinations of its conventional elements, or chance experimentation or play that proves more effective than what has traditionally been done and is imitated. At some point in history, some human being hit upon the novelty of giving a reason for a command, and kept on doing it when a rational audience responded well. Among higher animais, rhetorical skills are transmitted culturally by imitation and learning, not genetically. (11)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+1. The Function of Rhetoric is the Survival of the Fittest
+1. The Rhetorical Code Evolves by Selective Variation
+1. Among the Traditional Parts of Rhetoric, Delivery is Prior to the Others
+
+---
+## Delivery is Prior to Others
+
+> "Delivery" in traditional rhetoric includes facial expression, gesture, and tonal inflection. In Latin, the term *actio* was often used instead, and it is action, not subtleties of vocalization, to which I refer here. Physical motion in response to some exigence occurs in the earliest and most primitive forms of life, as when an amoeba moves toward a food supply or away from some noxious stimulus. A kind of proto-rhetoric can be said to exist in those creatures that can react to a challenge by change of color or shape or by spewing out some substance as does an octopus. Some action produces sound, which other creatures can perceive although the originator of the sound may not. (12)
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+1. The Function of Rhetoric is the Survival of the Fittest
+1. The Rhetorical Code Evolves by Selective Variation
+1. Among the Traditional Parts of Rhetoric, Delivery is Prior to the Others
+1. Writing is Prior to Speech But Not Prior to Rhetoric
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+1. The Function of Rhetoric is the Survival of the Fittest
+1. The Rhetorical Code Evolves by Selective Variation
+1. Among the Traditional Parts of Rhetoric, Delivery is Prior to the Others
+1. Writing is Prior to Speech But Not Prior to Rhetoric
+1. Rhetorical invention, arrangement, style, memory, and delivery are phenomena of nature and prior to speech
+
+.topic[Theses of Universal Rhetoric]
+---
+## Ethos, Pathos, Logos in the Wild
+
+> I would describe this as deliberative rhetoric in that in a particular social context it implies advice about future action be wary, or flee and the receiver needs to make a judgment. I would also suggest that elements of ethos, pathos, and logos are inherent in it. The originator of the communication, whether consciously or not, has given a sign of his credibility and good will (ethos), has expressed with more or less emphasis his alarm and produced a message that can awaken alarm in his audience (pathos), and has indicated why he feels alarm by giving the call that denotes a predator (logos).  (15)
+
+---
+class: big
+
+## Theses of Universal Rhetoric
+
+1. Rhetoric is Prior to Speech
+1. The Receiver's Interpretation of a Communication is Prior to the Speaker's Intent in Determining Meaning
+1. Rhetoric is Prior to Intentionality or to any Belief on the Part of a Speaker About the Meaning of a Sign or its Effect on Others
+1. The Function of Rhetoric is the Survival of the Fittest
+1. The Rhetorical Code Evolves by Selective Variation
+1. Among the Traditional Parts of Rhetoric, Delivery is Prior to the Others
+1. Writing is Prior to Speech But Not Prior to Rhetoric
+1. Rhetorical invention, arrangement, style, memory, and delivery are phenomena of nature and prior to speech
+
+</textarea>
+  </body>
+</html>
+
