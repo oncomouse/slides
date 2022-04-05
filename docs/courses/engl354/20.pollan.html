@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Pollan
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Michael Pollan, From *Cooked*
+---
+class: f50px
+## Previously on "Modern Rhetorical Theory"
+
+.center[
+[We Talked About Rhetorical Analysis](./08.burke.html#4)
+]
+---
+class: f34px
+## Why Cook?
+
+>  It leaves plenty of mental space for daydreaming and reflection. One of the things I reflected on is the whole question of taking on what in our time has become, strictly speaking, optional, even unnecessary work, work for which I am not particularly gifted or qualified, and at which I may never get very good. This is, in the modern world, the unspoken question that hovers over all our cooking: Why bother? (19)
+
+---
+class: f22px
+## Appeals
+
+>  Not long ago, I read an Op Ed piece in *The Wall Street Journal* about the restaurant industry, written by the couple that publishes the Zagat restaurant guides … Rather than coming home after work to cook, the Zagats suggested, “people would be better off staying an extra hour in the office doing what they do well, and letting bargain restaurants do what they do best.”
+>
+> Here in a nutshell is the classic argument for the division of labor, which, as Adam Smith and countless others have pointed out, has given us many of the blessings of civilization. It is what allows me to make a living sitting at this screen writing, while others grow my food, sew my clothes, and supply the energy that lights and heats my house. I can probably earn more in an hour of writing or even teaching than I could save in a whole week of cooking. Specialization is undeniably a powerful social and economic force. And yet it is also debilitating. It breeds helplessness, dependence, and ignorance and, eventually, it undermines any sense of responsibility. (19)
+
+---
+class: f25px
+## Cultural Myth
+
+> Our society assigns us a tiny number of roles: We’re producers of one thing at work, consumers of a great many other things all the rest of the time, and then, once a year or so, we take on the temporary role of citizen and cast a vote. Virtually all our needs and desires we delegate to specialists of one kind or another—our meals to the food industry, our health to the medical profession, entertainment to Hollywood and the media, mental health to the therapist or the drug company, caring for nature to the environmentalist, political action to the politician, and on and on it goes. Before long it becomes hard to imagine doing much of anything for ourselves—anything, that is, except the work we do “to make a living.” For everything else, we feel like we've lost the skills, or that there’s someone who can do it better. (20)
+
+---
+class: f27px
+## Mindfulness
+
+> To butcher a pork shoulder is to be forcibly reminded that this is the shoulder of a large mammal, made up of distinct groups of muscles with a purpose quite apart from feeding me. The work itself gives me a keener interest in the story of the hog: where it came from and how it found its way to my kitchen. In my hands its flesh feels a little less like the product of industry than of nature; indeed, less like a product at all. Likewise, to grow the greens I’m serving with this pork, greens that in late spring seem to grow back almost as fast as I can cut them, is a daily reminder of nature’s abundance, the everyday miracle by which photons of light are turned into delicious things to eat. (20-1)
+
+---
+class: f27px
+## Personal Responsibility
+
+> Especially one’s pronouncements about “the environment,” which suddenly begins to seem a little less “out there” and a lot closer to home. For what is the environmental crisis if not a crisis of the way we live? The Big Problem is nothing more or less than the sum total of countless little everyday choices, most of them made by us (consumer spending represents nearly three-quarters of the U.S. economy) and the rest of them made by others in the name of our needs and desires. If the environmental crisis is ultimately a crisis of character, as Wendell Berry told us way back in the 1970s, then sooner or later it will have to be addressed at that level—at home, as it were. In our yards and kitchens and minds. (21)
+
+---
+class: f26px
+## Cooking as an Argument
+
+> To cook or not to cook thus becomes a consequential question. Though I realize that is putting the matter a bit too bluntly. Cooking means different things at different times to different people; seldom is it an all-or-nothing proposition. Yet even to cook a few more nights a week than you already do, or to devote a Sunday to making a few meals for the week, or perhaps to try every now and again to make something you only ever expected to buy—even these modest acts will constitute a kind of a vote. A vote for what, exactly? Well, in a world where so few of us are obliged to cook at all anymore, to choose to do so is to lodge a protest against specialization—against the total rationalization of life. Against the infiltration of commercial interests into every last cranny of our lives. (22)
+
+---
+class: f31px
+## Re-definition
+
+> Cooking, I found, gives us the opportunity, so rare in modern life, to work directly in our own support, and in the support of the people we feed. If this is not “making a living,” I don’t know what is. In the calculus of economics, doing so may not always be the most efficient use of an amateur cook’s time, but in the calculus of human emotion, it is beautiful even so. For is there any practice less selfish, any labor less alienated, any time less wasted, than preparing something delicious and nourishing for people you love? (23)
+
+
+</textarea>
+  </body>
+</html>
+
