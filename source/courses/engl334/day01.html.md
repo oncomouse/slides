@@ -5,11 +5,6 @@ progress_bar: true
 class: center, middle
 
 # Welcome to ENGL 334
-
----
-class: center, middle
-
-## Course Syllabus:<br>[http://atp1.us/engl334](http://atp1.us/engl334)
 ---
 class: f28px
 ## Hugo Gernsback
