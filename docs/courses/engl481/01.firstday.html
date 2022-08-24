@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 481 First Day
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: middle, center
+
+.title-block[
+# Welcome to ENGL 481:
+## Cyberpunk, Fact and Fiction
+]
+---
+class: middle, center
+![Cyberpunk Cityscape](https://external-preview.redd.it/fm8pB1_yrPMcCq9abmffwFQ2pvtuPXgbs9iPq-hQqGU.jpg?width=640&crop=smart&auto=webp&s=0063e6f75c5586f0de2f014fe127b22807fbba61)
+---
+class: middle, center
+![Pixel Cyberpunk Subway Station](https://cdna.artstation.com/p/assets/images/images/053/023/504/large/christopher-anry-seekingblue-1080p.jpg?1661248096)
+---
+class: middle, center
+![Street Scene](https://preview.redd.it/ur2kcocyeij91.jpg?width=640&crop=smart&auto=webp&s=5ea58ff275dc7484fd3d12c9bc8ad7a605ef5a49)
+---
+class: middle, center
+![Cyberpunk Shipping Guard](https://preview.redd.it/d89cmx6e18j91.png?width=640&crop=smart&auto=webp&s=905ac5d163fca20bd65b5da8aaa8091008eba0c4)
+---
+class: middle, center
+![A Better Future](https://preview.redd.it/0ntdegopaij91.jpg?width=640&crop=smart&auto=webp&s=fec5a4e9c3266329a1dffc0091e566060b01d227)
+---
+class: middle, center
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NA4zoQHLhok?start=23" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+class: middle, center
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NA4zoQHLhok?start=1706" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</textarea>
+  </body>
+</html>
+
