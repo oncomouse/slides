@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 481 Postmodernism
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# What is Postmodernism?
+
+---
+## Definition
+
+>  Postmodernism is an intellectual stance or mode of discourse defined by an attitude of skepticism toward what it characterizes as the "grand narratives" of modernism, opposition to notions of epistemic certainty or the stability of meaning, and emphasis on the role of ideology in maintaining systems of socio-political power. Claims to objective fact are dismissed as naive realism, with attention drawn to the conditional nature of knowledge claims within particular historical, political, and cultural discourses. Thus, the postmodern outlook is characterized by self-referentiality, epistemological relativism, moral relativism, pluralism, irony, irreverence, and eclecticism; it rejects the "universal validity" of binary oppositions, stable identity, hierarchy, and categorization. ("Postmodernism" on *Wikipedia*)
+
+---
+
+## Grand Narratives?
+
+From *The Postmodern Condition* (1979) by Jean-François Lyotard.
+
+Postmodernism is the rejection of the "transcendent and universal truth" of several modern narratives, namely:
+
+1. Progress
+2. Enlightenment
+3. Emancipation
+4. Marxism
+
+Sources of Grand Narratives:
+
+1. State
+2. Church
+3. Science
+4. Media
+
+---
+
+## In Architecture, I
+
+![](https://upload.wikimedia.org/wikipedia/commons/5/52/Staatsgalerie1.jpg)
+
+---
+
+## In Architecture, II
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/MIT_Campus.jpg/711px-MIT_Campus.jpg)
+
+---
+
+## In Architecture, III
+
+![](https://i.pinimg.com/736x/ac/c0/b0/acc0b010322364ae7f2ca4fa769b0237--postmodernism-telephone.jpg)
+
+---
+
+## In Art, I
+
+![Nam June Paik](https://publicdelivery.org/wp-content/uploads/2019/02/Nam-June-Paik-TV-Buddha-1992-Buddha-monitor-CCTV-camera-134.6-x-210.8-%C3%97-55.9-cm-53.0-x-83.0-%C3%97-22.0-in-1-1.jpg)
+
+---
+
+## In Art, II
+
+![](https://upload.wikimedia.org/wikipedia/commons/8/84/Spiral-jetty-from-rozel-point.png)
+
+---
+class: f32px
+## Cyberpunk?
+
+1. *Bricolage* (pastiche, not parody)
+2. Loss of faith in (SF) master narratives
+	* Progress
+	* Human nobility / worth
+3. Suspicion of Stable Identity
+
+
+</textarea>
+  </body>
+</html>
+
