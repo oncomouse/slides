@@ -1,7 +1,12 @@
 @import "bourbon";
+@import "remark/grid";
+
+.remark-slide-content {
+	@include grid;
+}
 
 .agenda {
-	// @include grid-column(10);
+	grid-column-end: span 10;
 
-	// @include grid-push(3);
+	grid-column-start: span 3;
 }

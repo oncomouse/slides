@@ -2,6 +2,8 @@
 
 @use "sass:math";
 
+@import "remark/grid";
+
 hr {
 	width: 80%;
 	border: 0;
@@ -37,6 +39,10 @@ h2 small {
 	line-height: 0.65;
 }
 
+.grid {
+	@include grid;
+}
+
 /* Two-column layout */
 .remark-slide-content {
 	& > h1,& > h2,& > h3,& > h4,& > h5,& > h6 {
@@ -48,11 +54,11 @@ h2 small {
 
 .left-column {
 	height: 92%;
-	// @include-grid-column(3);
+	grid-column-end: span 3;
 }
 
 .right-column {
-	// @include-grid-column(9);
+	grid-column-end: span 9;
 	padding: {
 		top: 2em;
 	};
@@ -212,8 +218,8 @@ ul li, ol li, p {
 }
 $modular-scale-ratio: $golden;
 .agenda {
-	// @include-grid-column(6);
-	// @include-grid-push(3);
+	grid-column-end: span 6;
+	grid-column-start: span 3;
 	text: {
 		align: left;
 	};

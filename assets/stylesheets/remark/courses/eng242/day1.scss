@@ -1,10 +1,14 @@
 @import "bourbon";
-@import "neat";
+@import "remark/grid";
+
+.remark-slide-content {
+	@include grid;
+}
 
 .tennessee {
-	// @include-grid-column(8);
+	grid-column-end: span 8;
 
-	// @include-grid-push(2);
+	grid-column-start: span 2;
 }
 
 .jar {

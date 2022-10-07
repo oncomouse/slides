@@ -1,6 +1,11 @@
 @use "sass:math";
 
 @import "bourbon";
+@import "remark/grid";
+
+.remark-slide-content {
+	@include grid;
+}
 
 .mrs-lloyd {
 	img {
@@ -17,7 +22,7 @@
 	img {
 		width: 45%;
 
-		// @include-grid-column(6);
+		grid-column-end: span 6;
 	}
 }
 

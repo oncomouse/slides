@@ -1,13 +1,16 @@
 @import "bourbon";
+@import "remark/grid";
 
 ul li, ol li {
 	line-height: 1.75rem;
 }
 
 .remark-slide-content {
+	@include grid;
 }
 
 .half-column {
+	grid-column-end: span 6;
 }
 
 .slide2 {

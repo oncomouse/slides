@@ -1,5 +1,9 @@
 @import "bourbon";
-@import "neat";
+@import "remark/grid";
+
+.remark-slide-content {
+	@include grid;
+}
 
 .image {
 	img {
@@ -27,9 +31,9 @@
 	}
 
 	blockquote {
-		// @include-grid-column(4);
+		grid-column-end: span 4;
 
-		// @include-grid-push(4);
+		grid-column-start: span 4;
 	}
 }
 
@@ -39,9 +43,9 @@
 	}
 
 	blockquote {
-		// @include-grid-column(6);
+		grid-column-end: span 6;
 
-		// @include-grid-push(3);
+		grid-column-start: span 3;
 		// @import "neat";
 
 		font-size: 0.95em;

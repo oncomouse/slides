@@ -1,5 +1,9 @@
 @import "bourbon";
-@import "neat";
+@import "remark/grid";
+
+.remark-slide-content {
+	@include grid;
+}
 
 .place {
 	img {
@@ -7,11 +11,11 @@
 	}
 
 	.left-column {
-		// @include-grid-column(4);
+		grid-column-end: span 4;
 	}
 
 	.right-column {
-		// @include-grid-column(8);
+		grid-column-end: span 8;
 
 
 		text-align: center;
