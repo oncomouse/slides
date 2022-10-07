@@ -367,6 +367,14 @@ img {
 		max-height: 72px;
 	}
 }
+
+@for $i from 1 to 9 {
+	.fw#{$i * 100},
+	.fw#{$i * 100} strong {
+		font-weight: $i * 100;
+	}
+}
+
 // Text color
 .tc-white,
 .tc-white * {
