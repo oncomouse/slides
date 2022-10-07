@@ -1,1 +1,1 @@
-.place img{width:350px}.place .right-column{text-align:center}.ardois img{width:75%;display:block;margin:0 auto}
+.remark-slide-content{display:grid;overflow:hidden;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows:auto}.remark-slide-content>*{grid-column-end:span 12;grid-row:span 1}.place img{width:350px}.place .left-column{grid-column-end:span 4}.place .right-column{grid-column-end:span 8;text-align:center}.ardois img{width:75%;display:block;margin:0 auto}

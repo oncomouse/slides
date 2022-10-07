@@ -1,0 +1,1 @@
+.remark-slide-content{display:grid;overflow:hidden;grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;grid-template-rows:auto}.remark-slide-content>*{grid-column-end:span 12;grid-row:span 1}.agenda{grid-column-end:span 10;grid-column-start:span 3}
