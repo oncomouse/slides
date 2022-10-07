@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@oncomouse/remark-slide": "^0.14.1",
-    "bourbon": "^7.0.0",
+    "bourbon": "^7.2.0",
     "bourbon-neat": "^4.0.0",
     "chart.js": "^3.5.1",
     "classlist": "^2.0.0",
