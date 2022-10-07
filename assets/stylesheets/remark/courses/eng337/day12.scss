@@ -1,7 +1,6 @@
 @use "sass:math";
 
 @import "bourbon";
-@import "neat";
 
 .mrs-lloyd {
 	img {
@@ -10,7 +9,6 @@
 }
 
 .medusa {
-	@include grid-container;
 
 	margin: {
 		top: 3em;
@@ -19,7 +17,7 @@
 	img {
 		width: 45%;
 
-		@include grid-column(6);
+		// @include-grid-column(6);
 	}
 }
 

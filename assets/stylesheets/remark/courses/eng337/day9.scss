@@ -1,8 +1,7 @@
 @import "bourbon";
-@import "neat";
 
 .agenda {
-	@include grid-column(10);
+	// @include grid-column(10);
 
-	@include grid-push(3);
+	// @include grid-push(3);
 }

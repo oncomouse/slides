@@ -1,16 +1,13 @@
 @import "bourbon";
-@import "neat";
 
 ul li, ol li {
 	line-height: 1.75rem;
 }
 
 .remark-slide-content {
-	@include grid-container;
 }
 
 .half-column {
-	@include grid-column(6);
 }
 
 .slide2 {
@@ -33,11 +30,9 @@ ul li, ol li {
 	}
 
 	.subgenre-list {
-		@include grid-column(4);
 	}
 
 	.definition-list {
-		@include grid-column(8);
 
 		
 
@@ -59,7 +54,6 @@ ul li, ol li {
 	}
 
 	.key {
-		@include grid-column(5);
 
 		
 
@@ -69,7 +63,6 @@ ul li, ol li {
 
 	.graph {
 		//margin: 0 auto
-		@include grid-column(7);
 	}
 
 	ol {
@@ -132,7 +125,6 @@ ul li, ol li {
 	.chart {
 		vertical-align: middle;
 
-		@include grid-column(7);
 
 		table {
 			font-size: 0.72em;
@@ -141,7 +133,6 @@ ul li, ol li {
 	}
 
 	.legend {
-		@include grid-column(5);
 
 		
 

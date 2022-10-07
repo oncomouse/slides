@@ -27,9 +27,9 @@
 	}
 
 	blockquote {
-		@include grid-column(4);
+		// @include-grid-column(4);
 
-		@include grid-push(4);
+		// @include-grid-push(4);
 	}
 }
 
@@ -39,9 +39,10 @@
 	}
 
 	blockquote {
-		@include grid-column(6);
+		// @include-grid-column(6);
 
-		@include grid-push(3);
+		// @include-grid-push(3);
+		// @import "neat";
 
 		font-size: 0.95em;
 
