@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Charland
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center
+
+# Maurice Charland, “Constitutive Rhetoric”
+
+---
+
+## Persuasion, Identification, Ideology
+
+> In *The Rhetoric of Motives*, Kenneth Burke proposes “identification” as an alternative to "persuasion" as the key term of the rhetorical process. Burke's project is a rewriting of rhetorical theory that considers rhetoric and motives in formal terms, as consequences of the nature of language and its enactment. Burke's stress on identification permits a rethinking of judgment and the working of the rhetorical effect, for he does not posit a transcendent subject as audience member, who would exist prior to and apart from the speech to be judged, but considers audience members to participate in the very discourse by which they would be "persuaded." Audiences would embody a discourse. A consequence of this theoretical move is that it permits an understanding within rhetorical theory of ideological discourse, of the discourse that presents itself as always only pointing to the given, the natural, the already agreed upon. In particular, it permits us to examine how rhetoric effects what Louis Althusser identifies as the key process in the production of ideology: the constitution of the subject, where the subject is precisely he or she who simultaneously speaks and initiates action in discourse (a subject to a verb) and in the world (a speaker and social agent) (133)
+
+---
+class: f25px
+
+## Subject Before Discourse?
+
+> However, rhetorical theory's privileging of an audience's freedom to judge is problematic, for it assumes that audiences, with their prejudices, interests, and motives, are given and so extra-rhetorical. Rhetorical criticism, as Grossberg points out, posits the existence of transcendental subjects whom discourse would mediate. In other words, rhetorical theory usually refuses to consider the possibility that the very existence of social subjects (who would become audience members) is already a rhetorical effect. Nevertheless, much of what we as rhetorical critics consider to be a product or consequence of discourse, including social identity, religious faith, sexuality, and ideology is beyond the realm of rational or even free choice, beyond the realm of persuasion. (133)
+
+---
+class: f31px
+
+## From Praise to Constitution
+
+> Ultimately then, theories of rhetoric as persuasion cannot account for the audiences that rhetoric addresses. However, such an account is critical to the development of a theoretical understanding of the power of discourse. If it is easier to praise Athens before Athenians than before Laecedemonians, we should ask how those in Athens come to experience themselves as Athenians. Indeed, a rhetoric to Athenians in praise of Athens would be relatively insignificant compared to a rhetoric that constitutes Athenians as such. (134)
+
+---
+class: f25px
+
+## New Subjectivity
+
+> Central to my analysis of the constitutive rhetoric of Quebec sovereignty will be Althusser's category of the subject. Examining what Michael McGee would term Quebec's rhetoric of a "people," I will show how claims for Quebec sovereignty base themselves upon the asserted existence of a particular type of subject, the "Québécois.” That subject and the collectivized "peuple québécois" are, in Althusser's language, “interpellated” as political subjects through a process of identification in rhetorical narratives that “always already" presume the constitution of subjects. From this perspective, a subject is not “persuaded” to support sovereignty. Support for sovereignty is inherent to the subject position addressed by *souverainiste* (pro-sovereignty) rhetoric because of what we will see to be a series of narrative *ideological effects*. (134)
+
+---
+
+## Identity Shift
+
+> In 1967, the year of Canada's centennial, a new political association was formed in Quebec. This organization, the *Mouvement Souveraineté-Association* (MSA), dedicated itself to Quebec's political sovereignty as it proclaimed the existence of an essence uniting social actors in the province. In French, Quebec's majority language, the MSA declared: “Nous sommes des Québécois” (“We are Québécois”) and called for Quebec's independence from Canada. This declaration marked the entry of the term “Québécois” into the mainstream of Quebec political discourse. Until that time, members of the French-speaking society of Quebec were usually termed “Canadiens français” (“French-Canadians”). With the MSA, a national identity for a new type of political subject was born, a subject whose existence would be presented as justification for the constitution of a new state. Thus, the MSA's declaration is an instance of constitutive rhetoric, for it calls its audience into being. Furthermore, as an instance of constitutive rhetoric, it was particularly effective, for within a decade of the creation of that *mouvement*, the term “Québécois” had gained currency even among certain supporters of the Canadian federal system, and Quebec voters had brought the MSA's successor, the *Parti Québécois* (PQ), to power. (134)
+
+---
+class: f33px
+
+## An Alternate People
+
+> What the debate in Quebec reveals is that the very character of a collective identity, and the nature of its boundary, of who is a member of the collectivity, were problematic. In other words, in Quebec there existed a struggle over the constitution of political subjects. In Quebec, the possibility of an alternative *peuple* and history was entertained. Thus, the movement for sovereignty permits us to see how peoples are rhetorically constituted. (135)
+
+---
+class: f22px
+
+## Will of the People
+
+> Rather, supporters and opponents of Quebec sovereignty both seek to justify their position on the basis of what they assert is a will intrinsic to their version of the *peuple's* very being. Their rhetoric is grounded in the constitution of *Québécois* as political subjects. 
+>
+> The debate over sovereignty in Quebec clearly reveals the degree to which peoples are constituted in discourse. Those in Quebec could be “Québécois”; they could also be “Canadiens français." The distinction is crucial, for only the former type of "peuple” can claim the right to a sovereign state. Indeed, the debate in Quebec permits us to see the radical implication of McGee's argument, for not only is the character or identity of the “peuple” open to rhetorical revision, but the very *boundary* of whom the term “peuple" includes and excludes is rhetorically constructed: as the “peuple” is variously characterized, the persons who make up the "peuple” can change. (136)
+
+---
+class: f24px
+
+## Naturalness
+
+> As we have seen, rhetorical claims for a sovereign Quebec are predicated upon the existence of an ideological subject, the “Québécois," so constituted that sovereignty is a natural and necessary way of life. Furthermore, and hardly surprisingly, the ultimate justification for these claims is the subject's character, nature, or essence. This is so because this identity defines inherent motives and interests that a rhetoric can appeal to. The ideological “trick” of such a rhetoric is that it presents that which is most rhetorical, the existence of a *peuple*, or of a subject, as extrarhetorical. These members of the *peuple* whose supposed essence demands action do not exist in nature, but only within a discursively constituted history. Thus, this rhetoric paradoxically must constitute the identity “Québécois” as it simultaneously presumes it to be pregiven and natural, existing outside of rhetoric and forming the basis for a rhetorical address. (137)
+
+---
+class: f22px
+
+## Interpellation
+
+> Interpellation occurs at the very moment one enters into a rhetorical situation, that is, as soon as an individual recognizes and acknowledges being addressed. An interpellated subject participates in the discourse that addresses him. Thus, to be interpellated is to become one of Black's personae and be a position in a discourse. In consequence, interpellation has a significance to rhetoric, for the acknowledgment of an address entails an acceptance of an imputed self-understanding which can form the basis for an appeal. Furthermore, interpellation occurs rhetorically, through the effect of the addressed discourse. Note, however, that interpellation does not occur through persuasion in the usual sense, for the very act of *addressing* is rhetorical. It is logically prior to the rhetorical *narratio*. In addition, this rhetoric of identification is ongoing, not restricted to one hailing, but usually part of a rhetoric of socialization. Thus, one must already be an interpellated subject and exist as a discursive position in order to be part of the audience of a rhetorical situation in which persuasion could occur. (138)
+
+---
+class: f27px
+
+## Rhetorical Nature of Persona
+
+> Events in Quebec demonstrate that the "peuple" is a persona, existing in rhetoric, and not in some neutral history devoid of human interpretation. But note, personae are not persons; they remain in the realm of words. As McGee observes, a “people" is a fiction which comes to be when individuals accept living within a political myth. This myth would be ontological, constitutive of those "seduced" by it. In Quebec, what McGee terms the myth of the “people” is articulated in the Quebec government's White Paper. This document, speaking in the name of the independence movement, as institutionalized in a party and a government, offers a narrative of Quebec history that renders demands for sovereignty intelligible and reasonable. (138)
+
+---
+class: f27px
+
+## Narratives and Subjectivity
+
+> All narratives, as they create the illusion of merely revealing a unified and unproblematic subjectivity, are ideological, because they occult the importance of discourse, culture, and history in giving rise to subjectivity, and because, as G. H. Mead and Freud have made clear, subjectivity is always social, constituted in language, and exists in a delicate balance of contradictory drives and impulses. Narratives suppress the fact that, in a very real sense, no person is the same as he or she was a decade ago, or last year, or indeed yesterday. In raising the ultimate "falsity" of narratives, my intention is not, however, to decry them and hold out for some unmediated consciousness. (139)
+
+---
+class: f25px
+
+## Three Ideological Effects
+
+> In the rhetoric of Quebec sovereignty, the “Québécois” is a collective subject. […] This identity transcends the limitations of the individual body and will. This process of constituting a collective subject is the first ideological effect of constitutive rhetoric. (139)
+
+> This positing of a transhistorical subject is the second ideological effect of constitutive rhetoric. Here, ancestry is offered as the concrete link between the French settlers of North America, those in Quebec today, and a collectivity. (140)
+
+> The freedom of the protagonist of this narrative is but an illusion. This illusion of freedom is the third ideological effect of constitutive rhetoric. Freedom is illusory because the narrative is already spoken or written. (141)
+
+---
+class: f30px
+
+## Overlapping Narratives
+
+> In addition, as Stuart Hall observes, various contradictory subject positions can simultaneously exist within a culture: we can live within many texts. These contradictions place a strain upon identification with a given subject position and render possible a subject's rearticulation. Successful new constitutive rhetorics offer new subject positions that resolve, or at least contain, experienced contradictions. They serve to overcome or define away the recalcitrance the world presents by providing the subject with new perspectives and motives. (142)
+
+---
+class: f27px
+
+## Ideology as Material Practice
+
+> If the White Paper and historical narratives were but dead history, mere stories, their significance to ideology could easily be dismissed. However, constitutive rhetorics, as they identify, have power because they are oriented towards action. As Althusser and McGee both stress, ideology is material, existing not in the realm of ideas, but in that of *material practices*. Ideology is material because subjects enact their ideology and reconstitute their material world in its image. Constitutive rhetorics are ideological not merely because they provide individuals with narratives to inhabit as subjects and motives to experience, but because they insert “narratized” subjects-as-agents into the world. (143)
+
+---
+
+## Conclusion
+
+> In sum, the White Paper calls on those it has addressed to follow narrative consistency and the motives through which they are constituted as audience members. Its rhetorical effect derives from their interpellation as subjects and on their identification with a transhistorical and transindividual subject position. It is in this sense of textualizing audiences, therefore, that we can understand the process Black treats in his discussion of the second persona and McGee discusses in his study of the “people.” From this perspective, we can see that audiences do not exist outside rhetoric, merely addressed by it, but live inside rhetoric. Indeed, from the moment they enter into the world of language, they are subjects; the very moment of recognition of an address constitutes an entry into a subject position to which inheres a set of motives that render a rhetorical discourse intelligible. These subject positions are bequeathed by the past, by yesterday's discourses. Furthermore, the contradictions between discourses as well as the dialectic between discourse and a changing concrete world open a space for new subject positions. Tensions in the realm of the symbolic render possible the rhetorical repositioning or rearticulation of subjects. (146-7)
+
+
+</textarea>
+  </body>
+</html>
+
