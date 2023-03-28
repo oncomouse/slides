@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 354 Twain
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: middle, center, bigger
+
+# Mark Twain, from <em>Innocents Abroad</em>
+---
+class: f29px
+## Cliche
+
+> So far, good. If any man has a right to feel proud of himself, and satisfied, surely it is I. For I have written about the Coliseum, and the gladiators, the martyrs, and the lions, and yet have never once used the phrase “butchered to make a Roman holiday.” I am the only free white man of mature age, who has accomplished this since Byron originated the expression.
+>
+> Butchered to make a Roman holiday sounds well for the first seventeen or eighteen hundred thousand times one sees it in print, but after that it begins to grow tiresome. I find it in all the books concerning Rome […]
+
+---
+class: f19px
+## Monotonous
+
+>  In this connection I wish to say one word about Michael Angelo Buonarotti. […] But I do not want Michael Angelo for breakfast—for luncheon—for dinner—for tea—for supper—for between meals. I like a change, occasionally. In Genoa, he designed every thing; in Milan he or his pupils designed every thing; he designed the Lake of Como; in Padua, Verona, Venice, Bologna, who did we ever hear of, from guides, but Michael Angelo? In Florence, he painted every thing, designed every thing, nearly, and what he did not design he used to sit on a favorite stone and look at, and they showed us the stone. In Pisa he designed every thing but the old shot-tower, and they would have attributed that to him if it had not been so awfully out of the perpendicular. He designed the piers of Leghorn and the custom house regulations of Civita Vecchia. But, here—here it is frightful. He designed St. Peter’s; he designed the Pope; he designed the Pantheon, the uniform of the Pope’s soldiers, the Tiber, the Vatican, the Coliseum, the Capitol, the Tarpeian Rock, the Barberini Palace, St. John Lateran, the Campagna, the Appian Way, the Seven Hills, the Baths of Caracalla, the Claudian Aqueduct, the Cloaca Maxima—the eternal bore designed the Eternal City, and unless all men and books do lie, he painted every thing in it! Dan said the other day to the guide, “Enough, enough, enough! Say no more! Lump the whole thing! say that the Creator made Italy from designs by Michael Angelo!”
+
+---
+class: f27px
+## Messing with the Guide
+
+>  We look at it indifferently and the doctor asks: “By Michael Angelo?”
+> 
+>“No—not know who.”
+>
+>Then he shows us the ancient Roman Forum. The doctor asks: “Michael Angelo?”
+>
+>A stare from the guide. “No—thousan’ year before he is born.”
+>
+>Then an Egyptian obelisk. Again: “Michael Angelo?”
+>
+>“Oh, mon dieu, genteelmen! Zis is two thousan’ year before he is born.”
+---
+class: f19px
+## Guides
+
+>  Guides know about enough English to tangle every thing up so that a man can make neither head or tail of it. They know their story by heart—the history of every statue, painting, cathedral or other wonder they show you. They know it and tell it as a parrot would—and if you interrupt, and throw them off the track, they have to go back and begin over again. All their lives long, they are employed in showing strange things to foreigners and listening to their bursts of admiration. It is human nature to take delight in exciting admiration. It is what prompts children to say “smart” things, and do absurd ones, and in other ways “show off” when company is present. It is what makes gossips turn out in rain and storm to go and be the first to tell a startling bit of news. Think, then, what a passion it becomes with a guide, whose privilege it is, every day, to show to strangers wonders that throw them into perfect ecstasies of admiration! He gets so that he could not by any possibility live in a soberer atmosphere. After we discovered this, we never went into ecstasies any more—we never admired any thing—we never showed any but impassible faces and stupid indifference in the presence of the sublimest wonders a guide had to display. We had found their weak point. We have made good use of it ever since. We have made some of those people savage, at times, but we have never lost our own serenity. 
+
+---
+class: f23px
+## Americans Abroad
+
+>  The guides in Genoa are delighted to secure an American party, because Americans so much wonder, and deal so much in sentiment and emotion before any relic of Columbus. […]
+> 
+>  “I don’t care who it is! It’s the worst writing I ever saw. Now you musn’t think you can impose on us because we are strangers. We are not fools, by a good deal. If you have got any specimens of penmanship of real merit, trot them out!—and if you haven’t, drive on!”
+> 
+>We drove on. The guide was considerably shaken up, but he made one more venture. He had something which he thought would overcome us. He said:
+>
+>“Ah, genteelmen, you come wis me! I show you beautiful, O, magnificent bust Christopher Colombo!—splendid, grand, magnificent!” 
+---
+class: f27px
+## Bored
+>There is one remark (already mentioned,) which never yet has failed to disgust these guides. We use it always, when we can think of nothing else to say. After they have exhausted their enthusiasm pointing out to us and praising the beauties of some ancient bronze image or broken-legged statue, we look at it stupidly and in silence for five, ten, fifteen minutes—as long as we can hold out, in fact—and then ask:
+>
+>“Is—is he dead?”
+>
+>That conquers the serenest of them. It is not what they are looking for—especially a new guide.
+
+
+</textarea>
+  </body>
+</html>
+
