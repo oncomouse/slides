@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 481 Writing a Position Paper
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# Writing a Position Paper
+
+---
+class: f45px
+# Activity 1: Think / Pair / Share
+
+
+1. What do you look for in a controversial passage?
+
+---
+class: f45px
+# Activity 2: Think / Pair / Share
+
+1. What do you look for in a controversial passage?
+1. Do you take notes while reading? How?
+
+---
+
+class: f30px
+# Quoting Material 1
+
+1. But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk.
+
+---
+
+class: f30px
+# Quoting Material 1
+
+1. But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk.
+	1. "But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk."
+
+---
+
+class: f30px
+# Quoting Material 1
+
+1. But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk.
+	1. "But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk."
+1. Scarcely any writer is happy about labels - especially one with the peculiar ring of "cyberpunk."
+
+---
+
+class: f30px
+# Quoting Material 1
+
+1. But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk.
+	1. "But of all the labels pasted on and peeled throughout the early Eighties, one has stuck: cyberpunk."
+1. Scarcely any writer is happy about labels - especially one with the peculiar ring of "cyberpunk."
+	1. "Scarcely any writer is happy about labels - especially one with the peculiar ring of 'cyberpunk.'"
+
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+	1. “Burning Chrome”
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+	1. “Burning Chrome”
+	1. Gibson, William. “Burning Chrome.” *Burning Chrome*. HarperCollins, 2003.
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+	1. “Burning Chrome”
+	1. Gibson, William. “Burning Chrome.” *Burning Chrome*. HarperCollins, 2003.
+1. Neuromancer (novel)
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+	1. “Burning Chrome”
+	1. Gibson, William. “Burning Chrome.” *Burning Chrome*. HarperCollins, 2003.
+1. Neuromancer (novel)
+	1. *Neuromancer*
+---
+class: f35px
+
+# Titles
+
+1. Burning Chrome (short story)
+	1. “Burning Chrome”
+	1. Gibson, William. “Burning Chrome.” *Burning Chrome*. HarperCollins, 2003.
+1. Neuromancer (novel)
+	1. *Neuromancer*
+	1. Gibson, William. *Neuromancer*. Ace, 2000.
+
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+	1. *Johnny Mnemonic*
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+	1. *Johnny Mnemonic*
+	1. *Johnny Mnemonic*. Directed by Robert Longo. TriStar Pictures, 1995.
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+	1. *Johnny Mnemonic*
+	1. *Johnny Mnemonic*. Directed by Robert Longo. TriStar Pictures, 1995.
+1. Let You Down (*Cyberpunk: Edgerunners* episode)
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+	1. *Johnny Mnemonic*
+	1. *Johnny Mnemonic*. Directed by Robert Longo. TriStar Pictures, 1995.
+1. Let You Down (*Cyberpunk: Edgerunners* episode)
+	1. "Let You Down"
+---
+class: f35px
+
+# More Titles
+
+1. Johnny Mnemonic (movie)
+	1. *Johnny Mnemonic*
+	1. *Johnny Mnemonic*. Directed by Robert Longo. TriStar Pictures, 1995.
+1. Let You Down (*Cyberpunk: Edgerunners* episode)
+	1. "Let You Down"
+	1. "Let You Down," *Cyberpunk: Edgerunners*, season 1, episode 1, Netflix, September 13 2022.
+
+
+</textarea>
+  </body>
+</html>
+
