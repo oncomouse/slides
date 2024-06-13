@@ -38,6 +38,7 @@ GEM
     hashie (3.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     listen (3.8.0)
@@ -113,6 +114,7 @@ PLATFORMS
 DEPENDENCIES
   builder (>= 3.0)
   emoji_data!
+  json
   kramdown
   middleman (~> 4)
   rake
