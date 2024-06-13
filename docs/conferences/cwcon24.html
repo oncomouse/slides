@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      Computers & Writing 2024
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<link href="/slides/stylesheets/remark/conferences/cwcon24.css" rel="stylesheet" media="all" /><script src="/slides/javascripts/lib/script.min.js"></script><link href="/slides/stylesheets/remark/add-ons/progress-bar.css" rel="stylesheet" />    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js",
+	  progress_bar_js = "/slides/javascripts/remark/add-ons/progress-bar.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js, progress_bar_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+	// Load any add-ons:
+  attach_progress_bar(slideshow);
+  var twitter_name = "<span class=\"twitter_badge\">@oncomouse</span>";
+  $('.remark-slide-content').slice(1).each(function(i,slide){
+  	$(slide).append('<div class="twitter_name">' + twitter_name +  '</div>');
+  });
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: inverse, center, middle, f36px, title
+
+# Backwards into the Future:<br>Writing the<br>Retro-computer
+
+**Andrew Pilsch**  
+**Texas A&M University**  
+**<span class="twitter_badge">@oncomouse</span>**  
+**he/him**
+
+.f38px[
+**Materials: [http://atp1.us/retrocomputer](http://atp1.us/retrocomputer)**
+]
+
+**<small>Computers & Writing 2024 <br> Forth Worth, TX ◊ June 21, 2024</small>**
+---
+class: center, middle
+
+![btw](https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png)
+---
+class: center, middle
+
+![Vim logo](https://clipground.com/images/vim-logo-png.png)
+---
+class: center, middle
+
+![The author's keyboard](../images/cwcon24/keeb.jpg)
+---
+class: center, middle
+
+![The author's workspace](../images/cwcon24/my-writebox.png)
+---
+class: f40px
+> Of course, tools are not invisible in themselves, but as part of a context of use. With enough practice we can make many apparently difficult things disappear: my fingers know vi editing commands that my conscious mind has long forgotten. But good tools enhance invisibility.
+>
+> —Mark Weiser, "The World is Not a Desktop"
+---
+class: center, middle
+
+![FZF in Action](../images/cwcon24/cwcon2024-fzf.gif)
+
+---
+class: center, middle
+
+![FZF + MPD in Action](../images/cwcon24/cwcon2024-mpd-fzf.gif)
+
+
+</textarea>
+  </body>
+</html>
+
