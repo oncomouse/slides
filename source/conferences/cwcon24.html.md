@@ -54,3 +54,9 @@ class: center, middle
 
 ![FZF in Action](../images/cwcon24/cwcon2024-fzf.gif)
 
+---
+class: center, middle
+
+# Thank You!
+
+![Condenscending Unix Users](../images/cwcon24/thanks.jpg)
