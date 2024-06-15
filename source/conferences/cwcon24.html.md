@@ -15,7 +15,7 @@ class: inverse, center, middle, f36px, title
 **he/him**
 
 .f38px[
-**Materials: [http://atp1.us/retrocomputer](http://atp1.us/retrocomputer)**
+**Materials:<br> <small>[https://oncomouse.github.io/cwcon24](https://oncomouse.github.io/cwcon24)**</small>
 ]
 
 **<small>Computers & Writing 2024 <br> Forth Worth, TX ◊ June 21, 2024</small>**
@@ -43,9 +43,14 @@ class: f40px
 ---
 class: center, middle
 
-![FZF in Action](../images/cwcon24/cwcon2024-fzf.gif)
+![vi in action](../images/cwcon24/cwcon2024-nvim.gif)
+---
+class: center, middle
+
+![Stackoverflow Survey Data](../images/cwcon24/so-editors.png)
 
 ---
 class: center, middle
 
-![FZF + MPD in Action](../images/cwcon24/cwcon2024-mpd-fzf.gif)
+![FZF in Action](../images/cwcon24/cwcon2024-fzf.gif)
+
