@@ -125,7 +125,7 @@ class: center, middle
 ---
 class: center, middle
 
-![NextStep](http://toastytech.com/guis/ns33nfsmanager.png)
+![NextStep](http://www.paullynch.org/NeXTSTEP/NeXTSTEP.screenshot.jpg)
 ---
 class: center, middle
 
