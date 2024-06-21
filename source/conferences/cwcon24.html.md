@@ -59,26 +59,6 @@ class: center, middle
 
 ![Ripgrep and Fd in action](../images/cwcon24/cwcon2024-rg.gif)
 ---
-class: f28px
-
-1. We can control systems that don’t have any graphical environment installed, including
-remote servers, virtual machines, and containers like Docker.
-1. Programs executed on the command line can be combined so that the output of one program can be the input of another.
-1. Task automation is built-in thanks to the scripting nature of many shells. No more doing repetitive tasks manually.
-1. There is a low barrier to creating our own CLI applications. Many utilities for programmers exist only as command-line programs.
-
-—Petr Stribny, *The Command Line: A Modern Introduction*
----
-class: f28px
-
-1. We can control systems that don’t have any graphical environment installed, including
-remote servers, virtual machines, and containers like Docker.
-1. **Programs executed on the command line can be combined so that the output of one program can be the input of another.**
-1. Task automation is built-in thanks to the scripting nature of many shells. No more doing repetitive tasks manually.
-1. There is a low barrier to creating our own CLI applications. Many utilities for programmers exist only as command-line programs.
-
-—Petr Stribny, *The Command Line: A Modern Introduction*
----
 class: f36px
 
 1. Write programs that do one thing and do it well.
