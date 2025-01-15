@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>
+      ENGL 303: What is Interpretation?
+    </title>
+  <link href="/slides/stylesheets/remark/fonts/icomoon/icomoon.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/opensans/opensans.css" rel="stylesheet" media="all" />
+  <link href="/slides/stylesheets/remark/fonts/firacode/fira_code.css" rel="stylesheet" media="all" />
+    <link href="/slides/stylesheets/remark/slides.css" rel="stylesheet" media="all" />
+<script src="/slides/javascripts/lib/script.min.js"></script>    <script>
+// The javascript files to be loaded are determined by Middleman at compile:
+var remark_js = "/slides/javascripts/remark/remark.min.js",
+	  zepto_js = "/slides/javascripts/lib/zepto.min.js"
+;
+
+// This call to head.js is automatically determined by Middleman at compile:
+$script([remark_js, zepto_js], function(){
+
+  // Ugly fix of HAML's formatting problems:
+  document.getElementById("source").innerHTML = document.getElementById("source").innerHTML.replace(/^\s{4}/gm,"");
+
+  // Load the slideshow:
+  var slideshow = remark.create({
+    navigation: {
+      scroll: false,
+      touch: true
+    },
+    highlightLanguage: 'javascript',
+    highlightStyle: 'zenburn'
+  });
+  // Lightning Timer!
+  var lightningTimer = 0;
+  if(lightningTimer > 0) {
+    var lightningInterval = setInterval(function moveLightningSlide() {
+      slideshow.gotoNextSlide();
+    }, lightningTimer);
+    document.addEventListener('beforeunload', function() { clearInterval(lightningInterval); });
+  }
+  // Reload / re-init things that have to be shown to work:
+  function loadExtraThings() {
+    // Juxtapose
+    var juxtapose = document.querySelector('.remark-visible .juxtapose');
+    if (juxtapose !== null && juxtapose.getAttribute('data-seen') !== 'true') {
+      juxtapose.src += '';
+      juxtapose.setAttribute('data-seen', 'true');
+    }
+  }
+  slideshow.on('afterShowSlide', loadExtraThings);
+  var loadMermaid = false;
+  if(loadMermaid) {
+    // https://github.com/knsv/mermaid/issues/360#issuecomment-255526258
+    mermaid.initialize({
+      startOnLoad: false,
+      cloneCssStyles: false
+    });
+    function initMermaid() {
+      var diagrams = document.querySelectorAll('.mermaid');
+      var i;
+      for(i=0;i<diagrams.length;i++){
+        if(diagrams[i].offsetWidth>0){
+          mermaid.init(undefined, diagrams[i]);
+        }
+      }
+    }
+    slideshow.on('afterShowSlide', initMermaid);
+    initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+  }
+  
+  
+});
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# What Is Interpretation?
+
+---
+class: f64px
+## Example Close Reading
+
+* [Robert Browning, "My Last Duchess"](https://www.poetryfoundation.org/poems/43768/my-last-duchess)
+
+---
+class: center, middle
+
+## Why Do We Read?
+---
+class: f26px
+## W.H. Auden, *The Dyer's Hand* (1962)
+
+Functions of the critic:
+
+1. Introduce me to authors or works of which I was hitherto unaware.
+2. Convince me that I have undervalued an author or a work because I had not read them carefully enough.
+3. Show me relations between works of different ages and cultures which I could never have seen for myself because I do not know enough and never shall.
+4. Give a “reading” of a work which increases my understanding of it.
+5. Throw light upon the process of artistic “Making”.
+6. Throw light upon the relation of art to life, to science, to economics, ethics, religion, etc.
+
+---
+class: f45px
+## Reading Literature
+
+* A process of doubling / balancing:
+---
+class: f45px
+## Reading Literature
+
+* A process of doubling / balancing:
+  * Enjoyment / understanding
+---
+class: f26px
+## Understanding
+> Any literary text attempts to produce an effect on the reader, by creating for example a visual impression, a mood, or an emotion, or by illustrating some aspect of human nature or society. The aim of a close reading is to show how the different elements of a text combine to produce the desired impression. You will need to give consideration to various formal elements, such as use of particular vocabulary, specific sounds or rhythms, metaphors or other figures of speech—all of which can contribute to describing a scene or a person, underscoring an argument, or provoking an emotional reaction.
+>
+>– Elizabeth Howe
+
+---
+class: f45px
+## Reading Literature
+
+* A process of doubling / balancing:
+  * Enjoyment / understanding
+  * Our world / Author's world
+---
+class: f21px
+## Author's World
+
+> The good reader [...] has to take his personal experience of life and his limited knowledge of the world into a formal and self-contained space created in another person’s mind. How would the ideal reader enter that space? How might she balance emotional and subjective responses to it—identifying with the heroine, being swept away by a beautiful line of verse, discovering a buried memory—with objective or evaluative criteria? Does the reader who loses sight of things such as style structure, the choice of figurative language, or the work’s situation in literary history really know or appreciate what she is reading? Or is it better to become so absorbed by the literary work that the technicalities of writing just don’t register? Perhaps the perfect reader [...] should try to become someone who exquisitely manages both—a discriminating observer who can turn her knowledge and attention to the details of the literary work, and a responsive individual with a unique personal history and emotional self-awareness.
+>
+>– Annette Federico
+
+---
+class: f45px
+## Reading Literature
+
+* A process of doubling / balancing:
+  * Enjoyment / understanding
+  * Our world / Author's world
+  * Familiar words / literary language
+---
+class: f27px
+## Literary Language
+
+> Poetry, drama, and fiction have a peculiar relation to knowledge because literary works demand the exercise of cognition and emotion, intellect and intuition. Literature asks us to occupy two kinds of mental space at once: we are invited to accept the functionality of words that have the ability to point to things we already know or recognize in the real world—courtship rituals or nightingales or war—yet at the same time to observe the instability of the same words to signal oblique or unfamiliar things that we may only sense.
+> 
+>– Annette Federico
+
+---
+class: center, middle
+
+## Why Would we [Interpret](https://www.oed.com/dictionary/interpret_v)?
+---
+class: f32px
+## Analysis
+
+> Analysis means, if we take it back to its original usage, the ‘act of resolving (something) into its elements’ (OED). It comes from a long-held idea that in order to understand something we have to take it apart and then put it back together again with, ideally, new insights in place.
+>
+>– David Greenham
+---
+class: f24px
+## Explication
+
+> A close reading analyzes poems or short passages of prose in depth. It is also called explication, a word from a Latin verb meaning “to unfold.” Explication unfolds the text’s meaning in relation to its formal and structural elements; it allows you the student—and indeed any reader—to examine the language and structure of a work as a function of its content, i.e., of the ideas, images or emotions it expresses. This process can lead to some exciting discoveries about the text; it will also encourage you to recognize the writer’s craft and appreciate the way the text is put together as well as the ideas it contains. Any student of literature should be able to analyze (or explicate) a poem or a piece of prose or drama in this way before examining other critical interpretations of it.
+>
+>– Elizabeth Howe
+
+
+</textarea>
+  </body>
+</html>
+
